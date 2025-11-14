@@ -8,7 +8,11 @@ export default defineConfig({
   output: 'static',
 
   vite: {
-    assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.svg']
+    assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.svg'],
+    esbuild: {
+    target: 'esnext',
+    format: 'esm'
+    }
   },
 
   adapter: netlify()

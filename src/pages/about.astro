@@ -1,10 +1,10 @@
 ---
+import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import EmailCapture from "../components/EmailCapture.astro";
 import calculatorsData from "../data/calculators.json";
 import categoriesData from "../data/categories.json";
-import { Image } from "astro:assets";
 
 // Calculate real stats
 const totalCalculators = calculatorsData?.calculators?.length;
@@ -134,6 +134,7 @@ const features = [
               width="400"
               height="400"
               loading="eager"
+              format="webp"
             />
           </div>
         </div>
@@ -192,11 +193,13 @@ const features = [
           </div>
 
           <!-- <div class="story-image">
-            <img
+            <Image
               src="/images/heroes/hero-alt-1.png"
               alt="CalcCrunch Calculators"
               width="500"
               height="500"
+              format="webp"
+              loading="lazy"
             />
           </div> -->
         </div>

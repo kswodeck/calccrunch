@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import SearchBar from "./SearchBar.astro";
 import calculatorsData from "../data/calculators.json";
 import categoriesData from "../data/categories.json";
@@ -12,11 +13,13 @@ const totalCalculators = calculatorsData?.calculators?.length;
       <!-- Logo -->
       <div class="logo">
         <a href="/" aria-label="CalcCrunch Home">
-          <img
+          <Image
             src="/images/logos/logo-horizontal-dark.svg"
             alt="CalcCrunch Logo"
             width="200"
             height="60"
+            format="webp"
+            loading="eager"
           />
         </a>
       </div>

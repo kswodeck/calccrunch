@@ -1,95 +1,103 @@
 ---
-import affiliatesData from '../data/affiliates.json';
+import { Image } from "astro:assets";
+import affiliatesData from "../data/affiliates.json";
 
-const { 
-  category = 'financial',
-  title = 'Ready to Take Action?',
-  description = 'Check out these trusted partners to help you move forward'
+const {
+  category = "financial",
+  title = "Ready to Take Action?",
+  description = "Check out these trusted partners to help you move forward",
 } = Astro.props;
 
 // Map calculator categories to affiliate categories
 const affiliateCategoryMap = {
-  'financial': 'financial',
-  'health-fitness': 'health',
-  'home-real-estate': 'home',
-  'automotive': 'default',
-  'food-cooking': 'default',
-  'education': 'default',
-  'business-sales': 'default',
-  'time-date': 'default',
-  'math-conversions': 'default',
-  'miscellaneous': 'default'
+  financial: "financial",
+  "health-fitness": "health",
+  "home-real-estate": "home",
+  automotive: "default",
+  "food-cooking": "default",
+  education: "default",
+  "business-sales": "default",
+  "time-date": "default",
+  "math-conversions": "default",
+  miscellaneous: "default",
 };
 
-const affiliateCategory = affiliateCategoryMap[category] || 'default';
+const affiliateCategory = affiliateCategoryMap[category] || "default";
 
 // Get affiliates for category, sorted by priority
-const affiliates = (affiliatesData.affiliates[affiliateCategory] || affiliatesData.affiliates.default)
-  .filter(aff => aff.active)
+const affiliates = (
+  affiliatesData.affiliates[affiliateCategory] ||
+  affiliatesData.affiliates.default
+)
+  .filter((aff) => aff.active)
   .sort((a, b) => a.priority - b.priority)
   .slice(0, 3); // Show top 3
 ---
 
-{affiliates.length > 0 && (
-  <div class="affiliate-box">
-    <div class="affiliate-header">
-      <h3>{title}</h3>
-      <p>{description}</p>
+{
+  affiliates.length > 0 && (
+    <div class="affiliate-box">
+      <div class="affiliate-header">
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+
+      <div class="affiliate-grid">
+        {affiliates.map((affiliate) => (
+          <a
+            href={affiliate.link}
+            class="affiliate-card"
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+          >
+            {affiliate.badge && (
+              <div class="affiliate-badge">{affiliate.badge}</div>
+            )}
+
+            <div class="affiliate-logo">
+              <Image
+                src={affiliate.logo}
+                alt={`${affiliate.company} logo`}
+                width="120"
+                height="40"
+                format="webp"
+                loading="lazy"
+              />
+            </div>
+
+            <h4>{affiliate.company}</h4>
+            <p class="affiliate-description">{affiliate.description}</p>
+
+            <ul class="affiliate-highlights">
+              {affiliate.highlights.map((highlight) => (
+                <li>✓ {highlight}</li>
+              ))}
+            </ul>
+
+            <div class="affiliate-cta">
+              {affiliate.cta}
+              <span class="cta-arrow">→</span>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <p class="affiliate-disclaimer">
+        <small>
+          * We may earn a commission from partner links. This helps us keep
+          CalcCrunch free. Our recommendations are unbiased and based on
+          quality.
+        </small>
+      </p>
     </div>
-    
-    <div class="affiliate-grid">
-      {affiliates.map(affiliate => (
-        <a 
-          href={affiliate.link} 
-          class="affiliate-card"
-          target="_blank"
-          rel="noopener noreferrer sponsored"
-        >
-          {affiliate.badge && (
-            <div class="affiliate-badge">{affiliate.badge}</div>
-          )}
-          
-          <div class="affiliate-logo">
-            <img 
-              src={affiliate.logo} 
-              alt={`${affiliate.company} logo`}
-              width="120"
-              height="40"
-              loading="lazy"
-            />
-          </div>
-          
-          <h4>{affiliate.company}</h4>
-          <p class="affiliate-description">{affiliate.description}</p>
-          
-          <ul class="affiliate-highlights">
-            {affiliate.highlights.map(highlight => (
-              <li>✓ {highlight}</li>
-            ))}
-          </ul>
-          
-          <div class="affiliate-cta">
-            {affiliate.cta}
-            <span class="cta-arrow">→</span>
-          </div>
-        </a>
-      ))}
-    </div>
-    
-    <p class="affiliate-disclaimer">
-      <small>
-        * We may earn a commission from partner links. This helps us keep CalcCrunch free. 
-        Our recommendations are unbiased and based on quality.
-      </small>
-    </p>
-  </div>
-)}
+  )
+}
 
 <style>
   .affiliate-box {
     margin: var(--space-3xl) 0;
     padding: var(--space-2xl);
-    background: linear-gradient(135deg, #FFF8DC 0%, var(--color-white) 100%);
+    background: linear-gradient(135deg, #fff8dc 0%, var(--color-white) 100%);
     border-radius: var(--border-radius-lg);
     border: 2px solid var(--color-warning);
   }

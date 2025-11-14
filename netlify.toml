@@ -1,3 +1,11 @@
+[[plugins]]
+  package = "@netlify/plugin-image-optim"
+
 [build]
   command = "npm run build"
   publish = "dist"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"

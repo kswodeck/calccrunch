@@ -1,6 +1,8 @@
 ---
+import { Image } from "astro:assets";
 import calculatorsData from "../data/calculators.json";
 import categoriesData from "../data/categories.json";
+import LogoHorizontal from "../../public/images/logos/logo-horizontal.svg";
 
 const totalCalculators = calculatorsData?.calculators?.length;
 const currentYear = new Date().getFullYear();
@@ -26,11 +28,12 @@ const footerLinks = {
     <div class="footer-content">
       <!-- Logo & Description -->
       <div class="footer-section footer-brand">
-        <img
-          src="/images/logos/logo-horizontal.svg"
+        <Image
+          src={LogoHorizontal}
           alt="CalcCrunch"
           class="footer-logo"
-          loading="lazy"
+          format="webp"
+          loading="eager"
         />
         <p class="footer-tagline">Crunch Your Numbers, Not Your Time</p>
         <p class="footer-description">
