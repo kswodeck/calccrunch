@@ -44,7 +44,7 @@ const canonicalURL = canonical || new URL(Astro.url.pathname, Astro.site).toStri
   <meta property="twitter:title" content={fullTitle}>
   <meta property="twitter:description" content={description}>
   <meta property="twitter:image" content={ogImage}>
-  
+
   <!-- Structured Data - Organization -->
   <script type="application/ld+json">
   {
@@ -62,6 +62,14 @@ const canonicalURL = canonical || new URL(Astro.url.pathname, Astro.site).toStri
   }
   import '../scripts/search.js';
   </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HD4P633GWP" is:inline></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HD4P633GWP');
+  </script>
 </head>
 <body>
   <Header />
@@ -72,14 +80,6 @@ const canonicalURL = canonical || new URL(Astro.url.pathname, Astro.site).toStri
   
   <Footer />
   
-  <!-- Google Analytics -->
-  <script async src=https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script is:inline>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
+<script async src=https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js is:inline></script>
 </body>
 </html>
