@@ -1,8 +1,7 @@
 // Contact Form Handler with EmailJS
-// EmailJS Configuration - Replace with your actual IDs after setup
-const EMAILJS_SERVICE_ID = 'service_4lr49ci'; // e.g., 'service_abc123'
-const EMAILJS_TEMPLATE_ID = 'template_u1dabor'; // e.g., 'template_xyz789'
-const EMAILJS_PUBLIC_KEY = '5BTJMoMuZEoOJVIXt'; // Your EmailJS public key
+const EMAILJS_SERVICE_ID = "service_4lr49ci"
+const EMAILJS_TEMPLATE_ID = "template_u1dabor";
+const EMAILJS_PUBLIC_KEY = "5BTJMoMuZEoOJVIXt";
 
 // Initialize EmailJS (add this script tag to your HTML: https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js)
 document.addEventListener('DOMContentLoaded', function() {

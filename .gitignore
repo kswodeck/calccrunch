@@ -5,20 +5,30 @@ dist/
 
 # dependencies
 node_modules/
+package-lock.json
 
 # logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn.lock*
 pnpm-debug.log*
-
+pnpm-lock.yaml
 
 # environment variables
 .env
+.env.local
 .env.production
+.env.production.local
+.env.development.local
 
 # macOS-specific files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 
 # jetbrains setting folder
 .idea/
@@ -26,4 +36,15 @@ pnpm-debug.log*
 # Local Netlify folder
 .netlify
 
-.vscode/
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+Thumbs.db
+*.local
+.cache/
