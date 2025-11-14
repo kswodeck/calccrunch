@@ -1,0 +1,317 @@
+---
+// EmailCapture component for capturing email addresses
+const { 
+  calculatorType = 'general',
+  headline = '📧 Save Your Results',
+  description = 'Get your calculation results sent to your email, plus exclusive tips and updates.',
+  buttonText = 'Email My Results',
+  showBenefits = true
+} = Astro.props;
+
+// Benefits to display
+const benefits = [
+  'Save and access your calculations anytime',
+  'Receive personalized recommendations',
+  'Get exclusive money-saving tips',
+  'Stay updated with new calculators'
+];
+---
+
+<div class="email-capture">
+  <div class="email-capture-content">
+    <div class="email-capture-header">
+      <h3>{headline}</h3>
+      <p class="email-capture-description">{description}</p>
+    </div>
+    
+    {showBenefits && (
+      <ul class="email-benefits">
+        {benefits.slice(0, 3).map(benefit => (
+          <li>✓ {benefit}</li>
+        ))}
+      </ul>
+    )}
+    
+    <!-- Email Form -->
+    <form 
+      class="email-form" 
+      action="https://calccrunch.us1.list-manage.com/subscribe/post" 
+      method="POST"
+      target="_blank"
+    >
+      <!-- Hidden fields for Mailchimp -->
+      <input type="hidden" name="u" value="YOUR_MAILCHIMP_USER_ID">
+      <input type="hidden" name="id" value="YOUR_MAILCHIMP_LIST_ID">
+      <input type="hidden" name="CALC_TYPE" value={calculatorType}>
+      
+      <!-- Honeypot for spam protection -->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true">
+        <input type="text" name="b_username" tabindex="-1" value="">
+      </div>
+      
+      <div class="form-group">
+        <input 
+          type="email" 
+          name="EMAIL" 
+          placeholder="your@email.com" 
+          required
+          class="email-input"
+          aria-label="Email address"
+        >
+        <button type="submit" class="btn btn-primary email-submit">
+          {buttonText} →
+        </button>
+      </div>
+      
+      <p class="email-privacy">
+        <small>
+          🔒 We respect your privacy. Unsubscribe anytime. 
+          <a href="/privacy">Privacy Policy</a>
+        </small>
+      </p>
+    </form>
+  </div>
+  
+  <div class="email-capture-visual">
+    <div class="email-icon">
+      📨
+    </div>
+    <div class="email-stats">
+      <div class="stat">
+        <strong>50,000+</strong>
+        <span>Subscribers</span>
+      </div>
+      <div class="stat">
+        <strong>4.8/5</strong>
+        <span>Rating</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .email-capture {
+    background: linear-gradient(135deg, var(--color-primary-blue) 0%, var(--color-light-blue) 100%);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-2xl);
+    margin: var(--space-3xl) 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-2xl);
+    align-items: center;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .email-capture::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  
+  .email-capture-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .email-capture-header h3 {
+    color: var(--color-white);
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-sm);
+  }
+  
+  .email-capture-description {
+    color: var(--color-white);
+    opacity: 0.95;
+    font-size: var(--text-base);
+    margin-bottom: var(--space-lg);
+  }
+  
+  .email-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-xl) 0;
+  }
+  
+  .email-benefits li {
+    color: var(--color-white);
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-sm);
+    padding-left: var(--space-md);
+    position: relative;
+  }
+  
+  .email-benefits li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: var(--color-success);
+  }
+  
+  .email-form {
+    max-width: 500px;
+  }
+  
+  .form-group {
+    display: flex;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+  }
+  
+  .email-input {
+    flex: 1;
+    padding: var(--space-md) var(--space-lg);
+    border: 2px solid transparent;
+    border-radius: var(--border-radius);
+    font-size: var(--text-base);
+    font-family: var(--font-body);
+    background: var(--color-white);
+    transition: border-color var(--transition-fast);
+  }
+  
+  .email-input:focus {
+    outline: none;
+    border-color: var(--color-accent-orange);
+  }
+  
+  .email-input::placeholder {
+    color: var(--color-gray-dark);
+    opacity: 0.6;
+  }
+  
+  .email-submit {
+    padding: var(--space-md) var(--space-xl);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  
+  .email-privacy {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .email-privacy small {
+    color: var(--color-white);
+    opacity: 0.8;
+    font-size: var(--text-xs);
+  }
+  
+  .email-privacy a {
+    color: var(--color-white);
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  
+  .email-capture-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xl);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .email-icon {
+    font-size: 5rem;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .email-stats {
+    display: flex;
+    gap: var(--space-xl);
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .stat strong {
+    display: block;
+    color: var(--color-white);
+    font-size: var(--text-2xl);
+    font-family: var(--font-primary);
+    margin-bottom: var(--space-xs);
+  }
+  
+  .stat span {
+    display: block;
+    color: var(--color-white);
+    opacity: 0.9;
+    font-size: var(--text-sm);
+  }
+  
+  @media (max-width: 968px) {
+    .email-capture {
+      grid-template-columns: 1fr;
+      padding: var(--space-xl);
+    }
+    
+    .email-capture-header h3 {
+      font-size: var(--text-2xl);
+    }
+    
+    .email-capture-visual {
+      flex-direction: row;
+      justify-content: center;
+    }
+    
+    .email-icon {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .form-group {
+      flex-direction: column;
+    }
+    
+    .email-submit {
+      width: 100%;
+    }
+    
+    .email-stats {
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
+</style>
+
+<script>
+  // Add success message handling
+  document.querySelectorAll('.email-form').forEach(form => {
+    form.addEventListener('submit', function(e) {
+      // Show loading state
+      const button = this.querySelector('.email-submit');
+      const originalText = button.textContent;
+      button.textContent = 'Sending...';
+      button.disabled = true;
+      
+      // Reset after 2 seconds (form will submit in new tab)
+      setTimeout(() => {
+        button.textContent = '✓ Check your email!';
+        setTimeout(() => {
+          button.textContent = originalText;
+          button.disabled = false;
+        }, 3000);
+      }, 2000);
+    });
+  });
+</script>

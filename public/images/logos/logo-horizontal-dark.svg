@@ -1,0 +1,24 @@
+<svg width="400" height="100" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Calculator Icon Background -->
+  <rect x="30" y="23" width="50" height="50" rx="8" fill="#2C5F8D"/>
+  
+  <!-- Calculator Display (top section) -->
+  <rect x="36" y="28" width="38" height="10" rx="2" fill="#fff"/>
+  
+  <!-- Calculator Buttons Grid (3x4 grid) -->
+  <!-- Row 1 -->
+  <rect x="36" y="44" width="10" height="10" rx="2" fill="#fff"/>
+  <rect x="50" y="44" width="10" height="10" rx="2" fill="#fff"/>
+  <rect x="64" y="44" width="10" height="10" rx="2" fill="#fff"/>
+  
+  <!-- Row 2 -->
+  <rect x="36" y="59" width="10" height="10" rx="2" fill="#fff"/>
+  <rect x="50" y="59" width="10" height="10" rx="2" fill="#fff"/>
+  <rect x="64" y="59" width="10" height="10" rx="2" fill="#fff"/>
+  
+  <!-- Text: Calc -->
+  <text x="90" y="65" font-family="Arial, sans-serif" font-size="48" font-weight="800" fill="#2C5F8D" letter-spacing="-1">Calc</text>
+  
+  <!-- Text: Crunch -->
+  <text x="215" y="65" font-family="Arial, sans-serif" font-size="48" font-weight="800" fill="#FF6B35" stroke-width="2" letter-spacing="-1">Crunch</text>
+</svg>

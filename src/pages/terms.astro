@@ -1,0 +1,518 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import EmailCapture from "../components/EmailCapture.astro";
+
+const breadcrumbItems = [
+  { label: "Home", href: "/" },
+  { label: "Terms of Service", href: null },
+];
+
+const sections = [
+  {
+    title: "1. Acceptance of Terms",
+    content: [
+      'By accessing and using CalcCrunch.com ("the Website"), you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our Website.',
+      "We reserve the right to update or modify these terms at any time without prior notice. Your continued use of the Website following any changes constitutes your acceptance of the new terms.",
+    ],
+  },
+  {
+    title: "2. Description of Service",
+    content: [
+      "CalcCrunch.com provides free online calculator tools for various purposes including financial planning, health metrics, home improvement, and general mathematical calculations.",
+      'All calculators are provided "as is" for informational and educational purposes only. We strive for accuracy but make no warranties about the completeness, reliability, or accuracy of the information provided.',
+    ],
+  },
+  {
+    title: "3. Use License",
+    content: [
+      "Permission is granted to temporarily access and use the calculators on CalcCrunch.com for personal, non-commercial use only.",
+      "This license does not include: (a) any resale or commercial use of the Website or its contents; (b) collection and use of any calculator formulas or algorithms; (c) any derivative use of the Website or its contents; (d) downloading or copying of calculator code for commercial purposes.",
+      "This license shall automatically terminate if you violate any of these restrictions and may be terminated by CalcCrunch.com at any time.",
+    ],
+  },
+  {
+    title: "4. Disclaimer of Warranties",
+    content: [
+      "The information and calculations provided on this Website are for general informational purposes only and should not be relied upon as professional advice.",
+      "We do not warrant that the Website will be uninterrupted, timely, secure, or error-free. We do not warrant that the results obtained from the use of any calculator will be accurate or reliable.",
+      "CalcCrunch.com specifically disclaims any liability for investment decisions, financial planning choices, health decisions, or any other actions taken based on the calculations or information provided.",
+    ],
+  },
+  {
+    title: "5. Limitations of Liability",
+    content: [
+      "In no event shall CalcCrunch.com, its owners, or its contributors be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of, or inability to use, the Website.",
+      "We shall not be liable for any loss or damage arising from your reliance on any information, calculations, or content provided on the Website.",
+      "Some jurisdictions do not allow the exclusion of certain warranties or limitations of liability, so some of these limitations may not apply to you.",
+    ],
+  },
+  {
+    title: "6. User Responsibilities",
+    content: [
+      "You agree to use the Website only for lawful purposes and in accordance with these Terms.",
+      "You agree not to: (a) use the Website in any way that violates any applicable federal, state, local, or international law; (b) attempt to interfere with or disrupt the Website or servers; (c) use any robot, spider, or other automatic device to access the Website; (d) introduce any viruses, trojan horses, or other material that is malicious or harmful.",
+      "You are responsible for verifying any calculations or information with qualified professionals before making important decisions.",
+    ],
+  },
+  {
+    title: "7. Privacy Policy",
+    content: [
+      "Your use of CalcCrunch.com is also governed by our Privacy Policy. Please review our Privacy Policy, which explains how we collect, use, and protect your information.",
+      "We do not store calculation data or personal information unless explicitly provided through contact forms. All calculations are performed client-side in your browser.",
+    ],
+  },
+  {
+    title: "8. Third-Party Links",
+    content: [
+      "The Website may contain links to third-party websites or services that are not owned or controlled by CalcCrunch.com.",
+      "We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services.",
+      "You acknowledge and agree that CalcCrunch.com shall not be responsible for any damage or loss caused by your use of any third-party content.",
+    ],
+  },
+  {
+    title: "9. Intellectual Property",
+    content: [
+      "The Website and its original content, features, and functionality are owned by CalcCrunch.com and are protected by international copyright, trademark, and other intellectual property laws.",
+      "Our calculators use standard mathematical formulas that are in the public domain. However, the specific implementation, design, and user interface are proprietary to CalcCrunch.com.",
+    ],
+  },
+  {
+    title: "10. Termination",
+    content: [
+      "We may terminate or suspend your access to the Website immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.",
+      "Upon termination, your right to use the Website will immediately cease.",
+    ],
+  },
+  {
+    title: "11. Governing Law",
+    content: [
+      "These Terms shall be governed by and construed in accordance with the laws of the United States, without regard to its conflict of law provisions.",
+      "Any disputes arising from these Terms or your use of the Website shall be resolved in the appropriate courts of the United States.",
+    ],
+  },
+  {
+    title: "12. Contact Information",
+    content: [
+      "If you have any questions about these Terms of Service, please contact us at:",
+      'Email: <a href="mailto:info@calccrunch.com">info@calccrunch.com</a>',
+      'Website: <a href="/contact">https://calccrunch.com/contact</a>',
+    ],
+  },
+];
+
+const quickLinks = [
+  { text: "Privacy Policy", href: "/privacy" },
+  { text: "Contact Us", href: "/contact" },
+  { text: "FAQ", href: "/faq" },
+  { text: "About Us", href: "/about" },
+];
+---
+
+<BaseLayout
+  title="Terms of Service - CalcCrunch.com"
+  description="Read CalcCrunch.com's Terms of Service. Learn about our usage policies, disclaimers, and user responsibilities for our free calculator tools."
+  keywords="terms of service, terms and conditions, usage policy, calculator terms, legal"
+>
+  <div class="terms-page">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbItems} />
+    </div>
+
+    <!-- Hero Section -->
+    <section class="terms-hero bg-gradient">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="text-white">Terms of Service</h1>
+          <p class="hero-tagline text-white">
+            Please Read These Terms Carefully Before Using Our Service
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="terms-content">
+      <div class="container">
+        <div class="content-wrapper">
+          <!-- Table of Contents -->
+          <aside class="toc-sidebar">
+            <div class="toc-wrapper">
+              <h3>Table of Contents</h3>
+              <nav class="toc-nav">
+                {
+                  sections.map((section, index) => (
+                    <a href={`#section-${index + 1}`} class="toc-link">
+                      {section.title}
+                    </a>
+                  ))
+                }
+              </nav>
+
+              <div class="quick-links">
+                <h4>Related Pages</h4>
+                {
+                  quickLinks.map((link) => (
+                    <a href={link.href} class="quick-link">
+                      {link.text} →
+                    </a>
+                  ))
+                }
+              </div>
+            </div>
+          </aside>
+
+          <!-- Terms Content -->
+          <div class="terms-main">
+            <div class="intro-box">
+              <p>
+                Welcome to CalcCrunch.com! These Terms of Service ("Terms")
+                govern your use of our website and calculator tools. By using
+                our services, you agree to comply with and be bound by these
+                Terms.
+              </p>
+            </div>
+
+            {
+              sections?.map((section, index) => (
+                <section id={`section-${index + 1}`} class="terms-section">
+                  <h2>{section.title}</h2>
+                  <div class="section-content">
+                    {section?.content?.map((paragraph) => (
+                      <p
+                        set:html={paragraph?.replace(
+                          /\*\*(.*?)\*\*/g,
+                          "<strong>$1</strong>"
+                        )}
+                      />
+                    ))}
+                  </div>
+                </section>
+              ))
+            }
+
+            <div class="agreement-notice">
+              <h3>Your Agreement</h3>
+              <p>
+                By using CalcCrunch.com, you acknowledge that you have read,
+                understood, and agree to be bound by these Terms of Service. If
+                you do not agree with any part of these terms, please
+                discontinue use of our website immediately.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta bg-light">
+      <div class="container">
+        <div class="cta-content text-center">
+          <h2>Have Questions About Our Terms?</h2>
+          <p>
+            If you need clarification about any part of our Terms of Service,
+            we're here to help.
+          </p>
+          <a href="/contact" class="btn btn-primary btn-lg"> Contact Us </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email Capture -->
+    <!-- <EmailCapture /> -->
+  </div>
+</BaseLayout>
+
+<style>
+  /* Terms Page Base */
+  .terms-page {
+    background: var(--color-white);
+  }
+
+  /* Hero Section */
+  .terms-hero {
+    padding: var(--space-3xl) 0;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: var(--text-5xl);
+    font-weight: 800;
+    margin-bottom: var(--space-md);
+  }
+
+  .hero-tagline {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-xl);
+    opacity: 0.95;
+  }
+
+  /* Content Layout */
+  .terms-content {
+    padding: var(--space-3xl) 0;
+  }
+
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: var(--space-3xl);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Table of Contents Sidebar */
+  .toc-sidebar {
+    position: sticky;
+    top: var(--space-xl);
+    height: fit-content;
+  }
+
+  .toc-wrapper {
+    background: var(--color-gray-light);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-xl);
+  }
+
+  .toc-wrapper h3 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-lg);
+  }
+
+  .toc-nav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .toc-link {
+    color: var(--color-gray-dark);
+    text-decoration: none;
+    padding: var(--space-xs) var(--space-sm);
+    border-left: 3px solid transparent;
+    transition: all var(--transition-fast);
+    font-size: var(--text-sm);
+  }
+
+  .toc-link:hover {
+    color: var(--color-accent-orange);
+    border-left-color: var(--color-accent-orange);
+    background: var(--color-white);
+    padding-left: var(--space-md);
+  }
+
+  /* Quick Links */
+  .quick-links {
+    margin-top: var(--space-2xl);
+    padding-top: var(--space-xl);
+    border-top: 2px solid var(--color-gray);
+  }
+
+  .quick-links h4 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-base);
+    margin-bottom: var(--space-md);
+  }
+
+  .quick-link {
+    display: block;
+    color: var(--color-accent-orange);
+    text-decoration: none;
+    padding: var(--space-xs) 0;
+    font-size: var(--text-sm);
+    transition: color var(--transition-fast);
+  }
+
+  .quick-link:hover {
+    color: var(--color-accent-orange-dark);
+  }
+
+  /* Main Content */
+  .terms-main {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-2xl);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .intro-box {
+    background: var(--color-lighter-blue);
+    padding: var(--space-xl);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--space-2xl);
+    border-left: 4px solid var(--color-primary-blue);
+  }
+
+  .intro-box p {
+    color: var(--color-gray-dark);
+    font-size: var(--text-lg);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .terms-section {
+    margin-bottom: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+    border-bottom: 2px solid var(--color-gray-light);
+    scroll-margin-top: var(--space-xl);
+  }
+
+  .terms-section:last-of-type {
+    border-bottom: none;
+  }
+
+  .terms-section h2 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-lg);
+    font-weight: 700;
+  }
+
+  .terms-section p,
+  .terms-section span {
+    color: var(--color-gray-dark);
+    line-height: 1.8;
+    margin-bottom: var(--space-md);
+  }
+
+  .terms-section p:last-child,
+  .terms-section span:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Agreement Notice */
+  .agreement-notice {
+    background: linear-gradient(135deg, #fff8dc 0%, var(--color-white) 100%);
+    border: 2px solid var(--color-warning);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-2xl);
+    margin-top: var(--space-3xl);
+  }
+
+  .agreement-notice h3 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-lg);
+  }
+
+  .agreement-notice p {
+    color: var(--color-gray-dark);
+    line-height: 1.7;
+    margin-bottom: var(--space-md);
+  }
+
+  .notice-date {
+    font-style: italic;
+    color: var(--color-gray-dark);
+    opacity: 0.8;
+    margin-top: var(--space-lg);
+  }
+
+  /* Contact CTA */
+  .contact-cta {
+    padding: var(--space-3xl) 0;
+    margin-top: var(--space-3xl);
+  }
+
+  .cta-content h2 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-md);
+  }
+
+  .cta-content p {
+    color: var(--color-gray-dark);
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-xl);
+  }
+
+  .btn-lg {
+    padding: var(--space-md) var(--space-2xl);
+    font-size: var(--text-lg);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .content-wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    .toc-sidebar {
+      position: static;
+      order: 2;
+    }
+
+    .terms-main {
+      order: 1;
+    }
+
+    .toc-wrapper {
+      margin-top: var(--space-2xl);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .terms-hero h1 {
+      font-size: var(--text-4xl);
+    }
+
+    .hero-meta {
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+
+    .terms-main {
+      padding: var(--space-lg);
+    }
+
+    .terms-section h2 {
+      font-size: var(--text-xl);
+    }
+
+    .cta-content h2 {
+      font-size: var(--text-2xl);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .terms-hero h1 {
+      font-size: var(--text-3xl);
+    }
+
+    .terms-main {
+      padding: var(--space-md);
+    }
+
+    .intro-box {
+      padding: var(--space-md);
+    }
+
+    .agreement-notice {
+      padding: var(--space-lg);
+    }
+  }
+
+  /* Print Styles */
+  @media print {
+    .toc-sidebar,
+    .contact-cta {
+      display: none;
+    }
+
+    .terms-hero {
+      background: none;
+      color: var(--color-black);
+    }
+
+    .hero-content h1,
+    .hero-tagline {
+      color: var(--color-black);
+    }
+
+    .terms-main {
+      box-shadow: none;
+      padding: 0;
+    }
+  }
+</style>

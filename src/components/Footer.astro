@@ -1,0 +1,216 @@
+---
+import calculatorsData from "../data/calculators.json";
+import categoriesData from "../data/categories.json";
+
+const totalCalculators = calculatorsData?.calculators?.length;
+const currentYear = new Date().getFullYear();
+
+const footerLinks = {
+  company: [
+    { name: "About Us", href: "/about" },
+    { name: "Contact", href: "/contact" },
+    { name: "Privacy Policy", href: "/privacy" },
+    { name: "Terms of Service", href: "/terms" },
+  ],
+  resources: [
+    // { name: "Blog", href: "/blog" },
+    // { name: "How to Use", href: "/how-to-use" },
+    { name: "FAQ", href: "/faq" },
+    { name: "Sitemap", href: "/sitemap-index.xml" },
+  ],
+};
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <!-- Logo & Description -->
+      <div class="footer-section footer-brand">
+        <img
+          src="/images/logos/logo-horizontal.svg"
+          alt="CalcCrunch"
+          class="footer-logo"
+          loading="lazy"
+        />
+        <p class="footer-tagline">Crunch Your Numbers, Not Your Time</p>
+        <p class="footer-description">
+          Free online calculators for financial planning, health tracking, home
+          projects, and everyday decisions.
+        </p>
+      </div>
+
+      <!-- Calculators Links -->
+      <div class="footer-section">
+        <h4>Calculators</h4>
+        <ul class="footer-links">
+          {
+            categoriesData.categories
+              ?.filter((cat) => cat?.featured && cat.calculatorCount)
+              ?.sort((a, b) => a.calculatorCount - b.calculatorCount)
+              ?.slice(0, 3)
+              ?.map((cat) =>
+                cat?.calculatorCount >= 1 ? (
+                  <li>
+                    <a href={`/categories/${cat.slug}`}>{cat.name}</a>
+                  </li>
+                ) : (
+                  ""
+                )
+              )
+          }
+          <li>
+            <a href="/calculators">All Calculators ({totalCalculators})</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Company Links -->
+      {
+        footerLinks?.company?.length ? (
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul class="footer-links">
+              {footerLinks?.company?.map((link) => (
+                <li>
+                  <a href={link.href}>{link.name}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          ""
+        )
+      }
+
+      <!-- Resources Links -->
+      {
+        footerLinks?.resources?.length ? (
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul class="footer-links">
+              {footerLinks?.resources?.map((link) => (
+                <li>
+                  <a href={link.href}>{link.name}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          ""
+        )
+      }
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p class="copyright">
+        © {currentYear} CalcCrunch. All rights reserved.
+      </p>
+      <p class="disclaimer">
+        Calculators provided for informational purposes only. Consult
+        professionals for financial, medical, or legal advice.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--color-primary-blue);
+    color: var(--color-white);
+    padding: var(--space-3xl) 0 var(--space-xl);
+    margin-top: var(--space-3xl);
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--space-2xl);
+    margin-bottom: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .footer-brand {
+    max-width: 350px;
+  }
+
+  .footer-logo {
+    height: 50px;
+    width: auto;
+    margin-bottom: var(--space-md);
+  }
+
+  .footer-tagline {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-md);
+  }
+
+  .footer-description {
+    opacity: 0.8;
+    line-height: 1.6;
+  }
+
+  .footer-section h4 {
+    color: var(--color-white);
+    font-family: var(--font-primary);
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-md);
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-links li {
+    margin-bottom: var(--space-sm);
+  }
+
+  .footer-links a {
+    color: var(--color-white);
+    opacity: 0.8;
+    transition: opacity var(--transition-fast);
+  }
+
+  .footer-links a:hover {
+    opacity: 1;
+    color: var(--color-accent-orange);
+  }
+
+  .footer-bottom {
+    text-align: center;
+    opacity: 0.7;
+  }
+
+  .copyright {
+    margin-bottom: var(--space-sm);
+    font-weight: 600;
+  }
+
+  .disclaimer {
+    font-size: var(--text-sm);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 968px) {
+    .footer-content {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-brand {
+      grid-column: 1 / -1;
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

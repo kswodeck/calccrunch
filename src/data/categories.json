@@ -1,0 +1,196 @@
+{
+  "categories": [
+    {
+      "id": "financial",
+      "name": "Financial",
+      "nameShort": "Financial",
+      "slug": "financial",
+      "description": "Make smarter money decisions with our comprehensive suite of financial calculators. From mortgages and loans to investments and retirement planning.",
+      "longDescription": "Our financial calculators help you make informed decisions about loans, mortgages, investments, retirement, and budgeting. Whether you're buying a home, planning for retirement, or managing debt, our tools provide instant, accurate calculations.",
+      "icon": "💰",
+      "color": "#D4B300",
+      "order": 1,
+      "featured": true,
+      "calculatorCount": 4,
+      "seoTitle": "Financial Calculators - Free Mortgage, Loan & Investment Tools",
+      "seoDescription": "Free financial calculators for mortgages, loans, investments, retirement planning, and budgeting. Fast, accurate, and easy to use.",
+      "keywords": [
+        "financial calculator",
+        "mortgage calculator",
+        "loan calculator",
+        "investment calculator",
+        "retirement calculator"
+      ]
+    },
+    {
+      "id": "health-fitness",
+      "name": "Health & Fitness",
+      "nameShort": "Health",
+      "slug": "health-fitness",
+      "description": "Track your wellness journey with BMI, calorie, macro, and fitness planning calculators designed to support your health goals.",
+      "longDescription": "Our health and fitness calculators help you track your progress, plan your nutrition, and achieve your wellness goals. Calculate BMI, daily calories, macros, ideal weight, and more with our evidence-based tools.",
+      "icon": "❤️",
+      "color": "#EF5350",
+      "order": 2,
+      "featured": true,
+      "calculatorCount": 2,
+      "seoTitle": "Health & Fitness Calculators - BMI, Calorie & Macro Tools",
+      "seoDescription": "Free health and fitness calculators including BMI, calorie needs, macro tracking, and more. Achieve your wellness goals with accurate calculations.",
+      "keywords": [
+        "health calculator",
+        "fitness calculator",
+        "BMI calculator",
+        "calorie calculator",
+        "macro calculator"
+      ]
+    },
+    {
+      "id": "home-real-estate",
+      "name": "Home & Real Estate",
+      "nameShort": "Real Estate",
+      "slug": "home-real-estate",
+      "description": "Plan your home purchase or renovation with calculators for affordability, renovations, and DIY projects.",
+      "longDescription": "Whether you're buying your first home, refinancing, or planning a renovation, our home and real estate calculators provide the insights you need. Calculate mortgage affordability, paint coverage, flooring needs, and more.",
+      "icon": "🏠",
+      "color": "#FF6B35",
+      "order": 3,
+      "featured": true,
+      "calculatorCount": 2,
+      "seoTitle": "Home & Real Estate Calculators - Mortgage & Renovation Tools",
+      "seoDescription": "Free home and real estate calculators for mortgage affordability, home improvements, and DIY projects. Plan your home purchase or renovation.",
+      "keywords": [
+        "home calculator",
+        "real estate calculator",
+        "mortgage affordability",
+        "home improvement calculator",
+        "home affordability calculator"
+      ]
+    },
+    {
+      "id": "time-date",
+      "name": "Time & Date",
+      "slug": "time-date",
+      "description": "Calculate age, date differences, time zones, and more with our comprehensive time and date tools.",
+      "longDescription": "Our time and date calculators help you work with dates, times, and schedules. Calculate age, find date differences, convert time zones, count business days, and plan across time zones.",
+      "icon": "🕐",
+      "color": "#5A9FD4",
+      "order": 4,
+      "featured": false,
+      "calculatorCount": 1,
+      "seoTitle": "Time & Date Calculators - Age, Date Difference & Time Zone Tools",
+      "seoDescription": "Free time and date calculators including age calculator, date difference, time zone converter, and more. Simple and accurate.",
+      "keywords": [
+        "date calculator",
+        "age calculator",
+        "time calculator",
+        "time zone converter",
+        "date difference calculator"
+      ]
+    },
+    {
+      "id": "math-conversions",
+      "name": "Math & Conversions",
+      "slug": "math-conversions",
+      "description": "Convert units, calculate percentages, and solve mathematical problems with our comprehensive math tools.",
+      "longDescription": "From unit conversions to mathematical calculations, our tools make complex math simple. Convert lengths, weights, temperatures, calculate percentages, GPA, and more.",
+      "icon": "🔢",
+      "color": "#9C27B0",
+      "order": 5,
+      "featured": false,
+      "calculatorCount": 1,
+      "seoTitle": "Math & Conversion Calculators - Unit Converter & Math Tools",
+      "seoDescription": "Free math calculators and unit converters. Calculate percentages, convert units, find GPA, and solve math problems instantly.",
+      "keywords": [
+        "math calculator",
+        "unit converter",
+        "conversion calculator",
+        "percentage calculator",
+        "GPA calculator"
+      ]
+    },
+    {
+      "id": "generators",
+      "name": "Name & Idea Generators",
+      "nameShort": "Generators",
+      "slug": "generators",
+      "description": "Generate creative names, ideas, and content with our collection of random generators for businesses, characters, usernames, and more.",
+      "longDescription": "Our generators help spark creativity and solve naming challenges. Whether you need a business name, username, character name, team name, or creative writing prompts, our tools provide instant inspiration with customizable options for any project.",
+      "icon": "✨",
+      "color": "#FF4081",
+      "order": 6,
+      "featured": false,
+      "calculatorCount": 0,
+      "seoTitle": "Name Generators & Idea Tools - Business, Username & Creative Generators",
+      "seoDescription": "Free name generators for businesses, usernames, characters, teams, and more. Get creative ideas and unique names instantly with our generator tools.",
+      "keywords": [
+        "name generator",
+        "business name generator",
+        "username generator",
+        "random name generator",
+        "idea generator",
+        "creative generator",
+        "character name generator",
+        "team name generator"
+      ]
+    },
+    {
+      "id": "food-cooking",
+      "name": "Food & Cooking",
+      "slug": "food-cooking",
+      "description": "Scale recipes, convert measurements, and calculate cooking times with our culinary calculators.",
+      "longDescription": "Our food and cooking calculators help you in the kitchen. Scale recipes, convert measurements, calculate cooking times, and plan meals with ease.",
+      "icon": "🍳",
+      "color": "#FF9800",
+      "order": 7,
+      "featured": false,
+      "calculatorCount": 0,
+      "seoTitle": "Food & Cooking Calculators - Recipe Scaler & Conversion Tools",
+      "seoDescription": "Free cooking calculators including recipe scalers, measurement converters, and cooking time calculators. Perfect for home chefs.",
+      "keywords": [
+        "recipe calculator",
+        "cooking calculator",
+        "recipe scaler",
+        "measurement converter"
+      ]
+    },
+    {
+      "id": "business-sales",
+      "name": "Business & Sales",
+      "slug": "business-sales",
+      "description": "Calculate profit margins, ROI, break-even points, and pricing with our business tools.",
+      "longDescription": "Our business calculators help entrepreneurs and professionals make data-driven decisions. Calculate profit margins, ROI, break-even points, sales commissions, and more.",
+      "icon": "💼",
+      "color": "#4CAF50",
+      "order": 8,
+      "featured": false,
+      "calculatorCount": 0,
+      "seoTitle": "Business & Sales Calculators - Profit, ROI & Pricing Tools",
+      "seoDescription": "Free business calculators for profit margins, ROI, break-even analysis, and pricing. Make smarter business decisions.",
+      "keywords": [
+        "business calculator",
+        "profit calculator",
+        "ROI calculator",
+        "break even calculator"
+      ]
+    },
+    {
+      "id": "miscellaneous",
+      "name": "Miscellaneous",
+      "slug": "miscellaneous",
+      "description": "Various useful calculators and tools for everyday tasks and decisions.",
+      "longDescription": "A collection of useful calculators that don't fit into specific categories but are still valuable for everyday tasks and decisions.",
+      "icon": "🔧",
+      "color": "#78909C",
+      "order": 9,
+      "featured": false,
+      "calculatorCount": 0,
+      "seoTitle": "Miscellaneous Calculators - Various Useful Tools",
+      "seoDescription": "Free miscellaneous calculators for various everyday tasks and calculations. Useful tools for any situation.",
+      "keywords": [
+        "calculator tools",
+        "miscellaneous calculator",
+        "utility calculator"
+      ]
+    }
+  ]
+}

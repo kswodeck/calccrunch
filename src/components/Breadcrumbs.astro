@@ -1,0 +1,121 @@
+---
+// Breadcrumbs component for navigation
+const { items = [] } = Astro.props;
+
+// If no items provided, generate from current URL
+let breadcrumbItems = items;
+
+if (breadcrumbItems.length === 0) {
+  const pathParts = Astro.url.pathname.split('/').filter(part => part !== '');
+  
+  breadcrumbItems = [
+    { label: 'Home', href: '/' }
+  ];
+  
+  let currentPath = '';
+  pathParts.forEach((part, index) => {
+    currentPath += `/${part}`;
+    
+    // Format label (capitalize and replace hyphens)
+    const label = part
+      .split('-')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+    
+    // Last item is current page (no link)
+    const isLast = index === pathParts.length - 1;
+    
+    breadcrumbItems.push({
+      label: label,
+      href: isLast ? null : currentPath
+    });
+  });
+}
+---
+
+{breadcrumbItems.length > 1 && (
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      {breadcrumbItems.map((item, index) => (
+        <li 
+          class="breadcrumb-item" 
+          itemprop="itemListElement" 
+          itemscope 
+          itemtype="https://schema.org/ListItem"
+        >
+          {item.href ? (
+            <a href={item.href} itemprop="item">
+              <span itemprop="name">{item.label}</span>
+            </a>
+          ) : (
+            <span itemprop="name" class="current">{item.label}</span>
+          )}
+          <meta itemprop="position" content={String(index + 1)} />
+        </li>
+      ))}
+    </ol>
+  </nav>
+)}
+
+<style>
+  .breadcrumbs {
+    padding: var(--space-lg) 0;
+    margin-bottom: var(--space-lg);
+  }
+  
+  .breadcrumb-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: var(--space-sm);
+  }
+  
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+    font-size: var(--text-sm);
+    color: var(--color-gray-dark);
+  }
+  
+  .breadcrumb-item:not(:last-child)::after {
+    content: '›';
+    margin-left: var(--space-sm);
+    color: var(--color-gray-dark);
+    opacity: 0.5;
+    font-size: var(--text-lg);
+  }
+  
+  .breadcrumb-item a {
+    color: var(--color-primary-blue);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+  }
+  
+  .breadcrumb-item a:hover {
+    color: var(--color-accent-orange);
+    text-decoration: underline;
+  }
+  
+  .breadcrumb-item .current {
+    color: var(--color-gray-dark);
+    font-weight: 600;
+  }
+  
+  @media (max-width: 640px) {
+    .breadcrumbs {
+      padding: var(--space-md) 0;
+      margin-bottom: var(--space-md);
+    }
+    
+    .breadcrumb-item {
+      font-size: var(--text-xs);
+    }
+    
+    .breadcrumb-item:not(:last-child)::after {
+      font-size: var(--text-base);
+    }
+  }
+</style>

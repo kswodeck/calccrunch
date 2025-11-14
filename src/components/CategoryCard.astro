@@ -1,0 +1,135 @@
+---
+const { 
+  title, 
+  description, 
+  icon, 
+  slug, 
+  calculatorCount,
+  color = '#2C5F8D' // Default color if not provided
+} = Astro.props;
+---
+
+<a href={`/categories/${slug}`} class="category-card" style={`--category-color: ${color}`}>
+  <div class="card-icon">{icon}</div>
+  <div class="card-content">
+    <h3>{title}</h3>
+    <p>{description}</p>
+    <div class="card-footer">
+      <span class="calculator-count">
+        {calculatorCount} calculator{calculatorCount !== 1 ? 's' : ''}
+      </span>
+      <span class="card-arrow">→</span>
+    </div>
+  </div>
+</a>
+
+<style>
+  .category-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-2xl);
+    text-decoration: none;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-md);
+    border: 2px solid var(--color-gray);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Color accent on hover */
+  .category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--category-color);
+    transform: scaleY(0);
+    transition: transform var(--transition-base);
+  }
+
+  .category-card:hover::before {
+    transform: scaleY(1);
+  }
+
+  .category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--category-color);
+  }
+
+  .card-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-lg);
+    transition: transform var(--transition-base);
+  }
+
+  .category-card:hover .card-icon {
+    transform: scale(1.1);
+  }
+
+  .card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-content h3 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-md);
+    font-family: var(--font-primary);
+  }
+
+  .card-content p {
+    color: var(--color-gray-dark);
+    line-height: 1.6;
+    margin-bottom: var(--space-lg);
+    flex: 1;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--space-md);
+    border-top: 2px solid var(--color-gray);
+  }
+
+  .calculator-count {
+    color: var(--category-color);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .card-arrow {
+    color: var(--category-color);
+    font-size: var(--text-xl);
+    font-weight: 700;
+    transition: transform var(--transition-fast);
+  }
+
+  .category-card:hover .card-arrow {
+    transform: translateX(4px);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .category-card {
+      padding: var(--space-xl);
+    }
+
+    .card-icon {
+      font-size: 2.5rem;
+    }
+
+    .card-content h3 {
+      font-size: var(--text-xl);
+    }
+  }
+</style>

@@ -1,0 +1,147 @@
+---
+import SearchBar from "./SearchBar.astro";
+import calculatorsData from "../data/calculators.json";
+import categoriesData from "../data/categories.json";
+
+const totalCalculators = calculatorsData?.calculators?.length;
+---
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav-wrapper">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="/" aria-label="CalcCrunch Home">
+          <img
+            src="/images/logos/logo-horizontal-dark.svg"
+            alt="CalcCrunch Logo"
+            width="200"
+            height="60"
+          />
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <ul class="nav-menu">
+        {
+          categoriesData?.categories?.map((cat) =>
+            cat?.calculatorCount >= 2 ? (
+              <li class="nav-item">
+                <a href={`/categories/${cat?.slug}`} class="nav-link">
+                  {cat?.nameShort || cat?.name}
+                </a>
+              </li>
+            ) : (
+              ""
+            )
+          )
+        }
+        <li class="nav-item">
+          <a href="/calculators" class="nav-link">All Calculators</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a href="/about" class="nav-link">About</a>
+        </li> -->
+      </ul>
+
+      <!-- Search -->
+      <div class="header-search">
+        <SearchBar placeholder="Search calculators..." />
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    background: var(--color-white);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: var(--space-md) 0;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-xl);
+  }
+
+  .logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+  }
+
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: var(--space-lg);
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-link {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    color: var(--color-primary-blue);
+    font-size: var(--text-base);
+    transition: color var(--transition-fast);
+  }
+
+  .nav-link:hover {
+    color: var(--color-accent-orange);
+  }
+
+  .header-search {
+    flex: 1;
+    max-width: 400px;
+  }
+
+  .mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-sm);
+  }
+
+  .mobile-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--color-primary-blue);
+    border-radius: 3px;
+    transition: all var(--transition-base);
+  }
+
+  @media (max-width: 968px) {
+    .nav-menu {
+      display: none;
+    }
+
+    .header-search {
+      max-width: 250px;
+    }
+
+    .mobile-menu-toggle {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .header-search {
+      display: none;
+    }
+  }
+</style>

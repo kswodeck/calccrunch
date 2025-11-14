@@ -1,0 +1,461 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CategoryCard from "../components/CategoryCard.astro";
+import CalculatorCard from "../components/CalculatorCard.astro";
+import AdUnit from "../components/AdUnit.astro";
+import EmailCapture from "../components/EmailCapture.astro";
+
+// Import JSON data
+import categoriesData from "../data/categories.json";
+import calculatorsData from "../data/calculators.json";
+import Image from "astro/components/Image.astro";
+
+// Calculate actual counts from data
+const totalCalculators = calculatorsData.calculators.length;
+const totalCategories = categoriesData?.categories?.filter(
+  (c) => c?.calculatorCount
+)?.length;
+
+// Get featured categories from JSON
+const categories = categoriesData.categories
+  .filter((cat) => cat.featured)
+  .sort((a, b) => b.calculatorCount - a.calculatorCount)
+  .slice(0, 6); // Top 6 featured categories
+
+// Get featured calculators from JSON
+const featuredCalculators = calculatorsData.calculators
+  .filter((calc) => calc.featured || calc.popular)
+  .sort((a, b) => b.uses - a.uses)
+  .slice(0, 8); // Top 8 calculators
+
+// Helper function to get category name
+function getCategoryName(categoryId) {
+  const category = categoriesData.categories.find(
+    (cat) => cat.id === categoryId
+  );
+  return category ? category.name : categoryId;
+}
+---
+
+<BaseLayout
+  title="CalcCrunch - Free Online Calculators for Everyday Needs"
+  description="Access {totalCalculators}+ free online calculators for financial planning, health tracking, home projects, and more. No registration required, always free."
+  keywords="free calculator, online calculator, mortgage calculator, BMI calculator, loan calculator"
+>
+  <!-- Hero Section -->
+  <section class="hero bg-gradient">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="text-white">Free Online Calculators for Everything</h1>
+          <p class="hero-subtitle text-white">
+            {totalCalculators}+ calculators across {totalCategories}+ different
+            categories. No registration, no fees, always free.
+          </p>
+
+          <!-- Search Bar -->
+
+          <!-- Hero Stats -->
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>{totalCalculators}+</strong>
+              <span>Free Calculators</span>
+            </div>
+            <div class="stat d-none">
+              <strong>500K+</strong>
+              <span>Monthly Users</span>
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              <span>Free Forever</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <Image
+            src="/images/heroes/hero-home.png"
+            alt="CalcCrunch Calculators"
+            width="420"
+            height="350"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Browse by Category</h2>
+        <p>Find the perfect calculator for your needs</p>
+      </div>
+
+      <div class="categories-grid">
+        {
+          categories?.map((category) => (
+            <CategoryCard
+              title={category.name}
+              description={category.description}
+              icon={category.icon}
+              slug={category.slug}
+              calculatorCount={category.calculatorCount}
+              color={category.color}
+            />
+          ))
+        }
+      </div>
+
+      <div class="text-center" style="margin-top: var(--space-3xl);">
+        <a href="/calculators" class="btn btn-secondary">
+          View All Categories →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Ad Unit -->
+  <!-- <AdUnit slot="home-top" format="horizontal" /> -->
+
+  <!-- Featured Calculators Section -->
+  <section class="featured-calculators bg-light">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Featured Calculators</h2>
+        <p>Most beloved by our community</p>
+      </div>
+
+      <div class="calculators-grid">
+        {
+          featuredCalculators?.map((calc) => (
+            <CalculatorCard
+              title={calc.title}
+              description={calc.shortDescription}
+              category={getCategoryName(calc.category)}
+              slug={calc.slug}
+              popular={calc.popular}
+              icon={calc.icon}
+            />
+          ))
+        }
+      </div>
+
+      <div class="text-center" style="margin-top: var(--space-3xl);">
+        <a href="/calculators" class="btn btn-primary">
+          Browse All Calculators →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose-us">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Why CalcCrunch?</h2>
+        <p>The best calculator platform for your needs</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🆓</div>
+          <h3>100% Free</h3>
+          <p>
+            All {totalCalculators}+ calculators are completely free. No hidden
+            fees, no subscriptions, no credit card required. Ever.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Privacy First</h3>
+          <p>
+            Your calculations stay private. We don't store your data, track your
+            activity, or sell your information. Period.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Lightning Fast</h3>
+          <p>
+            Instant results with no loading screens. All calculations happen
+            right in your browser for maximum speed.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Mobile Friendly</h3>
+          <p>
+            Use any calculator on any device. Fully responsive design that works
+            perfectly on phones, tablets, and desktops.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">✅</div>
+          <h3>No Registration</h3>
+          <p>
+            Jump straight to calculating. No sign-ups, no accounts, no email
+            required. Just visit and calculate.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Always Accurate</h3>
+          <p>
+            All calculators use proven formulas and are thoroughly tested. We
+            show you exactly how results are calculated.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Ad Unit -->
+  <!-- <AdUnit slot="home-bottom" format="rectangle" /> -->
+
+  <!-- Email Capture -->
+  <!-- <EmailCapture
+    calculatorType="general"
+    headline="📬 Get Calculator Updates"
+    description="Be the first to know when we add new calculators and features. Join our community of smart decision-makers."
+  /> -->
+
+  <!-- CTA Section -->
+  <section class="cta-section bg-gradient">
+    <div class="container text-center">
+      <h2 class="text-white">Ready to Start Calculating?</h2>
+      <p class="text-white" style="margin-bottom: var(--space-3xl);">
+        Join 500,000+ people who use CalcCrunch every month for accurate, free
+        calculations.
+      </p>
+      <a href="/calculators" class="btn btn-secondary btn-lg">
+        Explore All Calculators
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    padding: var(--space-3xl) 0;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: var(--text-5xl);
+    margin-bottom: var(--space-lg);
+    line-height: 1.1;
+    color: var(--color-white);
+  }
+
+  .hero-subtitle {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-2xl);
+    opacity: 0.95;
+    line-height: 1.6;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: var(--space-3xl);
+    margin-top: var(--space-2xl);
+  }
+
+  .hero-stats .stat {
+    text-align: center;
+  }
+
+  .hero-stats .stat strong {
+    display: block;
+    font-size: var(--text-3xl);
+    color: var(--color-white);
+    font-family: var(--font-primary);
+    font-weight: 800;
+    margin-bottom: var(--space-xs);
+  }
+
+  .hero-stats .stat span {
+    display: block;
+    color: var(--color-white);
+    opacity: 0.9;
+    font-weight: 600;
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+  }
+
+  /* Categories Section */
+  .categories-section {
+    padding: var(--space-3xl) 0;
+  }
+
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+  }
+
+  /* Featured Calculators Section */
+  .featured-calculators {
+    padding: var(--space-3xl) 0;
+  }
+
+  .calculators-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+  }
+
+  /* Section Headers */
+  .section-header {
+    margin-bottom: var(--space-2xl);
+  }
+
+  .section-header h2 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-md);
+  }
+
+  .section-header p {
+    font-size: var(--text-xl);
+    color: var(--color-gray-dark);
+    opacity: 0.8;
+  }
+
+  /* Why Choose Us Section */
+  .why-choose-us {
+    padding: var(--space-3xl) 0;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-2xl);
+    margin-top: var(--space-2xl);
+  }
+
+  .feature-card {
+    background: var(--color-white);
+    padding: var(--space-2xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    border: 2px solid var(--color-gray);
+    transition: all var(--transition-base);
+  }
+
+  .feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent-orange);
+  }
+
+  .feature-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-lg);
+  }
+
+  .feature-card h3 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-md);
+  }
+
+  .feature-card p {
+    color: var(--color-gray-dark);
+    line-height: 1.7;
+  }
+
+  /* CTA Section */
+  .cta-section {
+    padding: var(--space-3xl) 0;
+    margin-top: var(--space-3xl);
+  }
+
+  .cta-section h2 {
+    color: var(--color-white);
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-lg);
+  }
+
+  .cta-section p {
+    font-size: var(--text-xl);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-lg {
+    padding: var(--space-lg) var(--space-2xl);
+    font-size: var(--text-xl);
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .hero-content {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+      order: -1;
+    }
+
+    .calculators-grid,
+    .categories-grid {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: var(--text-4xl);
+    }
+
+    .hero-stats {
+      flex-direction: column;
+      gap: var(--space-lg);
+    }
+
+    .categories-grid,
+    .calculators-grid,
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hero h1 {
+      font-size: var(--text-3xl);
+    }
+
+    .hero-subtitle {
+      font-size: var(--text-lg);
+    }
+  }
+</style>

@@ -1,0 +1,312 @@
+{
+  "US": {
+    "name": "United States",
+    "holidays": [
+      {
+        "name": "New Year's Day",
+        "date": "01-01",
+        "fixed": true,
+        "enabled": true
+      },
+      {
+        "name": "Martin Luther King Jr. Day",
+        "month": 0,
+        "weekday": 1,
+        "week": 3,
+        "enabled": true
+      },
+      {
+        "name": "Presidents' Day",
+        "month": 1,
+        "weekday": 1,
+        "week": 3,
+        "enabled": true
+      },
+      {
+        "name": "Memorial Day",
+        "month": 4,
+        "weekday": 1,
+        "week": -1,
+        "enabled": true
+      },
+      {
+        "name": "Independence Day",
+        "date": "07-04",
+        "fixed": true,
+        "enabled": true
+      },
+      {
+        "name": "Labor Day",
+        "month": 8,
+        "weekday": 1,
+        "week": 1,
+        "enabled": true
+      },
+      {
+        "name": "Columbus/Indigenous Day",
+        "month": 9,
+        "weekday": 1,
+        "week": 2,
+        "enabled": true
+      },
+      {
+        "name": "Veterans Day",
+        "date": "11-11",
+        "fixed": true,
+        "enabled": true
+      },
+      {
+        "name": "Thanksgiving",
+        "month": 10,
+        "weekday": 4,
+        "week": 4,
+        "enabled": true
+      },
+      {
+        "name": "Day After Thanksgiving",
+        "month": 10,
+        "weekday": 5,
+        "week": 4,
+        "enabled": false
+      },
+      {
+        "name": "Christmas Eve",
+        "date": "12-24",
+        "fixed": true,
+        "enabled": false
+      },
+      {
+        "name": "Christmas Day",
+        "date": "12-25",
+        "fixed": true,
+        "enabled": true
+      },
+      {
+        "name": "New Year's Eve",
+        "date": "12-31",
+        "fixed": true,
+        "enabled": false
+      }
+    ]
+  },
+  "UK": {
+    "name": "United Kingdom",
+    "holidays": [
+      {
+        "name": "New Year's Day",
+        "date": "01-01",
+        "fixed": true,
+        "enabled": true
+      },
+      {
+        "name": "Good Friday",
+        "easter": -2,
+        "enabled": true
+      },
+      {
+        "name": "Easter Monday",
+        "easter": 1,
+        "enabled": true
+      },
+      {
+        "name": "Early May Bank Holiday",
+        "month": 4,
+        "weekday": 1,
+        "week": 1,
+        "enabled": true
+      },
+      {
+        "name": "Spring Bank Holiday",
+        "month": 4,
+        "weekday": 1,
+        "week": -1,
+        "enabled": true
+      },
+      {
+        "name": "Summer Bank Holiday",
+        "month": 7,
+        "weekday": 1,
+        "week": -1,
+        "enabled": true
+      },
+      {
+        "name": "Christmas Eve",
+        "date": "12-24",
+        "fixed": true,
+        "enabled": false
+      },
+      {
+        "name": "Christmas Day",
+        "date": "12-25",
+        "fixed": true,
+        "enabled": true
+      },
+      {
+        "name": "Boxing Day",
+        "date": "12-26",
+        "fixed": true,
+        "enabled": true
+      },
+      {
+        "name": "New Year's Eve",
+        "date": "12-31",
+        "fixed": true,
+        "enabled": false
+      }
+    ]
+  },
+  "CA": {
+    "name": "Canada",
+    "holidays": [
+      {
+        "name": "New Year's Day",
+        "date": "01-01",
+        "fixed": true,
+        "enabled": true
+      },
+      {
+        "name": "Family Day",
+        "month": 1,
+        "weekday": 1,
+        "week": 3,
+        "enabled": true
+      },
+      {
+        "name": "Good Friday",
+        "easter": -2,
+        "enabled": true
+      },
+      {
+        "name": "Victoria Day",
+        "month": 4,
+        "weekday": 1,
+        "week": -1,
+        "before": 25,
+        "enabled": true
+      },
+      {
+        "name": "Canada Day",
+        "date": "07-01",
+        "fixed": true,
+        "enabled": true
+      },
+      {
+        "name": "Labour Day",
+        "month": 8,
+        "weekday": 1,
+        "week": 1,
+        "enabled": true
+      },
+      {
+        "name": "Thanksgiving",
+        "month": 9,
+        "weekday": 1,
+        "week": 2,
+        "enabled": true
+      },
+      {
+        "name": "Remembrance Day",
+        "date": "11-11",
+        "fixed": true,
+        "enabled": true
+      },
+      {
+        "name": "Christmas Eve",
+        "date": "12-24",
+        "fixed": true,
+        "enabled": false
+      },
+      {
+        "name": "Christmas Day",
+        "date": "12-25",
+        "fixed": true,
+        "enabled": true
+      },
+      {
+        "name": "Boxing Day",
+        "date": "12-26",
+        "fixed": true,
+        "enabled": true
+      },
+      {
+        "name": "New Year's Eve",
+        "date": "12-31",
+        "fixed": true,
+        "enabled": false
+      }
+    ]
+  },
+  "AU": {
+    "name": "Australia",
+    "holidays": [
+      {
+        "name": "New Year's Day",
+        "date": "01-01",
+        "fixed": true,
+        "enabled": true
+      },
+      {
+        "name": "Australia Day",
+        "date": "01-26",
+        "fixed": true,
+        "enabled": true
+      },
+      {
+        "name": "Good Friday",
+        "easter": -2,
+        "enabled": true
+      },
+      {
+        "name": "Easter Saturday",
+        "easter": -1,
+        "enabled": true
+      },
+      {
+        "name": "Easter Monday",
+        "easter": 1,
+        "enabled": true
+      },
+      {
+        "name": "Anzac Day",
+        "date": "04-25",
+        "fixed": true,
+        "enabled": true
+      },
+      {
+        "name": "Queen's Birthday",
+        "month": 5,
+        "weekday": 1,
+        "week": 2,
+        "enabled": true
+      },
+      {
+        "name": "Christmas Eve",
+        "date": "12-24",
+        "fixed": true,
+        "enabled": false
+      },
+      {
+        "name": "Christmas Day",
+        "date": "12-25",
+        "fixed": true,
+        "enabled": true
+      },
+      {
+        "name": "Boxing Day",
+        "date": "12-26",
+        "fixed": true,
+        "enabled": true
+      },
+      {
+        "name": "New Year's Eve",
+        "date": "12-31",
+        "fixed": true,
+        "enabled": false
+      }
+    ]
+  },
+  "custom": {
+    "name": "Custom",
+    "holidays": []
+  }
+}

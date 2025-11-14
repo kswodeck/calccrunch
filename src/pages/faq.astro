@@ -1,0 +1,839 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import EmailCapture from "../components/EmailCapture.astro";
+
+const breadcrumbItems = [
+  { label: "Home", href: "/" },
+  { label: "FAQ", href: null },
+];
+
+const faqCategories = [
+  {
+    id: "general",
+    title: "General Questions",
+    icon: "❓",
+    questions: [
+      {
+        q: "What is CalcCrunch.com?",
+        a: "CalcCrunch.com is a free online platform offering 90+ calculator tools for financial planning, health tracking, home improvement, and everyday mathematical calculations. Our mission is to help you crunch numbers, not time!",
+      },
+      {
+        q: "Is CalcCrunch really free?",
+        a: "Yes! All our calculators are 100% free to use. No hidden fees, no premium versions, no subscription required. We're supported by minimal, non-intrusive advertising to keep the service free for everyone.",
+      },
+      {
+        q: "Do I need to create an account?",
+        a: "No account is required! You can use all our calculators immediately without signing up, logging in, or providing any personal information.",
+      },
+      {
+        q: "What kinds of calculators do you have?",
+        a: "We currently offer calculators across multiple categories including financial, health & fitness, home & real estate, math & science, and everyday tools. We're constantly adding new calculators based on user requests.",
+      },
+      {
+        q: "Can I use CalcCrunch on my phone?",
+        a: "Absolutely! CalcCrunch.com is fully responsive and works perfectly on all devices - smartphones, tablets, and desktop computers. All calculators are optimized for mobile use.",
+      },
+    ],
+  },
+  {
+    id: "calculators",
+    title: "About Our Calculators",
+    icon: "🧮",
+    questions: [
+      {
+        q: "How accurate are your calculators?",
+        a: "Our calculators use industry-standard formulas and are thoroughly tested for accuracy. However, they're meant for informational purposes only. For critical decisions, especially financial or health-related, we recommend consulting with qualified professionals.",
+      },
+      {
+        q: "Can I save my calculations?",
+        a: "Yes! Our calculators now feature URL parameter saving, which means your inputs are automatically saved in the URL. You can bookmark the page or share the link to preserve your calculations.",
+      },
+      {
+        q: "How do you choose which calculators to build?",
+        a: "We build calculators based on user requests, search demand, and common calculation needs. If you have a suggestion for a new calculator, please contact us - we love hearing from our users!",
+      },
+      {
+        q: "Why don't some calculators have all the features I need?",
+        a: "We aim to balance simplicity with functionality. Our calculators cover the most common use cases while remaining easy to use. If you need additional features, please let us know through our contact form.",
+      },
+      {
+        q: "Can I embed your calculators on my website?",
+        a: "Currently, we don't offer embedding options by default, but we're open to partnership opportunities. Please contact us to discuss your specific needs.",
+      },
+    ],
+  },
+  {
+    id: "privacy",
+    title: "Privacy & Security",
+    icon: "🔒",
+    questions: [
+      {
+        q: "Is my data safe?",
+        a: "Yes! All calculations happen locally in your browser. We don't collect, store, or have access to the numbers you enter into our calculators. Your data never leaves your device.",
+      },
+      {
+        q: "What information do you collect?",
+        a: "We collect minimal analytics data (like page views and general location) to improve our service. If you contact us, we collect the information you provide. We never collect your calculation data.",
+      },
+      {
+        q: "Do you use cookies?",
+        a: "We use minimal essential cookies for website functionality and analytics cookies to understand usage patterns. We don't use marketing or tracking cookies for advertising.",
+      },
+      {
+        q: "Do you sell user data?",
+        a: "Never! We do not sell, rent, or trade any user information to third parties. Your privacy is fundamental to our values.",
+      },
+      {
+        q: "How can I learn more about your privacy practices?",
+        a: "Please read our comprehensive Privacy Policy for detailed information about how we handle data and protect your privacy.",
+      },
+    ],
+  },
+  {
+    id: "technical",
+    title: "Technical Questions",
+    icon: "⚙️",
+    questions: [
+      {
+        q: "What browsers do you support?",
+        a: "CalcCrunch works on all modern browsers including Chrome, Firefox, Safari, Edge, and Opera. For the best experience, we recommend using the latest version of your preferred browser.",
+      },
+      {
+        q: "Do I need JavaScript enabled?",
+        a: "Yes, JavaScript must be enabled for our calculators to function. All calculations are performed using JavaScript in your browser for speed and privacy.",
+      },
+      {
+        q: "Why isn't a calculator loading?",
+        a: "Try refreshing the page or clearing your browser cache. If the problem persists, please contact us with details about your browser and device so we can fix the issue.",
+      },
+      {
+        q: "Can I use the calculators offline?",
+        a: "Currently, our calculators require an internet connection to load. However, once loaded, many calculators can continue working even if your connection drops temporarily.",
+      },
+    ],
+  },
+  {
+    id: "business",
+    title: "Business & Partnerships",
+    icon: "🤝",
+    questions: [
+      {
+        q: "Can I advertise on CalcCrunch?",
+        a: "We accept limited, non-intrusive advertising to keep our service free. For advertising inquiries, please contact us through our contact form.",
+      },
+      {
+        q: "Do you offer API access?",
+        a: "We don't currently offer API access to our calculators, but we're considering it for the future. If you're interested, please let us know your use case.",
+      },
+      {
+        q: "Can you build custom calculators?",
+        a: "We occasionally work on custom calculator projects. Please contact us with your requirements and we'll discuss the possibilities.",
+      },
+      {
+        q: "Are you open to partnerships?",
+        a: "Yes! We're always interested in partnerships that align with our mission of providing free, accessible calculation tools. Please reach out through our contact form.",
+      },
+      {
+        q: "Can I contribute to CalcCrunch?",
+        a: "We welcome suggestions for new calculators and improvements to existing ones. While we don't currently accept code contributions, your feedback is invaluable to us.",
+      },
+    ],
+  },
+  {
+    id: "troubleshooting",
+    title: "Troubleshooting",
+    icon: "🔧",
+    questions: [
+      {
+        q: "I found a bug. How do I report it?",
+        a: "Please report bugs through our contact form with details about the calculator, what you were trying to do, and what went wrong. Screenshots are helpful if possible.",
+      },
+      {
+        q: "The results seem incorrect. What should I do?",
+        a: "First, double-check your inputs. If you still believe there's an error, please contact us with the calculator name, your inputs, and expected vs. actual results. We take accuracy seriously and will investigate immediately.",
+      },
+      {
+        q: "A calculator isn't working on my device. Help!",
+        a: "Please try: 1) Refreshing the page, 2) Clearing your browser cache, 3) Trying a different browser. If none of these work, contact us with your device and browser information.",
+      },
+      {
+        q: "Can I request a feature for an existing calculator?",
+        a: "Absolutely! We're always looking to improve our calculators. Send us your feature request through the contact form and we'll consider it for future updates.",
+      },
+      {
+        q: "Why do some calculators have limits on input values?",
+        a: "Input limits are in place to ensure accurate calculations and prevent errors. These limits are based on practical use cases and computational constraints.",
+      },
+    ],
+  },
+];
+
+const popularQuestions = [
+  "Is CalcCrunch really free?",
+  "Do I need to create an account?",
+  "Is my data safe?",
+  "How accurate are your calculators?",
+  "Can I use CalcCrunch on my phone?",
+];
+---
+
+<BaseLayout
+  title="Frequently Asked Questions - CalcCrunch.com"
+  description="Find answers to common questions about CalcCrunch's free calculator tools, privacy practices, and how to use our calculators effectively."
+  keywords="FAQ, frequently asked questions, calculator help, CalcCrunch support, how to use calculators"
+>
+  <div class="faq-page">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbItems} />
+    </div>
+
+    <!-- Hero Section -->
+    <section class="faq-hero bg-gradient">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="text-white">Frequently Asked Questions</h1>
+          <p class="hero-tagline text-white">
+            Everything You Need to Know About CalcCrunch
+          </p>
+          <p class="hero-description text-white">
+            Can't find what you're looking for? Feel free to <a
+              href="/contact"
+              class="hero-link">contact us</a
+            > directly!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Answers Section -->
+    <section class="quick-answers">
+      <div class="container">
+        <h2 class="section-title text-center">Most Popular Questions</h2>
+        <div class="quick-grid">
+          {
+            popularQuestions.map((question) => {
+              const category = faqCategories.find((cat) =>
+                cat.questions.some((q) => q.q === question)
+              );
+              const answer = category?.questions.find(
+                (q) => q.q === question
+              )?.a;
+              return (
+                <div class="quick-card">
+                  <h3>{question}</h3>
+                  <p>{answer}</p>
+                </div>
+              );
+            })
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Main FAQ Content -->
+    <section class="faq-content">
+      <div class="container">
+        <div class="content-wrapper">
+          <!-- Category Navigation -->
+          <aside class="category-sidebar">
+            <div class="sidebar-wrapper">
+              <h3>Categories</h3>
+              <nav class="category-nav">
+                {
+                  faqCategories.map((category) => (
+                    <a href={`#${category.id}`} class="category-link">
+                      <span class="category-icon">{category.icon}</span>
+                      <span class="category-text">
+                        <span class="category-title">{category.title}</span>
+                        <span class="category-count">
+                          {category.questions.length} questions
+                        </span>
+                      </span>
+                    </a>
+                  ))
+                }
+              </nav>
+
+              <div class="help-box">
+                <h4>Still Need Help?</h4>
+                <p>Can't find the answer you're looking for?</p>
+                <a href="/contact" class="btn btn-primary"> Contact Support </a>
+              </div>
+            </div>
+          </aside>
+
+          <!-- FAQ Sections -->
+          <div class="faq-main">
+            {
+              faqCategories.map((category) => (
+                <section id={category.id} class="faq-category">
+                  <div class="category-header">
+                    <span class="category-icon-large">{category.icon}</span>
+                    <h2>{category.title}</h2>
+                  </div>
+
+                  <div class="questions-list">
+                    {category.questions.map((item, index) => (
+                      <details class="faq-item">
+                        <summary class="faq-question">
+                          <span class="question-text">{item.q}</span>
+                          <span class="toggle-icon">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                            >
+                              <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                          </span>
+                        </summary>
+                        <div class="faq-answer">
+                          <p
+                            set:html={item.a
+                              .replace(
+                                /Privacy Policy/g,
+                                '<a href="/privacy">Privacy Policy</a>'
+                              )
+                              .replace(
+                                /contact us|contact form/g,
+                                '<a href="/contact">contact us</a>'
+                              )}
+                          />
+                        </div>
+                      </details>
+                    ))}
+                  </div>
+                </section>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Resources -->
+    <section class="resources-section bg-light">
+      <div class="container">
+        <h2 class="section-title text-center">Additional Resources</h2>
+        <div class="resources-grid">
+          <a href="/about" class="resource-card">
+            <div class="resource-icon">📖</div>
+            <h3>About Us</h3>
+            <p>Learn more about CalcCrunch and our mission</p>
+          </a>
+          <a href="/privacy" class="resource-card">
+            <div class="resource-icon">🔒</div>
+            <h3>Privacy Policy</h3>
+            <p>Understand how we protect your data</p>
+          </a>
+          <a href="/terms" class="resource-card">
+            <div class="resource-icon">📜</div>
+            <h3>Terms of Service</h3>
+            <p>Review our terms and conditions</p>
+          </a>
+          <a href="/calculators" class="resource-card">
+            <div class="resource-icon">🧮</div>
+            <h3>All Calculators</h3>
+            <p>Browse our complete collection of tools</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta bg-gradient">
+      <div class="container">
+        <div class="cta-content text-center text-white">
+          <h2 class="text-white">Didn't Find Your Answer?</h2>
+          <p class="text-white">
+            We're here to help! Send us your question and we'll get back to you
+            within 24-48 hours.
+          </p>
+          <a href="/contact" class="btn btn-secondary btn-lg">
+            Ask a Question
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email Capture -->
+    <!-- <EmailCapture /> -->
+  </div>
+</BaseLayout>
+
+<style>
+  /* FAQ Page Base */
+  .faq-page {
+    background: var(--color-white);
+  }
+
+  /* Hero Section */
+  .faq-hero {
+    padding: var(--space-3xl) 0;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: var(--text-5xl);
+    font-weight: 800;
+    margin-bottom: var(--space-md);
+  }
+
+  .hero-tagline {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-lg);
+    opacity: 0.95;
+  }
+
+  .hero-description {
+    font-size: var(--text-xl);
+    opacity: 0.9;
+  }
+
+  .hero-link {
+    color: var(--color-white);
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  .hero-link:hover {
+    opacity: 0.8;
+  }
+
+  /* Quick Answers Section */
+  .quick-answers {
+    padding: var(--space-3xl) 0;
+    background: var(--color-gray-light);
+  }
+
+  .section-title {
+    color: var(--color-primary-blue);
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-2xl);
+  }
+
+  .quick-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+  }
+
+  .quick-card {
+    background: var(--color-white);
+    padding: var(--space-xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-base);
+  }
+
+  .quick-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .quick-card h3 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-sm);
+  }
+
+  .quick-card p {
+    color: var(--color-gray-dark);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Content Layout */
+  .faq-content {
+    padding: var(--space-3xl) 0;
+  }
+
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: var(--space-3xl);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Category Sidebar */
+  .category-sidebar {
+    position: sticky;
+    top: var(--space-xl);
+    height: fit-content;
+  }
+
+  .sidebar-wrapper {
+    background: var(--color-gray-light);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-xl);
+  }
+
+  .sidebar-wrapper h3 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-lg);
+  }
+
+  .category-nav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .category-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+    color: var(--color-gray-dark);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: all var(--transition-fast);
+  }
+
+  .category-link:hover {
+    background: var(--color-white);
+    color: var(--color-accent-orange);
+    transform: translateX(4px);
+  }
+
+  .category-icon {
+    font-size: var(--text-2xl);
+    flex-shrink: 0;
+  }
+
+  .category-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .category-title {
+    font-weight: 600;
+    font-size: var(--text-base);
+  }
+
+  .category-count {
+    font-size: var(--text-sm);
+    opacity: 0.7;
+  }
+
+  /* Help Box */
+  .help-box {
+    margin-top: var(--space-2xl);
+    padding-top: var(--space-xl);
+    border-top: 2px solid var(--color-gray);
+    text-align: center;
+  }
+
+  .help-box h4 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-sm);
+  }
+
+  .help-box p {
+    color: var(--color-gray-dark);
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-md);
+  }
+
+  /* Main FAQ Content */
+  .faq-main {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-2xl);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .faq-category {
+    margin-bottom: var(--space-3xl);
+    scroll-margin-top: var(--space-xl);
+  }
+
+  .faq-category:last-child {
+    margin-bottom: 0;
+  }
+
+  .category-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-lg);
+    border-bottom: 3px solid var(--color-gray-light);
+  }
+
+  .category-icon-large {
+    font-size: var(--text-4xl);
+  }
+
+  .category-header h2 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-3xl);
+    margin: 0;
+  }
+
+  /* FAQ Items */
+  .questions-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .faq-item {
+    background: var(--color-gray-light);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: all var(--transition-base);
+  }
+
+  .faq-item[open] {
+    background: var(--color-white);
+    box-shadow: var(--shadow-md);
+  }
+
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-lg);
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--color-primary-blue);
+    font-size: var(--text-base);
+    transition: all var(--transition-fast);
+    list-style: none;
+  }
+
+  .faq-question::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-question:hover {
+    color: var(--color-accent-orange);
+  }
+
+  .question-text {
+    flex: 1;
+    padding-right: var(--space-md);
+  }
+
+  .toggle-icon {
+    flex-shrink: 0;
+    transition: transform var(--transition-fast);
+  }
+
+  .faq-item[open] .toggle-icon {
+    transform: rotate(180deg);
+  }
+
+  .faq-answer {
+    padding: 0 var(--space-lg) var(--space-lg);
+    animation: fadeIn var(--transition-base);
+  }
+
+  .faq-answer p {
+    color: var(--color-gray-dark);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .faq-answer a {
+    color: var(--color-accent-orange);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .faq-answer a:hover {
+    text-decoration: underline;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Resources Section */
+  .resources-section {
+    padding: var(--space-3xl) 0;
+  }
+
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+  }
+
+  .resource-card {
+    background: var(--color-white);
+    padding: var(--space-xl);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    text-decoration: none;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+    border: 2px solid transparent;
+  }
+
+  .resource-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent-orange);
+  }
+
+  .resource-icon {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-md);
+  }
+
+  .resource-card h3 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-sm);
+  }
+
+  .resource-card p {
+    color: var(--color-gray-dark);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Contact CTA */
+  .contact-cta {
+    padding: var(--space-3xl) 0;
+    margin-top: var(--space-3xl);
+  }
+
+  .cta-content h2 {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-md);
+  }
+
+  .cta-content p {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-xl);
+    opacity: 0.95;
+  }
+
+  .btn-lg {
+    padding: var(--space-md) var(--space-2xl);
+    font-size: var(--text-lg);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .content-wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    .category-sidebar {
+      position: static;
+      order: 2;
+    }
+
+    .faq-main {
+      order: 1;
+    }
+
+    .sidebar-wrapper {
+      margin-top: var(--space-2xl);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .faq-hero h1 {
+      font-size: var(--text-4xl);
+    }
+
+    .hero-tagline {
+      font-size: var(--text-xl);
+    }
+
+    .quick-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .faq-main {
+      padding: var(--space-lg);
+    }
+
+    .category-header h2 {
+      font-size: var(--text-2xl);
+    }
+
+    .resources-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+
+  @media (max-width: 480px) {
+    .faq-hero h1 {
+      font-size: var(--text-3xl);
+    }
+
+    .hero-tagline {
+      font-size: var(--text-lg);
+    }
+
+    .faq-main {
+      padding: var(--space-md);
+    }
+
+    .faq-question {
+      padding: var(--space-md);
+      font-size: var(--text-sm);
+    }
+
+    .faq-answer {
+      padding: 0 var(--space-md) var(--space-md);
+    }
+
+    .category-header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .resources-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Print Styles */
+  @media print {
+    .category-sidebar,
+    .resources-section,
+    .contact-cta {
+      display: none;
+    }
+
+    .faq-hero {
+      background: none;
+      color: var(--color-black);
+    }
+
+    .hero-content h1 {
+      color: var(--color-black);
+    }
+
+    .faq-main {
+      box-shadow: none;
+      padding: 0;
+    }
+
+    .faq-item[open] {
+      page-break-inside: avoid;
+    }
+  }
+</style>

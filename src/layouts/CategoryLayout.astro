@@ -1,0 +1,508 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import CalculatorCard from "../components/CalculatorCard.astro";
+import AdUnit from "../components/AdUnit.astro";
+import EmailCapture from "../components/EmailCapture.astro";
+
+// Get props
+const {
+  category,
+  categoryName,
+  categoryDescription,
+  categoryIcon,
+  calculators = [],
+  totalCount = 0,
+} = Astro.props;
+
+// Breadcrumb items
+const breadcrumbItems = [
+  { label: "Home", href: "/" },
+  { label: "Calculators", href: "/calculators" },
+  { label: categoryName, href: null },
+];
+
+// Category color mapping
+const categoryColors = {
+  financial: "#FFD700",
+  "health-fitness": "#EF5350",
+  "home-real-estate": "#FF6B35",
+  "time-date": "#5A9FD4",
+  "math-conversions": "#9C27B0",
+  automotive: "#607D8B",
+  "food-cooking": "#FF9800",
+  education: "#4A90E2",
+  "business-sales": "#4CAF50",
+  miscellaneous: "#78909C",
+};
+
+const categoryColor = categoryColors[category] || "#2C5F8D";
+
+// SEO keywords based on category
+const categoryKeywords = {
+  financial:
+    "mortgage calculator, loan calculator, interest calculator, budget calculator, investment calculator",
+  "health-fitness":
+    "BMI calculator, calorie calculator, fitness calculator, health calculator, weight loss calculator",
+  "home-real-estate":
+    "home calculator, real estate calculator, mortgage affordability, home improvement calculator",
+  "time-date":
+    "date calculator, age calculator, time zone converter, calendar calculator",
+  "math-conversions":
+    "unit converter, math calculator, conversion calculator, measurement calculator",
+  automotive: "car loan calculator, gas mileage calculator, auto calculator",
+  "food-cooking": "recipe calculator, nutrition calculator, cooking converter",
+  education: "GPA calculator, grade calculator, student loan calculator",
+  "business-sales":
+    "profit calculator, ROI calculator, business calculator, sales calculator",
+  miscellaneous: "online calculator, free calculator, calculator tools",
+};
+
+const keywords = categoryKeywords[category] || "free online calculator";
+---
+
+<BaseLayout
+  title={`${categoryName} Calculators - Free Online Tools`}
+  description={`${categoryDescription} Browse ${totalCount} free ${categoryName.toLowerCase()} calculators and tools. Fast, accurate, and easy to use.`}
+  keywords={`${keywords}, free calculator, online calculator`}
+>
+  <!-- Structured Data for Category -->
+  <script
+    type="application/ld+json"
+    slot="head"
+    set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: `${categoryName} Calculators`,
+      description: categoryDescription,
+      url: Astro.url.toString(),
+      numberOfItems: totalCount,
+    })}
+  />
+
+  <div class="category-page">
+    <!-- Category Hero -->
+    <section
+      class="category-hero"
+      style={`background: linear-gradient(135deg, ${categoryColor}20 0%, ${categoryColor}10 100%);`}
+    >
+      <div class="container">
+        <Breadcrumbs items={breadcrumbItems} />
+
+        <div class="hero-content">
+          <div
+            class="hero-icon"
+            style={`background-color: ${categoryColor}30; color: ${categoryColor};`}
+          >
+            {categoryIcon}
+          </div>
+
+          <h1 class="category-title">{categoryName} Calculators</h1>
+
+          <p class="category-description-hero">{categoryDescription}</p>
+
+          <div class="category-stats">
+            <div class="stat">
+              <strong>{totalCount}</strong>
+              <span>Free Calculators</span>
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              <span>Free Forever</span>
+            </div>
+            <div class="stat">
+              <strong>⚡</strong>
+              <span>Instant Results</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="category-layout">
+        <!-- Main Calculator Grid -->
+        <main class="calculators-main">
+          <!-- Top Ad Unit -->
+          <!-- <AdUnit slot="category-top" format="horizontal" /> -->
+
+          <!-- Calculators Grid -->
+          <div class="calculators-grid">
+            {
+              calculators.length > 0 ? (
+                calculators.map((calc) => <CalculatorCard {...calc} />)
+              ) : (
+                <div class="no-calculators">
+                  <p>
+                    No calculators found in this category yet. Check back soon!
+                  </p>
+                  <a href="/calculators" class="btn btn-primary">
+                    Browse All Calculators
+                  </a>
+                </div>
+              )
+            }
+          </div>
+
+          <!-- Email Capture -->
+          <!-- <EmailCapture 
+            calculatorType={category}
+            headline="📬 Get New Calculator Updates"
+            description={`Be the first to know when we add new ${categoryName.toLowerCase()} calculators and tools.`}
+            buttonText="Subscribe for Updates"
+          /> -->
+
+          <!-- Bottom Ad Unit -->
+          <!-- <AdUnit slot="category-bottom" format="rectangle" /> -->
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="category-sidebar">
+          <div class="sidebar-sticky">
+            <!-- Categories Quick Nav -->
+            <div class="sidebar-card">
+              <h3>Other Categories</h3>
+              <ul class="category-nav">
+                <li>
+                  <a
+                    href="/categories/financial"
+                    class={category === "financial" ? "active" : ""}
+                  >
+                    💰 Financial
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/categories/health-fitness"
+                    class={category === "health-fitness" ? "active" : ""}
+                  >
+                    ❤️ Health & Fitness
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/categories/home-real-estate"
+                    class={category === "home-real-estate" ? "active" : ""}
+                  >
+                    🏠 Home & Real Estate
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/categories/time-date"
+                    class={category === "time-date" ? "active" : ""}
+                  >
+                    🕐 Time & Date
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/categories/math-conversions"
+                    class={category === "math-conversions" ? "active" : ""}
+                  >
+                    🔢 Math & Conversions
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/categories/business-sales"
+                    class={category === "business-sales" ? "active" : ""}
+                  >
+                    💼 Business & Sales
+                  </a>
+                </li>
+                <li>
+                  <a href="/calculators" class="view-all">
+                    View All Categories →
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Sidebar Ad -->
+            <!-- <AdUnit slot="category-sidebar" format="square" className="sidebar" /> -->
+
+            <!-- Help Card -->
+            <div class="sidebar-card help-card">
+              <h3>💡 Pro Tip</h3>
+              <p>
+                Bookmark your frequently used calculators for quick access. All
+                calculators work offline after first load!
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="category-cta bg-gradient">
+      <div class="container text-center">
+        <h2 class="text-white">Need a Different Calculator?</h2>
+        <p class="text-white mb-lg">
+          Explore our complete collection of 5+ free calculators across all
+          categories
+        </p>
+        <a href="/calculators" class="btn btn-secondary">
+          Browse All Calculators
+        </a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .category-page {
+    min-height: 100vh;
+  }
+
+  /* Category Hero */
+  .category-hero {
+    padding: var(--space-3xl) 0;
+    margin-bottom: var(--space-3xl);
+  }
+
+  .hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hero-icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto var(--space-xl);
+    border-radius: var(--border-radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+  }
+
+  .category-title {
+    font-size: var(--text-5xl);
+    color: var(--color-primary-blue);
+    margin-bottom: var(--space-lg);
+  }
+
+  .category-description-hero {
+    font-size: var(--text-xl);
+    color: var(--color-gray-dark);
+    margin-bottom: var(--space-2xl);
+    line-height: 1.6;
+  }
+
+  .category-stats {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-3xl);
+    margin-top: var(--space-2xl);
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat strong {
+    display: block;
+    font-size: var(--text-3xl);
+    color: var(--color-primary-blue);
+    font-family: var(--font-primary);
+    margin-bottom: var(--space-xs);
+  }
+
+  .stat span {
+    display: block;
+    font-size: var(--text-sm);
+    color: var(--color-gray-dark);
+    font-weight: 600;
+  }
+
+  /* Layout */
+  .category-layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: var(--space-2xl);
+    align-items: start;
+    margin-bottom: var(--space-3xl);
+  }
+
+  /* Calculators Grid */
+  .calculators-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-xl);
+    margin: var(--space-3xl) 0;
+  }
+
+  .no-calculators {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: var(--space-3xl);
+    background: var(--color-gray-light);
+    border-radius: var(--border-radius-lg);
+  }
+
+  .no-calculators p {
+    font-size: var(--text-xl);
+    color: var(--color-gray-dark);
+    margin-bottom: var(--space-xl);
+  }
+
+  /* Sidebar */
+  .category-sidebar {
+    position: relative;
+  }
+
+  .sidebar-sticky {
+    position: sticky;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+  }
+
+  .sidebar-card {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-md);
+    border: 2px solid var(--color-gray);
+  }
+
+  .sidebar-card h3 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-lg);
+  }
+
+  .category-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .category-nav li {
+    margin-bottom: var(--space-xs);
+  }
+
+  .category-nav a {
+    display: block;
+    padding: var(--space-sm) var(--space-md);
+    color: var(--color-gray-dark);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: all var(--transition-fast);
+    font-weight: 500;
+  }
+
+  .category-nav a:hover {
+    background: var(--color-lighter-blue);
+    color: var(--color-primary-blue);
+    padding-left: var(--space-lg);
+  }
+
+  .category-nav a.active {
+    background: var(--color-accent-orange);
+    color: var(--color-white);
+    font-weight: 700;
+  }
+
+  .category-nav a.view-all {
+    color: var(--color-accent-orange);
+    font-weight: 700;
+    margin-top: var(--space-md);
+  }
+
+  .help-card {
+    background: linear-gradient(135deg, #fff8dc 0%, var(--color-white) 100%);
+    border-color: var(--color-accent-orange);
+  }
+
+  .help-card h3 {
+    color: var(--color-accent-orange);
+  }
+
+  .help-card p {
+    color: var(--color-gray-dark);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* CTA Section */
+  .category-cta {
+    padding: var(--space-3xl) 0;
+    margin-top: var(--space-3xl);
+  }
+
+  .category-cta h2 {
+    color: var(--color-white);
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-md);
+  }
+
+  .category-cta p {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-xl);
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .category-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .category-sidebar {
+      display: none;
+    }
+
+    .calculators-grid {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+  }
+
+  @media (max-width: 768px) {
+    .category-hero {
+      padding: var(--space-2xl) 0;
+    }
+
+    .hero-icon {
+      width: 80px;
+      height: 80px;
+      font-size: 3rem;
+    }
+
+    .category-title {
+      font-size: var(--text-3xl);
+    }
+
+    .category-description-hero {
+      font-size: var(--text-lg);
+    }
+
+    .category-stats {
+      flex-direction: column;
+      gap: var(--space-lg);
+    }
+
+    .calculators-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .category-title {
+      font-size: var(--text-2xl);
+    }
+
+    .stat strong {
+      font-size: var(--text-2xl);
+    }
+
+    .category-cta h2 {
+      font-size: var(--text-3xl);
+    }
+  }
+</style>

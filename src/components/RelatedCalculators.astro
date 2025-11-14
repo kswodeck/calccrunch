@@ -1,0 +1,70 @@
+---
+import calculatorsData from "../data/calculators.json";
+import RelatedCalculator from "./RelatedCalculator.astro";
+
+const { currentSlug, category, limit = 3 } = Astro.props;
+
+// Find current calculator
+const currentCalc = calculatorsData?.calculators?.find(
+  (c) => c?.slug === currentSlug
+);
+
+// Get related calculators (by IDs if specified, or by category)
+let relatedCalculators = [];
+
+if (currentCalc?.relatedCalculators?.length) {
+  // Use specified related calculators
+  relatedCalculators = currentCalc?.relatedCalculators
+    ?.map((id) => calculatorsData?.calculators?.find((c) => c?.id === id))
+    ?.filter(Boolean)
+    ?.slice(0, limit);
+} else if (category) {
+  // Fallback: same category
+  relatedCalculators = calculatorsData?.calculators
+    ?.filter((c) => c?.category === category && c?.slug !== currentSlug)
+    ?.slice(0, limit);
+}
+---
+
+{
+  relatedCalculators?.length ? (
+    <div class="related-calculators">
+      <h3>Related Calculators</h3>
+      <div class="related-grid">
+        {relatedCalculators?.map((calc) => (
+          <RelatedCalculator calc={calc} />
+        ))}
+      </div>
+    </div>
+  ) : (
+    ""
+  )
+}
+
+<style>
+  .related-calculators {
+    margin-top: var(--space-3xl);
+    padding: var(--space-2xl);
+    background: var(--color-gray-light);
+    border-radius: var(--border-radius-lg);
+  }
+
+  .related-calculators h3 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-xl);
+    text-align: center;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+  }
+
+  @media (max-width: 768px) {
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

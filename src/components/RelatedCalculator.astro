@@ -1,0 +1,26 @@
+---
+import categoriesData from "../data/categories.json";
+
+const { calc, showPopularBadge = false } = Astro.props;
+
+// Get category name helper
+function getCategoryName(categoryId) {
+  const cat = categoriesData.categories.find((c) => c.id === categoryId);
+  return cat ? cat.name : categoryId;
+}
+---
+
+<a href={`/calculators/${calc.slug}`} class="calc-card">
+  {
+    showPopularBadge && calc.popular && (
+      <div class="calc-card-badge">🔥 Popular</div>
+    )
+  }
+  <div class="calc-card-icon">{calc.icon || "🔢"}</div>
+  <div class="calc-card-content">
+    <h4 class="calc-card-title">{calc.title}</h4>
+    <p class="calc-card-description">{calc.shortDescription}</p>
+    <span class="calc-card-category">{getCategoryName(calc.category)}</span>
+  </div>
+  <div class="calc-card-arrow">→</div>
+</a>

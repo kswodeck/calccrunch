@@ -1,0 +1,37 @@
+---
+import CategoryLayout from "../../layouts/CategoryLayout.astro";
+import categoriesData from "../../data/categories.json";
+import calculatorsData from "../../data/calculators.json";
+
+export function getStaticPaths() {
+  const categories = categoriesData.categories;
+
+  return categories.map((cat) => ({
+    params: { category: cat.slug },
+    props: { categoryData: cat },
+  }));
+}
+
+const { categoryData } = Astro.props;
+
+// Get calculators for this category
+const categoryCalculators = calculatorsData.calculators
+  .filter((calc) => calc.category === categoryData.id)
+  .map((calc) => ({
+    title: calc.title,
+    description: calc.shortDescription,
+    category: categoryData.name,
+    slug: calc.slug,
+    popular: calc.popular,
+    icon: calc.icon,
+  }));
+---
+
+<CategoryLayout
+  category={categoryData.id}
+  categoryName={categoryData.name}
+  categoryDescription={categoryData.description}
+  categoryIcon={categoryData.icon}
+  calculators={categoryCalculators}
+  totalCount={categoryData.calculatorCount}
+/>

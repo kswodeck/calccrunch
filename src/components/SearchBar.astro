@@ -1,0 +1,67 @@
+---
+const { 
+  placeholder = "Search calculators..."
+} = Astro.props;
+---
+
+<div class="search-bar">
+  <form action="/search" method="GET" class="search-form">
+    <input 
+      type="search" 
+      name="q" 
+      placeholder={`${placeholder}`}
+      class="search-input"
+      aria-label={`${placeholder}`}
+    >
+    <button type="submit" class="search-button" aria-label="Search">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"></circle>
+        <path d="m21 21-4.35-4.35"></path>
+      </svg>
+    </button>
+  </form>
+</div>
+
+<style>
+  .search-form {
+    display: flex;
+    align-items: center;
+    background: var(--color-white);
+    border: 2px solid var(--color-gray);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: border-color var(--transition-fast);
+  }
+  
+  .search-form:focus-within {
+    border-color: var(--color-accent-orange);
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: var(--space-sm) var(--space-md);
+    border: none;
+    font-size: var(--text-base);
+    font-family: var(--font-body);
+  }
+  
+  .search-input:focus {
+    outline: none;
+  }
+  
+  .search-button {
+    background: var(--color-accent-orange);
+    color: var(--color-white);
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background var(--transition-fast);
+  }
+  
+  .search-button:hover {
+    background: var(--color-accent-orange-dark);
+  }
+</style>

@@ -1,0 +1,521 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import AdUnit from "../components/AdUnit.astro";
+import AffiliateBox from "../components/AffiliateBox.astro";
+import EmailCapture from "../components/EmailCapture.astro";
+import RelatedCalculators from "../components/RelatedCalculators.astro";
+import SocialShare from "../components/SocialShare.astro";
+import "../styles/calculators.css";
+
+// Get frontmatter from markdown files
+const { frontmatter } = Astro.props;
+
+// Destructure calculator metadata
+const {
+  title,
+  description,
+  category = "miscellaneous",
+  tags = [],
+  featured = false,
+  calcType = "general",
+  seoTitle,
+  seoDescription,
+  lastUpdated,
+  estimatedTime = "2 minutes",
+  difficulty = "Easy",
+} = frontmatter;
+
+// Format category for display
+const categoryDisplay = category
+  .split("-")
+  .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+  .join(" ");
+
+// Get calculator slug from URL
+const slug = Astro.url.pathname.split("/").pop().replace(".html", "");
+
+// Breadcrumb items
+const breadcrumbItems = [
+  { label: "Home", href: "/" },
+  { label: "Calculators", href: "/calculators" },
+  { label: categoryDisplay, href: `/categories/${category}` },
+  { label: title, href: null },
+];
+
+// Current date for schema
+const currentDate = new Date().toISOString();
+const updatedDate = lastUpdated || currentDate;
+---
+
+<BaseLayout
+  title={seoTitle || `${title} - Free Online Calculator`}
+  description={seoDescription || description}
+  keywords={`${title}, ${category} calculator, free calculator, online calculator, ${tags.join(", ")}`}
+>
+  <!-- Structured Data for Calculator -->
+  <script
+    type="application/ld+json"
+    slot="head"
+    set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      name: title,
+      applicationCategory: "UtilitiesApplication",
+      operatingSystem: "Web Browser",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.8",
+        ratingCount: "1250",
+      },
+      datePublished: updatedDate,
+      description: description,
+      url: Astro.url.toString(),
+    })}
+  />
+
+  <div class="calculator-page">
+    <div class="container">
+      <!-- Breadcrumbs -->
+      <Breadcrumbs items={breadcrumbItems} />
+
+      <div class="calculator-layout">
+        <!-- Main Content Area -->
+        <main class="calculator-main">
+          <!-- Calculator Header -->
+          <header class="calculator-header">
+            <div class="calculator-meta">
+              <a href={`/categories/${category}`} class="category-badge">
+                {categoryDisplay}
+              </a>
+              {featured && <span class="featured-badge">⭐ Popular</span>}
+            </div>
+
+            <h1 class="calculator-title">{title}</h1>
+
+            <p class="calculator-description">{description}</p>
+
+            <div class="calculator-info">
+              <span class="info-item">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                {estimatedTime}
+              </span>
+              <span class="info-item">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                  ></path>
+                </svg>
+                {difficulty}
+              </span>
+              <!-- <span class="info-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                0+ uses
+              </span> -->
+            </div>
+          </header>
+
+          <!-- Top Ad Unit -->
+          <!-- <AdUnit slot="calculator-top" format="horizontal" /> -->
+
+          <!-- Calculator Tool (Main Content from Markdown) -->
+          <div class="calculator-tool-wrapper">
+            <slot />
+          </div>
+
+          <!-- Social Share -->
+          <SocialShare
+            title={title}
+            description={description}
+            url={Astro.url.toString()}
+          />
+
+          <!-- Email Capture -->
+          <!-- <EmailCapture
+            calculatorType={calcType}
+            headline="📧 Save Your Results"
+            description="Get your calculation results sent to your email, plus exclusive tips and calculator recommendations."
+          /> -->
+
+          <!-- Affiliate Box -->
+          <!-- <AffiliateBox
+            category={category}
+            title="Ready to Take Action?"
+            description="Check out these trusted partners to help you move forward"
+          /> -->
+
+          <!-- Bottom Ad Unit -->
+          <!-- <AdUnit slot="calculator-bottom" format="rectangle" /> -->
+
+          <!-- Related Calculators -->
+          <RelatedCalculators
+            currentSlug={slug}
+            category={category}
+            limit={3}
+          />
+
+          <!-- Additional Content Section -->
+          {
+            tags.length > 0 && (
+              <div class="calculator-tags">
+                <h4>Related Topics:</h4>
+                <div class="tags-list">
+                  {tags.map((tag) => (
+                    <span class="tag">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            )
+          }
+
+          <!-- Last Updated -->
+          {
+            lastUpdated && (
+              <div class="last-updated">
+                <small>
+                  Last updated:{" "}
+                  {new Date(lastUpdated).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </small>
+              </div>
+            )
+          }
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="calculator-sidebar">
+          <!-- Sticky Ad Unit -->
+          <div class="sidebar-sticky">
+            <!-- <AdUnit slot="sidebar-top" format="square" className="sidebar" /> -->
+
+            <!-- Quick Links Card -->
+            <div class="sidebar-card">
+              <h3>Popular Calculators</h3>
+              <ul class="sidebar-links">
+                <li>
+                  <a href="/calculators/mortgage-payment-calculator">
+                    💰 Mortgage Payment
+                  </a>
+                </li>
+                <li>
+                  <a href="/calculators/bmi-calculator"> ❤️ BMI Calculator </a>
+                </li>
+                <li>
+                  <a href="/calculators/loan-amortization-calculator">
+                    📊 Loan Amortization
+                  </a>
+                </li>
+                <li>
+                  <a href="/calculators/calorie-calculator">
+                    🔥 Calorie Calculator
+                  </a>
+                </li>
+                <li>
+                  <a href="/calculators"> View All Calculators → </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Help Card -->
+            <!-- <div class="sidebar-card help-card">
+              <h3>Need Help?</h3>
+              <p>Have questions about using this calculator?</p>
+              <a href="/faq" class="btn btn-secondary btn-sm"> Visit FAQ </a>
+            </div> -->
+
+            <!-- Another Ad Unit -->
+            <!-- <AdUnit slot="sidebar-bottom" format="square" className="sidebar" /> -->
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .calculator-page {
+    padding: var(--space-xl) 0;
+    min-height: 100vh;
+  }
+
+  .calculator-layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: var(--space-xl);
+    align-items: start;
+  }
+
+  /* Calculator Header */
+  .calculator-header {
+    margin-bottom: var(--space-3xl);
+    padding-bottom: var(--space-xl);
+    border-bottom: 2px solid var(--color-gray);
+  }
+
+  .calculator-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+  }
+
+  .category-badge {
+    display: inline-block;
+    background: var(--color-lighter-blue);
+    color: var(--color-primary-blue);
+    padding: var(--space-xs) var(--space-md);
+    border-radius: 6px;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+
+  .category-badge:hover {
+    background: var(--color-light-blue);
+    color: var(--color-white);
+  }
+
+  .featured-badge {
+    background: linear-gradient(135deg, #ff6b35 0%, #ff8c61 100%);
+    color: var(--color-white);
+    padding: var(--space-xs) var(--space-md);
+    border-radius: 20px;
+    font-size: var(--text-xs);
+    font-weight: 700;
+    box-shadow: var(--shadow-md);
+  }
+
+  .calculator-title {
+    font-size: var(--text-5xl);
+    color: var(--color-primary-blue);
+    margin-bottom: var(--space-md);
+    line-height: 1.2;
+  }
+
+  .calculator-description {
+    font-size: var(--text-xl);
+    color: var(--color-gray-dark);
+    line-height: 1.6;
+    margin-bottom: var(--space-lg);
+  }
+
+  .calculator-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+  }
+
+  .info-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    color: var(--color-gray-dark);
+    font-size: var(--text-sm);
+  }
+
+  .info-item svg {
+    color: var(--color-accent-orange);
+  }
+
+  /* Calculator Tool Wrapper */
+  .calculator-tool-wrapper {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-2xl);
+    box-shadow: var(--shadow-lg);
+    margin-bottom: var(--space-3xl);
+    border: 2px solid var(--color-gray);
+  }
+
+  /* Tags */
+  .calculator-tags {
+    margin-top: var(--space-3xl);
+    padding-top: var(--space-xl);
+    border-top: 2px solid var(--color-gray);
+  }
+
+  .calculator-tags h4 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-md);
+  }
+
+  .tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+
+  .tag {
+    background: var(--color-gray-light);
+    color: var(--color-gray-dark);
+    padding: var(--space-xs) var(--space-md);
+    border-radius: 20px;
+    font-size: var(--text-sm);
+    font-weight: 500;
+  }
+
+  .last-updated {
+    margin-top: var(--space-xl);
+    text-align: center;
+    color: var(--color-gray-dark);
+    opacity: 0.7;
+  }
+
+  /* Sidebar */
+  .calculator-sidebar {
+    width: 100%;
+    max-width: 100%; /* Mobile: full width */
+    min-width: 0; /* Prevents forcing width */
+  }
+
+  @media (min-width: 1024px) {
+    .calculator-sidebar {
+      max-width: 300px; /* Desktop: fixed width */
+    }
+  }
+
+  .sidebar-sticky {
+    position: sticky;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+  }
+
+  .sidebar-card {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-md);
+    border: 2px solid var(--color-gray);
+  }
+
+  .sidebar-card h3 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-lg);
+  }
+
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar-links li {
+    margin-bottom: var(--space-sm);
+  }
+
+  .sidebar-links a {
+    display: block;
+    color: var(--color-gray-dark);
+    text-decoration: none;
+    padding: var(--space-sm);
+    border-radius: var(--border-radius);
+    transition: all var(--transition-fast);
+  }
+
+  .sidebar-links a:hover {
+    background: var(--color-lighter-blue);
+    color: var(--color-primary-blue);
+    padding-left: var(--space-md);
+  }
+
+  .help-card {
+    background: linear-gradient(
+      135deg,
+      var(--color-lighter-blue) 0%,
+      var(--color-white) 100%
+    );
+  }
+
+  .help-card p {
+    color: var(--color-gray-dark);
+    margin-bottom: var(--space-lg);
+  }
+
+  .btn-sm {
+    padding: var(--space-sm) var(--space-lg);
+    font-size: var(--text-sm);
+    width: 100%;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .calculator-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .calculator-sidebar {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .calculator-main {
+      max-width: calc(82vw - 200px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .calculator-title {
+      font-size: var(--text-3xl);
+    }
+
+    .calculator-description {
+      font-size: var(--text-lg);
+    }
+
+    .calculator-tool-wrapper {
+      padding: var(--space-lg);
+    }
+
+    .calculator-info {
+      gap: var(--space-md);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .calculator-page {
+      padding: var(--space-md) 0;
+    }
+
+    .calculator-title {
+      font-size: var(--text-2xl);
+    }
+
+    .calculator-tool-wrapper {
+      padding: var(--space-md);
+    }
+  }
+</style>

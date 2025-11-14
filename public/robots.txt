@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://calccrunch.com/sitemap-index.xml

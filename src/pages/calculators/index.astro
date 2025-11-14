@@ -1,0 +1,261 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import CalculatorCard from "../../components/CalculatorCard.astro";
+import AdUnit from "../../components/AdUnit.astro";
+import calculatorsData from "../../data/calculators.json";
+import categoriesData from "../../data/categories.json";
+
+const breadcrumbItems = [
+  { label: "Home", href: "/" },
+  { label: "All Calculators", href: null },
+];
+
+// Get all calculators
+const allCalculators = calculatorsData?.calculators;
+
+// Get category name helper function
+function getCategoryName(categoryId) {
+  const category = categoriesData.categories.find(
+    (cat) => cat.id === categoryId
+  );
+  return category ? category.name : categoryId;
+}
+
+// Get category data helper function
+function getCategoryData(categoryId) {
+  return categoriesData.categories.find((cat) => cat.id === categoryId);
+}
+
+// Group by category and sort categories by order
+const calculatorsByCategory = {};
+const sortedCategories = [...categoriesData.categories].sort(
+  (a, b) => a.order - b.order
+);
+
+sortedCategories.forEach((cat) => {
+  const calcs = allCalculators.filter((calc) => calc.category === cat.id);
+  if (calcs.length > 0) {
+    calculatorsByCategory[cat.id] = {
+      name: cat.name,
+      slug: cat.slug,
+      icon: cat.icon,
+      calculators: calcs,
+    };
+  }
+});
+---
+
+<BaseLayout
+  title={`All Calculators - Free Online Tools | CalcCrunch`}
+  description={`Browse our complete collection of ${allCalculators.length}+ free calculators across all categories.`}
+  keywords="all calculators, free calculator tools, online calculators, calculator collection"
+>
+  <div class="all-calculators-page">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbItems} />
+
+      <!-- Page Header -->
+      <header class="page-header">
+        <h1>All Calculators</h1>
+        <p class="page-description">
+          Browse our complete collection of {allCalculators.length}+ free
+          calculators organized by category. Find the perfect tool for your
+          needs—no registration required, always free.
+        </p>
+
+        <!-- Quick Stats -->
+        <div class="quick-stats">
+          <div class="stat">
+            <strong>{allCalculators.length}+</strong>
+            <span>Free Calculators</span>
+          </div>
+          <div class="stat">
+            <strong>{Object.keys(calculatorsByCategory).length}</strong>
+            <span>Categories</span>
+          </div>
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Free Forever</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Top Ad Unit -->
+      <!-- <AdUnit slot="all-calculators-top" format="horizontal" /> -->
+
+      <!-- Calculators by Category -->
+      {
+        Object.entries(calculatorsByCategory)?.map(
+          ([categoryId, categoryData]) => {
+            const catInfo = getCategoryData(categoryId);
+            return (
+              <section class="category-section">
+                <div class="category-section-header">
+                  <div class="category-title-wrapper">
+                    <span class="category-icon">{categoryData.icon}</span>
+                    <h2>{categoryData.name}</h2>
+                    <span class="calculator-count">
+                      ({categoryData.calculators.length})
+                    </span>
+                  </div>
+                  <a
+                    href={`/categories/${categoryData?.slug}`}
+                    class="view-category-link"
+                  >
+                    View All {categoryData?.name} →
+                  </a>
+                </div>
+
+                <div class="calculators-grid">
+                  {categoryData?.calculators
+                    ?.sort((a, b) => !!b.popular - !!a.popular)
+                    ?.map((calc) => (
+                      <CalculatorCard
+                        title={calc.title}
+                        description={calc.shortDescription}
+                        category={categoryData.name}
+                        slug={calc.slug}
+                        popular={calc.popular}
+                        icon={calc.icon}
+                      />
+                    ))}
+                </div>
+              </section>
+            );
+          }
+        )
+      }
+
+      <!-- Bottom Ad Unit -->
+      <!-- <AdUnit slot="all-calculators-bottom" format="rectangle" /> -->
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .all-calculators-page {
+    padding: var(--space-xl) 0 var(--space-3xl);
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: var(--space-3xl);
+  }
+
+  .page-header h1 {
+    font-size: var(--text-5xl);
+    color: var(--color-primary-blue);
+    margin-bottom: var(--space-lg);
+  }
+
+  .page-description {
+    font-size: var(--text-xl);
+    color: var(--color-gray-dark);
+    max-width: 800px;
+    margin: 0 auto var(--space-2xl);
+    line-height: 1.7;
+  }
+
+  .quick-stats {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-3xl);
+    margin-bottom: var(--space-2xl);
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat strong {
+    display: block;
+    font-size: var(--text-3xl);
+    color: var(--color-accent-orange);
+    font-family: var(--font-primary);
+    margin-bottom: var(--space-xs);
+  }
+
+  .stat span {
+    color: var(--color-gray-dark);
+    font-weight: 600;
+  }
+
+  .category-section {
+    margin-bottom: var(--space-3xl);
+    padding-bottom: var(--space-3xl);
+    border-bottom: 2px solid var(--color-gray);
+  }
+
+  .category-section:last-of-type {
+    border-bottom: none;
+  }
+
+  .category-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-xl);
+  }
+
+  .category-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+  }
+
+  .category-icon {
+    font-size: 2.5rem;
+  }
+
+  .category-section-header h2 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-3xl);
+    margin: 0;
+  }
+
+  .calculator-count {
+    color: var(--color-gray-dark);
+    font-size: var(--text-xl);
+    opacity: 0.7;
+  }
+
+  .view-category-link {
+    color: var(--color-accent-orange);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+  }
+
+  .view-category-link:hover {
+    color: var(--color-accent-orange-dark);
+    text-decoration: underline;
+  }
+
+  .calculators-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-xl);
+  }
+
+  @media (max-width: 768px) {
+    .page-header h1 {
+      font-size: var(--text-3xl);
+    }
+
+    .quick-stats {
+      flex-direction: column;
+      gap: var(--space-lg);
+    }
+
+    .category-section-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-md);
+    }
+
+    .calculators-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

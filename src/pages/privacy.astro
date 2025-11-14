@@ -1,0 +1,771 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import EmailCapture from "../components/EmailCapture.astro";
+
+const breadcrumbItems = [
+  { label: "Home", href: "/" },
+  { label: "Privacy Policy", href: null },
+];
+
+const privacySections = [
+  {
+    title: "1. Information We Collect",
+    icon: "📊",
+    content: [
+      "CalcCrunch.com is designed with privacy in mind. We collect minimal information:",
+      "**Automatically Collected Information:** We use analytics tools to collect non-personal information such as browser type, device type, pages visited, time spent on pages, and general geographic location (country/state level). This helps us improve our calculators and user experience.",
+      "**Information You Provide:** If you contact us through our contact form, we collect your name, email address, and any information you choose to include in your message.",
+      "**Calculator Data:** All calculations are performed locally in your browser. We do not collect, store, or have access to any numbers or data you enter into our calculators.",
+    ],
+  },
+  {
+    title: "2. How We Use Your Information",
+    icon: "🎯",
+    content: [
+      "We use the information we collect in the following ways:",
+      "**Analytics Data:** To understand how our calculators are used, identify popular tools, and improve our website's performance and user experience.",
+      "**Contact Information:** To respond to your inquiries, provide support, or send updates if you've opted to receive them.",
+      "**Technical Data:** To ensure our website functions properly across different devices and browsers, and to maintain security.",
+    ],
+  },
+  {
+    title: "3. Data Storage and Security",
+    icon: "🔒",
+    content: [
+      "**Local Processing:** All calculator computations happen in your browser. We don't send your calculation data to any servers.",
+      "**Contact Form Data:** Information submitted through our contact form is transmitted securely and stored only for the purpose of responding to your inquiry.",
+      "**Security Measures:** We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.",
+      "**No Account Required:** We don't require user accounts or registration, minimizing the personal data we collect.",
+    ],
+  },
+  {
+    title: "4. Cookies and Tracking",
+    icon: "🍪",
+    content: [
+      "**Essential Cookies:** We use minimal essential cookies to ensure the website functions properly.",
+      "**Analytics Cookies:** We use Google Analytics to understand how visitors interact with our website. These cookies collect information in an anonymous form.",
+      "**No Marketing Cookies:** We do not use cookies for remarketing or targeted advertising.",
+      "**Your Control:** You can control and/or delete cookies as you wish. You can delete all cookies that are already on your computer and set most browsers to prevent them from being placed.",
+    ],
+  },
+  {
+    title: "5. Third-Party Services",
+    icon: "🔗",
+    content: [
+      "We use a limited number of third-party services:",
+      "**Google Analytics:** For website analytics (anonymized data only)",
+      "**EmailJS:** For processing contact form submissions",
+      "**Content Delivery Networks (CDN):** For faster loading of website resources",
+      "These services have their own privacy policies, and we encourage you to review them. We only work with reputable services that prioritize user privacy.",
+    ],
+  },
+  {
+    title: "6. Data Sharing",
+    icon: "🚫",
+    content: [
+      "**We do not sell your data:** We never sell, rent, or trade your personal information to third parties.",
+      "**Limited Sharing:** We only share information when: (a) Required by law or legal process; (b) Necessary to protect our rights or property; (c) You have given us explicit permission to do so.",
+      "**No Advertising Networks:** We don't share data with advertising networks or data brokers.",
+    ],
+  },
+  {
+    title: "7. Your Rights",
+    icon: "✅",
+    content: [
+      "You have the following rights regarding your personal information:",
+      "**Access:** You can request information about what personal data we have about you.",
+      "**Correction:** You can request that we correct any inaccurate information.",
+      "**Deletion:** You can request that we delete your personal information.",
+      "**Opt-Out:** You can opt out of analytics tracking by using browser privacy settings or extensions.",
+      "To exercise any of these rights, please contact us at info@calccrunch.com.",
+    ],
+  },
+  {
+    title: "8. Children's Privacy",
+    icon: "👶",
+    content: [
+      "CalcCrunch.com is not directed to children under 13 years of age. We do not knowingly collect personal information from children under 13.",
+      "If we become aware that we have collected personal information from a child under 13, we will take steps to delete such information as soon as possible.",
+      "If you believe we have collected information from a child under 13, please contact us immediately.",
+    ],
+  },
+  {
+    title: "9. International Users",
+    icon: "🌍",
+    content: [
+      "CalcCrunch.com is accessible worldwide. If you are accessing our website from outside the United States, please be aware that your information may be transferred to and processed in the United States.",
+      "By using our website, you consent to the transfer and processing of your information in the United States.",
+      "We comply with applicable data protection laws and regulations.",
+    ],
+  },
+  {
+    title: "10. Changes to This Policy",
+    icon: "📝",
+    content: [
+      "We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, operational, or regulatory reasons.",
+      "We will notify you of any material changes by posting the new Privacy Policy on this page.",
+      "Your continued use of calccrunch.com after any changes indicates your acceptance of the updated Privacy Policy.",
+    ],
+  },
+  {
+    title: "11. Contact Us",
+    icon: "📧",
+    content: [
+      "If you have any questions about this Privacy Policy or our privacy practices, please contact us:",
+      'Email: <a href="mailto:info@calccrunch.com">info@calccrunch.com</a>',
+      'Website: <a href="/contact">https://calccrunch.com/contact</a>',
+      "We take all privacy concerns seriously and will respond to your inquiries promptly.",
+    ],
+  },
+];
+
+const privacyHighlights = [
+  {
+    icon: "🔐",
+    title: "Your Data Stays Private",
+    description:
+      "All calculations happen in your browser. We never see your numbers.",
+  },
+  {
+    icon: "🚫",
+    title: "No Account Required",
+    description:
+      "Use all our calculators without signing up or providing personal information.",
+  },
+  {
+    icon: "💰",
+    title: "We Don't Sell Data",
+    description:
+      "Your information is never sold, rented, or traded to third parties.",
+  },
+  {
+    icon: "🎯",
+    title: "Minimal Tracking",
+    description:
+      "We only use analytics to improve our calculators, not for advertising.",
+  },
+];
+---
+
+<BaseLayout
+  title="Privacy Policy - CalcCrunch.com"
+  description="Learn how CalcCrunch.com protects your privacy. We believe in minimal data collection, local processing, and complete transparency."
+  keywords="privacy policy, data protection, user privacy, calculator privacy, personal information"
+>
+  <div class="privacy-page">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbItems} />
+    </div>
+
+    <!-- Hero Section -->
+    <section class="privacy-hero bg-gradient">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="text-white">Privacy Policy</h1>
+          <p class="hero-tagline text-white">
+            Your Privacy is Our Priority - Simple, Transparent, Secure
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy Highlights -->
+    <section class="highlights-section">
+      <div class="container">
+        <div class="highlights-grid">
+          {
+            privacyHighlights.map((highlight) => (
+              <div class="highlight-card">
+                <div class="highlight-icon">{highlight.icon}</div>
+                <h3>{highlight.title}</h3>
+                <p>{highlight.description}</p>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="privacy-content">
+      <div class="container">
+        <div class="content-wrapper">
+          <!-- Table of Contents -->
+          <aside class="toc-sidebar">
+            <div class="toc-wrapper">
+              <h3>Quick Navigation</h3>
+              <nav class="toc-nav">
+                {
+                  privacySections.map((section, index) => (
+                    <a href={`#section-${index + 1}`} class="toc-link">
+                      <span class="toc-icon">{section.icon}</span>
+                      <span>{section.title}</span>
+                    </a>
+                  ))
+                }
+              </nav>
+
+              <div class="privacy-summary">
+                <h4>Privacy at a Glance</h4>
+                <ul>
+                  <li>✓ No account required</li>
+                  <li>✓ Calculations stay local</li>
+                  <li>✓ Minimal cookies</li>
+                  <li>✓ No data selling</li>
+                  <li>✓ Transparent practices</li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Privacy Content -->
+          <div class="privacy-main">
+            <div class="intro-box">
+              <h2>Our Commitment to Your Privacy</h2>
+              <p>
+                At CalcCrunch.com, we believe privacy is a fundamental right.
+                This policy explains what information we collect, how we use it,
+                and the choices you have. We've written this in plain language
+                to make it easy to understand.
+              </p>
+              <p>
+                <strong>The Short Version:</strong> We don't collect or store your
+                calculator data, we don't require accounts, and we don't sell your
+                information. Your calculations stay in your browser, and we only
+                collect minimal analytics to improve our service.
+              </p>
+            </div>
+
+            {
+              privacySections.map((section, index) => (
+                <section id={`section-${index + 1}`} class="privacy-section">
+                  <div class="section-header">
+                    <span class="section-icon">{section.icon}</span>
+                    <h2>{section.title}</h2>
+                  </div>
+                  <div class="section-content">
+                    {section?.content?.map((paragraph) => (
+                      <p
+                        set:html={paragraph?.replace(
+                          /\*\*(.*?)\*\*/g,
+                          "<strong>$1</strong>"
+                        )}
+                      />
+                    ))}
+                  </div>
+                </section>
+              ))
+            }
+
+            <div class="gdpr-notice">
+              <h3>GDPR Compliance</h3>
+              <p>
+                For users in the European Union, we comply with the General Data
+                Protection Regulation (GDPR). You have the right to access,
+                rectify, erase, restrict processing, object to processing, and
+                data portability regarding your personal information.
+              </p>
+              <p>
+                To exercise any of these rights, please contact us at
+                info@calccrunch.com.
+              </p>
+            </div>
+
+            <div class="ccpa-notice">
+              <h3>California Privacy Rights</h3>
+              <p>
+                If you are a California resident, you have specific rights under
+                the California Consumer Privacy Act (CCPA). You have the right
+                to know what personal information we collect, request deletion
+                of your information, opt-out of any sales (we don't sell data),
+                and not be discriminated against for exercising your rights.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section bg-light">
+      <div class="container">
+        <div class="trust-content text-center">
+          <h2>Why Trust CalcCrunch?</h2>
+          <div class="trust-grid">
+            <div class="trust-item">
+              <div class="trust-icon">🏗️</div>
+              <h4>Privacy by Design</h4>
+              <p>Built from the ground up with privacy as a core principle</p>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon">👁️</div>
+              <h4>Complete Transparency</h4>
+              <p>We're open about what we collect and why</p>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon">🛡️</div>
+              <h4>Your Control</h4>
+              <p>You decide what information to share with us</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+      <div class="container">
+        <div class="cta-content text-center">
+          <h2>Privacy Questions?</h2>
+          <p>
+            If you have any questions about our privacy practices or this
+            policy, we're here to help.
+          </p>
+          <div class="cta-actions">
+            <a href="/contact" class="btn btn-primary btn-lg"> Contact Us </a>
+            <a href="/faq#privacy" class="btn btn-secondary btn-lg">
+              Privacy FAQ
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email Capture -->
+    <EmailCapture />
+  </div>
+</BaseLayout>
+
+<style>
+  /* Privacy Page Base */
+  .privacy-page {
+    background: var(--color-white);
+  }
+
+  /* Hero Section */
+  .privacy-hero {
+    padding: var(--space-3xl) 0;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: var(--text-5xl);
+    font-weight: 800;
+    margin-bottom: var(--space-md);
+  }
+
+  .hero-tagline {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-xl);
+    opacity: 0.95;
+  }
+
+  /* Highlights Section */
+  .highlights-section {
+    padding: var(--space-2xl) 0;
+    background: var(--color-gray-light);
+    margin-top: -2px;
+  }
+
+  .highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-xl);
+  }
+
+  .highlight-card {
+    background: var(--color-white);
+    padding: var(--space-xl);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-base);
+  }
+
+  .highlight-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .highlight-icon {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-md);
+  }
+
+  .highlight-card h3 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-sm);
+  }
+
+  .highlight-card p {
+    color: var(--color-gray-dark);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Content Layout */
+  .privacy-content {
+    padding: var(--space-3xl) 0;
+  }
+
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: var(--space-3xl);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Table of Contents */
+  .toc-sidebar {
+    position: sticky;
+    top: var(--space-xl);
+    height: fit-content;
+  }
+
+  .toc-wrapper {
+    background: var(--color-gray-light);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-xl);
+  }
+
+  .toc-wrapper h3 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-lg);
+  }
+
+  .toc-nav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .toc-link {
+    color: var(--color-gray-dark);
+    text-decoration: none;
+    padding: var(--space-xs) var(--space-sm);
+    border-left: 3px solid transparent;
+    transition: all var(--transition-fast);
+    font-size: var(--text-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+  }
+
+  .toc-icon {
+    font-size: var(--text-base);
+  }
+
+  .toc-link:hover {
+    color: var(--color-accent-orange);
+    border-left-color: var(--color-accent-orange);
+    background: var(--color-white);
+    padding-left: var(--space-md);
+  }
+
+  /* Privacy Summary */
+  .privacy-summary {
+    margin-top: var(--space-2xl);
+    padding-top: var(--space-xl);
+    border-top: 2px solid var(--color-gray);
+  }
+
+  .privacy-summary h4 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-base);
+    margin-bottom: var(--space-md);
+  }
+
+  .privacy-summary ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .privacy-summary li {
+    color: var(--color-gray-dark);
+    font-size: var(--text-sm);
+    padding: var(--space-xs) 0;
+  }
+
+  /* Main Content */
+  .privacy-main {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-2xl);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .intro-box {
+    background: var(--color-lighter-blue);
+    padding: var(--space-xl);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--space-2xl);
+    border-left: 4px solid var(--color-primary-blue);
+  }
+
+  .intro-box h2 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-md);
+  }
+
+  .intro-box p {
+    color: var(--color-gray-dark);
+    line-height: 1.7;
+    margin-bottom: var(--space-md);
+  }
+
+  .intro-box p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Privacy Sections */
+  .privacy-section {
+    margin-bottom: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+    border-bottom: 2px solid var(--color-gray-light);
+    scroll-margin-top: var(--space-xl);
+  }
+
+  .privacy-section:last-of-type {
+    border-bottom: none;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+  }
+
+  .section-icon {
+    font-size: var(--text-3xl);
+  }
+
+  .section-header h2 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .section-content p {
+    color: var(--color-gray-dark);
+    line-height: 1.8;
+    margin-bottom: var(--space-md);
+  }
+
+  .section-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .section-content strong {
+    color: var(--color-primary-blue);
+    font-weight: 600;
+  }
+
+  /* GDPR & CCPA Notices */
+  .gdpr-notice,
+  .ccpa-notice {
+    background: var(--color-lighter-blue);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-xl);
+    margin-top: var(--space-2xl);
+    border: 2px solid var(--color-light-blue);
+  }
+
+  .gdpr-notice h3,
+  .ccpa-notice h3 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-md);
+  }
+
+  .gdpr-notice p,
+  .ccpa-notice p {
+    color: var(--color-gray-dark);
+    line-height: 1.7;
+    margin-bottom: var(--space-md);
+  }
+
+  .gdpr-notice p:last-child,
+  .ccpa-notice p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Trust Section */
+  .trust-section {
+    padding: var(--space-3xl) 0;
+    margin-top: var(--space-3xl);
+  }
+
+  .trust-content h2 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-2xl);
+  }
+
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-2xl);
+  }
+
+  .trust-item {
+    text-align: center;
+  }
+
+  .trust-icon {
+    font-size: var(--text-5xl);
+    margin-bottom: var(--space-md);
+  }
+
+  .trust-item h4 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-sm);
+  }
+
+  .trust-item p {
+    color: var(--color-gray-dark);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Contact CTA */
+  .contact-cta {
+    padding: var(--space-3xl) 0;
+    background: linear-gradient(
+      135deg,
+      var(--color-primary-blue) 0%,
+      var(--color-light-blue) 100%
+    );
+  }
+
+  .cta-content h2 {
+    color: var(--color-white);
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-md);
+  }
+
+  .cta-content p {
+    color: var(--color-white);
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-xl);
+    opacity: 0.95;
+  }
+
+  .cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-lg);
+    flex-wrap: wrap;
+  }
+
+  .btn-lg {
+    padding: var(--space-md) var(--space-2xl);
+    font-size: var(--text-lg);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .content-wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    .toc-sidebar {
+      position: static;
+      order: 2;
+    }
+
+    .privacy-main {
+      order: 1;
+    }
+
+    .toc-wrapper {
+      margin-top: var(--space-2xl);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .privacy-hero h1 {
+      font-size: var(--text-4xl);
+    }
+
+    .hero-meta {
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+
+    .highlights-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .privacy-main {
+      padding: var(--space-lg);
+    }
+
+    .section-header h2 {
+      font-size: var(--text-xl);
+    }
+
+    .trust-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cta-actions {
+      flex-direction: column;
+    }
+
+    .cta-actions .btn {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .privacy-hero h1 {
+      font-size: var(--text-3xl);
+    }
+
+    .privacy-main {
+      padding: var(--space-md);
+    }
+
+    .intro-box {
+      padding: var(--space-md);
+    }
+
+    .section-header {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  /* Print Styles */
+  @media print {
+    .toc-sidebar,
+    .highlights-section,
+    .trust-section,
+    .contact-cta {
+      display: none;
+    }
+
+    .privacy-hero {
+      background: none;
+      color: var(--color-black);
+    }
+
+    .hero-content h1,
+    .hero-tagline {
+      color: var(--color-black);
+    }
+
+    .privacy-main {
+      box-shadow: none;
+      padding: 0;
+    }
+  }
+</style>
