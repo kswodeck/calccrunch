@@ -6,7 +6,7 @@ category: health-fitness
 tags: ['BMI', 'body mass index', 'weight', 'health', 'fitness']
 featured: true
 calcType: bmi
-seoTitle: Free BMI Calculator - Body Mass Index & Ideal Weight | Save & Share Results
+seoTitle: Free BMI Calculator - Body Mass Index & Ideal Weight
 seoDescription: Calculate your BMI instantly with our free calculator. Get your ideal weight range and health insights. Save and share your calculations with automatic URL parameters.
 estimatedTime: 1 minute
 difficulty: Easy
@@ -20,13 +20,6 @@ difficulty: Easy
 4. Optionally enter your **age** and **gender** for more accurate insights
 5. Click **Calculate** to see your BMI and health category
 6. **Share or bookmark** your results - the URL automatically saves your inputs!
-
-### 🔗 Save & Share Feature
-Your input values are automatically saved in the URL as you type. This means you can:
-- **Bookmark** your BMI calculation for future reference
-- **Share** your calculation with healthcare providers or fitness coaches
-- **Return** to your calculation anytime with all values preserved
-- **Compare** different BMI scenarios by saving multiple URLs
 
 <div class="calculator-form" id="bmi-calculator-form">
   <div class="form-section">
@@ -202,6 +195,14 @@ Your input values are automatically saved in the URL as you type. This means you
     may have a high BMI but low body fat. For a complete health assessment, consult with 
     a healthcare professional who can consider additional factors like body composition, 
     lifestyle, and family history.
+  </p>
+</div>
+
+<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+  <h4>🔗 Save & Share Your Calculation</h4>
+  <p>
+    Your inputs are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
+    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values will be restored automatically.
   </p>
 </div>
 

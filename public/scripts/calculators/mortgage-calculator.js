@@ -678,7 +678,6 @@
     `;
     
     resultDiv.classList.remove('hidden');
-    resultDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     
     // Attach print button listener
     const printBtn = document.getElementById('print-results');

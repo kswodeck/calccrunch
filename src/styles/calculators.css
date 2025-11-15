@@ -287,12 +287,12 @@
    ============================================ */
 
 .calculator-result {
-  margin-top: var(--space-3xl);
+  margin: var(--space-3xl) auto var(--space-2xl);
   padding: var(--space-2xl);
   background: linear-gradient(135deg, var(--color-lighter-blue) 0%, var(--color-white) 100%);
   border-radius: var(--border-radius-lg);
   border: 3px solid var(--color-light-blue);
-  max-width: 100%;
+  max-width: min(99vw, 100%);
   overflow-x: visible;
 }
 
@@ -1895,6 +1895,10 @@
     grid-template-columns: 1fr;
   }
 
+  .segment-label {
+    font-size: 0.75rem;
+  }
+
   .form-section {
     padding: var(--space-lg);
   }
@@ -2082,6 +2086,15 @@
   .calculator-result {
     padding: var(--space-2xl) var(--space-sm);
   }
+
+  .comparison-table {
+    font-size: 0.875rem;
+  }
+    
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.5rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -2223,4 +2236,64 @@
   justify-content: center;
   border-radius: 50%;
   background: white;
+}
+
+  .segment-label {
+    color: black;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    z-index: 2;
+  }
+
+.table-wrapper, .amortization-preview {
+  width: 100%;
+  overflow-x: auto;
+  margin: 2rem 0;
+  border-radius: 8px;
+
+  .comparison-table, .amortization-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    min-width: 300px;
+
+    thead {
+      background: #374151;
+      color: white;
+    }
+
+    th,
+    td {
+      padding: 1rem;
+      text-align: right;
+    }
+
+    th:first-child,
+    td:first-child {
+      text-align: left;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    tbody tr.current-selection {
+      background: #fef3c7;
+      font-weight: bold;
+    }
+
+    tbody tr.current-term {
+      background: #fef3c7;
+      font-weight: bold;
+    }
+  }
+}
+
+.payment-breakdown-visual {
+  background: #f8f9fa;
+  padding: 1.5rem var(--space-xs);
+  border-radius: 12px;
+  margin: 2rem 0;
 }

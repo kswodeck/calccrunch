@@ -1557,12 +1557,13 @@ style.textContent = `
     .bar-label {
         font-size: 0.8rem;
         opacity: 0.9;
+        color: black;
     }
     
     /* Calendar view */
     .calendar-view {
         margin: 2rem 0;
-        padding: 1.5rem;
+        padding: var(--space-lg) var(--space-md);
         background: white;
         border-radius: 12px;
         border: 1px solid #e5e7eb;
@@ -1613,6 +1614,7 @@ style.textContent = `
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 2rem;
+        overflow: scroll;
     }
     
     .calendar-month h4 {

@@ -241,13 +241,6 @@ difficulty: Easy
     font-weight: bold;
   }
   
-  .payment-breakdown-visual {
-    margin: 2rem 0;
-    padding: 1.5rem;
-    background: #f8f9fa;
-    border-radius: 12px;
-  }
-  
   .composition-chart {
     margin: 1.5rem 0;
   }
@@ -257,8 +250,8 @@ difficulty: Easy
     align-items: flex-end;
     justify-content: space-between;
     height: 200px;
-    padding: 0 1rem;
     border-bottom: 2px solid #e5e7eb;
+    padding: 0 var(--space-xs);
   }
   
   .composition-bar {
@@ -385,11 +378,6 @@ difficulty: Easy
   .schedule-table-container {
     overflow-x: auto;
     margin-top: 1rem;
-  }
-  
-  .amortization-table {
-    width: 100%;
-    border-collapse: collapse;
   }
   
   .amortization-table thead {

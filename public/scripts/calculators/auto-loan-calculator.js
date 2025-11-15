@@ -742,9 +742,6 @@
 
     resultDiv.classList.remove('hidden');
     
-    // Scroll to results
-    resultDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    
     // Re-attach event listeners
     const printBtn = document.getElementById('print-results');
     if (printBtn) {
@@ -793,6 +790,7 @@
     });
     
     return `
+    <div class="table-wrapper">
       <table class="comparison-table">
         <thead>
           <tr>
@@ -820,6 +818,7 @@
           `).join('')}
         </tbody>
       </table>
+      </div>
       <p class="comparison-note">
         <strong>Note:</strong> Shorter terms have higher monthly payments but save significantly on interest. 
         The 48-month term saves ${formatCurrency(currentResults.totalInterest - comparisons[1].totalInterest)} 

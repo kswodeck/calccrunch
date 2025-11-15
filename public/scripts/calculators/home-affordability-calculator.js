@@ -956,9 +956,6 @@
 
     resultDiv.classList.remove('hidden');
     
-    // Scroll to results
-    resultDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    
     // Re-attach print button listener
     const printBtn = document.getElementById('print-results');
     if (printBtn) {

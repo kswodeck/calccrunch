@@ -464,17 +464,13 @@ difficulty: Easy
   }
   
   .amortization-preview {
-    margin: 2rem 0;
     padding: 1.5rem;
     background: white;
-    border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
   
   .amortization-table {
-    width: 100%;
     margin-top: 1rem;
-    border-collapse: collapse;
   }
   
   .amortization-table thead {
@@ -498,40 +494,6 @@ difficulty: Easy
     padding: 1.5rem;
     background: #f8f9fa;
     border-radius: 12px;
-  }
-  
-  .comparison-table {
-    width: 100%;
-    margin-top: 1rem;
-    border-collapse: collapse;
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .comparison-table thead {
-    background: #374151;
-    color: white;
-  }
-  
-  .comparison-table th,
-  .comparison-table td {
-    padding: 1rem;
-    text-align: right;
-  }
-  
-  .comparison-table th:first-child,
-  .comparison-table td:first-child {
-    text-align: left;
-  }
-  
-  .comparison-table tbody tr {
-    border-bottom: 1px solid #e5e7eb;
-  }
-  
-  .comparison-table tbody tr.current-term {
-    background: #fef3c7;
-    font-weight: bold;
   }
   
   .badge {
@@ -624,19 +586,6 @@ difficulty: Easy
     
     .payment-legend {
       flex-direction: column;
-    }
-    
-    .segment-label {
-      font-size: 0.75rem;
-    }
-    
-    .comparison-table {
-      font-size: 0.875rem;
-    }
-    
-    .comparison-table th,
-    .comparison-table td {
-      padding: 0.5rem;
     }
   }
   

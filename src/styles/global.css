@@ -222,7 +222,7 @@ img {
   }
   
   .container {
-    padding: 0 var(--space-md);
+    padding: 0 var(--space-sm);
   }
   
   .grid-2,
@@ -234,7 +234,7 @@ img {
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 var(--space-sm);
+    padding: 0 var(--space-xs);
   }
 }
 

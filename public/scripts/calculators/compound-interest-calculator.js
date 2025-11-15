@@ -361,14 +361,14 @@
       <div class="growth-visualization">
         <h4>Investment Growth Breakdown</h4>
         <div class="growth-bar">
-          <div class="growth-segment principal" style="width: ${principalPercent}%">
-            <span class="segment-label">Principal<br/>${principalPercent.toFixed(0)}%</span>
+          <div class="growth-segment principal" style="width: ${principalPercent}%" title="Principal: ${principalPercent.toFixed(0)}%">
+            <span class="segment-label">${principalPercent.toFixed(0)}%</span>
           </div>
-          <div class="growth-segment contributions" style="width: ${contributionsPercent}%">
-            <span class="segment-label">Contributions<br/>${contributionsPercent.toFixed(0)}%</span>
+          <div class="growth-segment contributions" style="width: ${contributionsPercent}%" title="Contributions: ${contributionsPercent.toFixed(0)}%">
+            <span class="segment-label">${contributionsPercent.toFixed(0)}%</span>
           </div>
-          <div class="growth-segment interest" style="width: ${interestPercent}%">
-            <span class="segment-label">Interest<br/>${interestPercent.toFixed(0)}%</span>
+          <div class="growth-segment interest" style="width: ${interestPercent}%" title="Interest: ${interestPercent.toFixed(0)}%">
+            <span class="segment-label">${interestPercent.toFixed(0)}%</span>
           </div>
         </div>
         <div class="growth-legend">
@@ -439,37 +439,9 @@
           ${generateInsights(results)}
         </div>
       </div>
-      
-      <div class="result-actions">
-        <h4>Explore More</h4>
-        <div class="action-cards">
-          <button onclick="location.href='/calculators/retirement-calculator'" class="action-card">
-            <span class="action-icon">🏖️</span>
-            <span class="action-text">
-              <strong>Retirement Planning</strong>
-              <small>Plan your retirement savings</small>
-            </span>
-          </button>
-          <button onclick="location.href='/calculators/investment-return-calculator'" class="action-card">
-            <span class="action-icon">📈</span>
-            <span class="action-text">
-              <strong>Investment Returns</strong>
-              <small>Compare investment options</small>
-            </span>
-          </button>
-          <button onclick="location.href='/calculators/inflation-calculator'" class="action-card">
-            <span class="action-icon">💵</span>
-            <span class="action-text">
-              <strong>Inflation Impact</strong>
-              <small>Adjust for inflation</small>
-            </span>
-          </button>
-        </div>
-      </div>
     `;
     
     resultDiv.classList.remove('hidden');
-    resultDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     
     // Attach print button listener
     const printBtn = document.getElementById('print-results');
@@ -501,6 +473,7 @@
     });
     
     return `
+    <div class="table-wrapper">
       <table class="comparison-table">
         <thead>
           <tr>
@@ -523,6 +496,7 @@
           `).join('')}
         </tbody>
       </table>
+      </div>
     `;
   }
 

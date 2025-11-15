@@ -599,7 +599,7 @@ function displayResult(bmr, tdee, goalCalories, macros, age, gender) {
       </div>
       
       ${age && gender ? `
-      <div class="personalized-tips">
+      <div class="personalized-tips" style="margin-top: 2rem;">
         <h4>💡 Personalized Tips for You</h4>
         <div class="tips-grid">
           ${getPersonalizedTips(goalCalories, isWeightLoss, isWeightGain).map(tip => `
@@ -615,7 +615,7 @@ function displayResult(bmr, tdee, goalCalories, macros, age, gender) {
       </div>
       ` : ''}
       
-      <div class="progress-tracker">
+      <div class="progress-tracker" style="margin-top: 2rem;">
         <h4>📈 Track Your Progress</h4>
         <p>
           For best results, weigh yourself weekly at the same time of day. 
@@ -631,7 +631,6 @@ function displayResult(bmr, tdee, goalCalories, macros, age, gender) {
   `;
   
   resultDiv.classList.remove('hidden');
-  resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
 function getPersonalizedTips(goalCalories, isWeightLoss, isWeightGain) {

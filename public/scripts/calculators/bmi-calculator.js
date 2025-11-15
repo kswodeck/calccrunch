@@ -553,7 +553,6 @@ function displayResult(bmi, category, idealWeightRange, weightDifference, age, g
   `;
   
   resultDiv.classList.remove('hidden');
-  resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
 function getScalePosition(bmi) {

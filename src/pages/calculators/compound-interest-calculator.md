@@ -298,14 +298,6 @@ difficulty: Medium
     background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
   }
   
-  .segment-label {
-    color: white;
-    font-weight: bold;
-    font-size: 0.85rem;
-    text-align: center;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  }
-  
   .growth-legend {
     display: flex;
     justify-content: space-around;
@@ -406,40 +398,6 @@ difficulty: Medium
     color: #6b7280;
   }
   
-  .comparison-table {
-    width: 100%;
-    margin-top: 1rem;
-    border-collapse: collapse;
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .comparison-table thead {
-    background: #374151;
-    color: white;
-  }
-  
-  .comparison-table th,
-  .comparison-table td {
-    padding: 1rem;
-    text-align: right;
-  }
-  
-  .comparison-table th:first-child,
-  .comparison-table td:first-child {
-    text-align: left;
-  }
-  
-  .comparison-table tbody tr {
-    border-bottom: 1px solid #e5e7eb;
-  }
-  
-  .comparison-table tbody tr.current-selection {
-    background: #fef3c7;
-    font-weight: bold;
-  }
-  
   .badge {
     display: inline-block;
     padding: 0.25rem 0.5rem;
@@ -517,10 +475,6 @@ difficulty: Medium
   @media (max-width: 768px) {
     .growth-legend {
       flex-direction: column;
-    }
-    
-    .segment-label {
-      font-size: 0.75rem;
     }
     
     .breakdown-table {

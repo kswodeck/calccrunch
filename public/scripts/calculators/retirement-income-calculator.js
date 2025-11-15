@@ -562,7 +562,6 @@
     `;
     
     resultDiv.classList.remove('hidden');
-    resultDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     
     // Attach event listeners
     attachResultEventListeners(projection, results);

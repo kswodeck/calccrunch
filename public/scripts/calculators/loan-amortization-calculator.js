@@ -500,7 +500,6 @@
     `;
     
     resultDiv.classList.remove('hidden');
-    resultDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     
     // Attach event listeners
     const printBtn = document.getElementById('print-results');

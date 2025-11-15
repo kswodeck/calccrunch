@@ -412,14 +412,6 @@ difficulty: Easy
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   }
   
-  .segment-label {
-    color: white;
-    font-weight: bold;
-    font-size: 0.85rem;
-    text-align: center;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-  }
-  
   .income-legend {
     display: flex;
     justify-content: space-around;
@@ -450,13 +442,6 @@ difficulty: Easy
   
   .legend-color.remaining {
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  }
-  
-  .payment-breakdown-visual {
-    background: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 12px;
-    margin: 2rem 0;
   }
   
   .payment-bars {
@@ -741,10 +726,6 @@ difficulty: Easy
     
     .income-legend {
       flex-direction: column;
-    }
-    
-    .segment-label {
-      font-size: 0.75rem;
     }
   }
   
