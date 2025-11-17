@@ -275,9 +275,6 @@ function showFormMessage(message, type) {
     formMessage.className = `form-message ${type}`;
     formMessage.classList.remove('hidden');
     
-    // Scroll to message
-    formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    
     // Auto-hide success messages after 10 seconds
     if (type === 'success') {
         setTimeout(() => {

@@ -115,11 +115,7 @@
 .input-addon {
   display: flex;
   align-items: center;
-  padding: var(--space-md);
-  background: var(--color-gray);
-  border: 2px solid var(--color-gray);
-  border-left: none;
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  padding: var(--space-sm);
   font-weight: 600;
   color: var(--color-gray-dark);
 }

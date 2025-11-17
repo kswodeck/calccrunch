@@ -209,6 +209,45 @@
       "uses": 0,
       "rating": 0,
       "relatedCalculators": ["age-calculator", "hours-calculator", "retirement-date-calculator"]
+    },
+    {
+      "id": "investment-income-goal-calculator",
+      "title": "Investment Income Goal Calculator",
+      "slug": "investment-income-goal-calculator",
+      "description": "Calculate how much you need to invest to replace your income or reach financial independence. Plan multiple investment scenarios with ROI analysis, breakeven timeline, and income projections to achieve your financial goals.",
+      "shortDescription": "Plan investment income & financial independence",
+      "category": "financial",
+      "tags": [
+        "investment income",
+        "financial independence",
+        "ROI",
+        "breakeven",
+        "passive income",
+        "retirement planning"
+      ],
+      "featured": true,
+      "popular": false,
+      "difficulty": "Medium",
+      "estimatedTime": "3 minutes",
+      "icon": "🎯",
+      "seoTitle": "Free Investment Income Goal Calculator - ROI & Breakeven Calculator",
+      "seoDescription": "Calculate how much to invest to replace your income and reach financial independence. Plan multiple investments with our comprehensive ROI and breakeven calculator.",
+      "keywords": [
+        "investment income calculator",
+        "financial independence calculator",
+        "ROI calculator",
+        "breakeven calculator",
+        "passive income calculator",
+        "investment goal calculator"
+      ],
+      "lastUpdated": "2025-11-16",
+      "uses": 0,
+      "rating": 0,
+      "relatedCalculators": [
+        "retirement-income-calculator",
+        "compound-interest-calculator",
+        "savings-goal-calculator"
+      ]
     }
   ]
 }

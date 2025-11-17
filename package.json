@@ -4,8 +4,7 @@
   "version": "1.0.1",
   "scripts": {
     "dev": "npm run update-counts && astro dev",
-    "start": "astro dev",
-    "build": "npm run update-counts && astro build",
+    "build": "npm run clean && npm run update-counts && astro build",
     "preview": "astro preview",
     "analyze": "npm run build && npx lighthouse https://calccrunch.com --output html --view",
     "update-counts": "node src/scripts/update-category-counts.js",
