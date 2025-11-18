@@ -294,6 +294,10 @@
 
 .result-summary {
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+  margin: var(--space-2xl) 0;
 }
 
 .result-card {
@@ -429,6 +433,78 @@
 /* ============================================
    SUMMARY CARDS (Shared by multiple calculators)
    ============================================ */
+
+.stat-card {
+  padding: var(--space-lg);
+  background: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  text-align: center;
+  border: 2px solid var(--color-gray);
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-accent-orange);
+}
+
+.stat-card.highlight {
+  background: linear-gradient(135deg, #FFE5CC 0%, #fff 100%);
+  border-color: var(--color-accent-orange);
+}
+
+.stat-label {
+  font-size: var(--text-xs);
+  color: var(--color-gray-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-sm);
+  font-weight: 600;
+}
+
+.stat-value {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-accent-orange);
+  margin-bottom: var(--space-xs);
+  line-height: 1.2;
+}
+
+.stat-sublabel {
+  font-size: var(--text-xs);
+  color: var(--color-gray-dark);
+  opacity: 0.8;
+  margin-top: var(--space-xs);
+}
+
+.result-title {
+  color: var(--color-primary-blue);
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-xl);
+  text-align: center;
+  padding-bottom: var(--space-md);
+  border-bottom: 2px solid var(--color-gray);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .result-summary {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-md);
+  }
+  
+  .stat-value {
+    font-size: var(--text-xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .result-summary {
+    grid-template-columns: 1fr;
+  }
+}
 
 .compound-summary-cards,
 .loan-summary {

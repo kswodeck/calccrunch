@@ -57,6 +57,7 @@ difficulty: Medium
           placeholder="10"
           min="1"
           max="50"
+          value="1"
           required
         />
         <small class="form-help">How many years you plan to invest</small>
@@ -221,8 +222,6 @@ difficulty: Medium
   }
 
   .input-addon {
-    position: absolute;
-    left: 12px;
     color: var(--color-gray-dark);
     font-weight: 600;
     pointer-events: none;

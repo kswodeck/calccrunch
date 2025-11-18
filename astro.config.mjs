@@ -9,9 +9,14 @@ export default defineConfig({
 
   vite: {
     assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.svg'],
+    server: {
+      headers: {
+        'Cache-Control': 'no-store'
+      }
+    },
     esbuild: {
-    target: 'esnext',
-    format: 'esm'
+      target: 'esnext',
+      format: 'esm',
     }
   },
 

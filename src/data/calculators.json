@@ -248,6 +248,27 @@
         "compound-interest-calculator",
         "savings-goal-calculator"
       ]
+    },
+    {
+      "id": "credit-card-payoff-calculator",
+      "title": "Credit Card Payoff Calculator",
+      "slug": "credit-card-payoff-calculator",
+      "description": "Calculate how long it will take to pay off your credit card debt. Compare minimum payments vs fixed monthly payments, see total interest paid, and create a payoff strategy.",
+      "shortDescription": "Calculate credit card debt payoff time",
+      "category": "financial",
+      "tags": ["credit card", "debt payoff", "interest", "debt repayment"],
+      "featured": true,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "💳",
+      "seoTitle": "Free Credit Card Payoff Calculator - Debt Payoff Planner",
+      "seoDescription": "Calculate how long to pay off credit card debt. See total interest and create a debt payoff plan with our free calculator.",
+      "keywords": ["credit card payoff calculator", "debt calculator", "credit card interest calculator"],
+      "lastUpdated": "2025-11-07",
+      "uses": 0,
+      "rating": 0,
+      "relatedCalculators": ["debt-to-income-calculator", "student-loan-calculator", "budget-calculator"]
     }
   ]
 }
