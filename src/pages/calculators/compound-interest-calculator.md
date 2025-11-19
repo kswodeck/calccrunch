@@ -161,14 +161,6 @@ difficulty: Medium
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
-  <h4>🔗 Save & Share Your Calculation</h4>
-  <p>
-    Your inputs are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
-    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values will be restored automatically.
-  </p>
-</div>
-
 <div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
   <h4>🎯 The Power of Compounding</h4>
   <p>
@@ -221,6 +213,14 @@ difficulty: Medium
     <li>Past performance doesn't guarantee future results</li>
     <li>Diversify your investments to manage risk</li>
   </ul>
+</div>
+
+<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+  <h4>🔗 Save & Share Your Calculation</h4>
+  <p>
+    Your inputs are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
+    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values will be restored automatically.
+  </p>
 </div>
 
 <style>

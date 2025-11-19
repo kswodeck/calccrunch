@@ -136,14 +136,6 @@ difficulty: Easy
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
-  <h4>🔗 Save & Share Your Calculation</h4>
-  <p>
-    Your grades are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
-    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values will be restored automatically.
-  </p>
-</div>
-
 <div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
   <h4>🎯 GPA Calculation Formula</h4>
   <p>
@@ -198,6 +190,14 @@ difficulty: Easy
     <li>Transfer credits may be calculated separately</li>
     <li>Graduate schools often look at major GPA separately</li>
   </ul>
+</div>
+
+<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+  <h4>🔗 Save & Share Your Calculation</h4>
+  <p>
+    Your grades are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
+    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values will be restored automatically.
+  </p>
 </div>
 
 <style>

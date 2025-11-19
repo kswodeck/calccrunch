@@ -76,7 +76,7 @@
     // Auto-calculate if we loaded values
     if (params.toString()) {
       setTimeout(() => {
-        calculateRetirementIncome();
+        calculateResults();
       }, 100);
     }
   }
@@ -108,7 +108,10 @@
     // Calculate button
     const calculateBtn = document.getElementById('calculate-btn');
     if (calculateBtn) {
-      calculateBtn.addEventListener('click', calculateRetirementIncome);
+      calculateBtn.addEventListener('click', () => {
+        calculateResults();
+        document.querySelector(".calculator-result")?.scrollIntoView({behavior: 'smooth', block: 'start'});
+      });
     }
 
     // Withdrawal strategy change
@@ -127,7 +130,7 @@
       input.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
           e.preventDefault();
-          calculateRetirementIncome();
+          calculateResults();
         }
       });
       
@@ -200,7 +203,7 @@
     }
   }
 
-  function calculateRetirementIncome() {
+  function calculateResults() {
     // Get input values
     const retirementSavings = getValue('retirement-savings');
     const currentAge = getValue('current-age');

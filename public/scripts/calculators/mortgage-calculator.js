@@ -92,7 +92,7 @@
     if (params.toString()) {
       setTimeout(() => {
         checkPMIStatus();
-        calculateMortgage();
+        calculateResults();
       }, 100);
     }
   }
@@ -130,7 +130,10 @@
     // Calculate button
     const calculateBtn = document.getElementById('calculate-btn');
     if (calculateBtn) {
-      calculateBtn.addEventListener('click', calculateMortgage);
+      calculateBtn.addEventListener('click', () => {
+        calculateResults();
+        document.querySelector(".calculator-result")?.scrollIntoView({behavior: 'smooth', block: 'start'});
+      });
     }
 
     // Toggle units
@@ -169,7 +172,7 @@
       input.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
           e.preventDefault();
-          calculateMortgage();
+          calculateResults();
         }
       });
       
@@ -446,7 +449,7 @@
     return pmiValue;
   }
 
-  function calculateMortgage() {
+  function calculateResults() {
     // Get values
     const homePrice = getValue('home-price');
     const downPayment = getDownPaymentAmount();

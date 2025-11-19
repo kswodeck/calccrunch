@@ -33,7 +33,7 @@
       "color": "#EF5350",
       "order": 2,
       "featured": true,
-      "calculatorCount": 2,
+      "calculatorCount": 3,
       "seoTitle": "Health & Fitness Calculators - BMI, Calorie & Macro Tools",
       "seoDescription": "Free health and fitness calculators including BMI, calorie needs, macro tracking, and more. Achieve your wellness goals with accurate calculations.",
       "keywords": [
@@ -55,7 +55,7 @@
       "color": "#FF6B35",
       "order": 3,
       "featured": true,
-      "calculatorCount": 2,
+      "calculatorCount": 3,
       "seoTitle": "Home & Real Estate Calculators - Mortgage & Renovation Tools",
       "seoDescription": "Free home and real estate calculators for mortgage affordability, home improvements, and DIY projects. Plan your home purchase or renovation.",
       "keywords": [
@@ -143,7 +143,7 @@
       "color": "#FF9800",
       "order": 7,
       "featured": false,
-      "calculatorCount": 0,
+      "calculatorCount": 1,
       "seoTitle": "Food & Cooking Calculators - Recipe Scaler & Conversion Tools",
       "seoDescription": "Free cooking calculators including recipe scalers, measurement converters, and cooking time calculators. Perfect for home chefs.",
       "keywords": [

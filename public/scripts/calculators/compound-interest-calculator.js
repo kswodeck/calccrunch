@@ -59,7 +59,7 @@
     // Auto-calculate if we loaded values
     if (params.toString()) {
       setTimeout(() => {
-        calculateCompoundInterest();
+        calculateResults();
       }, 100);
     }
   }
@@ -84,7 +84,10 @@
     // Calculate button
     const calculateBtn = document.getElementById('calculate-btn');
     if (calculateBtn) {
-      calculateBtn.addEventListener('click', calculateCompoundInterest);
+      calculateBtn.addEventListener('click', () => {
+        calculateResults();
+        document.querySelector(".calculator-result")?.scrollIntoView({behavior: 'smooth', block: 'start'});
+      });
     }
 
     // Add change listeners to all inputs to save to URL
@@ -94,7 +97,7 @@
       input.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
           e.preventDefault();
-          calculateCompoundInterest();
+          calculateResults();
         }
       });
       
@@ -124,7 +127,7 @@
     // Print button will be attached after results render
   }
 
-  function calculateCompoundInterest() {
+  function calculateResults() {
     // Get input values
     const principal = getValue('principal');
     const monthlyContribution = getValue('monthly-contribution');

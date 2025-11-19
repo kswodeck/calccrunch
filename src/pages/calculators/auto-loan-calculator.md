@@ -255,14 +255,6 @@ difficulty: Easy
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
-  <h4>🔗 Save & Share Your Calculation</h4>
-  <p>
-    Your inputs are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
-    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values will be restored automatically.
-  </p>
-</div>
-
 <div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
   <h4>🚗 Smart Car Buying Tips</h4>
   <p>
@@ -276,6 +268,14 @@ difficulty: Easy
   <p>
     <strong>Negative Equity:</strong> If you owe more on your trade-in than it's worth, that amount gets added to your new loan.
     <strong>Long Terms:</strong> 72+ month loans may seem affordable but cost thousands more in interest.
+  </p>
+</div>
+
+<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+  <h4>🔗 Save & Share Your Calculation</h4>
+  <p>
+    Your inputs are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
+    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values will be restored automatically.
   </p>
 </div>
 

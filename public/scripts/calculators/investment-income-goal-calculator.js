@@ -40,7 +40,10 @@
     }
 
     // Event listeners
-    calculateBtn.addEventListener('click', calculate);
+    calculateBtn.addEventListener('click', () => {
+      calculateResults();
+      document.querySelector(".calculator-result")?.scrollIntoView({behavior: 'smooth', block: 'start'});
+    });
     clearBtn.addEventListener('click', clearForm);
     shareBtn.addEventListener('click', shareCalculation);
     addInvestmentBtn.addEventListener('click', () => addInvestment());
@@ -288,7 +291,7 @@
     saveToURL();
   }
 
-  function calculate() {
+  function calculateResults() {
     // Validate inputs
     const annualGoal = parseFloat(annualIncomeGoalInput.value);
     const years = parseInt(investmentYearsInput.value);
@@ -336,9 +339,6 @@
 
     // Display results
     displayResults(results, annualGoal, years);
-
-    // Scroll to results
-    resultDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
   function calculateInvestmentResults(investments, annualGoal, years, contributionFreq, contributionAmount) {
@@ -650,8 +650,8 @@
       <div class="result-breakdown" style="margin-top: var(--space-2xl);">
         <h4 style="color: var(--color-primary-blue); margin-bottom: var(--space-lg);">💼 Individual Investment Performance</h4>
         ${results.investments.map((inv, index) => `
-          <div style="background: var(--color-gray-light); padding: var(--space-xl); border-radius: var(--border-radius-lg); margin-bottom: var(--space-lg); border: 2px solid var(--color-gray);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-lg); padding-bottom: var(--space-md); border-bottom: 2px solid var(--color-gray);">
+          <div style="background: var(--color-gray-light); padding: var(--space-md); border-radius: var(--border-radius-lg); margin-bottom: var(--space-lg); border: 2px solid var(--color-gray);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-lg); padding-bottom: var(--space-md); border-bottom: 2px solid var(--color-gray); flex-flow: wrap;">
               <div>
                 <h5 style="margin: 0 0 0.25rem 0; color: var(--color-primary-blue); font-size: 1.25rem;">${inv.name}${inv.quantity > 1 ? ` (×${inv.quantity})` : ''}</h5>
                 <span style="background: ${inv.isCompounding ? 'linear-gradient(135deg, #E8F8E8 0%, #C8E6C9 100%)' : 'linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%)'}; color: ${inv.isCompounding ? 'var(--color-chart-green-dark)' : 'var(--color-chart-blue-dark)'}; padding: 0.25rem 0.75rem; border-radius: 12px; font-weight: 600; font-size: 0.75rem; display: inline-block;">
@@ -660,7 +660,7 @@
               </div>
               <span style="background: var(--color-lighter-blue); color: var(--color-primary-blue); padding: 0.25rem 0.75rem; border-radius: 4px; font-weight: 600; font-size: 0.875rem;">Investment #${index + 1}</span>
             </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-lg);">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--space-lg);">
               ${inv.quantity > 1 ? `
                 <div style="background: #FFF8DC; padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
                   <div style="font-size: 0.875rem; color: var(--color-gray-dark); margin-bottom: 0.25rem;">Quantity</div>

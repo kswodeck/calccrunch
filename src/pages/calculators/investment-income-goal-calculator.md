@@ -148,15 +148,6 @@ difficulty: Medium
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
-  <h4>🔗 Save & Share Your Calculation</h4>
-  <p>
-    Your calculation is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your investment plan, 
-    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values including 
-    all investment scenarios will be restored automatically.
-  </p>
-</div>
-
 <div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
   <h4>🎯 Key Features</h4>
   <p><strong>This calculator includes:</strong></p>
@@ -205,6 +196,15 @@ difficulty: Medium
     <li><strong>Taxes:</strong> Investment income may be subject to taxes - consult a tax professional</li>
     <li><strong>Professional Advice:</strong> Consider consulting with a financial advisor for personalized guidance</li>
   </ul>
+</div>
+
+<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+  <h4>🔗 Save & Share Your Calculation</h4>
+  <p>
+    Your calculation is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your investment plan, 
+    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values including 
+    all investment scenarios will be restored automatically.
+  </p>
 </div>
 
 <style>

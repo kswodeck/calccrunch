@@ -58,13 +58,16 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Initial calculation if data exists
         if (hasValidData()) {
-            calculateGPA();
+            calculateResults();
         }
     }
     
     function setupEventListeners() {
         if (addCourseBtn) addCourseBtn.addEventListener('click', () => addCourse());
-        if (calculateBtn) calculateBtn.addEventListener('click', calculateGPA);
+        if (calculateBtn) calculateBtn.addEventListener('click', () => {
+          calculateResults();
+          document.querySelector(".calculator-result")?.scrollIntoView({behavior: 'smooth', block: 'start'});
+        });
         if (clearBtn) clearBtn.addEventListener('click', clearAll);
         if (shareBtn) shareBtn.addEventListener('click', shareResults);
         
@@ -73,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 currentScale = this.value;
                 updateGradeOptions();
                 saveToURL();
-                if (hasValidData()) calculateGPA();
+                if (hasValidData()) calculateResults();
             });
         }
         
@@ -85,21 +88,21 @@ document.addEventListener('DOMContentLoaded', function() {
                     cumulativeCredits.value = '';
                 }
                 saveToURL();
-                if (hasValidData()) calculateGPA();
+                if (hasValidData()) calculateResults();
             });
         }
         
         if (cumulativeGPA) {
             cumulativeGPA.addEventListener('input', () => {
                 saveToURL();
-                if (hasValidData()) calculateGPA();
+                if (hasValidData()) calculateResults();
             });
         }
         
         if (cumulativeCredits) {
             cumulativeCredits.addEventListener('input', () => {
                 saveToURL();
-                if (hasValidData()) calculateGPA();
+                if (hasValidData()) calculateResults();
             });
         }
     }
@@ -180,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
             courses[courseIndex].grade = this.value;
             updateGradePoints(courseIndex);
             saveToURL();
-            if (hasValidData()) calculateGPA();
+            if (hasValidData()) calculateResults();
         });
         
         removeBtn.addEventListener('click', function() {
@@ -210,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             
             saveToURL();
-            if (hasValidData()) calculateGPA();
+            if (hasValidData()) calculateResults();
         }
     }
     
@@ -255,7 +258,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return courses.some(c => c.grade && c.credits > 0);
     }
     
-    function calculateGPA() {
+    function calculateResults() {
         let totalPoints = 0;
         let totalCredits = 0;
         let coursesCalculated = 0;

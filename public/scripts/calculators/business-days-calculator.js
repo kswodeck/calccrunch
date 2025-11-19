@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Initial calculation if data exists
         if (hasValidInput()) {
-            calculateBusinessDays();
+            calculateResults();
         }
     }
     
@@ -85,14 +85,14 @@ document.addEventListener('DOMContentLoaded', function() {
             startDate.addEventListener('change', () => {
                 updateHolidayToggles(); // Update holiday dates when start date changes
                 saveToURL();
-                if (hasValidInput()) calculateBusinessDays();
+                if (hasValidInput()) calculateResults();
             });
         }
         
         if (endDate) {
             endDate.addEventListener('change', () => {
                 saveToURL();
-                if (hasValidInput()) calculateBusinessDays();
+                if (hasValidInput()) calculateResults();
             });
         }
         
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
             baseDate.addEventListener('change', () => {
                 updateHolidayToggles(); // Update holiday dates when base date changes
                 saveToURL();
-                if (hasValidInput()) calculateBusinessDays();
+                if (hasValidInput()) calculateResults();
             });
         }
         
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (businessDaysCount) {
             businessDaysCount.addEventListener('input', () => {
                 saveToURL();
-                if (hasValidInput()) calculateBusinessDays();
+                if (hasValidInput()) calculateResults();
             });
         }
         
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
             countrySelect.addEventListener('change', () => {
                 updateHolidayToggles();
                 saveToURL();
-                if (hasValidInput()) calculateBusinessDays();
+                if (hasValidInput()) calculateResults();
             });
         }
         
@@ -125,12 +125,15 @@ document.addEventListener('DOMContentLoaded', function() {
             excludeHolidays.addEventListener('change', () => {
                 updateHolidayToggles();
                 saveToURL();
-                if (hasValidInput()) calculateBusinessDays();
+                if (hasValidInput()) calculateResults();
             });
         }
         
         // Action buttons
-        if (calculateBtn) calculateBtn.addEventListener('click', calculateBusinessDays);
+        if (calculateBtn) calculateBtn.addEventListener('click', () => {
+          calculateResults();
+          document.querySelector(".calculator-result")?.scrollIntoView({behavior: 'smooth', block: 'start'});
+        });
         if (clearBtn) clearBtn.addEventListener('click', clearAll);
         if (shareBtn) shareBtn.addEventListener('click', shareResults);
     }
@@ -419,7 +422,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (countryHolidays && countryHolidays.holidays[index]) {
                         countryHolidays.holidays[index].enabled = this.checked;
                         saveToURL();
-                        if (hasValidInput()) calculateBusinessDays();
+                        if (hasValidInput()) calculateResults();
                     }
                 });
             });
@@ -432,7 +435,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (customHolidays[index]) {
                     customHolidays[index].enabled = this.checked;
                     saveToURL();
-                    if (hasValidInput()) calculateBusinessDays();
+                    if (hasValidInput()) calculateResults();
                 }
             });
         });
@@ -490,7 +493,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update UI and save
         updateHolidayToggles();
         saveToURL();
-        if (hasValidInput()) calculateBusinessDays();
+        if (hasValidInput()) calculateResults();
     };
     
     window.removeCustomHoliday = function(index) {
@@ -498,7 +501,7 @@ document.addEventListener('DOMContentLoaded', function() {
             customHolidays.splice(index, 1);
             updateHolidayToggles();
             saveToURL();
-            if (hasValidInput()) calculateBusinessDays();
+            if (hasValidInput()) calculateResults();
         }
     };
     
@@ -506,7 +509,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (index >= 0 && index < customHolidays.length && newName.trim()) {
             customHolidays[index].name = newName.trim();
             saveToURL();
-            if (hasValidInput()) calculateBusinessDays();
+            if (hasValidInput()) calculateResults();
         }
     };
     
@@ -520,7 +523,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Update UI to reflect new sort order
             updateHolidayToggles();
             saveToURL();
-            if (hasValidInput()) calculateBusinessDays();
+            if (hasValidInput()) calculateResults();
         }
     };
     
@@ -791,7 +794,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    function calculateBusinessDays() {
+    function calculateResults() {
         const calcType = getSelectedCalcType();
         
         try {
@@ -1340,7 +1343,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 });
                 if (disabledHolidays.length > 0) {
-                    debugger;
                     params.set('disabled', disabledHolidays.join(','));
                 }
             }
@@ -1384,7 +1386,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (countryHolidays && countryHolidays.holidays) {
                 const disabledIndices = params.get('disabled').split(',').map(i => parseInt(i));
                 countryHolidays?.holidays?.forEach((holiday, index) => {
-                    debugger;
                     if (disabledIndices?.includes(index)) {
                         countryHolidays.holidays[index].enabled = false;
                     } else countryHolidays.holidays[index].enabled = true;

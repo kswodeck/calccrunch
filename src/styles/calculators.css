@@ -149,6 +149,7 @@
 
 .input-addon-toggle:hover::after {
   opacity: 1;
+  display: none;
 }
 
 .form-help {
@@ -298,6 +299,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: var(--space-lg);
   margin: var(--space-2xl) 0;
+  padding: var(--space-sm);
 }
 
 .result-card {
@@ -387,7 +389,7 @@
 .result-breakdown {
   background: var(--color-white);
   border-radius: var(--border-radius);
-  padding: var(--space-xl);
+  padding: var(--space-lg);
   box-shadow: var(--shadow-md);
 }
 
@@ -485,7 +487,7 @@
   margin-bottom: var(--space-xl);
   text-align: center;
   padding-bottom: var(--space-md);
-  border-bottom: 2px solid var(--color-gray);
+  border-bottom: 2px solid var(--color-primary-dark);
 }
 
 /* Responsive adjustments */
@@ -1222,7 +1224,7 @@
   text-align: center;
 }
 
-.comparison-bars {
+.comparison-bars:not(.rent-vs-buy-bars) {
   display: flex;
   flex-direction: column;
   gap: var(--space-xl);
@@ -1251,7 +1253,7 @@
   color: var(--color-gray-dark);
 }
 
-.comparison-bar {
+.comparison-bar:not(.rent-vs-buy-bar) {
   position: relative;
   height: 40px;
   background: var(--color-white);
@@ -2296,6 +2298,7 @@
 
 .result-header {
   margin-bottom: var(--space-lg);
+  text-align: center;
 }
 
 .status-icon {

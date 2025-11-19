@@ -254,15 +254,6 @@ difficulty: Easy
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
-  <h4>🔗 Save & Share Your Payoff Plan</h4>
-  <p>
-    Your calculation is automatically saved in the URL. You can <strong>bookmark this page</strong> to track your progress, 
-    or use the <strong>Share button</strong> to send your payoff plan to others. When you return or share the link, 
-    all values will be restored automatically.
-  </p>
-</div>
-
 <div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
   <h4>⚠️ The Minimum Payment Trap</h4>
   <p>
@@ -306,6 +297,15 @@ difficulty: Easy
     <li><strong>Stop Using:</strong> Freeze or cut up cards to avoid adding new debt</li>
     <li><strong>Negotiate APR:</strong> Call and ask for a lower rate, especially if you've been a good customer</li>
   </ul>
+</div>
+
+<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+  <h4>🔗 Save & Share Your Payoff Plan</h4>
+  <p>
+    Your calculation is automatically saved in the URL. You can <strong>bookmark this page</strong> to track your progress, 
+    or use the <strong>Share button</strong> to send your payoff plan to others. When you return or share the link, 
+    all values will be restored automatically.
+  </p>
 </div>
 
 <style>
@@ -723,6 +723,7 @@ difficulty: Easy
 
     .suggestion-options {
       justify-content: space-between;
+      flex-direction: column;
     }
 
     .suggestion-btn {
@@ -737,15 +738,6 @@ difficulty: Easy
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: var(--space-lg);
     margin: var(--space-2xl) 0;
-  }
-
-  .result-title {
-    color: var(--color-primary-blue);
-    font-size: var(--text-2xl);
-    margin-bottom: var(--space-xl);
-    text-align: center;
-    padding-bottom: var(--space-md);
-    border-bottom: 2px solid var(--color-gray);
   }
 
   .stat-card {

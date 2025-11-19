@@ -83,7 +83,7 @@
     if (params.toString()) {
       setTimeout(() => {
         updatePaymentSections();
-        calculate();
+        calculateResults();
       }, 100);
     }
   }
@@ -122,7 +122,10 @@
     // Calculate button
     const calculateBtn = document.getElementById('calculate-btn');
     if (calculateBtn) {
-      calculateBtn.addEventListener('click', calculate);
+      calculateBtn.addEventListener('click', () => {
+        calculateResults();
+        document.querySelector(".calculator-result")?.scrollIntoView({behavior: 'smooth', block: 'start'});
+      });
     }
 
     // Clear button
@@ -162,7 +165,7 @@
         input.addEventListener('keypress', function(e) {
           if (e.key === 'Enter') {
             e.preventDefault();
-            calculate();
+            calculateResults();
           }
         });
       }
@@ -284,7 +287,7 @@
     }
   }
 
-  function calculate() {
+  function calculateResults() {
     // Get input values
     const balance = getValue('card-balance');
     const apr = getValue('interest-rate');
@@ -576,9 +579,6 @@
     
     resultDiv.innerHTML = html;
     resultDiv.classList.remove('hidden');
-    
-    // Scroll to results
-    resultDiv.scrollIntoView({ behavior: 'smooth' });
     
     // Attach schedule controls
     attachScheduleControls(current.schedule);

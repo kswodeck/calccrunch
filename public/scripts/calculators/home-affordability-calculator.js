@@ -102,7 +102,7 @@
     if (params.toString()) {
       setTimeout(() => {
         checkPMIRequired();
-        calculateAffordability();
+        calculateResults();
       }, 100);
     }
   }
@@ -206,7 +206,10 @@
     // Calculate button
     const calculateBtn = document.getElementById('calculate-btn');
     if (calculateBtn) {
-      calculateBtn.addEventListener('click', calculateAffordability);
+      calculateBtn.addEventListener('click', () => {
+        calculateResults();
+        document.querySelector(".calculator-result")?.scrollIntoView({behavior: 'smooth', block: 'start'});
+      });
     }
 
     // Toggle units for down payment
@@ -233,7 +236,7 @@
       // Auto-calculate on enter key
       input.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
-          calculateAffordability();
+          calculateResults();
         }
       });
       
@@ -270,7 +273,7 @@
       dtiHousingSlider.addEventListener('input', function() {
         dtiHousingInput.value = this.value;
         saveToURL();
-        calculateAffordability();
+        calculateResults();
       });
       dtiHousingInput.addEventListener('input', function() {
         dtiHousingSlider.value = this.value;
@@ -282,7 +285,7 @@
       dtiTotalSlider.addEventListener('input', function() {
         dtiTotalInput.value = this.value;
         saveToURL();
-        calculateAffordability();
+        calculateResults();
       });
       dtiTotalInput.addEventListener('input', function() {
         dtiTotalSlider.value = this.value;
@@ -435,7 +438,7 @@
     }
   }
 
-  function calculateAffordability() {
+  function calculateResults() {
     // Get input values
     const annualIncome = getValue('annual-income');
     const monthlyDebts = getValue('monthly-debts');

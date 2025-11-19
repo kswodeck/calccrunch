@@ -61,10 +61,10 @@ function initCalorieCalculator() {
   addInputListeners();
   
   // Calculate on button click
-  calculateBtn.addEventListener('click', function() {
-    console.log('Calculate button clicked');
-    calculateCalories();
-  });
+  calculateBtn.addEventListener('click', () => {
+      calculateResults();
+      document.querySelector(".calculator-result")?.scrollIntoView({behavior: 'smooth', block: 'start'});
+    });
   
   // Calculate on Enter key
   const inputs = document.querySelectorAll('#calorie-calculator-form input, #calorie-calculator-form select');
@@ -72,7 +72,7 @@ function initCalorieCalculator() {
     input.addEventListener('keypress', (e) => {
       if (e.key === 'Enter') {
         e.preventDefault();
-        calculateCalories();
+        calculateResults();
       }
     });
   });
@@ -82,7 +82,7 @@ function initCalorieCalculator() {
   if (Object.keys(urlParams).length > 0) {
     // Small delay to ensure everything is loaded
     setTimeout(() => {
-      calculateCalories();
+      calculateResults();
     }, 100);
   }
 }
@@ -279,7 +279,7 @@ function addInputListeners() {
   });
 }
 
-function calculateCalories() {
+function calculateResults() {
   console.log('Calculating calories for system:', currentSystem);
   
   // Get personal information
@@ -479,9 +479,10 @@ function displayResult(bmr, tdee, goalCalories, macros, age, gender) {
   
   resultDiv.innerHTML = `
     <div class="result-card">
-      <div class="result-header-actions">
+      <div class="result-header-actions" style="justify-content: center;">
         <h3>Your Daily Calorie Plan</h3>
-        <div class="result-actions">
+      </div>
+      <div class="result-actions" style="justify-content: center;">
           <button type="button" onclick="shareResults()" class="btn-action" title="Share Results">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="18" cy="5" r="3"></circle>
@@ -508,32 +509,31 @@ function displayResult(bmr, tdee, goalCalories, macros, age, gender) {
             Reset
           </button>
         </div>
-      </div>
       
-      <div class="result-summary">
+      <div class="result-summary" style="display: block;">
         <div class="result-main">
           <div class="calorie-display">
-            <div class="calorie-value">${formatNumber(goalCalories.calories)}</div>
+            <div class="calorie-value" style="font-weight: bold; font-size: 1.5rem; color: var(--color-chart-blue-dark);">${formatNumber(goalCalories.calories)}</div>
             <div class="calorie-label">calories per day</div>
           </div>
-          <div class="goal-badge" style="background: ${isWeightLoss ? '#FFB900' : isWeightGain ? '#5A9FD4' : '#4CAF50'};">
+          <div class="goal-badge" style="font-weight: bold; background: ${isWeightLoss ? '#FFB900' : isWeightGain ? '#5A9FD4' : '#4CAF50'};">
             <span class="goal-name">${goalCalories.name}</span>
             <span class="goal-pace">${goalCalories.pace}</span>
           </div>
         </div>
         
         <div class="calorie-breakdown">
-          <div class="breakdown-item">
-            <span class="breakdown-label">BMR (Basal Metabolic Rate)</span>
+          <div class="breakdown-item" style="flex-direction: column; background-color: var(--color-white); border-radius: var(--border-radius-lg);">
+            <span class="breakdown-label" style="color: var(--color-primary-blue); font-weight: bold;">BMR (Basal Metabolic Rate)</span>
             <span class="breakdown-value">${formatNumber(Math.round(bmr))} cal</span>
           </div>
-          <div class="breakdown-item">
-            <span class="breakdown-label">TDEE (Maintenance)</span>
+          <div class="breakdown-item" style="flex-direction: column; background-color: var(--color-white); border-radius: var(--border-radius-lg);">
+            <span class="breakdown-label" style="color: var(--color-primary-blue); font-weight: bold;">TDEE (Maintenance)</span>
             <span class="breakdown-value">${formatNumber(Math.round(tdee))} cal</span>
           </div>
-          <div class="breakdown-item highlight">
-            <span class="breakdown-label">Daily Goal</span>
-            <span class="breakdown-value">${formatNumber(goalCalories.calories)} cal</span>
+          <div class="breakdown-item highlight" style="background-color: var(--color-chart-blue); flex-direction: column; border-radius: var(--border-radius-lg);">
+            <span class="breakdown-label" style="color: white; font-weight: bold;">Daily Goal</span>
+            <span class="breakdown-value" style="color: white;">${formatNumber(goalCalories.calories)} cal</span>
           </div>
         </div>
       </div>

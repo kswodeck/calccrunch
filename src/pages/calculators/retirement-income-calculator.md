@@ -218,14 +218,6 @@ difficulty: Medium
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
-  <h4>🔗 Save & Share Your Retirement Plan</h4>
-  <p>
-    Your retirement plan is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
-    or use the <strong>Share button</strong> to send it to your spouse or financial advisor. All values will be restored automatically.
-  </p>
-</div>
-
 <div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
   <h4>📊 The 4% Rule Explained</h4>
   <p>
@@ -275,6 +267,14 @@ difficulty: Medium
     <li>Long-term care expenses not included in typical budgets</li>
     <li>Consider working with a financial advisor for personalized planning</li>
   </ul>
+</div>
+
+<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+  <h4>🔗 Save & Share Your Retirement Plan</h4>
+  <p>
+    Your retirement plan is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
+    or use the <strong>Share button</strong> to send it to your spouse or financial advisor. All values will be restored automatically.
+  </p>
 </div>
 
 <style>

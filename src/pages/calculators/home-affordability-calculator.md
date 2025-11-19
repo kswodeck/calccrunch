@@ -287,14 +287,6 @@ difficulty: Easy
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
-  <h4>🔗 Save & Share Your Calculation</h4>
-  <p>
-    Your inputs are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
-    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values will be restored automatically.
-  </p>
-</div>
-
 <div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
   <h4>🏠 Maximum vs. Comfortable Price</h4>
   <p>
@@ -310,6 +302,14 @@ difficulty: Easy
     Remember to budget for additional homeownership costs not included in your mortgage payment:
     <strong>Maintenance (1-3% of home value annually)</strong>, <strong>Utilities</strong>, 
     <strong>Closing costs (2-5% of purchase price)</strong>, and <strong>Emergency repairs</strong>.
+  </p>
+</div>
+
+<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+  <h4>🔗 Save & Share Your Calculation</h4>
+  <p>
+    Your inputs are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
+    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values will be restored automatically.
   </p>
 </div>
 

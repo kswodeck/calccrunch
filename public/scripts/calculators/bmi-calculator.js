@@ -61,9 +61,9 @@ function initBMICalculator() {
   addInputListeners();
   
   // Calculate on button click
-  calculateBtn.addEventListener('click', function() {
-    console.log('Calculate button clicked');
-    calculateBMI();
+  calculateBtn.addEventListener('click', () => {
+    calculateResults();
+    document.querySelector(".calculator-result")?.scrollIntoView({behavior: 'smooth', block: 'start'});
   });
   
   // Calculate on Enter key
@@ -72,7 +72,7 @@ function initBMICalculator() {
     input.addEventListener('keypress', (e) => {
       if (e.key === 'Enter') {
         e.preventDefault();
-        calculateBMI();
+        calculateResults();
       }
     });
   });
@@ -82,7 +82,7 @@ function initBMICalculator() {
   if (Object.keys(urlParams).length > 0) {
     // Small delay to ensure everything is loaded
     setTimeout(() => {
-      calculateBMI();
+      calculateResults();
     }, 100);
   }
 }
@@ -257,7 +257,7 @@ function addInputListeners() {
   }
 }
 
-function calculateBMI() {
+function calculateResults() {
   console.log('Calculating BMI for system:', currentSystem);
   
   let heightInMeters = 0;

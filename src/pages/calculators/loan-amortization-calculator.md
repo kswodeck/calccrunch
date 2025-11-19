@@ -166,14 +166,6 @@ difficulty: Easy
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
-  <h4>🔗 Save & Share Your Schedule</h4>
-  <p>
-    Your loan details are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
-    or use the <strong>Share button</strong> to send it to others. You can also <strong>export to CSV</strong> for use in spreadsheets.
-  </p>
-</div>
-
 <div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
   <h4>💰 Save Money with Extra Payments</h4>
   <p>
@@ -191,6 +183,14 @@ difficulty: Easy
     <li><strong>Interest:</strong> Cost of borrowing (decreases over time)</li>
     <li><strong>Balance:</strong> Remaining amount owed after each payment</li>
   </ul>
+</div>
+
+<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+  <h4>🔗 Save & Share Your Schedule</h4>
+  <p>
+    Your loan details are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
+    or use the <strong>Share button</strong> to send it to others. You can also <strong>export to CSV</strong> for use in spreadsheets.
+  </p>
 </div>
 
 <style>
