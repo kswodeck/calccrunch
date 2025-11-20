@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
-import AdUnit from "../components/AdUnit.astro";
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
@@ -59,9 +58,6 @@ const searchQuery = Astro.url.searchParams.get("q") || "";
         </form>
       </div>
 
-      <!-- Top Ad Unit -->
-      <!-- <AdUnit slot="search-top" format="horizontal" /> -->
-
       <!-- Results Info -->
       <div class="results-info">
         <span id="results-count">Searching...</span>
@@ -82,9 +78,6 @@ const searchQuery = Astro.url.searchParams.get("q") || "";
           <p>Searching calculators...</p>
         </div>
       </div>
-
-      <!-- Bottom Ad Unit -->
-      <!-- <AdUnit slot="search-bottom" format="rectangle" /> -->
     </div>
   </div>
 </BaseLayout>
@@ -276,77 +269,6 @@ const searchQuery = Astro.url.searchParams.get("q") || "";
     transform: translateY(-2px);
   }
 
-  /* Search Suggestions Dropdown */
-  :global(.search-suggestions) {
-    background: var(--color-white);
-    border: 2px solid var(--color-light-blue);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-xl);
-    max-height: 400px;
-    overflow-y: auto;
-    z-index: 1000;
-  }
-
-  :global(.suggestion-item) {
-    display: flex;
-    align-items: center;
-    gap: var(--space-md);
-    padding: var(--space-md) var(--space-lg);
-    text-decoration: none;
-    border-bottom: 1px solid var(--color-gray);
-    transition: background var(--transition-fast);
-  }
-
-  :global(.suggestion-item:last-child) {
-    border-bottom: none;
-  }
-
-  :global(.suggestion-item:hover) {
-    background: var(--color-lighter-blue);
-  }
-
-  :global(.suggestion-icon) {
-    font-size: 1.5rem;
-    flex-shrink: 0;
-  }
-
-  :global(.suggestion-content) {
-    flex: 1;
-  }
-
-  :global(.suggestion-title) {
-    color: var(--color-primary-blue);
-    font-weight: 600;
-    font-size: var(--text-base);
-  }
-
-  :global(.suggestion-category) {
-    color: var(--color-gray-dark);
-    font-size: var(--text-sm);
-    opacity: 0.7;
-  }
-
-  /* Toast Notifications */
-  :global(.search-toast) {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: var(--color-error);
-    color: var(--color-white);
-    padding: var(--space-lg) var(--space-xl);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-xl);
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all var(--transition-base);
-    z-index: 10000;
-  }
-
-  :global(.search-toast.show) {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
   /* Responsive */
   @media (max-width: 768px) {
     .search-header h1 {
@@ -387,7 +309,3 @@ const searchQuery = Astro.url.searchParams.get("q") || "";
     }
   }
 </style>
-
-<script>
-  import "../scripts/search.js";
-</script>

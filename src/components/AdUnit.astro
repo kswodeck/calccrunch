@@ -1,27 +1,28 @@
 ---
 // AdUnit component for displaying Google AdSense ads
-const { 
-  slot = 'auto', 
-  format = 'auto', 
-  className = '',
-  style = 'display:block'
+const {
+  slot = "auto",
+  format = "auto",
+  className = "",
+  style = "display:block",
 } = Astro.props;
 
 // Your Google AdSense client ID (replace with your actual ID)
-const adsenseClient = 'ca-pub-XXXXXXXXXXXXXXXX';
+const adsenseClient = "ca-pub-7168350672318573";
 ---
 
 <div class={`ad-unit ${className}`}>
   <div class="ad-label">Advertisement</div>
-  
+
   <!-- Google AdSense Ad Unit -->
-  <ins class="adsbygoogle"
-       style={style}
-       data-ad-client={adsenseClient}
-       data-ad-slot={slot}
-       data-ad-format={format}
-       data-full-width-responsive="true"></ins>
-  
+  <ins
+    class="adsbygoogle"
+    style={style}
+    data-ad-client={adsenseClient}
+    data-ad-slot={slot}
+    data-ad-format={format}
+    data-full-width-responsive="true"></ins>
+
   <script is:inline>
     (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
@@ -35,7 +36,7 @@ const adsenseClient = 'ca-pub-XXXXXXXXXXXXXXXX';
     border-radius: var(--border-radius);
     text-align: center;
   }
-  
+
   .ad-label {
     font-size: var(--text-xs);
     color: var(--color-gray-dark);
@@ -45,40 +46,40 @@ const adsenseClient = 'ca-pub-XXXXXXXXXXXXXXXX';
     margin-bottom: var(--space-sm);
     font-family: var(--font-body);
   }
-  
+
   .adsbygoogle {
     display: block;
     min-height: 250px;
     background: var(--color-white);
     border-radius: var(--border-radius);
   }
-  
+
   /* Responsive ad sizes */
   @media (max-width: 768px) {
     .ad-unit {
       margin: var(--space-lg) 0;
       padding: var(--space-sm);
     }
-    
+
     .adsbygoogle {
       min-height: 200px;
     }
   }
-  
+
   /* Different ad formats */
   .ad-unit.sidebar {
     position: sticky;
     top: 100px;
   }
-  
+
   .ad-unit.horizontal .adsbygoogle {
     min-height: 90px;
   }
-  
+
   .ad-unit.square .adsbygoogle {
     min-height: 300px;
   }
-  
+
   .ad-unit.rectangle .adsbygoogle {
     min-height: 250px;
   }

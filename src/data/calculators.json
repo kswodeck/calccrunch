@@ -19,6 +19,21 @@
       "lastUpdated": "2025-11-09",
       "uses": 0,
       "rating": 0,
+      "affiliateHeadlines": [
+        "Essential First-Time Homebuyer Guide",
+        "Professional Financial Calculator for Complex Math",
+        "Complete Home Inspection Toolkit"
+      ],
+      "affiliateDescriptions": [
+        "Navigate the home buying process with confidence using this comprehensive guide covering financing, negotiations, and closing procedures.",
+        "Handle complex mortgage calculations and financial planning with this industry-standard calculator trusted by real estate professionals.",
+        "Ensure your investment is sound with this complete inspection checklist and guide to identifying potential issues before purchase."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4oIJHXu",
+        "https://amzn.to/3XEjnSq",
+        "https://amzn.to/3K8Gxx4"
+      ],
       "relatedCalculators": ["loan-amortization-calculator", "home-affordability-calculator", "refinance-calculator"]
     },
     {
@@ -40,6 +55,21 @@
       "lastUpdated": "2025-11-06",
       "uses": 0,
       "rating": 0,
+      "affiliateHeadlines": [
+        "Smart Scale with BMI Tracking",
+        "Top-Rated Fitness Tracker Watch",
+        "Body Measurement Tape Set"
+      ],
+      "affiliateDescriptions": [
+        "Track your BMI progress automatically with this smart scale that syncs to your phone and monitors body composition trends over time.",
+        "Monitor your health metrics 24/7 with this comprehensive fitness tracker featuring heart rate, activity, and health insights.",
+        "Accurately measure body dimensions for tracking fitness progress with this professional-grade retractable measuring tape set."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/3LM6xiw",
+        "https://amzn.to/487cldM",
+        "https://amzn.to/4ppvFdr"
+      ],
       "relatedCalculators": ["calorie-calculator", "body-fat-calculator", "macro-calculator"]
     },
     {
@@ -61,6 +91,21 @@
       "lastUpdated": "2025-11-06",
       "uses": 0,
       "rating": 0,
+      "affiliateHeadlines": [
+        "Dave Ramsey's Debt-Free Guide",
+        "Financial Planning Software Suite",
+        "Debt Elimination Workbook"
+      ],
+      "affiliateDescriptions": [
+        "Accelerate your debt payoff with Dave Ramsey's proven baby steps system that has helped millions achieve financial freedom.",
+        "Manage all your loans and financial planning in one place with this comprehensive software suite featuring amortization schedules and payoff strategies.",
+        "Track multiple debts and create your personalized elimination plan with this hands-on workbook featuring payment trackers and motivational milestones."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4oR3K6h",
+        "https://amzn.to/4a1wSmA",
+        "https://amzn.to/3M8U4p0"
+      ],
       "relatedCalculators": ["mortgage-payment-calculator", "auto-loan-calculator", "student-loan-calculator"]
     },
     {
@@ -82,6 +127,21 @@
       "lastUpdated": "2025-11-06",
       "uses": 0,
       "rating": 0,
+      "affiliateHeadlines": [
+        "Digital Food Scale for Accurate Tracking",
+        "Meal Prep Container Set",
+        "Calorie Counter Reference Book"
+      ],
+      "affiliateDescriptions": [
+        "Ensure accurate calorie counting with this precision digital scale featuring nutritional database and portion control guidance.",
+        "Simplify meal planning and portion control with these glass containers perfect for weekly meal prep and calorie management.",
+        "Quick reference guide with calorie counts for thousands of foods, making tracking easier when dining out or cooking at home."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4rr2zfF",
+        "https://amzn.to/3K6H6Yh",
+        "https://amzn.to/4pnTRwM"
+      ],
       "relatedCalculators": ["bmi-calculator", "macro-calculator", "body-fat-calculator"]
     },
     {
@@ -103,6 +163,21 @@
       "lastUpdated": "2025-11-19",
       "uses": 0,
       "rating": 0,
+      "affiliateHeadlines": [
+        "Index Fund Investing Bible",
+        "Retirement Planning Workbook",
+        "Warren Buffett Investment Strategy"
+      ],
+      "affiliateDescriptions": [
+        "Learn the power of low-cost index fund investing with this comprehensive guide to building wealth through compound returns.",
+        "Plan your retirement systematically with worksheets for calculating compound growth, withdrawal rates, and income needs.",
+        "Discover the Oracle of Omaha's time-tested investment principles that harness compound interest for long-term wealth building."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/48oiYtq",
+        "https://amzn.to/4ogsDr2",
+        "https://amzn.to/3K8HN3g"
+      ],
       "relatedCalculators": ["retirement-income-calculator", "savings-goal-calculator", "college-savings-calculator"]
     },
     {
@@ -124,6 +199,21 @@
       "lastUpdated": "2025-11-19",
       "uses": 0,
       "rating": 0,
+      "affiliateHeadlines": [
+        "Complete Retirement Planning Guide",
+        "Social Security Maximization Book",
+        "Estate Planning Document Kit"
+      ],
+      "affiliateDescriptions": [
+        "Create a comprehensive retirement plan with strategies for maximizing income, minimizing taxes, and ensuring your money lasts.",
+        "Optimize your Social Security benefits with timing strategies that can increase lifetime benefits by tens of thousands of dollars.",
+        "Protect your retirement assets with essential estate planning documents including wills, trusts, and power of attorney templates."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4pc6b2Q",
+        "https://amzn.to/4rehWYE",
+        "https://amzn.to/4oSBuAe"
+      ],
       "relatedCalculators": ["compound-interest-calculator", "retirement-date-calculator", "savings-goal-calculator"]
     },
     {
@@ -145,6 +235,21 @@
       "lastUpdated": "2025-11-09",
       "uses": 0,
       "rating": 0,
+      "affiliateHeadlines": [
+        "First-Time Buyer's Complete Guide",
+        "Credit Score Improvement Kit",
+        "Home Down Payment Savings Tracker"
+      ],
+      "affiliateDescriptions": [
+        "Everything first-time buyers need to know about affordability, financing options, and navigating the home buying process successfully.",
+        "Boost your credit score to qualify for better rates and increase your home buying power with proven credit repair strategies.",
+        "Visual savings tracker to help you reach your down payment goal faster with milestone celebrations and motivation tips."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/47QcGCT",
+        "https://amzn.to/4o8x8DD",
+        "https://amzn.to/47SMOq4"
+      ],
       "relatedCalculators": ["mortgage-payment-calculator", "debt-to-income-calculator", "rent-vs-buy-calculator"]
     },
     {
@@ -166,9 +271,24 @@
       "lastUpdated": "2025-11-19",
       "uses": 0,
       "rating": 0,
+      "affiliateHeadlines": [
+        "Kelley Blue Book Used Car Guide",
+        "Car Buying Negotiation Secrets",
+        "Vehicle History Report Service"
+      ],
+      "affiliateDescriptions": [
+        "Get accurate vehicle valuations to ensure you're paying a fair price and maximize your trade-in value with official KBB data.",
+        "Save thousands on your next car with insider negotiation tactics that dealers don't want you to know about.",
+        "Protect yourself from buying a problem vehicle with comprehensive history reports revealing accidents, ownership, and maintenance records."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/3JGOkCo",
+        "https://amzn.to/4oSCNiC",
+        "https://amzn.to/4i92kRO"
+      ],
       "relatedCalculators": ["loan-amortization-calculator", "car-lease-buy-calculator", "gas-mileage-calculator"]
     },
-      {
+    {
       "id": "gpa-calculator",
       "title": "GPA Calculator",
       "slug": "gpa-calculator",
@@ -187,6 +307,21 @@
       "lastUpdated": "2025-11-12",
       "uses": 0,
       "rating": 0,
+      "affiliateHeadlines": [
+        "College Success Study Guide",
+        "Student Planner & Grade Tracker",
+        "Test Prep Bundle Pack"
+      ],
+      "affiliateDescriptions": [
+        "Master effective study techniques and time management strategies that help top students maintain high GPAs throughout college.",
+        "Stay organized and track your grades all semester with this comprehensive academic planner featuring GPA calculators and goal setting.",
+        "Boost your test scores and overall GPA with proven test-taking strategies and practice materials for major standardized exams."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
       "relatedCalculators": ["college-savings-calculator", "student-loan-calculator"]
     },
     {
@@ -208,6 +343,21 @@
       "lastUpdated": "2025-11-19",
       "uses": 0,
       "rating": 0,
+      "affiliateHeadlines": [
+        "Project Management Planner",
+        "Productivity Method Bestseller",
+        "Desktop Calendar with Holidays"
+      ],
+      "affiliateDescriptions": [
+        "Master project timelines and deadline management with this comprehensive planner featuring Gantt charts and milestone tracking.",
+        "Transform your productivity with David Allen's revolutionary GTD method for managing tasks, projects, and deadlines effectively.",
+        "Never miss a deadline with this desktop calendar featuring all major holidays, business days counter, and project planning space."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4idftcO",
+        "https://amzn.to/4icOyOj",
+        "https://amzn.to/49pjSah"
+      ],
       "relatedCalculators": ["age-calculator", "hours-calculator", "retirement-date-calculator"]
     },
     {
@@ -243,6 +393,21 @@
       "lastUpdated": "2025-11-16",
       "uses": 0,
       "rating": 0,
+      "affiliateHeadlines": [
+        "FIRE Movement Complete Guide",
+        "Passive Income Strategy Bible",
+        "Real Estate Investment Starter"
+      ],
+      "affiliateDescriptions": [
+        "Achieve financial independence with the complete FIRE playbook covering savings rates, investment strategies, and early retirement planning.",
+        "Build multiple streams of passive income with proven strategies for dividends, real estate, online business, and more.",
+        "Start your real estate investment journey with this beginner's guide to rental properties, REITs, and property analysis."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4a7YTsC",
+        "https://amzn.to/4raaFcg",
+        "https://amzn.to/487SXgS"
+      ],
       "relatedCalculators": [
         "retirement-income-calculator",
         "compound-interest-calculator",
@@ -268,6 +433,21 @@
       "lastUpdated": "2025-11-19",
       "uses": 0,
       "rating": 0,
+      "affiliateHeadlines": [
+        "Debt Snowball Method Guide",
+        "Credit Repair Secrets Book",
+        "Budget Envelope System Wallet"
+      ],
+      "affiliateDescriptions": [
+        "Eliminate credit card debt faster with Dave Ramsey's proven debt snowball method that builds momentum through quick wins.",
+        "Repair your credit while paying off debt with insider strategies for disputing errors and negotiating with creditors.",
+        "Take control of spending with this cash envelope wallet system that prevents credit card overspending and accelerates debt payoff."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/49XY6dS",
+        "https://amzn.to/48oad2z",
+        "https://amzn.to/3X2BgKD"
+      ],
       "relatedCalculators": ["debt-to-income-calculator", "student-loan-calculator", "budget-calculator"]
     },
     {
@@ -289,6 +469,21 @@
       "lastUpdated": "2025-11-19",
       "uses": 0,
       "rating": 0,
+      "affiliateHeadlines": [
+        "Rent vs Buy Decision Guide",
+        "Real Estate Investing Basics",
+        "Home Inspection Handbook"
+      ],
+      "affiliateDescriptions": [
+        "Make the right housing decision with this comprehensive guide comparing all financial and lifestyle factors of renting versus buying.",
+        "Learn how to evaluate real estate as an investment with analysis techniques for rental properties and personal residences.",
+        "Protect your investment with this detailed inspection guide covering everything to check before buying any property."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/3Kc7eB5",
+        "https://amzn.to/4r7M7kb",
+        "https://amzn.to/4pcMZ5g"
+      ],
       "relatedCalculators": ["mortgage-payment-calculator", "home-affordability-calculator", "home-equity-calculator"]
     },
     {
@@ -310,6 +505,21 @@
       "lastUpdated": "2025-11-19",
       "uses": 0,
       "rating": 0,
+      "affiliateHeadlines": [
+        "Body Fat Caliper Set",
+        "DEXA Scan Alternative Scale",
+        "Athlete's Nutrition Guide"
+      ],
+      "affiliateDescriptions": [
+        "Get accurate body fat measurements at home with these professional-grade calipers including measurement charts and instructions.",
+        "Track body fat percentage daily with this advanced bioimpedance scale offering DEXA-level accuracy for home use.",
+        "Optimize body composition with science-based nutrition strategies for losing fat while maintaining or building lean muscle mass."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4plfptY",
+        "https://amzn.to/4r7uYa3",
+        "https://amzn.to/47REWoJ"
+      ],
       "relatedCalculators": ["bmi-calculator", "calorie-calculator", "macro-calculator"]
     },
     {
@@ -331,6 +541,21 @@
       "lastUpdated": "2025-11-19",
       "uses": 0,
       "rating": 0,
+      "affiliateHeadlines": [
+        "Digital Kitchen Scale Essential",
+        "Complete Baking Conversion Chart",
+        "Adjustable Measuring Cup Set"
+      ],
+      "affiliateDescriptions": [
+        "Ensure perfect recipe scaling with this precise digital scale featuring unit conversion and tare function for accurate ingredient measuring.",
+        "Never guess measurements again with this magnetic conversion chart set covering volume, weight, and temperature conversions.",
+        "Scale recipes easily with this innovative adjustable measuring cup that slides to show different measurements from 1/8 cup to 2 cups."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4o3h3za",
+        "https://amzn.to/4pnjT37",
+        "https://amzn.to/4oR9yN7"
+      ],
       "relatedCalculators": ["unit-converter"]
     }
   ]

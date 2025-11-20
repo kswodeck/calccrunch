@@ -81,13 +81,10 @@ sortedCategories.forEach((cat) => {
         </div>
       </header>
 
-      <!-- Top Ad Unit -->
-      <!-- <AdUnit slot="all-calculators-top" format="horizontal" /> -->
-
       <!-- Calculators by Category -->
       {
         Object.entries(calculatorsByCategory)?.map(
-          ([categoryId, categoryData]) => {
+          ([categoryId, categoryData], idx) => {
             const catInfo = getCategoryData(categoryId);
             return (
               <section class="category-section">
@@ -120,15 +117,18 @@ sortedCategories.forEach((cat) => {
                         icon={calc.icon}
                       />
                     ))}
+                  {idx % 2 == 0 &&
+                  idx + 1 < Object.keys(calculatorsByCategory).length ? (
+                    <AdUnit slot="4441095467" format="auto" />
+                  ) : (
+                    ""
+                  )}
                 </div>
               </section>
             );
           }
         )
       }
-
-      <!-- Bottom Ad Unit -->
-      <!-- <AdUnit slot="all-calculators-bottom" format="rectangle" /> -->
     </div>
   </div>
 </BaseLayout>

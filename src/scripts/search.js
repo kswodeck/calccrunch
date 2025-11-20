@@ -365,13 +365,23 @@ function displaySearchSuggestions(results, inputElement) {
     const title = document.createElement('div');
     title.className = 'suggestion-title';
     title.textContent = calc.title;
+
+    const categoryRow = document.createElement('div');
+    categoryRow.className = 'suggestion-category-div';
     
     const category = document.createElement('div');
     category.className = 'suggestion-category';
     category.textContent = getCategoryName(calc.category);
-    
+
+    categoryRow.appendChild(category);
+    if (calc.popular) {
+      const popular = document.createElement('div');
+      popular.className = 'calc-card-badge icon-only';
+      popular.textContent = "🔥";
+      categoryRow.appendChild(popular);
+    }
     content.appendChild(title);
-    content.appendChild(category);
+    content.appendChild(categoryRow);
     
     suggestion.appendChild(icon);
     suggestion.appendChild(content);

@@ -1,86 +1,104 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import '../styles/global.css';
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import AdUnit from "../components/AdUnit.astro";
+import "../styles/global.css";
 
 // Destructure props (no TypeScript interfaces needed)
-const { 
-  title, 
-  description, 
-  keywords = 'free calculator, online calculator, financial calculator, mortgage calculator, loan calculator, BMI calculator',
-  ogImage = '/images/heroes/hero-home.png',
-  canonical
+const {
+  title,
+  description,
+  keywords = "free calculator, online calculator, financial calculator, mortgage calculator, loan calculator, BMI calculator",
+  ogImage = "/images/heroes/hero-home.png",
+  canonical,
 } = Astro.props;
 
 const fullTitle = `${title} | CalcCrunch - Free Online Calculators`;
-const canonicalURL = canonical || new URL(Astro.url.pathname, Astro.site).toString();
+const canonicalURL =
+  canonical || new URL(Astro.url.pathname, Astro.site).toString();
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="/images/logos/logo-icon.png">
-  
-  <!-- Primary Meta Tags -->
-  <title>{fullTitle}</title>
-  <meta name="title" content={fullTitle}>
-  <meta name="description" content={description}>
-  <meta name="keywords" content={keywords}>
-  <meta name="author" content="CalcCrunch">
-  <link rel="canonical" href={canonicalURL}>
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content={canonicalURL}>
-  <meta property="og:title" content={fullTitle}>
-  <meta property="og:description" content={description}>
-  <meta property="og:image" content={ogImage}>
-  
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content={canonicalURL}>
-  <meta property="twitter:title" content={fullTitle}>
-  <meta property="twitter:description" content={description}>
-  <meta property="twitter:image" content={ogImage}>
-  <meta name="google-adsense-account" content="ca-pub-7168350672318573">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/images/logos/logo-icon.png" />
 
-  <!-- Structured Data - Organization -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "CalcCrunch",
-    "alternateName": "Calc Crunch",
-    "url": "https://calccrunch.com",
-    "description": "Free online calculators for financial planning, health tracking, home projects, and more. Calculate anything instantly.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://calccrunch.com/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  import '../scripts/search.js';
-  </script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HD4P633GWP" is:inline></script>
-  <script is:inline>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-HD4P633GWP');
-  </script>
-</head>
-<body>
-  <Header />
-  
-  <main>
-    <slot />
-  </main>
-  
-  <Footer />
-  
-<script async src=https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js is:inline></script>
-</body>
+    <!-- Primary Meta Tags -->
+    <title>{fullTitle}</title>
+    <meta name="title" content={fullTitle} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content="CalcCrunch" />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={fullTitle} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={ogImage} />
+    <meta name="google-adsense-account" content="ca-pub-7168350672318573" />
+
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "CalcCrunch",
+        "alternateName": "Calc Crunch",
+        "url": "https://calccrunch.com",
+        "description": "Free online calculators for financial planning, health tracking, home projects, and more. Calculate anything instantly.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://calccrunch.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HD4P633GWP"
+      is:inline></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-HD4P633GWP");
+    </script>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+      is:inline></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7168350672318573"
+      crossorigin="anonymous"
+      is:inline></script>
+  </head>
+  <body>
+    <Header />
+
+    <main>
+      <slot />
+      <!-- Ad Unit (multiplex) -->
+      <AdUnit slot="1019949885" format="autorelaxed" />
+    </main>
+
+    <Footer />
+    <script>
+      import "../scripts/search.js";
+    </script>
+  </body>
 </html>

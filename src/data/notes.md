@@ -6,3 +6,12 @@ http://localhost:4321/calculators/rent-vs-buy-calculator?monthlyRent=2600&rentIn
 
 
 IDEA: PTO Amount estimator / calculator
+
+Amazon Affiliate Links:
+
+
+<!-- Ad Unit (multiplex) -->
+<AdUnit slot="1019949885" format="autorelaxed" />
+
+<!-- Ad Unit (display) -->
+<AdUnit slot="4441095467" format="auto" />

@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import EmailCapture from "../components/EmailCapture.astro";
+import AdUnit from "../components/AdUnit.astro";
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
@@ -249,6 +250,8 @@ const faqs = [
                 </div>
               </div>
             </div>
+            <!-- Ad Unit (display) -->
+            <AdUnit slot="4441095467" format="square" />
           </div>
         </div>
       </div>
@@ -275,6 +278,9 @@ const faqs = [
         </div>
       </div>
     </section>
+
+    <!-- Why Contact Us Ad Unit -->
+    <AdUnit slot="4441095467" format="auto" />
 
     <!-- FAQ Section -->
     <section class="faq-section">
