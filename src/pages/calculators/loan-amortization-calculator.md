@@ -35,8 +35,8 @@ difficulty: Easy
             class="form-input"
             placeholder="200000"
             value="200000"
-            min="1000"
-            step="1000"
+            min="100"
+            step="100"
             required
           />
           <span class="input-addon">$</span>
@@ -54,7 +54,7 @@ difficulty: Easy
             placeholder="6.5"
             value="6.5"
             min="0"
-            max="30"
+            max="100"
             step="0.05"
             required
           />
@@ -110,7 +110,7 @@ difficulty: Easy
             placeholder="0"
             value="0"
             min="0"
-            step="50"
+            step="10"
           />
           <span class="input-addon">$</span>
         </div>

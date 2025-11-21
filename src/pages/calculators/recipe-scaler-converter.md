@@ -37,7 +37,7 @@ difficulty: Easy
             placeholder="4"
             value="4"
             min="0.5"
-            max="1000"
+            max="10000"
             step="0.5"
             required
           />
@@ -57,7 +57,7 @@ difficulty: Easy
             placeholder="8"
             value="8"
             min="0.5"
-            max="1000"
+            max="10000"
             step="0.5"
             required
           />

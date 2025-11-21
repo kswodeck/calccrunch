@@ -39,7 +39,8 @@ difficulty: Easy
             placeholder="5000"
             value="5000"
             min="0"
-            step="100"
+            max="1000000000"
+            step="50"
             required
           />
         </div>
@@ -54,10 +55,10 @@ difficulty: Easy
             type="number" 
             id="interest-rate" 
             class="form-input"
-            placeholder="18.99"
-            value="18.99"
+            placeholder="19"
+            value="10"
             min="0"
-            max="50"
+            max="100"
             step="0.01"
             required
           />
@@ -96,8 +97,8 @@ difficulty: Easy
               class="form-input"
               placeholder="2"
               value="2"
-              min="1"
-              max="10"
+              min="0"
+              max="100"
               step="0.1"
             />
             <span class="input-addon-end">%</span>
@@ -142,7 +143,7 @@ difficulty: Easy
               placeholder="200"
               value="200"
               min="0"
-              step="10"
+              step="5"
             />
           </div>
           <small class="form-help">Amount you'll pay each month</small>
@@ -171,7 +172,7 @@ difficulty: Easy
             placeholder="24"
             value="24"
             min="1"
-            max="360"
+            max="3600"
             step="1"
           />
           <small class="form-help">When you want to be debt-free</small>
@@ -198,7 +199,7 @@ difficulty: Easy
             placeholder="0"
             value="0"
             min="0"
-            step="100"
+            step="10"
           />
         </div>
         <small class="form-help">Bonus, tax refund, etc.</small>

@@ -111,8 +111,8 @@ difficulty: Easy
             class="form-input"
             placeholder="180"
             value="180"
-            min="50"
-            max="700"
+            min="1"
+            max="1000"
             step="0.5"
             required
           />
@@ -154,8 +154,8 @@ difficulty: Easy
             class="form-input"
             placeholder="82"
             value="82"
-            min="20"
-            max="300"
+            min="1"
+            max="1000"
             step="0.1"
             required
           />
@@ -202,8 +202,8 @@ difficulty: Easy
             class="form-input"
             placeholder="16"
             value="16"
-            min="8"
-            max="30"
+            min="1"
+            max="50"
             step="0.25"
             required
           />
@@ -221,8 +221,8 @@ difficulty: Easy
             class="form-input"
             placeholder="34"
             value="34"
-            min="20"
-            max="80"
+            min="1"
+            max="100"
             step="0.25"
             required
           />
@@ -242,8 +242,8 @@ difficulty: Easy
             class="form-input"
             placeholder="40"
             value="40"
-            min="25"
-            max="80"
+            min="1"
+            max="100"
             step="0.25"
           />
           <span class="input-addon">in</span>
@@ -275,8 +275,8 @@ difficulty: Easy
             class="form-input"
             placeholder="40"
             value="40"
-            min="20"
-            max="75"
+            min="1"
+            max="100"
             step="0.5"
             required
           />
@@ -294,8 +294,8 @@ difficulty: Easy
             class="form-input"
             placeholder="86"
             value="86"
-            min="50"
-            max="200"
+            min="1"
+            max="1000"
             step="0.5"
             required
           />
@@ -315,8 +315,8 @@ difficulty: Easy
             class="form-input"
             placeholder="102"
             value="102"
-            min="60"
-            max="200"
+            min="1"
+            max="1000"
             step="0.5"
           />
           <span class="input-addon">cm</span>
@@ -338,29 +338,29 @@ difficulty: Easy
     <div class="form-row" id="male-3site">
       <div class="form-group">
         <label for="chest-fold">Chest (mm)</label>
-        <input type="number" id="chest-fold" class="form-input" placeholder="12" value="12" min="1" max="50" step="0.5"/>
+        <input type="number" id="chest-fold" class="form-input" placeholder="12" value="12" min="1" max="100" step="0.5"/>
       </div>
       <div class="form-group">
         <label for="abdomen-fold">Abdomen (mm)</label>
-        <input type="number" id="abdomen-fold" class="form-input" placeholder="20" value="20" min="1" max="80" step="0.5"/>
+        <input type="number" id="abdomen-fold" class="form-input" placeholder="20" value="20" min="1" max="100" step="0.5"/>
       </div>
       <div class="form-group">
         <label for="thigh-fold-male">Thigh (mm)</label>
-        <input type="number" id="thigh-fold-male" class="form-input" placeholder="15" value="15" min="1" max="50" step="0.5"/>
+        <input type="number" id="thigh-fold-male" class="form-input" placeholder="15" value="15" min="1" max="100" step="0.5"/>
       </div>
     </div>
     <div class="form-row hidden" id="female-3site">
       <div class="form-group">
         <label for="tricep-fold">Tricep (mm)</label>
-        <input type="number" id="tricep-fold" class="form-input" placeholder="18" value="18" min="1" max="50" step="0.5"/>
+        <input type="number" id="tricep-fold" class="form-input" placeholder="18" value="18" min="1" max="100" step="0.5"/>
       </div>
       <div class="form-group">
         <label for="suprailiac-fold">Suprailiac (mm)</label>
-        <input type="number" id="suprailiac-fold" class="form-input" placeholder="15" value="15" min="1" max="50" step="0.5"/>
+        <input type="number" id="suprailiac-fold" class="form-input" placeholder="15" value="15" min="1" max="100" step="0.5"/>
       </div>
       <div class="form-group">
         <label for="thigh-fold-female">Thigh (mm)</label>
-        <input type="number" id="thigh-fold-female" class="form-input" placeholder="20" value="20" min="1" max="50" step="0.5"/>
+        <input type="number" id="thigh-fold-female" class="form-input" placeholder="20" value="20" min="1" max="100" step="0.5"/>
       </div>
     </div>
   </div>
@@ -374,35 +374,35 @@ difficulty: Easy
     <div class="form-row">
       <div class="form-group">
         <label for="chest-7">Chest</label>
-        <input type="number" id="chest-7" class="form-input" placeholder="12" value="12" min="1" max="50" step="0.5"/>
+        <input type="number" id="chest-7" class="form-input" placeholder="12" value="12" min="1" max="100" step="0.5"/>
       </div>
       <div class="form-group">
         <label for="midaxillary">Midaxillary</label>
-        <input type="number" id="midaxillary" class="form-input" placeholder="14" value="14" min="1" max="50" step="0.5"/>
+        <input type="number" id="midaxillary" class="form-input" placeholder="14" value="14" min="1" max="100" step="0.5"/>
       </div>
       <div class="form-group">
         <label for="tricep-7">Tricep</label>
-        <input type="number" id="tricep-7" class="form-input" placeholder="15" value="15" min="1" max="50" step="0.5"/>
+        <input type="number" id="tricep-7" class="form-input" placeholder="15" value="15" min="1" max="100" step="0.5"/>
       </div>
     </div>
     <div class="form-row">
       <div class="form-group">
         <label for="subscapular">Subscapular</label>
-        <input type="number" id="subscapular" class="form-input" placeholder="13" value="13" min="1" max="50" step="0.5"/>
+        <input type="number" id="subscapular" class="form-input" placeholder="13" value="13" min="1" max="100" step="0.5"/>
       </div>
       <div class="form-group">
         <label for="abdomen-7">Abdomen</label>
-        <input type="number" id="abdomen-7" class="form-input" placeholder="20" value="20" min="1" max="80" step="0.5"/>
+        <input type="number" id="abdomen-7" class="form-input" placeholder="20" value="20" min="1" max="100" step="0.5"/>
       </div>
       <div class="form-group">
         <label for="suprailiac-7">Suprailiac</label>
-        <input type="number" id="suprailiac-7" class="form-input" placeholder="15" value="15" min="1" max="50" step="0.5"/>
+        <input type="number" id="suprailiac-7" class="form-input" placeholder="15" value="15" min="1" max="100" step="0.5"/>
       </div>
     </div>
     <div class="form-row">
       <div class="form-group">
         <label for="thigh-7">Thigh</label>
-        <input type="number" id="thigh-7" class="form-input" placeholder="18" value="18" min="1" max="50" step="0.5"/>
+        <input type="number" id="thigh-7" class="form-input" placeholder="18" value="18" min="1" max="100" step="0.5"/>
       </div>
     </div>
   </div>

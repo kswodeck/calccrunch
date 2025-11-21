@@ -76,8 +76,8 @@ difficulty: Easy
           id="cumulative-gpa" 
           class="form-input"
           min="0"
-          max="4.3"
-          step="0.001"
+          max="5.0"
+          step="0.01"
           placeholder="3.500"
         />
         <small class="form-help">Your GPA before this semester</small>
@@ -91,7 +91,7 @@ difficulty: Easy
           id="cumulative-credits" 
           class="form-input"
           min="0"
-          max="999"
+          max="10000"
           step="0.5"
           placeholder="45"
         />

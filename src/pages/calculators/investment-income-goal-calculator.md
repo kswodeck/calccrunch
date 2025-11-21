@@ -105,7 +105,7 @@ difficulty: Medium
             class="form-input"
             placeholder="500"
             min="0"
-            step="100"
+            step="10"
           />
         </div>
         <small class="form-help" id="contribution-help">Amount to contribute</small>

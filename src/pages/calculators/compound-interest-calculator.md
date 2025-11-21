@@ -76,7 +76,7 @@ difficulty: Medium
             placeholder="7"
             value="7"
             min="0"
-            max="50"
+            max="10000"
             step="0.1"
             required
           />

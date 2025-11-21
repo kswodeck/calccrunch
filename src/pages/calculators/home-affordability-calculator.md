@@ -79,7 +79,7 @@ difficulty: Easy
             class="form-input"
             placeholder="20000"
             value="20000"
-            step="500"
+            step="1"
             required
           />
           <span class="input-addon input-addon-toggle" id="down-payment-unit" title="Click to switch between $ and %">$</span>
@@ -150,7 +150,7 @@ difficulty: Easy
             class="form-input"
             placeholder="1200"
             value="1200"
-            step="50"
+            step="0.1"
           />
           <span class="input-addon input-addon-toggle" id="insurance-unit" title="Click to switch between $ and %">$</span>
         </div>
@@ -205,8 +205,8 @@ difficulty: Easy
           <input 
             type="range" 
             id="dti-housing-slider"
-            min="15"
-            max="40"
+            min="20"
+            max="80"
             value="28"
             step="1"
             class="form-slider"
@@ -216,8 +216,8 @@ difficulty: Easy
               type="number" 
               id="max-dti-housing" 
               class="form-input"
-              min="15"
-              max="40"
+              min="30"
+              max="90"
               value="28"
               step="1"
             />
@@ -234,8 +234,8 @@ difficulty: Easy
           <input 
             type="range" 
             id="dti-total-slider"
-            min="20"
-            max="50"
+            min="5"
+            max="90"
             value="36"
             step="1"
             class="form-slider"

@@ -37,6 +37,7 @@ difficulty: Easy
             class="form-input"
             placeholder="300000"
             value="300000"
+            min="0"
             step="1000"
             required
           />
@@ -54,7 +55,7 @@ difficulty: Easy
             class="form-input"
             placeholder="60000"
             value="60000"
-            step="500"
+            step="1"
             required
           />
           <span class="input-addon input-addon-toggle" id="down-payment-unit" title="Click to switch between $ and %">$</span>
@@ -74,6 +75,8 @@ difficulty: Easy
             class="form-input"
             placeholder="6.5"
             value="6.5"
+            min="0"
+            max="100"
             step="0.05"
             required
           />
@@ -108,7 +111,8 @@ difficulty: Easy
             class="form-input"
             placeholder="3500"
             value="3500"
-            step="50"
+            min="0"
+            step="0.1"
           />
           <span class="input-addon input-addon-toggle" id="property-tax-unit" title="Click to switch between $ and %">$</span>
         </div>
@@ -125,7 +129,8 @@ difficulty: Easy
             class="form-input"
             placeholder="1200"
             value="1200"
-            step="50"
+            min="0"
+            step="0.1"
           />
           <span class="input-addon input-addon-toggle" id="insurance-unit" title="Click to switch between $ and %">$</span>
         </div>
@@ -144,7 +149,8 @@ difficulty: Easy
             class="form-input"
             placeholder="0"
             value="0"
-            step="25"
+            min="0"
+            step="1"
           />
           <span class="input-addon">$</span>
         </div>

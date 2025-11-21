@@ -37,7 +37,8 @@ difficulty: Medium
             class="form-input"
             placeholder="2000"
             value="2000"
-            step="50"
+            min="0"
+            step="10"
             required
           />
           <span class="input-addon">$</span>
@@ -74,6 +75,7 @@ difficulty: Medium
             class="form-input"
             placeholder="20"
             value="20"
+            min="0"
             step="5"
           />
           <span class="input-addon">$</span>
@@ -90,7 +92,8 @@ difficulty: Medium
             class="form-input"
             placeholder="2000"
             value="2000"
-            step="100"
+            min="0"
+            step="10"
           />
           <span class="input-addon">$</span>
         </div>
@@ -113,7 +116,8 @@ difficulty: Medium
             class="form-input"
             placeholder="400000"
             value="400000"
-            step="1000"
+            min="0"
+            step="500"
             required
           />
           <span class="input-addon">$</span>
@@ -130,7 +134,8 @@ difficulty: Medium
             class="form-input"
             placeholder="80000"
             value="80000"
-            step="1000"
+            min="0"
+            step="0.5"
             required
           />
           <span class="input-addon input-addon-toggle" id="down-payment-unit" title="Click to switch between $ and %">$</span>
@@ -150,6 +155,7 @@ difficulty: Medium
             class="form-input"
             placeholder="6.5"
             value="6.5"
+            min="0"
             step="0.05"
             required
           />
@@ -180,6 +186,7 @@ difficulty: Medium
             class="form-input"
             placeholder="12000"
             value="12000"
+            min="0"
             step="500"
           />
           <span class="input-addon input-addon-toggle" id="closing-costs-unit" title="Click to switch between $ and %">$</span>
@@ -220,7 +227,8 @@ difficulty: Medium
             class="form-input"
             placeholder="4800"
             value="4800"
-            step="100"
+            min="0"
+            step="0.05"
           />
           <span class="input-addon input-addon-toggle" id="property-tax-unit" title="Click to switch between $ and %">$</span>
         </div>
@@ -237,7 +245,8 @@ difficulty: Medium
             class="form-input"
             placeholder="1500"
             value="1600"
-            step="50"
+            min="0"
+            step="0.05"
           />
           <span class="input-addon input-addon-toggle" id="home-insurance-unit" title="Click to switch between $ and %">$</span>
         </div>
@@ -256,7 +265,8 @@ difficulty: Medium
             class="form-input"
             placeholder="0"
             value="0"
-            step="5"
+            min="0"
+            step="1"
           />
           <span class="input-addon">$</span>
         </div>
@@ -272,6 +282,7 @@ difficulty: Medium
             class="form-input"
             placeholder="1"
             value="0.5"
+            min="0"
             step="0.05"
           />
           <span class="input-addon input-addon-toggle" id="maintenance-unit" title="Click to switch between $ and %">%</span>
@@ -291,6 +302,7 @@ difficulty: Medium
             class="form-input"
             placeholder="0.5"
             value="0.5"
+            min="0"
             step="0.05"
           />
           <span class="input-addon input-addon-toggle" id="pmi-unit" title="Click to switch between $ and %">%</span>
@@ -308,7 +320,8 @@ difficulty: Medium
             class="form-input"
             placeholder="100"
             value="100"
-            step="25"
+            min="0"
+            step="5"
           />
           <span class="input-addon">$</span>
         </div>
@@ -331,7 +344,7 @@ difficulty: Medium
             class="form-input"
             placeholder="9"
             value="9"
-            step="0.5"
+            step="0.1"
           />
           <span class="input-addon">%</span>
         </div>
@@ -348,7 +361,8 @@ difficulty: Medium
             class="form-input"
             placeholder="24"
             value="24"
-            step="1"
+            min="0"
+            step="0.5"
           />
           <span class="input-addon">%</span>
         </div>
@@ -368,7 +382,7 @@ difficulty: Medium
             placeholder="10"
             value="10"
             min="1"
-            max="30"
+            max="100"
             step="1"
             required
           />
@@ -387,7 +401,8 @@ difficulty: Medium
             class="form-input"
             placeholder="6"
             value="6"
-            step="0.5"
+            min="0"
+            step="0.1"
           />
           <span class="input-addon">%</span>
         </div>

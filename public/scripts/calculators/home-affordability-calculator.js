@@ -928,33 +928,6 @@
           </div>
         </div>
       </div>
-
-      <div class="result-actions">
-        <h4>Next Steps</h4>
-        <div class="action-cards">
-          <button onclick="location.href='/calculators/mortgage-payment-calculator'" class="action-card">
-            <span class="action-icon">🧮</span>
-            <span class="action-text">
-              <strong>Calculate Exact Payment</strong>
-              <small>Get detailed payment breakdown for a specific home</small>
-            </span>
-          </button>
-          <button onclick="location.href='/calculators/debt-to-income-calculator'" class="action-card">
-            <span class="action-icon">📊</span>
-            <span class="action-text">
-              <strong>Check DTI Ratio</strong>
-              <small>Analyze your debt-to-income in detail</small>
-            </span>
-          </button>
-          <button onclick="location.href='/calculators/rent-vs-buy-calculator'" class="action-card">
-            <span class="action-icon">🏠</span>
-            <span class="action-text">
-              <strong>Rent vs Buy</strong>
-              <small>Compare renting versus buying costs</small>
-            </span>
-          </button>
-        </div>
-      </div>
     `;
 
     resultDiv.classList.remove('hidden');

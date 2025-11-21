@@ -4,11 +4,10 @@ const {
   slot = "auto",
   format = "auto",
   className = "",
+  responsive = true,
+  test = false,
   style = "display:block",
 } = Astro.props;
-
-// Your Google AdSense client ID (replace with your actual ID)
-const adsenseClient = "ca-pub-7168350672318573";
 ---
 
 <div class={`ad-unit ${className}`}>
@@ -18,13 +17,33 @@ const adsenseClient = "ca-pub-7168350672318573";
   <ins
     class="adsbygoogle"
     style={style}
-    data-ad-client={adsenseClient}
+    data-ad-client="ca-pub-7168350672318573"
     data-ad-slot={slot}
     data-ad-format={format}
-    data-full-width-responsive="true"></ins>
+    data-full-width-responsive={responsive}
+    data-ad-test={test ? "on" : "off"}></ins>
 
   <script is:inline>
     (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <script is:inline>
+    // Ad blocker detection - only run once per page
+    if (!window.adBlockDetectionInitialized) {
+      window.adBlockDetectionInitialized = true;
+      // Check if ads are actually rendered after a delay
+      setTimeout(() => {
+        const adElements = document.querySelectorAll(".adsbygoogle");
+        adElements?.forEach((el) => {
+          // Check if the ad element has been filled (has children or height)
+          if (el.offsetHeight === 0 || el.childElementCount === 0) {
+            if (el.closest(".ad-unit")) {
+              el.closest(".ad-unit").style.display = "none";
+            }
+            // add option to display alternate ads such as amazon affiliate links using custom amazon affiliate component
+          }
+        });
+      }, 500);
+    }
   </script>
 </div>
 

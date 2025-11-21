@@ -56,7 +56,7 @@ difficulty: Easy
             class="form-input"
             placeholder="5000"
             value="5000"
-            step="100"
+            step="1"
             required
           />
           <span class="input-addon input-addon-toggle" id="down-payment-unit" title="Click to switch between $ and %">$</span>

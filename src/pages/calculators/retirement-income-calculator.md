@@ -36,8 +36,8 @@ difficulty: Medium
             class="form-input"
             placeholder="1000000"
             value="1000000"
-            min="10000"
-            step="10000"
+            min="0"
+            step="1000"
             required
           />
           <span class="input-addon">$</span>
@@ -113,7 +113,7 @@ difficulty: Medium
             placeholder="24000"
             value="0"
             min="0"
-            step="1000"
+            step="500"
           />
           <span class="input-addon">$</span>
         </div>
@@ -134,10 +134,10 @@ difficulty: Medium
             type="number" 
             id="return-rate" 
             class="form-input"
-            placeholder="7"
-            value="7"
+            placeholder="9"
+            value="9"
             min="0"
-            max="20"
+            max="1000"
             step="0.1"
             required
           />
@@ -156,8 +156,7 @@ difficulty: Medium
             class="form-input"
             placeholder="3"
             value="3"
-            min="0"
-            max="10"
+            max="100"
             step="0.1"
             required
           />
