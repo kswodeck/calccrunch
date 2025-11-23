@@ -706,13 +706,13 @@
         <div class="income-visualization">
           <div class="income-bar">
             <div class="income-segment housing" style="width: ${housingPercent}%">
-              <span class="segment-label">Housing<br/>${housingPercent.toFixed(0)}%</span>
+              <span class="segment-label" style="top: -15px;">Housing<br/>${housingPercent.toFixed(0)}%</span>
             </div>
             <div class="income-segment debts" style="width: ${debtsPercent}%">
               <span class="segment-label">Debts<br/>${debtsPercent.toFixed(0)}%</span>
             </div>
             <div class="income-segment remaining" style="width: ${remainingPercent}%">
-              <span class="segment-label">Available<br/>${remainingPercent.toFixed(0)}%</span>
+              <span class="segment-label" style="top: 15px;">Available<br/>${remainingPercent.toFixed(0)}%</span>
             </div>
           </div>
           <div class="income-legend">

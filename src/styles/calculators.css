@@ -336,6 +336,7 @@
 .result-actions {
   display: flex;
   gap: var(--space-sm);
+  margin: var(--space-md);
 }
 
 .btn-action {
@@ -2314,6 +2315,7 @@
 }
 
   .segment-label {
+    position: relative;
     color: black;
     font-weight: bold;
     font-size: 0.85rem;

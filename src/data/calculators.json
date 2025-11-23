@@ -557,6 +557,42 @@
         "https://amzn.to/4oR9yN7"
       ],
       "relatedCalculators": ["unit-converter"]
+    },
+    {
+      "id": "retirement-planning-calculator",
+      "title": "Retirement Planning Calculator",
+      "slug": "retirement-planning-calculator",
+      "description": "Plan your entire retirement journey from accumulation to distribution. Calculate investment growth during working years, then see retirement income projections and whether your money will last throughout retirement.",
+      "shortDescription": "Complete retirement planning from savings to income",
+      "category": "financial",
+      "tags": ["retirement planning", "compound interest", "retirement income", "investment growth", "4% rule", "financial independence", "retirement calculator"],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Advanced",
+      "estimatedTime": "5 minutes",
+      "icon": "🎯",
+      "seoTitle": "Free Retirement Planning Calculator - Investment Growth & Income Planner",
+      "seoDescription": "Plan your complete retirement journey with our comprehensive calculator. See investment growth during working years and calculate retirement income. Includes compound interest, 4% rule, inflation adjustments, and year-by-year projections.",
+      "keywords": ["retirement planning calculator", "retirement calculator", "investment growth", "compound interest", "retirement income", "4% rule", "financial independence", "retirement withdrawal"],
+      "lastUpdated": "2025-01-20",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Complete Retirement Planning Bible",
+        "FIRE Movement Financial Independence Guide",
+        "Social Security & Medicare Optimization Kit"
+      ],
+      "affiliateDescriptions": [
+        "Master every aspect of retirement planning with this comprehensive guide covering investments, taxes, healthcare, estate planning, and creating sustainable retirement income.",
+        "Achieve financial independence and retire early with proven strategies for accelerated wealth building, expense optimization, and passive income generation.",
+        "Maximize your government benefits with expert strategies for Social Security timing, Medicare enrollment, and coordination of spousal benefits."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/3ZQKvNb",
+        "https://amzn.to/4aX5JmR",
+        "https://amzn.to/3Pv2mKN"
+      ],
+      "relatedCalculators": ["compound-interest-calculator", "retirement-income-calculator", "savings-goal-calculator", "investment-return-calculator"]
     }
   ]
 }
