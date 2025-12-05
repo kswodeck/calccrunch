@@ -278,13 +278,21 @@
   function handleContributionFrequencyChange() {
     const frequency = contributionFrequencySelect.value;
     
-    if (frequency === 'none') {
+    if (!frequency) {
       contributionAmountGroup.style.display = 'none';
       contributionAmountInput.value = '';
     } else {
       contributionAmountGroup.style.display = 'block';
-      contributionHelp.textContent = frequency === 'monthly' ? 
+      contributionHelp.textContent = frequency === 'daily' ? 
+        'Amount to contribute each day' :
+        frequency === 'weekly' ? 
+        'Amount to contribute each week' :
+        frequency === 'biweekly' ? 
+        'Amount to contribute every other week' :
+        frequency === 'monthly' ? 
         'Amount to contribute each month' : 
+        frequency === 'quarterly' ? 
+        'Amount to contribute each quarter' : 
         'Amount to contribute each year';
     }
     
@@ -422,17 +430,13 @@
     if (isCompounding) {
       // Compounding asset - returns are reinvested
       for (let year = 1; year <= years; year++) {
-        if (contributionFreq === 'monthly') {
-          for (let month = 0; month < 12; month++) {
+        if (contributionFreq) {
+          for (let compound = 0; compound < contributionFreq; compound++) {
             balance += contributionPerInvestment;
             totalContributions += contributionPerInvestment;
-            // Compound monthly
-            balance *= (1 + rate / 12);
+            // Compound
+            balance *= (1 + rate / contributionFreq);
           }
-        } else if (contributionFreq === 'annual') {
-          balance += contributionPerInvestment;
-          totalContributions += contributionPerInvestment;
-          balance *= (1 + rate);
         } else {
           // No contributions, just annual compounding
           balance *= (1 + rate);
@@ -441,14 +445,11 @@
     } else {
       // Non-compounding asset - simple interest, returns not reinvested
       for (let year = 1; year <= years; year++) {
-        if (contributionFreq === 'monthly') {
-          for (let month = 0; month < 12; month++) {
+        if (contributionFreq) {
+          for (let compound = 0; compound < contributionFreq; compound++) {
             balance += contributionPerInvestment;
             totalContributions += contributionPerInvestment;
           }
-        } else if (contributionFreq === 'annual') {
-          balance += contributionPerInvestment;
-          totalContributions += contributionPerInvestment;
         }
       }
       // For non-compounding, balance stays as principal + contributions
@@ -528,10 +529,8 @@
   }
 
   function calculateTotalContributions(frequency, amount, years) {
-    if (frequency === 'monthly') {
-      return amount * 12 * years;
-    } else if (frequency === 'annual') {
-      return amount * years;
+    if (frequency) {
+      return amount * frequency * years;
     }
     return 0;
   }
@@ -749,7 +748,7 @@
               Regular contributions of <strong>${formatCurrency(results.totalContributions)}</strong> over ${years} years will significantly accelerate your portfolio growth.
             </li>` : 
             `<li style="padding: var(--space-md); background: linear-gradient(135deg, #E3F2FD 0%, #fff 100%); border-radius: var(--border-radius); border-left: 3px solid var(--color-chart-blue);">
-              <strong style="color: var(--color-chart-blue);">💡</strong> Consider adding regular monthly or annual contributions to reach your goal faster.
+              <strong style="color: var(--color-chart-blue);">💡</strong> Consider adding regular, weekly, monthly or annual contributions to reach your goal faster.
             </li>`
           }
           ${results.breakevenYear && results.breakevenYear <= years ?
@@ -786,7 +785,7 @@
     // Save basic inputs
     if (annualIncomeGoalInput.value) params.set('goal', annualIncomeGoalInput.value);
     if (investmentYearsInput.value) params.set('years', investmentYearsInput.value);
-    if (contributionFrequencySelect.value !== 'none') {
+    if (contributionFrequencySelect.value) {
       params.set('contribFreq', contributionFrequencySelect.value);
       if (contributionAmountInput.value) params.set('contribAmt', contributionAmountInput.value);
     }
@@ -848,7 +847,7 @@
     // Clear inputs
     annualIncomeGoalInput.value = '';
     investmentYearsInput.value = '';
-    contributionFrequencySelect.value = 'none';
+    contributionFrequencySelect.value = 0;
     contributionAmountInput.value = '';
     monthlyEquivalentDiv.style.display = 'none';
     contributionAmountGroup.style.display = 'none';

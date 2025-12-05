@@ -111,6 +111,8 @@ difficulty: Medium
         </label>
         <select id="compound-frequency" class="form-select" required>
           <option value="365">Daily</option>
+          <option value="52">Weekly</option>
+          <option value="27">Bi-Weekly</option>
           <option value="12" selected>Monthly</option>
           <option value="4">Quarterly</option>
           <option value="1">Annually</option>
@@ -122,6 +124,9 @@ difficulty: Medium
           Contribution Frequency
         </label>
         <select id="contribution-frequency" class="form-select">
+          <option value="365">Daily</option>
+          <option value="52">Weekly</option>
+          <option value="27">Bi-Weekly</option>
           <option value="12" selected>Monthly</option>
           <option value="4">Quarterly</option>
           <option value="1">Annually</option>

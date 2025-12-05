@@ -87,9 +87,13 @@ difficulty: Medium
           Contribution Frequency
         </label>
         <select id="contribution-frequency" class="form-select">
-          <option value="none">No Additional Contributions</option>
-          <option value="monthly">Monthly</option>
-          <option value="annual">Annual</option>
+          <option value="0">No Additional Contributions</option>
+          <option value="365">Daily</option>
+          <option value="52">Weekly</option>
+          <option value="26">Bi-Weekly</option>
+          <option value="12">Monthly</option>
+          <option value="4">Quarterly</option>
+          <option value="1">Annual</option>
         </select>
         <small class="form-help">How often you'll add money</small>
       </div>
