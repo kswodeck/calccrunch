@@ -364,7 +364,7 @@ function displaySearchSuggestions(results, inputElement) {
     
     const title = document.createElement('div');
     title.className = 'suggestion-title';
-    title.textContent = calc.title;
+    title.textContent = calc.title + (calc.popular ? " 🔥" : '');
 
     const categoryRow = document.createElement('div');
     categoryRow.className = 'suggestion-category-div';
@@ -372,14 +372,8 @@ function displaySearchSuggestions(results, inputElement) {
     const category = document.createElement('div');
     category.className = 'suggestion-category';
     category.textContent = getCategoryName(calc.category);
-
     categoryRow.appendChild(category);
-    if (calc.popular) {
-      const popular = document.createElement('div');
-      popular.className = 'calc-card-badge icon-only';
-      popular.textContent = "🔥";
-      categoryRow.appendChild(popular);
-    }
+
     content.appendChild(title);
     content.appendChild(categoryRow);
     
