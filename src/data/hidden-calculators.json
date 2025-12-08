@@ -1,55 +1,6 @@
 {
   "hidden-calculators": [
     {
-      "id": "debt-to-income-calculator",
-      "title": "Debt-to-Income Ratio Calculator",
-      "slug": "debt-to-income-calculator",
-      "description": "Calculate your debt-to-income (DTI) ratio for mortgage qualification. Include all monthly debt payments and gross income to see if you meet lender requirements.",
-      "shortDescription": "Calculate DTI for mortgage approval",
-      "category": "financial",
-      "tags": [
-        "DTI",
-        "debt-to-income",
-        "mortgage qualification",
-        "lending"
-      ],
-      "featured": false,
-      "popular": false,
-      "difficulty": "Easy",
-      "estimatedTime": "2 minutes",
-      "icon": "\ud83d\udccb",
-      "seoTitle": "Free Debt-to-Income Calculator - DTI Ratio for Mortgage",
-      "seoDescription": "Calculate your debt-to-income ratio for mortgage approval. See if you meet lender requirements with our free DTI calculator.",
-      "keywords": [
-        "debt to income calculator",
-        "DTI calculator",
-        "debt to income ratio"
-      ],
-      "lastUpdated": "2025-11-07",
-      "uses": 0,
-      "rating": 0,
-      "affiliateHeadlines": [
-        "Credit Score Improvement Kit",
-        "Mortgage Pre-Approval Guide",
-        "Debt Reduction Strategy Book"
-      ],
-      "affiliateDescriptions": [
-        "Boost your credit score fast with proven dispute letter templates and strategies to improve your DTI ratio for better loan terms.",
-        "Navigate the mortgage pre-approval process with insider tips on improving your DTI and presenting your finances to lenders.",
-        "Systematic approach to paying down debt strategically to improve your debt-to-income ratio and qualify for better loans."
-      ],
-      "affiliateLinks": [
-        "https://amzn.to/49XY6dS",
-        "https://amzn.to/48oad2z",
-        "https://amzn.to/3X2BgKD"
-      ],
-      "relatedCalculators": [
-        "mortgage-payment-calculator",
-        "home-affordability-calculator",
-        "budget-calculator"
-      ]
-    },
-    {
       "id": "savings-goal-calculator",
       "title": "Savings Goal Calculator",
       "slug": "savings-goal-calculator",
@@ -145,55 +96,6 @@
         "mortgage-payment-calculator",
         "loan-amortization-calculator",
         "home-equity-calculator"
-      ]
-    },
-    {
-      "id": "home-equity-calculator",
-      "title": "Home Equity Calculator",
-      "slug": "home-equity-calculator",
-      "description": "Calculate your home equity based on current home value, remaining mortgage balance, and appreciation over time. Estimate borrowing power for HELOC or home equity loan.",
-      "shortDescription": "Calculate your home equity",
-      "category": "home-real-estate",
-      "tags": [
-        "home equity",
-        "HELOC",
-        "home value",
-        "mortgage balance"
-      ],
-      "featured": false,
-      "popular": false,
-      "difficulty": "Easy",
-      "estimatedTime": "2 minutes",
-      "icon": "\ud83c\udfe6",
-      "seoTitle": "Free Home Equity Calculator - HELOC & Equity Loan Calculator",
-      "seoDescription": "Calculate your home equity and borrowing power for HELOC or home equity loans with our free calculator.",
-      "keywords": [
-        "home equity calculator",
-        "HELOC calculator",
-        "home equity loan calculator"
-      ],
-      "lastUpdated": "2025-11-07",
-      "uses": 0,
-      "rating": 0,
-      "affiliateHeadlines": [
-        "HELOC vs Home Equity Loan Guide",
-        "Home Value Maximization Book",
-        "Property Investment Strategy"
-      ],
-      "affiliateDescriptions": [
-        "Compare HELOC and home equity loan options with detailed pros, cons, and strategies for leveraging your home's value wisely.",
-        "Increase your home's value with proven renovation and maintenance strategies that maximize equity growth over time.",
-        "Learn how to use home equity strategically for real estate investing and building a property portfolio."
-      ],
-      "affiliateLinks": [
-        "https://amzn.to/47QcGCT",
-        "https://amzn.to/4o8x8DD",
-        "https://amzn.to/47SMOq4"
-      ],
-      "relatedCalculators": [
-        "mortgage-payment-calculator",
-        "refinance-calculator",
-        "net-worth-calculator"
       ]
     },
     {

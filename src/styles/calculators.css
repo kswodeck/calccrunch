@@ -1254,7 +1254,7 @@
   color: var(--color-gray-dark);
 }
 
-.comparison-bar:not(.rent-vs-buy-bar) {
+.comparison-bar:not(.rent-vs-buy-bar, .profit-margin-bar) {
   position: relative;
   height: 40px;
   background: var(--color-white);

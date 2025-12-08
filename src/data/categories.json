@@ -11,7 +11,7 @@
       "color": "#D4B300",
       "order": 1,
       "featured": true,
-      "calculatorCount": 7,
+      "calculatorCount": 11,
       "seoTitle": "Financial Calculators - Free Mortgage, Loan & Investment Tools",
       "seoDescription": "Free financial calculators for mortgages, loans, investments, retirement planning, and budgeting. Fast, accurate, and easy to use.",
       "keywords": [
@@ -85,7 +85,7 @@
       "color": "#FF6B35",
       "order": 3,
       "featured": true,
-      "calculatorCount": 3,
+      "calculatorCount": 4,
       "seoTitle": "Home & Real Estate Calculators - Mortgage & Renovation Tools",
       "seoDescription": "Free home and real estate calculators for mortgage affordability, home improvements, and DIY projects. Plan your home purchase or renovation.",
       "keywords": [
@@ -268,7 +268,7 @@
       "color": "#4CAF50",
       "order": 8,
       "featured": false,
-      "calculatorCount": 0,
+      "calculatorCount": 1,
       "seoTitle": "Business & Sales Calculators - Profit, ROI & Pricing Tools",
       "seoDescription": "Free business calculators for profit margins, ROI, break-even analysis, and pricing. Make smarter business decisions.",
       "keywords": [
