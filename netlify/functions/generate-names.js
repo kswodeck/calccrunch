@@ -1,7 +1,7 @@
 // Netlify Serverless Function for Baby Name Generation
 // Uses Google Gemini API (Free Tier: 15 req/min, 1M tokens/month)
 
-export async function handler(event, context) {
+exports.handler = async (event, context) => {
   // Set CORS headers
   const headers = {
     'Access-Control-Allow-Origin': '*',
@@ -42,6 +42,7 @@ export async function handler(event, context) {
     
     // Build the prompt based on user criteria
     const prompt = buildPrompt(params);
+    console.debug(prompt);
     
     // Call Gemini API
     const response = await fetch(
@@ -124,7 +125,7 @@ export async function handler(event, context) {
       body: JSON.stringify({ error: 'Internal server error', message: error.message })
     };
   }
-}
+};
 
 function buildPrompt(params) {
   const {
@@ -147,42 +148,45 @@ function buildPrompt(params) {
     siblingNames = ''
   } = params;
 
-  let genderText = 'any gender (boy, girl, or gender-neutral)';
-  if (gender === 'girl') genderText = 'girl/feminine';
-  else if (gender === 'boy') genderText = 'boy/masculine';
-  else if (gender === 'neutral') genderText = 'gender-neutral/unisex';
+  // Request extra names to ensure we have enough after any filtering
+  const requestCount = Math.min(count + 5, 50);
 
-  let originsText = 'any cultural origin';
+  let genderText = 'any gender (boy, girl, or gender-neutral)';
+  if (gender === 'girl') genderText = 'girl/feminine names only';
+  else if (gender === 'boy') genderText = 'boy/masculine names only';
+  else if (gender === 'neutral') genderText = 'gender-neutral/unisex names only';
+
+  let originsText = 'any cultural origin (be diverse)';
   if (origins.length > 0) {
-    originsText = `these cultural origins: ${origins.join(', ')}`;
+    originsText = `primarily from these cultural origins: ${origins.join(', ')} (but you may include closely related origins if needed to reach the count)`;
   }
 
   let constraints = [];
-  if (startsWith) constraints.push(`must start with "${startsWith}"`);
-  if (endsWith) constraints.push(`must end with "${endsWith}"`);
+  if (startsWith) constraints.push(`should start with "${startsWith}" (strong preference)`);
+  if (endsWith) constraints.push(`should end with "${endsWith}" (strong preference)`);
   if (minLength > 0) constraints.push(`minimum ${minLength} letters`);
   if (maxLength > 0) constraints.push(`maximum ${maxLength} letters`);
   if (syllables > 0) {
-    if (syllables >= 4) constraints.push(`4 or more syllables`);
-    else constraints.push(`exactly ${syllables} syllable${syllables > 1 ? 's' : ''}`);
+    if (syllables >= 4) constraints.push(`preferably 4 or more syllables`);
+    else constraints.push(`preferably ${syllables} syllable${syllables > 1 ? 's' : ''}`);
   }
 
   let popularityText = '';
-  if (popularity === 'top100') popularityText = 'very popular/common names (top 100)';
-  else if (popularity === 'top500') popularityText = 'moderately popular names (top 500)';
-  else if (popularity === 'uncommon') popularityText = 'uncommon/less popular names';
-  else if (popularity === 'rare') popularityText = 'rare and unique names';
+  if (popularity === 'top100') popularityText = 'Prefer popular/common names (well-known names)';
+  else if (popularity === 'top500') popularityText = 'Prefer moderately popular names';
+  else if (popularity === 'uncommon') popularityText = 'Prefer uncommon/less popular names';
+  else if (popularity === 'rare') popularityText = 'Prefer rare and unique names';
 
   let styleText = '';
   if (style !== 'any') {
     const styleMap = {
-      classic: 'classic and timeless',
-      modern: 'modern and trendy',
-      vintage: 'vintage and old-fashioned',
-      nature: 'nature-inspired',
-      royal: 'royal and elegant',
-      strong: 'strong and powerful',
-      gentle: 'gentle and soft-sounding'
+      classic: 'classic and timeless style',
+      modern: 'modern and trendy style',
+      vintage: 'vintage and old-fashioned style',
+      nature: 'nature-inspired style',
+      royal: 'royal and elegant style',
+      strong: 'strong and powerful style',
+      gentle: 'gentle and soft-sounding style'
     };
     styleText = styleMap[style] || style;
   }
@@ -192,39 +196,48 @@ function buildPrompt(params) {
   if (genMiddle && !middleName) generateWhat.push('middle names');
   
   let contextText = '';
-  if (lastName) contextText += `\nThe last name is "${lastName}" - names should flow well with it.`;
-  if (firstName) contextText += `\nThe first name is already chosen: "${firstName}" - consider this when suggesting middle names.`;
-  if (middleName) contextText += `\nThe middle name is already chosen: "${middleName}" - consider this when suggesting first names.`;
-  if (siblingNames) contextText += `\nSibling names are: ${siblingNames} - suggest names that match in style.`;
-  if (excludeNames) contextText += `\nDo NOT include these names: ${excludeNames}`;
+  if (lastName) contextText += `The last name is "${lastName}" - names should flow well with it.`;
+  if (firstName) contextText += ` The first name is already chosen: "${firstName}" - consider this when suggesting middle names.`;
+  if (middleName) contextText += ` The middle name is already chosen: "${middleName}" - consider this when suggesting first names.`;
+  if (siblingNames) contextText += ` Sibling names are: ${siblingNames} - suggest names that complement them.`;
+  if (excludeNames) contextText += ` Do NOT include these names: ${excludeNames}.`;
 
-  const prompt = `You are a baby name expert. Generate exactly ${count} unique baby name suggestions based on these criteria:
+  const prompt = `You are an expert baby name consultant with extensive knowledge of names from all cultures and time periods.
 
-**Gender:** ${genderText}
-**Cultural Origins:** ${originsText}
-${constraints.length > 0 ? `**Constraints:** ${constraints.join(', ')}` : ''}
-${popularityText ? `**Popularity:** ${popularityText}` : ''}
-${styleText ? `**Style:** ${styleText}` : ''}
-**Generate:** ${generateWhat.join(' and ')}
-${contextText}
+YOUR TASK: Generate EXACTLY ${requestCount} unique baby name suggestions. This count is MANDATORY - you must provide exactly ${requestCount} names, no fewer.
 
-IMPORTANT: Respond with ONLY a valid JSON array, no other text. Each object must have these exact fields:
-- "name": the name (string)
-- "gender": "m" for boy, "f" for girl, "n" for neutral
-- "origins": array of origin strings like ["english", "hebrew"]
-- "meaning": brief meaning (string)
-- "syllables": number of syllables (integer)
-- "popularity": estimated popularity score 1-100 (100 being most popular currently in 2024)
-- "style": array of style tags like ["classic", "gentle"]
+CRITERIA (apply as preferences, not hard filters - the count requirement takes priority):
+• Gender: ${genderText}
+• Cultural Origins: ${originsText}
+${constraints.length > 0 ? `• Preferences: ${constraints.join('; ')}` : ''}
+${popularityText ? `• Popularity: ${popularityText}` : ''}
+${styleText ? `• Style: ${styleText}` : ''}
+• Type: ${generateWhat.join(' and ')}
+${contextText ? `• Context: ${contextText}` : ''}
 
-Example format:
-[
-  {"name": "Olivia", "gender": "f", "origins": ["latin"], "meaning": "Olive tree", "syllables": 4, "popularity": 95, "style": ["classic", "gentle"]},
-  {"name": "Liam", "gender": "m", "origins": ["irish"], "meaning": "Strong-willed warrior", "syllables": 1, "popularity": 98, "style": ["modern", "strong"]}
-]
+IMPORTANT INSTRUCTIONS:
+1. You MUST return exactly ${requestCount} names - this is non-negotiable
+2. All names must be real, usable baby names (no made-up names)
+3. Each name must be unique within your response
+4. If you're having trouble finding ${requestCount} names that match ALL criteria perfectly, slightly relax the less important criteria (like exact syllable count or specific origin) while keeping the core requirements (gender, general style)
+5. Prioritize: Gender accuracy > Name quality > Cultural origin > Other preferences
 
-Generate ${count} names now as a JSON array only:`;
+OUTPUT FORMAT: Respond with ONLY a valid JSON array, no other text or explanation.
+Each object must have these exact fields:
+{
+  "name": "string - the name",
+  "gender": "m" for boy, "f" for girl, "n" for neutral,
+  "origins": ["array", "of", "origin", "strings"],
+  "meaning": "string - brief meaning",
+  "syllables": number,
+  "popularity": number 1-100 (100 = most popular),
+  "style": ["array", "of", "style", "tags"]
+}
 
+Valid origins: english, hebrew, greek, latin, irish, scottish, german, french, italian, spanish, arabic, indian, japanese, chinese, korean, african, scandinavian, slavic, welsh, american
+Valid styles: classic, modern, vintage, nature, royal, strong, gentle, unique, traditional, trendy
+
+NOW GENERATE EXACTLY ${requestCount} NAMES AS A JSON ARRAY:`;
   return prompt;
 }
 
