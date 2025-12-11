@@ -551,6 +551,7 @@
   }
 
   async function generateNames() {
+    debugger
     if (isLoading) return;
     
     updateStateFromForm();
@@ -794,7 +795,7 @@
           ? `<span class="generated">${entry.firstName}</span>` 
           : entry.firstName);
       }
-      if (entry.middleName) {
+      if (entry.middleName && (!usedAI || (usedAI && (!generateFirst || !generateMiddle)))) {
         fullNameParts.push(generateMiddle 
           ? `<span class="generated">${entry.middleName}</span>` 
           : entry.middleName);

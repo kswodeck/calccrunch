@@ -294,11 +294,11 @@ difficulty: Easy
             class="form-input count-input"
             value="10"
             min="1"
-            max="50"
+            max="30"
           />
           <button type="button" class="count-btn plus" id="count-plus">+</button>
         </div>
-        <small class="form-help">Generate 1 to 50 names at once</small>
+        <small class="form-help">Generate 1 to 30 names at once</small>
       </div>
       <div class="form-group">
         <label for="sort-by">Sort Results By</label>

@@ -172,8 +172,3 @@ netlify dev
 - [ ] Netlify environment variable `GEMINI_API_KEY` configured
 
 Once all boxes are checked, you're done! The generator will work indefinitely with current name trends from AI.
-
-curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyDtWEgO6sz8Agw8A1e5zPe7PXgaCOgU-Sc" \
-  -H 'Content-Type: application/json' \
-  -X POST \
-  -d '{"contents":[{"parts":[{"text":"Say hello"}]}]}'

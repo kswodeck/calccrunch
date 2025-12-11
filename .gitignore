@@ -35,6 +35,7 @@ ehthumbs.db
 
 # Local Netlify folder
 .netlify
+notes.md
 
 .vscode/*
 !.vscode/extensions.json
