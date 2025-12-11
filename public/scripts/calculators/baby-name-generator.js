@@ -551,7 +551,6 @@
   }
 
   async function generateNames() {
-    debugger
     if (isLoading) return;
     
     updateStateFromForm();
@@ -574,7 +573,7 @@
     try {
       nameDatabase = await fetchNamesFromAPI();
       usedAI = true;
-      console.log('Using AI-generated names:', nameDatabase.length);
+      console.log('Using AI-generated names:', nameDatabase);
     } catch (error) {
       console.warn('API call failed, using fallback:', error);
       nameDatabase = filterFallbackNames([...FALLBACK_NAMES]);
@@ -583,7 +582,7 @@
     
     isLoading = false;
     
-    if (nameDatabase.length === 0) {
+    if (!nameDatabase?.length) {
       showError('No names match your criteria. Try relaxing some filters.');
       return;
     }
@@ -601,6 +600,7 @@
       let firstEntry = null;
       let middleName = state.middleName;
       let middleEntry = null;
+      let splitName = null;
       
       if (generateFirst) {
         if (usedFirst.has(entry.name)) continue;
@@ -619,23 +619,26 @@
           if (lastSuffix === nameSuffix) continue;
         }
         
-        firstName = entry.name;
+        if (entry.name?.includes(" ")) {
+          splitName = entry?.name?.split(" ");
+        }
+        firstName = splitName?.[0] || entry?.name;
         firstEntry = entry;
-        usedFirst.add(entry.name);
+        usedFirst.add(firstName);
       } else if (state.firstName) {
         firstEntry = nameDatabase.find(n => n.name.toLowerCase() === state.firstName.toLowerCase()) || null;
       }
       
       if (generateMiddle) {
         const middleCandidate = nameDatabase.find(n => {
-          if (usedMiddle.has(n.name)) return false;
+          if (usedMiddle.has(splitName?.[1] || n.name)) return false;
           if (n.name === firstName) return false;
           if (state.uniqueInitials && firstName && n.name[0].toLowerCase() === firstName[0].toLowerCase()) return false;
           return true;
         });
         
         if (middleCandidate) {
-          middleName = middleCandidate.name;
+          middleName = splitName?.[1] || middleCandidate?.name;
           middleEntry = middleCandidate;
           usedMiddle.add(middleName);
         }
@@ -795,7 +798,7 @@
           ? `<span class="generated">${entry.firstName}</span>` 
           : entry.firstName);
       }
-      if (entry.middleName && (!usedAI || (usedAI && (!generateFirst || !generateMiddle)))) {
+      if (entry.middleName) {
         fullNameParts.push(generateMiddle 
           ? `<span class="generated">${entry.middleName}</span>` 
           : entry.middleName);
