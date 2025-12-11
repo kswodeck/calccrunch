@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load holidays from JSON file
     async function loadHolidays() {
         try {
-            const response = await fetch('../src/data/holidays.json');
+            const response = await fetch('/data/holidays.json');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }

@@ -9,7 +9,7 @@
   // Load fallback names from external JSON file
   function loadFallbackNames() {
     if (fallbackLoadPromise) return fallbackLoadPromise;
-    fallbackLoadPromise = fetch('../src/data/fallback-names.json')
+    fallbackLoadPromise = fetch('/data/fallback-names.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to load fallback names');
@@ -86,7 +86,6 @@
   }
 
   function init() {
-    console.log('Baby Name Generator initializing...');
     cacheElements();
     
     if (!elements.generateBtn) {
@@ -94,15 +93,12 @@
       return;
     }
     
-    console.log('Baby Name Generator: Elements cached successfully');
-    
     // Start loading fallback names in background
     loadFallbackNames();
     
     loadFromURL();
     loadFavorites();
     attachEventListeners();
-    console.log('Baby Name Generator initialized successfully');
   }
 
   function cacheElements() {
