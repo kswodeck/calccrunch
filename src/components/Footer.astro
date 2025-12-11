@@ -48,18 +48,14 @@ const footerLinks = {
         <ul class="footer-links">
           {
             categoriesData.categories
-              ?.filter((cat) => cat?.featured && cat.calculatorCount)
-              ?.sort((a, b) => a.calculatorCount - b.calculatorCount)
+              ?.filter((cat) => cat?.featured && cat.calculatorCount >= 1)
+              ?.sort((a, b) => b.calculatorCount - a.calculatorCount)
               ?.slice(0, 3)
-              ?.map((cat) =>
-                cat?.calculatorCount >= 1 ? (
-                  <li>
-                    <a href={`/categories/${cat.slug}`}>{cat.name}</a>
-                  </li>
-                ) : (
-                  ""
-                )
-              )
+              ?.map((cat) => (
+                <li>
+                  <a href={`/categories/${cat.slug}`}>{cat.name}</a>
+                </li>
+              ))
           }
           <li>
             <a href="/calculators">All Calculators ({totalCalculators})</a>

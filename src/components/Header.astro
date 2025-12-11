@@ -29,7 +29,7 @@ const totalCalculators = calculatorsData?.calculators?.length;
       <ul class="nav-menu">
         {
           categoriesData?.categories?.map((cat) =>
-            cat?.calculatorCount >= 2 ? (
+            cat?.calculatorCount >= 3 ? (
               <li class="nav-item">
                 <a href={`/categories/${cat?.slug}`} class="nav-link">
                   {cat?.nameShort || cat?.name}

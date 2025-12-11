@@ -244,53 +244,6 @@
       ]
     },
     {
-      "id": "car-lease-buy-calculator",
-      "title": "Car Lease vs Buy Calculator",
-      "slug": "car-lease-buy-calculator",
-      "description": "Compare the total cost of leasing versus buying a car. Factor in down payment, monthly payments, equity, depreciation, and end-of-lease options.",
-      "shortDescription": "Compare leasing vs buying a car",
-      "category": "financial",
-      "tags": [
-        "car lease",
-        "lease vs buy",
-        "auto financing"
-      ],
-      "featured": false,
-      "popular": false,
-      "difficulty": "Medium",
-      "estimatedTime": "5 minutes",
-      "icon": "\ud83d\ude99",
-      "seoTitle": "Free Car Lease vs Buy Calculator - Should I Lease or Buy?",
-      "seoDescription": "Compare leasing vs buying a car. Calculate total costs and equity with our free lease vs buy calculator.",
-      "keywords": [
-        "lease vs buy calculator",
-        "car lease calculator",
-        "should I lease or buy"
-      ],
-      "lastUpdated": "2025-11-07",
-      "uses": 0,
-      "rating": 0,
-      "affiliateHeadlines": [
-        "Car Buying Secrets Guide",
-        "Lease Negotiation Handbook",
-        "Used Car Inspection Checklist"
-      ],
-      "affiliateDescriptions": [
-        "Save thousands on your next car purchase with insider negotiation tactics and timing strategies used by industry professionals.",
-        "Master the art of lease negotiation with specific scripts and strategies to get the best monthly payment and terms.",
-        "Never buy a lemon again with this comprehensive used car inspection checklist covering 150+ critical checkpoints."
-      ],
-      "affiliateLinks": [
-        "https://amzn.to/3JGOkCo",
-        "https://amzn.to/4oSCNiC",
-        "https://amzn.to/4i92kRO"
-      ],
-      "relatedCalculators": [
-        "auto-loan-calculator",
-        "gas-mileage-calculator"
-      ]
-    },
-    {
       "id": "college-savings-calculator",
       "title": "College Savings Calculator (529 Plan)",
       "slug": "college-savings-calculator",
@@ -340,243 +293,490 @@
       ]
     },
     {
-      "id": "sales-commission-calculator",
-      "title": "Sales Commission Calculator",
-      "slug": "sales-commission-calculator",
-      "description": "Calculate sales commissions with multiple tiers, quotas, and bonus structures. Track earnings across different products and commission rates.",
-      "shortDescription": "Calculate sales commissions & bonuses",
-      "category": "business-sales",
+      "id": "lorem-ipsum-generator",
+      "title": "Lorem Ipsum Generator",
+      "slug": "lorem-ipsum-generator",
+      "description": "Generate placeholder text for your designs, websites, and documents. Choose from classic Lorem Ipsum, hipster ipsum, corporate ipsum, or other styles. Specify the number of paragraphs, sentences, or words you need. Perfect for designers, developers, and content creators working on mockups and prototypes.",
+      "shortDescription": "Generate placeholder text for designs & mockups",
+      "category": "generators",
       "tags": [
-        "sales commission",
-        "commission",
-        "sales",
-        "earnings"
+        "lorem ipsum",
+        "placeholder text",
+        "dummy text",
+        "filler text",
+        "design mockup",
+        "sample text"
       ],
-      "featured": false,
+      "featured": true,
       "popular": false,
       "difficulty": "Easy",
-      "estimatedTime": "3 minutes",
-      "icon": "\ud83d\udcbc",
-      "seoTitle": "Free Sales Commission Calculator - Commission Calculator",
-      "seoDescription": "Calculate sales commissions with multiple tiers and bonuses. Track earnings with our free commission calculator.",
+      "estimatedTime": "1 minute",
+      "icon": "📝",
+      "seoTitle": "Free Lorem Ipsum Generator - Placeholder Text for Designs & Websites",
+      "seoDescription": "Generate Lorem Ipsum placeholder text instantly. Choose paragraphs, sentences, or words. Multiple styles available. Perfect for web design, mockups, and prototypes.",
       "keywords": [
-        "sales commission calculator",
-        "commission calculator",
-        "sales earnings calculator"
+        "lorem ipsum generator",
+        "placeholder text generator",
+        "dummy text",
+        "filler text generator",
+        "sample text",
+        "lipsum"
       ],
-      "lastUpdated": "2025-11-07",
+      "lastUpdated": "2025-06-10",
       "uses": 0,
       "rating": 0,
       "affiliateHeadlines": [
-        "Sales Closing Techniques Bible",
-        "Commission Tracking Software",
-        "Top Producer Success System"
+        "Web Design Fundamentals Book",
+        "UI/UX Design Course Guide",
+        "Graphic Design Software Subscription"
       ],
       "affiliateDescriptions": [
-        "Master proven closing techniques that top salespeople use to consistently exceed quotas and maximize commission earnings.",
-        "Professional spreadsheet templates for tracking sales, commissions, and bonuses across multiple products and time periods.",
-        "Complete training system for becoming a top producer including prospecting, presenting, and closing strategies."
+        "Master modern web design principles including typography, layout, and responsive design with this comprehensive reference guide.",
+        "Learn professional UI/UX design workflows from wireframing to prototyping with industry-standard practices and real-world projects.",
+        "Access professional design tools for creating stunning layouts, mockups, and prototypes with this industry-leading creative software."
       ],
       "affiliateLinks": [
-        "https://amzn.to/4a7YTsC",
-        "https://amzn.to/4raaFcg",
-        "https://amzn.to/487SXgS"
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
       ],
       "relatedCalculators": [
-        "profit-margin-calculator",
-        "freelance-rate-calculator"
+        "uuid-generator",
+        "random-color-generator",
+        "username-generator"
       ]
     },
     {
-      "id": "profit-margin-calculator",
-      "title": "Profit Margin Calculator",
-      "slug": "profit-margin-calculator",
-      "description": "Calculate profit margin, markup percentage, gross profit, and net profit. Compare margin vs markup and see the impact of costs on profitability.",
-      "shortDescription": "Calculate profit margins & markup",
-      "category": "business-sales",
+      "id": "business-name-generator",
+      "title": "Business Name Generator",
+      "slug": "business-name-generator",
+      "description": "Generate creative, memorable business names for your startup, company, or brand. Enter keywords related to your industry and get unique name suggestions in various styles: modern, classic, playful, professional, or abstract. Each suggestion includes tips on domain availability and branding potential.",
+      "shortDescription": "Generate creative company & brand names",
+      "category": "generators",
       "tags": [
-        "profit margin",
-        "markup",
-        "gross profit",
-        "pricing"
+        "business name",
+        "company name",
+        "brand name",
+        "startup name",
+        "business name ideas",
+        "company name generator"
       ],
-      "featured": false,
-      "popular": false,
+      "featured": true,
+      "popular": true,
       "difficulty": "Easy",
-      "estimatedTime": "2 minutes",
-      "icon": "\ud83d\udcca",
-      "seoTitle": "Free Profit Margin Calculator - Margin & Markup Calculator",
-      "seoDescription": "Calculate profit margin and markup percentage. Optimize pricing with our free profit calculator.",
+      "estimatedTime": "5 minutes",
+      "icon": "🏢",
+      "seoTitle": "Free Business Name Generator - Creative Company & Brand Name Ideas",
+      "seoDescription": "Generate unique business names for your startup or brand. Enter keywords to get creative company name ideas. Find the perfect name for your business today.",
       "keywords": [
-        "profit margin calculator",
-        "markup calculator",
-        "gross profit calculator"
+        "business name generator",
+        "company name generator",
+        "brand name generator",
+        "startup name ideas",
+        "business name ideas",
+        "company name ideas"
       ],
-      "lastUpdated": "2025-11-07",
+      "lastUpdated": "2025-06-10",
       "uses": 0,
       "rating": 0,
       "affiliateHeadlines": [
-        "Pricing Strategy Playbook",
-        "Business Finance Fundamentals",
-        "Profit First System Book"
+        "Brand Naming Strategy Guide",
+        "Business Formation Legal Kit",
+        "Entrepreneur's Startup Handbook"
       ],
       "affiliateDescriptions": [
-        "Set profitable prices with psychological pricing strategies and competitive analysis techniques that maximize margins.",
-        "Master essential business finance concepts including profit margins, cash flow, and financial ratios for better decision-making.",
-        "Transform your business profitability with this revolutionary cash management system that ensures profit from every sale."
+        "Learn the art and science of naming your business with strategies for memorability, trademark considerations, and brand positioning.",
+        "Everything you need to legally form your business including naming guidelines, trademark search tips, and registration checklists.",
+        "Start your business right with this comprehensive guide covering naming, branding, legal structure, and launch strategies."
       ],
       "affiliateLinks": [
-        "https://amzn.to/4a7YTsC",
-        "https://amzn.to/4raaFcg",
-        "https://amzn.to/487SXgS"
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
       ],
       "relatedCalculators": [
-        "break-even-calculator",
-        "roi-calculator",
-        "sales-commission-calculator"
-      ]
-    },
-    {
-      "id": "break-even-calculator",
-      "title": "Break-Even Calculator",
-      "slug": "break-even-calculator",
-      "description": "Calculate break-even point in units and revenue. Factor in fixed costs, variable costs per unit, and selling price to determine profitability threshold.",
-      "shortDescription": "Calculate break-even point",
-      "category": "business-sales",
-      "tags": [
-        "break-even",
-        "fixed costs",
-        "variable costs",
-        "profitability"
-      ],
-      "featured": false,
-      "popular": false,
-      "difficulty": "Easy",
-      "estimatedTime": "3 minutes",
-      "icon": "\ud83d\udcc8",
-      "seoTitle": "Free Break-Even Calculator - Break Even Analysis",
-      "seoDescription": "Calculate your break-even point in units and revenue. Perform break-even analysis with our free calculator.",
-      "keywords": [
-        "break even calculator",
-        "break even analysis",
-        "break even point"
-      ],
-      "lastUpdated": "2025-11-07",
-      "uses": 0,
-      "rating": 0,
-      "affiliateHeadlines": [
-        "Business Plan Template Kit",
-        "Cost Reduction Strategies",
-        "Financial Modeling Guide"
-      ],
-      "affiliateDescriptions": [
-        "Create professional business plans with financial projections including detailed break-even analysis and investor-ready presentations.",
-        "Discover 100+ proven strategies for reducing fixed and variable costs without sacrificing quality or customer satisfaction.",
-        "Build accurate financial models for business planning with step-by-step guides for break-even, cash flow, and profitability analysis."
-      ],
-      "affiliateLinks": [
-        "https://amzn.to/4a7YTsC",
-        "https://amzn.to/4raaFcg",
-        "https://amzn.to/487SXgS"
-      ],
-      "relatedCalculators": [
-        "profit-margin-calculator",
-        "roi-calculator"
-      ]
-    },
-    {
-      "id": "roi-calculator",
-      "title": "ROI Calculator",
-      "slug": "roi-calculator",
-      "description": "Calculate return on investment (ROI) for business investments, marketing campaigns, or projects. See percentage return and payback period.",
-      "shortDescription": "Calculate return on investment",
-      "category": "business-sales",
-      "tags": [
-        "ROI",
-        "return on investment",
-        "investment return"
-      ],
-      "featured": false,
-      "popular": false,
-      "difficulty": "Easy",
-      "estimatedTime": "2 minutes",
-      "icon": "\ud83d\udcb9",
-      "seoTitle": "Free ROI Calculator - Return on Investment Calculator",
-      "seoDescription": "Calculate ROI for investments and projects. Measure investment returns with our free calculator.",
-      "keywords": [
-        "ROI calculator",
-        "return on investment calculator",
-        "investment return calculator"
-      ],
-      "lastUpdated": "2025-11-07",
-      "uses": 0,
-      "rating": 0,
-      "affiliateHeadlines": [
-        "Investment Analysis Handbook",
-        "Marketing ROI Optimization",
-        "Business Metrics Dashboard"
-      ],
-      "affiliateDescriptions": [
-        "Make smarter investment decisions with comprehensive ROI analysis techniques including risk assessment and scenario planning.",
-        "Maximize marketing ROI with data-driven strategies for tracking, attribution, and optimization across all channels.",
-        "Track all key business metrics including ROI, CAC, LTV, and more with these professional Excel dashboard templates."
-      ],
-      "affiliateLinks": [
-        "https://amzn.to/4a7YTsC",
-        "https://amzn.to/4raaFcg",
-        "https://amzn.to/487SXgS"
-      ],
-      "relatedCalculators": [
-        "compound-interest-calculator",
-        "break-even-calculator",
+        "username-generator",
+        "password-generator",
         "profit-margin-calculator"
       ]
     },
     {
-      "id": "size-converter",
-      "title": "International Size Converter",
-      "slug": "size-converter",
-      "description": "Convert clothing and shoe sizes between US, UK, EU, and international sizing systems. Find your size when shopping from different countries.",
-      "shortDescription": "Convert clothing & shoe sizes",
-      "category": "miscellaneous",
+      "id": "username-generator",
+      "title": "Username Generator",
+      "slug": "username-generator",
+      "description": "Create unique, memorable usernames for social media, gaming, forums, and online accounts. Combine words, add numbers, use different styles (cool, funny, professional, aesthetic). Generate multiple options at once and check availability hints for popular platforms like Instagram, TikTok, Twitter, and gaming networks.",
+      "shortDescription": "Create unique usernames for social media & gaming",
+      "category": "generators",
       "tags": [
-        "size conversion",
-        "clothing size",
-        "shoe size",
-        "international sizes"
+        "username generator",
+        "username ideas",
+        "gaming username",
+        "social media username",
+        "screen name",
+        "gamertag generator"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "👤",
+      "seoTitle": "Free Username Generator - Unique Names for Gaming & Social Media",
+      "seoDescription": "Generate unique usernames for gaming, Instagram, TikTok, and more. Create cool, aesthetic, or funny usernames. Get multiple ideas instantly with our free generator.",
+      "keywords": [
+        "username generator",
+        "gamertag generator",
+        "username ideas",
+        "cool usernames",
+        "aesthetic usernames",
+        "gaming name generator"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Social Media Marketing Guide",
+        "Gaming Headset for Online Play",
+        "Personal Branding Workbook"
+      ],
+      "affiliateDescriptions": [
+        "Build your online presence with proven social media strategies including profile optimization, content creation, and audience growth.",
+        "Enhance your gaming experience with this premium headset featuring crystal-clear voice chat and immersive surround sound.",
+        "Craft your perfect online identity with exercises for defining your personal brand, choosing usernames, and building consistency."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "password-generator",
+        "business-name-generator",
+        "fantasy-name-generator"
+      ]
+    },
+    {
+      "id": "random-color-generator",
+      "title": "Random Color Generator",
+      "slug": "random-color-generator",
+      "description": "Generate random colors with HEX, RGB, and HSL values. Create color palettes, find complementary colors, and check accessibility contrast ratios. Perfect for designers, developers, and artists looking for color inspiration. Copy color codes instantly for use in your projects.",
+      "shortDescription": "Generate random colors with HEX, RGB & HSL codes",
+      "category": "generators",
+      "tags": [
+        "color generator",
+        "random color",
+        "hex color",
+        "RGB color",
+        "color palette",
+        "color picker"
       ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83d\udc55",
-      "seoTitle": "Free Size Converter - International Clothing & Shoe Sizes",
-      "seoDescription": "Convert clothing and shoe sizes between US, UK, EU, and other countries. Shop internationally with our free size converter.",
+      "icon": "🎨",
+      "seoTitle": "Free Random Color Generator - HEX, RGB & HSL Color Codes",
+      "seoDescription": "Generate random colors with HEX, RGB, and HSL codes. Create color palettes and check contrast ratios. Free color generator for designers and developers.",
       "keywords": [
-        "size converter",
-        "clothing size converter",
-        "shoe size converter"
+        "random color generator",
+        "color generator",
+        "hex color generator",
+        "RGB generator",
+        "color palette generator",
+        "color picker"
       ],
-      "lastUpdated": "2025-11-07",
+      "lastUpdated": "2025-06-10",
       "uses": 0,
       "rating": 0,
       "affiliateHeadlines": [
-        "International Shopping Guide",
-        "Measuring Tape Set",
-        "Size Chart Reference Book"
+        "Color Theory Design Book",
+        "Professional Pantone Color Guide",
+        "Digital Art Tablet for Designers"
       ],
       "affiliateDescriptions": [
-        "Shop confidently from international retailers with comprehensive size conversion charts and fitting tips for all clothing types.",
-        "Professional body measuring tape set for accurate measurements ensuring perfect fit when ordering clothes online.",
-        "Pocket-sized reference guide with size charts for clothing, shoes, and accessories across 50+ countries."
+        "Master color theory fundamentals with this essential guide covering color psychology, harmonies, and practical applications in design.",
+        "The industry-standard color reference guide with thousands of Pantone colors for accurate color matching across print and digital.",
+        "Create stunning digital art and designs with this professional drawing tablet featuring pressure sensitivity and color accuracy."
       ],
       "affiliateLinks": [
-        "https://amzn.to/4o3h3za",
-        "https://amzn.to/4pnjT37",
-        "https://amzn.to/4oR9yN7"
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
       ],
       "relatedCalculators": [
-        "unit-converter"
+        "lorem-ipsum-generator",
+        "uuid-generator",
+        "random-number-generator"
+      ]
+    },
+    {
+      "id": "uuid-generator",
+      "title": "UUID Generator",
+      "slug": "uuid-generator",
+      "description": "Generate universally unique identifiers (UUIDs) for software development, databases, and system integration. Create single or bulk UUIDs in version 4 format. Copy individual UUIDs or download lists for use in your applications, APIs, and databases.",
+      "shortDescription": "Generate UUIDs for developers & databases",
+      "category": "generators",
+      "tags": [
+        "UUID",
+        "GUID",
+        "unique identifier",
+        "UUID generator",
+        "developer tools",
+        "database ID"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🔧",
+      "seoTitle": "Free UUID Generator - Generate Unique Identifiers Online",
+      "seoDescription": "Generate UUID v4 identifiers instantly. Create single or bulk UUIDs for databases, APIs, and software development. Free online UUID generator tool.",
+      "keywords": [
+        "UUID generator",
+        "GUID generator",
+        "unique identifier generator",
+        "UUID v4",
+        "random UUID",
+        "bulk UUID generator"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Software Development Best Practices",
+        "Database Design Fundamentals",
+        "API Development Handbook"
+      ],
+      "affiliateDescriptions": [
+        "Write better code with this comprehensive guide to software development patterns, practices, and architectural decisions.",
+        "Design robust databases with proper primary keys, indexing strategies, and data modeling techniques for scalable applications.",
+        "Build professional APIs with this handbook covering RESTful design, authentication, versioning, and best practices."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "password-generator",
+        "lorem-ipsum-generator",
+        "random-number-generator"
+      ]
+    },
+    {
+      "id": "pet-name-generator",
+      "title": "Pet Name Generator",
+      "slug": "pet-name-generator",
+      "description": "Find the perfect name for your new pet! Generate names for dogs, cats, birds, fish, hamsters, and other pets. Filter by personality traits (playful, regal, fierce, cute), themes (food names, human names, nature names), and name length. Get hundreds of creative pet name ideas instantly.",
+      "shortDescription": "Find perfect names for dogs, cats & pets",
+      "category": "generators",
+      "tags": [
+        "pet names",
+        "dog names",
+        "cat names",
+        "puppy names",
+        "kitten names",
+        "pet name ideas"
+      ],
+      "featured": false,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "🐾",
+      "seoTitle": "Free Pet Name Generator - Dog Names, Cat Names & More",
+      "seoDescription": "Find the perfect pet name with our free generator. Get creative dog names, cat names, and names for all pets. Filter by personality, theme, and style.",
+      "keywords": [
+        "pet name generator",
+        "dog name generator",
+        "cat name generator",
+        "puppy names",
+        "kitten names",
+        "unique pet names"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Personalized Pet ID Tag",
+        "New Pet Owner's Handbook",
+        "Custom Pet Portrait Commission"
+      ],
+      "affiliateDescriptions": [
+        "Engrave your pet's new name on this durable, stylish ID tag available in multiple shapes, colors, and materials for any pet.",
+        "Everything first-time pet owners need to know about naming, training, nutrition, and care for dogs, cats, and other pets.",
+        "Immortalize your pet with a beautiful custom portrait - the perfect way to celebrate your new furry friend and their name."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "baby-name-generator",
+        "username-generator",
+        "fantasy-name-generator"
+      ]
+    },
+    {
+      "id": "pin-generator",
+      "title": "PIN Generator",
+      "slug": "pin-generator",
+      "description": "Generate secure random PIN codes for bank cards, devices, safes, and access systems. Choose 4-digit, 6-digit, or custom length PINs. Options to avoid sequential numbers (1234), repeated digits (1111), and commonly used weak PINs. Generate multiple PINs at once for different uses.",
+      "shortDescription": "Generate secure random PIN codes",
+      "category": "generators",
+      "tags": [
+        "PIN generator",
+        "PIN code",
+        "random PIN",
+        "secure PIN",
+        "4 digit code",
+        "access code"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🔢",
+      "seoTitle": "Free PIN Generator - Generate Secure Random PIN Codes",
+      "seoDescription": "Generate secure random PIN codes for cards, devices, and safes. Create 4-digit or 6-digit PINs. Avoid weak patterns with our free PIN generator.",
+      "keywords": [
+        "PIN generator",
+        "PIN code generator",
+        "random PIN",
+        "4 digit PIN generator",
+        "secure PIN",
+        "access code generator"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "RFID Blocking Wallet",
+        "Home Safe with Digital Keypad",
+        "Identity Protection Guide"
+      ],
+      "affiliateDescriptions": [
+        "Protect your cards and PINs from electronic theft with this premium RFID-blocking wallet featuring multiple card slots and slim design.",
+        "Secure your valuables with this fireproof home safe featuring programmable PIN code access and backup key entry.",
+        "Comprehensive guide to protecting your identity including PIN security, fraud prevention, and what to do if your information is compromised."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "password-generator",
+        "passphrase-generator",
+        "random-number-generator"
+      ]
+    },
+    {
+      "id": "passphrase-generator",
+      "title": "Passphrase Generator",
+      "slug": "passphrase-generator",
+      "description": "Generate memorable yet secure passphrases using random word combinations. Choose the number of words, add optional numbers and symbols, and customize separators (spaces, hyphens, periods). Passphrases are easier to remember than complex passwords while providing excellent security for your accounts.",
+      "shortDescription": "Generate memorable secure passphrases",
+      "category": "generators",
+      "tags": [
+        "passphrase generator",
+        "passphrase",
+        "secure passphrase",
+        "word password",
+        "memorable password",
+        "diceware"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🔑",
+      "seoTitle": "Free Passphrase Generator - Create Memorable Secure Passphrases",
+      "seoDescription": "Generate secure, memorable passphrases with random word combinations. Stronger than passwords and easier to remember. Free passphrase generator tool.",
+      "keywords": [
+        "passphrase generator",
+        "secure passphrase",
+        "random passphrase",
+        "diceware generator",
+        "word password generator",
+        "memorable password"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Password Security Deep Dive",
+        "YubiKey Hardware Authentication",
+        "Privacy & Security Toolkit"
+      ],
+      "affiliateDescriptions": [
+        "Understand the science of password security including entropy, passphrase strength, and modern authentication best practices.",
+        "Hardware security key for unbreakable two-factor authentication compatible with hundreds of services and password managers.",
+        "Complete digital privacy toolkit including password management strategies, encryption guides, and online security practices."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "password-generator",
+        "pin-generator",
+        "username-generator"
+      ]
+    },
+    {
+      "id": "fantasy-name-generator",
+      "title": "Fantasy Name Generator",
+      "slug": "fantasy-name-generator",
+      "description": "Generate unique fantasy names for characters, stories, games, and worldbuilding. Choose from multiple genres and races: elven, dwarven, orcish, human medieval, sci-fi, steampunk, and more. Perfect for D&D characters, fiction writing, video games, and creative projects. Generate first names, surnames, and full character names.",
+      "shortDescription": "Generate fantasy & D&D character names",
+      "category": "generators",
+      "tags": [
+        "fantasy names",
+        "character name generator",
+        "D&D names",
+        "RPG names",
+        "elf names",
+        "dwarf names",
+        "fictional names"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "⚔️",
+      "seoTitle": "Free Fantasy Name Generator - D&D, Elf, Dwarf & Character Names",
+      "seoDescription": "Generate fantasy names for D&D characters, fiction writing, and games. Create elven, dwarven, human, and sci-fi names. Free character name generator.",
+      "keywords": [
+        "fantasy name generator",
+        "D&D name generator",
+        "character name generator",
+        "elf name generator",
+        "dwarf name generator",
+        "RPG name generator"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "D&D Player's Handbook",
+        "Worldbuilding Guide for Writers",
+        "Fantasy Map Making Kit"
+      ],
+      "affiliateDescriptions": [
+        "The essential guide for D&D players with everything you need to create memorable characters, including naming conventions for all races.",
+        "Build rich fantasy worlds with this comprehensive guide to naming languages, cultures, geography, and lore for fiction writing.",
+        "Create beautiful fantasy maps for your stories and campaigns with this complete cartography kit including templates and tutorials."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "baby-name-generator",
+        "pet-name-generator",
+        "username-generator"
       ]
     }
   ]
