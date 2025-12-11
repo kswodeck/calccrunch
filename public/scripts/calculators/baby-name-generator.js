@@ -2,39 +2,45 @@
 (function() {
   'use strict';
 
-  // Small fallback database in case API fails
-  const FALLBACK_NAMES = [
-    { name: 'Emma', gender: 'f', origins: ['english', 'german'], meaning: 'Whole, universal', syllables: 2, popularity: 95, style: ['classic', 'gentle'] },
-    { name: 'Olivia', gender: 'f', origins: ['latin'], meaning: 'Olive tree', syllables: 4, popularity: 98, style: ['classic', 'gentle'] },
-    { name: 'Ava', gender: 'f', origins: ['latin', 'hebrew'], meaning: 'Life, bird', syllables: 2, popularity: 94, style: ['modern', 'gentle'] },
-    { name: 'Sophia', gender: 'f', origins: ['greek'], meaning: 'Wisdom', syllables: 3, popularity: 96, style: ['classic', 'royal'] },
-    { name: 'Charlotte', gender: 'f', origins: ['french'], meaning: 'Free woman', syllables: 2, popularity: 92, style: ['classic', 'royal'] },
-    { name: 'Amelia', gender: 'f', origins: ['german'], meaning: 'Industrious', syllables: 4, popularity: 91, style: ['vintage', 'gentle'] },
-    { name: 'Mia', gender: 'f', origins: ['scandinavian'], meaning: 'Mine, beloved', syllables: 2, popularity: 93, style: ['modern', 'gentle'] },
-    { name: 'Luna', gender: 'f', origins: ['latin'], meaning: 'Moon', syllables: 2, popularity: 85, style: ['modern', 'nature'] },
-    { name: 'Aria', gender: 'f', origins: ['italian'], meaning: 'Air, melody', syllables: 3, popularity: 84, style: ['modern', 'gentle'] },
-    { name: 'Lily', gender: 'f', origins: ['english'], meaning: 'Lily flower', syllables: 2, popularity: 77, style: ['classic', 'nature'] },
-    { name: 'Zoe', gender: 'f', origins: ['greek'], meaning: 'Life', syllables: 2, popularity: 76, style: ['modern', 'strong'] },
-    { name: 'Chloe', gender: 'f', origins: ['greek'], meaning: 'Blooming', syllables: 2, popularity: 79, style: ['modern', 'nature'] },
-    { name: 'Liam', gender: 'm', origins: ['irish'], meaning: 'Strong-willed warrior', syllables: 1, popularity: 98, style: ['modern', 'strong'] },
-    { name: 'Noah', gender: 'm', origins: ['hebrew'], meaning: 'Rest, comfort', syllables: 2, popularity: 97, style: ['classic', 'gentle'] },
-    { name: 'Oliver', gender: 'm', origins: ['latin'], meaning: 'Olive tree', syllables: 3, popularity: 96, style: ['classic', 'gentle'] },
-    { name: 'James', gender: 'm', origins: ['hebrew'], meaning: 'Supplanter', syllables: 1, popularity: 95, style: ['classic', 'royal'] },
-    { name: 'Elijah', gender: 'm', origins: ['hebrew'], meaning: 'My God is Yahweh', syllables: 3, popularity: 94, style: ['classic', 'strong'] },
-    { name: 'William', gender: 'm', origins: ['german'], meaning: 'Resolute protector', syllables: 2, popularity: 93, style: ['classic', 'royal'] },
-    { name: 'Henry', gender: 'm', origins: ['german'], meaning: 'Ruler of the home', syllables: 2, popularity: 92, style: ['classic', 'royal'] },
-    { name: 'Lucas', gender: 'm', origins: ['greek'], meaning: 'Light', syllables: 2, popularity: 91, style: ['modern', 'gentle'] },
-    { name: 'Benjamin', gender: 'm', origins: ['hebrew'], meaning: 'Son of the right hand', syllables: 3, popularity: 90, style: ['classic', 'strong'] },
-    { name: 'Theodore', gender: 'm', origins: ['greek'], meaning: 'Gift of God', syllables: 3, popularity: 89, style: ['vintage', 'royal'] },
-    { name: 'Jack', gender: 'm', origins: ['english'], meaning: 'God is gracious', syllables: 1, popularity: 88, style: ['classic', 'strong'] },
-    { name: 'Leo', gender: 'm', origins: ['latin'], meaning: 'Lion', syllables: 2, popularity: 42, style: ['vintage', 'strong'] },
-    { name: 'Jordan', gender: 'n', origins: ['hebrew'], meaning: 'To flow down', syllables: 2, popularity: 85, style: ['modern', 'strong'] },
-    { name: 'Taylor', gender: 'n', origins: ['english'], meaning: 'Tailor', syllables: 2, popularity: 80, style: ['modern', 'gentle'] },
-    { name: 'Riley', gender: 'n', origins: ['irish'], meaning: 'Courageous', syllables: 2, popularity: 82, style: ['modern', 'gentle'] },
-    { name: 'Quinn', gender: 'n', origins: ['irish'], meaning: 'Wise, chief', syllables: 1, popularity: 72, style: ['modern', 'strong'] },
-    { name: 'Avery', gender: 'n', origins: ['english'], meaning: 'Elf ruler', syllables: 3, popularity: 78, style: ['modern', 'gentle'] },
-    { name: 'River', gender: 'n', origins: ['english'], meaning: 'River', syllables: 2, popularity: 45, style: ['modern', 'nature'] }
-  ];
+  // Fallback names will be loaded from external JSON file
+  let FALLBACK_NAMES = null;
+  let fallbackLoadPromise = null;
+
+  // Load fallback names from external JSON file
+  function loadFallbackNames() {
+    if (fallbackLoadPromise) return fallbackLoadPromise;
+    fallbackLoadPromise = fetch('../src/data/fallback-names.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to load fallback names');
+        }
+        return response.json();
+      })
+      .then(data => {
+        FALLBACK_NAMES = data.names || [];
+        console.log('Loaded fallback names:', FALLBACK_NAMES.length);
+        return FALLBACK_NAMES;
+      })
+      .catch(error => {
+        console.warn('Could not load fallback names file, using minimal built-in fallback:', error);
+        // Minimal built-in fallback if JSON fails to load
+        FALLBACK_NAMES = [
+          {"name": "Emma", "canBeFirst": true, "canBeMiddle": true, "gender": "f", "origins": ["english"], "meaning": "Whole", "syllables": 2, "popularity": 95, "style": ["classic"]},
+          {"name": "Liam", "canBeFirst": true, "canBeMiddle": true, "gender": "m", "origins": ["irish"], "meaning": "Warrior", "syllables": 1, "popularity": 98, "style": ["modern"]},
+          {"name": "Olivia", "canBeFirst": true, "canBeMiddle": true, "gender": "f", "origins": ["latin"], "meaning": "Olive tree", "syllables": 4, "popularity": 96, "style": ["classic"]},
+          {"name": "Noah", "canBeFirst": true, "canBeMiddle": true, "gender": "m", "origins": ["hebrew"], "meaning": "Rest", "syllables": 2, "popularity": 97, "style": ["classic"]},
+          {"name": "Sophia", "canBeFirst": true, "canBeMiddle": true, "gender": "f", "origins": ["greek"], "meaning": "Wisdom", "syllables": 3, "popularity": 94, "style": ["classic"]},
+          {"name": "James", "canBeFirst": true, "canBeMiddle": true, "gender": "m", "origins": ["hebrew"], "meaning": "Supplanter", "syllables": 1, "popularity": 93, "style": ["classic"]},
+          {"name": "Rose", "canBeFirst": true, "canBeMiddle": true, "gender": "f", "origins": ["latin"], "meaning": "Rose flower", "syllables": 1, "popularity": 65, "style": ["classic", "nature"]},
+          {"name": "Grace", "canBeFirst": true, "canBeMiddle": true, "gender": "f", "origins": ["latin"], "meaning": "Grace", "syllables": 1, "popularity": 75, "style": ["classic"]},
+          {"name": "Riley", "canBeFirst": true, "canBeMiddle": true, "gender": "n", "origins": ["irish"], "meaning": "Courageous", "syllables": 2, "popularity": 82, "style": ["modern"]},
+          {"name": "Quinn", "canBeFirst": true, "canBeMiddle": true, "gender": "n", "origins": ["irish"], "meaning": "Wise", "syllables": 1, "popularity": 72, "style": ["modern"]}
+        ];
+        return FALLBACK_NAMES;
+      });
+    
+    return fallbackLoadPromise;
+  }
 
   // Default values
   const DEFAULTS = {
@@ -80,6 +86,7 @@
   }
 
   function init() {
+    console.log('Baby Name Generator initializing...');
     cacheElements();
     
     if (!elements.generateBtn) {
@@ -87,9 +94,15 @@
       return;
     }
     
+    console.log('Baby Name Generator: Elements cached successfully');
+    
+    // Start loading fallback names in background
+    loadFallbackNames();
+    
     loadFromURL();
     loadFavorites();
     attachEventListeners();
+    console.log('Baby Name Generator initialized successfully');
   }
 
   function cacheElements() {
@@ -383,14 +396,23 @@
     saveTimeout = setTimeout(saveToURL, 300);
   }
 
-  // API call to generate names
+  // API call to generate names - NOW SENDS ALL PARAMETERS
   async function fetchNamesFromAPI() {
+    console.log('Calling API with state:', {
+      gender: state.gender,
+      origins: state.origins,
+      genFirst: state.genFirst,
+      genMiddle: state.genMiddle,
+      count: state.count
+    });
+    
     const response = await fetch('/.netlify/functions/generate-names', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
+        // Basic criteria
         gender: state.gender,
         origins: state.origins,
         startsWith: state.startsWith,
@@ -401,11 +423,16 @@
         popularity: state.popularity,
         style: state.style,
         count: state.count,
+        // Name context
         lastName: state.lastName,
         firstName: state.firstName,
         middleName: state.middleName,
         genFirst: state.genFirst,
         genMiddle: state.genMiddle,
+        // Advanced options - NOW INCLUDED
+        alliteration: state.alliteration,
+        avoidRhyme: state.avoidRhyme,
+        uniqueInitials: state.uniqueInitials,
         excludeNames: state.excludeNames,
         siblingNames: state.siblingNames
       })
@@ -415,13 +442,46 @@
       throw new Error(`API error: ${response.status}`);
     }
 
-    const data = await response.json();
-    return data?.names || [];
+    // Try to parse JSON - might fail if response is HTML error page
+    let data;
+    try {
+      data = await response.json();
+    } catch (parseError) {
+      console.error('Failed to parse API response as JSON:', parseError);
+      throw new Error('Invalid API response');
+    }
+    
+    console.log('API returned:', data);
+    
+    if (!data.names || data.names.length === 0) {
+      throw new Error('API returned no names');
+    }
+    
+    return data.names;
   }
 
   // Fallback filtering for when API fails
-  function filterFallbackNames(names) {
-    return names.filter(entry => {
+  // Now handles canBeFirst/canBeMiddle flags from external JSON
+  function filterFallbackNames(names, forFirstName, forMiddleName) {
+    console.log('Filtering fallback names. Count:', names.length, 'forFirst:', forFirstName, 'forMiddle:', forMiddleName);
+    console.log('State:', {
+      gender: state.gender,
+      origins: state.origins,
+      startsWith: state.startsWith,
+      alliteration: state.alliteration
+    });
+    
+    const filtered = names.filter(entry => {
+      const name = entry.name;
+      
+      if (!name) {
+        return false;
+      }
+      
+      // Check if this name can be used for the requested purpose
+      if (forFirstName && !entry.canBeFirst) return false;
+      if (forMiddleName && !entry.canBeMiddle) return false;
+      
       // Gender filter
       if (state.gender !== 'any') {
         if (state.gender === 'neutral' && entry.gender !== 'n') return false;
@@ -431,31 +491,185 @@
       
       // Origins filter
       if (state.origins.length > 0) {
-        if (!entry.origins.some(o => state.origins.includes(o))) return false;
+        if (!entry.origins || !entry.origins.some(o => state.origins.includes(o))) return false;
       }
       
       // Starts with
       if (state.startsWith) {
-        if (!entry.name.toLowerCase().startsWith(state.startsWith.toLowerCase())) return false;
+        if (!name.toLowerCase().startsWith(state.startsWith.toLowerCase())) return false;
       }
       
       // Ends with
       if (state.endsWith) {
-        if (!entry.name.toLowerCase().endsWith(state.endsWith.toLowerCase())) return false;
+        if (!name.toLowerCase().endsWith(state.endsWith.toLowerCase())) return false;
       }
       
       // Length filters
-      if (state.minLength > 0 && entry.name.length < parseInt(state.minLength)) return false;
-      if (state.maxLength > 0 && entry.name.length > parseInt(state.maxLength)) return false;
+      if (state.minLength > 0 && name.length < parseInt(state.minLength)) return false;
+      if (state.maxLength > 0 && name.length > parseInt(state.maxLength)) return false;
+      
+      // Syllables filter
+      if (state.syllables > 0) {
+        const targetSyllables = parseInt(state.syllables);
+        if (targetSyllables >= 4) {
+          if (entry.syllables < 4) return false;
+        } else {
+          if (entry.syllables !== targetSyllables) return false;
+        }
+      }
+      
+      // Alliteration (only for first names when last name is provided)
+      if (forFirstName && state.alliteration && state.lastName) {
+        if (name[0].toLowerCase() !== state.lastName[0].toLowerCase()) return false;
+      }
+      
+      // Avoid rhyme (only for first names)
+      if (forFirstName && state.avoidRhyme && state.lastName && state.lastName.length >= 2) {
+        const lastEnding = state.lastName.slice(-2).toLowerCase();
+        const nameEnding = name.slice(-2).toLowerCase();
+        if (lastEnding === nameEnding) return false;
+      }
       
       // Exclude names
       if (state.excludeNames) {
         const excluded = state.excludeNames.toLowerCase().split(',').map(n => n.trim());
-        if (excluded.includes(entry.name.toLowerCase())) return false;
+        if (excluded.includes(name.toLowerCase())) return false;
+      }
+      
+      // Style filter
+      if (state.style && state.style !== 'any') {
+        if (!entry.style || !entry.style.includes(state.style)) return false;
       }
       
       return true;
     });
+    
+    console.log('Fallback filtering result:', filtered.length, 'names passed filters');
+    return filtered;
+  }
+
+  // Convert raw fallback entry to the format expected by the rest of the code
+  function convertFallbackEntry(entry) {
+    return {
+      gender: entry.gender,
+      origins: entry.origins || ['unknown'],
+      meaning: entry.meaning || 'Beautiful name',
+      syllables: entry.syllables || 2,
+      popularity: entry.popularity || 50,
+      style: entry.style || ['classic']
+    };
+  }
+
+  // Process fallback names into the format expected by the rest of the code
+  // Now uses canBeFirst/canBeMiddle to get separate pools for each
+  function processFallbackNames(allNames, generateFirst, generateMiddle) {
+    console.log('Processing fallback names:', allNames.length, 'generateFirst:', generateFirst, 'generateMiddle:', generateMiddle);
+    
+    // Get filtered pools for first and middle names
+    const firstNamePool = generateFirst ? filterFallbackNames(allNames, true, false) : [];
+    const middleNamePool = generateMiddle ? filterFallbackNames(allNames, false, true) : [];
+    
+    console.log('First name pool:', firstNamePool.length, 'Middle name pool:', middleNamePool.length);
+    
+    const results = [];
+    const shuffledFirst = shuffleArray([...firstNamePool]);
+    const shuffledMiddle = shuffleArray([...middleNamePool]);
+    
+    const usedFirstNames = new Set();
+    const usedMiddleNames = new Set();
+    
+    if (generateFirst && generateMiddle) {
+      // Need pairs - match first and middle names
+      let middleIndex = 0;
+      for (const firstEntry of shuffledFirst) {
+        if (results.length >= state.count) break;
+        
+        // Find an unused middle name
+        let middleName = null;
+        let middleEntry = null;
+        
+        while (middleIndex < shuffledMiddle.length) {
+          const candidate = shuffledMiddle[middleIndex];
+          middleIndex++;
+          
+          // Skip if same as first name
+          if (candidate.name.toLowerCase() === firstEntry.name.toLowerCase()) continue;
+          
+          // Skip if already used
+          if (usedMiddleNames.has(candidate.name.toLowerCase())) continue;
+          
+          // Check unique initials constraint
+          if (state.uniqueInitials) {
+            if (candidate.name[0].toLowerCase() === firstEntry.name[0].toLowerCase()) continue;
+            if (state.lastName && candidate.name[0].toLowerCase() === state.lastName[0].toLowerCase()) continue;
+          }
+          
+          middleName = candidate.name;
+          middleEntry = candidate;
+          usedMiddleNames.add(candidate.name.toLowerCase());
+          break;
+        }
+        
+        // If we couldn't find a middle name, try wrapping around
+        if (!middleName && middleIndex >= shuffledMiddle.length) {
+          middleIndex = 0;
+          for (const candidate of shuffledMiddle) {
+            if (candidate.name.toLowerCase() === firstEntry.name.toLowerCase()) continue;
+            if (usedMiddleNames.has(candidate.name.toLowerCase())) continue;
+            
+            if (state.uniqueInitials) {
+              if (candidate.name[0].toLowerCase() === firstEntry.name[0].toLowerCase()) continue;
+              if (state.lastName && candidate.name[0].toLowerCase() === state.lastName[0].toLowerCase()) continue;
+            }
+            
+            middleName = candidate.name;
+            middleEntry = candidate;
+            usedMiddleNames.add(candidate.name.toLowerCase());
+            break;
+          }
+        }
+        
+        usedFirstNames.add(firstEntry.name.toLowerCase());
+        
+        results.push({
+          firstName: firstEntry.name,
+          firstNameData: convertFallbackEntry(firstEntry),
+          middleName: middleName,
+          middleNameData: middleEntry ? convertFallbackEntry(middleEntry) : null
+        });
+      }
+    } else if (generateFirst) {
+      // Only first names
+      for (const entry of shuffledFirst) {
+        if (results.length >= state.count) break;
+        if (usedFirstNames.has(entry.name.toLowerCase())) continue;
+        
+        usedFirstNames.add(entry.name.toLowerCase());
+        results.push({
+          firstName: entry.name,
+          firstNameData: convertFallbackEntry(entry),
+          middleName: null,
+          middleNameData: null
+        });
+      }
+    } else if (generateMiddle) {
+      // Only middle names
+      for (const entry of shuffledMiddle) {
+        if (results.length >= state.count) break;
+        if (usedMiddleNames.has(entry.name.toLowerCase())) continue;
+        
+        usedMiddleNames.add(entry.name.toLowerCase());
+        results.push({
+          firstName: null,
+          firstNameData: null,
+          middleName: entry.name,
+          middleNameData: convertFallbackEntry(entry)
+        });
+      }
+    }
+    
+    console.log('Processed fallback results:', results.length);
+    return results;
   }
 
   function calculateFlowScore(firstName, middleName, lastName) {
@@ -559,6 +773,8 @@
     const generateFirst = state.genFirst && !state.firstName;
     const generateMiddle = state.genMiddle && !state.middleName;
     
+    console.log('Generate names called. generateFirst:', generateFirst, 'generateMiddle:', generateMiddle);
+    
     if (!generateFirst && !generateMiddle) {
       showError('Please leave at least one name field empty and check the corresponding "Generate" option.');
       return;
@@ -567,96 +783,103 @@
     isLoading = true;
     showLoading();
     
-    let nameDatabase = [];
+    let processedNames = [];
     let usedAI = false;
     
     try {
-      nameDatabase = await fetchNamesFromAPI();
+      // Try API first
+      const apiNames = await fetchNamesFromAPI();
       usedAI = true;
-      console.log('Using AI-generated names:', nameDatabase);
+      console.log('AI returned names:', apiNames.length);
+      
+      // API returns names in correct format already
+      processedNames = apiNames;
+      
     } catch (error) {
-      console.warn('API call failed, using fallback:', error);
-      nameDatabase = filterFallbackNames([...FALLBACK_NAMES]);
+      console.warn('API call failed, using fallback:', error.message);
+      
+      // Ensure fallback names are loaded
+      let fallbackData;
+      try {
+        fallbackData = await loadFallbackNames();
+      } catch (loadError) {
+        console.error('Failed to load fallback names:', loadError);
+        isLoading = false;
+        showError('Could not load name database. Please check your connection and try again.');
+        return;
+      }
+      
+      if (!fallbackData || fallbackData.length === 0) {
+        isLoading = false;
+        showError('Name database is empty. Please try again later.');
+        return;
+      }
+      
+      // Process fallback into correct format
+      processedNames = processFallbackNames(fallbackData, generateFirst, generateMiddle);
       usedAI = false;
     }
     
     isLoading = false;
     
-    if (!nameDatabase?.length) {
+    if (processedNames.length === 0) {
       showError('No names match your criteria. Try relaxing some filters.');
       return;
     }
     
+    // Build final results
     generatedNames = [];
-    const usedFirst = new Set();
-    const usedMiddle = new Set();
+    const usedFirstNames = new Set();
+    const usedMiddleNames = new Set();
     
-    nameDatabase = shuffleArray(nameDatabase);
-    
-    for (const entry of nameDatabase) {
+    for (const entry of processedNames) {
       if (generatedNames.length >= state.count) break;
       
-      let firstName = state.firstName;
-      let firstEntry = null;
-      let middleName = state.middleName;
-      let middleEntry = null;
-      let splitName = null;
+      // Get first name (either from entry or user-provided)
+      let firstName = generateFirst ? (entry.firstName || null) : (state.firstName || null);
+      let firstNameData = generateFirst ? (entry.firstNameData || null) : null;
       
-      if (generateFirst) {
-        if (usedFirst.has(entry.name)) continue;
-        
-        if (state.uniqueInitials && middleName && entry.name[0].toLowerCase() === middleName[0].toLowerCase()) {
-          continue;
-        }
-        
-        if (state.alliteration && state.lastName && entry.name[0].toLowerCase() !== state.lastName[0].toLowerCase()) {
-          continue;
-        }
-        
-        if (state.avoidRhyme && state.lastName && state.lastName.length > 2) {
-          const lastSuffix = state.lastName.slice(-2).toLowerCase();
-          const nameSuffix = entry.name.slice(-2).toLowerCase();
-          if (lastSuffix === nameSuffix) continue;
-        }
-        
-        if (entry.name?.includes(" ")) {
-          splitName = entry?.name?.split(" ");
-        }
-        firstName = splitName?.[0] || entry?.name;
-        firstEntry = entry;
-        usedFirst.add(firstName);
-      } else if (state.firstName) {
-        firstEntry = nameDatabase.find(n => n.name.toLowerCase() === state.firstName.toLowerCase()) || null;
+      // Get middle name (either from entry or user-provided)
+      let middleName = generateMiddle ? (entry.middleName || null) : (state.middleName || null);
+      let middleNameData = generateMiddle ? (entry.middleNameData || null) : null;
+      
+      // Skip duplicates
+      if (generateFirst && firstName) {
+        const lowerFirst = firstName.toLowerCase();
+        if (usedFirstNames.has(lowerFirst)) continue;
+        usedFirstNames.add(lowerFirst);
       }
       
-      if (generateMiddle) {
-        const middleCandidate = nameDatabase.find(n => {
-          if (usedMiddle.has(splitName?.[1] || n.name)) return false;
-          if (n.name === firstName) return false;
-          if (state.uniqueInitials && firstName && n.name[0].toLowerCase() === firstName[0].toLowerCase()) return false;
-          return true;
-        });
-        
-        if (middleCandidate) {
-          middleName = splitName?.[1] || middleCandidate?.name;
-          middleEntry = middleCandidate;
-          usedMiddle.add(middleName);
-        }
-      } else if (state.middleName) {
-        middleEntry = nameDatabase.find(n => n.name.toLowerCase() === state.middleName.toLowerCase()) || null;
+      if (generateMiddle && middleName) {
+        const lowerMiddle = middleName.toLowerCase();
+        if (usedMiddleNames.has(lowerMiddle)) continue;
+        usedMiddleNames.add(lowerMiddle);
       }
       
-      const flowScore = calculateFlowScore(firstName, middleName, state.lastName);
+      // Skip if missing required name
+      if (generateFirst && !firstName) {
+        console.warn('Skipping entry - missing firstName:', entry);
+        continue;
+      }
+      if (generateMiddle && !middleName) {
+        console.warn('Skipping entry - missing middleName:', entry);
+        continue;
+      }
+      
+      // Calculate flow score
+      const flowScore = calculateFlowScore(firstName || '', middleName || '', state.lastName);
       
       generatedNames.push({
-        firstName,
-        firstEntry,
-        middleName,
-        middleEntry,
+        firstName: firstName || '',
+        firstNameData: firstNameData,
+        middleName: middleName || '',
+        middleNameData: middleNameData,
         lastName: state.lastName,
         flowScore
       });
     }
+    
+    console.log('Final generated names:', generatedNames.length);
     
     if (generatedNames.length === 0) {
       showError('Could not generate names with current criteria. Try relaxing some filters.');
@@ -678,8 +901,8 @@
         break;
       case 'popularity':
         generatedNames.sort((a, b) => {
-          const popA = (a.firstEntry?.popularity || 0) + (a.middleEntry?.popularity || 0);
-          const popB = (b.firstEntry?.popularity || 0) + (b.middleEntry?.popularity || 0);
+          const popA = (a.firstNameData?.popularity || 0) + (a.middleNameData?.popularity || 0);
+          const popB = (b.firstNameData?.popularity || 0) + (b.middleNameData?.popularity || 0);
           return popB - popA;
         });
         break;
@@ -716,30 +939,32 @@
     generatedNames.forEach(entry => {
       totalFlow += entry.flowScore;
       
-      if (entry.firstEntry) {
-        const name = entry.firstEntry.name;
+      // Process first name data
+      if (entry.firstNameData) {
+        const name = entry.firstName;
         totalLength += name.length;
-        totalSyllables += entry.firstEntry.syllables || countSyllables(name);
+        totalSyllables += entry.firstNameData.syllables || countSyllables(name);
         nameCount++;
         
         const letter = name[0].toUpperCase();
         stats.startingLetters[letter] = (stats.startingLetters[letter] || 0) + 1;
         
-        (entry.firstEntry.origins || []).forEach(origin => {
+        (entry.firstNameData.origins || []).forEach(origin => {
           stats.origins[origin] = (stats.origins[origin] || 0) + 1;
         });
       }
       
-      if (entry.middleEntry) {
-        const name = entry.middleEntry.name;
+      // Process middle name data
+      if (entry.middleNameData) {
+        const name = entry.middleName;
         totalLength += name.length;
-        totalSyllables += entry.middleEntry.syllables || countSyllables(name);
+        totalSyllables += entry.middleNameData.syllables || countSyllables(name);
         nameCount++;
         
         const letter = name[0].toUpperCase();
         stats.startingLetters[letter] = (stats.startingLetters[letter] || 0) + 1;
         
-        (entry.middleEntry.origins || []).forEach(origin => {
+        (entry.middleNameData.origins || []).forEach(origin => {
           stats.origins[origin] = (stats.origins[origin] || 0) + 1;
         });
       }
@@ -792,6 +1017,7 @@
         f.lastName === entry.lastName
       );
       
+      // Build full name display with generated parts highlighted
       const fullNameParts = [];
       if (entry.firstName) {
         fullNameParts.push(generateFirst 
@@ -807,12 +1033,15 @@
         fullNameParts.push(entry.lastName);
       }
       
-      const originInfo = entry.firstEntry?.origins 
-        ? entry.firstEntry.origins.map(o => o.charAt(0).toUpperCase() + o.slice(1)).join(', ')
+      // Get origin info from the primary generated name
+      const primaryData = entry.firstNameData || entry.middleNameData;
+      const originInfo = primaryData?.origins 
+        ? primaryData.origins.map(o => o.charAt(0).toUpperCase() + o.slice(1)).join(', ')
         : '';
       
-      const meaningInfo = state.showMeanings && entry.firstEntry?.meaning 
-        ? `<div class="name-meaning">"${entry.firstEntry.meaning}"</div>` 
+      // Get meaning info
+      const meaningInfo = state.showMeanings && primaryData?.meaning 
+        ? `<div class="name-meaning">"${primaryData.meaning}"</div>` 
         : '';
       
       const flowInfo = getFlowLabel(entry.flowScore);
@@ -831,13 +1060,14 @@
           ${meaningInfo}
           <div class="name-meta">
             ${entry.lastName ? `<span class="meta-badge flow-score ${flowInfo.class}">Flow: ${flowInfo.label}</span>` : ''}
-            ${entry.firstEntry?.syllables ? `<span class="meta-badge">${entry.firstEntry.syllables} syllable${entry.firstEntry.syllables !== 1 ? 's' : ''}</span>` : ''}
-            ${entry.firstEntry?.style?.[0] ? `<span class="meta-badge">${entry.firstEntry.style[0]}</span>` : ''}
+            ${primaryData?.syllables ? `<span class="meta-badge">${primaryData.syllables} syllable${primaryData.syllables !== 1 ? 's' : ''}</span>` : ''}
+            ${primaryData?.style?.[0] ? `<span class="meta-badge">${primaryData.style[0]}</span>` : ''}
           </div>
         </div>
       `;
     }).join('');
     
+    // Initials preview
     let initialsHTML = '';
     if (generatedNames.length > 0 && state.lastName) {
       const first = generatedNames[0];
@@ -858,6 +1088,7 @@
       `;
     }
     
+    // Statistics section
     let statsHTML = '';
     if (state.showStats) {
       const originEntries = Object.entries(stats.origins).sort((a, b) => b[1] - a[1]).slice(0, 6);
@@ -928,6 +1159,7 @@
       `;
     }
     
+    // Favorites section
     let favoritesHTML = '';
     if (favorites.length > 0) {
       const favTagsHTML = favorites.map((fav, i) => {
