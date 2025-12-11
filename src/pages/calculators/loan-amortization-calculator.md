@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Loan Amortization Calculator
-description: View a complete loan payoff schedule with detailed breakdown of principal and interest payments. Visualize how your loan balance decreases over time.
-category: financial
-tags: ['loan', 'amortization', 'payment schedule', 'interest', 'principal']
-featured: false
 calcType: loan-amortization
-seoTitle: Free Loan Amortization Calculator with Payment Schedule
-seoDescription: Calculate your loan amortization schedule with our free calculator. See detailed monthly payments, principal, interest, and remaining balance.
-estimatedTime: 3 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

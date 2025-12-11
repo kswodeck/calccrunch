@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Sales Commission Calculator
-description: Calculate sales commissions with multiple tiers, quotas, and bonus structures. Track earnings across different products and commission rates.
-category: business-sales
-tags: ['sales commission', 'commission', 'sales', 'earnings']
-featured: false
 calcType: sales-commission
-seoTitle: Free Sales Commission Calculator - Commission Calculator
-seoDescription: Calculate sales commissions with multiple tiers and bonuses. Track earnings with our free commission calculator.
-estimatedTime: 3 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

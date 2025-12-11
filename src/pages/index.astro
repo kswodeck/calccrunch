@@ -19,8 +19,12 @@ const totalCategories = categoriesData?.categories?.filter(
 // Get featured categories from JSON
 const categories = categoriesData.categories
   .filter((cat) => cat.featured)
-  .sort((a, b) => b.calculatorCount - a.calculatorCount)
-  .slice(0, 6); // Top 6 featured categories
+  .sort((a, b) =>
+    b.calculatorCount == b.calculatorCount
+      ? a.order - b.order
+      : b.calculatorCount - a.calculatorCount
+  )
+  .slice(0, 4); // Top 4 featured categories
 
 // Get featured calculators from JSON
 const featuredCalculators = calculatorsData.calculators

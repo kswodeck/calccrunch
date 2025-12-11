@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Random Number Generator
-description: Generate random numbers within any range you specify. Perfect for lotteries, raffles, games, statistical sampling, and decision-making. Choose single numbers or generate multiple random numbers at once with options to allow or exclude duplicates and sort results.
-category: generators
-tags: ['random number', 'number generator', 'RNG', 'lottery numbers', 'random picker', 'dice roller']
-featured: true
 calcType: rng
-seoTitle: Free Random Number Generator - Generate Numbers in Any Range
-seoDescription: Generate random numbers instantly with our free random number generator. Set custom ranges, generate multiple numbers, exclude duplicates. Perfect for lotteries, games, and more.
-estimatedTime: 1 minute
-difficulty: Easy
 ---
 
 ## How to Use This Generator

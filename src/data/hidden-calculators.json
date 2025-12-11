@@ -293,60 +293,6 @@
       ]
     },
     {
-      "id": "lorem-ipsum-generator",
-      "title": "Lorem Ipsum Generator",
-      "slug": "lorem-ipsum-generator",
-      "description": "Generate placeholder text for your designs, websites, and documents. Choose from classic Lorem Ipsum, hipster ipsum, corporate ipsum, or other styles. Specify the number of paragraphs, sentences, or words you need. Perfect for designers, developers, and content creators working on mockups and prototypes.",
-      "shortDescription": "Generate placeholder text for designs & mockups",
-      "category": "generators",
-      "tags": [
-        "lorem ipsum",
-        "placeholder text",
-        "dummy text",
-        "filler text",
-        "design mockup",
-        "sample text"
-      ],
-      "featured": true,
-      "popular": false,
-      "difficulty": "Easy",
-      "estimatedTime": "1 minute",
-      "icon": "📝",
-      "seoTitle": "Free Lorem Ipsum Generator - Placeholder Text for Designs & Websites",
-      "seoDescription": "Generate Lorem Ipsum placeholder text instantly. Choose paragraphs, sentences, or words. Multiple styles available. Perfect for web design, mockups, and prototypes.",
-      "keywords": [
-        "lorem ipsum generator",
-        "placeholder text generator",
-        "dummy text",
-        "filler text generator",
-        "sample text",
-        "lipsum"
-      ],
-      "lastUpdated": "2025-06-10",
-      "uses": 0,
-      "rating": 0,
-      "affiliateHeadlines": [
-        "Web Design Fundamentals Book",
-        "UI/UX Design Course Guide",
-        "Graphic Design Software Subscription"
-      ],
-      "affiliateDescriptions": [
-        "Master modern web design principles including typography, layout, and responsive design with this comprehensive reference guide.",
-        "Learn professional UI/UX design workflows from wireframing to prototyping with industry-standard practices and real-world projects.",
-        "Access professional design tools for creating stunning layouts, mockups, and prototypes with this industry-leading creative software."
-      ],
-      "affiliateLinks": [
-        "https://amzn.to/4r38xTv",
-        "https://amzn.to/48o8Vof",
-        "https://amzn.to/47QcW4T"
-      ],
-      "relatedCalculators": [
-        "uuid-generator",
-        "random-color-generator",
-        "username-generator"
-      ]
-    },
-    {
       "id": "business-name-generator",
       "title": "Business Name Generator",
       "slug": "business-name-generator",

@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: ROI Calculator
-description: Calculate return on investment (ROI) for business investments, marketing campaigns, or projects. See percentage return and payback period.
-category: business-sales
-tags: ['ROI', 'return on investment', 'investment return']
-featured: false
 calcType: roi
-seoTitle: Free ROI Calculator - Return on Investment Calculator
-seoDescription: Calculate ROI for investments and projects. Measure investment returns with our free calculator.
-estimatedTime: 2 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

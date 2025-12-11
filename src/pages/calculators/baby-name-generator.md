@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Baby Name Generator
-description: Find the perfect baby name with our comprehensive name generator. Filter by gender, origin, meaning, popularity, and more. Get first and middle name suggestions that flow beautifully with your last name. Explore thousands of unique names with detailed meanings and origins.
-category: generators
-tags: ['baby name', 'name generator', 'baby names', 'first name', 'middle name', 'name meaning']
-featured: true
 calcType: babyname
-seoTitle: Free Baby Name Generator - Find Perfect Names with Meanings & Origins
-seoDescription: Discover the perfect baby name with our free generator. Filter by gender, origin, meaning, length, and popularity. Get first and middle name combos that flow beautifully.
-estimatedTime: 2 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Generator

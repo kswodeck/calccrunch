@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: International Size Converter
-description: Convert clothing and shoe sizes between US, UK, EU, and international sizing systems. Find your size when shopping from different countries.
-category: math-conversions
-tags: ['size conversion', 'clothing size', 'shoe size', 'international sizes']
-featured: false
 calcType: size-converter
-seoTitle: Free Size Converter - International Clothing & Shoe Sizes
-seoDescription: Convert clothing and shoe sizes between US, UK, EU, and other countries. Shop internationally with our free size converter.
-estimatedTime: 1 minute
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

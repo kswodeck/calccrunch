@@ -2,38 +2,61 @@
 import BaseLayout from "./BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import AdUnit from "../components/AdUnit.astro";
-import AffiliateBox from "../components/AffiliateBox.astro";
-import EmailCapture from "../components/EmailCapture.astro";
+// import AffiliateBox from "../components/AffiliateBox.astro";
+// import EmailCapture from "../components/EmailCapture.astro";
 import RelatedCalculators from "../components/RelatedCalculators.astro";
 import SocialShare from "../components/SocialShare.astro";
 import "../styles/calculators.css";
 
-// Get frontmatter from markdown files
+// Import calculators data
+import calculatorsData from "../data/calculators.json";
+
+// Get frontmatter from markdown files (used as fallback)
 const { frontmatter } = Astro.props;
 
-// Destructure calculator metadata
-const {
-  title,
-  description,
-  category = "miscellaneous",
-  tags = [],
-  featured = false,
-  calcType = "general",
-  seoTitle,
-  seoDescription,
-  lastUpdated,
-  estimatedTime = "2 minutes",
-  difficulty = "Easy",
-} = frontmatter;
+// Get calculator slug from URL
+const slug =
+  Astro.url.pathname.split("/").filter(Boolean).pop()?.replace(".html", "") ||
+  "";
+
+// Find calculator data from JSON by slug
+const calculatorFromJson = calculatorsData.calculators.find(
+  (calc) => calc.slug === slug || calc.id === slug
+);
+
+// Merge data: JSON takes priority, frontmatter as fallback
+const title = calculatorFromJson?.title || frontmatter.title;
+const description = calculatorFromJson?.description || frontmatter.description;
+const category =
+  calculatorFromJson?.category || frontmatter.category || "miscellaneous";
+const tags = calculatorFromJson?.tags || frontmatter.tags || [];
+const featured = calculatorFromJson?.featured ?? frontmatter.featured ?? false;
+const popular = calculatorFromJson?.popular ?? false;
+const calcType = frontmatter.calcType || "general"; // calcType stays in frontmatter as it's page-specific
+const seoTitle = calculatorFromJson?.seoTitle || frontmatter.seoTitle;
+const seoDescription =
+  calculatorFromJson?.seoDescription || frontmatter.seoDescription;
+const lastUpdated = calculatorFromJson?.lastUpdated || frontmatter.lastUpdated;
+const estimatedTime =
+  calculatorFromJson?.estimatedTime || frontmatter.estimatedTime || "2 minutes";
+const difficulty =
+  calculatorFromJson?.difficulty || frontmatter.difficulty || "Easy";
+const icon = calculatorFromJson?.icon || frontmatter.icon || "🧮";
+const keywords = calculatorFromJson?.keywords || frontmatter.keywords || [];
+
+// Affiliate data from JSON
+const affiliateHeadlines = calculatorFromJson?.affiliateHeadlines || [];
+const affiliateDescriptions = calculatorFromJson?.affiliateDescriptions || [];
+const affiliateLinks = calculatorFromJson?.affiliateLinks || [];
+
+// Related calculators from JSON
+const relatedCalculatorSlugs = calculatorFromJson?.relatedCalculators || [];
 
 // Format category for display
 const categoryDisplay = category
   .split("-")
   .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
   .join(" ");
-
-// Get calculator slug from URL
-const slug = Astro.url.pathname.split("/").pop().replace(".html", "");
 
 // Breadcrumb items
 const breadcrumbItems = [

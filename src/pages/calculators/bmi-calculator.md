@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: BMI Calculator
-description: Calculate your Body Mass Index (BMI) and find your ideal weight range. Free, accurate, and easy to use with detailed health insights. Share and save your results with URL parameters.
-category: health-fitness
-tags: ['BMI', 'body mass index', 'weight', 'health', 'fitness']
-featured: true
 calcType: bmi
-seoTitle: Free BMI Calculator - Body Mass Index & Ideal Weight
-seoDescription: Calculate your BMI instantly with our free calculator. Get your ideal weight range and health insights. Save and share your calculations with automatic URL parameters.
-estimatedTime: 1 minute
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

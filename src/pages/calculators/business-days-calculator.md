@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Business Days Calculator
-description: Calculate business days between two dates excluding weekends and holidays. Add or subtract business days from a date for project planning and deadline tracking.
-category: time-date
-tags: ['business days', 'workdays', 'project planning', 'deadlines', 'holidays']
-featured: false
 calcType: business-days
-seoTitle: Free Business Days Calculator - Workday Calculator
-seoDescription: Calculate business days between dates excluding weekends and holidays. Plan project deadlines with our free calculator.
-estimatedTime: 2 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

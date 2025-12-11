@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Credit Card Payoff Calculator
-description: Calculate how long it will take to pay off your credit card debt. Compare minimum payments vs fixed monthly payments, see total interest paid, and create a payoff strategy.
-category: financial
-tags: ['credit card', 'debt payoff', 'interest', 'debt repayment']
-featured: true
 calcType: credit-card-payoff
-seoTitle: Free Credit Card Payoff Calculator - Debt Payoff Planner
-seoDescription: Calculate how long to pay off credit card debt. See total interest and create a debt payoff plan with our free calculator.
-estimatedTime: 2 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

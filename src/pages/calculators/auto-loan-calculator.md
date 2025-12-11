@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Auto Loan Calculator
-description: Calculate your monthly car payment including principal, interest, trade-in value, down payment, sales tax, and fees. Compare different loan terms and see total interest paid.
-category: financial
-tags: ['auto loan', 'car loan', 'vehicle financing', 'monthly payment', 'car buying']
-featured: true
 calcType: auto-loan
-seoTitle: Free Auto Loan Calculator - Car Payment Calculator
-seoDescription: Calculate your monthly car payment with our free auto loan calculator. Include trade-in, down payment, taxes, and fees.
-estimatedTime: 3 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Recipe Scaler & Converter
-description: Scale recipes up or down for any number of servings. Convert between cooking measurements and temperature units (Fahrenheit/Celsius) for international recipes.
-category: food-cooking
-tags: ['recipe', 'cooking', 'baking', 'measurement conversion']
-featured: false
 calcType: recipe-scaler
-seoTitle: Free Recipe Scaler & Converter - Cooking Calculator
-seoDescription: Scale recipes and convert cooking measurements. Adjust servings and convert temperatures with our free recipe calculator.
-estimatedTime: 3 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

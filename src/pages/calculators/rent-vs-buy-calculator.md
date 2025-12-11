@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Rent vs Buy Calculator
-description: Compare the total cost of renting versus buying a home over time. Factor in mortgage, property taxes, maintenance, rent increases, investment returns, and opportunity costs.
-category: home-real-estate
-tags: ['rent vs buy', 'home buying', 'real estate', 'housing']
-featured: false
 calcType: rent-vs-buy
-seoTitle: Free Rent vs Buy Calculator - Should You Rent or Buy?
-seoDescription: Compare the true cost of renting vs buying a home. Factor in all costs and opportunity costs with our comprehensive calculator.
-estimatedTime: 5 minutes
-difficulty: Medium
 ---
 
 ## How to Use This Calculator

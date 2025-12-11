@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Home Affordability Calculator
-description: Calculate how much house you can afford based on income, debts, down payment, and interest rates. See your maximum home price and comfortable monthly payment.
-category: home-real-estate
-tags: ['home affordability', 'buying power', 'mortgage', 'home price', 'debt to income']
-featured: true
 calcType: home-affordability
-seoTitle: Free Home Affordability Calculator - How Much House Can I Afford?
-seoDescription: Calculate how much house you can afford based on your income and debts. Get your maximum home price with our free calculator.
-estimatedTime: 3 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

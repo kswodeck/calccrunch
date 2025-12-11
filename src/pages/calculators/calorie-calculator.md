@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Daily Calorie Calculator
-description: Calculate your daily calorie needs (TDEE) based on age, gender, weight, height, and activity level. Get personalized recommendations for weight loss, maintenance, or muscle gain. Save and share your results with automatic URL parameters.
-category: health-fitness
-tags: ['calories', 'nutrition', 'weight loss', 'TDEE', 'macros']
-featured: true
 calcType: calorie
-seoTitle: Free Daily Calorie Calculator - TDEE & Weight Loss Calculator
-seoDescription: Calculate your Total Daily Energy Expenditure (TDEE) with our free calorie calculator. Get personalized calorie targets for your fitness goals. Save and share your calculations with automatic URL parameters.
-estimatedTime: 2 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

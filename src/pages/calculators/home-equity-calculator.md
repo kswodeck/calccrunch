@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Home Equity Calculator
-description: Calculate your home equity based on current home value, remaining mortgage balance, and appreciation over time. Estimate borrowing power for HELOC or home equity loan.
-category: home-real-estate
-tags: ['home equity', 'HELOC', 'home value', 'mortgage balance']
-featured: false
 calcType: home-equity
-seoTitle: Free Home Equity Calculator - HELOC & Equity Loan Calculator
-seoDescription: Calculate your home equity and borrowing power for HELOC or home equity loans with our free calculator.
-estimatedTime: 2 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

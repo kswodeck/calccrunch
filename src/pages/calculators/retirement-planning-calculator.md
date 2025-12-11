@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Retirement Planning Calculator
-description: Plan your entire retirement journey from accumulation to distribution. Calculate investment growth, retirement income, and see if your money will last throughout retirement.
-category: financial
-tags: ['retirement planning', 'compound interest', 'retirement income', 'investment growth', '4% rule', 'financial independence']
-featured: true
 calcType: retirement-planning
-seoTitle: Free Retirement Planning Calculator - Investment Growth & Income Planner
-seoDescription: Plan your complete retirement journey with our comprehensive calculator. See investment growth, calculate retirement income, and ensure your money lasts. Free retirement planning tool.
-estimatedTime: 5 minutes
-difficulty: Advanced
 ---
 
 ## How to Use This Calculator

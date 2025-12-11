@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Password Generator
-description: Generate strong, secure passwords instantly with customizable length and character options. Create random passwords with uppercase, lowercase, numbers, and special symbols. Check password strength and get security recommendations.
-category: generators
-tags: ['password generator', 'secure password', 'random password', 'strong password', 'password creator', 'online security']
-featured: true
 calcType: password
-seoTitle: Free Password Generator - Create Strong, Secure Passwords Instantly
-seoDescription: Generate strong, random passwords with our free password generator. Customize length, include uppercase, lowercase, numbers, and symbols. Secure your accounts today.
-estimatedTime: 1 minute
-difficulty: Easy
 ---
 
 ## How to Use This Generator

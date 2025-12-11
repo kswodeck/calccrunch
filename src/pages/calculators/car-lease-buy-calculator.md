@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Car Lease vs Buy Calculator
-description: Compare the total cost of leasing versus buying a car. Factor in down payment, monthly payments, equity, depreciation, and end-of-lease options.
-category: financial
-tags: ['car lease', 'lease vs buy', 'auto financing']
-featured: false
 calcType: car-lease-buy
-seoTitle: Free Car Lease vs Buy Calculator - Should I Lease or Buy?
-seoDescription: Compare leasing vs buying a car. Calculate total costs and equity with our free lease vs buy calculator.
-estimatedTime: 5 minutes
-difficulty: Medium
 ---
 
 ## How to Use This Calculator

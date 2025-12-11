@@ -49,105 +49,6 @@
       ]
     },
     {
-      "id": "bmi-calculator",
-      "title": "BMI Calculator",
-      "slug": "bmi-calculator",
-      "description": "Calculate your Body Mass Index (BMI) and find your ideal weight range.",
-      "shortDescription": "Calculate your BMI and ideal weight",
-      "category": "health-fitness",
-      "tags": [
-        "BMI",
-        "body mass index",
-        "weight",
-        "health"
-      ],
-      "featured": true,
-      "popular": true,
-      "difficulty": "Easy",
-      "estimatedTime": "1 minute",
-      "icon": "❤️",
-      "seoTitle": "Free BMI Calculator",
-      "seoDescription": "Calculate your BMI instantly with our free calculator.",
-      "keywords": [
-        "BMI calculator",
-        "body mass index"
-      ],
-      "lastUpdated": "2025-11-06",
-      "uses": 0,
-      "rating": 0,
-      "affiliateHeadlines": [
-        "Smart Scale with BMI Tracking",
-        "Top-Rated Fitness Tracker Watch",
-        "Body Measurement Tape Set"
-      ],
-      "affiliateDescriptions": [
-        "Track your BMI progress automatically with this smart scale that syncs to your phone and monitors body composition trends over time.",
-        "Monitor your health metrics 24/7 with this comprehensive fitness tracker featuring heart rate, activity, and health insights.",
-        "Accurately measure body dimensions for tracking fitness progress with this professional-grade retractable measuring tape set."
-      ],
-      "affiliateLinks": [
-        "https://amzn.to/3LM6xiw",
-        "https://amzn.to/487cldM",
-        "https://amzn.to/4ppvFdr"
-      ],
-      "relatedCalculators": [
-        "calorie-calculator",
-        "body-fat-calculator",
-        "macro-calculator"
-      ]
-    },
-    {
-      "id": "loan-amortization-calculator",
-      "title": "Loan Amortization Calculator",
-      "slug": "loan-amortization-calculator",
-      "description": "View a complete loan payoff schedule with detailed breakdown of principal and interest payments over time. Visualize your loan amortization schedule.",
-      "shortDescription": "View complete loan payoff schedule",
-      "category": "financial",
-      "tags": [
-        "loan",
-        "amortization",
-        "payment schedule",
-        "interest",
-        "principal"
-      ],
-      "featured": true,
-      "popular": false,
-      "difficulty": "Easy",
-      "estimatedTime": "3 minutes",
-      "icon": "📊",
-      "seoTitle": "Free Loan Amortization Calculator with Payment Schedule",
-      "seoDescription": "Calculate your loan amortization schedule with our free calculator. See detailed monthly payments, principal, interest, and remaining balance.",
-      "keywords": [
-        "amortization calculator",
-        "loan schedule",
-        "loan payment schedule",
-        "amortization table"
-      ],
-      "lastUpdated": "2025-11-06",
-      "uses": 0,
-      "rating": 0,
-      "affiliateHeadlines": [
-        "Dave Ramsey's Debt-Free Guide",
-        "Financial Planning Software Suite",
-        "Debt Elimination Workbook"
-      ],
-      "affiliateDescriptions": [
-        "Accelerate your debt payoff with Dave Ramsey's proven baby steps system that has helped millions achieve financial freedom.",
-        "Manage all your loans and financial planning in one place with this comprehensive software suite featuring amortization schedules and payoff strategies.",
-        "Track multiple debts and create your personalized elimination plan with this hands-on workbook featuring payment trackers and motivational milestones."
-      ],
-      "affiliateLinks": [
-        "https://amzn.to/4oR3K6h",
-        "https://amzn.to/4a1wSmA",
-        "https://amzn.to/3M8U4p0"
-      ],
-      "relatedCalculators": [
-        "mortgage-payment-calculator",
-        "auto-loan-calculator",
-        "student-loan-calculator"
-      ]
-    },
-    {
       "id": "calorie-calculator",
       "title": "Daily Calorie Calculator",
       "slug": "calorie-calculator",
@@ -348,6 +249,105 @@
         "mortgage-payment-calculator",
         "debt-to-income-calculator",
         "rent-vs-buy-calculator"
+      ]
+    },
+    {
+      "id": "bmi-calculator",
+      "title": "BMI Calculator",
+      "slug": "bmi-calculator",
+      "description": "Calculate your Body Mass Index (BMI) and find your ideal weight range.",
+      "shortDescription": "Calculate your BMI and ideal weight",
+      "category": "health-fitness",
+      "tags": [
+        "BMI",
+        "body mass index",
+        "weight",
+        "health"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "❤️",
+      "seoTitle": "Free BMI Calculator",
+      "seoDescription": "Calculate your BMI instantly with our free calculator.",
+      "keywords": [
+        "BMI calculator",
+        "body mass index"
+      ],
+      "lastUpdated": "2025-11-06",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Smart Scale with BMI Tracking",
+        "Top-Rated Fitness Tracker Watch",
+        "Body Measurement Tape Set"
+      ],
+      "affiliateDescriptions": [
+        "Track your BMI progress automatically with this smart scale that syncs to your phone and monitors body composition trends over time.",
+        "Monitor your health metrics 24/7 with this comprehensive fitness tracker featuring heart rate, activity, and health insights.",
+        "Accurately measure body dimensions for tracking fitness progress with this professional-grade retractable measuring tape set."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/3LM6xiw",
+        "https://amzn.to/487cldM",
+        "https://amzn.to/4ppvFdr"
+      ],
+      "relatedCalculators": [
+        "calorie-calculator",
+        "body-fat-calculator",
+        "macro-calculator"
+      ]
+    },
+        {
+      "id": "loan-amortization-calculator",
+      "title": "Loan Amortization Calculator",
+      "slug": "loan-amortization-calculator",
+      "description": "View a complete loan payoff schedule with detailed breakdown of principal and interest payments over time. Visualize your loan amortization schedule.",
+      "shortDescription": "View complete loan payoff schedule",
+      "category": "financial",
+      "tags": [
+        "loan",
+        "amortization",
+        "payment schedule",
+        "interest",
+        "principal"
+      ],
+      "featured": true,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "📊",
+      "seoTitle": "Free Loan Amortization Calculator with Payment Schedule",
+      "seoDescription": "Calculate your loan amortization schedule with our free calculator. See detailed monthly payments, principal, interest, and remaining balance.",
+      "keywords": [
+        "amortization calculator",
+        "loan schedule",
+        "loan payment schedule",
+        "amortization table"
+      ],
+      "lastUpdated": "2025-11-06",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Dave Ramsey's Debt-Free Guide",
+        "Financial Planning Software Suite",
+        "Debt Elimination Workbook"
+      ],
+      "affiliateDescriptions": [
+        "Accelerate your debt payoff with Dave Ramsey's proven baby steps system that has helped millions achieve financial freedom.",
+        "Manage all your loans and financial planning in one place with this comprehensive software suite featuring amortization schedules and payoff strategies.",
+        "Track multiple debts and create your personalized elimination plan with this hands-on workbook featuring payment trackers and motivational milestones."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4oR3K6h",
+        "https://amzn.to/4a1wSmA",
+        "https://amzn.to/3M8U4p0"
+      ],
+      "relatedCalculators": [
+        "mortgage-payment-calculator",
+        "auto-loan-calculator",
+        "student-loan-calculator"
       ]
     },
     {
@@ -1445,6 +1445,60 @@
         "pet-name-generator",
         "username-generator",
         "fantasy-name-generator"
+      ]
+    },
+    {
+      "id": "lorem-ipsum-generator",
+      "title": "Lorem Ipsum Generator",
+      "slug": "lorem-ipsum-generator",
+      "description": "Generate placeholder text for your designs, websites, and documents. Choose from classic Lorem Ipsum, hipster ipsum, corporate ipsum, or other styles. Specify the number of paragraphs, sentences, or words you need. Perfect for designers, developers, and content creators working on mockups and prototypes.",
+      "shortDescription": "Generate placeholder text for designs & mockups",
+      "category": "generators",
+      "tags": [
+        "lorem ipsum",
+        "placeholder text",
+        "dummy text",
+        "filler text",
+        "design mockup",
+        "sample text"
+      ],
+      "featured": true,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "📝",
+      "seoTitle": "Free Lorem Ipsum Generator - Placeholder Text for Designs & Websites",
+      "seoDescription": "Generate Lorem Ipsum placeholder text instantly. Choose paragraphs, sentences, or words. Multiple styles available. Perfect for web design, mockups, and prototypes.",
+      "keywords": [
+        "lorem ipsum generator",
+        "placeholder text generator",
+        "dummy text",
+        "filler text generator",
+        "sample text",
+        "lipsum"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Web Design Fundamentals Book",
+        "UI/UX Design Course Guide",
+        "Graphic Design Software Subscription"
+      ],
+      "affiliateDescriptions": [
+        "Master modern web design principles including typography, layout, and responsive design with this comprehensive reference guide.",
+        "Learn professional UI/UX design workflows from wireframing to prototyping with industry-standard practices and real-world projects.",
+        "Access professional design tools for creating stunning layouts, mockups, and prototypes with this industry-leading creative software."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "uuid-generator",
+        "random-color-generator",
+        "username-generator"
       ]
     }
   ]

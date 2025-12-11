@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Student Loan Calculator
-description: Calculate student loan payments with multiple repayment plans including standard, graduated, extended, and income-driven options. Compare forgiveness programs and refinancing options.
-category: financial
-tags: ['student loan', 'education', 'loan repayment', 'forgiveness']
-featured: true
 calcType: student-loan
-seoTitle: Free Student Loan Calculator - Repayment Plans & Forgiveness
-seoDescription: Calculate student loan payments with different repayment plans. Compare options and estimate loan forgiveness with our free calculator.
-estimatedTime: 4 minutes
-difficulty: Medium
 ---
 
 ## How to Use This Calculator

@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Investment Income Goal Calculator
-description: Calculate how much you need to invest to replace your income or reach financial independence. Includes ROI, breakeven analysis, and multiple investment scenarios.
-category: financial
-tags: ['investment income', 'financial independence', 'ROI', 'breakeven', 'passive income', 'retirement planning']
-featured: true
 calcType: investment-income-goal
-seoTitle: Free Investment Income Goal Calculator - ROI & Breakeven Calculator
-seoDescription: Calculate how much to invest to replace your income and reach financial independence. Plan multiple investments with our comprehensive ROI and breakeven calculator.
-estimatedTime: 3 minutes
-difficulty: Medium
 ---
 
 ## How to Use This Calculator

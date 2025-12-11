@@ -74,6 +74,42 @@
         "https://amzn.to/3K8Gxx4"
       ]
     },
+        {
+      "id": "business-sales",
+      "name": "Business & Sales",
+      "nameShort": "Business",
+      "slug": "business-sales",
+      "description": "Calculate profit margins, ROI, break-even points, and pricing with our business tools.",
+      "longDescription": "Our business calculators help entrepreneurs and professionals make data-driven decisions. Calculate profit margins, ROI, break-even points, sales commissions, and more.",
+      "icon": "💼",
+      "color": "#4CAF50",
+      "order": 3,
+      "featured": true,
+      "calculatorCount": 3,
+      "seoTitle": "Business & Sales Calculators - Profit, ROI & Pricing Tools",
+      "seoDescription": "Free business calculators for profit margins, ROI, break-even analysis, and pricing. Make smarter business decisions.",
+      "keywords": [
+        "business calculator",
+        "profit calculator",
+        "ROI calculator",
+        "break even calculator"
+      ],
+      "affiliateHeadlines": [
+        "FIRE Movement Complete Guide",
+        "Passive Income Strategy Bible",
+        "Real Estate Investment Starter"
+      ],
+      "affiliateDescriptions": [
+        "Achieve financial independence with the complete FIRE playbook covering savings rates, investment strategies, and early retirement planning.",
+        "Build multiple streams of passive income with proven strategies for dividends, real estate, online business, and more.",
+        "Start your real estate investment journey with this beginner's guide to rental properties, REITs, and property analysis."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4a7YTsC",
+        "https://amzn.to/4raaFcg",
+        "https://amzn.to/487SXgS"
+      ]
+    },
     {
       "id": "health-fitness",
       "name": "Health & Fitness",
@@ -83,7 +119,7 @@
       "longDescription": "Our health and fitness calculators help you track your progress, plan your nutrition, and achieve your wellness goals. Calculate BMI, daily calories, macros, ideal weight, and more with our evidence-based tools.",
       "icon": "❤️",
       "color": "#EF5350",
-      "order": 3,
+      "order": 4,
       "featured": true,
       "calculatorCount": 3,
       "seoTitle": "Health & Fitness Calculators - BMI, Calorie & Macro Tools",
@@ -112,79 +148,6 @@
       ]
     },
     {
-      "id": "time-date",
-      "name": "Time & Date",
-      "slug": "time-date",
-      "description": "Calculate age, date differences, time zones, and more with our comprehensive time and date tools.",
-      "longDescription": "Our time and date calculators help you work with dates, times, and schedules. Calculate age, find date differences, convert time zones, count business days, and plan across time zones.",
-      "icon": "🕐",
-      "color": "#5A9FD4",
-      "order": 8,
-      "featured": false,
-      "calculatorCount": 1,
-      "seoTitle": "Time & Date Calculators - Age, Date Difference & Time Zone Tools",
-      "seoDescription": "Free time and date calculators including age calculator, date difference, time zone converter, and more. Simple and accurate.",
-      "keywords": [
-        "date calculator",
-        "age calculator",
-        "time calculator",
-        "time zone converter",
-        "date difference calculator"
-      ],
-      "affiliateHeadlines": [
-        "Project Management Planner",
-        "Productivity Method Bestseller",
-        "Desktop Calendar with Holidays"
-      ],
-      "affiliateDescriptions": [
-        "Master project timelines and deadline management with this comprehensive planner featuring Gantt charts and milestone tracking.",
-        "Transform your productivity with David Allen's revolutionary GTD method for managing tasks, projects, and deadlines effectively.",
-        "Never miss a deadline with this desktop calendar featuring all major holidays, business days counter, and project planning space."
-      ],
-      "affiliateLinks": [
-        "https://amzn.to/4idftcO",
-        "https://amzn.to/4icOyOj",
-        "https://amzn.to/49pjSah"
-      ]
-    },
-    {
-      "id": "math-conversions",
-      "name": "Math & Conversions",
-      "nameShort": "Conversions",
-      "slug": "math-conversions",
-      "description": "Convert units, calculate percentages, and solve mathematical problems with our comprehensive math tools.",
-      "longDescription": "From unit conversions to mathematical calculations, our tools make complex math simple. Convert lengths, weights, temperatures, calculate percentages, GPA, and more.",
-      "icon": "🔢",
-      "color": "#9C27B0",
-      "order": 5,
-      "featured": false,
-      "calculatorCount": 2,
-      "seoTitle": "Math & Conversion Calculators - Unit Converter & Math Tools",
-      "seoDescription": "Free math calculators and unit converters. Calculate percentages, convert units, find GPA, and solve math problems instantly.",
-      "keywords": [
-        "math calculator",
-        "unit converter",
-        "conversion calculator",
-        "percentage calculator",
-        "GPA calculator"
-      ],
-      "affiliateHeadlines": [
-        "College Success Study Guide",
-        "Student Planner & Grade Tracker",
-        "Test Prep Bundle Pack"
-      ],
-      "affiliateDescriptions": [
-        "Master effective study techniques and time management strategies that help top students maintain high GPAs throughout college.",
-        "Stay organized and track your grades all semester with this comprehensive academic planner featuring GPA calculators and goal setting.",
-        "Boost your test scores and overall GPA with proven test-taking strategies and practice materials for major standardized exams."
-      ],
-      "affiliateLinks": [
-        "https://amzn.to/4r38xTv",
-        "https://amzn.to/48o8Vof",
-        "https://amzn.to/47QcW4T"
-      ]
-    },
-    {
       "id": "generators",
       "name": "Random Generators",
       "nameShort": "Generators",
@@ -193,9 +156,9 @@
       "longDescription": "Our generators help spark creativity and solve naming challenges. Whether you need a business name, username, character name, team name, or creative writing prompts, our tools provide instant inspiration with customizable options for any project.",
       "icon": "✨",
       "color": "#FF4081",
-      "order": 6,
+      "order": 5,
       "featured": true,
-      "calculatorCount": 3,
+      "calculatorCount": 4,
       "seoTitle": "Name Generators & Idea Tools - Business, Username & Creative Generators",
       "seoDescription": "Free name generators for businesses, usernames, characters, teams, and more. Get creative ideas and unique names instantly with our generator tools.",
       "keywords": [
@@ -217,6 +180,43 @@
         "Unlock your creative potential with exercises and prompts designed to generate unique names, characters, and story ideas.",
         "Build a memorable brand with proven naming strategies, trademark guidance, and domain availability tips for your business.",
         "Master the art of creating engaging usernames, team names, and online identities that stand out across all platforms."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ]
+    },
+        {
+      "id": "math-conversions",
+      "name": "Math & Conversions",
+      "nameShort": "Conversions",
+      "slug": "math-conversions",
+      "description": "Convert units, calculate percentages, and solve mathematical problems with our comprehensive math tools.",
+      "longDescription": "From unit conversions to mathematical calculations, our tools make complex math simple. Convert lengths, weights, temperatures, calculate percentages, GPA, and more.",
+      "icon": "🔢",
+      "color": "#9C27B0",
+      "order": 6,
+      "featured": false,
+      "calculatorCount": 2,
+      "seoTitle": "Math & Conversion Calculators - Unit Converter & Math Tools",
+      "seoDescription": "Free math calculators and unit converters. Calculate percentages, convert units, find GPA, and solve math problems instantly.",
+      "keywords": [
+        "math calculator",
+        "unit converter",
+        "conversion calculator",
+        "percentage calculator",
+        "GPA calculator"
+      ],
+      "affiliateHeadlines": [
+        "College Success Study Guide",
+        "Student Planner & Grade Tracker",
+        "Test Prep Bundle Pack"
+      ],
+      "affiliateDescriptions": [
+        "Master effective study techniques and time management strategies that help top students maintain high GPAs throughout college.",
+        "Stay organized and track your grades all semester with this comprehensive academic planner featuring GPA calculators and goal setting.",
+        "Boost your test scores and overall GPA with proven test-taking strategies and practice materials for major standardized exams."
       ],
       "affiliateLinks": [
         "https://amzn.to/4r38xTv",
@@ -261,39 +261,39 @@
       ]
     },
     {
-      "id": "business-sales",
-      "name": "Business & Sales",
-      "nameShort": "Business",
-      "slug": "business-sales",
-      "description": "Calculate profit margins, ROI, break-even points, and pricing with our business tools.",
-      "longDescription": "Our business calculators help entrepreneurs and professionals make data-driven decisions. Calculate profit margins, ROI, break-even points, sales commissions, and more.",
-      "icon": "💼",
-      "color": "#4CAF50",
-      "order": 4,
+      "id": "time-date",
+      "name": "Time & Date",
+      "slug": "time-date",
+      "description": "Calculate age, date differences, time zones, and more with our comprehensive time and date tools.",
+      "longDescription": "Our time and date calculators help you work with dates, times, and schedules. Calculate age, find date differences, convert time zones, count business days, and plan across time zones.",
+      "icon": "🕐",
+      "color": "#5A9FD4",
+      "order": 8,
       "featured": false,
-      "calculatorCount": 3,
-      "seoTitle": "Business & Sales Calculators - Profit, ROI & Pricing Tools",
-      "seoDescription": "Free business calculators for profit margins, ROI, break-even analysis, and pricing. Make smarter business decisions.",
+      "calculatorCount": 1,
+      "seoTitle": "Time & Date Calculators - Age, Date Difference & Time Zone Tools",
+      "seoDescription": "Free time and date calculators including age calculator, date difference, time zone converter, and more. Simple and accurate.",
       "keywords": [
-        "business calculator",
-        "profit calculator",
-        "ROI calculator",
-        "break even calculator"
+        "date calculator",
+        "age calculator",
+        "time calculator",
+        "time zone converter",
+        "date difference calculator"
       ],
       "affiliateHeadlines": [
-        "FIRE Movement Complete Guide",
-        "Passive Income Strategy Bible",
-        "Real Estate Investment Starter"
+        "Project Management Planner",
+        "Productivity Method Bestseller",
+        "Desktop Calendar with Holidays"
       ],
       "affiliateDescriptions": [
-        "Achieve financial independence with the complete FIRE playbook covering savings rates, investment strategies, and early retirement planning.",
-        "Build multiple streams of passive income with proven strategies for dividends, real estate, online business, and more.",
-        "Start your real estate investment journey with this beginner's guide to rental properties, REITs, and property analysis."
+        "Master project timelines and deadline management with this comprehensive planner featuring Gantt charts and milestone tracking.",
+        "Transform your productivity with David Allen's revolutionary GTD method for managing tasks, projects, and deadlines effectively.",
+        "Never miss a deadline with this desktop calendar featuring all major holidays, business days counter, and project planning space."
       ],
       "affiliateLinks": [
-        "https://amzn.to/4a7YTsC",
-        "https://amzn.to/4raaFcg",
-        "https://amzn.to/487SXgS"
+        "https://amzn.to/4idftcO",
+        "https://amzn.to/4icOyOj",
+        "https://amzn.to/49pjSah"
       ]
     },
     {

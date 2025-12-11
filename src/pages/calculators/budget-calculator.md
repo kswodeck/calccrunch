@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Budget Calculator
-description: Create a comprehensive monthly budget with income, expenses, savings, and debt payments. Track spending by category and see where your money goes with the 50/30/20 rule.
-category: financial
-tags: ['budget', 'expenses', 'income', 'savings', '50/30/20']
-featured: true
 calcType: budget
-seoTitle: Free Budget Calculator - Monthly Budget Planner
-seoDescription: Create a monthly budget with our free calculator. Track income, expenses, and savings using the 50/30/20 rule.
-estimatedTime: 5 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

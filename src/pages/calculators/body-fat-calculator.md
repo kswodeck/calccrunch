@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Body Fat Percentage Calculator
-description: Calculate your body fat percentage using multiple methods including Navy method, skinfold calipers, and body measurements. Track lean mass and fat mass over time.
-category: health-fitness
-tags: ['body fat', 'body composition', 'lean mass', 'fitness']
-featured: true
 calcType: body-fat
-seoTitle: Free Body Fat Calculator - Body Fat Percentage Calculator
-seoDescription: Calculate your body fat percentage with multiple measurement methods. Track body composition with our free calculator.
-estimatedTime: 3 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

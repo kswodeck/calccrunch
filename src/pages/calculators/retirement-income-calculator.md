@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Retirement Income Calculator
-description: Plan your retirement income and see how long your savings will last. Calculate sustainable withdrawal rates, account for inflation, and visualize your retirement portfolio over time.
-category: financial
-tags: ['retirement', 'income', 'withdrawal', '4% rule', 'retirement planning']
-featured: true
 calcType: retirement-income
-seoTitle: Free Retirement Income Calculator - Withdrawal & Drawdown Planner
-seoDescription: Calculate how long your retirement savings will last. Plan sustainable withdrawals with our free retirement income calculator.
-estimatedTime: 4 minutes
-difficulty: Medium
 ---
 
 ## How to Use This Calculator

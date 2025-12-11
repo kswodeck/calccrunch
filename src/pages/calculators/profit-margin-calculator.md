@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Profit Margin Calculator
-description: Calculate profit margin, markup percentage, gross profit, and net profit. Compare margin vs markup and see the impact of costs on profitability.
-category: business-sales
-tags: ['profit margin', 'markup', 'gross profit', 'net profit', 'pricing']
-featured: false
 calcType: profit-margin
-seoTitle: Free Profit Margin Calculator - Margin & Markup Calculator
-seoDescription: Calculate profit margin and markup percentage. Optimize pricing with our free profit calculator.
-estimatedTime: 2 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

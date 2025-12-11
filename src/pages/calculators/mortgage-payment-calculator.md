@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Mortgage Payment Calculator
-description: Calculate your monthly mortgage payments including principal, interest, taxes, and insurance (PITI). Free, accurate, and easy to use.
-category: financial
-tags: ['mortgage', 'home loan', 'monthly payment', 'PITI', 'home buying']
-featured: true
 calcType: mortgage
-seoTitle: Free Mortgage Payment Calculator with Taxes & Insurance
-seoDescription: Calculate your monthly mortgage payment with our free calculator. Includes principal, interest, property taxes, and insurance.
-estimatedTime: 2 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Compound Interest Calculator
-description: Calculate compound interest and see how your money grows over time. Visualize the power of compounding with detailed year-by-year breakdown and interactive charts.
-category: financial
-tags: ['compound interest', 'investment', 'savings', 'growth', 'retirement']
-featured: false
 calcType: compound-interest
-seoTitle: Free Compound Interest Calculator - Investment Growth Calculator
-seoDescription: Calculate compound interest on your investments and savings. See how your money grows over time with our free compound interest calculator.
-estimatedTime: 3 minutes
-difficulty: Medium
 ---
 
 ## How to Use This Calculator

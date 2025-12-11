@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: GPA Calculator
-description: Calculate your cumulative GPA with weighted or unweighted grades. Add multiple classes with credit hours and letter grades to see your grade point average.
-category: math-conversions
-tags: ['GPA', 'grades', 'education', 'grade point average', 'academic']
-featured: true
 calcType: gpa
-seoTitle: Free GPA Calculator - Grade Point Average Calculator
-seoDescription: Calculate your GPA with multiple classes and credit hours. Track weighted and unweighted grades with our free calculator.
-estimatedTime: 3 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

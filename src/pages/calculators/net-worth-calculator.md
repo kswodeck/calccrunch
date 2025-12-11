@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Net Worth Calculator
-description: Calculate your total net worth by adding up all assets (home, investments, cash, vehicles) and subtracting all liabilities (mortgages, loans, credit cards). Track wealth over time.
-category: financial
-tags: ['net worth', 'assets', 'liabilities', 'wealth', 'personal finance']
-featured: true
 calcType: net-worth
-seoTitle: Free Net Worth Calculator - Assets vs Liabilities
-seoDescription: Calculate your net worth by tracking all assets and liabilities. Monitor your wealth over time with our free calculator.
-estimatedTime: 5 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator

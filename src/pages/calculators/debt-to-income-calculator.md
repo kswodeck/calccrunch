@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Debt-to-Income Ratio Calculator
-description: Calculate your debt-to-income (DTI) ratio for mortgage qualification. Include all monthly debt payments and gross income to see if you meet lender requirements.
-category: financial
-tags: ['DTI', 'debt-to-income', 'mortgage qualification', 'lending']
-featured: false
 calcType: debt-to-income
-seoTitle: Free Debt-to-Income Calculator - DTI Ratio for Mortgage
-seoDescription: Calculate your debt-to-income ratio for mortgage approval. See if you meet lender requirements with our free DTI calculator.
-estimatedTime: 3 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator
