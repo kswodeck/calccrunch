@@ -28,7 +28,7 @@ const totalCalculators = calculatorsData?.calculators?.length;
       <!-- Desktop Navigation -->
       <ul class="nav-menu">
         {
-          categoriesData?.categories?.map((cat) =>
+          categoriesData?.categories?.slice(0, 3)?.map((cat) =>
             cat?.calculatorCount >= 3 ? (
               <li class="nav-item">
                 <a href={`/categories/${cat?.slug}`} class="nav-link">

@@ -492,7 +492,63 @@
       "relatedCalculators": [
         "age-calculator",
         "hours-calculator",
-        "retirement-date-calculator"
+        "retirement-date-calculator",
+        "pto-calculator"
+      ]
+    },
+    {
+      "id": "pto-calculator",
+      "title": "PTO Calculator",
+      "slug": "pto-calculator",
+      "description": "Calculate and plan your paid time off (PTO) accrual. Project future balances, find out how long it takes to earn target hours, and calculate the monetary value of your PTO. Supports multiple accrual types including per pay period, monthly, annually frontloaded, and hourly-based accrual.",
+      "shortDescription": "Plan & calculate paid time off accrual",
+      "category": "time-date",
+      "tags": [
+        "PTO",
+        "paid time off",
+        "vacation days",
+        "accrual calculator",
+        "time off planning",
+        "vacation planning",
+        "leave calculator"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "🏖️",
+      "seoTitle": "Free PTO Calculator - Paid Time Off Accrual Calculator",
+      "seoDescription": "Calculate your PTO balance and accrual with our free PTO calculator. Project future balances, plan vacation time, and calculate the monetary value of your paid time off.",
+      "keywords": [
+        "PTO calculator",
+        "paid time off calculator",
+        "vacation accrual calculator",
+        "PTO accrual",
+        "vacation days calculator",
+        "time off calculator"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Employee Handbook & HR Essentials",
+        "Work-Life Balance Planner",
+        "Vacation Planning Guide"
+      ],
+      "affiliateDescriptions": [
+        "Comprehensive HR guide covering PTO policies, leave management, and employee benefits administration for managers and HR professionals.",
+        "Plan your time off strategically with this planner featuring work-life balance strategies, vacation budgeting, and scheduling tools.",
+        "Ultimate vacation planning resource with destination guides, budget calculators, and tips for maximizing your paid time off."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "business-days-calculator",
+        "hours-calculator",
+        "salary-calculator"
       ]
     },
     {

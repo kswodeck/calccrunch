@@ -74,7 +74,7 @@
         "https://amzn.to/3K8Gxx4"
       ]
     },
-        {
+    {
       "id": "business-sales",
       "name": "Business & Sales",
       "nameShort": "Business",
@@ -187,7 +187,7 @@
         "https://amzn.to/47QcW4T"
       ]
     },
-        {
+    {
       "id": "math-conversions",
       "name": "Math & Conversions",
       "nameShort": "Conversions",
@@ -270,7 +270,7 @@
       "color": "#5A9FD4",
       "order": 8,
       "featured": false,
-      "calculatorCount": 1,
+      "calculatorCount": 2,
       "seoTitle": "Time & Date Calculators - Age, Date Difference & Time Zone Tools",
       "seoDescription": "Free time and date calculators including age calculator, date difference, time zone converter, and more. Simple and accurate.",
       "keywords": [
