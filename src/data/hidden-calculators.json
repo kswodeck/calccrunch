@@ -401,60 +401,6 @@
       ]
     },
     {
-      "id": "random-color-generator",
-      "title": "Random Color Generator",
-      "slug": "random-color-generator",
-      "description": "Generate random colors with HEX, RGB, and HSL values. Create color palettes, find complementary colors, and check accessibility contrast ratios. Perfect for designers, developers, and artists looking for color inspiration. Copy color codes instantly for use in your projects.",
-      "shortDescription": "Generate random colors with HEX, RGB & HSL codes",
-      "category": "generators",
-      "tags": [
-        "color generator",
-        "random color",
-        "hex color",
-        "RGB color",
-        "color palette",
-        "color picker"
-      ],
-      "featured": false,
-      "popular": false,
-      "difficulty": "Easy",
-      "estimatedTime": "1 minute",
-      "icon": "🎨",
-      "seoTitle": "Free Random Color Generator - HEX, RGB & HSL Color Codes",
-      "seoDescription": "Generate random colors with HEX, RGB, and HSL codes. Create color palettes and check contrast ratios. Free color generator for designers and developers.",
-      "keywords": [
-        "random color generator",
-        "color generator",
-        "hex color generator",
-        "RGB generator",
-        "color palette generator",
-        "color picker"
-      ],
-      "lastUpdated": "2025-06-10",
-      "uses": 0,
-      "rating": 0,
-      "affiliateHeadlines": [
-        "Color Theory Design Book",
-        "Professional Pantone Color Guide",
-        "Digital Art Tablet for Designers"
-      ],
-      "affiliateDescriptions": [
-        "Master color theory fundamentals with this essential guide covering color psychology, harmonies, and practical applications in design.",
-        "The industry-standard color reference guide with thousands of Pantone colors for accurate color matching across print and digital.",
-        "Create stunning digital art and designs with this professional drawing tablet featuring pressure sensitivity and color accuracy."
-      ],
-      "affiliateLinks": [
-        "https://amzn.to/4r38xTv",
-        "https://amzn.to/48o8Vof",
-        "https://amzn.to/47QcW4T"
-      ],
-      "relatedCalculators": [
-        "lorem-ipsum-generator",
-        "uuid-generator",
-        "random-number-generator"
-      ]
-    },
-    {
       "id": "uuid-generator",
       "title": "UUID Generator",
       "slug": "uuid-generator",
