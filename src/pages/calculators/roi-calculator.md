@@ -455,7 +455,7 @@ calcType: roi
     <p class="form-help" style="margin-bottom: 1rem;">Model best, expected, and worst case scenarios</p>
     <div class="scenario-grid">
       <div class="scenario-column">
-        <h4 style="color: #ef4444;">🔻 Worst Case</h4>
+        <h4 style="color: var(--color-error);">🔻 Worst Case</h4>
         <div class="form-group">
           <label for="worst-return">Final Value</label>
           <div class="input-group">
@@ -472,7 +472,7 @@ calcType: roi
         </div>
       </div>
       <div class="scenario-column expected">
-        <h4 style="color: #3b82f6;">📊 Expected</h4>
+        <h4 style="color: var(--color-light-blue);">📊 Expected</h4>
         <div class="form-group">
           <label for="expected-return">Final Value</label>
           <div class="input-group">
@@ -489,7 +489,7 @@ calcType: roi
         </div>
       </div>
       <div class="scenario-column">
-        <h4 style="color: #10b981;">🔺 Best Case</h4>
+        <h4 style="color: var(--color-success);">🔺 Best Case</h4>
         <div class="form-group">
           <label for="best-return">Final Value</label>
           <div class="input-group">
@@ -556,7 +556,7 @@ calcType: roi
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>💰 ROI Formulas Explained</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Basic ROI:</strong> (Final Value - Initial Cost) / Initial Cost × 100</li>
@@ -567,7 +567,7 @@ calcType: roi
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>📈 Understanding Your Results</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Total ROI:</strong> Your overall return as a percentage of investment</li>
@@ -578,7 +578,7 @@ calcType: roi
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>💡 ROI Benchmarks by Investment Type</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Stock Market (S&P 500):</strong> ~10% average annual return (7% after inflation)</li>
@@ -589,7 +589,7 @@ calcType: roi
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
+<div class="info-box" style="background: var(--color-highlight-red); border-left-color: var(--color-error);">
   <h4>⚠️ Important Considerations</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Time Value of Money:</strong> $100 today is worth more than $100 in 5 years</li>
@@ -600,7 +600,7 @@ calcType: roi
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Calculation</h4>
   <p>
     Your calculation is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your ROI analysis, 
@@ -647,7 +647,7 @@ calcType: roi
 
   .mode-btn.active {
     background: var(--color-accent-orange);
-    color: var(--color-white);
+    color: #FFFFFF;
     box-shadow: var(--shadow-sm);
   }
 
@@ -664,7 +664,7 @@ calcType: roi
     align-items: center;
     padding: 1.25rem 1rem;
     border: 2px solid var(--color-gray);
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius);
     cursor: pointer;
     transition: all var(--transition-fast);
@@ -738,15 +738,15 @@ calcType: roi
   }
 
   .scenario-column {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     padding: 1rem;
     border-radius: var(--border-radius);
     border: 2px solid #e5e7eb;
   }
 
   .scenario-column.expected {
-    border-color: #3b82f6;
-    background: #eff6ff;
+    border-color: var(--color-light-blue);
+    background: var(--color-highlight-blue);
   }
 
   .scenario-column h4 {
@@ -756,7 +756,7 @@ calcType: roi
   }
 
   .comparison-row {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border: 2px solid #e5e7eb;
     border-radius: 8px;
     padding: 1.5rem;
@@ -794,8 +794,8 @@ calcType: roi
   }
 
   .remove-comparison-btn:hover {
-    color: #c62828;
-    background: #ffebee;
+    color: var(--color-error);
+    background: var(--color-highlight-red);
     border-radius: 4px;
   }
 
@@ -815,7 +815,7 @@ calcType: roi
   }
 
   .roi-card {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.25rem;
     text-align: center;
@@ -873,7 +873,7 @@ calcType: roi
 
   /* ROI Gauge */
   .roi-gauge-container {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin: 1.5rem 0;
@@ -906,7 +906,7 @@ calcType: roi
     position: absolute;
     width: 140px;
     height: 140px;
-    background: white;
+    background: var(--color-white);
     border-radius: 50%;
     top: 30px;
     left: 30px;
@@ -937,7 +937,7 @@ calcType: roi
 
   /* Timeline Chart */
   .timeline-chart {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin: 1.5rem 0;
@@ -998,7 +998,7 @@ calcType: roi
   .comparison-table {
     width: 100%;
     border-collapse: collapse;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     overflow: hidden;
   }
@@ -1024,13 +1024,13 @@ calcType: roi
   }
 
   .comparison-table tbody tr:hover {
-    background: #f9fafb;
+    background: var(--color-surface-neutral);
   }
 
   .comparison-table .best-value {
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
     font-weight: 700;
-    color: #10b981;
+    color: var(--color-success);
   }
 
   /* Scenario Analysis Results */
@@ -1083,7 +1083,7 @@ calcType: roi
   .roi-insights {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -1104,22 +1104,22 @@ calcType: roi
   }
 
   .insight-card.insight-success {
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
     border-color: #86efac;
   }
 
   .insight-card.insight-info {
-    background: #eff6ff;
+    background: var(--color-highlight-blue);
     border-color: #93c5fd;
   }
 
   .insight-card.insight-warning {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     border-color: #fcd34d;
   }
 
   .insight-card.insight-danger {
-    background: #fef2f2;
+    background: var(--color-highlight-red);
     border-color: #fca5a5;
   }
 
@@ -1132,13 +1132,13 @@ calcType: roi
   .insight-content h5 {
     margin: 0 0 0.5rem 0;
     font-size: 1rem;
-    color: #111827;
+    color: var(--color-black);
   }
 
   .insight-content p {
     margin: 0;
     font-size: 0.9rem;
-    color: #4b5563;
+    color: var(--color-gray-dark);
   }
 
   @media (max-width: 768px) {

@@ -244,7 +244,7 @@ calcType: password
   </p>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>⚡ Password Strength Levels</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Weak:</strong> Less than 8 characters or limited character types</li>
@@ -255,7 +255,7 @@ calcType: password
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>🛡️ Password Security Tips</h4>
   <p>
     Never reuse passwords across multiple accounts. Consider using a password manager to store your 
@@ -264,7 +264,7 @@ calcType: password
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Settings</h4>
   <p>
     Your password preferences are automatically saved in the URL. You can <strong>bookmark this page</strong> 
@@ -368,7 +368,7 @@ calcType: password
   .preset-btn.active {
     background: var(--color-accent-orange);
     border-color: var(--color-accent-orange);
-    color: var(--color-white);
+    color: #FFFFFF;
   }
   
   /* Character Type Cards */
@@ -464,7 +464,7 @@ calcType: password
   .toggle-advanced-btn.active {
     background: var(--color-primary-blue);
     border-color: var(--color-primary-blue);
-    color: var(--color-white);
+    color: #FFFFFF;
   }
   
   .toggle-icon {
@@ -681,7 +681,7 @@ calcType: password
   
   /* Strength Meter */
   .strength-section {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -707,10 +707,10 @@ calcType: password
     border-radius: 20px;
   }
   
-  .strength-label.weak { background: #FEE2E2; color: #DC2626; }
-  .strength-label.fair { background: #FEF3C7; color: #D97706; }
+  .strength-label.weak { background: var(--color-highlight-red); color: var(--color-error); }
+  .strength-label.fair { background: var(--color-highlight-yellow); color: #D97706; }
   .strength-label.good { background: #FEF9C3; color: #CA8A04; }
-  .strength-label.strong { background: #D1FAE5; color: #059669; }
+  .strength-label.strong { background: var(--color-highlight-green); color: var(--color-success); }
   .strength-label.very-strong { background: #DCFCE7; color: #16A34A; }
   
   .strength-bar-container {
@@ -763,7 +763,7 @@ calcType: password
   
   /* Character Breakdown */
   .breakdown-section {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -835,7 +835,7 @@ calcType: password
   }
   
   .crack-time-section h4 {
-    color: #94A3B8;
+    color: var(--color-gray);
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
   }
@@ -850,7 +850,7 @@ calcType: password
   
   .crack-time-note {
     font-size: 0.8rem;
-    color: #94A3B8;
+    color: var(--color-gray);
   }
   
   /* Multiple Passwords List */
@@ -904,7 +904,7 @@ calcType: password
   
   /* Entropy Visualization */
   .entropy-visual {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     border: 1px solid var(--color-gray);

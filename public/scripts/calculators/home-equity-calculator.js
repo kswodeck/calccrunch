@@ -484,11 +484,11 @@
           <div class="summary-card-icon">🏠</div>
           <div class="summary-card-value">${formatCurrency(homeValue)}</div>
           <div class="summary-card-label">Home Value</div>
-          ${appreciationGain > 0 ? `<div class="summary-card-note" style="color: #4CAF50;">+${formatCurrency(appreciationGain)} since purchase</div>` : ''}
+          ${appreciationGain > 0 ? `<div class="summary-card-note" style="color: var(--color-success);">+${formatCurrency(appreciationGain)} since purchase</div>` : ''}
         </div>
         <div class="summary-card">
           <div class="summary-card-icon">💳</div>
-          <div class="summary-card-value" style="color: #F44336;">${formatCurrency(totalDebt)}</div>
+          <div class="summary-card-value" style="color: var(--color-error);">${formatCurrency(totalDebt)}</div>
           <div class="summary-card-label">Total Debt</div>
           <div class="summary-card-note">All liens combined</div>
         </div>
@@ -500,7 +500,7 @@
         </div>
         <div class="summary-card">
           <div class="summary-card-icon">💰</div>
-          <div class="summary-card-value" style="color: #4CAF50;">${formatCurrency(currentEquity)}</div>
+          <div class="summary-card-value" style="color: var(--color-success);">${formatCurrency(currentEquity)}</div>
           <div class="summary-card-label">Home Equity</div>
           <div class="summary-card-note">${equityPercent.toFixed(1)}% of home value</div>
         </div>
@@ -728,7 +728,7 @@
     const resultDiv = document.getElementById('equity-result');
     if (resultDiv) {
       resultDiv.innerHTML = `
-        <div class="alert alert-error" style="background: #FFEBEE; border: 1px solid #EF5350; padding: 1rem; border-radius: 8px; color: #C62828;">
+        <div class="alert alert-error" style="background: var(--color-highlight-red); border: 1px solid var(--color-error); padding: 1rem; border-radius: 8px; color: var(--color-error);">
           <strong>Error:</strong> ${message}
         </div>
       `;

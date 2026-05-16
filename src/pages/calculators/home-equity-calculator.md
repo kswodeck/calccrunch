@@ -322,7 +322,7 @@ calcType: home-equity
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F5E9; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>💰 Ways to Build Equity</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Pay down mortgage:</strong> Each payment reduces principal and builds equity</li>
@@ -333,7 +333,7 @@ calcType: home-equity
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>🔑 HELOC vs. Home Equity Loan</h4>
   <p><strong>HELOC (Home Equity Line of Credit):</strong></p>
   <ul style="margin: 10px 0; padding-left: 20px;">
@@ -351,7 +351,7 @@ calcType: home-equity
   </ul>
 </div>
 
-<div class="info-box" style="background: #FEF3C7; border-left-color: #F59E0B;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>⚠️ Important Considerations</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Your home is collateral:</strong> Failure to repay can result in foreclosure</li>
@@ -362,7 +362,7 @@ calcType: home-equity
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Calculation</h4>
   <p>
     Your equity calculation is automatically saved in the URL. You can <strong>bookmark this page</strong> to track your equity over time, 
@@ -431,7 +431,7 @@ calcType: home-equity
   .preview-item {
     padding: var(--space-md);
     border-radius: var(--border-radius);
-    background: white;
+    background: var(--color-white);
   }
 
   .preview-label {
@@ -451,11 +451,11 @@ calcType: home-equity
   }
 
   .debt-preview .preview-value {
-    color: #F44336;
+    color: var(--color-error);
   }
 
   .equity-preview-item .preview-value {
-    color: #4CAF50;
+    color: var(--color-success);
   }
 
   .ltv-preview .preview-value {
@@ -463,15 +463,15 @@ calcType: home-equity
   }
 
   .ltv-preview .preview-value.low {
-    color: #4CAF50;
+    color: var(--color-success);
   }
 
   .ltv-preview .preview-value.medium {
-    color: #FF9800;
+    color: var(--color-warning);
   }
 
   .ltv-preview .preview-value.high {
-    color: #F44336;
+    color: var(--color-error);
   }
 
   /* Results Styles */
@@ -494,7 +494,7 @@ calcType: home-equity
     font-size: 4rem;
     font-weight: 800;
     font-family: var(--font-primary);
-    color: #4CAF50;
+    color: var(--color-success);
     margin-bottom: var(--space-sm);
   }
 
@@ -510,8 +510,8 @@ calcType: home-equity
     border-radius: 20px;
     font-weight: 600;
     font-size: var(--text-base);
-    background: #E8F5E9;
-    color: #2E7D32;
+    background: var(--color-highlight-green);
+    color: var(--color-success);
   }
 
   /* Summary Cards */
@@ -557,7 +557,7 @@ calcType: home-equity
 
   /* LTV Meter */
   .ltv-analysis {
-    background: white;
+    background: var(--color-white);
     padding: var(--space-xl);
     border-radius: var(--border-radius-lg);
     margin: var(--space-2xl) 0;
@@ -626,9 +626,9 @@ calcType: home-equity
     font-weight: 600;
   }
 
-  .ltv-zone.safe { color: #4CAF50; flex: 0.6; }
-  .ltv-zone.moderate { color: #FF9800; flex: 0.2; }
-  .ltv-zone.risky { color: #F44336; flex: 0.2; }
+  .ltv-zone.safe { color: var(--color-success); flex: 0.6; }
+  .ltv-zone.moderate { color: var(--color-warning); flex: 0.2; }
+  .ltv-zone.risky { color: var(--color-error); flex: 0.2; }
 
   /* Borrowing Power */
   .borrowing-section {
@@ -640,7 +640,7 @@ calcType: home-equity
   }
 
   .borrowing-section h4 {
-    color: #1565C0;
+    color: var(--color-primary-blue);
     margin-bottom: var(--space-lg);
   }
 
@@ -651,7 +651,7 @@ calcType: home-equity
   }
 
   .borrowing-card {
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius);
     padding: var(--space-lg);
     text-align: center;
@@ -672,7 +672,7 @@ calcType: home-equity
     font-size: var(--text-2xl);
     font-weight: 700;
     font-family: var(--font-primary);
-    color: #1565C0;
+    color: var(--color-primary-blue);
   }
 
   .borrowing-note {
@@ -684,7 +684,7 @@ calcType: home-equity
 
   /* Equity Growth Chart */
   .growth-section {
-    background: white;
+    background: var(--color-white);
     padding: var(--space-xl);
     border-radius: var(--border-radius-lg);
     margin: var(--space-2xl) 0;
@@ -827,7 +827,7 @@ calcType: home-equity
   }
 
   .projection-table tr.current-row {
-    background: #E8F5E9;
+    background: var(--color-highlight-green);
     font-weight: 600;
   }
 
@@ -841,7 +841,7 @@ calcType: home-equity
   }
 
   .appreciation-section h4 {
-    color: #E65100;
+    color: var(--color-warning);
     margin-bottom: var(--space-lg);
   }
 
@@ -852,7 +852,7 @@ calcType: home-equity
   }
 
   .appreciation-card {
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius);
     padding: var(--space-lg);
     text-align: center;
@@ -867,12 +867,12 @@ calcType: home-equity
   .appreciation-value {
     font-size: var(--text-xl);
     font-weight: 700;
-    color: #E65100;
+    color: var(--color-warning);
   }
 
   .appreciation-gain {
     font-size: var(--text-xs);
-    color: #4CAF50;
+    color: var(--color-success);
     margin-top: var(--space-xs);
   }
 
@@ -904,22 +904,22 @@ calcType: home-equity
   }
 
   .insight-card.insight-success {
-    background: #F1F8E9;
+    background: var(--color-highlight-green);
     border-color: #C5E1A5;
   }
 
   .insight-card.insight-warning {
-    background: #FFF8E1;
+    background: var(--color-highlight-yellow);
     border-color: #FFE082;
   }
 
   .insight-card.insight-info {
-    background: #E3F2FD;
+    background: var(--color-highlight-blue);
     border-color: #90CAF9;
   }
 
   .insight-card.insight-danger {
-    background: #FFEBEE;
+    background: var(--color-highlight-red);
     border-color: #EF9A9A;
   }
 

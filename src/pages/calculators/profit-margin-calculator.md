@@ -275,7 +275,7 @@ calcType: profit-margin
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>💰 Key Profitability Metrics Explained</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Gross Profit Margin:</strong> (Revenue - COGS) ÷ Revenue × 100. Shows profitability after direct costs.</li>
@@ -286,7 +286,7 @@ calcType: profit-margin
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>⚖️ Margin vs Markup: Key Difference</h4>
   <p>
     <strong>Margin</strong> is based on revenue (selling price), while <strong>Markup</strong> is based on cost.
@@ -301,7 +301,7 @@ calcType: profit-margin
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>📈 Industry Benchmark Profit Margins</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Software/SaaS:</strong> 70-85% gross, 15-25% net</li>
@@ -315,7 +315,7 @@ calcType: profit-margin
   </p>
 </div>
 
-<div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
+<div class="info-box" style="background: var(--color-highlight-red); border-left-color: var(--color-error);">
   <h4>⚠️ Important Considerations</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li>High revenue with low margins may still be less profitable than low revenue with high margins</li>
@@ -326,7 +326,7 @@ calcType: profit-margin
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Calculation</h4>
   <p>
     Your inputs are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
@@ -343,8 +343,8 @@ calcType: profit-margin
   }
   
   .btn-success {
-    background: #10b981 !important;
-    border-color: #10b981 !important;
+    background: var(--color-success) !important;
+    border-color: var(--color-success) !important;
   }
   
   .time-period-tabs {
@@ -359,7 +359,7 @@ calcType: profit-margin
   .time-period-tab {
     padding: 0.5rem 1rem;
     border: 2px solid var(--color-gray);
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius);
     font-size: 0.875rem;
     font-weight: 600;
@@ -392,7 +392,7 @@ calcType: profit-margin
   
   .frequency-note-inline {
     font-size: 0.75rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
     font-style: italic;
   }
   
@@ -427,7 +427,7 @@ calcType: profit-margin
   
   .mode-btn.active {
     background: var(--color-accent-orange);
-    color: var(--color-white);
+    color: #FFFFFF;
     box-shadow: var(--shadow-sm);
   }
   
@@ -468,7 +468,7 @@ calcType: profit-margin
   .scenario-btn.active {
     background: var(--color-accent-orange);
     border-color: var(--color-accent-orange);
-    color: var(--color-white);
+    color: #FFFFFF;
   }
   
   /* Results Styling */
@@ -478,33 +478,33 @@ calcType: profit-margin
     padding: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 12px;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-left: 4px solid #10b981;
   }
   
   .profit-status.status-excellent {
-    background: #f0fdf4;
-    border-left-color: #10b981;
+    background: var(--color-highlight-green);
+    border-left-color: var(--color-success);
   }
   
   .profit-status.status-good {
-    background: #eff6ff;
-    border-left-color: #3b82f6;
+    background: var(--color-highlight-blue);
+    border-left-color: var(--color-light-blue);
   }
   
   .profit-status.status-moderate {
-    background: #fef3c7;
-    border-left-color: #f59e0b;
+    background: var(--color-highlight-yellow);
+    border-left-color: var(--color-warning);
   }
   
   .profit-status.status-poor {
-    background: #fef2f2;
-    border-left-color: #ef4444;
+    background: var(--color-highlight-red);
+    border-left-color: var(--color-error);
   }
   
   .profit-status.status-loss {
-    background: #fef2f2;
-    border-left-color: #dc2626;
+    background: var(--color-highlight-red);
+    border-left-color: var(--color-error);
   }
   
   .margin-cards {
@@ -515,7 +515,7 @@ calcType: profit-margin
   }
   
   .margin-card {
-    background: white;
+    background: var(--color-white);
     padding: 1.5rem;
     border-radius: 12px;
     text-align: center;
@@ -547,22 +547,22 @@ calcType: profit-margin
   }
   
   .margin-card-value.positive {
-    color: #10b981;
+    color: var(--color-success);
   }
   
   .margin-card-value.negative {
-    color: #ef4444;
+    color: var(--color-error);
   }
   
   .margin-card-label {
     font-size: 0.875rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
     margin-top: 0.5rem;
   }
   
   .margin-card-amount {
     font-size: 0.875rem;
-    color: #374151;
+    color: var(--color-gray-dark);
     font-weight: 600;
     margin-top: 0.25rem;
   }
@@ -571,7 +571,7 @@ calcType: profit-margin
   .waterfall-chart {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 12px;
   }
   
@@ -590,14 +590,14 @@ calcType: profit-margin
     width: 140px;
     font-weight: 600;
     font-size: 0.875rem;
-    color: #374151;
+    color: var(--color-gray-dark);
     flex-shrink: 0;
   }
   
   .waterfall-bar-wrapper {
     flex: 1;
     height: 36px;
-    background: #e5e7eb;
+    background: var(--color-gray);
     border-radius: 6px;
     position: relative;
     overflow: hidden;
@@ -652,7 +652,7 @@ calcType: profit-margin
   .margin-comparison {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -678,7 +678,7 @@ calcType: profit-margin
   .comparison-bar-wrapper {
     flex: 1;
     height: 28px;
-    background: #f3f4f6;
+    background: var(--color-surface-neutral);
     border-radius: 14px;
     overflow: hidden;
   }
@@ -719,7 +719,7 @@ calcType: profit-margin
   .profit-breakdown {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -755,16 +755,16 @@ calcType: profit-margin
   }
   
   .profit-table tbody tr:hover {
-    background: #f9fafb;
+    background: var(--color-surface-neutral);
   }
   
   .profit-table .total-row {
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
     font-weight: 700;
   }
   
   .profit-table .subtotal-row {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     font-weight: 600;
   }
   
@@ -776,7 +776,7 @@ calcType: profit-margin
   .profit-insights {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -797,22 +797,22 @@ calcType: profit-margin
   }
   
   .insight-card.insight-success {
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
     border-color: #86efac;
   }
   
   .insight-card.insight-info {
-    background: #eff6ff;
+    background: var(--color-highlight-blue);
     border-color: #93c5fd;
   }
   
   .insight-card.insight-warning {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     border-color: #fcd34d;
   }
   
   .insight-card.insight-danger {
-    background: #fef2f2;
+    background: var(--color-highlight-red);
     border-color: #fca5a5;
   }
   
@@ -825,20 +825,20 @@ calcType: profit-margin
   .insight-content h5 {
     margin: 0 0 0.5rem 0;
     font-size: 1rem;
-    color: #111827;
+    color: var(--color-black);
   }
   
   .insight-content p {
     margin: 0;
     font-size: 0.9rem;
-    color: #4b5563;
+    color: var(--color-gray-dark);
   }
   
   /* Pricing Scenarios */
   .pricing-scenarios {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 12px;
   }
   
@@ -846,7 +846,7 @@ calcType: profit-margin
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 8px;
     overflow: hidden;
   }
@@ -872,28 +872,28 @@ calcType: profit-margin
   }
   
   .scenarios-table .current-row {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     font-weight: 600;
   }
   
   .scenarios-table .improvement-positive {
-    color: #10b981;
+    color: var(--color-success);
   }
   
   .scenarios-table .improvement-negative {
-    color: #ef4444;
+    color: var(--color-error);
   }
   
   /* Utility Classes */
-  .text-success { color: #10b981; }
-  .text-danger { color: #ef4444; }
-  .text-muted { color: #6b7280; }
+  .text-success { color: var(--color-success); }
+  .text-danger { color: var(--color-error); }
+  .text-muted { color: var(--color-gray-dark); }
   .font-bold { font-weight: bold; }
   
   .badge {
     display: inline-block;
     padding: 0.25rem 0.5rem;
-    background: #f59e0b;
+    background: var(--color-warning);
     color: white;
     border-radius: 4px;
     font-size: 0.75rem;

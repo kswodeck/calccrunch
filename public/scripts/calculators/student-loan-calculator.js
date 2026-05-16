@@ -1273,7 +1273,7 @@
 
   function showError(message) {
     resultDiv.innerHTML = `
-      <div class="alert alert-error" style="background: #FFEBEE; border: 1px solid #EF5350; padding: 1rem; border-radius: 8px; color: #C62828;">
+      <div class="alert alert-error" style="background: var(--color-highlight-red); border: 1px solid var(--color-error); padding: 1rem; border-radius: 8px; color: var(--color-error);">
         <strong>Error:</strong> ${message}
       </div>
     `;

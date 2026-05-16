@@ -471,7 +471,7 @@
               <span><strong>${formatCurrency(results.totalRentPaid + results.totalRentersInsurance)}</strong></span>
             </div>
 
-            <div style="background: #f0f9ff; padding: 0.75rem; border-radius: 6px; margin: 1rem 0;">
+            <div style="background: var(--color-highlight-blue); padding: 0.75rem; border-radius: 6px; margin: 1rem 0;">
               <div style="margin-bottom: 0.5rem;"><strong>Investment Opportunity:</strong></div>
               <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
                 <span>Final value (at ${calculatorState.investmentReturn}% return):</span>
@@ -483,19 +483,19 @@
               </div>
               <div style="display: flex; justify-content: space-between; font-weight: bold;">
                 <span>Investment gain:</span>
-                <span style="color: #10b981;">+${formatCurrency(results.finalInvestmentValue - results.actualDownPayment - results.actualClosingCosts)}</span>
+                <span style="color: var(--color-success);">+${formatCurrency(results.finalInvestmentValue - results.actualDownPayment - results.actualClosingCosts)}</span>
               </div>
             </div>
             <div class="breakdown-item">
               <span>Less: Investment gains:</span>
-              <span style="color: #10b981;">-${formatCurrency(results.finalInvestmentValue - results.actualDownPayment - results.actualClosingCosts)}</span>
+              <span style="color: var(--color-success);">-${formatCurrency(results.finalInvestmentValue - results.actualDownPayment - results.actualClosingCosts)}</span>
             </div>
             <div class="breakdown-total breakdown-item">
               <span>Net Cost:</span>
               <span>${formatCurrency(results.rentTotalNet)}</span>
             </div>
 
-            <div style="margin-top: 1rem; padding: 0.75rem; background: #f0f9ff; border-radius: 6px;">
+            <div style="margin-top: 1rem; padding: 0.75rem; background: var(--color-highlight-blue); border-radius: 6px;">
               <small>Monthly rent: ${formatCurrency(calculatorState.monthlyRent)} → ${formatCurrency(results.finalMonthlyRent)}</small><br>
               <small>Security deposit: ${formatCurrency(calculatorState.securityDeposit)} (returned at end)</small>
             </div>
@@ -521,7 +521,7 @@
             </div>
             <div class="breakdown-item">
               <span>Tax Savings (Est. Interest Deduction):</span>
-              <span style="color: #10b981;">-${formatCurrency(results.totalInterestPaid * calculatorState.marginalTaxRate / 100)}</span>
+              <span style="color: var(--color-success);">-${formatCurrency(results.totalInterestPaid * calculatorState.marginalTaxRate / 100)}</span>
             </div>
             <div class="breakdown-item">
               <span>Property Tax & Insurance:</span>
@@ -533,7 +533,7 @@
               <span>${formatCurrency(results.totalPMIPaid)}</span>
             </div>
             ${results.pmiDroppedYear ? `
-              <div style="margin-left: 1rem; font-size: 0.875rem; color: #10b981;">
+              <div style="margin-left: 1rem; font-size: 0.875rem; color: var(--color-success);">
                 ↳ PMI removed in year ${results.pmiDroppedYear} (reached 20% equity)
               </div>
               ` : ''}
@@ -558,7 +558,7 @@
             ` : ''}
             <div class="breakdown-item" style="border-top: 1px solid #e5e7eb; padding-top: 0.5rem; margin-top: 0.5rem;">
               <span><strong>Total Costs:</strong></span>
-              <span><strong style="color: #ef4444;">${formatCurrency(results.totalBuyingCosts)}</strong></span>
+              <span><strong style="color: var(--color-error);">${formatCurrency(results.totalBuyingCosts)}</strong></span>
             </div>
             <div class="breakdown-item">
               <span>Home Value at Sale:</span>
@@ -566,21 +566,21 @@
             </div>
             <div class="breakdown-item">
               <span>Less: Remaining Mortgage:</span>
-              <span style="color: #ef4444;">-${formatCurrency(results.finalLoanBalance)}</span>
+              <span style="color: var(--color-error);">-${formatCurrency(results.finalLoanBalance)}</span>
             </div>
             <div class="breakdown-item">
               <span>Less: Selling Costs (${calculatorState.sellingCosts}%):</span>
-              <span style="color: #ef4444;">-${formatCurrency(results.finalHomeValue * calculatorState.sellingCosts / 100)}</span>
+              <span style="color: var(--color-error);">-${formatCurrency(results.finalHomeValue * calculatorState.sellingCosts / 100)}</span>
             </div>
             <div class="breakdown-item">
               <span><strong>Net Proceeds from Sale:</strong></span>
-              <span><strong style="color: #10b981;">+${formatCurrency(results.netProceedsFromSale)}</strong></span>
+              <span><strong style="color: var(--color-success);">+${formatCurrency(results.netProceedsFromSale)}</strong></span>
             </div>
             <div class="breakdown-total breakdown-item">
               <span>Net Cost:</span>
               <span>${formatCurrency(results.buyTotalNet)}</span>
             </div>
-            <div style="margin-top: 1rem; padding: 0.75rem; background: #f0fdf4; border-radius: 6px;">
+            <div style="margin-top: 1rem; padding: 0.75rem; background: var(--color-highlight-green); border-radius: 6px;">
               <small>Home value: ${formatCurrency(calculatorState.homePrice)} → ${formatCurrency(results.finalHomeValue)}</small><br>
               <small>Mortgage Payment Range (PITI): ${formatCurrency(results.firstMortgagePayment)} → ${formatCurrency(results.finalMortgagePayment)}</small><br>
               ${results.needsPMI ? `

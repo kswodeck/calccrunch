@@ -262,7 +262,7 @@ calcType: recipe-scaler
   </ul>
 </div>
 
-<div class="info-box" style="background: #FEF3C7; border-left-color: #F59E0B;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>📏 Common Measurement Conversions</h4>
   <div class="conversion-table">
     <table style="width: 100%;">
@@ -286,7 +286,7 @@ calcType: recipe-scaler
   </div>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>🍰 Baking vs Cooking</h4>
   <p>
     <strong>Baking</strong> requires more precision than cooking. When scaling baking recipes:
@@ -302,7 +302,7 @@ calcType: recipe-scaler
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Recipe</h4>
   <p>
     Your scaled recipe is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your recipe, 
@@ -334,11 +334,11 @@ calcType: recipe-scaler
     grid-template-columns: 1fr 1.5fr 2fr 1.5fr 50px;
     gap: 1rem;
     padding: 0.75rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 8px;
     margin-bottom: 1rem;
     font-weight: 600;
-    color: #4b5563;
+    color: var(--color-gray-dark);
   }
   
   .ingredient-list {
@@ -373,10 +373,10 @@ calcType: recipe-scaler
   
   .scaled-amount {
     padding: 0.5rem 0.75rem;
-    background: #E8F4F8;
+    background: var(--color-highlight-blue);
     border-radius: 6px;
     font-weight: 600;
-    color: #2C5F8D;
+    color: var(--color-primary-blue);
     text-align: center;
   }
   
@@ -384,8 +384,8 @@ calcType: recipe-scaler
     width: 40px;
     height: 40px;
     border: 2px solid #ef4444;
-    background: white;
-    color: #ef4444;
+    background: var(--color-white);
+    color: var(--color-error);
     border-radius: 6px;
     font-size: 1.5rem;
     font-weight: bold;
@@ -416,20 +416,20 @@ calcType: recipe-scaler
     justify-content: center;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #6b7280;
+    color: var(--color-gray-dark);
     padding-top: 1.5rem;
   }
   
   .common-temps {
     margin-top: 1.5rem;
     padding: 1rem;
-    background: #f9fafb;
+    background: var(--color-surface-neutral);
     border-radius: 8px;
   }
   
   .common-temps h4 {
     margin-bottom: 0.75rem;
-    color: #374151;
+    color: var(--color-gray-dark);
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -445,14 +445,14 @@ calcType: recipe-scaler
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 4px;
     font-size: 0.875rem;
   }
   
   .temp-label {
     font-weight: 600;
-    color: #2C5F8D;
+    color: var(--color-primary-blue);
   }
   
   .conversion-table table {

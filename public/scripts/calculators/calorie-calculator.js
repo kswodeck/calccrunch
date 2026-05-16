@@ -45,11 +45,8 @@ function initCalorieCalculator() {
   const resultDiv = document.getElementById('calorie-result');
   
   if (!calculateBtn || !resultDiv) {
-    console.error('Calorie Calculator: Required elements not found');
     return;
   }
-  
-  console.log('Calorie Calculator initialized');
   
   // Initialize unit system toggle
   initUnitToggle();
@@ -93,16 +90,12 @@ function initUnitToggle() {
   const metricSection = document.getElementById('metric-inputs');
   
   if (!unitButtons.length || !imperialSection || !metricSection) {
-    console.error('Unit toggle elements not found');
     return;
   }
-  
-  console.log('Unit toggle initialized');
   
   unitButtons.forEach(button => {
     button.addEventListener('click', function() {
       const system = this.getAttribute('data-system');
-      console.log('Switching to:', system);
       
       // Update active state
       unitButtons.forEach(btn => btn.classList.remove('active'));
@@ -137,8 +130,6 @@ function loadFromURL() {
   if (Object.keys(params).length === 0) {
     return;
   }
-  
-  console.log('Loading values from URL:', params);
   
   // Load measurement system first
   if (params.system) {
@@ -280,8 +271,6 @@ function addInputListeners() {
 }
 
 function calculateResults() {
-  console.log('Calculating calories for system:', currentSystem);
-  
   // Get personal information
   const age = parseInt(document.getElementById('age').value) || 0;
   const gender = document.getElementById('gender').value;
@@ -302,9 +291,7 @@ function calculateResults() {
     const feet = parseFloat(document.getElementById('height-feet').value) || 0;
     const inches = parseFloat(document.getElementById('height-inches').value) || 0;
     const weightLbs = parseFloat(document.getElementById('weight-lbs').value) || 0;
-    
-    console.log('Imperial inputs:', { feet, inches, weightLbs });
-    
+
     // Validate inputs
     if (feet <= 0 || weightLbs <= 0) {
       showError('Please enter valid height and weight values.');
@@ -319,17 +306,13 @@ function calculateResults() {
   } else {
     heightInCm = parseFloat(document.getElementById('height-cm').value) || 0;
     weightInKg = parseFloat(document.getElementById('weight-kg').value) || 0;
-    
-    console.log('Metric inputs:', { heightInCm, weightInKg });
-    
+
     // Validate inputs
     if (heightInCm <= 0 || weightInKg <= 0) {
       showError('Please enter valid height and weight values.');
       return;
     }
   }
-  
-  console.log('Converted values:', { heightInCm, weightInKg, age, gender, activityLevel });
   
   // Calculate BMR using Mifflin-St Jeor Equation
   let bmr = 0;
@@ -347,8 +330,6 @@ function calculateResults() {
   
   // Calculate macros
   const macros = calculateMacros(goalCalories.calories, weightInKg, goal);
-  
-  console.log('Calculated values:', { bmr, tdee, goalCalories, macros });
   
   // Store results for printing
   lastCalculationResults = {
@@ -835,7 +816,7 @@ function printResults() {
           max-width: 800px;
           margin: 0 auto;
           padding: 40px 20px;
-          color: #333;
+          color: var(--color-black);
           line-height: 1.6;
         }
         .header { 
@@ -845,30 +826,30 @@ function printResults() {
           border-bottom: 3px solid #2C5F8D;
         }
         .header h1 { 
-          color: #2C5F8D; 
+          color: var(--color-primary-blue); 
           margin: 0 0 10px 0;
           font-size: 32px;
         }
         .subtitle {
-          color: #666;
+          color: var(--color-gray-dark);
           font-size: 14px;
         }
         .main-result {
           text-align: center;
           padding: 30px;
-          background: #f8f9fa;
+          background: var(--color-surface-neutral);
           border-radius: 10px;
           margin-bottom: 30px;
         }
         .main-result .calories { 
           font-size: 64px; 
-          color: #FF6B35; 
+          color: var(--color-accent-orange); 
           font-weight: bold;
           margin: 20px 0;
         }
         .main-result .goal {
           font-size: 24px;
-          color: #2C5F8D;
+          color: var(--color-primary-blue);
           font-weight: bold;
         }
         .section { 
@@ -876,7 +857,7 @@ function printResults() {
           page-break-inside: avoid;
         }
         .section h2 { 
-          color: #2C5F8D; 
+          color: var(--color-primary-blue); 
           font-size: 22px;
           margin-bottom: 15px;
           border-bottom: 2px solid #E8F4F8;
@@ -893,9 +874,9 @@ function printResults() {
           border-bottom: 1px solid #ddd;
         }
         th { 
-          background: #f5f5f5;
+          background: var(--color-surface-neutral);
           font-weight: bold;
-          color: #2C5F8D;
+          color: var(--color-primary-blue);
         }
         .macros {
           display: grid;
@@ -906,19 +887,19 @@ function printResults() {
         .macro {
           text-align: center;
           padding: 20px;
-          background: #f9f9f9;
+          background: var(--color-surface-neutral);
           border-radius: 8px;
         }
         .macro-name {
           font-weight: bold;
-          color: #2C5F8D;
+          color: var(--color-primary-blue);
           font-size: 18px;
           margin-bottom: 10px;
         }
         .macro-value {
           font-size: 32px;
           font-weight: bold;
-          color: #FF6B35;
+          color: var(--color-accent-orange);
           margin: 10px 0;
         }
         .tips {
@@ -929,13 +910,13 @@ function printResults() {
         }
         .tip {
           padding: 15px;
-          background: #f9f9f9;
+          background: var(--color-surface-neutral);
           border-radius: 8px;
           border-left: 3px solid #4CAF50;
         }
         .tip strong {
           display: block;
-          color: #2C5F8D;
+          color: var(--color-primary-blue);
           margin-bottom: 5px;
         }
         .footer { 
@@ -944,12 +925,12 @@ function printResults() {
           border-top: 2px solid #ddd;
           text-align: center; 
           font-size: 12px; 
-          color: #666;
+          color: var(--color-gray-dark);
         }
         .disclaimer {
           margin-top: 30px;
           padding: 15px;
-          background: #FFF8DC;
+          background: var(--color-highlight-yellow);
           border-left: 4px solid #FFB900;
           font-size: 12px;
           line-height: 1.5;
@@ -968,7 +949,7 @@ function printResults() {
       <div class="main-result">
         <div class="calories">${formatNumber(data.goalCalories.calories)} cal/day</div>
         <div class="goal">${data.goalCalories.name}</div>
-        <p style="margin-top: 15px; color: #666;">${data.goalCalories.description}</p>
+        <p style="margin-top: 15px; color: var(--color-gray-dark);">${data.goalCalories.description}</p>
       </div>
       
       <div class="section">
@@ -1018,7 +999,7 @@ function printResults() {
             <td><strong>Daily Calorie Adjustment</strong></td>
             <td>${data.goalCalories.deficit > 0 ? '+' : ''}${data.goalCalories.deficit} calories (${data.goalCalories.pace})</td>
           </tr>
-          <tr style="background: #f5f5f5; font-weight: bold; font-size: 16px;">
+          <tr style="background: var(--color-surface-neutral); font-weight: bold; font-size: 16px;">
             <td><strong>Your Daily Goal</strong></td>
             <td>${formatNumber(data.goalCalories.calories)} calories</td>
           </tr>

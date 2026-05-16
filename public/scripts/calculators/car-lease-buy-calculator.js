@@ -286,7 +286,7 @@
     const resultDiv = document.getElementById('lease-buy-result');
     if (resultDiv) {
       resultDiv.innerHTML = `
-        <div class="alert alert-error" style="background: #fef2f2; border: 1px solid #ef4444; padding: 1rem; border-radius: 8px; color: #dc2626;">
+        <div class="alert alert-error" style="background: var(--color-highlight-red); border: 1px solid var(--color-error); padding: 1rem; border-radius: 8px; color: var(--color-error);">
           <strong>Error:</strong> ${message}
         </div>
       `;
@@ -706,31 +706,31 @@
           <h2 style="color: ${results.betterOption === 'lease' ? '#1e40af' : '#047857'}; margin: 0;">
             ${winnerText} Saves You ${formatCurrency(results.savings)}
           </h2>
-          <p style="color: #6b7280; margin-top: 0.5rem;">
+          <p style="color: var(--color-gray-dark); margin-top: 0.5rem;">
             Over ${results.analysisPeriod} years (${formatCurrency(results.monthlySavings)}/month on average)
           </p>
-          ${results.breakevenYear ? `<p style="color: #f59e0b; font-size: 0.9rem; margin-top: 0.5rem;">⚡ Breakeven point: Year ${results.breakevenYear}</p>` : ''}
+          ${results.breakevenYear ? `<p style="color: var(--color-warning); font-size: 0.9rem; margin-top: 0.5rem;">⚡ Breakeven point: Year ${results.breakevenYear}</p>` : ''}
         </div>
         
         <div class="monthly-comparison">
           <div class="monthly-card">
             <div class="monthly-card-title">Lease Monthly Payment</div>
-            <div class="monthly-card-value" style="color: #3b82f6;">${formatCurrency(state.leaseMonthlyPayment)}</div>
+            <div class="monthly-card-value" style="color: var(--color-light-blue);">${formatCurrency(state.leaseMonthlyPayment)}</div>
             <div class="monthly-card-subtitle">+ ${formatCurrency(state.leaseInsurance + state.leaseMaintenance)} other costs</div>
           </div>
           <div class="monthly-card">
             <div class="monthly-card-title">Buy Monthly Payment</div>
-            <div class="monthly-card-value" style="color: #10b981;">${formatCurrency(results.buyMonthlyPayment)}</div>
+            <div class="monthly-card-value" style="color: var(--color-success);">${formatCurrency(results.buyMonthlyPayment)}</div>
             <div class="monthly-card-subtitle">+ ${formatCurrency(state.buyInsurance + state.buyMaintenance)} other costs</div>
           </div>
           <div class="monthly-card">
             <div class="monthly-card-title">Lease Avg Monthly Cost</div>
-            <div class="monthly-card-value" style="color: #3b82f6;">${formatCurrency(results.leaseMonthlyEquivalent)}</div>
+            <div class="monthly-card-value" style="color: var(--color-light-blue);">${formatCurrency(results.leaseMonthlyEquivalent)}</div>
             <div class="monthly-card-subtitle">All costs over ${results.analysisPeriod} years</div>
           </div>
           <div class="monthly-card">
             <div class="monthly-card-title">Buy Avg Monthly Cost</div>
-            <div class="monthly-card-value" style="color: #10b981;">${formatCurrency(results.buyMonthlyEquivalent)}</div>
+            <div class="monthly-card-value" style="color: var(--color-success);">${formatCurrency(results.buyMonthlyEquivalent)}</div>
             <div class="monthly-card-subtitle">Minus equity at end</div>
           </div>
         </div>
@@ -781,7 +781,7 @@
             ${results.leaseExcessMileage > 0 ? `
             <div class="breakdown-item">
               <span>Excess Mileage Fees:</span>
-              <span style="color: #ef4444;">${formatCurrency(results.leaseExcessMileage)}</span>
+              <span style="color: var(--color-error);">${formatCurrency(results.leaseExcessMileage)}</span>
             </div>
             ` : ''}
             <div class="breakdown-item">
@@ -790,16 +790,16 @@
             </div>
             <div class="breakdown-item">
               <span>Opportunity Cost:</span>
-              <span style="color: #f59e0b;">${formatCurrency(results.leaseOpportunityCost)}</span>
+              <span style="color: var(--color-warning);">${formatCurrency(results.leaseOpportunityCost)}</span>
             </div>
             <div class="breakdown-item breakdown-total">
               <span><strong>Total Lease Cost:</strong></span>
               <span><strong>${formatCurrency(results.leaseNetCost)}</strong></span>
             </div>
-            <div style="margin-top: 0.75rem; padding: 0.5rem; background: #eff6ff; border-radius: 6px; font-size: 0.85rem;">
-              <span style="color: #6b7280;">Final equity:</span>
-              <strong style="color: #3b82f6;">$0</strong>
-              <span style="color: #9ca3af;">(you don't own the car)</span>
+            <div style="margin-top: 0.75rem; padding: 0.5rem; background: var(--color-highlight-blue); border-radius: 6px; font-size: 0.85rem;">
+              <span style="color: var(--color-gray-dark);">Final equity:</span>
+              <strong style="color: var(--color-light-blue);">$0</strong>
+              <span style="color: var(--color-gray);">(you don't own the car)</span>
             </div>
           </div>
           
@@ -815,7 +815,7 @@
             </div>
             <div class="breakdown-item">
               <span>Interest Paid:</span>
-              <span style="color: #ef4444;">${formatCurrency(results.buyInterestTotal)}</span>
+              <span style="color: var(--color-error);">${formatCurrency(results.buyInterestTotal)}</span>
             </div>
             <div class="breakdown-item">
               <span>Insurance & Maintenance:</span>
@@ -823,9 +823,9 @@
             </div>
             <div class="breakdown-item">
               <span>Opportunity Cost:</span>
-              <span style="color: #f59e0b;">${formatCurrency(results.buyOpportunityCost)}</span>
+              <span style="color: var(--color-warning);">${formatCurrency(results.buyOpportunityCost)}</span>
             </div>
-            <div class="breakdown-item" style="color: #10b981;">
+            <div class="breakdown-item" style="color: var(--color-success);">
               <span>Less: Final Vehicle Equity:</span>
               <span>-${formatCurrency(results.buyFinalEquity)}</span>
             </div>
@@ -833,10 +833,10 @@
               <span><strong>Net Purchase Cost:</strong></span>
               <span><strong>${formatCurrency(results.buyNetCost)}</strong></span>
             </div>
-            <div style="margin-top: 0.75rem; padding: 0.5rem; background: #ecfdf5; border-radius: 6px; font-size: 0.85rem;">
-              <span style="color: #6b7280;">Final equity:</span>
-              <strong style="color: #047857;">${formatCurrency(results.buyFinalEquity)}</strong>
-              <span style="color: #9ca3af;">(you own the car)</span>
+            <div style="margin-top: 0.75rem; padding: 0.5rem; background: var(--color-highlight-green); border-radius: 6px; font-size: 0.85rem;">
+              <span style="color: var(--color-gray-dark);">Final equity:</span>
+              <strong style="color: var(--color-success);">${formatCurrency(results.buyFinalEquity)}</strong>
+              <span style="color: var(--color-gray);">(you own the car)</span>
             </div>
           </div>
         </div>
@@ -910,7 +910,7 @@
                     <td><strong>Year ${data.year}</strong></td>
                     <td>${formatCurrency(data.leaseCumulative)}</td>
                     <td>${formatCurrency(data.buyCumulative)}</td>
-                    <td style="color: #10b981;">${formatCurrency(data.buyEquity)}</td>
+                    <td style="color: var(--color-success);">${formatCurrency(data.buyEquity)}</td>
                     <td>${formatCurrency(data.buyNetCost)}</td>
                     <td>
                       <span class="${data.leaseCumulative < data.buyNetCost ? 'better-option' : 'worse-option'}">

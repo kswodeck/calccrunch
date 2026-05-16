@@ -147,7 +147,7 @@ calcType: budget
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>💵 Income Categories Explained</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Salary/Wages:</strong> Regular employment income (use after-tax amount)</li>
@@ -159,7 +159,7 @@ calcType: budget
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>🏠 Needs vs Wants - Know the Difference</h4>
   <p><strong>Needs are essential for survival and basic functioning:</strong></p>
   <ul style="margin: 10px 0; padding-left: 20px;">
@@ -175,7 +175,7 @@ calcType: budget
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>💡 Budgeting Best Practices</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Track everything:</strong> Even small purchases add up over a month</li>
@@ -187,7 +187,7 @@ calcType: budget
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
+<div class="info-box" style="background: var(--color-highlight-red); border-left-color: var(--color-error);">
   <h4>⚠️ Common Budgeting Mistakes</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Forgetting irregular expenses:</strong> Car repairs, annual subscriptions, holidays</li>
@@ -198,7 +198,7 @@ calcType: budget
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Budget</h4>
   <p>
     Your budget is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your budget, 
@@ -253,19 +253,19 @@ calcType: budget
   }
 
   .item-row.income-row:hover {
-    border-color: #4CAF50;
+    border-color: var(--color-success);
   }
 
   .item-row.needs-row:hover {
-    border-color: #2196F3;
+    border-color: var(--color-primary-blue);
   }
 
   .item-row.wants-row:hover {
-    border-color: #FF9800;
+    border-color: var(--color-warning);
   }
 
   .item-row.savings-row:hover {
-    border-color: #9C27B0;
+    border-color: var(--color-primary-blue);
   }
 
   .item-header {
@@ -285,23 +285,23 @@ calcType: budget
   }
 
   .income-row .item-number {
-    background: #E8F5E9;
-    color: #2E7D32;
+    background: var(--color-highlight-green);
+    color: var(--color-success);
   }
 
   .needs-row .item-number {
-    background: #E3F2FD;
-    color: #1565C0;
+    background: var(--color-highlight-blue);
+    color: var(--color-primary-blue);
   }
 
   .wants-row .item-number {
-    background: #FFF3E0;
-    color: #E65100;
+    background: var(--color-highlight-orange-alt);
+    color: var(--color-warning);
   }
 
   .savings-row .item-number {
-    background: #F3E5F5;
-    color: #7B1FA2;
+    background: var(--color-highlight-purple);
+    color: var(--color-primary-blue);
   }
 
   .remove-item-btn {
@@ -318,8 +318,8 @@ calcType: budget
   }
 
   .remove-item-btn:hover {
-    color: #c62828;
-    background: #ffebee;
+    color: var(--color-error);
+    background: var(--color-highlight-red);
     border-radius: 4px;
   }
 
@@ -336,7 +336,7 @@ calcType: budget
     align-items: center;
     margin-top: var(--space-lg);
     padding: var(--space-md) var(--space-lg);
-    background: #E8F5E9;
+    background: var(--color-highlight-green);
     border-radius: var(--border-radius);
     border-left: 4px solid #4CAF50;
   }
@@ -348,44 +348,44 @@ calcType: budget
 
   .section-total strong {
     font-size: var(--text-xl);
-    color: #4CAF50;
+    color: var(--color-success);
     font-family: var(--font-primary);
   }
 
   .income-total {
-    background: #E8F5E9;
-    border-left-color: #4CAF50;
+    background: var(--color-highlight-green);
+    border-left-color: var(--color-success);
   }
 
   .income-total strong {
-    color: #4CAF50;
+    color: var(--color-success);
   }
 
   .needs-total {
-    background: #E3F2FD;
-    border-left-color: #2196F3;
+    background: var(--color-highlight-blue);
+    border-left-color: var(--color-primary-blue);
   }
 
   .needs-total strong {
-    color: #2196F3;
+    color: var(--color-primary-blue);
   }
 
   .wants-total {
-    background: #FFF3E0;
-    border-left-color: #FF9800;
+    background: var(--color-highlight-orange-alt);
+    border-left-color: var(--color-warning);
   }
 
   .wants-total strong {
-    color: #E65100;
+    color: var(--color-warning);
   }
 
   .savings-total {
-    background: #F3E5F5;
-    border-left-color: #9C27B0;
+    background: var(--color-highlight-purple);
+    border-left-color: var(--color-primary-blue);
   }
 
   .savings-total strong {
-    color: #9C27B0;
+    color: var(--color-primary-blue);
   }
 
   .budget-preview {
@@ -406,7 +406,7 @@ calcType: budget
   .preview-item {
     padding: var(--space-md);
     border-radius: var(--border-radius);
-    background: white;
+    background: var(--color-white);
   }
 
   .preview-label {
@@ -422,15 +422,15 @@ calcType: budget
   }
 
   .income-preview .preview-value {
-    color: #4CAF50;
+    color: var(--color-success);
   }
 
   .spending-preview .preview-value {
-    color: #F44336;
+    color: var(--color-error);
   }
 
   .savings-preview .preview-value {
-    color: #9C27B0;
+    color: var(--color-primary-blue);
   }
 
   .balance-preview .preview-value {
@@ -438,11 +438,11 @@ calcType: budget
   }
 
   .balance-preview .preview-value.positive {
-    color: #4CAF50;
+    color: var(--color-success);
   }
 
   .balance-preview .preview-value.negative {
-    color: #F44336;
+    color: var(--color-error);
   }
 
   .input-with-addon {
@@ -502,15 +502,15 @@ calcType: budget
   }
 
   .budget-value.surplus {
-    color: #4CAF50;
+    color: var(--color-success);
   }
 
   .budget-value.deficit {
-    color: #F44336;
+    color: var(--color-error);
   }
 
   .budget-value.balanced {
-    color: #2196F3;
+    color: var(--color-primary-blue);
   }
 
   .budget-status {
@@ -522,28 +522,28 @@ calcType: budget
   }
 
   .budget-status.excellent {
-    background: #C8E6C9;
-    color: #2E7D32;
+    background: var(--color-highlight-green);
+    color: var(--color-success);
   }
 
   .budget-status.good {
-    background: #DCEDC8;
-    color: #558B2F;
+    background: var(--color-highlight-green);
+    color: var(--color-success);
   }
 
   .budget-status.fair {
-    background: #FFF9C4;
-    color: #F9A825;
+    background: var(--color-highlight-yellow);
+    color: var(--color-warning);
   }
 
   .budget-status.poor {
-    background: #FFECB3;
-    color: #FF8F00;
+    background: var(--color-highlight-yellow);
+    color: var(--color-warning);
   }
 
   .budget-status.deficit {
-    background: #FFCDD2;
-    color: #C62828;
+    background: var(--color-highlight-red);
+    color: var(--color-error);
   }
 
   .summary-cards {
@@ -562,22 +562,22 @@ calcType: budget
   }
 
   .summary-card.income-card {
-    border-color: #4CAF50;
+    border-color: var(--color-success);
     border-left-width: 4px;
   }
 
   .summary-card.needs-card {
-    border-color: #2196F3;
+    border-color: var(--color-primary-blue);
     border-left-width: 4px;
   }
 
   .summary-card.wants-card {
-    border-color: #FF9800;
+    border-color: var(--color-warning);
     border-left-width: 4px;
   }
 
   .summary-card.savings-card {
-    border-color: #9C27B0;
+    border-color: var(--color-primary-blue);
     border-left-width: 4px;
   }
 
@@ -594,19 +594,19 @@ calcType: budget
   }
 
   .summary-card.income-card .summary-card-value {
-    color: #4CAF50;
+    color: var(--color-success);
   }
 
   .summary-card.needs-card .summary-card-value {
-    color: #2196F3;
+    color: var(--color-primary-blue);
   }
 
   .summary-card.wants-card .summary-card-value {
-    color: #FF9800;
+    color: var(--color-warning);
   }
 
   .summary-card.savings-card .summary-card-value {
-    color: #9C27B0;
+    color: var(--color-primary-blue);
   }
 
   .summary-card-label {
@@ -802,22 +802,22 @@ calcType: budget
   }
 
   .insight-card.insight-success {
-    background: #F1F8E9;
+    background: var(--color-highlight-green);
     border-color: #C5E1A5;
   }
 
   .insight-card.insight-warning {
-    background: #FFF8E1;
+    background: var(--color-highlight-yellow);
     border-color: #FFE082;
   }
 
   .insight-card.insight-info {
-    background: #E3F2FD;
+    background: var(--color-highlight-blue);
     border-color: #90CAF9;
   }
 
   .insight-card.insight-danger {
-    background: #FFEBEE;
+    background: var(--color-highlight-red);
     border-color: #EF9A9A;
   }
 
@@ -911,7 +911,7 @@ calcType: budget
   }
 
   .planning-section h4 {
-    color: #7B1FA2;
+    color: var(--color-primary-blue);
     margin-bottom: var(--space-lg);
     display: flex;
     align-items: center;
@@ -925,7 +925,7 @@ calcType: budget
   }
 
   .planning-card {
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius);
     padding: var(--space-lg);
     text-align: center;
@@ -945,7 +945,7 @@ calcType: budget
   .planning-value {
     font-size: var(--text-2xl);
     font-weight: 700;
-    color: #7B1FA2;
+    color: var(--color-primary-blue);
     margin-bottom: var(--space-xs);
   }
 

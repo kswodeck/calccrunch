@@ -479,7 +479,7 @@
           </ul>
         </div>
 
-        <div class="info-box" style="margin-top: 1rem; background: #FEF3C7; border-left-color: #F59E0B;">
+        <div class="info-box" style="margin-top: 1rem; background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
           <h4>💡 Tips for ${results.bodyFatPercentage > results.idealMax ? 'Reducing' : results.bodyFatPercentage < results.idealMin ? 'Increasing' : 'Maintaining'} Body Fat</h4>
           ${results.bodyFatPercentage > results.idealMax ? `
             <ul style="margin: 10px 0; padding-left: 20px;">

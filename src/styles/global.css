@@ -14,6 +14,19 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+html[data-theme="dark"] body,
+html[data-theme="dark"] .site-header,
+html[data-theme="dark"] .card,
+html[data-theme="dark"] .calc-card,
+html[data-theme="dark"] .search-suggestions {
+  transition: background-color var(--transition-base), color var(--transition-base), border-color var(--transition-base);
 }
 
 body {
@@ -97,7 +110,7 @@ img {
 
 .btn-primary {
   background: var(--color-accent-orange);
-  color: var(--color-white);
+  color: #FFFFFF;
   box-shadow: var(--shadow-md);
 }
 
@@ -115,7 +128,7 @@ img {
 
 .btn-secondary:hover {
   background: var(--color-primary-blue);
-  color: var(--color-white);
+  color: #FFFFFF;
 }
 
 /* Cards */
@@ -152,7 +165,7 @@ img {
 
 /* Utility Classes */
 .text-center { text-align: center; }
-.text-white { color: var(--color-white); }
+.text-white { color: #FFFFFF; }
 .text-primary { color: var(--color-primary-blue); }
 .text-accent { color: var(--color-accent-orange); }
 
@@ -299,7 +312,7 @@ img {
     bottom: 20px;
     right: 20px;
     background: var(--color-error);
-    color: var(--color-white);
+    color: #FFFFFF;
     padding: var(--space-lg) var(--space-xl);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-xl);
@@ -354,7 +367,7 @@ img {
   top: var(--space-sm);
   right: var(--space-sm);
   background: var(--color-accent-orange);
-  color: var(--color-white);
+  color: #FFFFFF;
   padding: 2px var(--space-sm);
   border-radius: 4px;
   font-size: var(--text-xs);

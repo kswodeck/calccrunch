@@ -2,7 +2,6 @@
 import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
-import EmailCapture from "../components/EmailCapture.astro";
 import AdUnit from "../components/AdUnit.astro";
 import calculatorsData from "../data/calculators.json";
 import categoriesData from "../data/categories.json";
@@ -193,16 +192,6 @@ const features = [
             </p>
           </div>
 
-          <!-- <div class="story-image">
-            <Image
-              src="/images/heroes/hero-alt-1.png"
-              alt="CalcCrunch Calculators"
-              width="500"
-              height="500"
-              format="webp"
-              loading="lazy"
-            />
-          </div> -->
         </div>
       </div>
     </section>
@@ -379,22 +368,11 @@ const features = [
             <a href="/calculators" class="btn btn-secondary">
               Browse All Calculators
             </a>
-            <!-- TODO: Create About Us page and link to it -->
-            <!-- <a href="/contact" class="btn btn-primary"> Get in Touch </a> -->
+            <a href="/contact" class="btn btn-primary"> Get in Touch </a>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Email Capture -->
-    <!-- <div class="container">
-      <EmailCapture
-        calculatorType="about"
-        headline="📬 Stay Updated"
-        description="Get notified when we add new calculators, features, and tools. Join our community of smart decision-makers."
-        buttonText="Subscribe to Updates"
-      />
-    </div> -->
 
     <!-- FAQ Section -->
     <section class="faq-section">
@@ -496,7 +474,7 @@ const features = [
   .about-hero h1 {
     font-size: var(--text-5xl);
     margin-bottom: var(--space-md);
-    color: var(--color-white);
+    color: #FFFFFF;
   }
 
   .hero-tagline {
@@ -762,7 +740,7 @@ const features = [
   }
 
   .feature-box-header h4 {
-    color: var(--color-white);
+    color: #FFFFFF;
     margin: 0;
     font-size: var(--text-2xl);
   }
@@ -872,7 +850,7 @@ const features = [
   }
 
   .community-content h2 {
-    color: var(--color-white);
+    color: #FFFFFF;
     font-size: var(--text-4xl);
     margin-bottom: var(--space-lg);
   }

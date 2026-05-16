@@ -15,7 +15,7 @@ let relatedCalculators = [];
 if (currentCalc?.relatedCalculators?.length) {
   // Use specified related calculators
   relatedCalculators = currentCalc?.relatedCalculators
-    ?.map((id) => calculatorsData?.calculators?.find((c) => c?.id === id))
+    ?.map((id) => calculatorsData?.calculators?.find((c) => c?.slug === id))
     ?.filter(Boolean)
     ?.slice(0, limit);
 } else if (category) {

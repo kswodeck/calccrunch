@@ -89,7 +89,7 @@ calcType: net-worth
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>📊 Asset Categories Explained</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Cash & Bank Accounts:</strong> Checking, savings, money market accounts, CDs</li>
@@ -102,7 +102,7 @@ calcType: net-worth
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>💳 Liability Categories Explained</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Mortgage:</strong> Primary home mortgage, home equity loans, HELOCs</li>
@@ -115,7 +115,7 @@ calcType: net-worth
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>💡 Tips for Accurate Calculation</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Use current values:</strong> For real estate and vehicles, use current market value, not purchase price</li>
@@ -126,7 +126,7 @@ calcType: net-worth
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
+<div class="info-box" style="background: var(--color-highlight-red); border-left-color: var(--color-error);">
   <h4>⚠️ What NOT to Include</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Future income:</strong> Don't count expected salary, inheritance, or future earnings</li>
@@ -136,7 +136,7 @@ calcType: net-worth
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Net Worth</h4>
   <p>
     Your calculation is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your net worth snapshot, 
@@ -207,13 +207,13 @@ calcType: net-worth
   }
 
   .asset-row .item-number {
-    background: #E8F5E9;
-    color: #2E7D32;
+    background: var(--color-highlight-green);
+    color: var(--color-success);
   }
 
   .liability-row .item-number {
-    background: #FFEBEE;
-    color: #C62828;
+    background: var(--color-highlight-red);
+    color: var(--color-error);
   }
 
   .remove-item-btn {
@@ -230,8 +230,8 @@ calcType: net-worth
   }
 
   .remove-item-btn:hover {
-    color: #c62828;
-    background: #ffebee;
+    color: var(--color-error);
+    background: var(--color-highlight-red);
     border-radius: 4px;
   }
 
@@ -248,7 +248,7 @@ calcType: net-worth
     align-items: center;
     margin-top: var(--space-lg);
     padding: var(--space-md) var(--space-lg);
-    background: #E8F5E9;
+    background: var(--color-highlight-green);
     border-radius: var(--border-radius);
     border-left: 4px solid var(--color-success);
   }
@@ -265,7 +265,7 @@ calcType: net-worth
   }
 
   .liability-total {
-    background: #FFEBEE;
+    background: var(--color-highlight-red);
     border-left-color: var(--color-error);
   }
 
@@ -371,28 +371,28 @@ calcType: net-worth
   }
 
   .net-worth-status.excellent {
-    background: #C8E6C9;
-    color: #2E7D32;
+    background: var(--color-highlight-green);
+    color: var(--color-success);
   }
 
   .net-worth-status.good {
-    background: #DCEDC8;
-    color: #558B2F;
+    background: var(--color-highlight-green);
+    color: var(--color-success);
   }
 
   .net-worth-status.fair {
-    background: #FFF9C4;
-    color: #F9A825;
+    background: var(--color-highlight-yellow);
+    color: var(--color-warning);
   }
 
   .net-worth-status.poor {
-    background: #FFECB3;
-    color: #FF8F00;
+    background: var(--color-highlight-yellow);
+    color: var(--color-warning);
   }
 
   .net-worth-status.negative {
-    background: #FFCDD2;
-    color: #C62828;
+    background: var(--color-highlight-red);
+    color: var(--color-error);
   }
 
   .summary-cards {
@@ -493,7 +493,7 @@ calcType: net-worth
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background: white;
+    background: var(--color-white);
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -675,22 +675,22 @@ calcType: net-worth
   }
 
   .insight-card.insight-success {
-    background: #F1F8E9;
+    background: var(--color-highlight-green);
     border-color: #C5E1A5;
   }
 
   .insight-card.insight-warning {
-    background: #FFF8E1;
+    background: var(--color-highlight-yellow);
     border-color: #FFE082;
   }
 
   .insight-card.insight-info {
-    background: #E3F2FD;
+    background: var(--color-highlight-blue);
     border-color: #90CAF9;
   }
 
   .insight-card.insight-danger {
-    background: #FFEBEE;
+    background: var(--color-highlight-red);
     border-color: #EF9A9A;
   }
 

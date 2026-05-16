@@ -157,7 +157,7 @@ calcType: loan-amortization
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>💰 Save Money with Extra Payments</h4>
   <p>
     Making extra payments can significantly reduce your total interest paid and help you pay off your loan 
@@ -166,7 +166,7 @@ calcType: loan-amortization
   </p>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>📊 How to Read Your Schedule</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Payment Number:</strong> The sequential payment (1, 2, 3, etc.)</li>
@@ -176,7 +176,7 @@ calcType: loan-amortization
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Schedule</h4>
   <p>
     Your loan details are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
@@ -193,8 +193,8 @@ calcType: loan-amortization
   }
   
   .btn-success {
-    background: #10b981 !important;
-    border-color: #10b981 !important;
+    background: var(--color-success) !important;
+    border-color: var(--color-success) !important;
   }
   
   .savings-highlight {
@@ -203,32 +203,32 @@ calcType: loan-amortization
     padding: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 12px;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-left: 4px solid #10b981;
   }
   
   .savings-highlight.status-excellent {
-    background: #f0fdf4;
-    border-left-color: #10b981;
+    background: var(--color-highlight-green);
+    border-left-color: var(--color-success);
   }
   
   .savings-highlight.status-great {
-    background: #eff6ff;
-    border-left-color: #3b82f6;
+    background: var(--color-highlight-blue);
+    border-left-color: var(--color-light-blue);
   }
   
   .savings-highlight.status-good {
-    background: #fef3c7;
-    border-left-color: #f59e0b;
+    background: var(--color-highlight-yellow);
+    border-left-color: var(--color-warning);
   }
   
   .savings-highlight.status-standard {
-    background: #f8f9fa;
-    border-left-color: #9ca3af;
+    background: var(--color-surface-neutral);
+    border-left-color: var(--color-gray);
   }
   
   .savings-text {
-    color: #10b981;
+    color: var(--color-success);
     font-weight: bold;
   }
   
@@ -276,7 +276,7 @@ calcType: loan-amortization
     position: absolute;
     bottom: -20px;
     font-size: 0.75rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
   }
   
   .composition-legend {
@@ -313,7 +313,7 @@ calcType: loan-amortization
   .comparison-section {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -327,7 +327,7 @@ calcType: loan-amortization
   
   .comparison-card {
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 8px;
   }
   
@@ -338,7 +338,7 @@ calcType: loan-amortization
   
   .comparison-card h5 {
     margin: 0 0 1rem 0;
-    color: #374151;
+    color: var(--color-gray-dark);
   }
   
   .comparison-item {
@@ -355,7 +355,7 @@ calcType: loan-amortization
   .schedule-section {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -372,7 +372,7 @@ calcType: loan-amortization
   }
   
   .amortization-table thead {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
   }
   
   .amortization-table th,
@@ -388,12 +388,12 @@ calcType: loan-amortization
   }
   
   .amortization-table .year-end {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     font-weight: bold;
   }
   
   .amortization-table .has-extra {
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
   }
   
   .amount-cell {
@@ -401,7 +401,7 @@ calcType: loan-amortization
   }
   
   .extra-cell {
-    color: #10b981;
+    color: var(--color-success);
     font-weight: bold;
   }
   
@@ -412,7 +412,7 @@ calcType: loan-amortization
   .loan-insights {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -433,22 +433,22 @@ calcType: loan-amortization
   }
   
   .insight-card.insight-info {
-    background: #eff6ff;
+    background: var(--color-highlight-blue);
     border-color: #93c5fd;
   }
   
   .insight-card.insight-success {
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
     border-color: #86efac;
   }
   
   .insight-card.insight-warning {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     border-color: #fcd34d;
   }
   
   .insight-card.insight-neutral {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-color: #d1d5db;
   }
   
@@ -461,16 +461,16 @@ calcType: loan-amortization
   .insight-content h5 {
     margin: 0 0 0.5rem 0;
     font-size: 1rem;
-    color: #111827;
+    color: var(--color-black);
   }
   
   .insight-content p {
     margin: 0;
     font-size: 0.9rem;
-    color: #4b5563;
+    color: var(--color-gray-dark);
   }
   
-  .text-success { color: #10b981; }
+  .text-success { color: var(--color-success); }
   
   @media (max-width: 768px) {
     .comparison-grid {

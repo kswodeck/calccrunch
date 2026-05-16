@@ -340,7 +340,7 @@ difficulty: Easy
   </p>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>🔄 Color Harmonies Explained</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Complementary:</strong> Colors opposite on the color wheel - high contrast</li>
@@ -351,7 +351,7 @@ difficulty: Easy
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>♿ Accessibility Tips</h4>
   <p>
     For readable text, aim for a contrast ratio of at least <strong>4.5:1</strong> for normal text 
@@ -360,7 +360,7 @@ difficulty: Easy
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Palette</h4>
   <p>
     Your color settings are automatically saved in the URL. You can <strong>bookmark this page</strong> 
@@ -628,7 +628,7 @@ difficulty: Easy
     pointer-events: auto;
     width: 20px;
     height: 20px;
-    background: white;
+    background: var(--color-white);
     border: 3px solid var(--color-accent-orange);
     border-radius: 50%;
     cursor: pointer;
@@ -639,7 +639,7 @@ difficulty: Easy
     pointer-events: auto;
     width: 20px;
     height: 20px;
-    background: white;
+    background: var(--color-white);
     border: 3px solid var(--color-accent-orange);
     border-radius: 50%;
     cursor: pointer;
@@ -713,7 +713,7 @@ difficulty: Easy
   .toggle-advanced-btn.active {
     background: var(--color-primary-blue);
     border-color: var(--color-primary-blue);
-    color: var(--color-white);
+    color: #FFFFFF;
   }
   
   .toggle-icon {
@@ -888,7 +888,7 @@ difficulty: Easy
   }
   
   .color-detail-card {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid var(--color-gray);
@@ -968,7 +968,7 @@ difficulty: Easy
   
   /* Color Wheel Visualization */
   .color-wheel-section {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -1017,7 +1017,7 @@ difficulty: Easy
     left: 25%;
     width: 50%;
     height: 50%;
-    background: white;
+    background: var(--color-white);
     border-radius: 50%;
   }
   
@@ -1034,7 +1034,7 @@ difficulty: Easy
   
   /* Contrast Checker */
   .contrast-section {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -1078,12 +1078,12 @@ difficulty: Easy
     font-weight: 700;
   }
   
-  .contrast-badge.pass { background: #D1FAE5; color: #059669; }
-  .contrast-badge.fail { background: #FEE2E2; color: #DC2626; }
+  .contrast-badge.pass { background: var(--color-highlight-green); color: var(--color-success); }
+  .contrast-badge.fail { background: var(--color-highlight-red); color: var(--color-error); }
   
   /* Export Section */
   .export-section {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -1105,7 +1105,7 @@ difficulty: Easy
   .export-tab {
     padding: 0.5rem 1rem;
     border: 2px solid var(--color-gray);
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius);
     cursor: pointer;
     font-weight: 600;

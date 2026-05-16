@@ -304,7 +304,7 @@ Click **Calculate** to see your complete retirement journey!
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>💹 The Power of Time & Compound Interest</h4>
   <p>
     <strong>Example:</strong> Starting at age 30 with $10,000 and saving $500/month:
@@ -320,7 +320,7 @@ Click **Calculate** to see your complete retirement journey!
   </p>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>📊 Understanding Withdrawal Strategies</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>4% Rule (Recommended):</strong> Withdraw 4% in year one, adjust for inflation annually. Historically sustainable for 30+ years.</li>
@@ -332,7 +332,7 @@ Click **Calculate** to see your complete retirement journey!
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>💡 Retirement Planning Best Practices</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Start early:</strong> Time is your greatest asset - even small amounts compound significantly</li>
@@ -344,7 +344,7 @@ Click **Calculate** to see your complete retirement journey!
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
+<div class="info-box" style="background: var(--color-highlight-red); border-left-color: var(--color-error);">
   <h4>⚠️ Important Considerations</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li>Returns are estimates based on historical averages - actual returns will vary</li>
@@ -356,7 +356,7 @@ Click **Calculate** to see your complete retirement journey!
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFF3E0; border-left-color: #FF6B35;">
+<div class="info-box" style="background: var(--color-highlight-orange-alt); border-left-color: #FF6B35;">
   <h4>🎓 Key Retirement Planning Concepts</h4>
   <div style="margin: 10px 0;">
     <p><strong>Sequence of Returns Risk:</strong> Poor returns early in retirement can devastate a portfolio. Consider a bond tent or cash cushion for the first 5 years.</p>
@@ -366,7 +366,7 @@ Click **Calculate** to see your complete retirement journey!
   </div>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Plan</h4>
   <p>
     Your retirement plan is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
@@ -383,28 +383,28 @@ Click **Calculate** to see your complete retirement journey!
     padding: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 12px;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-left: 4px solid #10b981;
   }
   
   .retirement-readiness-score.excellent {
-    background: #f0fdf4;
-    border-left-color: #10b981;
+    background: var(--color-highlight-green);
+    border-left-color: var(--color-success);
   }
   
   .retirement-readiness-score.moderate {
-    background: #eff6ff;
-    border-left-color: #3b82f6;
+    background: var(--color-highlight-blue);
+    border-left-color: var(--color-light-blue);
   }
   
   .retirement-readiness-score.warning {
-    background: #fef3c7;
-    border-left-color: #f59e0b;
+    background: var(--color-highlight-yellow);
+    border-left-color: var(--color-warning);
   }
   
   .retirement-readiness-score.critical {
-    background: #fee2e2;
-    border-left-color: #ef4444;
+    background: var(--color-highlight-red);
+    border-left-color: var(--color-error);
   }
   
   .readiness-icon {
@@ -418,20 +418,20 @@ Click **Calculate** to see your complete retirement journey!
   
   .readiness-content h4 {
     margin: 0 0 0.5rem 0;
-    color: #111827;
+    color: var(--color-black);
     font-size: 1.5rem;
   }
   
   .readiness-content p {
     margin: 0;
     font-size: 1.1rem;
-    color: #4b5563;
+    color: var(--color-gray-dark);
   }
   
   .readiness-bar {
     width: 100%;
     height: 10px;
-    background: #e5e7eb;
+    background: var(--color-gray);
     border-radius: 5px;
     margin-top: 1rem;
     overflow: hidden;
@@ -455,7 +455,7 @@ Click **Calculate** to see your complete retirement journey!
   }
   
   .summary-card {
-    background: white;
+    background: var(--color-white);
     border: 1px solid #e5e7eb;
     border-radius: 12px;
     padding: 1.5rem;
@@ -463,7 +463,7 @@ Click **Calculate** to see your complete retirement journey!
   
   .summary-card h4 {
     margin: 0 0 1rem 0;
-    color: #2C5F8D;
+    color: var(--color-primary-blue);
     font-size: 1.25rem;
   }
   
@@ -479,7 +479,7 @@ Click **Calculate** to see your complete retirement journey!
   }
   
   .summary-detail.highlight {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     margin: 0.5rem -0.5rem 0;
     padding: 0.75rem 0.5rem;
     border-radius: 8px;
@@ -489,7 +489,7 @@ Click **Calculate** to see your complete retirement journey!
   .phase-visualization {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
 
@@ -510,7 +510,7 @@ Click **Calculate** to see your complete retirement journey!
     justify-content: space-between;
     margin-top: 0.5rem;
     font-size: 0.875rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
   }
   
   .chart-label-center {
@@ -527,7 +527,7 @@ Click **Calculate** to see your complete retirement journey!
   .retirement-projection {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -624,7 +624,7 @@ Click **Calculate** to see your complete retirement journey!
   }
   
   .data-table thead {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
   }
   
   .data-table th,
@@ -640,18 +640,18 @@ Click **Calculate** to see your complete retirement journey!
   }
   
   .data-table .depleted-year {
-    background: #fee2e2;
+    background: var(--color-highlight-red);
   }
   
   .amount-positive {
-    color: #10b981;
+    color: var(--color-success);
     font-weight: bold;
   }
   
   .optimization-insights {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 12px;
   }
   
@@ -668,21 +668,21 @@ Click **Calculate** to see your complete retirement journey!
     padding: 1rem;
     border-radius: 8px;
     border: 1px solid #e5e7eb;
-    background: white;
+    background: var(--color-white);
   }
   
   .insight-card.insight-info {
-    background: #eff6ff;
+    background: var(--color-highlight-blue);
     border-color: #93c5fd;
   }
   
   .insight-card.insight-success {
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
     border-color: #86efac;
   }
   
   .insight-card.insight-warning {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     border-color: #fcd34d;
   }
   
@@ -700,19 +700,19 @@ Click **Calculate** to see your complete retirement journey!
   .insight-content h5 {
     margin: 0 0 0.5rem 0;
     font-size: 1rem;
-    color: #111827;
+    color: var(--color-black);
   }
   
   .insight-content p {
     margin: 0;
     font-size: 0.9rem;
-    color: #4b5563;
+    color: var(--color-gray-dark);
   }
   
   .scenario-comparison {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -724,7 +724,7 @@ Click **Calculate** to see your complete retirement journey!
   }
   
   .comparison-table thead {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
   }
   
   .comparison-table th,
@@ -740,13 +740,13 @@ Click **Calculate** to see your complete retirement journey!
   }
   
   .current-selection {
-    background: #f0f9ff;
+    background: var(--color-highlight-blue);
   }
   
   .badge {
     display: inline-block;
     padding: 0.25rem 0.5rem;
-    background: #f59e0b;
+    background: var(--color-warning);
     color: white;
     border-radius: 4px;
     font-size: 0.75rem;
@@ -758,10 +758,10 @@ Click **Calculate** to see your complete retirement journey!
     font-size: 0.875rem;
   }
   
-  .text-success { color: #10b981; }
-  .text-warning { color: #f59e0b; }
-  .text-danger { color: #ef4444; }
-  .text-muted { color: #6b7280; }
+  .text-success { color: var(--color-success); }
+  .text-warning { color: var(--color-warning); }
+  .text-danger { color: var(--color-error); }
+  .text-muted { color: var(--color-gray-dark); }
   .font-bold { font-weight: bold; }
   
   @media (max-width: 768px) {
@@ -811,7 +811,7 @@ Click **Calculate** to see your complete retirement journey!
 .income-breakdown {
   margin: 2rem 0;
   padding: 1.5rem;
-  background: white;
+  background: var(--color-white);
   border-radius: 12px;
   border: 1px solid #e5e7eb;
 }
@@ -872,24 +872,24 @@ Click **Calculate** to see your complete retirement journey!
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background: #f8f9fa;
+  background: var(--color-surface-neutral);
   border-radius: 8px;
 }
 
 .stat-label {
   font-size: 0.875rem;
-  color: #6b7280;
+  color: var(--color-gray-dark);
   margin-bottom: 0.25rem;
 }
 
 .stat-value {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #111827;
+  color: var(--color-black);
 }
 
 .stat-value.highlight {
-  color: #2C5F8D;
+  color: var(--color-primary-blue);
 }
 
 /* Enhanced Summary Styles */
@@ -905,11 +905,11 @@ Click **Calculate** to see your complete retirement journey!
   cursor: pointer;
   border-bottom: 3px solid transparent;
   transition: all 0.3s ease;
-  color: #6b7280;
+  color: var(--color-gray-dark);
 }
 
 .summary-tab.active {
-  color: #2C5F8D;
+  color: var(--color-primary-blue);
   border-bottom-color: #FF6B35;
 }
 
@@ -927,7 +927,7 @@ Click **Calculate** to see your complete retirement journey!
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background: #f8f9fa;
+  background: var(--color-surface-neutral);
   border-radius: 8px;
   border: 1px solid #e5e7eb;
 }
@@ -936,7 +936,7 @@ Click **Calculate** to see your complete retirement journey!
 .lifetime-projection {
   margin: 2rem 0;
   padding: 1.5rem;
-  background: white;
+  background: var(--color-white);
   border-radius: 12px;
   border: 1px solid #e5e7eb;
 }
@@ -948,7 +948,7 @@ Click **Calculate** to see your complete retirement journey!
 }
 
 .projection-table .retirement-year {
-  background: #fef3c7;
+  background: var(--color-highlight-yellow);
   font-weight: bold;
 }
 
@@ -963,12 +963,12 @@ Click **Calculate** to see your complete retirement journey!
 
 .phase-badge.accumulation {
   background: #dcfce7;
-  color: #166534;
+  color: var(--color-success);
 }
 
 .phase-badge.retirement {
   background: #dbeafe;
-  color: #1e40af;
+  color: var(--color-primary-blue);
 }
 
 @keyframes fadeIn {

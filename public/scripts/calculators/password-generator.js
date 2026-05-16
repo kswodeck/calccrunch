@@ -835,9 +835,9 @@
     if (!elements.resultDiv) return;
     
     elements.resultDiv.innerHTML = `
-      <div class="error-message" style="background: #FEE2E2; border: 2px solid #EF4444; border-radius: 8px; padding: 1.5rem; text-align: center;">
-        <h4 style="color: #DC2626; margin-bottom: 0.5rem;">⚠️ Generation Error</h4>
-        <p style="color: #7F1D1D; margin: 0;">${message}</p>
+      <div class="error-message" style="background: var(--color-highlight-red); border: 2px solid var(--color-error); border-radius: 8px; padding: 1.5rem; text-align: center;">
+        <h4 style="color: var(--color-error); margin-bottom: 0.5rem;">⚠️ Generation Error</h4>
+        <p style="color: var(--color-error); margin: 0;">${message}</p>
       </div>
     `;
     elements.resultDiv.classList.remove('hidden');

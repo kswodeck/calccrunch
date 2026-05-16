@@ -320,7 +320,7 @@ calcType: lorem
   </p>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>⚡ Text Styles Explained</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Classic Lorem:</strong> Traditional Latin pseudo-text used for centuries</li>
@@ -388,7 +388,7 @@ The standard Lorem Ipsum passage has been used since the 1500s when an unknown p
     align-items: center;
     text-align: center;
     padding: var(--space-lg);
-    background: white;
+    background: var(--color-white);
     border: 2px solid var(--color-gray);
     border-radius: var(--border-radius);
     transition: all var(--transition-fast);
@@ -449,7 +449,7 @@ The standard Lorem Ipsum passage has been used since the 1500s when an unknown p
   .preset-btn {
     padding: var(--space-xs) var(--space-md);
     border: 2px solid var(--color-gray);
-    background: white;
+    background: var(--color-white);
     border-radius: 50px;
     font-size: var(--text-sm);
     font-weight: 600;
@@ -482,7 +482,7 @@ The standard Lorem Ipsum passage has been used since the 1500s when an unknown p
     width: 40px;
     height: 40px;
     border: 2px solid var(--color-gray);
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius);
     font-size: var(--text-xl);
     font-weight: 700;
@@ -531,7 +531,7 @@ The standard Lorem Ipsum passage has been used since the 1500s when an unknown p
     display: flex;
     flex-direction: column;
     padding: var(--space-md);
-    background: white;
+    background: var(--color-white);
     border: 2px solid var(--color-gray);
     border-radius: var(--border-radius);
     transition: all var(--transition-fast);
@@ -574,7 +574,7 @@ The standard Lorem Ipsum passage has been used since the 1500s when an unknown p
     align-items: center;
     gap: var(--space-sm);
     padding: var(--space-md) var(--space-lg);
-    background: white;
+    background: var(--color-white);
     border: 2px solid var(--color-gray);
     border-radius: var(--border-radius);
     cursor: pointer;
@@ -628,7 +628,7 @@ The standard Lorem Ipsum passage has been used since the 1500s when an unknown p
     gap: var(--space-sm);
     cursor: pointer;
     padding: var(--space-md);
-    background: white;
+    background: var(--color-white);
     border: 2px solid var(--color-gray);
     border-radius: var(--border-radius);
     transition: all var(--transition-fast);
@@ -691,7 +691,7 @@ The standard Lorem Ipsum passage has been used since the 1500s when an unknown p
   
   /* Generated Text Display */
   .generated-text-container {
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius-lg);
     padding: var(--space-xl);
     margin-bottom: var(--space-xl);
@@ -736,7 +736,7 @@ The standard Lorem Ipsum passage has been used since the 1500s when an unknown p
   .view-toggle-btn {
     padding: var(--space-sm) var(--space-lg);
     border: 2px solid var(--color-gray);
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius);
     cursor: pointer;
     font-weight: 600;
@@ -823,7 +823,7 @@ The standard Lorem Ipsum passage has been used since the 1500s when an unknown p
   
   /* Statistics Section */
   .stats-section {
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius-lg);
     padding: var(--space-xl);
     margin-bottom: var(--space-xl);
@@ -868,7 +868,7 @@ The standard Lorem Ipsum passage has been used since the 1500s when an unknown p
   
   /* Word Length Distribution */
   .distribution-section {
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius);
     padding: var(--space-lg);
     margin-bottom: var(--space-lg);

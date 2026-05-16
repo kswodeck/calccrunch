@@ -143,7 +143,7 @@ calcType: investment-income-goal
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>🎯 Key Features</h4>
   <p><strong>This calculator includes:</strong></p>
   <ul style="margin: 10px 0; padding-left: 20px;">
@@ -156,7 +156,7 @@ calcType: investment-income-goal
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>📊 Understanding the Results</h4>
   <p><strong>The calculator provides:</strong></p>
   <ul style="margin: 10px 0; padding-left: 20px;">
@@ -170,7 +170,7 @@ calcType: investment-income-goal
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>💡 Investment Strategy Tips</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Diversification:</strong> Spread investments across different asset types to reduce risk</li>
@@ -181,7 +181,7 @@ calcType: investment-income-goal
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
+<div class="info-box" style="background: var(--color-highlight-red); border-left-color: var(--color-error);">
   <h4>⚠️ Important Disclaimers</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Not Financial Advice:</strong> This calculator is for educational purposes only</li>
@@ -193,7 +193,7 @@ calcType: investment-income-goal
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Calculation</h4>
   <p>
     Your calculation is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your investment plan, 
@@ -229,7 +229,7 @@ calcType: investment-income-goal
   .monthly-display {
     margin-top: 0.5rem;
     padding: 0.75rem;
-    background: #E8F4F8;
+    background: var(--color-highlight-blue);
     border-left: 3px solid var(--color-accent-orange);
     border-radius: 4px;
     font-size: 0.95rem;
@@ -246,7 +246,7 @@ calcType: investment-income-goal
   }
 
   .investment-row {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border: 2px solid #e5e7eb;
     border-radius: 8px;
     padding: 1.5rem;
@@ -284,8 +284,8 @@ calcType: investment-income-goal
   }
 
   .remove-investment-btn:hover {
-    color: #c62828;
-    background: #ffebee;
+    color: var(--color-error);
+    background: var(--color-highlight-red);
     border-radius: 4px;
   }
 
@@ -297,7 +297,7 @@ calcType: investment-income-goal
   }
 
   .highlight-stat {
-    background: #fff8dc;
+    background: var(--color-highlight-yellow);
     border-left: 3px solid var(--color-accent-orange);
     padding-left: 0.5rem !important;
   }

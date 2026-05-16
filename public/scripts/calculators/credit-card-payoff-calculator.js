@@ -521,7 +521,7 @@
             </div>
             <div class="comparison-stat">
               <span class="label">Total Interest:</span>
-              <span class="value" style="color: #ef5350;">${formatCurrency(minimum.totalInterest)}</span>
+              <span class="value" style="color: var(--color-error);">${formatCurrency(minimum.totalInterest)}</span>
             </div>
             <div class="comparison-stat">
               <span class="label">Total Paid:</span>
@@ -918,7 +918,7 @@
       bottom: 20px;
       left: 50%;
       transform: translateX(-50%);
-      background: #333;
+      background: var(--color-black);
       color: white;
       padding: 12px 24px;
       border-radius: 4px;
@@ -1055,16 +1055,16 @@
     }
     
     .error-message {
-      background: #fee;
+      background: var(--color-highlight-red);
       border: 2px solid #fcc;
       border-radius: 8px;
       padding: 1.5rem;
-      color: #c00;
+      color: var(--color-error);
     }
     
     .error-message h3 {
       margin: 0 0 0.5rem 0;
-      color: #c00;
+      color: var(--color-error);
     }
     
     .btn-sm {

@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
-import EmailCapture from "../components/EmailCapture.astro";
 import AdUnit from "../components/AdUnit.astro";
 
 const breadcrumbItems = [
@@ -315,8 +314,6 @@ const faqs = [
       </div>
     </section>
 
-    <!-- Email Capture -->
-    <!-- <EmailCapture /> -->
   </div>
 
   <!-- Load Contact Form JavaScript -->
@@ -366,7 +363,7 @@ const faqs = [
 
   .badge {
     background: rgba(255, 255, 255, 0.2);
-    color: var(--color-white);
+    color: #FFFFFF;
     padding: var(--space-sm) var(--space-lg);
     border-radius: 50px;
     font-size: var(--text-base);
@@ -412,15 +409,15 @@ const faqs = [
   }
 
   .form-message.success {
-    background: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
+    background: var(--color-highlight-green);
+    color: var(--color-success);
+    border: 1px solid var(--color-success);
   }
 
   .form-message.error {
-    background: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
+    background: var(--color-highlight-red);
+    color: var(--color-error);
+    border: 1px solid var(--color-error);
   }
 
   .form-message.hidden {

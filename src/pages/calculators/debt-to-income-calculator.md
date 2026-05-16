@@ -177,7 +177,7 @@ calcType: debt-to-income
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F5E9; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>✅ DTI Guidelines by Loan Type</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Conventional Loans:</strong> 28% front-end / 36% back-end (ideal), up to 43-50% with compensating factors</li>
@@ -188,7 +188,7 @@ calcType: debt-to-income
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>💡 What Counts as Debt?</h4>
   <p><strong>Include in your DTI calculation:</strong></p>
   <ul style="margin: 10px 0; padding-left: 20px;">
@@ -209,7 +209,7 @@ calcType: debt-to-income
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>📈 Tips to Improve Your DTI</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Pay down existing debt:</strong> Focus on high-interest credit cards first</li>
@@ -220,7 +220,7 @@ calcType: debt-to-income
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your DTI Calculation</h4>
   <p>
     Your calculation is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your DTI analysis, 
@@ -316,23 +316,23 @@ calcType: debt-to-income
   }
 
   .item-row.income-row:hover {
-    border-color: #4CAF50;
+    border-color: var(--color-success);
   }
 
   .item-row.housing-row:hover {
-    border-color: #2196F3;
+    border-color: var(--color-primary-blue);
   }
 
   .item-row.debt-row:hover {
-    border-color: #F44336;
+    border-color: var(--color-error);
   }
 
   .item-row.assets-row:hover {
-    border-color: #9C27B0;
+    border-color: var(--color-primary-blue);
   }
 
   .item-row.proposed-row:hover {
-    border-color: #FF9800;
+    border-color: var(--color-warning);
   }
 
   .item-header {
@@ -352,28 +352,28 @@ calcType: debt-to-income
   }
 
   .income-row .item-number {
-    background: #E8F5E9;
-    color: #2E7D32;
+    background: var(--color-highlight-green);
+    color: var(--color-success);
   }
 
   .housing-row .item-number {
-    background: #E3F2FD;
-    color: #1565C0;
+    background: var(--color-highlight-blue);
+    color: var(--color-primary-blue);
   }
 
   .debt-row .item-number {
-    background: #FFEBEE;
-    color: #C62828;
+    background: var(--color-highlight-red);
+    color: var(--color-error);
   }
 
   .assets-row .item-number {
-    background: #F3E5F5;
-    color: #7B1FA2;
+    background: var(--color-highlight-purple);
+    color: var(--color-primary-blue);
   }
 
   .proposed-row .item-number {
-    background: #FFF3E0;
-    color: #E65100;
+    background: var(--color-highlight-orange-alt);
+    color: var(--color-warning);
   }
 
   .remove-item-btn {
@@ -390,8 +390,8 @@ calcType: debt-to-income
   }
 
   .remove-item-btn:hover {
-    color: #c62828;
-    background: #ffebee;
+    color: var(--color-error);
+    background: var(--color-highlight-red);
     border-radius: 4px;
   }
 
@@ -408,7 +408,7 @@ calcType: debt-to-income
     align-items: center;
     margin-top: var(--space-lg);
     padding: var(--space-md) var(--space-lg);
-    background: #E8F5E9;
+    background: var(--color-highlight-green);
     border-radius: var(--border-radius);
     border-left: 4px solid #4CAF50;
   }
@@ -420,53 +420,53 @@ calcType: debt-to-income
 
   .section-total strong {
     font-size: var(--text-xl);
-    color: #4CAF50;
+    color: var(--color-success);
     font-family: var(--font-primary);
   }
 
   .income-total {
-    background: #E8F5E9;
-    border-left-color: #4CAF50;
+    background: var(--color-highlight-green);
+    border-left-color: var(--color-success);
   }
 
   .income-total strong {
-    color: #4CAF50;
+    color: var(--color-success);
   }
 
   .housing-total {
-    background: #E3F2FD;
-    border-left-color: #2196F3;
+    background: var(--color-highlight-blue);
+    border-left-color: var(--color-primary-blue);
   }
 
   .housing-total strong {
-    color: #1565C0;
+    color: var(--color-primary-blue);
   }
 
   .debt-total {
-    background: #FFEBEE;
-    border-left-color: #F44336;
+    background: var(--color-highlight-red);
+    border-left-color: var(--color-error);
   }
 
   .debt-total strong {
-    color: #C62828;
+    color: var(--color-error);
   }
 
   .assets-total {
-    background: #F3E5F5;
-    border-left-color: #9C27B0;
+    background: var(--color-highlight-purple);
+    border-left-color: var(--color-primary-blue);
   }
 
   .assets-total strong {
-    color: #7B1FA2;
+    color: var(--color-primary-blue);
   }
 
   .proposed-total {
-    background: #FFF3E0;
-    border-left-color: #FF9800;
+    background: var(--color-highlight-orange-alt);
+    border-left-color: var(--color-warning);
   }
 
   .proposed-total strong {
-    color: #E65100;
+    color: var(--color-warning);
   }
 
   .dti-preview {
@@ -487,7 +487,7 @@ calcType: debt-to-income
   .preview-item {
     padding: var(--space-md);
     border-radius: var(--border-radius);
-    background: white;
+    background: var(--color-white);
   }
 
   .preview-label {
@@ -503,15 +503,15 @@ calcType: debt-to-income
   }
 
   .income-preview .preview-value {
-    color: #4CAF50;
+    color: var(--color-success);
   }
 
   .housing-preview .preview-value {
-    color: #2196F3;
+    color: var(--color-primary-blue);
   }
 
   .debt-preview .preview-value {
-    color: #F44336;
+    color: var(--color-error);
   }
 
   .dti-preview-ratio .preview-value {
@@ -519,23 +519,23 @@ calcType: debt-to-income
   }
 
   .dti-preview-ratio .preview-value.excellent {
-    color: #4CAF50;
+    color: var(--color-success);
   }
 
   .dti-preview-ratio .preview-value.good {
-    color: #8BC34A;
+    color: var(--color-success);
   }
 
   .dti-preview-ratio .preview-value.fair {
-    color: #FFC107;
+    color: var(--color-warning);
   }
 
   .dti-preview-ratio .preview-value.poor {
-    color: #FF9800;
+    color: var(--color-warning);
   }
 
   .dti-preview-ratio .preview-value.danger {
-    color: #F44336;
+    color: var(--color-error);
   }
 
   .input-with-addon {
@@ -604,11 +604,11 @@ calcType: debt-to-income
     margin-bottom: var(--space-sm);
   }
 
-  .dti-value.excellent { color: #4CAF50; }
-  .dti-value.good { color: #8BC34A; }
-  .dti-value.fair { color: #FFC107; }
-  .dti-value.poor { color: #FF9800; }
-  .dti-value.danger { color: #F44336; }
+  .dti-value.excellent { color: var(--color-success); }
+  .dti-value.good { color: var(--color-success); }
+  .dti-value.fair { color: var(--color-warning); }
+  .dti-value.poor { color: var(--color-warning); }
+  .dti-value.danger { color: var(--color-error); }
 
   .dti-status {
     display: inline-block;
@@ -619,28 +619,28 @@ calcType: debt-to-income
   }
 
   .dti-status.excellent {
-    background: #E8F5E9;
-    color: #2E7D32;
+    background: var(--color-highlight-green);
+    color: var(--color-success);
   }
 
   .dti-status.good {
-    background: #F1F8E9;
-    color: #558B2F;
+    background: var(--color-highlight-green);
+    color: var(--color-success);
   }
 
   .dti-status.fair {
-    background: #FFFDE7;
-    color: #F9A825;
+    background: var(--color-highlight-yellow);
+    color: var(--color-warning);
   }
 
   .dti-status.poor {
-    background: #FFF3E0;
-    color: #E65100;
+    background: var(--color-highlight-orange-alt);
+    color: var(--color-warning);
   }
 
   .dti-status.danger {
-    background: #FFEBEE;
-    color: #C62828;
+    background: var(--color-highlight-red);
+    color: var(--color-error);
   }
 
   /* Summary Cards */
@@ -685,40 +685,40 @@ calcType: debt-to-income
   }
 
   .summary-card.income-card {
-    border-color: #4CAF50;
+    border-color: var(--color-success);
   }
 
   .summary-card.income-card .summary-card-value {
-    color: #4CAF50;
+    color: var(--color-success);
   }
 
   .summary-card.housing-card {
-    border-color: #2196F3;
+    border-color: var(--color-primary-blue);
   }
 
   .summary-card.housing-card .summary-card-value {
-    color: #1565C0;
+    color: var(--color-primary-blue);
   }
 
   .summary-card.debt-card {
-    border-color: #F44336;
+    border-color: var(--color-error);
   }
 
   .summary-card.debt-card .summary-card-value {
-    color: #C62828;
+    color: var(--color-error);
   }
 
   .summary-card.total-card {
-    border-color: #9C27B0;
+    border-color: var(--color-primary-blue);
   }
 
   .summary-card.total-card .summary-card-value {
-    color: #7B1FA2;
+    color: var(--color-primary-blue);
   }
 
   /* DTI Meters */
   .dti-analysis {
-    background: white;
+    background: var(--color-white);
     padding: var(--space-xl);
     border-radius: var(--border-radius-lg);
     margin: var(--space-2xl) 0;
@@ -757,7 +757,7 @@ calcType: debt-to-income
   .meter-bar {
     width: 100%;
     height: 40px;
-    background: #e5e7eb;
+    background: var(--color-gray);
     border-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -818,13 +818,13 @@ calcType: debt-to-income
     font-weight: 600;
   }
 
-  .meter-status.text-success { color: #4CAF50; }
-  .meter-status.text-warning { color: #FF9800; }
-  .meter-status.text-danger { color: #F44336; }
+  .meter-status.text-success { color: var(--color-success); }
+  .meter-status.text-warning { color: var(--color-warning); }
+  .meter-status.text-danger { color: var(--color-error); }
 
   /* Payment Breakdown */
   .breakdown-section {
-    background: white;
+    background: var(--color-white);
     padding: var(--space-xl);
     border-radius: var(--border-radius-lg);
     margin: var(--space-2xl) 0;
@@ -1001,22 +1001,22 @@ calcType: debt-to-income
   }
 
   .insight-card.insight-success {
-    background: #F1F8E9;
+    background: var(--color-highlight-green);
     border-color: #C5E1A5;
   }
 
   .insight-card.insight-warning {
-    background: #FFF8E1;
+    background: var(--color-highlight-yellow);
     border-color: #FFE082;
   }
 
   .insight-card.insight-info {
-    background: #E3F2FD;
+    background: var(--color-highlight-blue);
     border-color: #90CAF9;
   }
 
   .insight-card.insight-danger {
-    background: #FFEBEE;
+    background: var(--color-highlight-red);
     border-color: #EF9A9A;
   }
 
@@ -1048,7 +1048,7 @@ calcType: debt-to-income
   }
 
   .planning-results h4 {
-    color: #E65100;
+    color: var(--color-warning);
     margin-bottom: var(--space-lg);
     display: flex;
     align-items: center;
@@ -1063,7 +1063,7 @@ calcType: debt-to-income
   }
 
   .planning-card {
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius);
     padding: var(--space-lg);
     text-align: center;
@@ -1083,7 +1083,7 @@ calcType: debt-to-income
 
   .planning-arrow {
     font-size: var(--text-2xl);
-    color: #FF9800;
+    color: var(--color-warning);
   }
 
   /* Net Worth Section */
@@ -1096,7 +1096,7 @@ calcType: debt-to-income
   }
 
   .networth-section h4 {
-    color: #7B1FA2;
+    color: var(--color-primary-blue);
     margin-bottom: var(--space-lg);
     display: flex;
     align-items: center;
@@ -1110,7 +1110,7 @@ calcType: debt-to-income
   }
 
   .networth-card {
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius);
     padding: var(--space-lg);
     text-align: center;
@@ -1131,15 +1131,15 @@ calcType: debt-to-income
     font-size: var(--text-2xl);
     font-weight: 700;
     font-family: var(--font-primary);
-    color: #7B1FA2;
+    color: var(--color-primary-blue);
   }
 
   .networth-value.positive {
-    color: #4CAF50;
+    color: var(--color-success);
   }
 
   .networth-value.negative {
-    color: #F44336;
+    color: var(--color-error);
   }
 
   @media (max-width: 768px) {

@@ -427,11 +427,11 @@ calcType: body-fat
   </p>
 </div>
 
-<div class="info-box" style="background: #FEF3C7; border-left-color: #F59E0B;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>📊 Body Fat Categories</h4>
   <table style="width: 100%; margin: 10px 0;">
     <thead>
-      <tr style="background: #FDE68A;">
+      <tr style="background: var(--color-highlight-yellow);">
         <th style="padding: 8px; text-align: left;">Category</th>
         <th style="padding: 8px;">Men</th>
         <th style="padding: 8px;">Women</th>
@@ -443,7 +443,7 @@ calcType: body-fat
         <td style="padding: 8px; text-align: center;">2-5%</td>
         <td style="padding: 8px; text-align: center;">10-13%</td>
       </tr>
-      <tr style="background: #FEF8E2;">
+      <tr style="background: var(--color-highlight-yellow);">
         <td style="padding: 8px;"><strong>Athletes</strong></td>
         <td style="padding: 8px; text-align: center;">6-13%</td>
         <td style="padding: 8px; text-align: center;">14-20%</td>
@@ -453,7 +453,7 @@ calcType: body-fat
         <td style="padding: 8px; text-align: center;">14-17%</td>
         <td style="padding: 8px; text-align: center;">21-24%</td>
       </tr>
-      <tr style="background: #FEF8E2;">
+      <tr style="background: var(--color-highlight-yellow);">
         <td style="padding: 8px;"><strong>Average</strong></td>
         <td style="padding: 8px; text-align: center;">18-24%</td>
         <td style="padding: 8px; text-align: center;">25-31%</td>
@@ -467,7 +467,7 @@ calcType: body-fat
   </table>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>🎯 Which Method to Use?</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Navy Method:</strong> Good for home use, no special equipment needed, accurate within 3-4%</li>
@@ -479,7 +479,7 @@ calcType: body-fat
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Calculation</h4>
   <p>
     Your body composition data is automatically saved in the URL. You can <strong>bookmark this page</strong> to track progress over time, 
@@ -498,7 +498,7 @@ calcType: body-fat
     flex: 1;
     padding: 0.75rem;
     border: 2px solid var(--color-gray);
-    background: white;
+    background: var(--color-white);
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: var(--border-radius);
@@ -524,7 +524,7 @@ calcType: body-fat
   .body-composition-visual {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 12px;
   }
   
@@ -560,7 +560,7 @@ calcType: body-fat
   .category-indicator {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
@@ -583,7 +583,7 @@ calcType: body-fat
     top: -10px;
     width: 4px;
     height: 60px;
-    background: #1e40af;
+    background: var(--color-primary-blue);
     border-radius: 2px;
     transition: left 0.5s ease;
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
@@ -604,7 +604,7 @@ calcType: body-fat
   }
   
   .stat-card {
-    background: white;
+    background: var(--color-white);
     padding: 1rem;
     border-radius: 8px;
     border: 2px solid #e5e7eb;
@@ -618,7 +618,7 @@ calcType: body-fat
   }
   
   .stat-label {
-    color: #6b7280;
+    color: var(--color-gray-dark);
     margin-top: 0.25rem;
   }
   

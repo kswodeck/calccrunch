@@ -259,7 +259,7 @@ calcType: rng
   </p>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>⚡ Number Types Explained</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Prime Numbers:</strong> Only divisible by 1 and themselves (2, 3, 5, 7, 11...)</li>
@@ -269,7 +269,7 @@ calcType: rng
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>🎯 Common Use Cases</h4>
   <p>
     <strong>Lottery & Raffles:</strong> Generate unique winning numbers. 
@@ -280,7 +280,7 @@ calcType: rng
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Settings</h4>
   <p>
     Your preferences are automatically saved in the URL. You can <strong>bookmark this page</strong> 
@@ -329,7 +329,7 @@ calcType: rng
   .preset-btn.active {
     background: var(--color-accent-orange);
     border-color: var(--color-accent-orange);
-    color: var(--color-white);
+    color: #FFFFFF;
   }
   
   /* Count Control */
@@ -468,7 +468,7 @@ calcType: rng
   .toggle-advanced-btn.active {
     background: var(--color-primary-blue);
     border-color: var(--color-primary-blue);
-    color: var(--color-white);
+    color: #FFFFFF;
   }
   
   .toggle-icon {
@@ -719,7 +719,7 @@ calcType: rng
   
   /* Statistics Section */
   .stats-section {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -762,7 +762,7 @@ calcType: rng
   
   /* Distribution Chart */
   .distribution-section {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -827,7 +827,7 @@ calcType: rng
   
   /* Odd/Even Visual */
   .odd-even-section {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -899,7 +899,7 @@ calcType: rng
   
   /* Range Visual */
   .range-visual {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;

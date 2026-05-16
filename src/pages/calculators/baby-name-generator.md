@@ -424,7 +424,7 @@ calcType: babyname
   </p>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>💡 Tips for Name Selection</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Say it out loud:</strong> Test how first, middle, and last names sound together</li>
@@ -435,7 +435,7 @@ calcType: babyname
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>🌍 Name Origins Matter</h4>
   <p>
     Names from different cultures carry unique histories and meanings. Hebrew names often have 
@@ -445,7 +445,7 @@ calcType: babyname
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Favorites</h4>
   <p>
     Your preferences are automatically saved in the URL. You can <strong>bookmark this page</strong> 
@@ -669,7 +669,7 @@ calcType: babyname
   .toggle-advanced-btn.active {
     background: var(--color-primary-blue);
     border-color: var(--color-primary-blue);
-    color: var(--color-white);
+    color: #FFFFFF;
   }
   
   .toggle-icon {
@@ -810,7 +810,7 @@ calcType: babyname
   }
   
   .name-card {
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius-lg);
     padding: 1.25rem;
     border: 2px solid var(--color-gray);
@@ -906,23 +906,23 @@ calcType: babyname
   }
   
   .meta-badge.flow-excellent {
-    background: #D1FAE5;
-    color: #065F46;
+    background: var(--color-highlight-green);
+    color: var(--color-success);
   }
   
   .meta-badge.flow-good {
-    background: #DBEAFE;
-    color: #1E40AF;
+    background: var(--color-highlight-blue);
+    color: var(--color-primary-blue);
   }
   
   .meta-badge.flow-fair {
-    background: #FEF3C7;
-    color: #92400E;
+    background: var(--color-highlight-yellow);
+    color: var(--color-warning);
   }
   
   /* Stats Section */
   .stats-section {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -965,7 +965,7 @@ calcType: babyname
   
   /* Origin Distribution Chart */
   .origin-chart-section {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -1019,7 +1019,7 @@ calcType: babyname
   
   /* Letter Distribution */
   .letter-chart-section {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -1095,7 +1095,7 @@ calcType: babyname
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
-    background: white;
+    background: var(--color-white);
     border: 2px solid var(--color-warning);
     border-radius: 50px;
     font-weight: 600;
@@ -1170,7 +1170,7 @@ calcType: babyname
   }
   
   .initials-preview h4 {
-    color: #94A3B8;
+    color: var(--color-gray);
     margin-bottom: 0.75rem;
     font-size: 0.9rem;
   }

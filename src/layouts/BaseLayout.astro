@@ -23,7 +23,19 @@ const canonicalURL =
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" href="/images/logos/logo-icon.png" />
+
+    <!-- Theme initialization (runs before render to prevent flash) -->
+    <script is:inline>
+      (function() {
+        var theme = localStorage.getItem('theme');
+        if (!theme) {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
 
     <!-- Primary Meta Tags -->
     <title>{fullTitle}</title>
@@ -99,6 +111,22 @@ const canonicalURL =
     <Footer />
     <script>
       import "../scripts/search.js";
+    </script>
+    <script>
+      function initThemeToggle() {
+        const toggles = document.querySelectorAll('.theme-toggle');
+        toggles.forEach(toggle => {
+          toggle.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+          });
+        });
+      }
+
+      initThemeToggle();
+      document.addEventListener('astro:after-swap', initThemeToggle);
     </script>
   </body>
 </html>

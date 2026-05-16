@@ -132,11 +132,11 @@ calcType: size-converter
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>📊 Quick Reference: Women's Clothing</h4>
   <table style="width: 100%; margin: 10px 0; font-size: 0.9rem;">
     <thead>
-      <tr style="background: #C8E6C9;">
+      <tr style="background: var(--color-highlight-green);">
         <th style="padding: 8px;">US</th>
         <th style="padding: 8px;">UK</th>
         <th style="padding: 8px;">EU</th>
@@ -145,19 +145,19 @@ calcType: size-converter
     </thead>
     <tbody>
       <tr><td style="padding: 6px; text-align: center;">XS (2)</td><td style="padding: 6px; text-align: center;">6</td><td style="padding: 6px; text-align: center;">34</td><td style="padding: 6px; text-align: center;">6</td></tr>
-      <tr style="background: #F1F8E9;"><td style="padding: 6px; text-align: center;">S (4-6)</td><td style="padding: 6px; text-align: center;">8-10</td><td style="padding: 6px; text-align: center;">36-38</td><td style="padding: 6px; text-align: center;">8-10</td></tr>
+      <tr style="background: var(--color-highlight-green);"><td style="padding: 6px; text-align: center;">S (4-6)</td><td style="padding: 6px; text-align: center;">8-10</td><td style="padding: 6px; text-align: center;">36-38</td><td style="padding: 6px; text-align: center;">8-10</td></tr>
       <tr><td style="padding: 6px; text-align: center;">M (8-10)</td><td style="padding: 6px; text-align: center;">12-14</td><td style="padding: 6px; text-align: center;">40-42</td><td style="padding: 6px; text-align: center;">12-14</td></tr>
-      <tr style="background: #F1F8E9;"><td style="padding: 6px; text-align: center;">L (12-14)</td><td style="padding: 6px; text-align: center;">16-18</td><td style="padding: 6px; text-align: center;">44-46</td><td style="padding: 6px; text-align: center;">16-18</td></tr>
+      <tr style="background: var(--color-highlight-green);"><td style="padding: 6px; text-align: center;">L (12-14)</td><td style="padding: 6px; text-align: center;">16-18</td><td style="padding: 6px; text-align: center;">44-46</td><td style="padding: 6px; text-align: center;">16-18</td></tr>
       <tr><td style="padding: 6px; text-align: center;">XL (16-18)</td><td style="padding: 6px; text-align: center;">20-22</td><td style="padding: 6px; text-align: center;">48-50</td><td style="padding: 6px; text-align: center;">20-22</td></tr>
     </tbody>
   </table>
 </div>
 
-<div class="info-box" style="background: #E3F2FD; border-left-color: #2196F3;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>👟 Quick Reference: Shoe Sizes</h4>
   <table style="width: 100%; margin: 10px 0; font-size: 0.9rem;">
     <thead>
-      <tr style="background: #BBDEFB;">
+      <tr style="background: var(--color-highlight-blue);">
         <th style="padding: 8px;">US Women</th>
         <th style="padding: 8px;">US Men</th>
         <th style="padding: 8px;">UK</th>
@@ -167,16 +167,16 @@ calcType: size-converter
     </thead>
     <tbody>
       <tr><td style="padding: 6px; text-align: center;">6</td><td style="padding: 6px; text-align: center;">-</td><td style="padding: 6px; text-align: center;">3.5</td><td style="padding: 6px; text-align: center;">36</td><td style="padding: 6px; text-align: center;">22.5</td></tr>
-      <tr style="background: #E3F2FD;"><td style="padding: 6px; text-align: center;">7</td><td style="padding: 6px; text-align: center;">-</td><td style="padding: 6px; text-align: center;">4.5</td><td style="padding: 6px; text-align: center;">37.5</td><td style="padding: 6px; text-align: center;">23.5</td></tr>
+      <tr style="background: var(--color-highlight-blue);"><td style="padding: 6px; text-align: center;">7</td><td style="padding: 6px; text-align: center;">-</td><td style="padding: 6px; text-align: center;">4.5</td><td style="padding: 6px; text-align: center;">37.5</td><td style="padding: 6px; text-align: center;">23.5</td></tr>
       <tr><td style="padding: 6px; text-align: center;">8</td><td style="padding: 6px; text-align: center;">6.5</td><td style="padding: 6px; text-align: center;">5.5</td><td style="padding: 6px; text-align: center;">38.5</td><td style="padding: 6px; text-align: center;">24.5</td></tr>
-      <tr style="background: #E3F2FD;"><td style="padding: 6px; text-align: center;">9</td><td style="padding: 6px; text-align: center;">7.5</td><td style="padding: 6px; text-align: center;">6.5</td><td style="padding: 6px; text-align: center;">40</td><td style="padding: 6px; text-align: center;">25.5</td></tr>
+      <tr style="background: var(--color-highlight-blue);"><td style="padding: 6px; text-align: center;">9</td><td style="padding: 6px; text-align: center;">7.5</td><td style="padding: 6px; text-align: center;">6.5</td><td style="padding: 6px; text-align: center;">40</td><td style="padding: 6px; text-align: center;">25.5</td></tr>
       <tr><td style="padding: 6px; text-align: center;">-</td><td style="padding: 6px; text-align: center;">9</td><td style="padding: 6px; text-align: center;">8.5</td><td style="padding: 6px; text-align: center;">42.5</td><td style="padding: 6px; text-align: center;">27</td></tr>
-      <tr style="background: #E3F2FD;"><td style="padding: 6px; text-align: center;">-</td><td style="padding: 6px; text-align: center;">10</td><td style="padding: 6px; text-align: center;">9.5</td><td style="padding: 6px; text-align: center;">44</td><td style="padding: 6px; text-align: center;">28</td></tr>
+      <tr style="background: var(--color-highlight-blue);"><td style="padding: 6px; text-align: center;">-</td><td style="padding: 6px; text-align: center;">10</td><td style="padding: 6px; text-align: center;">9.5</td><td style="padding: 6px; text-align: center;">44</td><td style="padding: 6px; text-align: center;">28</td></tr>
     </tbody>
   </table>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>📏 How to Take Accurate Measurements</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Bust/Chest:</strong> Measure around the fullest part, keeping tape parallel to floor</li>
@@ -190,7 +190,7 @@ calcType: size-converter
   </p>
 </div>
 
-<div class="info-box" style="background: #F3E5F5; border-left-color: #9C27B0;">
+<div class="info-box" style="background: var(--color-highlight-purple); border-left-color: var(--color-primary-blue);">
   <h4>👙 Understanding Bra Sizing</h4>
   <p>
     Bra sizes combine a <strong>band size</strong> (the number) with a <strong>cup size</strong> (the letter).
@@ -205,7 +205,7 @@ calcType: size-converter
   </p>
 </div>
 
-<div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
+<div class="info-box" style="background: var(--color-highlight-red); border-left-color: var(--color-error);">
   <h4>⚠️ Important Size Considerations</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li>Sizes vary between brands, even within the same country</li>
@@ -217,7 +217,7 @@ calcType: size-converter
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>💡 International Shopping Tips</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Check origin:</strong> European brands use EU sizing even when sold in the US</li>
@@ -228,7 +228,7 @@ calcType: size-converter
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Calculation</h4>
   <p>
     Your size data is automatically saved in the URL. You can <strong>bookmark this page</strong> to quickly convert sizes later, 
@@ -241,7 +241,7 @@ calcType: size-converter
     display: flex;
     gap: 0.5rem;
     margin-bottom: 1rem;
-    background: white;
+    background: var(--color-white);
     padding: 4px;
     border-radius: var(--border-radius);
     border: 2px solid var(--color-gray);
@@ -294,7 +294,7 @@ calcType: size-converter
     align-items: flex-start;
     gap: 0.75rem;
     padding: 0.75rem;
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius);
   }
   
@@ -362,7 +362,7 @@ calcType: size-converter
   }
   
   .conversion-card {
-    background: white;
+    background: var(--color-white);
     border: 2px solid var(--color-gray);
     border-radius: var(--border-radius);
     padding: 1rem;
@@ -433,7 +433,7 @@ calcType: size-converter
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 0.75rem;
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius);
     font-size: 0.875rem;
   }
@@ -480,7 +480,7 @@ calcType: size-converter
     align-items: center;
     gap: 0.75rem;
     padding: 0.75rem;
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius);
     border-left: 4px solid var(--color-gray);
     font-size: 0.875rem;
@@ -553,7 +553,7 @@ calcType: size-converter
     font-size: 0.8rem;
     font-weight: 600;
     color: var(--color-primary-blue);
-    background: white;
+    background: var(--color-white);
     padding: 0.25rem 0.5rem;
     border-radius: var(--border-radius);
   }
@@ -592,7 +592,7 @@ calcType: size-converter
   .bar-container {
     flex: 1;
     height: 32px;
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius);
     overflow: hidden;
   }
@@ -660,7 +660,7 @@ calcType: size-converter
   .range-bar-track {
     position: relative;
     height: 20px;
-    background: white;
+    background: var(--color-white);
     border-radius: 10px;
     overflow: visible;
   }
@@ -753,7 +753,7 @@ calcType: size-converter
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 0.75rem;
-    background: white;
+    background: var(--color-white);
     border-radius: var(--border-radius);
     font-size: 0.875rem;
   }
@@ -775,7 +775,7 @@ calcType: size-converter
   .size-table {
     width: 100%;
     border-collapse: collapse;
-    background: white;
+    background: var(--color-white);
     font-size: 0.875rem;
   }
   
@@ -880,7 +880,7 @@ calcType: size-converter
   }
   
   .sister-size-card {
-    background: white;
+    background: var(--color-white);
     padding: 0.75rem;
     border-radius: var(--border-radius);
     text-align: center;
@@ -895,7 +895,7 @@ calcType: size-converter
   .sister-size {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #9C27B0;
+    color: var(--color-primary-blue);
   }
   
   .ring-details {

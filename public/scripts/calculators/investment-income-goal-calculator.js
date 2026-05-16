@@ -611,7 +611,7 @@
               </div>
             </div>
           ` : `${results.totalFinalValue > results.totalInitialInvestment + results.totalContributions ? `
-            <div style="padding: var(--space-lg); background: #FFF8DC; border-radius: var(--border-radius); border-left: 4px solid var(--color-warning);">
+            <div style="padding: var(--space-lg); background: var(--color-highlight-yellow); border-radius: var(--border-radius); border-left: 4px solid var(--color-warning);">
               <div style="display: flex; align-items: center; gap: var(--space-md);">
                 <div style="font-size: 2rem;">⚠️</div>
                 <div>
@@ -633,7 +633,7 @@
               </div>
             </div>
           ` : `
-            <div style="padding: var(--space-lg); background: #FFE5E5; border-radius: var(--border-radius); border-left: 4px solid var(--color-error);">
+            <div style="padding: var(--space-lg); background: var(--color-highlight-red); border-radius: var(--border-radius); border-left: 4px solid var(--color-error);">
               <div style="display: flex; align-items: center; gap: var(--space-md);">
                 <div style="font-size: 2rem;">📈</div>
                 <div>
@@ -661,7 +661,7 @@
             </div>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--space-lg);">
               ${inv.quantity > 1 ? `
-                <div style="background: #FFF8DC; padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
+                <div style="background: var(--color-highlight-yellow); padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
                   <div style="font-size: 0.875rem; color: var(--color-gray-dark); margin-bottom: 0.25rem;">Quantity</div>
                   <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-accent-orange);">${inv.quantity} investments</div>
                 </div>
@@ -671,7 +671,7 @@
                 <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-primary-blue);">${formatCurrency(inv.initialAmount)}</div>
               </div>
               ${inv.quantity > 1 ? `
-                <div style="background: #FFF8DC; padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
+                <div style="background: var(--color-highlight-yellow); padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
                   <div style="font-size: 0.875rem; color: var(--color-gray-dark); margin-bottom: 0.25rem;">Total Initial Investment</div>
                   <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-accent-orange);">${formatCurrency(inv.totalInitialAmount)}</div>
                 </div>
@@ -685,7 +685,7 @@
                 <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-primary-blue);">${formatCurrency(inv.finalValue)}</div>
               </div>` : ''}
               ${inv.quantity > 1 && inv.isCompounding ? `
-                <div style="background: #FFF8DC; padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
+                <div style="background: var(--color-highlight-yellow); padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
                   <div style="font-size: 0.875rem; color: var(--color-gray-dark); margin-bottom: 0.25rem;">Total Final Value</div>
                   <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-accent-orange);">${formatCurrency(inv.totalFinalValue)}</div>
                 </div>
@@ -699,7 +699,7 @@
                 <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-primary-blue);">${formatCurrency(inv.annualIncome)}</div>
               </div>
               ${inv.quantity > 1 ? `
-                <div style="background: #FFF8DC; padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
+                <div style="background: var(--color-highlight-yellow); padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
                   <div style="font-size: 0.875rem; color: var(--color-gray-dark); margin-bottom: 0.25rem;">Total Annual Income</div>
                   <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-accent-orange);">${formatCurrency(inv.totalAnnualIncome)}</div>
                 </div>
@@ -709,7 +709,7 @@
                 <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-primary-blue);">${formatCurrency(inv.monthlyIncome)}</div>
               </div>
               ${inv.quantity > 1 ? `
-                <div style="background: #FFF8DC; padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
+                <div style="background: var(--color-highlight-yellow); padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
                   <div style="font-size: 0.875rem; color: var(--color-gray-dark); margin-bottom: 0.25rem;">Total Monthly Income</div>
                   <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-accent-orange);">${formatCurrency(inv.totalMonthlyIncome)}</div>
                 </div>
@@ -736,7 +736,7 @@
             `<li style="padding: var(--space-md); background: linear-gradient(135deg, #E8F8E8 0%, #fff 100%); border-radius: var(--border-radius); border-left: 3px solid var(--color-chart-green);">
               <strong style="color: var(--color-chart-green);">✓</strong> Your investment plan will generate <strong>${formatCurrency(results.totalAnnualIncome)}</strong> annually after ${years} years, exceeding your goal of ${formatCurrency(annualGoal)}.
             </li>` :
-            `<li style="padding: var(--space-md); background: #FFF8DC; border-radius: var(--border-radius); border-left: 3px solid var(--color-warning);">
+            `<li style="padding: var(--space-md); background: var(--color-highlight-yellow); border-radius: var(--border-radius); border-left: 3px solid var(--color-warning);">
               <strong style="color: var(--color-warning);">⚠</strong> Your current plan generates <strong>${formatCurrency(results.totalAnnualIncome)}</strong> annually, which is <strong>${formatCurrency(Math.abs(incomeGap))}</strong> short of your ${formatCurrency(annualGoal)} goal.
             </li>`
           }
@@ -755,7 +755,7 @@
             `<li style="padding: var(--space-md); background: var(--color-white); border-radius: var(--border-radius);">
               You'll reach breakeven (100% ROI) in year ${results.breakevenYear}, after which all gains are pure profit.
             </li>` :
-            `<li style="padding: var(--space-md); background: #FFF8DC; border-radius: var(--border-radius); border-left: 3px solid var(--color-warning);">
+            `<li style="padding: var(--space-md); background: var(--color-highlight-yellow); border-radius: var(--border-radius); border-left: 3px solid var(--color-warning);">
               Consider increasing your expected returns or extending your timeframe to reach breakeven sooner.
             </li>`
           }
@@ -766,7 +766,7 @@
             ''
           }
           ${!goalMet && !results.goalReachedYear ?
-            `<li style="padding: var(--space-md); background: #FFE5E5; border-radius: var(--border-radius); border-left: 3px solid var(--color-error);">
+            `<li style="padding: var(--space-md); background: var(--color-highlight-red); border-radius: var(--border-radius); border-left: 3px solid var(--color-error);">
               <strong style="color: var(--color-error);">⚠</strong> To reach your goal, consider: increasing initial investments, boosting expected returns, adding regular contributions, or extending the timeframe.
             </li>` :
             ''

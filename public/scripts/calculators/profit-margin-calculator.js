@@ -592,7 +592,7 @@
     
     return `
       <div class="time-period-tabs">
-        <span style="font-weight: 600; color: #6b7280; margin-right: 0.5rem;">View as:</span>
+        <span style="font-weight: 600; color: var(--color-gray-dark); margin-right: 0.5rem;">View as:</span>
         ${periods.map(period => `
           <button type="button" class="time-period-tab ${state.viewPeriod === period.id ? 'active' : ''}" data-period="${period.id}">
             ${period.label}
@@ -807,7 +807,7 @@
     if (results.benchmark) {
       benchmarkHtml = `
         <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px dashed #d1d5db;">
-          <h5 style="margin: 0 0 1rem 0; color: #6b7280; font-size: 0.875rem;">
+          <h5 style="margin: 0 0 1rem 0; color: var(--color-gray-dark); font-size: 0.875rem;">
             📊 Industry Benchmark Comparison
           </h5>
           <div class="comparison-row">
@@ -826,7 +826,7 @@
               </div>
             </div>
           </div>
-          <p style="margin: 1rem 0 0 0; font-size: 0.875rem; color: #6b7280;">
+          <p style="margin: 1rem 0 0 0; font-size: 0.875rem; color: var(--color-gray-dark);">
             ${results.grossMargin >= results.benchmark.gross 
               ? `✅ Your gross margin exceeds the industry benchmark by ${(results.grossMargin - results.benchmark.gross).toFixed(1)} percentage points.` 
               : `⚠️ Your gross margin is ${(results.benchmark.gross - results.grossMargin).toFixed(1)} percentage points below industry benchmark.`}
@@ -928,23 +928,23 @@
           </table>
         </div>
         ${results.perUnitData ? `
-          <div style="margin-top: 1.5rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+          <div style="margin-top: 1.5rem; padding: 1rem; background: var(--color-surface-neutral); border-radius: 8px;">
             <h5 style="margin: 0 0 1rem 0;">📦 Per Unit Analysis <span class="frequency-badge">${results.revenueFrequencyLabel}</span></h5>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
               <div>
-                <div style="font-size: 0.75rem; color: #6b7280;">Revenue/Unit</div>
+                <div style="font-size: 0.75rem; color: var(--color-gray-dark);">Revenue/Unit</div>
                 <div style="font-weight: 700;">${formatCurrency(results.perUnitData.revenuePerUnit)}</div>
               </div>
               <div>
-                <div style="font-size: 0.75rem; color: #6b7280;">COGS/Unit</div>
+                <div style="font-size: 0.75rem; color: var(--color-gray-dark);">COGS/Unit</div>
                 <div style="font-weight: 700;">${formatCurrency(results.perUnitData.cogsPerUnit)}</div>
               </div>
               <div>
-                <div style="font-size: 0.75rem; color: #6b7280;">Gross Profit/Unit</div>
-                <div style="font-weight: 700; color: #10b981;">${formatCurrency(results.perUnitData.grossProfitPerUnit)}</div>
+                <div style="font-size: 0.75rem; color: var(--color-gray-dark);">Gross Profit/Unit</div>
+                <div style="font-weight: 700; color: var(--color-success);">${formatCurrency(results.perUnitData.grossProfitPerUnit)}</div>
               </div>
               <div>
-                <div style="font-size: 0.75rem; color: #6b7280;">Net Profit/Unit</div>
+                <div style="font-size: 0.75rem; color: var(--color-gray-dark);">Net Profit/Unit</div>
                 <div style="font-weight: 700; color: ${results.perUnitData.netProfitPerUnit >= 0 ? '#10b981' : '#ef4444'};">${formatCurrency(results.perUnitData.netProfitPerUnit)}</div>
               </div>
             </div>
@@ -962,44 +962,44 @@
       <div class="profit-breakdown" style="background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);">
         <h4>📅 Input Summary & Projections</h4>
         
-        <div style="margin-bottom: 1.5rem; padding: 1rem; background: #fef3c7; border-radius: 8px; border-left: 4px solid #f59e0b;">
-          <h5 style="margin: 0 0 0.75rem 0; color: #92400e;">📥 Your Inputs</h5>
+        <div style="margin-bottom: 1.5rem; padding: 1rem; background: var(--color-highlight-yellow); border-radius: 8px; border-left: 4px solid #f59e0b;">
+          <h5 style="margin: 0 0 0.75rem 0; color: var(--color-warning);">📥 Your Inputs</h5>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
             <div>
-              <div style="font-size: 0.75rem; color: #6b7280;">Revenue <span class="frequency-badge">${results.revenueFrequencyLabel}</span></div>
+              <div style="font-size: 0.75rem; color: var(--color-gray-dark);">Revenue <span class="frequency-badge">${results.revenueFrequencyLabel}</span></div>
               <div style="font-weight: 700;">${formatCurrency(results.inputRevenue)}</div>
             </div>
             <div>
-              <div style="font-size: 0.75rem; color: #6b7280;">COGS <span class="frequency-badge">${results.revenueFrequencyLabel}</span></div>
+              <div style="font-size: 0.75rem; color: var(--color-gray-dark);">COGS <span class="frequency-badge">${results.revenueFrequencyLabel}</span></div>
               <div style="font-weight: 700;">${formatCurrency(results.inputCogs)}</div>
             </div>
             ${results.inputOtherIncome > 0 ? `
               <div>
-                <div style="font-size: 0.75rem; color: #6b7280;">Other Income <span class="frequency-badge">${results.revenueFrequencyLabel}</span></div>
+                <div style="font-size: 0.75rem; color: var(--color-gray-dark);">Other Income <span class="frequency-badge">${results.revenueFrequencyLabel}</span></div>
                 <div style="font-weight: 700;">${formatCurrency(results.inputOtherIncome)}</div>
               </div>
             ` : ''}
             ${results.mode === 'advanced' ? `
               <div>
-                <div style="font-size: 0.75rem; color: #6b7280;">Operating Expenses <span class="frequency-badge">${results.expensesFrequencyLabel}</span></div>
+                <div style="font-size: 0.75rem; color: var(--color-gray-dark);">Operating Expenses <span class="frequency-badge">${results.expensesFrequencyLabel}</span></div>
                 <div style="font-weight: 700;">${formatCurrency(results.inputOperatingExpenses)}</div>
               </div>
               ${results.inputInterestExpense > 0 ? `
                 <div>
-                  <div style="font-size: 0.75rem; color: #6b7280;">Interest Expense <span class="frequency-badge">${results.expensesFrequencyLabel}</span></div>
+                  <div style="font-size: 0.75rem; color: var(--color-gray-dark);">Interest Expense <span class="frequency-badge">${results.expensesFrequencyLabel}</span></div>
                   <div style="font-weight: 700;">${formatCurrency(results.inputInterestExpense)}</div>
                 </div>
               ` : ''}
               ${results.inputDepreciation > 0 ? `
                 <div>
-                  <div style="font-size: 0.75rem; color: #6b7280;">Depreciation <span class="frequency-badge">${results.expensesFrequencyLabel}</span></div>
+                  <div style="font-size: 0.75rem; color: var(--color-gray-dark);">Depreciation <span class="frequency-badge">${results.expensesFrequencyLabel}</span></div>
                   <div style="font-weight: 700;">${formatCurrency(results.inputDepreciation)}</div>
                 </div>
               ` : ''}
             ` : ''}
           </div>
           ${showExpensesFreq ? `
-            <p style="margin: 0.75rem 0 0 0; font-size: 0.75rem; color: #92400e;">
+            <p style="margin: 0.75rem 0 0 0; font-size: 0.75rem; color: var(--color-warning);">
               ⚠️ Revenue/COGS entered as <strong>${results.revenueFrequencyLabel}</strong>, Operating Expenses entered as <strong>${results.expensesFrequencyLabel}</strong> — all normalized to annual for calculations.
             </p>
           ` : ''}
@@ -1056,7 +1056,7 @@
     return `
       <div class="pricing-scenarios">
         <h4>🔮 ${periodLabel} Revenue Impact Scenarios</h4>
-        <p style="color: #6b7280; margin-bottom: 1rem; font-size: 0.875rem;">
+        <p style="color: var(--color-gray-dark); margin-bottom: 1rem; font-size: 0.875rem;">
           See how changes in ${periodLabel.toLowerCase()} revenue affect your bottom line (assuming fixed costs)
         </p>
         <div class="breakdown-table-container">

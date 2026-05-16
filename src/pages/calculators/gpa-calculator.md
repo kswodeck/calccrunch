@@ -127,7 +127,7 @@ calcType: gpa
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>🎯 GPA Calculation Formula</h4>
   <p>
     <strong>GPA = Total Grade Points ÷ Total Credit Hours</strong>
@@ -145,7 +145,7 @@ calcType: gpa
   </p>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>📈 Understanding GPA Scales</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>4.0 Scale:</strong> Most common in US colleges (A = 4.0)</li>
@@ -159,7 +159,7 @@ calcType: gpa
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>💡 Tips to Improve Your GPA</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Focus on high-credit classes:</strong> They have more impact on your GPA</li>
@@ -171,7 +171,7 @@ calcType: gpa
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
+<div class="info-box" style="background: var(--color-highlight-red); border-left-color: var(--color-error);">
   <h4>⚠️ Important GPA Considerations</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li>Different schools may calculate GPA differently</li>
@@ -183,7 +183,7 @@ calcType: gpa
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Calculation</h4>
   <p>
     Your grades are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
@@ -204,11 +204,11 @@ calcType: gpa
     grid-template-columns: 2fr 1fr 1.5fr 0.8fr 50px;
     gap: 1rem;
     padding: 0.75rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 8px;
     margin-bottom: 1rem;
     font-weight: 600;
-    color: #4b5563;
+    color: var(--color-gray-dark);
   }
   
   .course-list {
@@ -244,9 +244,9 @@ calcType: gpa
   .grade-points {
     text-align: center;
     font-weight: 600;
-    color: #2C5F8D;
+    color: var(--color-primary-blue);
     padding: 0.5rem;
-    background: #E8F4F8;
+    background: var(--color-highlight-blue);
     border-radius: 6px;
   }
   
@@ -254,8 +254,8 @@ calcType: gpa
     width: 40px;
     height: 40px;
     border: 2px solid #ef4444;
-    background: white;
-    color: #ef4444;
+    background: var(--color-white);
+    color: var(--color-error);
     border-radius: 6px;
     font-size: 1.5rem;
     font-weight: bold;

@@ -169,7 +169,7 @@ calcType: bmi
   </p>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>⚕️ BMI Categories</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Underweight:</strong> BMI less than 18.5</li>
@@ -179,7 +179,7 @@ calcType: bmi
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>📊 BMI Limitations</h4>
   <p>
     BMI doesn't distinguish between muscle and fat mass. Athletes with high muscle mass 
@@ -189,7 +189,7 @@ calcType: bmi
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Calculation</h4>
   <p>
     Your inputs are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 

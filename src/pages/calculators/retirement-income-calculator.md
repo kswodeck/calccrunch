@@ -208,7 +208,7 @@ calcType: retirement-income
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>📊 The 4% Rule Explained</h4>
   <p>
     The <strong>4% Rule</strong> is a popular retirement withdrawal strategy:
@@ -225,7 +225,7 @@ calcType: retirement-income
   </p>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>⚖️ Withdrawal Strategies Compared</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Fixed Dollar:</strong> Same amount every year (no inflation adjustment) - simplest but loses purchasing power</li>
@@ -234,7 +234,7 @@ calcType: retirement-income
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>💡 Retirement Income Tips</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Start conservative:</strong> It's easier to spend more later than to recover from overspending</li>
@@ -246,7 +246,7 @@ calcType: retirement-income
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
+<div class="info-box" style="background: var(--color-highlight-red); border-left-color: var(--color-error);">
   <h4>⚠️ Important Considerations</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li>This calculator assumes consistent returns - real markets fluctuate</li>
@@ -259,7 +259,7 @@ calcType: retirement-income
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Retirement Plan</h4>
   <p>
     Your retirement plan is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
@@ -276,8 +276,8 @@ calcType: retirement-income
   }
   
   .btn-success {
-    background: #10b981 !important;
-    border-color: #10b981 !important;
+    background: var(--color-success) !important;
+    border-color: var(--color-success) !important;
   }
   
   .retirement-status {
@@ -286,39 +286,39 @@ calcType: retirement-income
     padding: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 12px;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-left: 4px solid #10b981;
   }
   
   .retirement-status.status-excellent {
-    background: #f0fdf4;
-    border-left-color: #10b981;
+    background: var(--color-highlight-green);
+    border-left-color: var(--color-success);
   }
   
   .retirement-status.status-conservative {
-    background: #eff6ff;
-    border-left-color: #3b82f6;
+    background: var(--color-highlight-blue);
+    border-left-color: var(--color-light-blue);
   }
   
   .retirement-status.status-moderate {
-    background: #fef3c7;
-    border-left-color: #f59e0b;
+    background: var(--color-highlight-yellow);
+    border-left-color: var(--color-warning);
   }
   
   .retirement-status.status-risky {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     border-left-color: #f97316;
   }
   
   .retirement-status.status-poor {
-    background: #fef2f2;
-    border-left-color: #ef4444;
+    background: var(--color-highlight-red);
+    border-left-color: var(--color-error);
   }
   
   .balance-visualization {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 12px;
   }
   
@@ -332,7 +332,7 @@ calcType: retirement-income
     justify-content: space-between;
     margin-top: 0.5rem;
     font-size: 0.875rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
   }
   
   .chart-legend {
@@ -367,7 +367,7 @@ calcType: retirement-income
   .income-breakdown {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -380,7 +380,7 @@ calcType: retirement-income
   }
   
   .income-section {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     padding: 1.5rem;
     border-radius: 8px;
   }
@@ -388,13 +388,13 @@ calcType: retirement-income
   .income-section h5 {
     margin-top: 0;
     margin-bottom: 1rem;
-    color: #374151;
+    color: var(--color-gray-dark);
   }
   
   .projection-table {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -414,7 +414,7 @@ calcType: retirement-income
   }
   
   table.projection-table thead {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
   }
   
   table.projection-table th,
@@ -430,17 +430,17 @@ calcType: retirement-income
   }
   
   table.projection-table .milestone-year {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
   }
   
   table.projection-table .depleted-year {
-    background: #fef2f2;
+    background: var(--color-highlight-red);
   }
   
   .retirement-insights {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -461,17 +461,17 @@ calcType: retirement-income
   }
   
   .insight-card.insight-success {
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
     border-color: #86efac;
   }
   
   .insight-card.insight-info {
-    background: #eff6ff;
+    background: var(--color-highlight-blue);
     border-color: #93c5fd;
   }
   
   .insight-card.insight-warning {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     border-color: #fcd34d;
   }
   
@@ -484,13 +484,13 @@ calcType: retirement-income
   .insight-content h5 {
     margin: 0 0 0.5rem 0;
     font-size: 1rem;
-    color: #111827;
+    color: var(--color-black);
   }
   
   .insight-content p {
     margin: 0;
     font-size: 0.9rem;
-    color: #4b5563;
+    color: var(--color-gray-dark);
   }
   
   .result-card-warning {
@@ -498,8 +498,8 @@ calcType: retirement-income
     border: 2px solid #f59e0b;
   }
   
-  .text-danger { color: #ef4444; }
-  .text-muted { color: #6b7280; }
+  .text-danger { color: var(--color-error); }
+  .text-muted { color: var(--color-gray-dark); }
   .font-bold { font-weight: bold; }
   
   @media (max-width: 768px) {

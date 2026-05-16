@@ -11,7 +11,7 @@
       "color": "#D4B300",
       "order": 1,
       "featured": true,
-      "calculatorCount": 12,
+      "calculatorCount": 13,
       "seoTitle": "Financial Calculators - Free Mortgage, Loan & Investment Tools",
       "seoDescription": "Free financial calculators for mortgages, loans, investments, retirement planning, and budgeting. Fast, accurate, and easy to use.",
       "keywords": [
@@ -48,7 +48,7 @@
       "color": "#FF6B35",
       "order": 2,
       "featured": true,
-      "calculatorCount": 4,
+      "calculatorCount": 6,
       "seoTitle": "Home & Real Estate Calculators - Mortgage & Renovation Tools",
       "seoDescription": "Free home and real estate calculators for mortgage affordability, home improvements, and DIY projects. Plan your home purchase or renovation.",
       "keywords": [
@@ -158,7 +158,7 @@
       "color": "#FF4081",
       "order": 5,
       "featured": true,
-      "calculatorCount": 5,
+      "calculatorCount": 12,
       "seoTitle": "Name Generators & Idea Tools - Business, Username & Creative Generators",
       "seoDescription": "Free name generators for businesses, usernames, characters, teams, and more. Get creative ideas and unique names instantly with our generator tools.",
       "keywords": [
@@ -297,6 +297,42 @@
       ]
     },
     {
+      "id": "automotive",
+      "name": "Automotive",
+      "nameShort": "Auto",
+      "slug": "automotive",
+      "description": "Calculate fuel costs, gas mileage, auto loans, and vehicle-related expenses to make smarter decisions about your transportation.",
+      "longDescription": "Our automotive calculators help you manage vehicle costs, compare fuel efficiency, estimate trip expenses, and make informed decisions about car purchases, leasing, and maintenance.",
+      "icon": "🚗",
+      "color": "#546E7A",
+      "order": 10,
+      "featured": false,
+      "calculatorCount": 2,
+      "seoTitle": "Automotive Calculators - Gas Mileage, Fuel Cost & Auto Tools",
+      "seoDescription": "Free automotive calculators for gas mileage (MPG), fuel costs, auto loans, and vehicle comparisons. Make smarter car decisions.",
+      "keywords": [
+        "gas mileage calculator",
+        "MPG calculator",
+        "fuel cost calculator",
+        "auto calculator"
+      ],
+      "affiliateHeadlines": [
+        "Fuel Economy Improvement Guide",
+        "Vehicle Maintenance Log Book",
+        "OBD2 Diagnostic Scanner"
+      ],
+      "affiliateDescriptions": [
+        "Maximize your vehicle's fuel efficiency with proven driving techniques and maintenance tips that can improve MPG by up to 30%.",
+        "Track all vehicle maintenance, repairs, and fuel consumption in one organized logbook to optimize your car's performance.",
+        "Monitor your vehicle's real-time fuel efficiency and diagnose issues affecting gas mileage with this professional diagnostic tool."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/3JGOkCo",
+        "https://amzn.to/4oSCNiC",
+        "https://amzn.to/4i92kRO"
+      ]
+    },
+    {
       "id": "miscellaneous",
       "name": "Miscellaneous",
       "nameShort": "Misc",
@@ -305,9 +341,9 @@
       "longDescription": "A collection of useful calculators that don't fit into specific categories but are still valuable for everyday tasks and decisions.",
       "icon": "🔧",
       "color": "#78909C",
-      "order": 9,
+      "order": 11,
       "featured": false,
-      "calculatorCount": 0,
+      "calculatorCount": 1,
       "seoTitle": "Miscellaneous Calculators - Various Useful Tools",
       "seoDescription": "Free miscellaneous calculators for various everyday tasks and calculations. Useful tools for any situation.",
       "keywords": [

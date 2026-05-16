@@ -401,7 +401,7 @@ calcType: pto
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>🎯 Key Features</h4>
   <p><strong>This calculator includes:</strong></p>
   <ul style="margin: 10px 0; padding-left: 20px;">
@@ -414,7 +414,7 @@ calcType: pto
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>📊 Understanding PTO Accrual</h4>
   <p><strong>Common accrual methods:</strong></p>
   <ul style="margin: 10px 0; padding-left: 20px;">
@@ -425,7 +425,7 @@ calcType: pto
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>💡 PTO Planning Tips</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Know Your Cap:</strong> Many companies cap how much PTO you can bank - use it before you lose it</li>
@@ -436,7 +436,7 @@ calcType: pto
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
+<div class="info-box" style="background: var(--color-highlight-red); border-left-color: var(--color-error);">
   <h4>⚠️ Important Notes</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li>PTO policies vary widely by employer - verify your specific policy details</li>
@@ -447,7 +447,7 @@ calcType: pto
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Calculation</h4>
   <p>
     Your calculation is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
@@ -497,7 +497,7 @@ calcType: pto
   
   .mode-btn.active {
     background: var(--color-accent-orange);
-    color: var(--color-white);
+    color: #FFFFFF;
     border-color: var(--color-accent-orange);
     box-shadow: var(--shadow-sm);
   }
@@ -525,7 +525,7 @@ calcType: pto
   .quick-date-btn:hover,
   .quick-hours-btn:hover {
     border-color: var(--color-accent-orange);
-    background: #fff8f5;
+    background: var(--color-highlight-orange-alt);
   }
   
   .quick-date-btn.active,
@@ -557,7 +557,7 @@ calcType: pto
     gap: 1rem;
     align-items: end;
     padding: 1rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 8px;
     border: 1px solid var(--color-gray);
     margin-bottom: 0.75rem;
@@ -573,8 +573,8 @@ calcType: pto
   
   .remove-planned-btn {
     padding: 0.5rem;
-    background: #fee2e2;
-    color: #dc2626;
+    background: var(--color-highlight-red);
+    color: var(--color-error);
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -594,7 +594,7 @@ calcType: pto
   .planned-pto-summary {
     margin-top: 1rem;
     padding: 1rem;
-    background: #f0f9ff;
+    background: var(--color-highlight-blue);
     border-radius: 8px;
     border: 1px solid #93c5fd;
   }

@@ -3,7 +3,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import CategoryCard from "../components/CategoryCard.astro";
 import CalculatorCard from "../components/CalculatorCard.astro";
 import AdUnit from "../components/AdUnit.astro";
-// import EmailCapture from "../components/EmailCapture.astro";
 
 // Import JSON data
 import categoriesData from "../data/categories.json";
@@ -20,7 +19,7 @@ const totalCategories = categoriesData?.categories?.filter(
 const categories = categoriesData.categories
   .filter((cat) => cat.featured)
   .sort((a, b) =>
-    b.calculatorCount == b.calculatorCount
+    a.calculatorCount === b.calculatorCount
       ? a.order - b.order
       : b.calculatorCount - a.calculatorCount
   )
@@ -222,13 +221,6 @@ function getCategoryName(categoryId) {
     </div>
   </section>
 
-  <!-- Email Capture -->
-  <!-- <EmailCapture
-    calculatorType="general"
-    headline="📬 Get Calculator Updates"
-    description="Be the first to know when we add new calculators and features. Join our community of smart decision-makers."
-  /> -->
-
   <!-- CTA Section -->
   <section class="cta-section bg-gradient">
     <div class="container text-center">
@@ -262,7 +254,7 @@ function getCategoryName(categoryId) {
     font-size: var(--text-5xl);
     margin-bottom: var(--space-lg);
     line-height: 1.1;
-    color: var(--color-white);
+    color: #FFFFFF;
   }
 
   .hero-subtitle {
@@ -285,7 +277,7 @@ function getCategoryName(categoryId) {
   .hero-stats .stat strong {
     display: block;
     font-size: var(--text-3xl);
-    color: var(--color-white);
+    color: #FFFFFF;
     font-family: var(--font-primary);
     font-weight: 800;
     margin-bottom: var(--space-xs);
@@ -293,7 +285,7 @@ function getCategoryName(categoryId) {
 
   .hero-stats .stat span {
     display: block;
-    color: var(--color-white);
+    color: #FFFFFF;
     opacity: 0.9;
     font-weight: 600;
   }
@@ -402,7 +394,7 @@ function getCategoryName(categoryId) {
   }
 
   .cta-section h2 {
-    color: var(--color-white);
+    color: #FFFFFF;
     font-size: var(--text-4xl);
     margin-bottom: var(--space-lg);
   }

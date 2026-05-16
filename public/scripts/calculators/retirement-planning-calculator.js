@@ -890,7 +890,7 @@
       
       <div class="chart-labels">
         <div class="chart-label-left">Age ${currentAge}</div>
-        <div class="chart-label-center" style="color: #ef4444;">Retire at ${retirementAge}</div>
+        <div class="chart-label-center" style="color: var(--color-error);">Retire at ${retirementAge}</div>
         <div class="chart-label-right">Age ${retirementAge + retirement.projection.length}</div>
       </div>
     `;

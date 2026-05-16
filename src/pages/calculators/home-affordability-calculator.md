@@ -278,7 +278,7 @@ calcType: home-affordability
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>🏠 Maximum vs. Comfortable Price</h4>
   <p>
     <strong>Maximum Price:</strong> The highest home price you qualify for based on lender limits. 
@@ -287,7 +287,7 @@ calcType: home-affordability
   </p>
 </div>
 
-<div class="info-box" style="background: #FEF3C7; border-left-color: #D97706;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>⚠️ Don't Forget These Costs</h4>
   <p>
     Remember to budget for additional homeownership costs not included in your mortgage payment:
@@ -296,7 +296,7 @@ calcType: home-affordability
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Calculation</h4>
   <p>
     Your inputs are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
@@ -313,8 +313,8 @@ calcType: home-affordability
   }
   
   .btn-success {
-    background: #10b981 !important;
-    border-color: #10b981 !important;
+    background: var(--color-success) !important;
+    border-color: var(--color-success) !important;
   }
   
   .affordability-status {
@@ -323,28 +323,28 @@ calcType: home-affordability
     padding: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 12px;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-left: 4px solid #10b981;
   }
   
   .affordability-status.status-excellent {
-    background: #f0fdf4;
-    border-left-color: #10b981;
+    background: var(--color-highlight-green);
+    border-left-color: var(--color-success);
   }
   
   .affordability-status.status-aggressive {
-    background: #fef3c7;
-    border-left-color: #f59e0b;
+    background: var(--color-highlight-yellow);
+    border-left-color: var(--color-warning);
   }
   
   .affordability-status.status-stretched {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     border-left-color: #f97316;
   }
   
   .affordability-status.status-risky {
-    background: #fef2f2;
-    border-left-color: #ef4444;
+    background: var(--color-highlight-red);
+    border-left-color: var(--color-error);
   }
   
   .result-card {
@@ -367,7 +367,7 @@ calcType: home-affordability
     gap: 1rem;
     margin-top: 0.5rem;
     font-size: 0.85rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
   }
   
   .income-visualization {
@@ -453,7 +453,7 @@ calcType: home-affordability
   .bar-container {
     width: 100%;
     height: 32px;
-    background: #e5e7eb;
+    background: var(--color-gray);
     border-radius: 16px;
     overflow: hidden;
   }
@@ -492,7 +492,7 @@ calcType: home-affordability
   }
   
   .dti-analysis {
-    background: white;
+    background: var(--color-white);
     padding: 1.5rem;
     border-radius: 12px;
     margin: 2rem 0;
@@ -518,7 +518,7 @@ calcType: home-affordability
   .meter-bar {
     width: 100%;
     height: 40px;
-    background: #e5e7eb;
+    background: var(--color-gray);
     border-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -561,7 +561,7 @@ calcType: home-affordability
   .marker {
     position: absolute;
     font-size: 0.75rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
     transform: translateX(-50%);
   }
   
@@ -572,7 +572,7 @@ calcType: home-affordability
   }
   
   .detail-section {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     padding: 1.5rem;
     border-radius: 8px;
   }
@@ -580,15 +580,15 @@ calcType: home-affordability
   .detail-section h5 {
     margin-top: 0;
     margin-bottom: 1rem;
-    color: #374151;
+    color: var(--color-gray-dark);
   }
   
   .table-highlight {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
   }
   
   .key-insights {
-    background: white;
+    background: var(--color-white);
     padding: 1.5rem;
     border-radius: 12px;
     margin: 2rem 0;
@@ -611,22 +611,22 @@ calcType: home-affordability
   }
   
   .insight-card.insight-warning {
-    background: #fef2f2;
+    background: var(--color-highlight-red);
     border-color: #fca5a5;
   }
   
   .insight-card.insight-info {
-    background: #eff6ff;
+    background: var(--color-highlight-blue);
     border-color: #93c5fd;
   }
   
   .insight-card.insight-caution {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     border-color: #fcd34d;
   }
   
   .insight-card.insight-success {
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
     border-color: #86efac;
   }
   
@@ -644,7 +644,7 @@ calcType: home-affordability
   .insight-content p {
     margin: 0;
     font-size: 0.9rem;
-    color: #4b5563;
+    color: var(--color-gray-dark);
   }
   
   .action-cards {
@@ -658,7 +658,7 @@ calcType: home-affordability
     display: flex;
     align-items: center;
     padding: 1rem;
-    background: white;
+    background: var(--color-white);
     border: 2px solid #e5e7eb;
     border-radius: 8px;
     cursor: pointer;
@@ -683,7 +683,7 @@ calcType: home-affordability
   }
   
   .action-text small {
-    color: #6b7280;
+    color: var(--color-gray-dark);
   }
   
   .slider-group {
@@ -700,9 +700,9 @@ calcType: home-affordability
     width: 100px;
   }
   
-  .text-success { color: #10b981; }
-  .text-warning { color: #f59e0b; }
-  .text-danger { color: #ef4444; }
+  .text-success { color: var(--color-success); }
+  .text-warning { color: var(--color-warning); }
+  .text-danger { color: var(--color-error); }
   
   .disabled {
     opacity: 0.5;

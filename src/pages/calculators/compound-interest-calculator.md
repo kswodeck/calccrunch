@@ -157,7 +157,7 @@ calcType: compound-interest
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>🎯 The Power of Compounding</h4>
   <p>
     <strong>Example:</strong> If you invest $10,000 at 7% annual interest:
@@ -173,7 +173,7 @@ calcType: compound-interest
   </p>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>📈 Understanding Compounding Frequency</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Daily (365x/year):</strong> Best for savings accounts, highest growth</li>
@@ -187,7 +187,7 @@ calcType: compound-interest
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>💡 Investment Tips</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Start early:</strong> Time is your biggest advantage with compound interest</li>
@@ -199,7 +199,7 @@ calcType: compound-interest
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
+<div class="info-box" style="background: var(--color-highlight-red); border-left-color: var(--color-error);">
   <h4>⚠️ Important Considerations</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li>Returns shown are estimates and not guaranteed</li>
@@ -211,7 +211,7 @@ calcType: compound-interest
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Calculation</h4>
   <p>
     Your inputs are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
@@ -228,8 +228,8 @@ calcType: compound-interest
   }
   
   .btn-success {
-    background: #10b981 !important;
-    border-color: #10b981 !important;
+    background: var(--color-success) !important;
+    border-color: var(--color-success) !important;
   }
   
   .investment-quality {
@@ -238,29 +238,29 @@ calcType: compound-interest
     padding: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 12px;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-left: 4px solid #10b981;
   }
   
   .investment-quality.status-excellent {
-    background: #f0fdf4;
-    border-left-color: #10b981;
+    background: var(--color-highlight-green);
+    border-left-color: var(--color-success);
   }
   
   .investment-quality.status-good {
-    background: #eff6ff;
-    border-left-color: #3b82f6;
+    background: var(--color-highlight-blue);
+    border-left-color: var(--color-light-blue);
   }
   
   .investment-quality.status-moderate {
-    background: #fef3c7;
-    border-left-color: #f59e0b;
+    background: var(--color-highlight-yellow);
+    border-left-color: var(--color-warning);
   }
   
   .growth-visualization {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 12px;
   }
   
@@ -329,7 +329,7 @@ calcType: compound-interest
   .yearly-breakdown {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -345,7 +345,7 @@ calcType: compound-interest
   }
   
   .breakdown-table thead {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
   }
   
   .breakdown-table th,
@@ -361,43 +361,43 @@ calcType: compound-interest
   }
   
   .breakdown-table .year-0 {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     font-weight: bold;
   }
   
   .breakdown-table .milestone-year {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
   }
   
   .amount-cell {
     font-weight: bold;
-    color: #059669;
+    color: var(--color-success);
   }
   
   .interest-cell {
-    color: #f59e0b;
+    color: var(--color-warning);
   }
   
   .growth-cell {
-    color: #3b82f6;
+    color: var(--color-light-blue);
   }
   
   .compound-comparison {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 12px;
   }
   
   .comparison-note {
     margin: 1rem 0;
-    color: #6b7280;
+    color: var(--color-gray-dark);
   }
   
   .badge {
     display: inline-block;
     padding: 0.25rem 0.5rem;
-    background: #f59e0b;
+    background: var(--color-warning);
     color: white;
     border-radius: 4px;
     font-size: 0.75rem;
@@ -407,7 +407,7 @@ calcType: compound-interest
   .investment-insights {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -428,17 +428,17 @@ calcType: compound-interest
   }
   
   .insight-card.insight-info {
-    background: #eff6ff;
+    background: var(--color-highlight-blue);
     border-color: #93c5fd;
   }
   
   .insight-card.insight-success {
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
     border-color: #86efac;
   }
   
   .insight-card.insight-warning {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     border-color: #fcd34d;
   }
   
@@ -456,17 +456,17 @@ calcType: compound-interest
   .insight-content h5 {
     margin: 0 0 0.5rem 0;
     font-size: 1rem;
-    color: #111827;
+    color: var(--color-black);
   }
   
   .insight-content p {
     margin: 0;
     font-size: 0.9rem;
-    color: #4b5563;
+    color: var(--color-gray-dark);
   }
   
-  .text-success { color: #10b981; }
-  .text-danger { color: #ef4444; }
+  .text-success { color: var(--color-success); }
+  .text-danger { color: var(--color-error); }
   
   @media (max-width: 768px) {
     .growth-legend {

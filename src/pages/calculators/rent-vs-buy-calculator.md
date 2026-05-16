@@ -431,7 +431,7 @@ calcType: rent-vs-buy
   </p>
 </div>
 
-<div class="info-box" style="background: #FEF3C7; border-left-color: #F59E0B;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>💰 The 5% Rule of Thumb</h4>
   <p>
     A common guideline suggests that if annual rent exceeds 5% of the home's purchase price, buying may be better financially. 
@@ -445,7 +445,7 @@ calcType: rent-vs-buy
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>🏠 Non-Financial Factors to Consider</h4>
   <p>
     While this calculator focuses on financial comparison, remember to consider non-financial factors in your decision:
@@ -458,7 +458,7 @@ calcType: rent-vs-buy
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Analysis</h4>
   <p>
     Your rent vs buy comparison is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
@@ -479,7 +479,7 @@ calcType: rent-vs-buy
   .comparison-visualization {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 12px;
   }
   
@@ -497,7 +497,7 @@ calcType: rent-vs-buy
   .bar-container {
     position: relative;
     height: 200px;
-    background: #e5e7eb;
+    background: var(--color-gray);
     border-radius: 8px;
     margin: 1rem 0;
     display: flex;
@@ -533,7 +533,7 @@ calcType: rent-vs-buy
   .bar-label {
     font-weight: bold;
     font-size: 1.1rem;
-    color: #1e40af;
+    color: var(--color-primary-blue);
     height: 40px;
   }
   
@@ -556,7 +556,7 @@ calcType: rent-vs-buy
   }
   
   .breakdown-section {
-    background: white;
+    background: var(--color-white);
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -564,7 +564,7 @@ calcType: rent-vs-buy
   
   .breakdown-title {
     font-weight: bold;
-    color: #1e40af;
+    color: var(--color-primary-blue);
     margin-bottom: 1rem;
     font-size: 1.1rem;
   }
@@ -591,14 +591,14 @@ calcType: rent-vs-buy
   .timeline-chart {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
   .chart-title {
     font-weight: bold;
-    color: #1e40af;
+    color: var(--color-primary-blue);
     margin-bottom: 1rem;
     font-size: 1.2rem;
   }
@@ -620,20 +620,20 @@ calcType: rent-vs-buy
   }
   
   .year-comparison-table thead {
-    background: #f3f4f6;
+    background: var(--color-surface-neutral);
   }
   
   .year-comparison-table tbody tr:nth-child(even) {
-    background: #f9fafb;
+    background: var(--color-surface-neutral);
   }
   
   .better-option {
-    color: #10b981;
+    color: var(--color-success);
     font-weight: bold;
   }
   
   .worse-option {
-    color: #ef4444;
+    color: var(--color-error);
   }
   
   .form-actions {

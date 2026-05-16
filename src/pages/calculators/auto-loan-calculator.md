@@ -246,7 +246,7 @@ calcType: auto-loan
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>🚗 Smart Car Buying Tips</h4>
   <p>
     <strong>20/4/10 Rule:</strong> Put down at least 20%, finance for no more than 4 years, 
@@ -254,7 +254,7 @@ calcType: auto-loan
   </p>
 </div>
 
-<div class="info-box" style="background: #FEF3C7; border-left-color: #D97706;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>⚠️ Watch Out For</h4>
   <p>
     <strong>Negative Equity:</strong> If you owe more on your trade-in than it's worth, that amount gets added to your new loan.
@@ -262,7 +262,7 @@ calcType: auto-loan
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Calculation</h4>
   <p>
     Your inputs are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
@@ -279,8 +279,8 @@ calcType: auto-loan
   }
   
   .btn-success {
-    background: #10b981 !important;
-    border-color: #10b981 !important;
+    background: var(--color-success) !important;
+    border-color: var(--color-success) !important;
   }
   
   .loan-quality {
@@ -289,39 +289,39 @@ calcType: auto-loan
     padding: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 12px;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-left: 4px solid #10b981;
   }
   
   .loan-quality.status-excellent {
-    background: #f0fdf4;
-    border-left-color: #10b981;
+    background: var(--color-highlight-green);
+    border-left-color: var(--color-success);
   }
   
   .loan-quality.status-good {
-    background: #eff6ff;
-    border-left-color: #3b82f6;
+    background: var(--color-highlight-blue);
+    border-left-color: var(--color-light-blue);
   }
   
   .loan-quality.status-stretched {
-    background: #fef3c7;
-    border-left-color: #f59e0b;
+    background: var(--color-highlight-yellow);
+    border-left-color: var(--color-warning);
   }
   
   .loan-quality.status-expensive {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     border-left-color: #f97316;
   }
   
   .loan-quality.status-risky {
-    background: #fef2f2;
-    border-left-color: #ef4444;
+    background: var(--color-highlight-red);
+    border-left-color: var(--color-error);
   }
   
   .payment-structure {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 12px;
   }
   
@@ -407,7 +407,7 @@ calcType: auto-loan
   }
   
   .breakdown-section {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     padding: 1.5rem;
     border-radius: 8px;
   }
@@ -415,11 +415,11 @@ calcType: auto-loan
   .breakdown-section h5 {
     margin-top: 0;
     margin-bottom: 1rem;
-    color: #374151;
+    color: var(--color-gray-dark);
   }
   
   .loan-terms-summary {
-    background: white;
+    background: var(--color-white);
     padding: 1.5rem;
     border-radius: 12px;
     margin: 2rem 0;
@@ -436,14 +436,14 @@ calcType: auto-loan
   .term-item {
     text-align: center;
     padding: 1rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 8px;
   }
   
   .term-label {
     display: block;
     font-size: 0.875rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
     margin-bottom: 0.5rem;
   }
   
@@ -451,12 +451,12 @@ calcType: auto-loan
     display: block;
     font-size: 1.25rem;
     font-weight: bold;
-    color: #111827;
+    color: var(--color-black);
   }
   
   .amortization-preview {
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border: 1px solid #e5e7eb;
   }
   
@@ -465,7 +465,7 @@ calcType: auto-loan
   }
   
   .amortization-table thead {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
   }
   
   .amortization-table th,
@@ -483,14 +483,14 @@ calcType: auto-loan
   .loan-comparison {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 12px;
   }
   
   .badge {
     display: inline-block;
     padding: 0.25rem 0.5rem;
-    background: #f59e0b;
+    background: var(--color-warning);
     color: white;
     border-radius: 4px;
     font-size: 0.75rem;
@@ -500,7 +500,7 @@ calcType: auto-loan
   .comparison-note {
     margin-top: 1rem;
     padding: 1rem;
-    background: #eff6ff;
+    background: var(--color-highlight-blue);
     border-left: 3px solid #3b82f6;
     border-radius: 4px;
   }
@@ -508,7 +508,7 @@ calcType: auto-loan
   .affordability-check {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -524,7 +524,7 @@ calcType: auto-loan
     display: flex;
     align-items: flex-start;
     padding: 1rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 8px;
   }
   
@@ -537,17 +537,17 @@ calcType: auto-loan
   .guideline-content h5 {
     margin: 0 0 0.5rem 0;
     font-size: 1rem;
-    color: #111827;
+    color: var(--color-black);
   }
   
   .guideline-content p {
     margin: 0 0 0.5rem 0;
     font-size: 0.9rem;
-    color: #4b5563;
+    color: var(--color-gray-dark);
   }
   
   .guideline-content small {
-    color: #6b7280;
+    color: var(--color-gray-dark);
   }
   
   .checkbox-label {
@@ -562,7 +562,7 @@ calcType: auto-loan
   }
   
   .text-muted {
-    color: #6b7280;
+    color: var(--color-gray-dark);
   }
   
   @media (max-width: 768px) {

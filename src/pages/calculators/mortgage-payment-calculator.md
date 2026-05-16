@@ -196,7 +196,7 @@ calcType: mortgage
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>🏠 What is PMI?</h4>
   <p>
     Private Mortgage Insurance (PMI) is required when your down payment is less than 20% of the home price. 
@@ -205,7 +205,7 @@ calcType: mortgage
   </p>
 </div>
 
-<div class="info-box" style="background: #FEF3C7; border-left-color: #F59E0B;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>📊 The 28/36 Rule</h4>
   <p>
     Lenders typically follow the <strong>28/36 rule</strong> for mortgage approval:
@@ -219,7 +219,7 @@ calcType: mortgage
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Calculation</h4>
   <p>
     Your mortgage details are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
@@ -236,14 +236,14 @@ calcType: mortgage
   }
   
   .btn-success {
-    background: #10b981 !important;
-    border-color: #10b981 !important;
+    background: var(--color-success) !important;
+    border-color: var(--color-success) !important;
   }
   
   .payment-visualization {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 12px;
   }
   
@@ -333,7 +333,7 @@ calcType: mortgage
   }
   
   .affordability-note {
-    background: #f0f9ff;
+    background: var(--color-highlight-blue);
     padding: 1.5rem;
     border-radius: 8px;
     margin: 2rem 0;
@@ -342,11 +342,11 @@ calcType: mortgage
   
   .affordability-note h4 {
     margin-top: 0;
-    color: #1e40af;
+    color: var(--color-primary-blue);
   }
   
   .text-success { 
-    color: #10b981; 
+    color: var(--color-success); 
   }
   
   .disabled {
@@ -359,7 +359,7 @@ calcType: mortgage
   }
   
   .table-total {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     font-weight: bold;
   }
   

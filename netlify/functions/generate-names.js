@@ -1,7 +1,4 @@
-// Netlify Serverless Function for Baby Name Generation
-// Uses Google Gemini API (Free Tier: 15 req/min, 1M tokens/month)
-
-exports.handler = async (event, context) => {
+export const handler = async (event, context) => {
   // Set CORS headers
   const headers = {
     'Access-Control-Allow-Origin': '*',

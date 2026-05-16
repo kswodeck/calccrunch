@@ -45,11 +45,8 @@ function initBMICalculator() {
   const resultDiv = document.getElementById('bmi-result');
   
   if (!calculateBtn || !resultDiv) {
-    console.error('BMI Calculator: Required elements not found');
     return;
   }
-  
-  console.log('BMI Calculator initialized');
   
   // Initialize unit system toggle
   initUnitToggle();
@@ -93,16 +90,12 @@ function initUnitToggle() {
   const metricSection = document.getElementById('metric-inputs');
   
   if (!unitButtons.length || !imperialSection || !metricSection) {
-    console.error('Unit toggle elements not found');
     return;
   }
-  
-  console.log('Unit toggle initialized');
   
   unitButtons.forEach(button => {
     button.addEventListener('click', function() {
       const system = this.getAttribute('data-system');
-      console.log('Switching to:', system);
       
       // Update active state
       unitButtons.forEach(btn => btn.classList.remove('active'));
@@ -137,8 +130,6 @@ function loadFromURL() {
   if (Object.keys(params).length === 0) {
     return;
   }
-  
-  console.log('Loading values from URL:', params);
   
   // Load measurement system first
   if (params.system) {
@@ -258,8 +249,6 @@ function addInputListeners() {
 }
 
 function calculateResults() {
-  console.log('Calculating BMI for system:', currentSystem);
-  
   let heightInMeters = 0;
   let weightInKg = 0;
   
@@ -268,9 +257,7 @@ function calculateResults() {
     const feet = parseFloat(document.getElementById('height-feet').value) || 0;
     const inches = parseFloat(document.getElementById('height-inches').value) || 0;
     const weightLbs = parseFloat(document.getElementById('weight-lbs').value) || 0;
-    
-    console.log('Imperial inputs:', { feet, inches, weightLbs });
-    
+
     // Validate inputs
     if (feet <= 0 || weightLbs <= 0) {
       showError('Please enter valid height and weight values.');
@@ -285,9 +272,7 @@ function calculateResults() {
   } else {
     const heightCm = parseFloat(document.getElementById('height-cm').value) || 0;
     const weightKg = parseFloat(document.getElementById('weight-kg').value) || 0;
-    
-    console.log('Metric inputs:', { heightCm, weightKg });
-    
+
     // Validate inputs
     if (heightCm <= 0 || weightKg <= 0) {
       showError('Please enter valid height and weight values.');
@@ -298,16 +283,12 @@ function calculateResults() {
     weightInKg = weightKg;
   }
   
-  console.log('Converted values:', { heightInMeters, weightInKg });
-  
   // Get optional fields
   const age = parseInt(document.getElementById('age').value) || null;
   const gender = document.getElementById('gender').value || null;
   
   // Calculate BMI
   const bmi = weightInKg / (heightInMeters * heightInMeters);
-  
-  console.log('Calculated BMI:', bmi);
   
   // Determine BMI category
   const category = getBMICategory(bmi);
@@ -769,7 +750,7 @@ function printResults() {
           max-width: 800px;
           margin: 0 auto;
           padding: 40px 20px;
-          color: #333;
+          color: var(--color-black);
           line-height: 1.6;
         }
         .header { 
@@ -779,24 +760,24 @@ function printResults() {
           border-bottom: 3px solid #2C5F8D;
         }
         .header h1 { 
-          color: #2C5F8D; 
+          color: var(--color-primary-blue); 
           margin: 0 0 10px 0;
           font-size: 32px;
         }
         .subtitle {
-          color: #666;
+          color: var(--color-gray-dark);
           font-size: 14px;
         }
         .main-result {
           text-align: center;
           padding: 30px;
-          background: #f8f9fa;
+          background: var(--color-surface-neutral);
           border-radius: 10px;
           margin-bottom: 30px;
         }
         .main-result .label {
           font-size: 14px;
-          color: #666;
+          color: var(--color-gray-dark);
           margin-bottom: 10px;
         }
         .main-result .bmi-score { 
@@ -819,7 +800,7 @@ function printResults() {
           page-break-inside: avoid;
         }
         .section h2 { 
-          color: #2C5F8D; 
+          color: var(--color-primary-blue); 
           font-size: 22px;
           margin-bottom: 15px;
           border-bottom: 2px solid #E8F4F8;
@@ -836,9 +817,9 @@ function printResults() {
           border-bottom: 1px solid #ddd;
         }
         th { 
-          background: #f5f5f5;
+          background: var(--color-surface-neutral);
           font-weight: bold;
-          color: #2C5F8D;
+          color: var(--color-primary-blue);
         }
         .health-message {
           padding: 20px;
@@ -855,13 +836,13 @@ function printResults() {
         }
         .tip {
           padding: 15px;
-          background: #f9f9f9;
+          background: var(--color-surface-neutral);
           border-radius: 8px;
           border-left: 3px solid #4CAF50;
         }
         .tip strong {
           display: block;
-          color: #2C5F8D;
+          color: var(--color-primary-blue);
           margin-bottom: 5px;
         }
         .footer { 
@@ -870,12 +851,12 @@ function printResults() {
           border-top: 2px solid #ddd;
           text-align: center; 
           font-size: 12px; 
-          color: #666;
+          color: var(--color-gray-dark);
         }
         .disclaimer {
           margin-top: 30px;
           padding: 15px;
-          background: #FFF8DC;
+          background: var(--color-highlight-yellow);
           border-left: 4px solid #FFB900;
           font-size: 12px;
           line-height: 1.5;
@@ -960,7 +941,7 @@ function printResults() {
       ${data.age && data.gender ? `
       <div class="section">
         <h2>Personalized Insight</h2>
-        <p style="padding: 15px; background: #f9f9f9; border-radius: 8px;">
+        <p style="padding: 15px; background: var(--color-surface-neutral); border-radius: 8px;">
           ${getPersonalizedInsight(data.bmi, data.age, data.gender)}
         </p>
       </div>

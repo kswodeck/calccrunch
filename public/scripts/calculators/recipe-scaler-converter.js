@@ -369,23 +369,23 @@
         </div>
 
         <div class="scaled-recipe" style="margin-top: 2rem;">
-          <h3 style="margin-bottom: 1rem; color: #2C5F8D;">📝 Ingredients List</h3>
+          <h3 style="margin-bottom: 1rem; color: var(--color-primary-blue);">📝 Ingredients List</h3>
           <ul class="recipe-list" style="list-style: none; padding: 0;">
             ${validIngredients.map(ing => {
               const scaledAmount = calculateScaledAmount(ing.amount);
               return `
-                <li style="padding: 0.75rem; background: #f9fafb; margin-bottom: 0.5rem; border-radius: 6px; display: flex; justify-content: space-between;">
+                <li style="padding: 0.75rem; background: var(--color-surface-neutral); margin-bottom: 0.5rem; border-radius: 6px; display: flex; justify-content: space-between;">
                   <span><strong>${formatAmount(scaledAmount)} ${ing.unit}</strong> ${ing.name}</span>
-                  ${scaleFactor !== 1 ? `<span style="color: #6b7280; font-size: 0.875rem;">(was ${formatAmount(ing.amount)} ${ing.unit})</span>` : ''}
+                  ${scaleFactor !== 1 ? `<span style="color: var(--color-gray-dark); font-size: 0.875rem;">(was ${formatAmount(ing.amount)} ${ing.unit})</span>` : ''}
                 </li>
               `;
             }).join('')}
           </ul>
         </div>
 
-        <div class="shopping-list" style="margin-top: 2rem; padding: 1.5rem; background: #E8F4F8; border-radius: 8px;">
-          <h3 style="margin-bottom: 1rem; color: #2C5F8D;">🛒 Shopping List</h3>
-          <div style="padding: 1rem; background: white; border-radius: 6px; font-family: monospace;">
+        <div class="shopping-list" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-highlight-blue); border-radius: 8px;">
+          <h3 style="margin-bottom: 1rem; color: var(--color-primary-blue);">🛒 Shopping List</h3>
+          <div style="padding: 1rem; background: var(--color-white); border-radius: 6px; font-family: monospace;">
             ${validIngredients.map(ing => {
               const scaledAmount = calculateScaledAmount(ing.amount);
               return `☐ ${formatAmount(scaledAmount)} ${ing.unit} - ${ing.name}`;
@@ -394,9 +394,9 @@
         </div>
 
         <div class="tips-section" style="margin-top: 2rem;">
-          <h3 style="margin-bottom: 1rem; color: #2C5F8D;">👨‍🍳 Scaling Tips</h3>
+          <h3 style="margin-bottom: 1rem; color: var(--color-primary-blue);">👨‍🍳 Scaling Tips</h3>
           ${scaleFactor > 2 ? `
-            <div class="info-box" style="background: #FEF3C7; border-left-color: #F59E0B;">
+            <div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
               <strong>Large Batch Alert!</strong> You're making ${formatAmount(scaleFactor)}x the original recipe:
               <ul style="margin: 10px 0; padding-left: 20px;">
                 <li>Check that your cookware is large enough</li>
@@ -407,7 +407,7 @@
             </div>
           ` : ''}
           ${scaleFactor < 0.5 ? `
-            <div class="info-box" style="background: #E0E7FF; border-left-color: #3B82F6;">
+            <div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
               <strong>Small Batch Note:</strong> You're making ${formatAmount(scaleFactor)}x the original recipe:
               <ul style="margin: 10px 0; padding-left: 20px;">
                 <li>Use smaller cookware for best results</li>
@@ -418,7 +418,7 @@
             </div>
           ` : ''}
           ${scaleFactor === 1 ? `
-            <div class="info-box" style="background: #D1FAE5; border-left-color: #10B981;">
+            <div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
               <strong>No scaling needed!</strong> You're making the original recipe as-is.
             </div>
           ` : ''}

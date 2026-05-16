@@ -916,7 +916,7 @@
             <div class="timeline-label">Return</div>
           </div>
         </div>
-        <div style="display: flex; justify-content: space-between; margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+        <div style="display: flex; justify-content: space-between; margin-top: 1rem; padding: 1rem; background: var(--color-surface-neutral); border-radius: 8px;">
           <div style="text-align: center;">
             <div style="font-size: 0.8rem; color: var(--color-gray-dark);">Initial</div>
             <div style="font-weight: 700;">${formatCurrency(results.initialInvestment)}</div>
@@ -1016,32 +1016,32 @@
     return `
       <div class="timeline-chart">
         <h4>🎲 Scenario Analysis</h4>
-        ${!scenarios.probabilitiesValid ? '<p style="color: #f59e0b; font-size: 0.85rem; margin-bottom: 1rem;">⚠️ Probabilities don\'t sum to 100%</p>' : ''}
+        ${!scenarios.probabilitiesValid ? '<p style="color: var(--color-warning); font-size: 0.85rem; margin-bottom: 1rem;">⚠️ Probabilities don\'t sum to 100%</p>' : ''}
         <div class="scenario-results">
           ${scenarios.worst.value ? `
           <div class="scenario-result-card worst">
             <div class="scenario-label">🔻 Worst Case (${scenarios.worst.probability}%)</div>
-            <div class="scenario-roi" style="color: #ef4444;">${scenarios.worst.roi.toFixed(1)}%</div>
+            <div class="scenario-roi" style="color: var(--color-error);">${scenarios.worst.roi.toFixed(1)}%</div>
             <div class="scenario-value">${formatCurrency(scenarios.worst.value)}</div>
           </div>
           ` : ''}
           ${scenarios.expected.value ? `
           <div class="scenario-result-card expected">
             <div class="scenario-label">📊 Expected (${scenarios.expected.probability}%)</div>
-            <div class="scenario-roi" style="color: #3b82f6;">${scenarios.expected.roi.toFixed(1)}%</div>
+            <div class="scenario-roi" style="color: var(--color-light-blue);">${scenarios.expected.roi.toFixed(1)}%</div>
             <div class="scenario-value">${formatCurrency(scenarios.expected.value)}</div>
           </div>
           ` : ''}
           ${scenarios.best.value ? `
           <div class="scenario-result-card best">
             <div class="scenario-label">🔺 Best Case (${scenarios.best.probability}%)</div>
-            <div class="scenario-roi" style="color: #10b981;">${scenarios.best.roi.toFixed(1)}%</div>
+            <div class="scenario-roi" style="color: var(--color-success);">${scenarios.best.roi.toFixed(1)}%</div>
             <div class="scenario-value">${formatCurrency(scenarios.best.value)}</div>
           </div>
           ` : ''}
         </div>
         ${scenarios.expectedValue > 0 ? `
-        <div style="text-align: center; margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+        <div style="text-align: center; margin-top: 1rem; padding: 1rem; background: var(--color-surface-neutral); border-radius: 8px;">
           <div style="font-size: 0.9rem; color: var(--color-gray-dark);">Probability-Weighted Expected Value</div>
           <div style="font-size: 1.5rem; font-weight: 800; color: var(--color-primary-blue);">${formatCurrency(scenarios.expectedValue)}</div>
         </div>

@@ -587,21 +587,21 @@
         <div class="cashflow-track">
           <div class="cashflow-fill income" style="width: ${incomeWidth}%"></div>
         </div>
-        <div class="cashflow-value" style="color: #4CAF50">${formatCurrency(income)}</div>
+        <div class="cashflow-value" style="color: var(--color-success)">${formatCurrency(income)}</div>
       </div>
       <div class="cashflow-bar-container">
         <div class="cashflow-label">Spending</div>
         <div class="cashflow-track">
           <div class="cashflow-fill expenses" style="width: ${spendingWidth}%"></div>
         </div>
-        <div class="cashflow-value" style="color: #F44336">${formatCurrency(spending)}</div>
+        <div class="cashflow-value" style="color: var(--color-error)">${formatCurrency(spending)}</div>
       </div>
       <div class="cashflow-bar-container">
         <div class="cashflow-label">Savings</div>
         <div class="cashflow-track">
           <div class="cashflow-fill savings" style="width: ${savingsWidth}%"></div>
         </div>
-        <div class="cashflow-value" style="color: #9C27B0">${formatCurrency(savings)}</div>
+        <div class="cashflow-value" style="color: var(--color-primary-blue)">${formatCurrency(savings)}</div>
       </div>
     `;
   }
@@ -759,7 +759,7 @@
         <div class="planning-title">Emergency Fund Goal</div>
         <div class="planning-value">${formatCurrency(emergencyTarget)}</div>
         <div class="planning-note">6 months of spending</div>
-        ${monthlySavingsRate > 0 ? `<div class="planning-note" style="margin-top: 0.5rem; color: #7B1FA2;">~${monthsToEmergency} months to reach at current rate</div>` : ''}
+        ${monthlySavingsRate > 0 ? `<div class="planning-note" style="margin-top: 0.5rem; color: var(--color-primary-blue);">~${monthsToEmergency} months to reach at current rate</div>` : ''}
       </div>
       <div class="planning-card">
         <div class="planning-icon">📅</div>
@@ -778,7 +778,7 @@
         <div class="planning-title">FI Number (25x)</div>
         <div class="planning-value">${formatCompactCurrency(fiTarget)}</div>
         <div class="planning-note">Financial independence target</div>
-        ${yearsToFI > 0 && yearsToFI < 100 ? `<div class="planning-note" style="margin-top: 0.5rem; color: #7B1FA2;">~${yearsToFI} years at current savings</div>` : ''}
+        ${yearsToFI > 0 && yearsToFI < 100 ? `<div class="planning-note" style="margin-top: 0.5rem; color: var(--color-primary-blue);">~${yearsToFI} years at current savings</div>` : ''}
       </div>
     `;
   }

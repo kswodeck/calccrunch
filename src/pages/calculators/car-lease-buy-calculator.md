@@ -603,7 +603,7 @@ calcType: car-lease-buy
   </p>
 </div>
 
-<div class="info-box" style="background: #FEF3C7; border-left-color: #F59E0B;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>🚗 When Leasing Makes Sense</h4>
   <p>
     Leasing may be better if you: want a new car every 2-3 years, drive less than 12,000-15,000 miles/year, 
@@ -611,7 +611,7 @@ calcType: car-lease-buy
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>🏆 When Buying Makes Sense</h4>
   <p>
     Buying may be better if you: plan to keep the car long-term (5+ years), drive more than 15,000 miles/year, 
@@ -619,7 +619,7 @@ calcType: car-lease-buy
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Analysis</h4>
   <p>
     Your lease vs buy comparison is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
@@ -631,7 +631,7 @@ calcType: car-lease-buy
   .comparison-visualization {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 12px;
   }
   
@@ -649,7 +649,7 @@ calcType: car-lease-buy
   .bar-container {
     position: relative;
     height: 200px;
-    background: #e5e7eb;
+    background: var(--color-gray);
     border-radius: 8px;
     margin: 1rem 0;
     display: flex;
@@ -684,7 +684,7 @@ calcType: car-lease-buy
   .bar-label {
     font-weight: bold;
     font-size: 1.1rem;
-    color: #1e40af;
+    color: var(--color-primary-blue);
     height: 40px;
   }
   
@@ -707,7 +707,7 @@ calcType: car-lease-buy
   }
   
   .breakdown-section {
-    background: white;
+    background: var(--color-white);
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -715,7 +715,7 @@ calcType: car-lease-buy
   
   .breakdown-title {
     font-weight: bold;
-    color: #1e40af;
+    color: var(--color-primary-blue);
     margin-bottom: 1rem;
     font-size: 1.1rem;
     display: flex;
@@ -745,14 +745,14 @@ calcType: car-lease-buy
   .timeline-chart {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
   .chart-title {
     font-weight: bold;
-    color: #1e40af;
+    color: var(--color-primary-blue);
     margin-bottom: 1rem;
     font-size: 1.2rem;
   }
@@ -776,20 +776,20 @@ calcType: car-lease-buy
   }
   
   .year-comparison-table thead {
-    background: #f3f4f6;
+    background: var(--color-surface-neutral);
   }
   
   .year-comparison-table tbody tr:nth-child(even) {
-    background: #f9fafb;
+    background: var(--color-surface-neutral);
   }
   
   .better-option {
-    color: #10b981;
+    color: var(--color-success);
     font-weight: bold;
   }
   
   .worse-option {
-    color: #ef4444;
+    color: var(--color-error);
   }
   
   .equity-chart {
@@ -812,7 +812,7 @@ calcType: car-lease-buy
   .equity-bar-wrapper {
     flex: 1;
     height: 30px;
-    background: #e5e7eb;
+    background: var(--color-gray);
     border-radius: 4px;
     overflow: hidden;
     position: relative;
@@ -850,7 +850,7 @@ calcType: car-lease-buy
   }
   
   .monthly-card {
-    background: white;
+    background: var(--color-white);
     padding: 1.25rem;
     border-radius: 8px;
     text-align: center;
@@ -859,19 +859,19 @@ calcType: car-lease-buy
   
   .monthly-card-title {
     font-size: 0.875rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
     margin-bottom: 0.5rem;
   }
   
   .monthly-card-value {
     font-size: 1.75rem;
     font-weight: bold;
-    color: #1e40af;
+    color: var(--color-primary-blue);
   }
   
   .monthly-card-subtitle {
     font-size: 0.75rem;
-    color: #9ca3af;
+    color: var(--color-gray);
     margin-top: 0.25rem;
   }
   
@@ -883,22 +883,22 @@ calcType: car-lease-buy
   }
   
   .insight-card {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     padding: 1rem;
     border-radius: 8px;
     border-left: 4px solid #3b82f6;
   }
   
   .insight-card.positive {
-    border-left-color: #10b981;
+    border-left-color: var(--color-success);
   }
   
   .insight-card.warning {
-    border-left-color: #f59e0b;
+    border-left-color: var(--color-warning);
   }
   
   .insight-card.negative {
-    border-left-color: #ef4444;
+    border-left-color: var(--color-error);
   }
   
   .form-actions {
@@ -924,7 +924,7 @@ calcType: car-lease-buy
   .cost-over-time-chart {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
   }
 
@@ -934,7 +934,7 @@ calcType: car-lease-buy
     justify-content: space-around;
     height: 250px;
     padding: 20px 10px 40px;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 8px;
     gap: 8px;
   }
@@ -973,7 +973,7 @@ calcType: car-lease-buy
   .chart-bar-label {
     margin-top: 8px;
     font-size: 0.75rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
     text-align: center;
   }
 

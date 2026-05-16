@@ -343,7 +343,7 @@ calcType: sales-commission
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>📊 Commission Structures Explained</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Percentage:</strong> Earn a fixed percentage of each sale (e.g., 10% of $5,000 = $500)</li>
@@ -354,7 +354,7 @@ calcType: sales-commission
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>🎯 Understanding Your Results</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Base Commission:</strong> Standard earnings from your sales</li>
@@ -366,7 +366,7 @@ calcType: sales-commission
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>💡 Tips for Maximizing Commission</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Know Your Tiers:</strong> Understand where tier breaks are and push to reach the next level</li>
@@ -377,7 +377,7 @@ calcType: sales-commission
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Calculation</h4>
   <p>
     Your calculation is automatically saved in the URL. You can <strong>bookmark this page</strong> to track your progress over time,
@@ -424,7 +424,7 @@ calcType: sales-commission
 
   .mode-btn.active {
     background: var(--color-accent-orange);
-    color: var(--color-white);
+    color: #FFFFFF;
     box-shadow: var(--shadow-sm);
   }
 
@@ -440,7 +440,7 @@ calcType: sales-commission
 
   .sales-row,
   .tier-row {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border: 2px solid #e5e7eb;
     border-radius: 8px;
     padding: 1.5rem;
@@ -482,8 +482,8 @@ calcType: sales-commission
 
   .remove-sale-btn:hover,
   .remove-tier-btn:hover {
-    color: #c62828;
-    background: #ffebee;
+    color: var(--color-error);
+    background: var(--color-highlight-red);
     border-radius: 4px;
   }
 
@@ -527,7 +527,7 @@ calcType: sales-commission
   }
 
   .summary-card {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.25rem;
     text-align: center;
@@ -579,7 +579,7 @@ calcType: sales-commission
 
   /* Progress Bar */
   .quota-progress-container {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin: 1.5rem 0;
@@ -605,7 +605,7 @@ calcType: sales-commission
   }
 
   .progress-bar-wrapper {
-    background: #e5e7eb;
+    background: var(--color-gray);
     border-radius: 10px;
     height: 24px;
     overflow: hidden;
@@ -663,7 +663,7 @@ calcType: sales-commission
   .commission-breakdown {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -699,16 +699,16 @@ calcType: sales-commission
   }
 
   .commission-table tbody tr:hover {
-    background: #f9fafb;
+    background: var(--color-surface-neutral);
   }
 
   .commission-table .total-row {
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
     font-weight: 700;
   }
 
   .commission-table .subtotal-row {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     font-weight: 600;
   }
 
@@ -716,7 +716,7 @@ calcType: sales-commission
   .tier-visual {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -742,7 +742,7 @@ calcType: sales-commission
 
   .tier-segment:nth-child(1) { background: #3b82f6; }
   .tier-segment:nth-child(2) { background: #8b5cf6; }
-  .tier-segment:nth-child(3) { background: #f59e0b; }
+  .tier-segment:nth-child(3) { background: var(--color-warning); }
   .tier-segment:nth-child(4) { background: #10b981; }
   .tier-segment:nth-child(5) { background: #ef4444; }
 
@@ -770,7 +770,7 @@ calcType: sales-commission
   .earnings-chart {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -797,7 +797,7 @@ calcType: sales-commission
 
   .earnings-bar-wrapper {
     flex: 1;
-    background: #e5e7eb;
+    background: var(--color-gray);
     border-radius: 6px;
     height: 28px;
     overflow: hidden;
@@ -840,7 +840,7 @@ calcType: sales-commission
   .commission-insights {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -861,22 +861,22 @@ calcType: sales-commission
   }
 
   .insight-card.insight-success {
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
     border-color: #86efac;
   }
 
   .insight-card.insight-info {
-    background: #eff6ff;
+    background: var(--color-highlight-blue);
     border-color: #93c5fd;
   }
 
   .insight-card.insight-warning {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     border-color: #fcd34d;
   }
 
   .insight-card.insight-danger {
-    background: #fef2f2;
+    background: var(--color-highlight-red);
     border-color: #fca5a5;
   }
 
@@ -889,13 +889,13 @@ calcType: sales-commission
   .insight-content h5 {
     margin: 0 0 0.5rem 0;
     font-size: 1rem;
-    color: #111827;
+    color: var(--color-black);
   }
 
   .insight-content p {
     margin: 0;
     font-size: 0.9rem;
-    color: #4b5563;
+    color: var(--color-gray-dark);
   }
 
   /* Goal Progress */

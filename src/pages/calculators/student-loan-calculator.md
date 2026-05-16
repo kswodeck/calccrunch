@@ -225,7 +225,7 @@ calcType: student-loan
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>📊 Repayment Plans at a Glance</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Standard:</strong> Fixed payments, 10 years, pay least interest overall</li>
@@ -238,7 +238,7 @@ calcType: student-loan
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>🏛️ Public Service Loan Forgiveness (PSLF)</h4>
   <p>
     If you work for a government agency or qualifying non-profit organization, you may qualify for 
@@ -247,7 +247,7 @@ calcType: student-loan
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>💡 Student Loan Tips</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Avalanche Method:</strong> Pay minimums on all loans, extra toward highest interest rate</li>
@@ -258,7 +258,7 @@ calcType: student-loan
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
+<div class="info-box" style="background: var(--color-highlight-red); border-left-color: var(--color-error);">
   <h4>⚠️ Important Considerations</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Forgiveness Taxability:</strong> IDR forgiveness may be taxable income (except PSLF)</li>
@@ -268,7 +268,7 @@ calcType: student-loan
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Plan</h4>
   <p>
     Your loan details and repayment plan are automatically saved in the URL. You can <strong>bookmark this page</strong> 
@@ -335,8 +335,8 @@ calcType: student-loan
   }
 
   .remove-loan-btn:hover {
-    color: #c62828;
-    background: #ffebee;
+    color: var(--color-error);
+    background: var(--color-highlight-red);
     border-radius: 4px;
   }
 
@@ -496,7 +496,7 @@ calcType: student-loan
   }
 
   .comparison-table .current-plan {
-    background: #E3F2FD;
+    background: var(--color-highlight-blue);
     font-weight: 700;
   }
 
@@ -680,22 +680,22 @@ calcType: student-loan
   }
 
   .insight-card.insight-success {
-    background: #F1F8E9;
+    background: var(--color-highlight-green);
     border-color: #C5E1A5;
   }
 
   .insight-card.insight-warning {
-    background: #FFF8E1;
+    background: var(--color-highlight-yellow);
     border-color: #FFE082;
   }
 
   .insight-card.insight-info {
-    background: #E3F2FD;
+    background: var(--color-highlight-blue);
     border-color: #90CAF9;
   }
 
   .insight-card.insight-tip {
-    background: #F3E5F5;
+    background: var(--color-highlight-purple);
     border-color: #CE93D8;
   }
 
@@ -765,7 +765,7 @@ calcType: student-loan
   }
 
   .amortization-table .year-row {
-    background: #FFF8E1;
+    background: var(--color-highlight-yellow);
     font-weight: 700;
   }
 

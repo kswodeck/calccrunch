@@ -19,6 +19,9 @@
   --color-warning: #FFA726;
   --color-error: #EF5350;
   --color-info: var(--color-light-blue);
+
+  /* Component-specific */
+  --color-footer-bg: #2C5F8D;
   
   /* Chart & Data Visualization Colors */
   --color-chart-blue-dark: #1565C0;
@@ -73,4 +76,71 @@
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
   --transition-slow: 350ms ease;
+
+  /* Semantic Backgrounds (for colored sections) */
+  --color-highlight-orange: #FFE5CC;
+  --color-highlight-green: #E8F8E8;
+  --color-highlight-blue: #E3F2FD;
+  --color-highlight-yellow: #FFF8DC;
+  --color-highlight-purple: #F3E5F5;
+  --color-highlight-red: #FEE;
+  --color-highlight-green-alt: #F0FFF0;
+  --color-highlight-orange-alt: #FFF8F0;
+  --color-highlight-yellow-alt: #FFFEF0;
+  --color-surface-table-head: #374151;
+  --color-surface-table-border: #e5e7eb;
+  --color-surface-table-highlight: #fef3c7;
+  --color-surface-neutral: #f8f9fa;
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] {
+  --color-primary-blue: #5AABDE;
+  --color-primary-dark: #3B8AC4;
+  --color-accent-orange: #FF8C5A;
+  --color-accent-orange-dark: #FF6B35;
+  --color-light-blue: #7BBCE6;
+  --color-lighter-blue: #1C2A3A;
+
+  --color-white: #121820;
+  --color-gray-light: #1A2230;
+  --color-gray: #2A3544;
+  --color-gray-dark: #E0E8F0;
+  --color-black: #F0F4F8;
+
+  --color-success: #66BB6A;
+  --color-warning: #FFB74D;
+  --color-error: #EF5350;
+  --color-info: var(--color-light-blue);
+
+  --color-chart-blue-dark: #42A5F5;
+  --color-chart-blue: #64B5F6;
+  --color-chart-blue-light: #90CAF9;
+  --color-chart-green-dark: #66BB6A;
+  --color-chart-green: #81C784;
+  --color-chart-green-light: #A5D6A7;
+  --color-chart-red-dark: #EF5350;
+  --color-chart-red: #E57373;
+  --color-chart-red-light: #EF9A9A;
+
+  --color-footer-bg: #0E1A26;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.5);
+
+  --color-highlight-orange: #2A1A0A;
+  --color-highlight-green: #0A2A0A;
+  --color-highlight-blue: #0A1A2A;
+  --color-highlight-yellow: #2A2200;
+  --color-highlight-purple: #1A0A2A;
+  --color-highlight-red: #2A1515;
+  --color-highlight-green-alt: #0A2A0A;
+  --color-highlight-orange-alt: #2A1A0A;
+  --color-highlight-yellow-alt: #2A2200;
+  --color-surface-table-head: #1A2A3A;
+  --color-surface-table-border: var(--color-gray);
+  --color-surface-table-highlight: #2A2200;
+  --color-surface-neutral: #1A2230;
 }

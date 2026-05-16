@@ -1578,12 +1578,12 @@ ptoStyle.textContent = `
   }
   
   .summary-card {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--color-surface-table-border);
   }
   
   .summary-card.primary {
@@ -1605,7 +1605,7 @@ ptoStyle.textContent = `
   
   .summary-label {
     font-size: 0.85rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
     margin-top: 0.25rem;
   }
   
@@ -1620,12 +1620,12 @@ ptoStyle.textContent = `
   }
   
   .cap-warning {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     border: 1px solid #fcd34d;
   }
   
   .info-message {
-    background: #eff6ff;
+    background: var(--color-highlight-blue);
     border: 1px solid #93c5fd;
   }
   
@@ -1634,7 +1634,7 @@ ptoStyle.textContent = `
     align-items: center;
     gap: 1rem;
     padding: 1.5rem;
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
     border: 1px solid #86efac;
     border-radius: 12px;
     margin: 1.5rem 0;
@@ -1648,27 +1648,27 @@ ptoStyle.textContent = `
   .warning-content strong, .success-message p {
     display: block;
     margin-bottom: 0.25rem;
-    color: #92400e;
+    color: var(--color-warning);
   }
   
   .success-message p {
-    color: #166534;
+    color: var(--color-success);
     margin: 0;
   }
   
   .warning-content p {
     margin: 0;
     font-size: 0.9rem;
-    color: #78350f;
+    color: var(--color-warning);
   }
   
   /* Calculation Breakdown */
   .calculation-breakdown {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin: 2rem 0;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--color-surface-table-border);
   }
   
   .calculation-breakdown h3 {
@@ -1695,19 +1695,19 @@ ptoStyle.textContent = `
   }
   
   .breakdown-table .text-success {
-    color: #10b981;
+    color: var(--color-success);
   }
   
   .breakdown-table .text-danger {
-    color: #ef4444;
+    color: var(--color-error);
   }
   
   .breakdown-table .text-warning {
-    color: #f59e0b;
+    color: var(--color-warning);
   }
   
   .breakdown-table .total-row {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
   }
   
   .breakdown-table .total-row td {
@@ -1717,11 +1717,11 @@ ptoStyle.textContent = `
   
   /* Planned PTO Breakdown */
   .planned-pto-breakdown {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin: 2rem 0;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--color-surface-table-border);
   }
   
   .planned-pto-breakdown h3 {
@@ -1740,33 +1740,33 @@ ptoStyle.textContent = `
     justify-content: space-between;
     align-items: center;
     padding: 0.75rem 1rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 8px;
     border-left: 3px solid var(--color-accent-orange);
   }
   
   .planned-desc {
     font-weight: 600;
-    color: #374151;
+    color: var(--color-black);
   }
   
   .planned-date {
-    color: #6b7280;
+    color: var(--color-gray-dark);
     font-size: 0.9rem;
   }
   
   .planned-hours {
     font-weight: 600;
-    color: #ef4444;
+    color: var(--color-error);
   }
   
   /* Timeline Chart */
   .timeline-chart {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin: 2rem 0;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--color-surface-table-border);
   }
   
   .timeline-chart h3 {
@@ -1785,7 +1785,7 @@ ptoStyle.textContent = `
     flex-direction: column;
     justify-content: space-between;
     font-size: 0.75rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
     text-align: right;
     padding: 0 0.5rem;
     min-width: 50px;
@@ -1844,7 +1844,7 @@ ptoStyle.textContent = `
     position: absolute;
     bottom: 0;
     font-size: 0.65rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
     margin-top: 4px;
     white-space: nowrap;
   }
@@ -1861,7 +1861,7 @@ ptoStyle.textContent = `
     align-items: center;
     gap: 0.5rem;
     font-size: 0.85rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
   }
   
   .legend-dot {
@@ -1873,11 +1873,11 @@ ptoStyle.textContent = `
   
   /* Time Breakdown */
   .time-breakdown {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin: 2rem 0;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--color-surface-table-border);
   }
   
   .time-breakdown h3 {
@@ -1910,17 +1910,17 @@ ptoStyle.textContent = `
   
   .time-label {
     font-size: 0.9rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
     margin-top: 0.25rem;
   }
   
   /* Value Cards */
   .value-breakdown {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin: 2rem 0;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--color-surface-table-border);
   }
   
   .value-breakdown h3 {
@@ -1937,9 +1937,9 @@ ptoStyle.textContent = `
   .value-card {
     text-align: center;
     padding: 1.5rem 1rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 12px;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--color-surface-table-border);
   }
   
   .value-card.highlight {
@@ -1949,7 +1949,7 @@ ptoStyle.textContent = `
   
   .value-label {
     font-size: 0.85rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
     margin-bottom: 0.5rem;
   }
   
@@ -1962,17 +1962,17 @@ ptoStyle.textContent = `
   
   .value-detail {
     font-size: 0.75rem;
-    color: #9ca3af;
+    color: var(--color-gray);
     margin-top: 0.25rem;
   }
   
   /* Future Value Section */
   .future-value-section {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin: 2rem 0;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--color-surface-table-border);
   }
   
   .future-value-section h3 {
@@ -1981,7 +1981,7 @@ ptoStyle.textContent = `
   }
   
   .future-value-card {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 8px;
     padding: 1rem;
   }
@@ -2013,11 +2013,11 @@ ptoStyle.textContent = `
   
   /* Insights Section */
   .insights-section {
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     padding: 1.5rem;
     margin: 2rem 0;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--color-surface-table-border);
   }
   
   .insights-section h3 {
@@ -2036,22 +2036,22 @@ ptoStyle.textContent = `
     align-items: flex-start;
     padding: 1rem;
     border-radius: 8px;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--color-surface-table-border);
   }
   
   .insight-card.insight-success {
-    background: #f0fdf4;
-    border-color: #86efac;
+    background: var(--color-highlight-green);
+    border-color: var(--color-success);
   }
   
   .insight-card.insight-info {
-    background: #eff6ff;
-    border-color: #93c5fd;
+    background: var(--color-highlight-blue);
+    border-color: var(--color-light-blue);
   }
   
   .insight-card.insight-warning {
-    background: #fef3c7;
-    border-color: #fcd34d;
+    background: var(--color-highlight-yellow);
+    border-color: var(--color-warning);
   }
   
   .insight-icon {
@@ -2063,13 +2063,13 @@ ptoStyle.textContent = `
   .insight-content h5 {
     margin: 0 0 0.5rem 0;
     font-size: 1rem;
-    color: #111827;
+    color: var(--color-black);
   }
   
   .insight-content p {
     margin: 0;
     font-size: 0.9rem;
-    color: #4b5563;
+    color: var(--color-gray-dark);
   }
   
   /* Error Message */
@@ -2078,10 +2078,10 @@ ptoStyle.textContent = `
     align-items: center;
     gap: 1rem;
     padding: 1rem 1.5rem;
-    background: #fee2e2;
+    background: var(--color-highlight-red);
     border: 1px solid #fecaca;
     border-radius: 8px;
-    color: #991b1b;
+    color: var(--color-error);
   }
   
   .error-icon {

@@ -2,8 +2,6 @@
 import BaseLayout from "./BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import AdUnit from "../components/AdUnit.astro";
-// import AffiliateBox from "../components/AffiliateBox.astro";
-// import EmailCapture from "../components/EmailCapture.astro";
 import RelatedCalculators from "../components/RelatedCalculators.astro";
 import SocialShare from "../components/SocialShare.astro";
 import "../styles/calculators.css";
@@ -21,7 +19,7 @@ const slug =
 
 // Find calculator data from JSON by slug
 const calculatorFromJson = calculatorsData.calculators.find(
-  (calc) => calc.slug === slug || calc.id === slug
+  (calc) => calc.slug === slug
 );
 
 // Merge data: JSON takes priority, frontmatter as fallback
@@ -153,13 +151,6 @@ const updatedDate = lastUpdated || currentDate;
                 </svg>
                 {difficulty}
               </span>
-              <!-- <span class="info-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-                0+ uses
-              </span> -->
             </div>
           </header>
 
@@ -177,20 +168,6 @@ const updatedDate = lastUpdated || currentDate;
             description={description}
             url={Astro.url.toString()}
           />
-
-          <!-- Email Capture -->
-          <!-- <EmailCapture
-            calculatorType={calcType}
-            headline="📧 Save Your Results"
-            description="Get your calculation results sent to your email, plus exclusive tips and calculator recommendations."
-          /> -->
-
-          <!-- Affiliate Box -->
-          <!-- <AffiliateBox
-            category={category}
-            title="Ready to Take Action?"
-            description="Check out these trusted partners to help you move forward"
-          /> -->
 
           <!-- Related Calculators -->
           <RelatedCalculators
@@ -322,12 +299,12 @@ const updatedDate = lastUpdated || currentDate;
 
   .category-badge:hover {
     background: var(--color-light-blue);
-    color: var(--color-white);
+    color: #FFFFFF;
   }
 
   .featured-badge {
     background: linear-gradient(135deg, #ff6b35 0%, #ff8c61 100%);
-    color: var(--color-white);
+    color: #FFFFFF;
     padding: var(--space-xs) var(--space-md);
     border-radius: 20px;
     font-size: var(--text-xs);

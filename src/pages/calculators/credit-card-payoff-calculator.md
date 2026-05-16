@@ -246,7 +246,7 @@ calcType: credit-card-payoff
   </p>
 </div>
 
-<div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
+<div class="info-box" style="background: var(--color-highlight-red); border-left-color: var(--color-error);">
   <h4>⚠️ The Minimum Payment Trap</h4>
   <p>
     <strong>Why minimum payments are dangerous:</strong> Credit card companies typically set minimum payments at 
@@ -256,7 +256,7 @@ calcType: credit-card-payoff
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>💰 Smart Payoff Strategies</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Fixed Payments:</strong> Pay a consistent amount above the minimum each month</li>
@@ -267,7 +267,7 @@ calcType: credit-card-payoff
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>📊 What This Calculator Shows</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Payoff Timeline:</strong> Exactly when you'll be debt-free</li>
@@ -279,7 +279,7 @@ calcType: credit-card-payoff
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>🎯 Tips to Pay Off Faster</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Round Up:</strong> Round payments to the nearest $50 or $100</li>
@@ -291,7 +291,7 @@ calcType: credit-card-payoff
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Payoff Plan</h4>
   <p>
     Your calculation is automatically saved in the URL. You can <strong>bookmark this page</strong> to track your progress, 
@@ -341,7 +341,7 @@ calcType: credit-card-payoff
   .payment-section {
     margin-top: 1rem;
     padding: 1rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 8px;
     border: 1px solid #e5e7eb;
   }
@@ -353,17 +353,17 @@ calcType: credit-card-payoff
   .warning-box {
     margin-top: 1rem;
     padding: 1rem;
-    background: #fff5f5;
+    background: var(--color-highlight-red);
     border-left: 4px solid var(--color-error);
     border-radius: 4px;
-    color: #c62828;
+    color: var(--color-error);
     font-size: 0.9rem;
   }
 
   .suggestion-box {
     margin-top: 0.75rem;
     padding: 0.75rem;
-    background: #E8F4F8;
+    background: var(--color-highlight-blue);
     border-radius: 6px;
     border: 1px solid #93c5fd;
   }
@@ -381,7 +381,7 @@ calcType: credit-card-payoff
 
   .suggestion-btn {
     padding: 0.25rem 0.75rem;
-    background: white;
+    background: var(--color-white);
     border: 1px solid var(--color-primary-blue);
     color: var(--color-primary-blue);
     border-radius: 4px;
@@ -398,7 +398,7 @@ calcType: credit-card-payoff
   .monthly-display {
     margin-top: 0.75rem;
     padding: 0.75rem;
-    background: #E8F4F8;
+    background: var(--color-highlight-blue);
     border-left: 3px solid var(--color-accent-orange);
     border-radius: 4px;
     font-size: 0.95rem;
@@ -427,18 +427,18 @@ calcType: credit-card-payoff
 
   .comparison-card {
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 8px;
     border: 2px solid #e5e7eb;
   }
 
   .comparison-card.current-plan {
     background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-    border-color: #10b981;
+    border-color: var(--color-success);
   }
 
   .comparison-card.minimum-plan {
-    background: #fff5f5;
+    background: var(--color-highlight-red);
     border-color: #fca5a5;
   }
 
@@ -460,7 +460,7 @@ calcType: credit-card-payoff
   }
 
   .comparison-stat .label {
-    color: #6b7280;
+    color: var(--color-gray-dark);
   }
 
   .comparison-stat .value {
@@ -468,7 +468,7 @@ calcType: credit-card-payoff
   }
 
   .savings-highlight {
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
     border-left: 4px solid #10b981;
     padding: 1rem 1.5rem;
     margin: 1.5rem 0;
@@ -477,19 +477,19 @@ calcType: credit-card-payoff
 
   .savings-highlight h4 {
     margin: 0 0 0.5rem 0;
-    color: #10b981;
+    color: var(--color-success);
   }
 
   .savings-amount {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #10b981;
+    color: var(--color-success);
   }
 
   .balance-chart {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -497,7 +497,7 @@ calcType: credit-card-payoff
   .balance-chart {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -511,7 +511,7 @@ calcType: credit-card-payoff
   .balance-chart-container {
     width: 100%;
     padding: 1rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 8px;
   }
 
@@ -535,7 +535,7 @@ calcType: credit-card-payoff
     height: 100%;
     text-align: right;
     font-size: 0.75rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
     min-width: 60px;
   }
 
@@ -543,7 +543,7 @@ calcType: credit-card-payoff
     writing-mode: vertical-rl;
     text-orientation: mixed;
     font-size: 0.875rem;
-    color: #374151;
+    color: var(--color-gray-dark);
     font-weight: 600;
   }
 
@@ -552,7 +552,7 @@ calcType: credit-card-payoff
     display: flex;
     flex-direction: column;
     position: relative;
-    background: white;
+    background: var(--color-white);
     border-radius: 4px;
     padding: 0.5rem;
     background-image: 
@@ -609,7 +609,7 @@ calcType: credit-card-payoff
     left: 50%;
     transform: translateX(-50%);
     font-size: 0.625rem;
-    color: #374151;
+    color: var(--color-gray-dark);
     font-weight: 600;
     white-space: nowrap;
     opacity: 0;
@@ -623,7 +623,7 @@ calcType: credit-card-payoff
   .bar-month {
     margin-top: 4px;
     font-size: 0.625rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
     height: 20px;
   }
 
@@ -636,7 +636,7 @@ calcType: credit-card-payoff
 
   .chart-x-axis span {
     font-size: 0.875rem;
-    color: #374151;
+    color: var(--color-gray-dark);
     font-weight: 600;
   }
 
@@ -654,7 +654,7 @@ calcType: credit-card-payoff
     align-items: center;
     gap: 0.5rem;
     font-size: 0.875rem;
-    color: #374151;
+    color: var(--color-gray-dark);
   }
 
   .legend-color {
@@ -676,7 +676,7 @@ calcType: credit-card-payoff
   }
 
   .amortization-table thead {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
   }
 
   .amortization-table th,
@@ -692,12 +692,12 @@ calcType: credit-card-payoff
   }
 
   .amortization-table .year-marker {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     font-weight: bold;
   }
 
   .amortization-table .has-extra {
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
   }
 
   @media (max-width: 768px) {
@@ -781,7 +781,7 @@ calcType: credit-card-payoff
   .loan-insights {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -813,22 +813,22 @@ calcType: credit-card-payoff
   }
   
   .insight-card.insight-info {
-    background: #eff6ff;
+    background: var(--color-highlight-blue);
     border-color: #93c5fd;
   }
   
   .insight-card.insight-success {
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
     border-color: #86efac;
   }
   
   .insight-card.insight-warning {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     border-color: #fcd34d;
   }
   
   .insight-card.insight-neutral {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-color: #d1d5db;
   }
   
@@ -841,13 +841,13 @@ calcType: credit-card-payoff
   .insight-content h5 {
     margin: 0 0 0.5rem 0;
     font-size: 1rem;
-    color: #111827;
+    color: var(--color-black);
   }
   
   .insight-content p {
     margin: 0;
     font-size: 0.9rem;
-    color: #4b5563;
+    color: var(--color-gray-dark);
     line-height: 1.5;
   }
 
@@ -855,7 +855,7 @@ calcType: credit-card-payoff
   .schedule-section {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
