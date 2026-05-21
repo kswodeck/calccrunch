@@ -1883,6 +1883,506 @@
 }
 
 /* ============================================
+   SHARED RESULT DISPLAY STYLES
+   (Used by multiple calculators)
+   ============================================ */
+
+/* Status Banner */
+.profit-status {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  background: var(--color-surface-neutral, #f9fafb);
+  border-left: 4px solid #10b981;
+}
+
+.profit-status .status-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.profit-status .status-content {
+  flex: 1;
+}
+
+.profit-status .status-content strong {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--color-primary-blue);
+  margin-bottom: 0.25rem;
+}
+
+.profit-status .status-content p {
+  margin: 0;
+  color: var(--color-gray-dark);
+  font-size: 0.9rem;
+}
+
+.profit-status.status-excellent {
+  background: var(--color-highlight-green, #ecfdf5);
+  border-left-color: var(--color-success, #10b981);
+}
+
+.profit-status.status-good {
+  background: var(--color-highlight-blue, #eff6ff);
+  border-left-color: var(--color-light-blue, #3b82f6);
+}
+
+.profit-status.status-moderate {
+  background: var(--color-highlight-yellow, #fffbeb);
+  border-left-color: var(--color-warning, #f59e0b);
+}
+
+.profit-status.status-poor,
+.profit-status.status-loss {
+  background: var(--color-highlight-red, #fef2f2);
+  border-left-color: var(--color-error, #ef4444);
+}
+
+/* Metric Cards Grid */
+.margin-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.margin-card {
+  background: var(--color-white);
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.margin-card:hover {
+  border-color: var(--color-accent-orange);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.margin-card.highlight {
+  border-color: var(--color-accent-orange);
+  background: linear-gradient(135deg, #fff7ed 0%, #ffffff 100%);
+}
+
+.margin-card-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.margin-card-value {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-primary-blue);
+  font-family: var(--font-primary);
+  word-break: break-word;
+}
+
+.margin-card-value.positive {
+  color: var(--color-success);
+}
+
+.margin-card-value.negative {
+  color: var(--color-error);
+}
+
+.margin-card-label {
+  font-size: 0.8rem;
+  color: var(--color-gray-dark);
+  margin-top: 0.5rem;
+}
+
+/* Hero Result Display */
+.age-hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 1.5rem 0;
+  background: linear-gradient(135deg, var(--color-highlight-blue, #eff6ff) 0%, var(--color-white) 100%);
+  border-radius: 12px;
+}
+
+.age-big {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: var(--color-primary-blue);
+  font-family: var(--font-primary);
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.age-big .age-unit {
+  font-size: 0.5em;
+  font-weight: 600;
+  color: var(--color-gray-dark);
+}
+
+/* Visual Progress Bars */
+.visual-bar-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--color-white);
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.visual-bar-section h4 {
+  margin-bottom: 0.5rem;
+  color: var(--color-primary-blue);
+}
+
+.visual-bar-container {
+  height: 1.5rem;
+  background: #e5e7eb;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin: 1rem 0 0.5rem;
+}
+
+.visual-bar-fill {
+  height: 100%;
+  border-radius: 0.75rem;
+  transition: width 0.5s ease;
+}
+
+/* Progress Section */
+.progress-section {
+  margin: 1.5rem 0;
+}
+
+.progress-section h4 {
+  color: var(--color-primary-blue);
+  margin-bottom: 1rem;
+}
+
+.progress-bar-container {
+  height: 2rem;
+  background: #e5e7eb;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.875rem;
+  transition: width 0.5s ease;
+}
+
+/* Breakdown Tables */
+.profit-breakdown,
+.pricing-scenarios {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.profit-breakdown {
+  background: var(--color-white);
+  border: 1px solid #e5e7eb;
+}
+
+.pricing-scenarios {
+  background: var(--color-surface-neutral, #f9fafb);
+}
+
+.profit-breakdown h4,
+.pricing-scenarios h4 {
+  color: var(--color-primary-blue);
+  margin-bottom: 1rem;
+}
+
+.breakdown-table-container {
+  overflow-x: auto;
+  margin-top: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.profit-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.profit-table thead {
+  background: #374151;
+  color: white;
+}
+
+.profit-table th,
+.profit-table td {
+  padding: 0.75rem 1rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.profit-table th:first-child,
+.profit-table td:first-child {
+  text-align: left;
+}
+
+.profit-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.profit-table tbody tr:hover {
+  background: var(--color-surface-neutral, #f9fafb);
+}
+
+.profit-table .total-row {
+  background: var(--color-highlight-green, #ecfdf5);
+  font-weight: 700;
+}
+
+.profit-table .current-row {
+  background: var(--color-highlight-yellow, #fffbeb);
+  font-weight: 600;
+}
+
+.profit-table .subtotal-row {
+  background: var(--color-surface-neutral, #f9fafb);
+  font-weight: 600;
+}
+
+/* Insights Grid */
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.insight-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.insight-card.insight-success {
+  background: var(--color-highlight-green, #ecfdf5);
+  border-color: #86efac;
+}
+
+.insight-card.insight-info {
+  background: var(--color-highlight-blue, #eff6ff);
+  border-color: #93c5fd;
+}
+
+.insight-card.insight-warning {
+  background: var(--color-highlight-yellow, #fffbeb);
+  border-color: #fcd34d;
+}
+
+.insight-card.insight-danger {
+  background: var(--color-highlight-red, #fef2f2);
+  border-color: #fca5a5;
+}
+
+.insight-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.insight-content h5 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: var(--color-black);
+}
+
+.insight-content p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-gray-dark);
+  line-height: 1.5;
+}
+
+/* Utility Classes for Results */
+.text-success { color: var(--color-success, #10b981); }
+.text-danger { color: var(--color-error, #ef4444); }
+.text-muted { color: var(--color-gray-dark); }
+
+/* Break-Even Visual */
+.break-even-visual {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--color-white);
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.break-even-visual h4 {
+  color: var(--color-primary-blue);
+  margin-bottom: 1rem;
+}
+
+.zone-bar {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.zone-loss {
+  background: linear-gradient(90deg, #fecaca, #fca5a5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #991b1b;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.zone-profit {
+  background: linear-gradient(90deg, #bbf7d0, #86efac);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #166534;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.zone-marker {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-white);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-primary-blue);
+  white-space: nowrap;
+  box-shadow: var(--shadow-sm);
+  border: 2px solid var(--color-primary-blue);
+}
+
+/* Assignment Row (Grade Calculator) */
+.assignment-row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.assignment-row .form-group {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Alert Boxes */
+.alert {
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.alert-error {
+  background: var(--color-highlight-red, #fef2f2);
+  border: 1px solid #fca5a5;
+  color: #991b1b;
+}
+
+/* QR Code Display */
+.qr-display {
+  text-align: center;
+  padding: 2rem;
+}
+
+.qr-display svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive adjustments for shared result styles */
+@media (max-width: 768px) {
+  .margin-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .margin-card {
+    padding: 1rem 0.75rem;
+  }
+
+  .margin-card-value {
+    font-size: 1.35rem;
+  }
+
+  .margin-card-icon {
+    font-size: 1.5rem;
+  }
+
+  .age-big {
+    font-size: 2rem;
+  }
+
+  .profit-status {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .profit-status .status-icon {
+    margin-right: 0;
+  }
+
+  .insights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profit-table th,
+  .profit-table td {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .assignment-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .assignment-row .form-group {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .margin-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .margin-card-value {
+    font-size: 1.5rem;
+  }
+
+  .zone-bar {
+    height: 2.5rem;
+    font-size: 0.7rem;
+  }
+
+  .zone-marker {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
+
+/* ============================================
    PRINT STYLES
    ============================================ */
 

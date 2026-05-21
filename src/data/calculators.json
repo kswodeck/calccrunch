@@ -2094,6 +2094,513 @@
         "pet-name-generator",
         "username-generator"
       ]
+    },
+    {
+      "title": "Tax Bracket Calculator",
+      "slug": "tax-bracket-calculator",
+      "description": "Calculate your 2026 federal income tax using current US tax brackets. See your effective and marginal tax rates, bracket breakdown, and compare across all filing statuses. Visualize how much of your income falls in each bracket.",
+      "shortDescription": "Calculate federal income tax by bracket",
+      "category": "financial",
+      "tags": ["tax brackets", "income tax", "federal tax", "marginal rate", "effective rate", "tax planning"],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🏛️",
+      "seoTitle": "Free Tax Bracket Calculator 2026 - Federal Income Tax Calculator",
+      "seoDescription": "Calculate your 2026 federal income tax with our free tax bracket calculator. See marginal and effective tax rates, bracket breakdown, and compare filing statuses.",
+      "keywords": ["tax bracket calculator", "income tax calculator", "federal tax calculator", "marginal tax rate", "effective tax rate"],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Tax Planning Strategy Guide",
+        "TurboTax Premium Software",
+        "Tax Deduction Finder Workbook"
+      ],
+      "affiliateDescriptions": [
+        "Minimize your tax burden legally with proven strategies for deductions, credits, and tax-advantaged account optimization.",
+        "File your taxes confidently with this comprehensive tax software that maximizes refunds and handles all filing statuses.",
+        "Discover overlooked deductions with this organized workbook tracking expenses by category throughout the year."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/48oiYtq",
+        "https://amzn.to/4ogsDr2",
+        "https://amzn.to/3K8HN3g"
+      ],
+      "relatedCalculators": [
+        "paycheck-calculator",
+        "budget-calculator",
+        "retirement-planning-calculator"
+      ]
+    },
+    {
+      "title": "Paycheck Calculator",
+      "slug": "paycheck-calculator",
+      "description": "Calculate your take-home pay from gross salary. See federal tax, Social Security, Medicare, state tax withholdings, and voluntary deductions like 401(k), health insurance, and HSA contributions.",
+      "shortDescription": "Calculate take-home pay from gross salary",
+      "category": "financial",
+      "tags": ["paycheck", "take-home pay", "net pay", "salary", "withholding", "deductions"],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "💵",
+      "seoTitle": "Free Paycheck Calculator - Take-Home Pay & Tax Withholding",
+      "seoDescription": "Calculate your take-home pay with our free paycheck calculator. See federal tax, FICA, state tax, and deductions from your gross salary.",
+      "keywords": ["paycheck calculator", "take-home pay calculator", "salary calculator", "net pay calculator", "withholding calculator"],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Personal Finance Fundamentals",
+        "Payroll & Tax Record Organizer",
+        "Salary Negotiation Playbook"
+      ],
+      "affiliateDescriptions": [
+        "Master personal finance basics including understanding your paycheck, tax planning, and maximizing take-home pay.",
+        "Keep track of all pay stubs, tax documents, and deduction records with this comprehensive financial organizer.",
+        "Negotiate a higher salary with proven techniques that top performers use to earn what they're worth."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/48oiYtq",
+        "https://amzn.to/4ogsDr2",
+        "https://amzn.to/3K8HN3g"
+      ],
+      "relatedCalculators": [
+        "tax-bracket-calculator",
+        "budget-calculator",
+        "retirement-planning-calculator"
+      ]
+    },
+    {
+      "title": "Inflation Calculator",
+      "slug": "inflation-calculator",
+      "description": "Calculate the impact of inflation on purchasing power using historical US CPI data from 1960-2025. Compare dollar values across any two years, or project future purchasing power at custom inflation rates.",
+      "shortDescription": "Calculate inflation impact on purchasing power",
+      "category": "financial",
+      "tags": ["inflation", "purchasing power", "CPI", "cost of living", "dollar value"],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "📈",
+      "seoTitle": "Free Inflation Calculator - CPI & Purchasing Power Calculator",
+      "seoDescription": "Calculate inflation and purchasing power changes with historical US CPI data from 1960-2025. See how much your money is really worth.",
+      "keywords": ["inflation calculator", "CPI calculator", "purchasing power calculator", "cost of living calculator", "dollar value calculator"],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Inflation-Proof Investment Guide",
+        "Economic History Reference Book",
+        "Treasury Bond & TIPS Handbook"
+      ],
+      "affiliateDescriptions": [
+        "Protect your wealth from inflation with proven investment strategies including TIPS, commodities, and real assets.",
+        "Understand how inflation has shaped the economy over decades with this comprehensive economic history reference.",
+        "Learn how Treasury Inflation-Protected Securities work and how to use them to hedge against rising prices."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/48oiYtq",
+        "https://amzn.to/4ogsDr2",
+        "https://amzn.to/3K8HN3g"
+      ],
+      "relatedCalculators": [
+        "compound-interest-calculator",
+        "retirement-income-calculator",
+        "fire-calculator"
+      ]
+    },
+    {
+      "title": "FIRE Calculator",
+      "slug": "fire-calculator",
+      "description": "Calculate your Financial Independence, Retire Early (FIRE) number and timeline. See years to FIRE, Coast FIRE number, savings rate analysis, portfolio growth projections, and what-if scenarios for accelerating your path to financial independence.",
+      "shortDescription": "Calculate your path to financial independence",
+      "category": "financial",
+      "tags": ["FIRE", "financial independence", "early retirement", "savings rate", "Coast FIRE", "4% rule"],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Medium",
+      "estimatedTime": "4 minutes",
+      "icon": "🔥",
+      "seoTitle": "Free FIRE Calculator - Financial Independence & Early Retirement",
+      "seoDescription": "Calculate your FIRE number, years to financial independence, and Coast FIRE target. Plan early retirement with portfolio projections and what-if scenarios.",
+      "keywords": ["FIRE calculator", "financial independence calculator", "early retirement calculator", "FIRE number", "Coast FIRE", "savings rate calculator"],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "FIRE Movement Complete Guide",
+        "Passive Income Strategy Bible",
+        "Early Retirement Planning Workbook"
+      ],
+      "affiliateDescriptions": [
+        "Achieve financial independence with the complete FIRE playbook covering savings rates, investment strategies, and early retirement planning.",
+        "Build multiple streams of passive income with proven strategies for dividends, real estate, online business, and more.",
+        "Plan your early retirement systematically with worksheets for FIRE number calculation, milestone tracking, and withdrawal strategies."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4a7YTsC",
+        "https://amzn.to/4raaFcg",
+        "https://amzn.to/487SXgS"
+      ],
+      "relatedCalculators": [
+        "retirement-planning-calculator",
+        "compound-interest-calculator",
+        "investment-income-goal-calculator"
+      ]
+    },
+    {
+      "title": "Macro Calculator",
+      "slug": "macro-calculator",
+      "description": "Calculate your daily macronutrient targets (protein, carbs, fat) based on your body stats, activity level, and fitness goals. See gram targets, calorie breakdown, per-meal splits, and food examples for each macro.",
+      "shortDescription": "Calculate daily protein, carbs & fat targets",
+      "category": "health-fitness",
+      "tags": ["macros", "macronutrients", "protein", "carbs", "fat", "nutrition", "meal planning"],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🥗",
+      "seoTitle": "Free Macro Calculator - Daily Protein, Carbs & Fat Calculator",
+      "seoDescription": "Calculate your daily macronutrient needs with our free macro calculator. Get personalized protein, carbs, and fat targets for your fitness goals.",
+      "keywords": ["macro calculator", "macronutrient calculator", "protein calculator", "carbs calculator", "nutrition calculator"],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Digital Food Scale for Accurate Tracking",
+        "Meal Prep Container Set",
+        "Macro-Friendly Cookbook"
+      ],
+      "affiliateDescriptions": [
+        "Ensure accurate macro counting with this precision digital scale featuring nutritional database and portion control guidance.",
+        "Simplify meal planning and portion control with these glass containers perfect for weekly meal prep and macro management.",
+        "Hit your macro targets deliciously with recipes designed for specific protein, carb, and fat ratios for any fitness goal."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4rr2zfF",
+        "https://amzn.to/3K6H6Yh",
+        "https://amzn.to/4pnTRwM"
+      ],
+      "relatedCalculators": [
+        "tdee-calculator",
+        "calorie-calculator",
+        "bmi-calculator"
+      ]
+    },
+    {
+      "title": "TDEE Calculator",
+      "slug": "tdee-calculator",
+      "description": "Calculate your Total Daily Energy Expenditure (TDEE) using the Mifflin-St Jeor equation. See BMR, TDEE at different activity levels, and calorie targets for weight loss, maintenance, and muscle gain.",
+      "shortDescription": "Calculate total daily energy expenditure",
+      "category": "health-fitness",
+      "tags": ["TDEE", "BMR", "calories", "metabolism", "energy expenditure", "weight management"],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "⚡",
+      "seoTitle": "Free TDEE Calculator - Total Daily Energy Expenditure",
+      "seoDescription": "Calculate your TDEE and BMR with our free calculator. See daily calorie needs for your activity level and get targets for weight loss or muscle gain.",
+      "keywords": ["TDEE calculator", "BMR calculator", "total daily energy expenditure", "metabolism calculator", "calorie needs calculator"],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Smart Scale with BMI Tracking",
+        "Top-Rated Fitness Tracker Watch",
+        "Body Measurement Tape Set"
+      ],
+      "affiliateDescriptions": [
+        "Track your BMI progress automatically with this smart scale that syncs to your phone and monitors body composition trends over time.",
+        "Monitor your health metrics 24/7 with this comprehensive fitness tracker featuring heart rate, activity, and health insights.",
+        "Accurately measure body dimensions for tracking fitness progress with this professional-grade retractable measuring tape set."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/3LM6xiw",
+        "https://amzn.to/487cldM",
+        "https://amzn.to/4ppvFdr"
+      ],
+      "relatedCalculators": [
+        "calorie-calculator",
+        "macro-calculator",
+        "bmi-calculator"
+      ]
+    },
+    {
+      "title": "Age Calculator",
+      "slug": "age-calculator",
+      "description": "Calculate your exact age in years, months, and days. See your zodiac sign, Chinese zodiac, generation, birthday countdown, life milestones timeline, and fun statistics like heartbeats and breaths since birth.",
+      "shortDescription": "Calculate exact age with fun stats & milestones",
+      "category": "time-date",
+      "tags": ["age calculator", "birthday", "zodiac", "milestones", "date calculator"],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🎂",
+      "seoTitle": "Free Age Calculator - Exact Age in Years, Months & Days",
+      "seoDescription": "Calculate your exact age in years, months, and days. See zodiac sign, generation, birthday countdown, and fun life statistics.",
+      "keywords": ["age calculator", "birthday calculator", "how old am I", "date of birth calculator", "exact age calculator"],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Project Management Planner",
+        "Productivity Method Bestseller",
+        "Desktop Calendar with Holidays"
+      ],
+      "affiliateDescriptions": [
+        "Master project timelines and deadline management with this comprehensive planner featuring Gantt charts and milestone tracking.",
+        "Transform your productivity with David Allen's revolutionary GTD method for managing tasks, projects, and deadlines effectively.",
+        "Never miss a deadline with this desktop calendar featuring all major holidays, business days counter, and project planning space."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4idftcO",
+        "https://amzn.to/4icOyOj",
+        "https://amzn.to/49pjSah"
+      ],
+      "relatedCalculators": [
+        "business-days-calculator",
+        "time-zone-converter",
+        "pto-calculator"
+      ]
+    },
+    {
+      "title": "Percentage Calculator",
+      "slug": "percentage-calculator",
+      "description": "Calculate percentages with four different modes: find a percentage of a number, find what percent one number is of another, find percentage change between values, and find original values from percentages. Visual bars, formulas, and quick reference tables included.",
+      "shortDescription": "Calculate percentages in multiple ways",
+      "category": "math-conversions",
+      "tags": ["percentage", "percent", "math", "percentage change", "discount"],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "➗",
+      "seoTitle": "Free Percentage Calculator - Calculate Percentages Instantly",
+      "seoDescription": "Calculate percentages easily with our free calculator. Find percentage of a number, percentage change, and more with visual explanations.",
+      "keywords": ["percentage calculator", "percent calculator", "percentage change calculator", "discount calculator", "percent of a number"],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "College Success Study Guide",
+        "Student Planner & Grade Tracker",
+        "Test Prep Bundle Pack"
+      ],
+      "affiliateDescriptions": [
+        "Master effective study techniques and time management strategies that help top students maintain high GPAs throughout college.",
+        "Stay organized and track your grades all semester with this comprehensive academic planner featuring GPA calculators and goal setting.",
+        "Boost your test scores and overall GPA with proven test-taking strategies and practice materials for major standardized exams."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "gpa-calculator",
+        "grade-calculator",
+        "unit-converter"
+      ]
+    },
+    {
+      "title": "Unit Converter",
+      "slug": "unit-converter",
+      "description": "Convert between units across 8 categories: length, weight, temperature, volume, area, speed, digital storage, and time. See instant conversions to all related units at once with a swap function for quick reverse conversion.",
+      "shortDescription": "Convert units across 8 measurement categories",
+      "category": "math-conversions",
+      "tags": ["unit converter", "conversion", "measurement", "length", "weight", "temperature", "volume"],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🔄",
+      "seoTitle": "Free Unit Converter - Length, Weight, Temperature & More",
+      "seoDescription": "Convert between units of measurement instantly. Length, weight, temperature, volume, area, speed, digital, and time conversions in one tool.",
+      "keywords": ["unit converter", "measurement converter", "length converter", "weight converter", "temperature converter", "conversion calculator"],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "College Success Study Guide",
+        "Student Planner & Grade Tracker",
+        "Test Prep Bundle Pack"
+      ],
+      "affiliateDescriptions": [
+        "Master effective study techniques and time management strategies that help top students maintain high GPAs throughout college.",
+        "Stay organized and track your grades all semester with this comprehensive academic planner featuring GPA calculators and goal setting.",
+        "Boost your test scores and overall GPA with proven test-taking strategies and practice materials for major standardized exams."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "percentage-calculator",
+        "recipe-scaler-converter",
+        "size-converter"
+      ]
+    },
+    {
+      "title": "Time Zone Converter",
+      "slug": "time-zone-converter",
+      "description": "Convert time between any world time zones instantly. Add multiple target zones, plan meetings across time zones with business hours overlap visualization, and use the current time button for quick conversions.",
+      "shortDescription": "Convert time between world time zones",
+      "category": "time-date",
+      "tags": ["time zone", "time converter", "world clock", "meeting planner", "UTC"],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🌍",
+      "seoTitle": "Free Time Zone Converter - World Clock & Meeting Planner",
+      "seoDescription": "Convert time between time zones instantly. Plan meetings across time zones with business hours overlap. Free world clock converter.",
+      "keywords": ["time zone converter", "world clock", "time zone calculator", "meeting planner time zones", "UTC converter"],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Project Management Planner",
+        "Productivity Method Bestseller",
+        "Desktop Calendar with Holidays"
+      ],
+      "affiliateDescriptions": [
+        "Master project timelines and deadline management with this comprehensive planner featuring Gantt charts and milestone tracking.",
+        "Transform your productivity with David Allen's revolutionary GTD method for managing tasks, projects, and deadlines effectively.",
+        "Never miss a deadline with this desktop calendar featuring all major holidays, business days counter, and project planning space."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4idftcO",
+        "https://amzn.to/4icOyOj",
+        "https://amzn.to/49pjSah"
+      ],
+      "relatedCalculators": [
+        "business-days-calculator",
+        "age-calculator",
+        "pto-calculator"
+      ]
+    },
+    {
+      "title": "QR Code Generator",
+      "slug": "qr-code-generator",
+      "description": "Generate QR codes for URLs, text, WiFi networks, emails, phone numbers, and SMS messages. Download as PNG or copy as SVG. Customize size and error correction level.",
+      "shortDescription": "Generate QR codes for URLs, WiFi & more",
+      "category": "generators",
+      "tags": ["QR code", "QR generator", "barcode", "WiFi QR", "URL QR code"],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "📱",
+      "seoTitle": "Free QR Code Generator - Create QR Codes for URLs, WiFi & More",
+      "seoDescription": "Generate QR codes for URLs, text, WiFi, email, phone, and SMS. Download PNG or copy SVG. Free QR code generator with multiple content types.",
+      "keywords": ["QR code generator", "QR code maker", "free QR code", "WiFi QR code", "URL QR code generator"],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Creative Writing Workbook",
+        "Business Naming Guide",
+        "Content Creator's Handbook"
+      ],
+      "affiliateDescriptions": [
+        "Unlock your creative potential with exercises and prompts designed to generate unique names, characters, and story ideas.",
+        "Build a memorable brand with proven naming strategies, trademark guidance, and domain availability tips for your business.",
+        "Master the art of creating engaging usernames, team names, and online identities that stand out across all platforms."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "password-generator",
+        "uuid-generator",
+        "lorem-ipsum-generator"
+      ]
+    },
+    {
+      "title": "Break-Even Calculator",
+      "slug": "break-even-calculator",
+      "description": "Calculate your break-even point in units and revenue. See contribution margin, profit at various volumes, pricing and cost scenarios, and safety margin analysis for your business.",
+      "shortDescription": "Calculate break-even point for your business",
+      "category": "business-sales",
+      "tags": ["break-even", "break even analysis", "contribution margin", "fixed costs", "business planning"],
+      "featured": true,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "⚖️",
+      "seoTitle": "Free Break-Even Calculator - Break-Even Analysis Tool",
+      "seoDescription": "Calculate your break-even point in units and revenue. Analyze contribution margins and pricing scenarios with our free break-even calculator.",
+      "keywords": ["break-even calculator", "break even analysis", "break even point", "contribution margin calculator", "business planning calculator"],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Pricing Strategy Playbook",
+        "Business Finance Fundamentals",
+        "Profit First System Book"
+      ],
+      "affiliateDescriptions": [
+        "Set profitable prices with psychological pricing strategies and competitive analysis techniques that maximize margins.",
+        "Master essential business finance concepts including profit margins, cash flow, and financial ratios for better decision-making.",
+        "Transform your business profitability with this revolutionary cash management system that ensures profit from every sale."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4a7YTsC",
+        "https://amzn.to/4raaFcg",
+        "https://amzn.to/487SXgS"
+      ],
+      "relatedCalculators": [
+        "profit-margin-calculator",
+        "roi-calculator",
+        "sales-commission-calculator"
+      ]
+    },
+    {
+      "title": "Grade Calculator",
+      "slug": "grade-calculator",
+      "description": "Calculate your weighted grade average or find out what score you need on your final exam. Add multiple assignments with scores and weights, see letter grades, and get targets for achieving each grade level.",
+      "shortDescription": "Calculate weighted grades & final exam score needed",
+      "category": "math-conversions",
+      "tags": ["grade calculator", "weighted average", "final grade", "GPA", "school", "college"],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "📚",
+      "seoTitle": "Free Grade Calculator - Weighted Average & Final Exam Score",
+      "seoDescription": "Calculate your weighted grade average and find out what you need on your final exam. Free grade calculator for students.",
+      "keywords": ["grade calculator", "final grade calculator", "weighted grade calculator", "what do I need on my final", "class grade calculator"],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "College Success Study Guide",
+        "Student Planner & Grade Tracker",
+        "Test Prep Bundle Pack"
+      ],
+      "affiliateDescriptions": [
+        "Master effective study techniques and time management strategies that help top students maintain high GPAs throughout college.",
+        "Stay organized and track your grades all semester with this comprehensive academic planner featuring GPA calculators and goal setting.",
+        "Boost your test scores and overall GPA with proven test-taking strategies and practice materials for major standardized exams."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "gpa-calculator",
+        "percentage-calculator",
+        "unit-converter"
+      ]
     }
   ]
 }
