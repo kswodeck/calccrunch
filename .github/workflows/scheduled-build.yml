@@ -1,0 +1,14 @@
+name: Scheduled Build (Publish Blog Posts)
+
+on:
+  schedule:
+    # Runs at 8:00 AM PST (3:00 PM UTC) every other Monday
+    - cron: '0 15 */14 * *'
+  workflow_dispatch: # Allow manual trigger from GitHub Actions UI anytime
+
+jobs:
+  trigger-netlify-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Netlify Build Hook
+        run: curl -X POST -d {} ${{ secrets.NETLIFY_BUILD_HOOK }}
