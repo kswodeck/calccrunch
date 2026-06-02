@@ -80,7 +80,8 @@
       "relatedCalculators": [
         "bmi-calculator",
         "macro-calculator",
-        "body-fat-calculator"
+        "body-fat-calculator",
+        "sleep-calculator"
       ]
     },
     {
@@ -2600,6 +2601,84 @@
         "gpa-calculator",
         "percentage-calculator",
         "unit-converter"
+      ]
+    },
+    {
+      "title": "Sleep Cycle Calculator",
+      "slug": "sleep-calculator",
+      "description": "Calculate optimal bedtimes and wake times based on 90-minute sleep cycles. Choose wake-up or bedtime mode, plan naps, and get age-specific sleep recommendations from CDC/NIH guidelines. Wake up refreshed by aligning with your natural sleep cycles.",
+      "shortDescription": "Calculate optimal sleep & wake times by cycle",
+      "category": "health-fitness",
+      "tags": ["sleep calculator", "sleep cycle", "bedtime", "wake time", "nap calculator", "sleep schedule", "circadian rhythm"],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🌙",
+      "seoTitle": "Free Sleep Cycle Calculator - Optimal Bedtime & Wake Time",
+      "seoDescription": "Calculate the best time to sleep and wake up based on 90-minute sleep cycles. Get age-specific recommendations, nap planning, and sleep stage visualization. Wake up refreshed.",
+      "keywords": ["sleep calculator", "sleep cycle calculator", "bedtime calculator", "when should I go to sleep", "when to wake up", "nap calculator", "how much sleep do I need"],
+      "lastUpdated": "2026-06-01",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Best-Selling Sleep Aid Sound Machine",
+        "Blue Light Blocking Glasses",
+        "Weighted Blanket for Better Sleep"
+      ],
+      "affiliateDescriptions": [
+        "Fall asleep faster with this premium white noise machine featuring 30+ soothing sounds, timer settings, and travel-friendly design.",
+        "Protect your sleep quality by blocking blue light from screens in the evening. Stylish frames with amber-tinted lenses.",
+        "Improve sleep quality with gentle deep pressure stimulation. Premium weighted blanket available in multiple weights for your body size."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "calorie-calculator",
+        "bmi-calculator",
+        "age-calculator"
+      ]
+    },
+    {
+      "title": "Electricity Cost Calculator",
+      "slug": "electricity-cost-calculator",
+      "description": "Calculate your electricity costs by appliance. Add devices from a preset library or enter custom wattages, see per-appliance and total monthly/annual costs, visualize which appliances cost the most, and compare EV charging costs vs gasoline.",
+      "shortDescription": "Calculate electricity costs by appliance",
+      "category": "home-real-estate",
+      "tags": ["electricity calculator", "energy cost", "electric bill", "appliance cost", "kWh calculator", "EV charging cost", "power consumption"],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "⚡",
+      "seoTitle": "Free Electricity Cost Calculator - Appliance Energy Usage & Bill Estimator",
+      "seoDescription": "Calculate electricity costs per appliance with our free calculator. See monthly and annual costs, compare EV vs gas, and find your biggest energy consumers.",
+      "keywords": ["electricity cost calculator", "electric bill calculator", "energy usage calculator", "appliance electricity cost", "EV charging cost calculator", "kWh calculator", "power consumption calculator"],
+      "lastUpdated": "2026-06-01",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Smart Plug with Energy Monitoring",
+        "Kill A Watt Electricity Monitor",
+        "Programmable Smart Thermostat"
+      ],
+      "affiliateDescriptions": [
+        "Track real-time energy usage for any appliance with this WiFi smart plug featuring energy monitoring, scheduling, and voice control.",
+        "Measure exact electricity consumption of any device. Simply plug in and see watts, kWh, and projected monthly costs instantly.",
+        "Save up to 23% on heating/cooling costs with this smart thermostat featuring learning algorithms, scheduling, and remote control."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "budget-calculator",
+        "home-improvement-cost-calculator",
+        "gas-mileage-calculator"
       ]
     }
   ]

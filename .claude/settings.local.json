@@ -1,20 +1,50 @@
 {
   "permissions": {
     "allow": [
+      "WebFetch",
       "Bash(node *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git checkout *)",
+      "Bash(git switch *)",
+      "Bash(git merge *)",
+      "Bash(git branch *)",
+      "Bash(git restore *)",
+      "Bash(git stash *)",
+      "Bash(git rebase *)",
+      "Bash(git tag *)",
+      "Bash(git fetch *)",
       "Bash(npm run *)",
-      "Bash(xargs wc *)",
-      "Bash(xargs grep *)",
-      "Bash(npx astro *)",
-      "Bash(kill %1)",
-      "Bash(wait)",
+      "Bash(npm ci)",
+      "Bash(npm test *)",
+      "Bash(npm install *)",
+      "Bash(npm list *)",
+      "Bash(npm outdated)",
       "Bash(npx *)",
+      "Bash(npx astro *)",
+      "Bash(npx serve *)",
+      "Bash(python -m http.server *)",
       "Bash(nvm list *)",
       "Bash(nvm install *)",
       "Bash(nvm use *)",
-      "Bash(npm install *)",
-      "Bash(sed -i 's/color: #666;/color: var\\(--color-gray-dark\\);/g; s/color: #666}/color: var\\(--color-gray-dark\\)}/g' src/pages/calculators/*.md)",
-      "Bash(sed -i 's/color: #3b82f6/color: var\\(--color-light-blue\\)/g' src/pages/calculators/*.md)"
+      "Bash(xargs wc *)",
+      "Bash(xargs grep *)",
+      "Bash(kill %1)",
+      "Bash(wait)",
+      "Bash(* --version)",
+      "Bash(* --help *)",
+      "Bash(sed -i *)"
+    ],
+    "deny": [
+      "Bash(git push *)",
+      "Bash(git reset --hard *)",
+      "Bash(git clean -fd)",
+      "Bash(git clean -fdx)",
+      "Bash(rm -rf *)",
+      "Bash(sudo *)",
+      "Bash(npm publish *)",
+      "Bash(curl *)",
+      "Bash(wget *)"
     ]
   }
 }
