@@ -173,6 +173,7 @@ const faqs = [
                   <option value="Bug Report">Bug Report</option>
                   <option value="Feature Suggestion">Feature Suggestion</option>
                   <option value="Partnership">Partnership Opportunity</option>
+                  <option value="Write for Us">Write for Us (Author Application)</option>
                   <option value="Feedback">Feedback</option>
                   <option value="Other">Other</option>
                 </select>
@@ -248,6 +249,15 @@ const faqs = [
                   </p>
                 </div>
               </div>
+
+              <div class="info-card info-card-highlight">
+                <div class="info-icon">✍️</div>
+                <div class="info-content">
+                  <h4>Want to Write for Us?</h4>
+                  <p>Share your expertise with our audience and build your portfolio.</p>
+                  <a href="/write-for-us" class="info-link">Apply to be an author →</a>
+                </div>
+              </div>
             </div>
             <!-- Ad Unit (display) -->
             <AdUnit slot="4441095467" format="square" />
@@ -318,6 +328,18 @@ const faqs = [
 
   <!-- Load Contact Form JavaScript -->
   <script src="/scripts/contact-us.js" is:inline></script>
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+      var subjectField = document.getElementById('subject');
+      if (subjectField) {
+        subjectField.addEventListener('change', function() {
+          if (this.value === 'Write for Us') {
+            window.location.href = '/write-for-us';
+          }
+        });
+      }
+    });
+  </script>
 </BaseLayout>
 
 <style>
@@ -558,6 +580,11 @@ const faqs = [
   .info-card:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
+  }
+
+  .info-card-highlight {
+    background: linear-gradient(135deg, #fff8f0, #fff3e8);
+    border: 2px solid var(--color-accent-orange);
   }
 
   .info-icon {

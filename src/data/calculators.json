@@ -1337,7 +1337,7 @@
         "baby names",
         "unique baby names",
         "name meanings",
-        "popular baby names 2025"
+        "popular baby names 2026"
       ],
       "lastUpdated": "2025-06-10",
       "uses": 0,
@@ -2177,7 +2177,7 @@
     {
       "title": "Inflation Calculator",
       "slug": "inflation-calculator",
-      "description": "Calculate the impact of inflation on purchasing power using historical US CPI data from 1960-2025. Compare dollar values across any two years, or project future purchasing power at custom inflation rates.",
+      "description": "Calculate the impact of inflation on purchasing power using historical US CPI data from 1960-2026. Compare dollar values across any two years, or project future purchasing power at custom inflation rates.",
       "shortDescription": "Calculate inflation impact on purchasing power",
       "category": "financial",
       "tags": ["inflation", "purchasing power", "CPI", "cost of living", "dollar value"],
@@ -2187,7 +2187,7 @@
       "estimatedTime": "2 minutes",
       "icon": "📈",
       "seoTitle": "Free Inflation Calculator - CPI & Purchasing Power Calculator",
-      "seoDescription": "Calculate inflation and purchasing power changes with historical US CPI data from 1960-2025. See how much your money is really worth.",
+      "seoDescription": "Calculate inflation and purchasing power changes with historical US CPI data from 1960-2026. See how much your money is really worth.",
       "keywords": ["inflation calculator", "CPI calculator", "purchasing power calculator", "cost of living calculator", "dollar value calculator"],
       "lastUpdated": "2026-05-21",
       "uses": 0,

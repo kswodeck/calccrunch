@@ -1,0 +1,122 @@
+{
+  "mortgage-payment-calculator": [
+    {
+      "q": "What is a good mortgage interest rate?",
+      "a": "A good mortgage rate is typically 0.5-1% below the national average. As of 2026, rates between 6-7% are common for 30-year fixed mortgages. Your actual rate depends on credit score (740+ gets the best rates), down payment size, loan type, and market conditions."
+    },
+    {
+      "q": "How much house can I afford on a $100,000 salary?",
+      "a": "Using the 28/36 rule, your mortgage payment shouldn't exceed 28% of gross income. On $100,000/year, that's about $2,333/month for housing. At 6.5% interest with 20% down, this typically supports a home price of $350,000-$420,000 depending on taxes and insurance in your area."
+    },
+    {
+      "q": "Should I get a 15-year or 30-year mortgage?",
+      "a": "A 15-year mortgage has higher monthly payments but saves 50-60% in total interest and builds equity faster. Choose 15-year if you can comfortably afford the higher payment. Choose 30-year for lower monthly obligations and more cash flow flexibility — you can always make extra payments."
+    },
+    {
+      "q": "What is PMI and how do I avoid it?",
+      "a": "Private Mortgage Insurance (PMI) is required when your down payment is less than 20%. It typically costs 0.5-1.5% of the loan amount annually ($50-$150/month on a $200k loan). To avoid it: put 20% down, use a VA loan (no PMI required), or ask about lender-paid PMI options."
+    }
+  ],
+  "compound-interest-calculator": [
+    {
+      "q": "What is compound interest and how does it work?",
+      "a": "Compound interest is interest earned on both your original investment AND previously earned interest. Unlike simple interest (earned only on principal), compound interest creates exponential growth. For example, $10,000 at 7% compound interest becomes $19,672 in 10 years vs $17,000 with simple interest."
+    },
+    {
+      "q": "How long does it take to double your money with compound interest?",
+      "a": "Use the Rule of 72: divide 72 by your annual interest rate. At 7% returns, money doubles in ~10.3 years. At 10% (stock market average), it doubles in ~7.2 years. At 4% (savings account), it takes ~18 years. This assumes reinvesting all returns."
+    },
+    {
+      "q": "How much should I invest monthly to become a millionaire?",
+      "a": "At 10% average annual returns (S&P 500 historical average): invest $500/month for 30 years ($1.13M), $1,000/month for 25 years ($1.18M), or $2,000/month for 20 years ($1.53M). Starting earlier dramatically reduces how much you need to contribute each month."
+    },
+    {
+      "q": "Is daily or monthly compounding better?",
+      "a": "Daily compounding earns slightly more than monthly, but the difference is minimal. $10,000 at 5% for 10 years: daily compounding = $16,487, monthly = $16,470 — a difference of only $17. Focus on the interest rate and time period rather than compounding frequency."
+    }
+  ],
+  "bmi-calculator": [
+    {
+      "q": "What is a healthy BMI for adults?",
+      "a": "A healthy BMI is between 18.5 and 24.9. Below 18.5 is underweight, 25-29.9 is overweight, and 30+ is obese. However, BMI doesn't account for muscle mass, bone density, age, or fat distribution — a muscular athlete may have a 'high' BMI but excellent health."
+    },
+    {
+      "q": "Is BMI accurate for athletes and muscular people?",
+      "a": "No, BMI is less accurate for athletes, bodybuilders, and very muscular individuals. Muscle weighs more than fat, so muscular people often have 'overweight' BMIs despite low body fat. For these individuals, body fat percentage, waist circumference, or DEXA scans provide better health assessments."
+    },
+    {
+      "q": "How do I lower my BMI safely?",
+      "a": "To lower BMI safely, aim for 1-2 pounds of weight loss per week through a moderate calorie deficit (500-750 calories/day below maintenance) combined with regular exercise. Focus on whole foods, lean protein, and strength training to preserve muscle. Consult a healthcare provider before starting any weight loss plan."
+    }
+  ],
+  "calorie-calculator": [
+    {
+      "q": "How many calories should I eat per day to lose weight?",
+      "a": "For safe weight loss of 1 lb/week, eat 500 calories below your TDEE (Total Daily Energy Expenditure). For most adults, this means 1,500-2,000 calories/day for women and 2,000-2,500 for men, depending on activity level. Never go below 1,200 (women) or 1,500 (men) without medical supervision."
+    },
+    {
+      "q": "What is TDEE and why does it matter?",
+      "a": "TDEE (Total Daily Energy Expenditure) is the total calories your body burns daily including basal metabolism, digestion, and physical activity. It matters because eating above TDEE causes weight gain, eating below causes weight loss, and eating at TDEE maintains weight. It's the foundation of any nutrition plan."
+    },
+    {
+      "q": "Does exercise increase how many calories I can eat?",
+      "a": "Yes, exercise increases your TDEE, allowing more food intake while maintaining or losing weight. However, most people overestimate exercise calories. A 30-minute jog burns approximately 250-350 calories — about one small meal. Combine exercise with mindful eating rather than 'eating back' all exercise calories."
+    }
+  ],
+  "auto-loan-calculator": [
+    {
+      "q": "What is a good interest rate for a car loan?",
+      "a": "Good car loan rates in 2026: excellent credit (750+) gets 4-6%, good credit (700-749) gets 6-8%, fair credit (650-699) gets 8-12%. New cars typically get lower rates than used cars. Credit unions often offer rates 1-2% lower than dealership financing."
+    },
+    {
+      "q": "How much car can I afford on my salary?",
+      "a": "The 20/4/10 rule is a good guideline: 20% down payment, no more than a 4-year loan, and total car expenses (payment + insurance + gas) under 10% of gross monthly income. On a $60,000 salary, that's about $500/month total, supporting a car in the $20,000-$28,000 range."
+    },
+    {
+      "q": "Should I choose a longer loan term for lower payments?",
+      "a": "Longer terms (72-84 months) reduce monthly payments but cost significantly more in interest and risk being 'underwater' (owing more than the car is worth). A $30,000 car at 6%: 48 months = $704/month, $3,800 interest. 72 months = $497/month, $5,800 interest — $2,000 more for the same car."
+    }
+  ],
+  "tip-calculator": [
+    {
+      "q": "How much should you tip at a restaurant?",
+      "a": "Standard restaurant tipping in the US: 15% for adequate service, 18-20% for good service, 20-25% for exceptional service. For large parties (6+), many restaurants add automatic 18-20% gratuity. For takeout, 10-15% is appreciated but not expected. Always tip on the pre-tax bill amount."
+    },
+    {
+      "q": "Do you tip on tax or before tax?",
+      "a": "Etiquette experts agree you should tip on the pre-tax subtotal, not the total after tax. For example, on a $50 meal with $4 tax, tip 20% on $50 ($10), not on $54 ($10.80). The difference is small but adds up over time."
+    },
+    {
+      "q": "How do you split a tip between multiple servers?",
+      "a": "When splitting a check, each person should tip 18-20% on their portion. If one person pays the full bill, they should tip on the full pre-tax amount and split the total (bill + tip) evenly. For group dining, rounding up slightly ensures servers aren't shortchanged."
+    }
+  ],
+  "retirement-planning-calculator": [
+    {
+      "q": "How much money do I need to retire?",
+      "a": "The common guideline is 25x your annual expenses (the 4% rule). If you spend $50,000/year, you need $1.25 million. If you spend $80,000/year, you need $2 million. This assumes a 4% safe withdrawal rate and a portfolio lasting 30+ years. Adjust upward for early retirement or conservative estimates."
+    },
+    {
+      "q": "At what age can I retire?",
+      "a": "You can retire when your investments generate enough income to cover expenses. Social Security starts at 62 (reduced) or 67 (full). To retire earlier, you need more savings. The FIRE movement targets 50-55 by saving 50-70% of income. Most financial advisors suggest having 10-12x your salary saved by age 67."
+    },
+    {
+      "q": "How much should I save for retirement each month?",
+      "a": "Save at least 15% of gross income for retirement (including employer match). Starting at 25, that's roughly $375/month on a $60,000 salary. Starting at 35, you need $750/month to catch up. Starting at 45, you'd need $1,500+/month. The earlier you start, the less you need to save monthly due to compound growth."
+    }
+  ],
+  "budget-calculator": [
+    {
+      "q": "What is the 50/30/20 budget rule?",
+      "a": "The 50/30/20 rule allocates after-tax income as: 50% for needs (rent, groceries, insurance, minimum debt payments), 30% for wants (dining out, entertainment, hobbies, subscriptions), and 20% for savings and extra debt payments. On $5,000/month take-home: $2,500 needs, $1,500 wants, $1,000 savings."
+    },
+    {
+      "q": "How do I stick to a budget?",
+      "a": "Key strategies: 1) Track every expense for 30 days to find leaks, 2) Use the envelope method or separate accounts for categories, 3) Automate savings on payday (pay yourself first), 4) Review weekly not just monthly, 5) Build in 'fun money' so the budget doesn't feel restrictive. The best budget is one you'll actually follow."
+    },
+    {
+      "q": "How much of my income should go to rent?",
+      "a": "The standard guideline is spending no more than 30% of gross income on housing (rent + utilities). On $60,000/year ($5,000/month), that's $1,500 for rent. In high-cost cities, many spend 35-40%, but this leaves less for savings and flexibility. If possible, aim for 25% to build wealth faster."
+    }
+  ]
+}

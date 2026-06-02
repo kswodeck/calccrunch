@@ -1,0 +1,538 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import AdUnit from "../components/AdUnit.astro";
+import blogPostsData from "../data/blog-posts.json";
+import calculatorsData from "../data/calculators.json";
+
+const { post } = Astro.props;
+
+const breadcrumbItems = [
+  { label: "Home", href: "/" },
+  { label: "Blog", href: "/blog" },
+  { label: post.title, href: null },
+];
+
+const relatedPosts = blogPostsData.posts
+  .filter(p => p.slug !== post.slug)
+  .filter(p => p.tags.some(t => post.tags.includes(t)))
+  .slice(0, 3);
+
+const relatedCalcs = (post.relatedCalculators || [])
+  .map(slug => calculatorsData.calculators.find(c => c.slug === slug))
+  .filter(Boolean);
+
+const isoDate = post.publishDate;
+---
+
+<BaseLayout
+  title={post.seoTitle || post.title}
+  description={post.seoDescription || post.description}
+  keywords={post.keywords?.join(', ') || post.tags.join(', ')}
+>
+  <!-- Article Schema -->
+  <script is:inline type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.description,
+    "author": {
+      "@type": "Organization",
+      "name": "CalcCrunch",
+      "url": "https://calccrunch.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "CalcCrunch",
+      "url": "https://calccrunch.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://calccrunch.com/images/logos/logo-icon.png"
+      }
+    },
+    "datePublished": post.publishDate,
+    "dateModified": post.updatedDate || post.publishDate,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://calccrunch.com/blog/${post.slug}/`
+    },
+    "keywords": post.keywords?.join(', ')
+  })} />
+
+  <div class="blog-post-page">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbItems} />
+
+      <article class="blog-article">
+        <header class="article-header">
+          <div class="article-meta-top">
+            <span class="article-category">{post.category}</span>
+            <span class="article-read-time">{post.readTime}</span>
+          </div>
+
+          <h1>{post.title}</h1>
+
+          <p class="article-description">{post.description}</p>
+
+          <div class="article-info">
+            <div class="author-info">
+              <div class="author-avatar">CC</div>
+              <div class="author-details">
+                <span class="author-name">{post.author}</span>
+                <time class="local-date" datetime={isoDate} data-iso={isoDate}></time>
+              </div>
+            </div>
+            <div class="article-tags">
+              {post.tags.slice(0, 3).map(tag => (
+                <span class="tag">{tag}</span>
+              ))}
+            </div>
+          </div>
+        </header>
+
+        <div class="article-content">
+          <slot />
+        </div>
+
+        <!-- Related Calculators CTA -->
+        {relatedCalcs.length > 0 && (
+          <aside class="related-calculators-cta">
+            <h2>Try These Free Calculators</h2>
+            <p>Put what you've learned into practice with our interactive tools:</p>
+            <div class="calculator-links">
+              {relatedCalcs.map(calc => (
+                <a href={`/calculators/${calc.slug}`} class="calculator-link-card">
+                  <span class="calc-icon">{calc.icon}</span>
+                  <div class="calc-link-info">
+                    <strong>{calc.title}</strong>
+                    <span>{calc.shortDescription || calc.description}</span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </aside>
+        )}
+
+        <AdUnit slot="4441095467" format="auto" />
+
+        <!-- Related Articles -->
+        {relatedPosts.length > 0 && (
+          <section class="related-articles">
+            <h2>Related Articles</h2>
+            <div class="related-grid">
+              {relatedPosts.map(p => (
+                <a href={`/blog/${p.slug}`} class="related-article-card">
+                  <span class="related-category">{p.category}</span>
+                  <h3>{p.title}</h3>
+                  <p>{p.description}</p>
+                  <span class="related-meta">{p.readTime}</span>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+      </article>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll('.local-date').forEach(el => {
+    const iso = el.getAttribute('data-iso');
+    if (iso) {
+      const [year, month, day] = iso.split('T')[0].split('-').map(Number);
+      const date = new Date(year, month - 1, day);
+      el.textContent = date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+    }
+  });
+</script>
+
+<style>
+  .blog-post-page {
+    padding: var(--space-xl) 0 var(--space-3xl);
+  }
+
+  .blog-article {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  /* Article Header */
+  .article-header {
+    margin-bottom: var(--space-3xl);
+    padding-bottom: var(--space-2xl);
+    border-bottom: 2px solid var(--color-gray);
+  }
+
+  .article-meta-top {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+  }
+
+  .article-category {
+    background: var(--color-lighter-blue);
+    color: var(--color-primary-blue);
+    padding: var(--space-xs) var(--space-md);
+    border-radius: 6px;
+    font-size: var(--text-sm);
+    font-weight: 600;
+  }
+
+  .article-read-time {
+    color: var(--color-gray-dark);
+    font-size: var(--text-sm);
+  }
+
+  .article-header h1 {
+    font-size: var(--text-4xl);
+    line-height: 1.2;
+    margin-bottom: var(--space-lg);
+    color: var(--color-primary-blue);
+  }
+
+  .article-description {
+    font-size: var(--text-xl);
+    color: var(--color-gray-dark);
+    line-height: 1.6;
+    margin-bottom: var(--space-xl);
+  }
+
+  .article-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+  }
+
+  .author-info {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+  }
+
+  .author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--color-primary-blue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: var(--text-sm);
+  }
+
+  .author-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .author-name {
+    font-weight: 600;
+    color: var(--color-gray-dark);
+    font-size: var(--text-sm);
+  }
+
+  .author-details time {
+    font-size: var(--text-sm);
+    color: var(--color-gray-dark);
+    opacity: 0.7;
+  }
+
+  .article-tags {
+    display: flex;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+  }
+
+  .article-tags .tag {
+    background: var(--color-gray-light);
+    color: var(--color-gray-dark);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 4px;
+    font-size: var(--text-xs);
+    font-weight: 500;
+  }
+
+  /* Article Content */
+  .article-content {
+    font-size: var(--text-lg);
+    line-height: 1.8;
+    color: var(--color-gray-dark);
+  }
+
+  .article-content :global(h2) {
+    font-size: var(--text-2xl);
+    color: var(--color-primary-blue);
+    margin-top: var(--space-3xl);
+    margin-bottom: var(--space-lg);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--color-gray);
+  }
+
+  .article-content :global(h2:first-child) {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .article-content :global(h3) {
+    font-size: var(--text-xl);
+    color: var(--color-primary-blue);
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-md);
+  }
+
+  .article-content :global(p) {
+    margin-bottom: var(--space-lg);
+  }
+
+  .article-content :global(ul),
+  .article-content :global(ol) {
+    margin-bottom: var(--space-lg);
+    padding-left: var(--space-xl);
+  }
+
+  .article-content :global(li) {
+    margin-bottom: var(--space-sm);
+  }
+
+  .article-content :global(strong) {
+    color: var(--color-black);
+  }
+
+  .article-content :global(blockquote) {
+    border-left: 4px solid var(--color-accent-orange);
+    padding: var(--space-lg) var(--space-xl);
+    margin: var(--space-xl) 0;
+    background: var(--color-gray-light);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    font-style: italic;
+  }
+
+  .article-content :global(blockquote p) {
+    margin-bottom: 0;
+  }
+
+  .article-content :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--space-xl) 0;
+    font-size: var(--text-base);
+  }
+
+  .article-content :global(th),
+  .article-content :global(td) {
+    padding: var(--space-md) var(--space-lg);
+    border: 1px solid var(--color-gray);
+    text-align: left;
+  }
+
+  .article-content :global(th) {
+    background: var(--color-primary-blue);
+    color: white;
+    font-weight: 600;
+  }
+
+  .article-content :global(tr:nth-child(even)) {
+    background: var(--color-gray-light);
+  }
+
+  .article-content :global(.callout) {
+    background: #e8f4f8;
+    border-left: 4px solid #2C5F8D;
+    padding: var(--space-lg) var(--space-xl);
+    margin: var(--space-xl) 0;
+    border-radius: 0 var(--border-radius-lg) var(--border-radius-lg) 0;
+    color: #2a2a2a;
+  }
+
+  .article-content :global(.callout-warning) {
+    background: #fff8e1;
+    border-left-color: #f59e0b;
+    color: #2a2a2a;
+  }
+
+  .article-content :global(.callout-success) {
+    background: #e8f5e9;
+    border-left-color: #4CAF50;
+    color: #2a2a2a;
+  }
+
+  .article-content :global(.callout) :global(strong),
+  .article-content :global(.callout-warning) :global(strong),
+  .article-content :global(.callout-success) :global(strong) {
+    color: #1a1a1a;
+  }
+
+  /* Related Calculators CTA */
+  .related-calculators-cta {
+    margin-top: var(--space-3xl);
+    padding: var(--space-2xl);
+    background: linear-gradient(135deg, #e8f4f8, #f0f8ff);
+    border-radius: var(--border-radius-lg);
+    border: 2px solid #5A9FD4;
+  }
+
+  .related-calculators-cta h2 {
+    font-size: var(--text-xl);
+    color: #1a3a5c;
+    margin-bottom: var(--space-sm);
+  }
+
+  .related-calculators-cta > p {
+    color: #3A3A3A;
+    margin-bottom: var(--space-xl);
+    font-size: var(--text-base);
+  }
+
+  .calculator-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .calculator-link-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    padding: var(--space-md) var(--space-lg);
+    background: #ffffff;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    border: 1px solid #d0d0d0;
+  }
+
+  .calculator-link-card:hover {
+    border-color: var(--color-accent-orange);
+    box-shadow: var(--shadow-md);
+    transform: translateX(4px);
+  }
+
+  .calc-icon {
+    font-size: var(--text-2xl);
+  }
+
+  .calc-link-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .calc-link-info strong {
+    color: #1a3a5c;
+    font-size: var(--text-base);
+  }
+
+  .calc-link-info span {
+    color: #555555;
+    font-size: var(--text-sm);
+  }
+
+  /* Related Articles */
+  .related-articles {
+    margin-top: var(--space-3xl);
+    padding-top: var(--space-2xl);
+    border-top: 2px solid var(--color-gray);
+  }
+
+  .related-articles h2 {
+    font-size: var(--text-2xl);
+    color: var(--color-primary-blue);
+    margin-bottom: var(--space-xl);
+    text-align: center;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-lg);
+  }
+
+  .related-article-card {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-xl);
+    background: var(--color-gray-light);
+    border-radius: var(--border-radius-lg);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    border: 2px solid transparent;
+  }
+
+  .related-article-card:hover {
+    border-color: var(--color-accent-orange);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+  }
+
+  .related-category {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--color-accent-orange);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--space-sm);
+  }
+
+  .related-article-card h3 {
+    font-size: var(--text-base);
+    color: var(--color-primary-blue);
+    margin-bottom: var(--space-sm);
+    line-height: 1.4;
+  }
+
+  .related-article-card p {
+    font-size: var(--text-sm);
+    color: var(--color-gray-dark);
+    line-height: 1.5;
+    margin: 0;
+    flex: 1;
+  }
+
+  .related-meta {
+    font-size: var(--text-xs);
+    color: var(--color-gray-dark);
+    opacity: 0.7;
+    margin-top: var(--space-md);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .article-header h1 {
+      font-size: var(--text-3xl);
+    }
+
+    .article-description {
+      font-size: var(--text-lg);
+    }
+
+    .article-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .article-content {
+      font-size: var(--text-base);
+    }
+
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .article-header h1 {
+      font-size: var(--text-2xl);
+    }
+  }
+</style>

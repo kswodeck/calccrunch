@@ -1,0 +1,88 @@
+---
+import calculatorsData from "../data/calculators.json";
+
+const { currentSlug, category } = Astro.props;
+
+const crossCategoryMap = {
+  "financial": ["calorie-calculator", "budget-calculator", "retirement-planning-calculator"],
+  "health-fitness": ["tip-calculator", "sleep-calculator", "recipe-scaler-converter"],
+  "home-real-estate": ["budget-calculator", "electricity-cost-calculator", "compound-interest-calculator"],
+  "time-date": ["pto-calculator", "business-days-calculator", "age-calculator"],
+  "math-conversions": ["tip-calculator", "percentage-calculator", "unit-converter"],
+  "automotive": ["budget-calculator", "loan-amortization-calculator", "gas-mileage-calculator"],
+  "food-cooking": ["calorie-calculator", "macro-calculator", "unit-converter"],
+  "education": ["compound-interest-calculator", "student-loan-calculator", "percentage-calculator"],
+  "business-sales": ["compound-interest-calculator", "budget-calculator", "tax-bracket-calculator"],
+  "generators": ["password-generator", "username-generator", "qr-code-generator"],
+  "miscellaneous": ["tip-calculator", "percentage-calculator", "budget-calculator"],
+};
+
+const suggestions = (crossCategoryMap[category] || [])
+  .filter(slug => slug !== currentSlug)
+  .map(slug => calculatorsData.calculators.find(c => c.slug === slug))
+  .filter(Boolean)
+  .slice(0, 3);
+---
+
+{suggestions.length > 0 && (
+  <div class="people-also-used">
+    <h3>People Also Used</h3>
+    <div class="also-used-list">
+      {suggestions.map((calc) => (
+        <a href={`/calculators/${calc.slug}`} class="also-used-item">
+          <span class="also-used-icon">{calc.icon}</span>
+          <span class="also-used-title">{calc.title}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+)}
+
+<style>
+  .people-also-used {
+    margin-top: var(--space-2xl);
+    padding: var(--space-xl);
+    background: linear-gradient(135deg, #fff8f0, #fff3e8);
+    border-radius: var(--border-radius-lg);
+    border: 2px solid #ffe0c2;
+  }
+
+  .people-also-used h3 {
+    color: var(--color-accent-orange);
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-lg);
+    text-align: center;
+  }
+
+  .also-used-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .also-used-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+    text-decoration: none;
+    color: var(--color-gray-dark);
+    border-radius: var(--border-radius);
+    transition: all var(--transition-fast);
+  }
+
+  .also-used-item:hover {
+    background: rgba(255, 107, 53, 0.08);
+    color: var(--color-accent-orange);
+    padding-left: var(--space-lg);
+  }
+
+  .also-used-icon {
+    font-size: var(--text-xl);
+  }
+
+  .also-used-title {
+    font-weight: 600;
+    font-size: var(--text-sm);
+  }
+</style>

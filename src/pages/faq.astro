@@ -16,7 +16,7 @@ const faqCategories = [
     questions: [
       {
         q: "What is CalcCrunch.com?",
-        a: "CalcCrunch.com is a free online platform offering 90+ calculator tools for financial planning, health tracking, home improvement, and everyday mathematical calculations. Our mission is to help you crunch numbers, not time!",
+        a: "CalcCrunch.com is a free online platform offering 60+ calculator tools for financial planning, health tracking, home improvement, and everyday mathematical calculations. Our mission is to help you crunch numbers, not time!",
       },
       {
         q: "Is CalcCrunch really free?",
@@ -183,6 +183,21 @@ const popularQuestions = [
   description="Find answers to common questions about CalcCrunch's free calculator tools, privacy practices, and how to use our calculators effectively."
   keywords="FAQ, frequently asked questions, calculator help, CalcCrunch support, how to use calculators"
 >
+  <!-- FAQPage Structured Data -->
+  <script is:inline type="application/ld+json" slot="head" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqCategories.flatMap(category =>
+      category.questions.map(item => ({
+        "@type": "Question",
+        "name": item.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.a
+        }
+      }))
+    )
+  })} />
   <div class="faq-page">
     <div class="container">
       <Breadcrumbs items={breadcrumbItems} />

@@ -260,7 +260,7 @@ calcType: college-savings
 </div>
 
 <div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
-  <h4>📊 Current College Cost Averages (2024-2025)</h4>
+  <h4>📊 Current College Cost Averages (2025-2026)</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>In-state public:</strong> ~$23,250/year (tuition + room & board)</li>
     <li><strong>Out-of-state public:</strong> ~$40,550/year</li>

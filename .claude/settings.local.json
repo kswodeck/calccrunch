@@ -27,13 +27,16 @@
       "Bash(nvm list *)",
       "Bash(nvm install *)",
       "Bash(nvm use *)",
-      "Bash(xargs wc *)",
-      "Bash(xargs grep *)",
+      "Bash(xargs *)",
       "Bash(kill %1)",
       "Bash(wait)",
       "Bash(* --version)",
       "Bash(* --help *)",
-      "Bash(sed -i *)"
+      "Bash(sed -i *)",
+      "Bash(find *)",
+      "Bash(grep *)",
+      "Bash(mkdir *)",
+      "Bash(ls *)"
     ],
     "deny": [
       "Bash(git push *)",

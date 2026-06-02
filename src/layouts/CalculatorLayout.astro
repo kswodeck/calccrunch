@@ -3,11 +3,14 @@ import BaseLayout from "./BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import AdUnit from "../components/AdUnit.astro";
 import RelatedCalculators from "../components/RelatedCalculators.astro";
+import PeopleAlsoUsed from "../components/PeopleAlsoUsed.astro";
 import SocialShare from "../components/SocialShare.astro";
 import "../styles/calculators.css";
 
 // Import calculators data
 import calculatorsData from "../data/calculators.json";
+import calculatorFaqs from "../data/calculator-faqs.json";
+import howtoSteps from "../data/howto-steps.json";
 
 // Get frontmatter from markdown files (used as fallback)
 const { frontmatter } = Astro.props;
@@ -67,38 +70,66 @@ const breadcrumbItems = [
 // Current date for schema
 const currentDate = new Date().toISOString();
 const updatedDate = lastUpdated || currentDate;
+
+// FAQ data for this calculator
+const faqs = calculatorFaqs[slug] || [];
+
+// HowTo schema data
+const howto = howtoSteps[slug];
 ---
 
 <BaseLayout
-  title={seoTitle || `${title} - Free Online Calculator`}
+  title={seoTitle || `${title} - Free ${categoryDisplay} Calculator`}
   description={seoDescription || description}
   keywords={`${title}, ${category} calculator, free calculator, online calculator, ${tags.join(", ")}`}
 >
   <!-- Structured Data for Calculator -->
-  <script
-    type="application/ld+json"
-    slot="head"
-    set:html={JSON.stringify({
+  <script is:inline type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: title,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Web Browser",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    datePublished: updatedDate,
+    description: description,
+    url: Astro.url.toString(),
+  })} />
+
+  {faqs.length > 0 && (
+    <script is:inline type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      name: title,
-      applicationCategory: "UtilitiesApplication",
-      operatingSystem: "Web Browser",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.8",
-        ratingCount: "1250",
-      },
-      datePublished: updatedDate,
-      description: description,
-      url: Astro.url.toString(),
-    })}
-  />
+      "@type": "FAQPage",
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.a
+        }
+      }))
+    })} />
+  )}
+
+  {howto && (
+    <script is:inline type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": howto.name,
+      "description": howto.description,
+      "totalTime": howto.totalTime,
+      "tool": { "@type": "HowToTool", "name": "Web browser" },
+      "step": howto.steps.map((step, i) => ({
+        "@type": "HowToStep",
+        "position": i + 1,
+        "text": step
+      }))
+    })} />
+  )}
 
   <div class="calculator-page">
     <div class="container">
@@ -176,6 +207,23 @@ const updatedDate = lastUpdated || currentDate;
             limit={3}
           />
 
+          <!-- FAQ Section -->
+          {faqs.length > 0 && (
+            <section class="calculator-faq">
+              <h2>Frequently Asked Questions</h2>
+              <div class="faq-list">
+                {faqs.map((faq) => (
+                  <details class="faq-item">
+                    <summary class="faq-question">{faq.q}</summary>
+                    <div class="faq-answer">
+                      <p>{faq.a}</p>
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
+
           <!-- Additional Content Section -->
           {
             tags.length > 0 && (
@@ -224,6 +272,9 @@ const updatedDate = lastUpdated || currentDate;
                 </li>
               </ul>
             </div>
+
+            <!-- People Also Used -->
+            <PeopleAlsoUsed currentSlug={slug} category={category} />
 
             <!-- Help Card -->
             <div class="sidebar-card help-card">
@@ -365,6 +416,67 @@ const updatedDate = lastUpdated || currentDate;
     border-radius: 20px;
     font-size: var(--text-sm);
     font-weight: 500;
+  }
+
+  /* FAQ Section */
+  .calculator-faq {
+    margin-top: var(--space-3xl);
+    padding-top: var(--space-2xl);
+    border-top: 2px solid var(--color-gray);
+  }
+
+  .calculator-faq h2 {
+    font-size: var(--text-2xl);
+    color: var(--color-primary-blue);
+    margin-bottom: var(--space-xl);
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .calculator-faq .faq-item {
+    background: var(--color-gray-light);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: all var(--transition-base);
+  }
+
+  .calculator-faq .faq-item[open] {
+    background: var(--color-white);
+    box-shadow: var(--shadow-md);
+  }
+
+  .calculator-faq .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-lg);
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--color-primary-blue);
+    font-size: var(--text-base);
+    list-style: none;
+  }
+
+  .calculator-faq .faq-question::-webkit-details-marker {
+    display: none;
+  }
+
+  .calculator-faq .faq-question:hover {
+    color: var(--color-accent-orange);
+  }
+
+  .calculator-faq .faq-answer {
+    padding: 0 var(--space-lg) var(--space-lg);
+  }
+
+  .calculator-faq .faq-answer p {
+    color: var(--color-gray-dark);
+    line-height: 1.7;
+    margin: 0;
   }
 
   .last-updated {

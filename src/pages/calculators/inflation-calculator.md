@@ -132,7 +132,7 @@ calcType: inflation
 <div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>📊 US Inflation History</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
-    <li><strong>Average (1960-2025):</strong> ~3.7% per year</li>
+    <li><strong>Average (1960-2026):</strong> ~3.7% per year</li>
     <li><strong>Recent (2010-2019):</strong> ~1.8% per year</li>
     <li><strong>Post-pandemic (2021-2023):</strong> ~6.5% per year</li>
     <li><strong>Fed target:</strong> 2% annual inflation</li>
