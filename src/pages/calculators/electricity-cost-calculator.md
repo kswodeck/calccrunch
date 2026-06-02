@@ -96,7 +96,6 @@ calcType: electricity-cost
         <button type="button" id="add-preset-btn" class="btn btn-secondary">+ Add</button>
       </div>
     </div>
-
     <div class="form-row" style="margin-top: 1rem;">
       <div class="form-group">
         <label>Or add a custom appliance:</label>
