@@ -1,0 +1,94 @@
+---
+const {
+  message = "If this calculator saved you time, consider supporting us!",
+  compact = false,
+} = Astro.props;
+---
+
+<div class={`bmac-widget ${compact ? "bmac-compact" : ""}`}>
+  <div class="bmac-content">
+    {!compact && <span class="bmac-icon">&#9749;</span>}
+    <p class="bmac-message">{message}</p>
+    <a
+      href="https://buymeacoffee.com/calccrunch"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="bmac-button"
+    >
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 19h16v2H4v-2zm14-8h1c1.1 0 2 .9 2 2v1c0 1.1-.9 2-2 2h-1v1H4V7h14v4zm1 2h-1v1h1v-1zM6 9v8h10V9H6z" fill="currentColor"/>
+        <path d="M7 4h2v3H7V4zm4 0h2v3h-2V4zm4 0h2v3h-2V4z" fill="currentColor"/>
+      </svg>
+      Buy me a coffee
+    </a>
+  </div>
+</div>
+
+<style>
+  .bmac-widget {
+    background: var(--color-gray-light);
+    border: 2px solid var(--color-gray);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-xl);
+    margin: var(--space-xl) 0;
+    text-align: center;
+  }
+
+  .bmac-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+  }
+
+  .bmac-icon {
+    font-size: 2.5rem;
+  }
+
+  .bmac-message {
+    color: var(--color-gray-dark);
+    font-size: var(--text-base);
+    margin: 0;
+    max-width: 450px;
+  }
+
+  .bmac-button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    background: #ffdd00;
+    color: #000000;
+    font-weight: 700;
+    padding: var(--space-md) var(--space-xl);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-size: var(--text-base);
+    transition: all var(--transition-fast);
+    box-shadow: var(--shadow-md);
+  }
+
+  .bmac-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    background: #ffca00;
+  }
+
+  .bmac-button svg {
+    fill: currentColor;
+  }
+
+  /* Compact variant for sidebar */
+  .bmac-compact {
+    padding: var(--space-lg);
+    margin: var(--space-md) 0;
+  }
+
+  .bmac-compact .bmac-message {
+    font-size: var(--text-sm);
+  }
+
+  .bmac-compact .bmac-button {
+    font-size: var(--text-sm);
+    padding: var(--space-sm) var(--space-lg);
+  }
+</style>

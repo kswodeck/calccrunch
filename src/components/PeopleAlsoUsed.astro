@@ -1,5 +1,5 @@
 ---
-import calculatorsData from "../data/calculators.json";
+import { allCalculators } from "../utils/calculators.js";
 
 const { currentSlug, category } = Astro.props;
 
@@ -19,7 +19,7 @@ const crossCategoryMap = {
 
 const suggestions = (crossCategoryMap[category] || [])
   .filter(slug => slug !== currentSlug)
-  .map(slug => calculatorsData.calculators.find(c => c.slug === slug))
+  .map(slug => allCalculators.find(c => c.slug === slug))
   .filter(Boolean)
   .slice(0, 3);
 ---

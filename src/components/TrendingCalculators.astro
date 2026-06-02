@@ -1,5 +1,5 @@
 ---
-import calculatorsData from "../data/calculators.json";
+import { allCalculators } from "../utils/calculators.js";
 
 const month = new Date().getMonth();
 
@@ -21,7 +21,7 @@ const seasonalRecommendations = {
 const trendingSlugs = seasonalRecommendations[month] || seasonalRecommendations[0];
 
 const trendingCalcs = trendingSlugs
-  .map(slug => calculatorsData.calculators.find(c => c.slug === slug))
+  .map(slug => allCalculators.find(c => c.slug === slug))
   .filter(Boolean);
 
 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];

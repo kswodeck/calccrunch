@@ -1,0 +1,45 @@
+---
+// OneSignal Web Push Notification component
+---
+
+<!-- OneSignal Push Notification SDK -->
+<script is:inline src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script is:inline>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "5402390b-e406-4057-ae26-6dc763fddb01",
+      safari_web_id: "web.onesignal.auto.63749170-9b18-4e2b-ba12-fbd09a76fb84",
+      notifyButton: {
+        enable: true,
+        size: 'small',
+        position: 'bottom-left',
+        prenotify: true,
+        showCredit: false,
+        text: {
+          'tip.state.unsubscribed': 'Get notified about new calculators',
+          'tip.state.subscribed': 'You\'re subscribed to notifications',
+          'dialog.main.title': 'Manage Notifications',
+          'dialog.main.button.subscribe': 'SUBSCRIBE',
+          'dialog.main.button.unsubscribe': 'UNSUBSCRIBE',
+        },
+        colors: {
+          'circle.background': '#2C5F8D',
+          'circle.foreground': 'white',
+          'badge.background': '#FF6B35',
+          'badge.foreground': 'white',
+          'badge.bordercolor': 'white',
+          'pulse.color': 'white',
+          'dialog.button.background.hovering': '#1a4a6d',
+          'dialog.button.background.active': '#FF6B35',
+          'dialog.button.background': '#2C5F8D',
+          'dialog.button.foreground': 'white',
+        },
+      },
+      welcomeNotification: {
+        title: "Welcome to CalcCrunch!",
+        message: "You'll get notified about new calculators and guides.",
+      },
+    });
+  });
+</script>

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import AdUnit from "../../components/AdUnit.astro";
+import NewsletterSignup from "../../components/NewsletterSignup.astro";
 import blogPostsData from "../../data/blog-posts.json";
 
 const allContent = import.meta.glob("../../content/blog/*.md", {
@@ -188,21 +189,14 @@ const categories = [...new Set(posts.map((p) => p.category))];
       </div>
     </section>
 
-    <!-- Newsletter/CTA Section -->
-    <section class="blog-cta bg-gradient">
-      <div class="container text-center">
-        <h2 class="text-white">Want More Posts?</h2>
-        <p class="text-white">
-          We publish new posts and calculator tutorials regularly. Bookmark this
-          page or subscribe to our RSS feed to stay updated.
-        </p>
-        <div class="cta-buttons">
-          <a href="/calculators" class="btn btn-secondary"
-            >Explore Calculators</a
-          >
-          <a href="/write-for-us" class="btn btn-outline-light">Write for Us</a>
-          <a href="/rss.xml" class="btn btn-outline-light">RSS Feed</a>
-        </div>
+    <!-- Newsletter Section -->
+    <section class="blog-newsletter">
+      <div class="container">
+        <NewsletterSignup
+          headline="Never Miss a New Guide"
+          description="Get our latest calculators, tips, and in-depth guides delivered to your inbox every week. Free forever."
+          buttonText="Subscribe Free"
+        />
       </div>
     </section>
   </div>
@@ -601,42 +595,8 @@ const categories = [...new Set(posts.map((p) => p.category))];
     padding: var(--space-3xl) 0;
   }
 
-  .blog-cta h2 {
-    font-size: var(--text-3xl);
-    margin-bottom: var(--space-md);
-  }
-
-  .blog-cta p {
-    font-size: var(--text-xl);
-    margin-bottom: var(--space-xl);
-    opacity: 0.95;
-  }
-
-  .cta-buttons {
-    display: flex;
-    gap: var(--space-md);
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .btn-outline-light {
-    border: 2px solid white;
-    color: white;
-    background: transparent;
-    padding: var(--space-sm) var(--space-xl);
-    border-radius: var(--border-radius);
-    font-weight: 600;
-    text-decoration: none;
-    transition: all var(--transition-fast);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .btn-outline-light:hover {
-    background: white;
-    color: var(--color-primary-blue);
+  .blog-newsletter {
+    padding: var(--space-3xl) 0;
   }
 
   /* Responsive */

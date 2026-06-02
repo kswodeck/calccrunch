@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import AdUnit from "../components/AdUnit.astro";
+import PushNotification from "../components/PushNotification.astro";
 import "../styles/global.css";
 
 // Destructure props (no TypeScript interfaces needed)
@@ -121,6 +122,7 @@ const canonicalURL =
     </main>
 
     <Footer />
+    <PushNotification />
     <script>
       import "../scripts/search.js";
     </script>

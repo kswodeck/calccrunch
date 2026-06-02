@@ -1,8 +1,15 @@
 // CalcCrunch Search Functionality
 // Integrates with calculators.json and provides real-time search
 
-import calculatorsData from '../data/calculators.json';
+import calculatorsDataRaw from '../data/calculators.json';
 import categoriesData from '../data/categories.json';
+
+const today = new Date().toISOString().split('T')[0];
+const calculatorsData = {
+  calculators: calculatorsDataRaw.calculators.filter(
+    c => !c.lastUpdated || c.lastUpdated.split('T')[0] <= today
+  )
+};
 
 /**
  * Initialize search functionality

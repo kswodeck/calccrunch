@@ -1,10 +1,10 @@
 ---
 import { Image } from "astro:assets";
-import calculatorsData from "../data/calculators.json";
+import { allCalculators } from "../utils/calculators.js";
 import categoriesData from "../data/categories.json";
 import LogoHorizontal from "../../public/images/logos/logo-horizontal.svg";
 
-const totalCalculators = calculatorsData?.calculators?.length;
+const totalCalculators = allCalculators.length;
 const currentYear = new Date().getFullYear();
 
 const footerLinks = {
@@ -16,7 +16,7 @@ const footerLinks = {
   ],
   resources: [
     { name: "Blog", href: "/blog" },
-    // { name: "How to Use", href: "/how-to-use" },
+    { name: "Newsletter", href: "/newsletter" },
     { name: "FAQ", href: "/faq" },
     { name: "Sitemap", href: "/sitemap-index.xml" },
   ],
@@ -40,6 +40,27 @@ const footerLinks = {
           Free online calculators for financial planning, health tracking, home
           projects, and everyday decisions.
         </p>
+        <form
+          class="footer-newsletter"
+          action="https://assets.mailerlite.com/jsonp/2401361/forms/189197513738159323/subscribe"
+          method="POST"
+          data-newsletter-form
+        >
+          <p class="footer-newsletter-label">Get weekly tips:</p>
+          <div class="footer-newsletter-group">
+            <input
+              type="email"
+              name="fields[email]"
+              placeholder="your@email.com"
+              required
+              class="footer-newsletter-input"
+              aria-label="Email for newsletter"
+            />
+            <button type="submit" class="footer-newsletter-btn"
+              >Subscribe</button
+            >
+          </div>
+        </form>
       </div>
 
       <!-- Calculators Links -->
@@ -152,6 +173,60 @@ const footerLinks = {
     line-height: 1.6;
   }
 
+  .footer-newsletter {
+    margin-top: var(--space-lg);
+  }
+
+  .footer-newsletter-label {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    opacity: 0.9;
+  }
+
+  .footer-newsletter-group {
+    display: flex;
+    gap: var(--space-xs);
+  }
+
+  .footer-newsletter-input {
+    flex: 1;
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius);
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: var(--text-sm);
+    font-family: var(--font-body);
+  }
+
+  .footer-newsletter-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .footer-newsletter-input:focus {
+    outline: none;
+    border-color: var(--color-accent-orange);
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .footer-newsletter-btn {
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-accent-orange);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    font-size: var(--text-sm);
+    cursor: pointer;
+    transition: background var(--transition-fast);
+    white-space: nowrap;
+  }
+
+  .footer-newsletter-btn:hover {
+    background: var(--color-accent-orange-dark, #e55a2b);
+  }
+
   .footer-section h4 {
     color: #ffffff;
     font-family: var(--font-primary);
@@ -211,5 +286,44 @@ const footerLinks = {
     .footer-content {
       grid-template-columns: 1fr;
     }
+
+    .footer-newsletter-group {
+      flex-direction: column;
+    }
   }
 </style>
+
+<script>
+  document.querySelectorAll(".footer-newsletter").forEach((form) => {
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const formEl = this as HTMLFormElement;
+      const button = formEl.querySelector(
+        ".footer-newsletter-btn",
+      ) as HTMLButtonElement;
+      const emailInput = formEl.querySelector(
+        ".footer-newsletter-input",
+      ) as HTMLInputElement;
+
+      button.textContent = "...";
+      button.disabled = true;
+
+      try {
+        const formData = new FormData();
+        formData.append("fields[email]", emailInput.value);
+
+        await fetch(formEl.action, {
+          method: "POST",
+          body: formData,
+          mode: "no-cors",
+        });
+
+        button.textContent = "Subscribed!";
+        emailInput.value = "";
+      } catch (err) {
+        button.textContent = "Retry";
+        button.disabled = false;
+      }
+    });
+  });
+</script>

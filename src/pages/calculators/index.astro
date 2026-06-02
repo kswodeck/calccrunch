@@ -3,16 +3,13 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import CalculatorCard from "../../components/CalculatorCard.astro";
 import AdUnit from "../../components/AdUnit.astro";
-import calculatorsData from "../../data/calculators.json";
+import { allCalculators } from "../../utils/calculators.js";
 import categoriesData from "../../data/categories.json";
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
   { label: "All Calculators", href: null },
 ];
-
-// Get all calculators
-const allCalculators = calculatorsData?.calculators;
 
 // Get category name helper function
 function getCategoryName(categoryId) {

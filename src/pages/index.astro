@@ -4,14 +4,15 @@ import CategoryCard from "../components/CategoryCard.astro";
 import CalculatorCard from "../components/CalculatorCard.astro";
 import TrendingCalculators from "../components/TrendingCalculators.astro";
 import AdUnit from "../components/AdUnit.astro";
+import NewsletterSignup from "../components/NewsletterSignup.astro";
 
 // Import JSON data
 import categoriesData from "../data/categories.json";
-import calculatorsData from "../data/calculators.json";
+import { allCalculators } from "../utils/calculators.js";
 import Image from "astro/components/Image.astro";
 
 // Calculate actual counts from data
-const totalCalculators = calculatorsData.calculators.length;
+const totalCalculators = allCalculators.length;
 const totalCategories = categoriesData?.categories?.filter(
   (c) => c?.calculatorCount
 )?.length;
@@ -27,7 +28,7 @@ const categories = categoriesData.categories
   .slice(0, 4); // Top 4 featured categories
 
 // Get featured calculators from JSON
-const featuredCalculators = calculatorsData.calculators
+const featuredCalculators = allCalculators
   .filter((calc) => calc.featured)
   .sort((a, b) => b.uses - a.uses)
   .slice(0, 8); // Top 8 calculators
@@ -225,12 +226,23 @@ function getCategoryName(categoryId) {
     </div>
   </section>
 
+  <!-- Newsletter Section -->
+  <section class="home-newsletter">
+    <div class="container">
+      <NewsletterSignup
+        headline="Stay in the Loop"
+        description="Get weekly calculator tips, money-saving guides, and new tool announcements. Free, no spam."
+        buttonText="Subscribe Free"
+      />
+    </div>
+  </section>
+
   <!-- CTA Section -->
   <section class="cta-section bg-gradient">
     <div class="container text-center">
       <h2 class="text-white">Ready to Start Calculating?</h2>
       <p class="text-white" style="margin-bottom: var(--space-3xl);">
-        Join 500,000+ people who use CalcCrunch every month for accurate, free
+        Join thousands who use CalcCrunch for accurate, free
         calculations.
       </p>
       <a href="/calculators" class="btn btn-secondary btn-lg">
@@ -389,6 +401,11 @@ function getCategoryName(categoryId) {
   .feature-card p {
     color: var(--color-gray-dark);
     line-height: 1.7;
+  }
+
+  /* Newsletter Section */
+  .home-newsletter {
+    padding: var(--space-xl) 0;
   }
 
   /* CTA Section */

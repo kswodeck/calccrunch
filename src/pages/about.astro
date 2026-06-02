@@ -3,11 +3,11 @@ import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import AdUnit from "../components/AdUnit.astro";
-import calculatorsData from "../data/calculators.json";
+import { allCalculators } from "../utils/calculators.js";
 import categoriesData from "../data/categories.json";
 
 // Calculate real stats
-const totalCalculators = calculatorsData?.calculators?.length;
+const totalCalculators = allCalculators.length;
 const totalCategories = categoriesData?.categories?.length;
 
 const breadcrumbItems = [

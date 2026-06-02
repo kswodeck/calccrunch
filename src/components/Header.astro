@@ -2,10 +2,10 @@
 import { Image } from "astro:assets";
 import LogoHorizontal from "../../public/images/logos/logo-horizontal-dark.svg";
 import SearchBar from "./SearchBar.astro";
-import calculatorsData from "../data/calculators.json";
+import { allCalculators } from "../utils/calculators.js";
 import categoriesData from "../data/categories.json";
 
-const totalCalculators = calculatorsData?.calculators?.length;
+const totalCalculators = allCalculators.length;
 ---
 
 <header class="site-header">

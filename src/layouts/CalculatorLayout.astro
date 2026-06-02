@@ -5,10 +5,13 @@ import AdUnit from "../components/AdUnit.astro";
 import RelatedCalculators from "../components/RelatedCalculators.astro";
 import PeopleAlsoUsed from "../components/PeopleAlsoUsed.astro";
 import SocialShare from "../components/SocialShare.astro";
+import NewsletterSignup from "../components/NewsletterSignup.astro";
+import BuyMeACoffee from "../components/BuyMeACoffee.astro";
 import "../styles/calculators.css";
 
 // Import calculators data
 import calculatorsData from "../data/calculators.json";
+import { allCalculators } from "../utils/calculators.js";
 import calculatorFaqs from "../data/calculator-faqs.json";
 import howtoSteps from "../data/howto-steps.json";
 
@@ -71,6 +74,10 @@ const breadcrumbItems = [
 const currentDate = new Date().toISOString();
 const updatedDate = lastUpdated || currentDate;
 
+// Check if calculator is scheduled (future-dated)
+const today = new Date().toISOString().split('T')[0];
+const isScheduled = lastUpdated && lastUpdated.split('T')[0] > today;
+
 // FAQ data for this calculator
 const faqs = calculatorFaqs[slug] || [];
 
@@ -131,6 +138,15 @@ const howto = howtoSteps[slug];
     })} />
   )}
 
+  {isScheduled ? (
+    <div class="calculator-page">
+      <div class="container" style="text-align: center; padding: 4rem 1rem; min-height: 50vh;">
+        <h1 style="color: var(--color-primary-blue); margin-bottom: 1rem;">Coming Soon</h1>
+        <p style="font-size: 1.25rem; color: var(--color-gray-dark); margin-bottom: 2rem;">This calculator is being finalized and will be available shortly.</p>
+        <a href="/calculators" class="btn btn-primary">Browse Available Calculators</a>
+      </div>
+    </div>
+  ) : (
   <div class="calculator-page">
     <div class="container">
       <!-- Breadcrumbs -->
@@ -192,6 +208,12 @@ const howto = howtoSteps[slug];
 
           <!-- Below Calculator Ad Unit -->
           <AdUnit slot="1019949885" format="autorelaxed" />
+
+          <!-- Support Widget -->
+          <BuyMeACoffee />
+
+          <!-- Newsletter Signup -->
+          <NewsletterSignup compact={true} headline="Like this calculator? Get weekly tips!" />
 
           <!-- Social Share -->
           <SocialShare
@@ -290,6 +312,7 @@ const howto = howtoSteps[slug];
       </div>
     </div>
   </div>
+  )}
 </BaseLayout>
 
 <style>

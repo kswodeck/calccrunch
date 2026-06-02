@@ -1,7 +1,7 @@
 ---
 import CategoryLayout from "../../layouts/CategoryLayout.astro";
 import categoriesData from "../../data/categories.json";
-import calculatorsData from "../../data/calculators.json";
+import { allCalculators } from "../../utils/calculators.js";
 
 export function getStaticPaths() {
   const categories = categoriesData.categories;
@@ -15,7 +15,7 @@ export function getStaticPaths() {
 const { categoryData } = Astro.props;
 
 // Get calculators for this category
-const categoryCalculators = calculatorsData.calculators
+const categoryCalculators = allCalculators
   .filter((calc) => calc.category === categoryData.id)
   .map((calc) => ({
     title: calc.title,

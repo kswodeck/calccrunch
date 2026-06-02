@@ -1,11 +1,11 @@
 ---
-import calculatorsData from "../data/calculators.json";
+import { allCalculators } from "../utils/calculators.js";
 import RelatedCalculator from "./RelatedCalculator.astro";
 
 const { currentSlug, category, limit = 3 } = Astro.props;
 
 // Find current calculator
-const currentCalc = calculatorsData?.calculators?.find(
+const currentCalc = allCalculators?.find(
   (c) => c?.slug === currentSlug
 );
 
@@ -15,12 +15,12 @@ let relatedCalculators = [];
 if (currentCalc?.relatedCalculators?.length) {
   // Use specified related calculators
   relatedCalculators = currentCalc?.relatedCalculators
-    ?.map((id) => calculatorsData?.calculators?.find((c) => c?.slug === id))
+    ?.map((id) => allCalculators?.find((c) => c?.slug === id))
     ?.filter(Boolean)
     ?.slice(0, limit);
 } else if (category) {
   // Fallback: same category
-  relatedCalculators = calculatorsData?.calculators
+  relatedCalculators = allCalculators
     ?.filter((c) => c?.category === category && c?.slug !== currentSlug)
     ?.slice(0, limit);
 }
