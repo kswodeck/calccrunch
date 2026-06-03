@@ -6,7 +6,12 @@
       "description": "Calculate your monthly mortgage payments including principal, interest, taxes, and insurance (PITI).",
       "shortDescription": "Calculate monthly mortgage payments",
       "category": "home-real-estate",
-      "tags": ["mortgage", "home loan", "monthly payment", "PITI"],
+      "tags": [
+        "mortgage",
+        "home loan",
+        "monthly payment",
+        "PITI"
+      ],
       "featured": true,
       "popular": true,
       "difficulty": "Easy",
@@ -14,7 +19,10 @@
       "icon": "🏠",
       "seoTitle": "Free Mortgage Payment Calculator",
       "seoDescription": "Calculate your monthly mortgage payment with our free calculator.",
-      "keywords": ["mortgage calculator", "home loan calculator"],
+      "keywords": [
+        "mortgage calculator",
+        "home loan calculator"
+      ],
       "lastUpdated": "2025-11-09",
       "uses": 0,
       "rating": 0,
@@ -45,7 +53,13 @@
       "description": "Calculate your daily calorie needs based on age, gender, weight, height, and activity level. Get your TDEE (Total Daily Energy Expenditure) and personalized macros.",
       "shortDescription": "Calculate daily calorie needs and goals",
       "category": "health-fitness",
-      "tags": ["calories", "nutrition", "weight loss", "TDEE", "macros"],
+      "tags": [
+        "calories",
+        "nutrition",
+        "weight loss",
+        "TDEE",
+        "macros"
+      ],
       "featured": true,
       "popular": false,
       "difficulty": "Easy",
@@ -181,7 +195,7 @@
       ],
       "relatedCalculators": [
         "compound-interest-calculator",
-        "retirement-date-calculator",
+        "retirement-planning-calculator",
         "savings-goal-calculator"
       ]
     },
@@ -191,7 +205,12 @@
       "description": "Calculate how much house you can afford based on income, debts, down payment, and interest rates. See your maximum home price and comfortable monthly payment.",
       "shortDescription": "Calculate how much house you can afford",
       "category": "home-real-estate",
-      "tags": ["home affordability", "buying power", "mortgage", "home price"],
+      "tags": [
+        "home affordability",
+        "buying power",
+        "mortgage",
+        "home price"
+      ],
       "featured": true,
       "popular": true,
       "difficulty": "Easy",
@@ -234,7 +253,12 @@
       "description": "Calculate your Body Mass Index (BMI) and find your ideal weight range.",
       "shortDescription": "Calculate your BMI and ideal weight",
       "category": "health-fitness",
-      "tags": ["BMI", "body mass index", "weight", "health"],
+      "tags": [
+        "BMI",
+        "body mass index",
+        "weight",
+        "health"
+      ],
       "featured": true,
       "popular": true,
       "difficulty": "Easy",
@@ -242,7 +266,10 @@
       "icon": "❤️",
       "seoTitle": "Free BMI Calculator",
       "seoDescription": "Calculate your BMI instantly with our free calculator.",
-      "keywords": ["BMI calculator", "body mass index"],
+      "keywords": [
+        "BMI calculator",
+        "body mass index"
+      ],
       "lastUpdated": "2025-11-06",
       "uses": 0,
       "rating": 0,
@@ -323,7 +350,12 @@
       "description": "Calculate your monthly car payment including principal, interest, trade-in value, down payment, sales tax, and fees. Compare different loan terms and see total interest paid.",
       "shortDescription": "Calculate monthly car payments",
       "category": "automotive",
-      "tags": ["auto loan", "car loan", "vehicle financing", "monthly payment"],
+      "tags": [
+        "auto loan",
+        "car loan",
+        "vehicle financing",
+        "monthly payment"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -366,7 +398,12 @@
       "description": "Calculate your cumulative GPA with weighted or unweighted grades. Add multiple courses with credit hours and letter grades to see your grade point average.",
       "shortDescription": "Calculate GPA with multiple courses",
       "category": "math-conversions",
-      "tags": ["GPA", "grades", "education", "grade point average"],
+      "tags": [
+        "GPA",
+        "grades",
+        "education",
+        "grade point average"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -408,7 +445,11 @@
       "description": "Calculate business days between two dates excluding weekends and holidays. Add or subtract business days from a date for project planning and deadline tracking.",
       "shortDescription": "Calculate business days between dates",
       "category": "time-date",
-      "tags": ["business days", "workdays", "project planning"],
+      "tags": [
+        "business days",
+        "workdays",
+        "project planning"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -441,8 +482,8 @@
       ],
       "relatedCalculators": [
         "age-calculator",
-        "hours-calculator",
-        "retirement-date-calculator",
+        "paycheck-calculator",
+        "retirement-planning-calculator",
         "pto-calculator"
       ]
     },
@@ -496,8 +537,7 @@
       ],
       "relatedCalculators": [
         "business-days-calculator",
-        "hours-calculator",
-        "salary-calculator"
+        "paycheck-calculator"
       ]
     },
     {
@@ -559,7 +599,12 @@
       "description": "Calculate how long it will take to pay off your credit card debt. Compare minimum payments vs fixed monthly payments, see total interest paid, and create a payoff strategy.",
       "shortDescription": "Calculate credit card debt payoff time",
       "category": "financial",
-      "tags": ["credit card", "debt payoff", "interest", "debt repayment"],
+      "tags": [
+        "credit card",
+        "debt payoff",
+        "interest",
+        "debt repayment"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -602,7 +647,12 @@
       "description": "Compare the total cost of renting versus buying a home over time. Factor in mortgage, property taxes, maintenance, rent increases, investment returns, and opportunity costs.",
       "shortDescription": "Compare renting vs buying a home",
       "category": "home-real-estate",
-      "tags": ["rent vs buy", "home buying", "real estate", "housing"],
+      "tags": [
+        "rent vs buy",
+        "home buying",
+        "real estate",
+        "housing"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Medium",
@@ -645,7 +695,12 @@
       "description": "Calculate your body fat percentage using multiple methods including Navy method, skinfold calipers, and body measurements. Track lean mass and fat mass over time.",
       "shortDescription": "Calculate body fat percentage",
       "category": "health-fitness",
-      "tags": ["body fat", "body composition", "lean mass", "fitness"],
+      "tags": [
+        "body fat",
+        "body composition",
+        "lean mass",
+        "fitness"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -688,7 +743,12 @@
       "description": "Scale recipes up or down for any number of servings. Convert between cooking measurements and temperature units (Fahrenheit/Celsius) for international recipes.",
       "shortDescription": "Scale recipes & convert measurements",
       "category": "food-cooking",
-      "tags": ["recipe", "cooking", "baking", "measurement conversion"],
+      "tags": [
+        "recipe",
+        "cooking",
+        "baking",
+        "measurement conversion"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -696,7 +756,11 @@
       "icon": "👨‍🍳",
       "seoTitle": "Free Recipe Scaler & Converter - Cooking Calculator",
       "seoDescription": "Scale recipes and convert cooking measurements. Adjust servings and convert temperatures with our free recipe calculator.",
-      "keywords": ["recipe scaler", "recipe converter", "cooking calculator"],
+      "keywords": [
+        "recipe scaler",
+        "recipe converter",
+        "cooking calculator"
+      ],
       "lastUpdated": "2025-11-19",
       "uses": 0,
       "rating": 0,
@@ -715,7 +779,9 @@
         "https://amzn.to/4pnjT37",
         "https://amzn.to/4oR9yN7"
       ],
-      "relatedCalculators": ["unit-converter"]
+      "relatedCalculators": [
+        "unit-converter"
+      ]
     },
     {
       "title": "Retirement Planning Calculator",
@@ -771,7 +837,7 @@
         "compound-interest-calculator",
         "retirement-income-calculator",
         "savings-goal-calculator",
-        "investment-return-calculator"
+        "roi-calculator"
       ]
     },
     {
@@ -829,7 +895,12 @@
       "description": "Calculate student loan payments with multiple repayment plans including standard, graduated, extended, and income-driven options. Compare forgiveness programs and refinancing options.",
       "shortDescription": "Calculate student loan payments & plans",
       "category": "financial",
-      "tags": ["student loan", "education", "loan repayment", "forgiveness"],
+      "tags": [
+        "student loan",
+        "education",
+        "loan repayment",
+        "forgiveness"
+      ],
       "featured": true,
       "popular": false,
       "difficulty": "Medium",
@@ -872,7 +943,13 @@
       "description": "Create a comprehensive monthly budget with income, expenses, savings, and debt payments. Track spending by category and see where your money goes with the 50/30/20 rule.",
       "shortDescription": "Create a monthly budget plan",
       "category": "financial",
-      "tags": ["budget", "expenses", "income", "savings", "50/30/20"],
+      "tags": [
+        "budget",
+        "expenses",
+        "income",
+        "savings",
+        "50/30/20"
+      ],
       "featured": true,
       "popular": true,
       "difficulty": "Easy",
@@ -912,7 +989,12 @@
       "description": "Calculate your debt-to-income (DTI) ratio for mortgage qualification. Include all monthly debt payments and gross income to see if you meet lender requirements.",
       "shortDescription": "Calculate DTI for mortgage approval",
       "category": "financial",
-      "tags": ["DTI", "debt-to-income", "mortgage qualification", "lending"],
+      "tags": [
+        "DTI",
+        "debt-to-income",
+        "mortgage qualification",
+        "lending"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -955,7 +1037,12 @@
       "description": "Calculate your home equity based on current home value, remaining mortgage balance, and appreciation over time. Estimate borrowing power for HELOC or home equity loan.",
       "shortDescription": "Calculate your home equity",
       "category": "home-real-estate",
-      "tags": ["home equity", "HELOC", "home value", "mortgage balance"],
+      "tags": [
+        "home equity",
+        "HELOC",
+        "home value",
+        "mortgage balance"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -998,7 +1085,12 @@
       "description": "Calculate profit margin, markup percentage, gross profit, and net profit. Compare margin vs markup and see the impact of costs on profitability.",
       "shortDescription": "Calculate profit margins & markup",
       "category": "business-sales",
-      "tags": ["profit margin", "markup", "gross profit", "pricing"],
+      "tags": [
+        "profit margin",
+        "markup",
+        "gross profit",
+        "pricing"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -1041,7 +1133,11 @@
       "description": "Compare the total cost of leasing versus buying a car. Factor in down payment, monthly payments, equity, depreciation, and end-of-lease options.",
       "shortDescription": "Compare leasing vs buying a car",
       "category": "financial",
-      "tags": ["car lease", "lease vs buy", "auto financing"],
+      "tags": [
+        "car lease",
+        "lease vs buy",
+        "auto financing"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Medium",
@@ -1072,7 +1168,10 @@
         "https://amzn.to/4oSCNiC",
         "https://amzn.to/4i92kRO"
       ],
-      "relatedCalculators": ["auto-loan-calculator", "gas-mileage-calculator"]
+      "relatedCalculators": [
+        "auto-loan-calculator",
+        "gas-mileage-calculator"
+      ]
     },
     {
       "title": "Sales Commission Calculator",
@@ -1080,7 +1179,12 @@
       "description": "Calculate sales commissions with multiple tiers, quotas, and bonus structures. Track earnings across different products and commission rates.",
       "shortDescription": "Calculate sales commissions & bonuses",
       "category": "business-sales",
-      "tags": ["sales commission", "commission", "sales", "earnings"],
+      "tags": [
+        "sales commission",
+        "commission",
+        "sales",
+        "earnings"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -1113,7 +1217,7 @@
       ],
       "relatedCalculators": [
         "profit-margin-calculator",
-        "freelance-rate-calculator"
+        "roi-calculator"
       ]
     },
     {
@@ -1122,7 +1226,11 @@
       "description": "Calculate return on investment (ROI) for business investments, marketing campaigns, or projects. See percentage return and payback period.",
       "shortDescription": "Calculate return on investment",
       "category": "business-sales",
-      "tags": ["ROI", "return on investment", "investment return"],
+      "tags": [
+        "ROI",
+        "return on investment",
+        "investment return"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -1201,7 +1309,9 @@
         "https://amzn.to/4pnjT37",
         "https://amzn.to/4oR9yN7"
       ],
-      "relatedCalculators": ["unit-converter"]
+      "relatedCalculators": [
+        "unit-converter"
+      ]
     },
     {
       "title": "Password Generator",
@@ -1475,7 +1585,12 @@
       "description": "Calculate how much to save monthly to reach your financial goal. Set a target amount, timeline, and interest rate to see your progress with compound interest.",
       "shortDescription": "Calculate monthly savings needed",
       "category": "financial",
-      "tags": ["savings", "goal", "financial planning", "compound interest"],
+      "tags": [
+        "savings",
+        "goal",
+        "financial planning",
+        "compound interest"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -1518,7 +1633,12 @@
       "description": "Determine if refinancing your mortgage makes sense. Compare current loan vs new loan, calculate break-even point, and see lifetime savings on interest payments.",
       "shortDescription": "Should you refinance your mortgage?",
       "category": "home-real-estate",
-      "tags": ["refinance", "mortgage", "interest rate", "break-even"],
+      "tags": [
+        "refinance",
+        "mortgage",
+        "interest rate",
+        "break-even"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Medium",
@@ -1561,7 +1681,12 @@
       "description": "Estimate costs for home renovation projects including kitchen, bathroom, flooring, and more. Compare DIY vs professional costs and calculate ROI on improvements.",
       "shortDescription": "Estimate home renovation costs",
       "category": "home-real-estate",
-      "tags": ["renovation", "home improvement", "construction costs", "ROI"],
+      "tags": [
+        "renovation",
+        "home improvement",
+        "construction costs",
+        "ROI"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Medium",
@@ -1604,7 +1729,12 @@
       "description": "Calculate tips for restaurants, bars, and services. Split bills among multiple people and round to convenient amounts. Includes international tipping guidelines.",
       "shortDescription": "Calculate tips and split bills",
       "category": "miscellaneous",
-      "tags": ["tip", "gratuity", "bill splitting", "restaurant"],
+      "tags": [
+        "tip",
+        "gratuity",
+        "bill splitting",
+        "restaurant"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -1635,7 +1765,12 @@
         "https://amzn.to/4icOyOj",
         "https://amzn.to/49pjSah"
       ],
-      "relatedCalculators": ["budget-calculator", "savings-goal-calculator"]
+      "relatedCalculators": [
+        "budget-calculator",
+        "savings-goal-calculator",
+        "sales-tax-calculator",
+        "discount-calculator"
+      ]
     },
     {
       "title": "Gas Mileage Calculator (MPG)",
@@ -1643,7 +1778,12 @@
       "description": "Calculate your vehicle's fuel efficiency in MPG or L/100km. Track gas costs per mile, compare vehicles, and estimate trip fuel costs based on current gas prices.",
       "shortDescription": "Calculate MPG and fuel costs",
       "category": "automotive",
-      "tags": ["MPG", "fuel efficiency", "gas mileage", "fuel economy"],
+      "tags": [
+        "MPG",
+        "fuel efficiency",
+        "gas mileage",
+        "fuel economy"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -1674,7 +1814,10 @@
         "https://amzn.to/4oSCNiC",
         "https://amzn.to/4i92kRO"
       ],
-      "relatedCalculators": ["auto-loan-calculator", "car-lease-buy-calculator"]
+      "relatedCalculators": [
+        "auto-loan-calculator",
+        "car-lease-buy-calculator"
+      ]
     },
     {
       "title": "College Savings Calculator (529 Plan)",
@@ -2102,7 +2245,14 @@
       "description": "Calculate your 2026 federal income tax using current US tax brackets. See your effective and marginal tax rates, bracket breakdown, and compare across all filing statuses. Visualize how much of your income falls in each bracket.",
       "shortDescription": "Calculate federal income tax by bracket",
       "category": "financial",
-      "tags": ["tax brackets", "income tax", "federal tax", "marginal rate", "effective rate", "tax planning"],
+      "tags": [
+        "tax brackets",
+        "income tax",
+        "federal tax",
+        "marginal rate",
+        "effective rate",
+        "tax planning"
+      ],
       "featured": true,
       "popular": true,
       "difficulty": "Easy",
@@ -2110,7 +2260,13 @@
       "icon": "🏛️",
       "seoTitle": "Free Tax Bracket Calculator 2026 - Federal Income Tax Calculator",
       "seoDescription": "Calculate your 2026 federal income tax with our free tax bracket calculator. See marginal and effective tax rates, bracket breakdown, and compare filing statuses.",
-      "keywords": ["tax bracket calculator", "income tax calculator", "federal tax calculator", "marginal tax rate", "effective tax rate"],
+      "keywords": [
+        "tax bracket calculator",
+        "income tax calculator",
+        "federal tax calculator",
+        "marginal tax rate",
+        "effective tax rate"
+      ],
       "lastUpdated": "2026-05-21",
       "uses": 0,
       "rating": 0,
@@ -2141,7 +2297,14 @@
       "description": "Calculate your take-home pay from gross salary. See federal tax, Social Security, Medicare, state tax withholdings, and voluntary deductions like 401(k), health insurance, and HSA contributions.",
       "shortDescription": "Calculate take-home pay from gross salary",
       "category": "financial",
-      "tags": ["paycheck", "take-home pay", "net pay", "salary", "withholding", "deductions"],
+      "tags": [
+        "paycheck",
+        "take-home pay",
+        "net pay",
+        "salary",
+        "withholding",
+        "deductions"
+      ],
       "featured": true,
       "popular": true,
       "difficulty": "Easy",
@@ -2149,7 +2312,13 @@
       "icon": "💵",
       "seoTitle": "Free Paycheck Calculator - Take-Home Pay & Tax Withholding",
       "seoDescription": "Calculate your take-home pay with our free paycheck calculator. See federal tax, FICA, state tax, and deductions from your gross salary.",
-      "keywords": ["paycheck calculator", "take-home pay calculator", "salary calculator", "net pay calculator", "withholding calculator"],
+      "keywords": [
+        "paycheck calculator",
+        "take-home pay calculator",
+        "salary calculator",
+        "net pay calculator",
+        "withholding calculator"
+      ],
       "lastUpdated": "2026-05-21",
       "uses": 0,
       "rating": 0,
@@ -2180,7 +2349,13 @@
       "description": "Calculate the impact of inflation on purchasing power using historical US CPI data from 1960-2026. Compare dollar values across any two years, or project future purchasing power at custom inflation rates.",
       "shortDescription": "Calculate inflation impact on purchasing power",
       "category": "financial",
-      "tags": ["inflation", "purchasing power", "CPI", "cost of living", "dollar value"],
+      "tags": [
+        "inflation",
+        "purchasing power",
+        "CPI",
+        "cost of living",
+        "dollar value"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -2188,7 +2363,13 @@
       "icon": "📈",
       "seoTitle": "Free Inflation Calculator - CPI & Purchasing Power Calculator",
       "seoDescription": "Calculate inflation and purchasing power changes with historical US CPI data from 1960-2026. See how much your money is really worth.",
-      "keywords": ["inflation calculator", "CPI calculator", "purchasing power calculator", "cost of living calculator", "dollar value calculator"],
+      "keywords": [
+        "inflation calculator",
+        "CPI calculator",
+        "purchasing power calculator",
+        "cost of living calculator",
+        "dollar value calculator"
+      ],
       "lastUpdated": "2026-05-21",
       "uses": 0,
       "rating": 0,
@@ -2219,7 +2400,14 @@
       "description": "Calculate your Financial Independence, Retire Early (FIRE) number and timeline. See years to FIRE, Coast FIRE number, savings rate analysis, portfolio growth projections, and what-if scenarios for accelerating your path to financial independence.",
       "shortDescription": "Calculate your path to financial independence",
       "category": "financial",
-      "tags": ["FIRE", "financial independence", "early retirement", "savings rate", "Coast FIRE", "4% rule"],
+      "tags": [
+        "FIRE",
+        "financial independence",
+        "early retirement",
+        "savings rate",
+        "Coast FIRE",
+        "4% rule"
+      ],
       "featured": true,
       "popular": true,
       "difficulty": "Medium",
@@ -2227,7 +2415,14 @@
       "icon": "🔥",
       "seoTitle": "Free FIRE Calculator - Financial Independence & Early Retirement",
       "seoDescription": "Calculate your FIRE number, years to financial independence, and Coast FIRE target. Plan early retirement with portfolio projections and what-if scenarios.",
-      "keywords": ["FIRE calculator", "financial independence calculator", "early retirement calculator", "FIRE number", "Coast FIRE", "savings rate calculator"],
+      "keywords": [
+        "FIRE calculator",
+        "financial independence calculator",
+        "early retirement calculator",
+        "FIRE number",
+        "Coast FIRE",
+        "savings rate calculator"
+      ],
       "lastUpdated": "2026-05-21",
       "uses": 0,
       "rating": 0,
@@ -2258,7 +2453,15 @@
       "description": "Calculate your daily macronutrient targets (protein, carbs, fat) based on your body stats, activity level, and fitness goals. See gram targets, calorie breakdown, per-meal splits, and food examples for each macro.",
       "shortDescription": "Calculate daily protein, carbs & fat targets",
       "category": "health-fitness",
-      "tags": ["macros", "macronutrients", "protein", "carbs", "fat", "nutrition", "meal planning"],
+      "tags": [
+        "macros",
+        "macronutrients",
+        "protein",
+        "carbs",
+        "fat",
+        "nutrition",
+        "meal planning"
+      ],
       "featured": true,
       "popular": true,
       "difficulty": "Easy",
@@ -2266,7 +2469,13 @@
       "icon": "🥗",
       "seoTitle": "Free Macro Calculator - Daily Protein, Carbs & Fat Calculator",
       "seoDescription": "Calculate your daily macronutrient needs with our free macro calculator. Get personalized protein, carbs, and fat targets for your fitness goals.",
-      "keywords": ["macro calculator", "macronutrient calculator", "protein calculator", "carbs calculator", "nutrition calculator"],
+      "keywords": [
+        "macro calculator",
+        "macronutrient calculator",
+        "protein calculator",
+        "carbs calculator",
+        "nutrition calculator"
+      ],
       "lastUpdated": "2026-05-21",
       "uses": 0,
       "rating": 0,
@@ -2297,7 +2506,14 @@
       "description": "Calculate your Total Daily Energy Expenditure (TDEE) using the Mifflin-St Jeor equation. See BMR, TDEE at different activity levels, and calorie targets for weight loss, maintenance, and muscle gain.",
       "shortDescription": "Calculate total daily energy expenditure",
       "category": "health-fitness",
-      "tags": ["TDEE", "BMR", "calories", "metabolism", "energy expenditure", "weight management"],
+      "tags": [
+        "TDEE",
+        "BMR",
+        "calories",
+        "metabolism",
+        "energy expenditure",
+        "weight management"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -2305,7 +2521,13 @@
       "icon": "⚡",
       "seoTitle": "Free TDEE Calculator - Total Daily Energy Expenditure",
       "seoDescription": "Calculate your TDEE and BMR with our free calculator. See daily calorie needs for your activity level and get targets for weight loss or muscle gain.",
-      "keywords": ["TDEE calculator", "BMR calculator", "total daily energy expenditure", "metabolism calculator", "calorie needs calculator"],
+      "keywords": [
+        "TDEE calculator",
+        "BMR calculator",
+        "total daily energy expenditure",
+        "metabolism calculator",
+        "calorie needs calculator"
+      ],
       "lastUpdated": "2026-05-21",
       "uses": 0,
       "rating": 0,
@@ -2336,7 +2558,13 @@
       "description": "Calculate your exact age in years, months, and days. See your zodiac sign, Chinese zodiac, generation, birthday countdown, life milestones timeline, and fun statistics like heartbeats and breaths since birth.",
       "shortDescription": "Calculate exact age with fun stats & milestones",
       "category": "time-date",
-      "tags": ["age calculator", "birthday", "zodiac", "milestones", "date calculator"],
+      "tags": [
+        "age calculator",
+        "birthday",
+        "zodiac",
+        "milestones",
+        "date calculator"
+      ],
       "featured": true,
       "popular": true,
       "difficulty": "Easy",
@@ -2344,7 +2572,13 @@
       "icon": "🎂",
       "seoTitle": "Free Age Calculator - Exact Age in Years, Months & Days",
       "seoDescription": "Calculate your exact age in years, months, and days. See zodiac sign, generation, birthday countdown, and fun life statistics.",
-      "keywords": ["age calculator", "birthday calculator", "how old am I", "date of birth calculator", "exact age calculator"],
+      "keywords": [
+        "age calculator",
+        "birthday calculator",
+        "how old am I",
+        "date of birth calculator",
+        "exact age calculator"
+      ],
       "lastUpdated": "2026-05-21",
       "uses": 0,
       "rating": 0,
@@ -2375,7 +2609,13 @@
       "description": "Calculate percentages with four different modes: find a percentage of a number, find what percent one number is of another, find percentage change between values, and find original values from percentages. Visual bars, formulas, and quick reference tables included.",
       "shortDescription": "Calculate percentages in multiple ways",
       "category": "math-conversions",
-      "tags": ["percentage", "percent", "math", "percentage change", "discount"],
+      "tags": [
+        "percentage",
+        "percent",
+        "math",
+        "percentage change",
+        "discount"
+      ],
       "featured": true,
       "popular": true,
       "difficulty": "Easy",
@@ -2383,7 +2623,13 @@
       "icon": "➗",
       "seoTitle": "Free Percentage Calculator - Calculate Percentages Instantly",
       "seoDescription": "Calculate percentages easily with our free calculator. Find percentage of a number, percentage change, and more with visual explanations.",
-      "keywords": ["percentage calculator", "percent calculator", "percentage change calculator", "discount calculator", "percent of a number"],
+      "keywords": [
+        "percentage calculator",
+        "percent calculator",
+        "percentage change calculator",
+        "discount calculator",
+        "percent of a number"
+      ],
       "lastUpdated": "2026-05-21",
       "uses": 0,
       "rating": 0,
@@ -2405,7 +2651,9 @@
       "relatedCalculators": [
         "gpa-calculator",
         "grade-calculator",
-        "unit-converter"
+        "unit-converter",
+        "sales-tax-calculator",
+        "discount-calculator"
       ]
     },
     {
@@ -2414,7 +2662,15 @@
       "description": "Convert between units across 8 categories: length, weight, temperature, volume, area, speed, digital storage, and time. See instant conversions to all related units at once with a swap function for quick reverse conversion.",
       "shortDescription": "Convert units across 8 measurement categories",
       "category": "math-conversions",
-      "tags": ["unit converter", "conversion", "measurement", "length", "weight", "temperature", "volume"],
+      "tags": [
+        "unit converter",
+        "conversion",
+        "measurement",
+        "length",
+        "weight",
+        "temperature",
+        "volume"
+      ],
       "featured": true,
       "popular": true,
       "difficulty": "Easy",
@@ -2422,7 +2678,14 @@
       "icon": "🔄",
       "seoTitle": "Free Unit Converter - Length, Weight, Temperature & More",
       "seoDescription": "Convert between units of measurement instantly. Length, weight, temperature, volume, area, speed, digital, and time conversions in one tool.",
-      "keywords": ["unit converter", "measurement converter", "length converter", "weight converter", "temperature converter", "conversion calculator"],
+      "keywords": [
+        "unit converter",
+        "measurement converter",
+        "length converter",
+        "weight converter",
+        "temperature converter",
+        "conversion calculator"
+      ],
       "lastUpdated": "2026-05-21",
       "uses": 0,
       "rating": 0,
@@ -2453,7 +2716,13 @@
       "description": "Convert time between any world time zones instantly. Add multiple target zones, plan meetings across time zones with business hours overlap visualization, and use the current time button for quick conversions.",
       "shortDescription": "Convert time between world time zones",
       "category": "time-date",
-      "tags": ["time zone", "time converter", "world clock", "meeting planner", "UTC"],
+      "tags": [
+        "time zone",
+        "time converter",
+        "world clock",
+        "meeting planner",
+        "UTC"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -2461,7 +2730,13 @@
       "icon": "🌍",
       "seoTitle": "Free Time Zone Converter - World Clock & Meeting Planner",
       "seoDescription": "Convert time between time zones instantly. Plan meetings across time zones with business hours overlap. Free world clock converter.",
-      "keywords": ["time zone converter", "world clock", "time zone calculator", "meeting planner time zones", "UTC converter"],
+      "keywords": [
+        "time zone converter",
+        "world clock",
+        "time zone calculator",
+        "meeting planner time zones",
+        "UTC converter"
+      ],
       "lastUpdated": "2026-05-21",
       "uses": 0,
       "rating": 0,
@@ -2492,7 +2767,13 @@
       "description": "Generate QR codes for URLs, text, WiFi networks, emails, phone numbers, and SMS messages. Download as PNG or copy as SVG. Customize size and error correction level.",
       "shortDescription": "Generate QR codes for URLs, WiFi & more",
       "category": "generators",
-      "tags": ["QR code", "QR generator", "barcode", "WiFi QR", "URL QR code"],
+      "tags": [
+        "QR code",
+        "QR generator",
+        "barcode",
+        "WiFi QR",
+        "URL QR code"
+      ],
       "featured": true,
       "popular": true,
       "difficulty": "Easy",
@@ -2500,7 +2781,13 @@
       "icon": "📱",
       "seoTitle": "Free QR Code Generator - Create QR Codes for URLs, WiFi & More",
       "seoDescription": "Generate QR codes for URLs, text, WiFi, email, phone, and SMS. Download PNG or copy SVG. Free QR code generator with multiple content types.",
-      "keywords": ["QR code generator", "QR code maker", "free QR code", "WiFi QR code", "URL QR code generator"],
+      "keywords": [
+        "QR code generator",
+        "QR code maker",
+        "free QR code",
+        "WiFi QR code",
+        "URL QR code generator"
+      ],
       "lastUpdated": "2026-05-21",
       "uses": 0,
       "rating": 0,
@@ -2531,7 +2818,13 @@
       "description": "Calculate your break-even point in units and revenue. See contribution margin, profit at various volumes, pricing and cost scenarios, and safety margin analysis for your business.",
       "shortDescription": "Calculate break-even point for your business",
       "category": "business-sales",
-      "tags": ["break-even", "break even analysis", "contribution margin", "fixed costs", "business planning"],
+      "tags": [
+        "break-even",
+        "break even analysis",
+        "contribution margin",
+        "fixed costs",
+        "business planning"
+      ],
       "featured": true,
       "popular": false,
       "difficulty": "Easy",
@@ -2539,7 +2832,13 @@
       "icon": "⚖️",
       "seoTitle": "Free Break-Even Calculator - Break-Even Analysis Tool",
       "seoDescription": "Calculate your break-even point in units and revenue. Analyze contribution margins and pricing scenarios with our free break-even calculator.",
-      "keywords": ["break-even calculator", "break even analysis", "break even point", "contribution margin calculator", "business planning calculator"],
+      "keywords": [
+        "break-even calculator",
+        "break even analysis",
+        "break even point",
+        "contribution margin calculator",
+        "business planning calculator"
+      ],
       "lastUpdated": "2026-05-21",
       "uses": 0,
       "rating": 0,
@@ -2570,7 +2869,14 @@
       "description": "Calculate your weighted grade average or find out what score you need on your final exam. Add multiple assignments with scores and weights, see letter grades, and get targets for achieving each grade level.",
       "shortDescription": "Calculate weighted grades & final exam score needed",
       "category": "math-conversions",
-      "tags": ["grade calculator", "weighted average", "final grade", "GPA", "school", "college"],
+      "tags": [
+        "grade calculator",
+        "weighted average",
+        "final grade",
+        "GPA",
+        "school",
+        "college"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -2578,7 +2884,13 @@
       "icon": "📚",
       "seoTitle": "Free Grade Calculator - Weighted Average & Final Exam Score",
       "seoDescription": "Calculate your weighted grade average and find out what you need on your final exam. Free grade calculator for students.",
-      "keywords": ["grade calculator", "final grade calculator", "weighted grade calculator", "what do I need on my final", "class grade calculator"],
+      "keywords": [
+        "grade calculator",
+        "final grade calculator",
+        "weighted grade calculator",
+        "what do I need on my final",
+        "class grade calculator"
+      ],
       "lastUpdated": "2026-05-21",
       "uses": 0,
       "rating": 0,
@@ -2609,7 +2921,15 @@
       "description": "Calculate optimal bedtimes and wake times based on 90-minute sleep cycles. Choose wake-up or bedtime mode, plan naps, and get age-specific sleep recommendations from CDC/NIH guidelines. Wake up refreshed by aligning with your natural sleep cycles.",
       "shortDescription": "Calculate optimal sleep & wake times by cycle",
       "category": "health-fitness",
-      "tags": ["sleep calculator", "sleep cycle", "bedtime", "wake time", "nap calculator", "sleep schedule", "circadian rhythm"],
+      "tags": [
+        "sleep calculator",
+        "sleep cycle",
+        "bedtime",
+        "wake time",
+        "nap calculator",
+        "sleep schedule",
+        "circadian rhythm"
+      ],
       "featured": true,
       "popular": true,
       "difficulty": "Easy",
@@ -2617,7 +2937,15 @@
       "icon": "🌙",
       "seoTitle": "Free Sleep Cycle Calculator - Optimal Bedtime & Wake Time",
       "seoDescription": "Calculate the best time to sleep and wake up based on 90-minute sleep cycles. Get age-specific recommendations, nap planning, and sleep stage visualization. Wake up refreshed.",
-      "keywords": ["sleep calculator", "sleep cycle calculator", "bedtime calculator", "when should I go to sleep", "when to wake up", "nap calculator", "how much sleep do I need"],
+      "keywords": [
+        "sleep calculator",
+        "sleep cycle calculator",
+        "bedtime calculator",
+        "when should I go to sleep",
+        "when to wake up",
+        "nap calculator",
+        "how much sleep do I need"
+      ],
       "lastUpdated": "2026-06-01",
       "uses": 0,
       "rating": 0,
@@ -2648,7 +2976,15 @@
       "description": "Calculate your electricity costs by appliance. Add devices from a preset library or enter custom wattages, see per-appliance and total monthly/annual costs, visualize which appliances cost the most, and compare EV charging costs vs gasoline.",
       "shortDescription": "Calculate electricity costs by appliance",
       "category": "home-real-estate",
-      "tags": ["electricity calculator", "energy cost", "electric bill", "appliance cost", "kWh calculator", "EV charging cost", "power consumption"],
+      "tags": [
+        "electricity calculator",
+        "energy cost",
+        "electric bill",
+        "appliance cost",
+        "kWh calculator",
+        "EV charging cost",
+        "power consumption"
+      ],
       "featured": true,
       "popular": true,
       "difficulty": "Easy",
@@ -2656,7 +2992,15 @@
       "icon": "⚡",
       "seoTitle": "Free Electricity Cost Calculator - Appliance Energy Usage & Bill Estimator",
       "seoDescription": "Calculate electricity costs per appliance with our free calculator. See monthly and annual costs, compare EV vs gas, and find your biggest energy consumers.",
-      "keywords": ["electricity cost calculator", "electric bill calculator", "energy usage calculator", "appliance electricity cost", "EV charging cost calculator", "kWh calculator", "power consumption calculator"],
+      "keywords": [
+        "electricity cost calculator",
+        "electric bill calculator",
+        "energy usage calculator",
+        "appliance electricity cost",
+        "EV charging cost calculator",
+        "kWh calculator",
+        "power consumption calculator"
+      ],
       "lastUpdated": "2026-06-01",
       "uses": 0,
       "rating": 0,
@@ -2679,6 +3023,384 @@
         "budget-calculator",
         "home-improvement-cost-calculator",
         "gas-mileage-calculator"
+      ]
+    },
+    {
+      "title": "Kilograms to Pounds Converter",
+      "slug": "kg-to-lbs",
+      "description": "Convert kilograms to pounds instantly. 1 kilogram equals 2.20462 pounds. To convert kilograms to pounds, multiply by 2.20462. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert kilograms to pounds instantly",
+      "category": "math-conversions",
+      "tags": [
+        "kilograms",
+        "pounds",
+        "weight",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Kilograms to Pounds Converter — Free & Instant (kg to lbs)",
+      "seoDescription": "Convert kilograms to pounds instantly with our free calculator. 1 kilogram equals 2.20462 pounds. To convert kilograms to pounds, multiply by 2.20462. Conversion table included.",
+      "keywords": [
+        "kg to lbs",
+        "kilograms to pounds",
+        "convert kilograms to pounds",
+        "kg to lbs",
+        "weight converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "lbs-to-kg",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Pounds to Kilograms Converter",
+      "slug": "lbs-to-kg",
+      "description": "Convert pounds to kilograms instantly. 1 pound equals 0.453592 kilograms. To convert pounds to kilograms, divide by 2.20462 (or multiply by 0.453592). Includes a quick-reference conversion table.",
+      "shortDescription": "Convert pounds to kilograms instantly",
+      "category": "math-conversions",
+      "tags": [
+        "pounds",
+        "kilograms",
+        "weight",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Pounds to Kilograms Converter — Free & Instant (lbs to kg)",
+      "seoDescription": "Convert pounds to kilograms instantly with our free calculator. 1 pound equals 0.453592 kilograms. To convert pounds to kilograms, divide by 2.20462 (or multiply by 0.453592). Conversion table included.",
+      "keywords": [
+        "lbs to kg",
+        "pounds to kilograms",
+        "convert pounds to kilograms",
+        "lbs to kg",
+        "weight converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "kg-to-lbs",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Centimeters to Inches Converter",
+      "slug": "cm-to-inches",
+      "description": "Convert centimeters to inches instantly. 1 centimeter equals 0.393701 inches. To convert centimeters to inches, divide by 2.54 (or multiply by 0.393701). Includes a quick-reference conversion table.",
+      "shortDescription": "Convert centimeters to inches instantly",
+      "category": "math-conversions",
+      "tags": [
+        "centimeters",
+        "inches",
+        "length",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Centimeters to Inches Converter — Free & Instant (cm to in)",
+      "seoDescription": "Convert centimeters to inches instantly with our free calculator. 1 centimeter equals 0.393701 inches. To convert centimeters to inches, divide by 2.54 (or multiply by 0.393701). Conversion table included.",
+      "keywords": [
+        "cm to inches",
+        "centimeters to inches",
+        "convert centimeters to inches",
+        "cm to in",
+        "length converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "inches-to-cm",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Inches to Centimeters Converter",
+      "slug": "inches-to-cm",
+      "description": "Convert inches to centimeters instantly. 1 inch equals exactly 2.54 centimeters. To convert inches to centimeters, multiply by 2.54. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert inches to centimeters instantly",
+      "category": "math-conversions",
+      "tags": [
+        "inches",
+        "centimeters",
+        "length",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Inches to Centimeters Converter — Free & Instant (in to cm)",
+      "seoDescription": "Convert inches to centimeters instantly with our free calculator. 1 inch equals exactly 2.54 centimeters. To convert inches to centimeters, multiply by 2.54. Conversion table included.",
+      "keywords": [
+        "inches to cm",
+        "inches to centimeters",
+        "convert inches to centimeters",
+        "in to cm",
+        "length converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "cm-to-inches",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Celsius to Fahrenheit Converter",
+      "slug": "celsius-to-fahrenheit",
+      "description": "Convert celsius to fahrenheit instantly. To convert Celsius to Fahrenheit, multiply by 1.8 (9/5) and add 32. So °F = °C × 9/5 + 32. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert celsius to fahrenheit instantly",
+      "category": "math-conversions",
+      "tags": [
+        "celsius",
+        "fahrenheit",
+        "temperature",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Celsius to Fahrenheit Converter — Free & Instant (°C to °F)",
+      "seoDescription": "Convert celsius to fahrenheit instantly with our free calculator. To convert Celsius to Fahrenheit, multiply by 1.8 (9/5) and add 32. So °F = °C × 9/5 + 32. Conversion table included.",
+      "keywords": [
+        "celsius to fahrenheit",
+        "celsius to fahrenheit",
+        "convert celsius to fahrenheit",
+        "°C to °F",
+        "temperature converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "fahrenheit-to-celsius",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Fahrenheit to Celsius Converter",
+      "slug": "fahrenheit-to-celsius",
+      "description": "Convert fahrenheit to celsius instantly. To convert Fahrenheit to Celsius, subtract 32 and multiply by 0.5556 (5/9). So °C = (°F − 32) × 5/9. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert fahrenheit to celsius instantly",
+      "category": "math-conversions",
+      "tags": [
+        "fahrenheit",
+        "celsius",
+        "temperature",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Fahrenheit to Celsius Converter — Free & Instant (°F to °C)",
+      "seoDescription": "Convert fahrenheit to celsius instantly with our free calculator. To convert Fahrenheit to Celsius, subtract 32 and multiply by 0.5556 (5/9). So °C = (°F − 32) × 5/9. Conversion table included.",
+      "keywords": [
+        "fahrenheit to celsius",
+        "fahrenheit to celsius",
+        "convert fahrenheit to celsius",
+        "°F to °C",
+        "temperature converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "celsius-to-fahrenheit",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Miles to Kilometers Converter",
+      "slug": "miles-to-km",
+      "description": "Convert miles to kilometers instantly. 1 mile equals 1.609344 kilometers. To convert miles to kilometers, multiply by 1.60934. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert miles to kilometers instantly",
+      "category": "math-conversions",
+      "tags": [
+        "miles",
+        "kilometers",
+        "distance",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Miles to Kilometers Converter — Free & Instant (mi to km)",
+      "seoDescription": "Convert miles to kilometers instantly with our free calculator. 1 mile equals 1.609344 kilometers. To convert miles to kilometers, multiply by 1.60934. Conversion table included.",
+      "keywords": [
+        "miles to km",
+        "miles to kilometers",
+        "convert miles to kilometers",
+        "mi to km",
+        "distance converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "km-to-miles",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Kilometers to Miles Converter",
+      "slug": "km-to-miles",
+      "description": "Convert kilometers to miles instantly. 1 kilometer equals 0.621371 miles. To convert kilometers to miles, multiply by 0.621371 (or divide by 1.60934). Includes a quick-reference conversion table.",
+      "shortDescription": "Convert kilometers to miles instantly",
+      "category": "math-conversions",
+      "tags": [
+        "kilometers",
+        "miles",
+        "distance",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Kilometers to Miles Converter — Free & Instant (km to mi)",
+      "seoDescription": "Convert kilometers to miles instantly with our free calculator. 1 kilometer equals 0.621371 miles. To convert kilometers to miles, multiply by 0.621371 (or divide by 1.60934). Conversion table included.",
+      "keywords": [
+        "km to miles",
+        "kilometers to miles",
+        "convert kilometers to miles",
+        "km to mi",
+        "distance converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "miles-to-km",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Sales Tax Calculator",
+      "slug": "sales-tax-calculator",
+      "description": "Calculate sales tax and the total price for any amount and tax rate. Add or remove tax, and look up state sales tax rates.",
+      "shortDescription": "Calculate sales tax and the total price for any amount and tax rate",
+      "category": "financial",
+      "tags": [],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🧾",
+      "seoTitle": "Free Sales Tax Calculator — Instant & Accurate",
+      "seoDescription": "Calculate sales tax and the total price for any amount and tax rate. Add or remove tax, and look up state sales tax rates.",
+      "keywords": [
+        "sales tax calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "discount-calculator",
+        "percentage-calculator",
+        "tip-calculator"
+      ]
+    },
+    {
+      "title": "Discount Calculator",
+      "slug": "discount-calculator",
+      "description": "Calculate the sale price and how much you save for any discount percentage. Supports stacked discounts and percent-off math.",
+      "shortDescription": "Calculate the sale price and how much you save for any discount percentage",
+      "category": "math-conversions",
+      "tags": [],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🏷️",
+      "seoTitle": "Free Discount Calculator — Instant & Accurate",
+      "seoDescription": "Calculate the sale price and how much you save for any discount percentage. Supports stacked discounts and percent-off math.",
+      "keywords": [
+        "discount calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "sales-tax-calculator",
+        "percentage-calculator",
+        "tip-calculator"
       ]
     }
   ]

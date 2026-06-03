@@ -118,5 +118,337 @@
       "q": "How much of my income should go to rent?",
       "a": "The standard guideline is spending no more than 30% of gross income on housing (rent + utilities). On $60,000/year ($5,000/month), that's $1,500 for rent. In high-cost cities, many spend 35-40%, but this leaves less for savings and flexibility. If possible, aim for 25% to build wealth faster."
     }
+  ],
+  "kg-to-lbs": [
+    {
+      "q": "How do you convert kilograms to pounds?",
+      "a": "1 kilogram equals 2.20462 pounds. To convert kilograms to pounds, multiply by 2.20462."
+    },
+    {
+      "q": "What is 1 kilogram in pounds?",
+      "a": "1 kilogram equals 2.2 lbs."
+    },
+    {
+      "q": "What is 60 kg in pounds?",
+      "a": "60 kg equals 132.28 lbs."
+    },
+    {
+      "q": "Is this kilograms to pounds converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "lbs-to-kg": [
+    {
+      "q": "How do you convert pounds to kilograms?",
+      "a": "1 pound equals 0.453592 kilograms. To convert pounds to kilograms, divide by 2.20462 (or multiply by 0.453592)."
+    },
+    {
+      "q": "What is 1 pound in kilograms?",
+      "a": "1 pound equals 0.45 kg."
+    },
+    {
+      "q": "What is 100 lbs in kilograms?",
+      "a": "100 lbs equals 45.36 kg."
+    },
+    {
+      "q": "Is this pounds to kilograms converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "cm-to-inches": [
+    {
+      "q": "How do you convert centimeters to inches?",
+      "a": "1 centimeter equals 0.393701 inches. To convert centimeters to inches, divide by 2.54 (or multiply by 0.393701)."
+    },
+    {
+      "q": "What is 1 centimeter in inches?",
+      "a": "1 centimeter equals 0.394 in."
+    },
+    {
+      "q": "What is 30 cm in inches?",
+      "a": "30 cm equals 11.811 in."
+    },
+    {
+      "q": "Is this centimeters to inches converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "inches-to-cm": [
+    {
+      "q": "How do you convert inches to centimeters?",
+      "a": "1 inch equals exactly 2.54 centimeters. To convert inches to centimeters, multiply by 2.54."
+    },
+    {
+      "q": "What is 1 inch in centimeters?",
+      "a": "1 inch equals 2.54 cm."
+    },
+    {
+      "q": "What is 24 in in centimeters?",
+      "a": "24 in equals 60.96 cm."
+    },
+    {
+      "q": "Is this inches to centimeters converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "celsius-to-fahrenheit": [
+    {
+      "q": "How do you convert celsius to fahrenheit?",
+      "a": "To convert Celsius to Fahrenheit, multiply by 1.8 (9/5) and add 32. So °F = °C × 9/5 + 32."
+    },
+    {
+      "q": "What is 1 degree Celsius in fahrenheit?",
+      "a": "1 degree Celsius equals 33.8 °F."
+    },
+    {
+      "q": "What is 30 °C in fahrenheit?",
+      "a": "30 °C equals 86 °F."
+    },
+    {
+      "q": "Is this celsius to fahrenheit converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "fahrenheit-to-celsius": [
+    {
+      "q": "How do you convert fahrenheit to celsius?",
+      "a": "To convert Fahrenheit to Celsius, subtract 32 and multiply by 0.5556 (5/9). So °C = (°F − 32) × 5/9."
+    },
+    {
+      "q": "What is 1 degree Fahrenheit in celsius?",
+      "a": "1 degree Fahrenheit equals -17.2 °C."
+    },
+    {
+      "q": "What is 72 °F in celsius?",
+      "a": "72 °F equals 22.2 °C."
+    },
+    {
+      "q": "Is this fahrenheit to celsius converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "miles-to-km": [
+    {
+      "q": "How do you convert miles to kilometers?",
+      "a": "1 mile equals 1.609344 kilometers. To convert miles to kilometers, multiply by 1.60934."
+    },
+    {
+      "q": "What is 1 mile in kilometers?",
+      "a": "1 mile equals 1.609 km."
+    },
+    {
+      "q": "What is 13 mi in kilometers?",
+      "a": "13 mi equals 21.082 km."
+    },
+    {
+      "q": "Is this miles to kilometers converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "km-to-miles": [
+    {
+      "q": "How do you convert kilometers to miles?",
+      "a": "1 kilometer equals 0.621371 miles. To convert kilometers to miles, multiply by 0.621371 (or divide by 1.60934)."
+    },
+    {
+      "q": "What is 1 kilometer in miles?",
+      "a": "1 kilometer equals 0.621 mi."
+    },
+    {
+      "q": "What is 42 km in miles?",
+      "a": "42 km equals 26.222 mi."
+    },
+    {
+      "q": "Is this kilometers to miles converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "sales-tax-calculator": [
+    {
+      "q": "How do you calculate sales tax?",
+      "a": "Multiply the price by the tax rate as a decimal. Sales tax = Price × (Rate ÷ 100). For a $100 item at 7.25%, the tax is $7.25 and the total is $107.25."
+    },
+    {
+      "q": "How do I find the price before tax (reverse sales tax)?",
+      "a": "Divide the total by 1 plus the tax rate as a decimal: Pre-tax price = Total ÷ (1 + Rate ÷ 100). A $107.25 total at 7.25% works out to $100.00 before tax. Use the calculator's 'Remove tax' mode to do this automatically."
+    },
+    {
+      "q": "Which states have no sales tax?",
+      "a": "Five states have no statewide sales tax: Alaska, Delaware, Montana, New Hampshire, and Oregon. Note that some Alaska localities still charge a local sales tax."
+    },
+    {
+      "q": "Is the sales tax rate the same everywhere in a state?",
+      "a": "No. The state sets a base rate, but counties and cities often add their own sales tax. The combined rate at checkout can be several percent higher than the state base rate, so confirm the rate for your exact location."
+    },
+    {
+      "q": "What is the highest combined sales tax in the US?",
+      "a": "Combined state-plus-local rates can exceed 10% in parts of states like Louisiana, Tennessee, Arkansas, and Washington. California has the highest state base rate at 7.25%."
+    }
+  ],
+  "discount-calculator": [
+    {
+      "q": "How do you calculate a discount?",
+      "a": "Multiply the original price by (1 − discount ÷ 100). For $80 at 25% off: $80 × 0.75 = $60.00, so you save $20.00."
+    },
+    {
+      "q": "How do I calculate percent off?",
+      "a": "The savings equal Price × (Percent ÷ 100), and the sale price is what's left. 30% off a $50 item saves $15 and costs $35."
+    },
+    {
+      "q": "How do stacked discounts work?",
+      "a": "Stacked discounts multiply rather than add. '25% off, then an extra 20% off' is 0.75 × 0.80 = 0.60 of the original price — a 40% effective discount, not 45%."
+    },
+    {
+      "q": "What is the final price after a 25% discount?",
+      "a": "The final price is 75% of the original. A $120 item at 25% off costs $90.00, saving you $30.00."
+    },
+    {
+      "q": "How do I find the original price from a sale price?",
+      "a": "Divide the sale price by (1 − discount ÷ 100). If something costs $60 after 25% off, the original was $60 ÷ 0.75 = $80.00."
+    }
+  ],
+  "home-affordability-calculator": [
+    {
+      "q": "How much house can I afford on my salary?",
+      "a": "A common guideline is the 28/36 rule: spend no more than 28% of gross monthly income on housing and 36% on total debt. On a $100,000 salary (~$8,333/month), that's about $2,333 for housing. Your down payment, interest rate, and existing debts adjust the final number."
+    },
+    {
+      "q": "What is the 28/36 rule?",
+      "a": "It's a lending guideline: your monthly housing costs should stay under 28% of gross monthly income, and all debt payments (housing + car + student loans + credit cards) under 36%. Lenders use it to gauge how much mortgage you can safely carry."
+    },
+    {
+      "q": "Does my down payment change how much house I can afford?",
+      "a": "Yes. A larger down payment means a smaller loan and lower monthly payment, so you can afford a higher purchase price. Putting down 20% or more also avoids private mortgage insurance (PMI), freeing up budget."
+    },
+    {
+      "q": "Should I include property taxes and insurance?",
+      "a": "Yes — lenders count your full PITI payment (principal, interest, taxes, and insurance) against the 28% housing limit, so always include estimated property taxes and homeowners insurance when judging affordability."
+    }
+  ],
+  "loan-amortization-calculator": [
+    {
+      "q": "What is loan amortization?",
+      "a": "Amortization is the process of paying off a loan with fixed payments over time. Each payment covers interest first, then reduces the principal. Early payments are mostly interest; later payments are mostly principal."
+    },
+    {
+      "q": "How is an amortization schedule calculated?",
+      "a": "The monthly payment is fixed using the loan amount, interest rate, and term. Each month, interest = balance × (annual rate ÷ 12), and the rest of the payment reduces the balance. Repeat until the balance reaches zero."
+    },
+    {
+      "q": "Why is most of my early payment going to interest?",
+      "a": "Interest is charged on the outstanding balance, which is highest at the start. As you pay down principal, the interest portion shrinks and more of each payment goes toward the balance."
+    },
+    {
+      "q": "How can I pay off an amortized loan faster?",
+      "a": "Make extra principal payments. Any amount above the scheduled payment goes straight to principal, which lowers future interest and shortens the loan term — often by years."
+    }
+  ],
+  "gpa-calculator": [
+    {
+      "q": "How is GPA calculated?",
+      "a": "Convert each grade to points (A=4.0, B=3.0, C=2.0, D=1.0, F=0), multiply by the course's credit hours, add up the points, and divide by total credit hours. The result is your grade point average."
+    },
+    {
+      "q": "What is a weighted vs. unweighted GPA?",
+      "a": "Unweighted GPA uses a 4.0 scale regardless of course difficulty. Weighted GPA adds extra points for honors or AP/IB classes (often up to 5.0), rewarding harder coursework."
+    },
+    {
+      "q": "What is a good GPA?",
+      "a": "A 3.0 is solid, 3.5+ is strong, and 3.7–4.0 is excellent and competitive for selective colleges and scholarships. Standards vary by school and program."
+    },
+    {
+      "q": "How do I raise my GPA?",
+      "a": "Earn higher grades in high-credit courses, retake classes where your school replaces the grade, and balance difficult courses across terms. The more credit hours remaining, the more room to move your average."
+    }
+  ],
+  "net-worth-calculator": [
+    {
+      "q": "How do you calculate net worth?",
+      "a": "Net worth = total assets − total liabilities. Add up everything you own (cash, investments, home, car, retirement accounts) and subtract everything you owe (mortgage, loans, credit card balances)."
+    },
+    {
+      "q": "What counts as an asset vs. a liability?",
+      "a": "Assets are things of value you own: bank balances, investments, retirement accounts, real estate, and vehicles. Liabilities are debts you owe: mortgages, auto and student loans, and credit card balances."
+    },
+    {
+      "q": "What is a good net worth?",
+      "a": "It depends on age and income. One common benchmark is the 'age × income ÷ 10' rule. More important than any single number is whether your net worth is growing year over year."
+    },
+    {
+      "q": "Can net worth be negative?",
+      "a": "Yes. If your debts exceed your assets — common early in life with student loans or a new mortgage — net worth is negative. Paying down debt and building savings moves it positive over time."
+    }
+  ],
+  "debt-to-income-calculator": [
+    {
+      "q": "What is debt-to-income (DTI) ratio?",
+      "a": "DTI is the share of your gross monthly income that goes to debt payments. DTI = total monthly debt payments ÷ gross monthly income × 100. It tells lenders how much of your income is already committed."
+    },
+    {
+      "q": "What is a good DTI ratio?",
+      "a": "Lenders generally prefer a DTI of 36% or lower, with no more than 28% going to housing. Many mortgage programs allow up to 43%, and some up to 50% with strong credit and reserves."
+    },
+    {
+      "q": "What debts are included in DTI?",
+      "a": "Include recurring monthly debt: mortgage or rent, auto loans, student loans, minimum credit card payments, and other loan payments. Utilities, groceries, and insurance are typically excluded."
+    },
+    {
+      "q": "How can I lower my DTI?",
+      "a": "Pay down loan balances, avoid new debt, and increase income. Even paying off one small loan can meaningfully lower your ratio and improve loan approval odds."
+    }
+  ],
+  "savings-goal-calculator": [
+    {
+      "q": "How do I calculate how much to save each month?",
+      "a": "Divide your goal by the number of months you have, then adjust for interest. For a $12,000 goal in 24 months, you'd need about $500/month before interest — less if your savings earn a return."
+    },
+    {
+      "q": "How does interest affect my savings goal?",
+      "a": "Interest helps your money grow, so you need to contribute slightly less to reach the same goal. The higher the rate and the longer the timeframe, the bigger the boost from compounding."
+    },
+    {
+      "q": "Should I save in a high-yield savings account?",
+      "a": "For short-term goals, yes — a high-yield savings account or money-market account earns more than a standard account while keeping your money safe and accessible."
+    },
+    {
+      "q": "What if I can't hit my monthly savings target?",
+      "a": "Extend your timeline, lower the goal amount, or increase income. Automating transfers on payday makes consistent saving far more likely than relying on willpower."
+    }
+  ],
+  "percentage-calculator": [
+    {
+      "q": "How do you calculate a percentage of a number?",
+      "a": "Multiply the number by the percentage as a decimal. 20% of 150 is 150 × 0.20 = 30. To find what percent one number is of another, divide and multiply by 100."
+    },
+    {
+      "q": "How do I calculate percentage increase or decrease?",
+      "a": "Percent change = (new − old) ÷ old × 100. If a price rises from $80 to $100, that's (100 − 80) ÷ 80 × 100 = 25% increase."
+    },
+    {
+      "q": "What is X as a percentage of Y?",
+      "a": "Divide X by Y and multiply by 100. For example, 45 out of 60 is 45 ÷ 60 × 100 = 75%."
+    },
+    {
+      "q": "How do I add or subtract a percentage from a number?",
+      "a": "To add 15% to 200: 200 × 1.15 = 230. To subtract 15%: 200 × 0.85 = 170. Multiply by (1 + rate) to add or (1 − rate) to subtract."
+    }
+  ],
+  "paycheck-calculator": [
+    {
+      "q": "How is my take-home pay calculated?",
+      "a": "Take-home pay is your gross pay minus federal and state income tax withholding, Social Security (6.2%), Medicare (1.45%), and any pre-tax deductions like 401(k) and health insurance."
+    },
+    {
+      "q": "What's the difference between gross and net pay?",
+      "a": "Gross pay is your salary before any deductions. Net pay (take-home) is what lands in your bank account after taxes and deductions are withheld."
+    },
+    {
+      "q": "How much of my paycheck goes to taxes?",
+      "a": "It varies by income and location, but FICA alone takes 7.65% (Social Security + Medicare). Add federal and state income tax, and total withholding often ranges from about 15% to 35%."
+    },
+    {
+      "q": "How can I increase my take-home pay?",
+      "a": "Adjust your W-4 withholding to match your actual tax liability, and review pre-tax deductions. Note that pre-tax 401(k) or HSA contributions lower taxable income, reducing tax even as they build savings."
+    }
   ]
 }

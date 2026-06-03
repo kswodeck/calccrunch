@@ -1,0 +1,101 @@
+{
+  "_comment": "Data table powering scripts/generate-conversions.mjs. Each entry mass-produces one SEO conversion calculator page (kg-to-lbs, cm-to-inches, etc.). Conversion is linear: output = input * factor + offset. For pure multiplicative conversions, offset = 0. Add a row here and run `npm run gen:conversions` to create a new calculator with zero hand-coding.",
+  "conversions": [
+    {
+      "slug": "kg-to-lbs",
+      "from": { "name": "Kilograms", "singular": "kilogram", "symbol": "kg" },
+      "to": { "name": "Pounds", "singular": "pound", "symbol": "lbs" },
+      "quantity": "Weight",
+      "factor": 2.2046226218,
+      "offset": 0,
+      "reverseSlug": "lbs-to-kg",
+      "decimals": 2,
+      "samples": [1, 5, 10, 20, 50, 60, 70, 80, 90, 100],
+      "note": "1 kilogram equals 2.20462 pounds. To convert kilograms to pounds, multiply by 2.20462."
+    },
+    {
+      "slug": "lbs-to-kg",
+      "from": { "name": "Pounds", "singular": "pound", "symbol": "lbs" },
+      "to": { "name": "Kilograms", "singular": "kilogram", "symbol": "kg" },
+      "quantity": "Weight",
+      "factor": 0.45359237,
+      "offset": 0,
+      "reverseSlug": "kg-to-lbs",
+      "decimals": 2,
+      "samples": [1, 5, 10, 25, 50, 100, 120, 150, 180, 200],
+      "note": "1 pound equals 0.453592 kilograms. To convert pounds to kilograms, divide by 2.20462 (or multiply by 0.453592)."
+    },
+    {
+      "slug": "cm-to-inches",
+      "from": { "name": "Centimeters", "singular": "centimeter", "symbol": "cm" },
+      "to": { "name": "Inches", "singular": "inch", "symbol": "in" },
+      "quantity": "Length",
+      "factor": 0.3937007874,
+      "offset": 0,
+      "reverseSlug": "inches-to-cm",
+      "decimals": 3,
+      "samples": [1, 5, 10, 15, 20, 30, 50, 100, 150, 180],
+      "note": "1 centimeter equals 0.393701 inches. To convert centimeters to inches, divide by 2.54 (or multiply by 0.393701)."
+    },
+    {
+      "slug": "inches-to-cm",
+      "from": { "name": "Inches", "singular": "inch", "symbol": "in" },
+      "to": { "name": "Centimeters", "singular": "centimeter", "symbol": "cm" },
+      "quantity": "Length",
+      "factor": 2.54,
+      "offset": 0,
+      "reverseSlug": "cm-to-inches",
+      "decimals": 2,
+      "samples": [1, 2, 5, 10, 12, 24, 36, 48, 60, 72],
+      "note": "1 inch equals exactly 2.54 centimeters. To convert inches to centimeters, multiply by 2.54."
+    },
+    {
+      "slug": "celsius-to-fahrenheit",
+      "from": { "name": "Celsius", "singular": "degree Celsius", "symbol": "°C" },
+      "to": { "name": "Fahrenheit", "singular": "degree Fahrenheit", "symbol": "°F" },
+      "quantity": "Temperature",
+      "factor": 1.8,
+      "offset": 32,
+      "reverseSlug": "fahrenheit-to-celsius",
+      "decimals": 1,
+      "samples": [-40, 0, 10, 20, 25, 30, 37, 40, 50, 100],
+      "note": "To convert Celsius to Fahrenheit, multiply by 1.8 (9/5) and add 32. So °F = °C × 9/5 + 32."
+    },
+    {
+      "slug": "fahrenheit-to-celsius",
+      "from": { "name": "Fahrenheit", "singular": "degree Fahrenheit", "symbol": "°F" },
+      "to": { "name": "Celsius", "singular": "degree Celsius", "symbol": "°C" },
+      "quantity": "Temperature",
+      "factor": 0.5555555556,
+      "offset": -17.7777777778,
+      "reverseSlug": "celsius-to-fahrenheit",
+      "decimals": 1,
+      "samples": [-40, 0, 32, 50, 68, 72, 98.6, 100, 150, 212],
+      "note": "To convert Fahrenheit to Celsius, subtract 32 and multiply by 0.5556 (5/9). So °C = (°F − 32) × 5/9."
+    },
+    {
+      "slug": "miles-to-km",
+      "from": { "name": "Miles", "singular": "mile", "symbol": "mi" },
+      "to": { "name": "Kilometers", "singular": "kilometer", "symbol": "km" },
+      "quantity": "Distance",
+      "factor": 1.609344,
+      "offset": 0,
+      "reverseSlug": "km-to-miles",
+      "decimals": 3,
+      "samples": [1, 2, 3, 5, 10, 13.1, 26.2, 50, 60, 100],
+      "note": "1 mile equals 1.609344 kilometers. To convert miles to kilometers, multiply by 1.60934."
+    },
+    {
+      "slug": "km-to-miles",
+      "from": { "name": "Kilometers", "singular": "kilometer", "symbol": "km" },
+      "to": { "name": "Miles", "singular": "mile", "symbol": "mi" },
+      "quantity": "Distance",
+      "factor": 0.6213711922,
+      "offset": 0,
+      "reverseSlug": "miles-to-km",
+      "decimals": 3,
+      "samples": [1, 2, 5, 10, 21.1, 42.2, 50, 80, 100, 200],
+      "note": "1 kilometer equals 0.621371 miles. To convert kilometers to miles, multiply by 0.621371 (or divide by 1.60934)."
+    }
+  ]
+}

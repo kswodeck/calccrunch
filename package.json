@@ -4,10 +4,14 @@
   "version": "1.0.1",
   "scripts": {
     "dev": "npm run update-counts && astro dev",
-    "build": "npm run clean && npm run update-counts && astro build",
+    "build": "npm run clean && npm run validate:content && npm run update-counts && astro build",
     "preview": "astro preview",
     "analyze": "npm run build && npx lighthouse https://calccrunch.com --output html --view",
     "update-counts": "node src/scripts/update-category-counts.js",
+    "validate:content": "node scripts/validate-content.mjs",
+    "gen:conversions": "node scripts/generate-conversions.mjs",
+    "new:calc": "node scripts/new-calculator.mjs",
+    "new:post": "node scripts/new-post.mjs",
     "astro": "astro",
     "clean": "rm -rf dist .astro node_modules/.vite",
     "check": "astro check --no-types"

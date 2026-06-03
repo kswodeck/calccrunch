@@ -104,7 +104,13 @@
       "publishDate": "2026-06-02T18:00:00-07:00",
       "updatedDate": "2026-06-02T18:00:00-07:00",
       "category": "Health & Fitness",
-      "tags": ["BMI", "body mass index", "health", "weight", "fitness"],
+      "tags": [
+        "BMI",
+        "body mass index",
+        "health",
+        "weight",
+        "fitness"
+      ],
       "readTime": "6 min read",
       "featured": false,
       "relatedCalculators": [
@@ -162,13 +168,29 @@
       "publishDate": "2026-06-05T18:00:00-07:00",
       "updatedDate": "2026-06-05T18:00:00-07:00",
       "category": "Budgeting",
-      "tags": ["emergency fund", "savings", "personal finance", "budgeting", "high-yield savings"],
+      "tags": [
+        "emergency fund",
+        "savings",
+        "personal finance",
+        "budgeting",
+        "high-yield savings"
+      ],
       "readTime": "6 min read",
       "featured": false,
-      "relatedCalculators": ["savings-goal-calculator", "budget-calculator", "compound-interest-calculator"],
+      "relatedCalculators": [
+        "savings-goal-calculator",
+        "budget-calculator",
+        "compound-interest-calculator"
+      ],
       "seoTitle": "Emergency Fund: How Much Do You Need? (2026 Guide)",
       "seoDescription": "Calculate your ideal emergency fund size based on expenses and risk factors. Learn where to keep it for maximum interest while staying accessible.",
-      "keywords": ["emergency fund", "how much emergency fund", "emergency savings", "rainy day fund", "high-yield savings account"]
+      "keywords": [
+        "emergency fund",
+        "how much emergency fund",
+        "emergency savings",
+        "rainy day fund",
+        "high-yield savings account"
+      ]
     },
     {
       "slug": "debt-avalanche-vs-snowball",
@@ -178,13 +200,29 @@
       "publishDate": "2026-06-09T18:00:00-07:00",
       "updatedDate": "2026-06-09T18:00:00-07:00",
       "category": "Financial Planning",
-      "tags": ["debt payoff", "avalanche method", "snowball method", "credit card debt", "personal finance"],
+      "tags": [
+        "debt payoff",
+        "avalanche method",
+        "snowball method",
+        "credit card debt",
+        "personal finance"
+      ],
       "readTime": "7 min read",
       "featured": false,
-      "relatedCalculators": ["credit-card-payoff-calculator", "loan-amortization-calculator", "budget-calculator"],
+      "relatedCalculators": [
+        "credit-card-payoff-calculator",
+        "loan-amortization-calculator",
+        "budget-calculator"
+      ],
       "seoTitle": "Debt Avalanche vs Snowball Method: Which Is Better? (With Calculator)",
       "seoDescription": "Compare debt avalanche vs snowball with real examples. See how much interest you save with each method and which keeps you motivated to become debt-free.",
-      "keywords": ["debt avalanche vs snowball", "debt payoff method", "how to pay off debt", "debt snowball", "debt avalanche"]
+      "keywords": [
+        "debt avalanche vs snowball",
+        "debt payoff method",
+        "how to pay off debt",
+        "debt snowball",
+        "debt avalanche"
+      ]
     },
     {
       "slug": "what-is-tdee",
@@ -194,13 +232,29 @@
       "publishDate": "2026-06-12T18:00:00-07:00",
       "updatedDate": "2026-06-12T18:00:00-07:00",
       "category": "Health & Fitness",
-      "tags": ["TDEE", "calories", "weight loss", "metabolism", "fitness"],
+      "tags": [
+        "TDEE",
+        "calories",
+        "weight loss",
+        "metabolism",
+        "fitness"
+      ],
       "readTime": "7 min read",
       "featured": false,
-      "relatedCalculators": ["tdee-calculator", "calorie-calculator", "macro-calculator"],
+      "relatedCalculators": [
+        "tdee-calculator",
+        "calorie-calculator",
+        "macro-calculator"
+      ],
       "seoTitle": "TDEE Calculator & Guide: How Many Calories Do You Actually Burn?",
       "seoDescription": "Calculate your TDEE and learn exactly how many calories you burn daily. Includes activity level breakdowns, weight loss strategies, and a free calculator.",
-      "keywords": ["TDEE", "total daily energy expenditure", "TDEE calculator", "how many calories do I burn", "calories burned per day"]
+      "keywords": [
+        "TDEE",
+        "total daily energy expenditure",
+        "TDEE calculator",
+        "how many calories do I burn",
+        "calories burned per day"
+      ]
     },
     {
       "slug": "refinance-mortgage-when",
@@ -210,13 +264,29 @@
       "publishDate": "2026-06-16T18:00:00-07:00",
       "updatedDate": "2026-06-16T18:00:00-07:00",
       "category": "Financial Planning",
-      "tags": ["refinance", "mortgage", "interest rates", "home loan", "savings"],
+      "tags": [
+        "refinance",
+        "mortgage",
+        "interest rates",
+        "home loan",
+        "savings"
+      ],
       "readTime": "7 min read",
       "featured": false,
-      "relatedCalculators": ["refinance-calculator", "mortgage-payment-calculator", "loan-amortization-calculator"],
+      "relatedCalculators": [
+        "refinance-calculator",
+        "mortgage-payment-calculator",
+        "loan-amortization-calculator"
+      ],
       "seoTitle": "Should I Refinance My Mortgage? Break-Even Calculator & Guide",
       "seoDescription": "Calculate if refinancing your mortgage is worth it. Learn the break-even rule, when to refinance, and how much you could save at today's rates.",
-      "keywords": ["when to refinance mortgage", "refinance calculator", "mortgage refinance", "break-even point refinance", "refinance worth it"]
+      "keywords": [
+        "when to refinance mortgage",
+        "refinance calculator",
+        "mortgage refinance",
+        "break-even point refinance",
+        "refinance worth it"
+      ]
     },
     {
       "slug": "meal-prep-cost-savings",
@@ -226,13 +296,29 @@
       "publishDate": "2026-06-19T18:00:00-07:00",
       "updatedDate": "2026-06-19T18:00:00-07:00",
       "category": "Budgeting",
-      "tags": ["meal prep", "food budget", "saving money", "cooking", "grocery savings"],
+      "tags": [
+        "meal prep",
+        "food budget",
+        "saving money",
+        "cooking",
+        "grocery savings"
+      ],
       "readTime": "6 min read",
       "featured": false,
-      "relatedCalculators": ["budget-calculator", "recipe-scaler-converter", "tip-calculator"],
+      "relatedCalculators": [
+        "budget-calculator",
+        "recipe-scaler-converter",
+        "tip-calculator"
+      ],
       "seoTitle": "Meal Prep Cost Savings: How Much Can You Save Per Week?",
       "seoDescription": "See exactly how much meal prepping saves vs eating out. Real cost breakdowns for singles, couples, and families with time investment analysis.",
-      "keywords": ["meal prep savings", "how much does meal prep save", "food budget", "meal prep cost", "cooking vs eating out"]
+      "keywords": [
+        "meal prep savings",
+        "how much does meal prep save",
+        "food budget",
+        "meal prep cost",
+        "cooking vs eating out"
+      ]
     },
     {
       "slug": "understanding-tax-brackets",
@@ -242,13 +328,29 @@
       "publishDate": "2026-06-23T18:00:00-07:00",
       "updatedDate": "2026-06-23T18:00:00-07:00",
       "category": "Financial Planning",
-      "tags": ["taxes", "tax brackets", "income tax", "marginal rate", "effective rate"],
+      "tags": [
+        "taxes",
+        "tax brackets",
+        "income tax",
+        "marginal rate",
+        "effective rate"
+      ],
       "readTime": "6 min read",
       "featured": false,
-      "relatedCalculators": ["tax-bracket-calculator", "paycheck-calculator", "budget-calculator"],
+      "relatedCalculators": [
+        "tax-bracket-calculator",
+        "paycheck-calculator",
+        "budget-calculator"
+      ],
       "seoTitle": "How Tax Brackets Work: Marginal vs Effective Tax Rate Explained",
       "seoDescription": "Learn how tax brackets really work (hint: you don't pay the top rate on all your income). Visual examples showing exactly how much tax you owe at every income level.",
-      "keywords": ["how tax brackets work", "marginal tax rate", "effective tax rate", "tax brackets 2026", "income tax explained"]
+      "keywords": [
+        "how tax brackets work",
+        "marginal tax rate",
+        "effective tax rate",
+        "tax brackets 2026",
+        "income tax explained"
+      ]
     },
     {
       "slug": "gpa-calculator-guide",
@@ -258,13 +360,29 @@
       "publishDate": "2026-06-26T18:00:00-07:00",
       "updatedDate": "2026-06-26T18:00:00-07:00",
       "category": "Education",
-      "tags": ["GPA", "college", "grades", "education", "academic"],
+      "tags": [
+        "GPA",
+        "college",
+        "grades",
+        "education",
+        "academic"
+      ],
       "readTime": "6 min read",
       "featured": false,
-      "relatedCalculators": ["gpa-calculator", "grade-calculator", "percentage-calculator"],
+      "relatedCalculators": [
+        "gpa-calculator",
+        "grade-calculator",
+        "percentage-calculator"
+      ],
       "seoTitle": "GPA Calculator: How to Calculate Weighted & Unweighted GPA",
       "seoDescription": "Calculate your GPA with our free tool. Learn the difference between weighted and unweighted GPA, see grade conversion charts, and find target GPAs for top colleges.",
-      "keywords": ["GPA calculator", "how to calculate GPA", "weighted GPA", "unweighted GPA", "4.0 scale"]
+      "keywords": [
+        "GPA calculator",
+        "how to calculate GPA",
+        "weighted GPA",
+        "unweighted GPA",
+        "4.0 scale"
+      ]
     },
     {
       "slug": "electric-bill-too-high",
@@ -274,13 +392,123 @@
       "publishDate": "2026-06-30T18:00:00-07:00",
       "updatedDate": "2026-06-30T18:00:00-07:00",
       "category": "Home & Living",
-      "tags": ["electricity", "energy costs", "utility bills", "home savings", "energy efficiency"],
+      "tags": [
+        "electricity",
+        "energy costs",
+        "utility bills",
+        "home savings",
+        "energy efficiency"
+      ],
       "readTime": "7 min read",
       "featured": false,
-      "relatedCalculators": ["electricity-cost-calculator", "budget-calculator", "home-improvement-cost-calculator"],
+      "relatedCalculators": [
+        "electricity-cost-calculator",
+        "budget-calculator",
+        "home-improvement-cost-calculator"
+      ],
       "seoTitle": "10 Appliances Costing You the Most on Your Electric Bill (2026)",
       "seoDescription": "Find out which appliances use the most electricity and what they actually cost per month. Simple tips to cut your electric bill by 20-40% without major changes.",
-      "keywords": ["high electric bill", "electricity costs by appliance", "reduce electric bill", "energy saving tips", "appliance electricity cost"]
+      "keywords": [
+        "high electric bill",
+        "electricity costs by appliance",
+        "reduce electric bill",
+        "energy saving tips",
+        "appliance electricity cost"
+      ]
+    },
+    {
+      "slug": "kg-to-lbs-conversion-guide",
+      "title": "How to Convert KG to LBS (With a Simple Formula & Chart)",
+      "description": "Learn how to convert kilograms to pounds with a simple formula, a quick mental-math shortcut, and a kg-to-lbs reference chart.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-03T09:00:00-07:00",
+      "updatedDate": "2026-06-03T09:00:00-07:00",
+      "category": "Guides",
+      "tags": [
+        "unit conversion",
+        "kg to lbs",
+        "weight",
+        "metric",
+        "measurement"
+      ],
+      "readTime": "5 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "kg-to-lbs",
+        "lbs-to-kg"
+      ],
+      "seoTitle": "How to Convert KG to LBS (With a Simple Formula & Chart)",
+      "seoDescription": "Convert kg to lbs the easy way: the formula (×2.20462), a fast mental-math trick, a full conversion chart, and the reverse lbs-to-kg method.",
+      "keywords": [
+        "how to convert kg to lbs",
+        "kg to lbs formula",
+        "kilograms to pounds",
+        "kg to lbs chart",
+        "convert kg to pounds"
+      ]
+    },
+    {
+      "slug": "sales-tax-by-state-guide",
+      "title": "Sales Tax by State: 2026 Rates and How to Calculate It",
+      "description": "See how sales tax works by state, which states have none, and how to calculate the tax and total price on any purchase.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-06T09:00:00-07:00",
+      "updatedDate": "2026-06-06T09:00:00-07:00",
+      "category": "Financial Planning",
+      "tags": [
+        "sales tax",
+        "taxes",
+        "state taxes",
+        "personal finance",
+        "shopping"
+      ],
+      "readTime": "6 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "sales-tax-calculator",
+        "discount-calculator"
+      ],
+      "seoTitle": "Sales Tax by State: 2026 Rates and How to Calculate It",
+      "seoDescription": "2026 sales tax by state: base rates, the 5 no-tax states, how local taxes stack, and how to calculate sales tax on any purchase.",
+      "keywords": [
+        "sales tax by state",
+        "state sales tax rates",
+        "how to calculate sales tax",
+        "states with no sales tax",
+        "2026 sales tax"
+      ]
+    },
+    {
+      "slug": "how-to-calculate-a-discount",
+      "title": "How to Calculate a Discount (Percent Off Made Easy)",
+      "description": "Calculate any discount in seconds: the percent-off formula, mental-math shortcuts, and how stacked discounts really work.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-09T09:00:00-07:00",
+      "updatedDate": "2026-06-09T09:00:00-07:00",
+      "category": "Guides",
+      "tags": [
+        "discount",
+        "percent off",
+        "shopping",
+        "mental math",
+        "savings"
+      ],
+      "readTime": "5 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "discount-calculator",
+        "percentage-calculator",
+        "sales-tax-calculator"
+      ],
+      "seoTitle": "How to Calculate a Discount (Percent Off Made Easy)",
+      "seoDescription": "How to calculate a discount: the percent-off formula, fast mental-math tricks, stacked-discount math, and finding the original price.",
+      "keywords": [
+        "how to calculate a discount",
+        "percent off calculator",
+        "discount formula",
+        "stacked discounts",
+        "calculate sale price"
+      ]
     }
   ]
 }

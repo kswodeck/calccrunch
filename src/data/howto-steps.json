@@ -126,5 +126,184 @@
       "Click Calculate to generate your full amortization schedule",
       "Review the table showing principal vs interest for each payment"
     ]
+  },
+  "kg-to-lbs": {
+    "name": "How to Convert Kilograms to Pounds",
+    "description": "Convert kilograms to pounds in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in kilograms (kg) you want to convert",
+      "The result in pounds (lbs) updates instantly",
+      "Use the reference table to look up common weight conversions"
+    ]
+  },
+  "lbs-to-kg": {
+    "name": "How to Convert Pounds to Kilograms",
+    "description": "Convert pounds to kilograms in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in pounds (lbs) you want to convert",
+      "The result in kilograms (kg) updates instantly",
+      "Use the reference table to look up common weight conversions"
+    ]
+  },
+  "cm-to-inches": {
+    "name": "How to Convert Centimeters to Inches",
+    "description": "Convert centimeters to inches in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in centimeters (cm) you want to convert",
+      "The result in inches (in) updates instantly",
+      "Use the reference table to look up common length conversions"
+    ]
+  },
+  "inches-to-cm": {
+    "name": "How to Convert Inches to Centimeters",
+    "description": "Convert inches to centimeters in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in inches (in) you want to convert",
+      "The result in centimeters (cm) updates instantly",
+      "Use the reference table to look up common length conversions"
+    ]
+  },
+  "celsius-to-fahrenheit": {
+    "name": "How to Convert Celsius to Fahrenheit",
+    "description": "Convert celsius to fahrenheit in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in celsius (°C) you want to convert",
+      "The result in fahrenheit (°F) updates instantly",
+      "Use the reference table to look up common temperature conversions"
+    ]
+  },
+  "fahrenheit-to-celsius": {
+    "name": "How to Convert Fahrenheit to Celsius",
+    "description": "Convert fahrenheit to celsius in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in fahrenheit (°F) you want to convert",
+      "The result in celsius (°C) updates instantly",
+      "Use the reference table to look up common temperature conversions"
+    ]
+  },
+  "miles-to-km": {
+    "name": "How to Convert Miles to Kilometers",
+    "description": "Convert miles to kilometers in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in miles (mi) you want to convert",
+      "The result in kilometers (km) updates instantly",
+      "Use the reference table to look up common distance conversions"
+    ]
+  },
+  "km-to-miles": {
+    "name": "How to Convert Kilometers to Miles",
+    "description": "Convert kilometers to miles in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in kilometers (km) you want to convert",
+      "The result in miles (mi) updates instantly",
+      "Use the reference table to look up common distance conversions"
+    ]
+  },
+  "sales-tax-calculator": {
+    "name": "How to Calculate Sales Tax",
+    "description": "Calculate sales tax and the total price, or work backward to find the pre-tax price, with our free calculator.",
+    "totalTime": "PT30S",
+    "steps": [
+      "Enter the amount — the pre-tax price, or the total if you're removing tax",
+      "Enter the sales tax rate, or pick your state to auto-fill the base rate",
+      "Choose 'Add tax' to add tax to a price, or 'Remove tax' to find the pre-tax price",
+      "Read the tax amount, total, and pre-tax price in the results"
+    ]
+  },
+  "discount-calculator": {
+    "name": "How to Calculate a Discount",
+    "description": "Find the sale price and your savings for any discount percentage, including stacked discounts and tax.",
+    "totalTime": "PT30S",
+    "steps": [
+      "Enter the original price",
+      "Enter the discount percentage (e.g. 25 for 25% off)",
+      "Optionally add a second stacked discount or a sales tax rate",
+      "Read the sale price, total savings, and effective discount instantly"
+    ]
+  },
+  "home-affordability-calculator": {
+    "name": "How to Calculate Home Affordability",
+    "description": "Estimate how much house you can afford based on income, debts, and down payment.",
+    "totalTime": "PT2M",
+    "steps": [
+      "Enter your gross annual or monthly income",
+      "Add your monthly debt payments (car, student loans, credit cards)",
+      "Enter your planned down payment",
+      "Set the interest rate and loan term",
+      "Review your maximum affordable home price and monthly payment"
+    ]
+  },
+  "gpa-calculator": {
+    "name": "How to Calculate Your GPA",
+    "description": "Calculate your grade point average from course grades and credit hours.",
+    "totalTime": "PT2M",
+    "steps": [
+      "Enter each course name (optional) and its credit hours",
+      "Select the letter grade you earned in each course",
+      "Add rows for all your courses",
+      "Click Calculate to see your GPA on a 4.0 scale"
+    ]
+  },
+  "net-worth-calculator": {
+    "name": "How to Calculate Your Net Worth",
+    "description": "Find your net worth by subtracting what you owe from what you own.",
+    "totalTime": "PT2M",
+    "steps": [
+      "List your assets: cash, investments, retirement accounts, home, and vehicles",
+      "List your liabilities: mortgage, loans, and credit card balances",
+      "Enter the values into the calculator",
+      "Your net worth is total assets minus total liabilities"
+    ]
+  },
+  "debt-to-income-calculator": {
+    "name": "How to Calculate Debt-to-Income Ratio",
+    "description": "Calculate your DTI ratio to see how much of your income goes to debt.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Enter your gross monthly income (before taxes)",
+      "Add up your monthly debt payments: housing, loans, and minimum credit card payments",
+      "Enter the total monthly debt",
+      "Your DTI ratio is monthly debt divided by gross monthly income"
+    ]
+  },
+  "savings-goal-calculator": {
+    "name": "How to Calculate Monthly Savings for a Goal",
+    "description": "Find out how much to save each month to reach a savings goal.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Enter your savings goal amount",
+      "Set your timeframe in months or years",
+      "Add your current savings and expected interest rate",
+      "See the monthly contribution needed to reach your goal"
+    ]
+  },
+  "percentage-calculator": {
+    "name": "How to Calculate a Percentage",
+    "description": "Calculate percentages, percentage change, and what percent one number is of another.",
+    "totalTime": "PT30S",
+    "steps": [
+      "Choose the type of percentage calculation",
+      "Enter your numbers",
+      "Read the result instantly"
+    ]
+  },
+  "paycheck-calculator": {
+    "name": "How to Calculate Your Take-Home Pay",
+    "description": "Estimate your net paycheck after taxes and deductions.",
+    "totalTime": "PT2M",
+    "steps": [
+      "Enter your gross pay and pay frequency",
+      "Select your filing status and state",
+      "Add pre-tax deductions like 401(k) and health insurance",
+      "Review your estimated take-home pay and tax withholding"
+    ]
   }
 }
