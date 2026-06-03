@@ -305,5 +305,125 @@
       "Add pre-tax deductions like 401(k) and health insurance",
       "Review your estimated take-home pay and tax withholding"
     ]
+  },
+  "grams-to-ounces": {
+    "name": "How to Convert Grams to Ounces",
+    "description": "Convert grams to ounces in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in grams (g) you want to convert",
+      "The result in ounces (oz) updates instantly",
+      "Use the reference table to look up common weight conversions"
+    ]
+  },
+  "ounces-to-grams": {
+    "name": "How to Convert Ounces to Grams",
+    "description": "Convert ounces to grams in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in ounces (oz) you want to convert",
+      "The result in grams (g) updates instantly",
+      "Use the reference table to look up common weight conversions"
+    ]
+  },
+  "feet-to-meters": {
+    "name": "How to Convert Feet to Meters",
+    "description": "Convert feet to meters in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in feet (ft) you want to convert",
+      "The result in meters (m) updates instantly",
+      "Use the reference table to look up common length conversions"
+    ]
+  },
+  "meters-to-feet": {
+    "name": "How to Convert Meters to Feet",
+    "description": "Convert meters to feet in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in meters (m) you want to convert",
+      "The result in feet (ft) updates instantly",
+      "Use the reference table to look up common length conversions"
+    ]
+  },
+  "ml-to-cups": {
+    "name": "How to Convert Milliliters to Cups",
+    "description": "Convert milliliters to cups in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in milliliters (ml) you want to convert",
+      "The result in cups (cups) updates instantly",
+      "Use the reference table to look up common volume conversions"
+    ]
+  },
+  "cups-to-ml": {
+    "name": "How to Convert Cups to Milliliters",
+    "description": "Convert cups to milliliters in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in cups (cups) you want to convert",
+      "The result in milliliters (ml) updates instantly",
+      "Use the reference table to look up common volume conversions"
+    ]
+  },
+  "liters-to-gallons": {
+    "name": "How to Convert Liters to Gallons",
+    "description": "Convert liters to gallons in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in liters (L) you want to convert",
+      "The result in gallons (gal) updates instantly",
+      "Use the reference table to look up common volume conversions"
+    ]
+  },
+  "gallons-to-liters": {
+    "name": "How to Convert Gallons to Liters",
+    "description": "Convert gallons to liters in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in gallons (gal) you want to convert",
+      "The result in liters (L) updates instantly",
+      "Use the reference table to look up common volume conversions"
+    ]
+  },
+  "mph-to-kmh": {
+    "name": "How to Convert Miles per Hour to Kilometers per Hour",
+    "description": "Convert miles per hour to kilometers per hour in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in miles per hour (mph) you want to convert",
+      "The result in kilometers per hour (km/h) updates instantly",
+      "Use the reference table to look up common speed conversions"
+    ]
+  },
+  "kmh-to-mph": {
+    "name": "How to Convert Kilometers per Hour to Miles per Hour",
+    "description": "Convert kilometers per hour to miles per hour in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in kilometers per hour (km/h) you want to convert",
+      "The result in miles per hour (mph) updates instantly",
+      "Use the reference table to look up common speed conversions"
+    ]
+  },
+  "feet-to-inches": {
+    "name": "How to Convert Feet to Inches",
+    "description": "Convert feet to inches in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in feet (ft) you want to convert",
+      "The result in inches (in) updates instantly",
+      "Use the reference table to look up common length conversions"
+    ]
+  },
+  "inches-to-feet": {
+    "name": "How to Convert Inches to Feet",
+    "description": "Convert inches to feet in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in inches (in) you want to convert",
+      "The result in feet (ft) updates instantly",
+      "Use the reference table to look up common length conversions"
+    ]
   }
 }

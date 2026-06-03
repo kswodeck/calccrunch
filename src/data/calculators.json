@@ -3402,6 +3402,486 @@
         "percentage-calculator",
         "tip-calculator"
       ]
+    },
+    {
+      "title": "Grams to Ounces Converter",
+      "slug": "grams-to-ounces",
+      "description": "Convert grams to ounces instantly. 1 gram equals 0.035274 ounces. To convert grams to ounces, divide by 28.3495 (or multiply by 0.035274). Includes a quick-reference conversion table.",
+      "shortDescription": "Convert grams to ounces instantly",
+      "category": "math-conversions",
+      "tags": [
+        "grams",
+        "ounces",
+        "weight",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Grams to Ounces Converter — Free & Instant (g to oz)",
+      "seoDescription": "Convert grams to ounces instantly with our free calculator. 1 gram equals 0.035274 ounces. To convert grams to ounces, divide by 28.3495 (or multiply by 0.035274). Conversion table included.",
+      "keywords": [
+        "grams to ounces",
+        "grams to ounces",
+        "convert grams to ounces",
+        "g to oz",
+        "weight converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "ounces-to-grams",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Ounces to Grams Converter",
+      "slug": "ounces-to-grams",
+      "description": "Convert ounces to grams instantly. 1 ounce equals 28.3495 grams. To convert ounces to grams, multiply by 28.3495. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert ounces to grams instantly",
+      "category": "math-conversions",
+      "tags": [
+        "ounces",
+        "grams",
+        "weight",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Ounces to Grams Converter — Free & Instant (oz to g)",
+      "seoDescription": "Convert ounces to grams instantly with our free calculator. 1 ounce equals 28.3495 grams. To convert ounces to grams, multiply by 28.3495. Conversion table included.",
+      "keywords": [
+        "ounces to grams",
+        "ounces to grams",
+        "convert ounces to grams",
+        "oz to g",
+        "weight converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "grams-to-ounces",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Feet to Meters Converter",
+      "slug": "feet-to-meters",
+      "description": "Convert feet to meters instantly. 1 foot equals exactly 0.3048 meters. To convert feet to meters, multiply by 0.3048. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert feet to meters instantly",
+      "category": "math-conversions",
+      "tags": [
+        "feet",
+        "meters",
+        "length",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Feet to Meters Converter — Free & Instant (ft to m)",
+      "seoDescription": "Convert feet to meters instantly with our free calculator. 1 foot equals exactly 0.3048 meters. To convert feet to meters, multiply by 0.3048. Conversion table included.",
+      "keywords": [
+        "feet to meters",
+        "feet to meters",
+        "convert feet to meters",
+        "ft to m",
+        "length converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "meters-to-feet",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Meters to Feet Converter",
+      "slug": "meters-to-feet",
+      "description": "Convert meters to feet instantly. 1 meter equals 3.28084 feet. To convert meters to feet, multiply by 3.28084 (or divide by 0.3048). Includes a quick-reference conversion table.",
+      "shortDescription": "Convert meters to feet instantly",
+      "category": "math-conversions",
+      "tags": [
+        "meters",
+        "feet",
+        "length",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Meters to Feet Converter — Free & Instant (m to ft)",
+      "seoDescription": "Convert meters to feet instantly with our free calculator. 1 meter equals 3.28084 feet. To convert meters to feet, multiply by 3.28084 (or divide by 0.3048). Conversion table included.",
+      "keywords": [
+        "meters to feet",
+        "meters to feet",
+        "convert meters to feet",
+        "m to ft",
+        "length converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "feet-to-meters",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Milliliters to Cups Converter",
+      "slug": "ml-to-cups",
+      "description": "Convert milliliters to cups instantly. 1 milliliter equals 0.004227 US cups. To convert milliliters to cups, divide by 236.588. (Based on the US customary cup.) Includes a quick-reference conversion table.",
+      "shortDescription": "Convert milliliters to cups instantly",
+      "category": "math-conversions",
+      "tags": [
+        "milliliters",
+        "cups",
+        "volume",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Milliliters to Cups Converter — Free & Instant (ml to cups)",
+      "seoDescription": "Convert milliliters to cups instantly with our free calculator. 1 milliliter equals 0.004227 US cups. To convert milliliters to cups, divide by 236.588. (Based on the US customary cup.) Conversion table included.",
+      "keywords": [
+        "ml to cups",
+        "milliliters to cups",
+        "convert milliliters to cups",
+        "ml to cups",
+        "volume converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "cups-to-ml",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Cups to Milliliters Converter",
+      "slug": "cups-to-ml",
+      "description": "Convert cups to milliliters instantly. 1 US cup equals 236.588 milliliters. To convert cups to milliliters, multiply by 236.588. (Based on the US customary cup.) Includes a quick-reference conversion table.",
+      "shortDescription": "Convert cups to milliliters instantly",
+      "category": "math-conversions",
+      "tags": [
+        "cups",
+        "milliliters",
+        "volume",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Cups to Milliliters Converter — Free & Instant (cups to ml)",
+      "seoDescription": "Convert cups to milliliters instantly with our free calculator. 1 US cup equals 236.588 milliliters. To convert cups to milliliters, multiply by 236.588. (Based on the US customary cup.) Conversion table included.",
+      "keywords": [
+        "cups to ml",
+        "cups to milliliters",
+        "convert cups to milliliters",
+        "cups to ml",
+        "volume converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "ml-to-cups",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Liters to Gallons Converter",
+      "slug": "liters-to-gallons",
+      "description": "Convert liters to gallons instantly. 1 liter equals 0.264172 US gallons. To convert liters to gallons, divide by 3.78541. (Based on the US liquid gallon.) Includes a quick-reference conversion table.",
+      "shortDescription": "Convert liters to gallons instantly",
+      "category": "math-conversions",
+      "tags": [
+        "liters",
+        "gallons",
+        "volume",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Liters to Gallons Converter — Free & Instant (L to gal)",
+      "seoDescription": "Convert liters to gallons instantly with our free calculator. 1 liter equals 0.264172 US gallons. To convert liters to gallons, divide by 3.78541. (Based on the US liquid gallon.) Conversion table included.",
+      "keywords": [
+        "liters to gallons",
+        "liters to gallons",
+        "convert liters to gallons",
+        "L to gal",
+        "volume converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "gallons-to-liters",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Gallons to Liters Converter",
+      "slug": "gallons-to-liters",
+      "description": "Convert gallons to liters instantly. 1 US gallon equals 3.78541 liters. To convert gallons to liters, multiply by 3.78541. (Based on the US liquid gallon.) Includes a quick-reference conversion table.",
+      "shortDescription": "Convert gallons to liters instantly",
+      "category": "math-conversions",
+      "tags": [
+        "gallons",
+        "liters",
+        "volume",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Gallons to Liters Converter — Free & Instant (gal to L)",
+      "seoDescription": "Convert gallons to liters instantly with our free calculator. 1 US gallon equals 3.78541 liters. To convert gallons to liters, multiply by 3.78541. (Based on the US liquid gallon.) Conversion table included.",
+      "keywords": [
+        "gallons to liters",
+        "gallons to liters",
+        "convert gallons to liters",
+        "gal to L",
+        "volume converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "liters-to-gallons",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Miles per Hour to Kilometers per Hour Converter",
+      "slug": "mph-to-kmh",
+      "description": "Convert miles per hour to kilometers per hour instantly. 1 mph equals 1.60934 km/h. To convert miles per hour to kilometers per hour, multiply by 1.60934. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert miles per hour to kilometers per hour instantly",
+      "category": "math-conversions",
+      "tags": [
+        "miles per hour",
+        "kilometers per hour",
+        "speed",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Miles per Hour to Kilometers per Hour Converter — Free & Instant (mph to km/h)",
+      "seoDescription": "Convert miles per hour to kilometers per hour instantly with our free calculator. 1 mph equals 1.60934 km/h. To convert miles per hour to kilometers per hour, multiply by 1.60934. Conversion table included.",
+      "keywords": [
+        "mph to kmh",
+        "miles per hour to kilometers per hour",
+        "convert miles per hour to kilometers per hour",
+        "mph to km/h",
+        "speed converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "kmh-to-mph",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Kilometers per Hour to Miles per Hour Converter",
+      "slug": "kmh-to-mph",
+      "description": "Convert kilometers per hour to miles per hour instantly. 1 km/h equals 0.621371 mph. To convert kilometers per hour to miles per hour, multiply by 0.621371 (or divide by 1.60934). Includes a quick-reference conversion table.",
+      "shortDescription": "Convert kilometers per hour to miles per hour instantly",
+      "category": "math-conversions",
+      "tags": [
+        "kilometers per hour",
+        "miles per hour",
+        "speed",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Kilometers per Hour to Miles per Hour Converter — Free & Instant (km/h to mph)",
+      "seoDescription": "Convert kilometers per hour to miles per hour instantly with our free calculator. 1 km/h equals 0.621371 mph. To convert kilometers per hour to miles per hour, multiply by 0.621371 (or divide by 1.60934). Conversion table included.",
+      "keywords": [
+        "kmh to mph",
+        "kilometers per hour to miles per hour",
+        "convert kilometers per hour to miles per hour",
+        "km/h to mph",
+        "speed converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "mph-to-kmh",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Feet to Inches Converter",
+      "slug": "feet-to-inches",
+      "description": "Convert feet to inches instantly. 1 foot equals exactly 12 inches. To convert feet to inches, multiply by 12. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert feet to inches instantly",
+      "category": "math-conversions",
+      "tags": [
+        "feet",
+        "inches",
+        "length",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Feet to Inches Converter — Free & Instant (ft to in)",
+      "seoDescription": "Convert feet to inches instantly with our free calculator. 1 foot equals exactly 12 inches. To convert feet to inches, multiply by 12. Conversion table included.",
+      "keywords": [
+        "feet to inches",
+        "feet to inches",
+        "convert feet to inches",
+        "ft to in",
+        "length converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "inches-to-feet",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Inches to Feet Converter",
+      "slug": "inches-to-feet",
+      "description": "Convert inches to feet instantly. 1 inch equals 0.08333 feet (1/12). To convert inches to feet, divide by 12. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert inches to feet instantly",
+      "category": "math-conversions",
+      "tags": [
+        "inches",
+        "feet",
+        "length",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🔄",
+      "seoTitle": "Inches to Feet Converter — Free & Instant (in to ft)",
+      "seoDescription": "Convert inches to feet instantly with our free calculator. 1 inch equals 0.08333 feet (1/12). To convert inches to feet, divide by 12. Conversion table included.",
+      "keywords": [
+        "inches to feet",
+        "inches to feet",
+        "convert inches to feet",
+        "in to ft",
+        "length converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "feet-to-inches",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
     }
   ]
 }

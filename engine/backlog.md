@@ -13,12 +13,12 @@ These are huge-volume, low-difficulty queries. Each is one row + `npm run gen:co
 | cm-to-inches / inches-to-cm | "cm to inches" | done |
 | celsius-to-fahrenheit / fahrenheit-to-celsius | "celsius to fahrenheit" | done |
 | miles-to-km / km-to-miles | "miles to km" | done |
-| grams-to-ounces / ounces-to-grams | "grams to ounces" | todo |
-| feet-to-meters / meters-to-feet | "feet to meters" | todo |
-| ml-to-cups / cups-to-ml | "ml to cups" | todo |
-| liters-to-gallons / gallons-to-liters | "liters to gallons" | todo |
-| mph-to-kmh / kmh-to-mph | "mph to kmh" | todo |
-| feet-to-inches / inches-to-feet | "feet to inches" | todo |
+| grams-to-ounces / ounces-to-grams | "grams to ounces" | done |
+| feet-to-meters / meters-to-feet | "feet to meters" | done |
+| ml-to-cups / cups-to-ml | "ml to cups" | done |
+| liters-to-gallons / gallons-to-liters | "liters to gallons" | done |
+| mph-to-kmh / kmh-to-mph | "mph to kmh" | done |
+| feet-to-inches / inches-to-feet | "feet to inches" | done |
 
 ## Tier 2 — High-intent everyday calculators (bespoke; `npm run new:calc`)
 

@@ -450,5 +450,221 @@
       "q": "How can I increase my take-home pay?",
       "a": "Adjust your W-4 withholding to match your actual tax liability, and review pre-tax deductions. Note that pre-tax 401(k) or HSA contributions lower taxable income, reducing tax even as they build savings."
     }
+  ],
+  "grams-to-ounces": [
+    {
+      "q": "How do you convert grams to ounces?",
+      "a": "1 gram equals 0.035274 ounces. To convert grams to ounces, divide by 28.3495 (or multiply by 0.035274)."
+    },
+    {
+      "q": "What is 1 gram in ounces?",
+      "a": "1 gram equals 0.035 oz."
+    },
+    {
+      "q": "What is 100 g in ounces?",
+      "a": "100 g equals 3.527 oz."
+    },
+    {
+      "q": "Is this grams to ounces converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "ounces-to-grams": [
+    {
+      "q": "How do you convert ounces to grams?",
+      "a": "1 ounce equals 28.3495 grams. To convert ounces to grams, multiply by 28.3495."
+    },
+    {
+      "q": "What is 1 ounce in grams?",
+      "a": "1 ounce equals 28.35 g."
+    },
+    {
+      "q": "What is 12 oz in grams?",
+      "a": "12 oz equals 340.19 g."
+    },
+    {
+      "q": "Is this ounces to grams converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "feet-to-meters": [
+    {
+      "q": "How do you convert feet to meters?",
+      "a": "1 foot equals exactly 0.3048 meters. To convert feet to meters, multiply by 0.3048."
+    },
+    {
+      "q": "What is 1 foot in meters?",
+      "a": "1 foot equals 0.305 m."
+    },
+    {
+      "q": "What is 20 ft in meters?",
+      "a": "20 ft equals 6.096 m."
+    },
+    {
+      "q": "Is this feet to meters converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "meters-to-feet": [
+    {
+      "q": "How do you convert meters to feet?",
+      "a": "1 meter equals 3.28084 feet. To convert meters to feet, multiply by 3.28084 (or divide by 0.3048)."
+    },
+    {
+      "q": "What is 1 meter in feet?",
+      "a": "1 meter equals 3.281 ft."
+    },
+    {
+      "q": "What is 20 m in feet?",
+      "a": "20 m equals 65.617 ft."
+    },
+    {
+      "q": "Is this meters to feet converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "ml-to-cups": [
+    {
+      "q": "How do you convert milliliters to cups?",
+      "a": "1 milliliter equals 0.004227 US cups. To convert milliliters to cups, divide by 236.588. (Based on the US customary cup.)"
+    },
+    {
+      "q": "What is 1 milliliter in cups?",
+      "a": "1 milliliter equals 0.004 cups."
+    },
+    {
+      "q": "What is 250 ml in cups?",
+      "a": "250 ml equals 1.057 cups."
+    },
+    {
+      "q": "Is this milliliters to cups converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "cups-to-ml": [
+    {
+      "q": "How do you convert cups to milliliters?",
+      "a": "1 US cup equals 236.588 milliliters. To convert cups to milliliters, multiply by 236.588. (Based on the US customary cup.)"
+    },
+    {
+      "q": "What is 1 cup in milliliters?",
+      "a": "1 cup equals 236.6 ml."
+    },
+    {
+      "q": "What is 2 cups in milliliters?",
+      "a": "2 cups equals 473.2 ml."
+    },
+    {
+      "q": "Is this cups to milliliters converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "liters-to-gallons": [
+    {
+      "q": "How do you convert liters to gallons?",
+      "a": "1 liter equals 0.264172 US gallons. To convert liters to gallons, divide by 3.78541. (Based on the US liquid gallon.)"
+    },
+    {
+      "q": "What is 1 liter in gallons?",
+      "a": "1 liter equals 0.264 gal."
+    },
+    {
+      "q": "What is 40 L in gallons?",
+      "a": "40 L equals 10.567 gal."
+    },
+    {
+      "q": "Is this liters to gallons converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "gallons-to-liters": [
+    {
+      "q": "How do you convert gallons to liters?",
+      "a": "1 US gallon equals 3.78541 liters. To convert gallons to liters, multiply by 3.78541. (Based on the US liquid gallon.)"
+    },
+    {
+      "q": "What is 1 gallon in liters?",
+      "a": "1 gallon equals 3.785 L."
+    },
+    {
+      "q": "What is 12 gal in liters?",
+      "a": "12 gal equals 45.425 L."
+    },
+    {
+      "q": "Is this gallons to liters converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "mph-to-kmh": [
+    {
+      "q": "How do you convert miles per hour to kilometers per hour?",
+      "a": "1 mph equals 1.60934 km/h. To convert miles per hour to kilometers per hour, multiply by 1.60934."
+    },
+    {
+      "q": "What is 1 mile per hour in kilometers per hour?",
+      "a": "1 mile per hour equals 1.61 km/h."
+    },
+    {
+      "q": "What is 55 mph in kilometers per hour?",
+      "a": "55 mph equals 88.51 km/h."
+    },
+    {
+      "q": "Is this miles per hour to kilometers per hour converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "kmh-to-mph": [
+    {
+      "q": "How do you convert kilometers per hour to miles per hour?",
+      "a": "1 km/h equals 0.621371 mph. To convert kilometers per hour to miles per hour, multiply by 0.621371 (or divide by 1.60934)."
+    },
+    {
+      "q": "What is 1 kilometer per hour in miles per hour?",
+      "a": "1 kilometer per hour equals 0.62 mph."
+    },
+    {
+      "q": "What is 80 km/h in miles per hour?",
+      "a": "80 km/h equals 49.71 mph."
+    },
+    {
+      "q": "Is this kilometers per hour to miles per hour converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "feet-to-inches": [
+    {
+      "q": "How do you convert feet to inches?",
+      "a": "1 foot equals exactly 12 inches. To convert feet to inches, multiply by 12."
+    },
+    {
+      "q": "What is 1 foot in inches?",
+      "a": "1 foot equals 12 in."
+    },
+    {
+      "q": "What is 6 ft in inches?",
+      "a": "6 ft equals 66 in."
+    },
+    {
+      "q": "Is this feet to inches converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "inches-to-feet": [
+    {
+      "q": "How do you convert inches to feet?",
+      "a": "1 inch equals 0.08333 feet (1/12). To convert inches to feet, divide by 12."
+    },
+    {
+      "q": "What is 1 inch in feet?",
+      "a": "1 inch equals 0.083 ft."
+    },
+    {
+      "q": "What is 48 in in feet?",
+      "a": "48 in equals 4 ft."
+    },
+    {
+      "q": "Is this inches to feet converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
   ]
 }
