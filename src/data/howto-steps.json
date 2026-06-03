@@ -425,5 +425,51 @@
       "The result in feet (ft) updates instantly",
       "Use the reference table to look up common length conversions"
     ]
+  },
+  "salary-to-hourly-calculator": {
+    "name": "How to Convert Salary to an Hourly Rate",
+    "description": "Convert an annual salary into an equivalent hourly wage.",
+    "totalTime": "PT30S",
+    "steps": [
+      "Enter your gross annual salary",
+      "Set your hours worked per week (40 for full-time)",
+      "Set your paid weeks per year (usually 52)",
+      "Read your hourly rate plus daily, weekly, and monthly pay"
+    ]
+  },
+  "hourly-to-salary-calculator": {
+    "name": "How to Convert Hourly Pay to a Salary",
+    "description": "Convert an hourly wage into an equivalent annual salary.",
+    "totalTime": "PT30S",
+    "steps": [
+      "Enter your hourly wage",
+      "Set your hours worked per week (40 for full-time)",
+      "Set your paid weeks per year (usually 52)",
+      "Read your annual salary plus weekly and monthly pay"
+    ]
+  },
+  "hours-calculator": {
+    "name": "How to Calculate Hours Worked",
+    "description": "Calculate hours worked from a start time, end time, and break.",
+    "totalTime": "PT30S",
+    "steps": [
+      "Enter your start time",
+      "Enter your end time (overnight shifts are supported)",
+      "Enter your break length in minutes",
+      "Optionally add an hourly rate to see your pay",
+      "Read your hours in decimal and hours:minutes format"
+    ]
+  },
+  "overtime-calculator": {
+    "name": "How to Calculate Overtime Pay",
+    "description": "Calculate overtime pay and total earnings from your hours and rate.",
+    "totalTime": "PT30S",
+    "steps": [
+      "Enter your hourly rate",
+      "Enter your regular hours (typically up to 40)",
+      "Enter your overtime hours",
+      "Choose your overtime multiplier (1.5 for time and a half)",
+      "Read your regular pay, overtime pay, and total"
+    ]
   }
 }

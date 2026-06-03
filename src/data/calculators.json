@@ -484,7 +484,8 @@
         "age-calculator",
         "paycheck-calculator",
         "retirement-planning-calculator",
-        "pto-calculator"
+        "pto-calculator",
+        "hours-calculator"
       ]
     },
     {
@@ -537,7 +538,8 @@
       ],
       "relatedCalculators": [
         "business-days-calculator",
-        "paycheck-calculator"
+        "paycheck-calculator",
+        "hours-calculator"
       ]
     },
     {
@@ -2340,7 +2342,10 @@
       "relatedCalculators": [
         "tax-bracket-calculator",
         "budget-calculator",
-        "retirement-planning-calculator"
+        "retirement-planning-calculator",
+        "salary-to-hourly-calculator",
+        "hourly-to-salary-calculator",
+        "overtime-calculator"
       ]
     },
     {
@@ -3882,6 +3887,123 @@
         "size-converter"
       ],
       "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Salary to Hourly Calculator",
+      "slug": "salary-to-hourly-calculator",
+      "description": "Convert an annual salary into an hourly wage. See your hourly, daily, weekly, and monthly pay based on your work hours.",
+      "shortDescription": "Convert an annual salary into an hourly wage",
+      "category": "financial",
+      "tags": [],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "💵",
+      "seoTitle": "Free Salary to Hourly Calculator — Instant & Accurate",
+      "seoDescription": "Convert an annual salary into an hourly wage. See your hourly, daily, weekly, and monthly pay based on your work hours.",
+      "keywords": [
+        "salary to hourly calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "hourly-to-salary-calculator",
+        "paycheck-calculator",
+        "overtime-calculator"
+      ]
+    },
+    {
+      "title": "Hourly to Salary Calculator",
+      "slug": "hourly-to-salary-calculator",
+      "description": "Convert an hourly wage into an annual salary. See your weekly, monthly, and yearly income based on your hours.",
+      "shortDescription": "Convert an hourly wage into an annual salary",
+      "category": "financial",
+      "tags": [],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "💵",
+      "seoTitle": "Free Hourly to Salary Calculator — Instant & Accurate",
+      "seoDescription": "Convert an hourly wage into an annual salary. See your weekly, monthly, and yearly income based on your hours.",
+      "keywords": [
+        "hourly to salary calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "salary-to-hourly-calculator",
+        "paycheck-calculator",
+        "hours-calculator"
+      ]
+    },
+    {
+      "title": "Hours Calculator",
+      "slug": "hours-calculator",
+      "description": "Calculate hours worked between a start and end time, minus breaks. A free time card calculator with decimal and HH:MM totals.",
+      "shortDescription": "Calculate hours worked between a start and end time, minus breaks",
+      "category": "time-date",
+      "tags": [],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "⏱️",
+      "seoTitle": "Free Hours Calculator — Instant & Accurate",
+      "seoDescription": "Calculate hours worked between a start and end time, minus breaks. A free time card calculator with decimal and HH:MM totals.",
+      "keywords": [
+        "hours calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "hourly-to-salary-calculator",
+        "overtime-calculator",
+        "pto-calculator",
+        "business-days-calculator"
+      ]
+    },
+    {
+      "title": "Overtime Calculator",
+      "slug": "overtime-calculator",
+      "description": "Calculate overtime pay and total earnings from regular hours, overtime hours, and your hourly rate and multiplier.",
+      "shortDescription": "Calculate overtime pay and total earnings from regular hours, overtime hours, and your hourly rate and multiplier",
+      "category": "financial",
+      "tags": [],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "⏰",
+      "seoTitle": "Free Overtime Calculator — Instant & Accurate",
+      "seoDescription": "Calculate overtime pay and total earnings from regular hours, overtime hours, and your hourly rate and multiplier.",
+      "keywords": [
+        "overtime calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "salary-to-hourly-calculator",
+        "hours-calculator",
+        "paycheck-calculator"
+      ]
     }
   ]
 }

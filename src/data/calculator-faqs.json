@@ -666,5 +666,77 @@
       "q": "Is this inches to feet converter free?",
       "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
     }
+  ],
+  "salary-to-hourly-calculator": [
+    {
+      "q": "How do I convert my salary to an hourly rate?",
+      "a": "Divide your annual salary by the number of hours you work in a year. Hourly rate = salary ÷ (hours per week × weeks per year). At 40 hours/week and 52 weeks, that's salary ÷ 2,080."
+    },
+    {
+      "q": "What is $60,000 a year per hour?",
+      "a": "About $28.85 per hour, based on a 40-hour week and 52 weeks ($60,000 ÷ 2,080 = $28.85)."
+    },
+    {
+      "q": "How many work hours are in a year?",
+      "a": "A standard full-time year is about 2,080 hours (40 hours × 52 weeks). If you take unpaid time off, use fewer weeks to get a more accurate hourly rate."
+    },
+    {
+      "q": "Is the hourly rate before or after taxes?",
+      "a": "It's your gross (pre-tax) hourly rate. Your take-home rate will be lower after income tax, Social Security, Medicare, and other deductions."
+    }
+  ],
+  "hourly-to-salary-calculator": [
+    {
+      "q": "How do I convert hourly pay to an annual salary?",
+      "a": "Multiply your hourly rate by the hours you work per week and the weeks you work per year. Annual salary = rate × hours per week × weeks per year."
+    },
+    {
+      "q": "What is $25 an hour annually?",
+      "a": "About $52,000 per year at 40 hours/week for 52 weeks ($25 × 40 × 52)."
+    },
+    {
+      "q": "What is $20 an hour annually?",
+      "a": "About $41,600 per year at 40 hours/week for 52 weeks ($20 × 40 × 52)."
+    },
+    {
+      "q": "Does this include taxes or benefits?",
+      "a": "No. The result is gross pay before taxes and deductions, and it doesn't include benefits like health insurance or retirement matching."
+    }
+  ],
+  "hours-calculator": [
+    {
+      "q": "How do I calculate hours worked?",
+      "a": "Subtract your start time from your end time, then subtract any break. From 9:00 AM to 5:00 PM with a 30-minute break, that's 8 hours − 0.5 = 7.5 hours."
+    },
+    {
+      "q": "How do I convert minutes to decimal hours?",
+      "a": "Divide the minutes by 60. So 15 minutes = 0.25 hours, 30 minutes = 0.5 hours, and 45 minutes = 0.75 hours. Payroll systems use decimal hours."
+    },
+    {
+      "q": "Does the calculator handle overnight shifts?",
+      "a": "Yes. If your end time is earlier than your start time, the calculator assumes the shift crosses midnight and counts the hours correctly."
+    },
+    {
+      "q": "What is 7 hours and 30 minutes in decimal?",
+      "a": "7.5 hours, because 30 minutes is half an hour (30 ÷ 60 = 0.5)."
+    }
+  ],
+  "overtime-calculator": [
+    {
+      "q": "How is overtime pay calculated?",
+      "a": "Multiply your hourly rate by the overtime multiplier to get the overtime rate, then multiply by overtime hours. Total pay = regular pay + overtime pay."
+    },
+    {
+      "q": "What is time and a half?",
+      "a": "Time and a half means 1.5 times your regular hourly rate for overtime hours. At $20/hour, time and a half is $30/hour."
+    },
+    {
+      "q": "When am I entitled to overtime?",
+      "a": "Under the US Fair Labor Standards Act, non-exempt employees earn at least 1.5× their regular rate for hours worked beyond 40 in a workweek. Some states add daily overtime rules."
+    },
+    {
+      "q": "What is $20 an hour at time and a half?",
+      "a": "$30 per hour. Multiply $20 by 1.5 to get the overtime rate."
+    }
   ]
 }

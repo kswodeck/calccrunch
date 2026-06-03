@@ -26,10 +26,10 @@ These are huge-volume, low-difficulty queries. Each is one row + `npm run gen:co
 |---|---|---|---|
 | sales-tax-calculator | "sales tax calculator" | financial | done |
 | discount-calculator | "discount calculator" / "percent off" | math-conversions | done |
-| salary-to-hourly-calculator | "salary to hourly" | financial | todo |
-| hourly-to-salary-calculator | "hourly to salary" | financial | todo |
-| hours-calculator | "hours calculator" (time card) | time-date | todo |
-| overtime-calculator | "overtime pay calculator" | financial | todo |
+| salary-to-hourly-calculator | "salary to hourly" | financial | done |
+| hourly-to-salary-calculator | "hourly to salary" | financial | done |
+| hours-calculator | "hours calculator" (time card) | time-date | done |
+| overtime-calculator | "overtime pay calculator" | financial | done |
 | date-difference-calculator | "days between dates" | time-date | todo |
 
 ## Tier 3 — Math & misc (bespoke)
