@@ -48,11 +48,16 @@
       "Bash(nslookup *)",
       "Bash(git *)",
       "Skill(claude-api)",
-      "Skill(claude-api:*)"
+      "Skill(claude-api:*)",
+      "Bash(ls *)",
+      "Bash(cd *)",
+      "Bash(npm view *)"
     ],
     "deny": [
       "Bash(git push *)",
-      "Bash(git reset --hard *)",
+      "Bash(git reset --hard *)"
+    ],
+    "ask": [
       "Bash(git clean -fd)",
       "Bash(git clean -fdx)",
       "Bash(rm -rf *)",

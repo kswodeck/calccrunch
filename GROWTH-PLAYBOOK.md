@@ -95,3 +95,48 @@ below are ordered by ROI-for-effort.
   once profiles exist.
 - Consider distinct, designed OG/Pinterest images (current per-page OG images are
   auto-generated and a fine starting point).
+
+
+
+
+
+To finish (copy-paste)
+
+git push -u origin seo-fonts-og-enhancements
+Then open the PR with this one-click link:
+https://github.com/kswodeck/calccrunch/compare/master...seo-fonts-og-enhancements?expand=1
+
+(If you install/authorize gh later, gh pr create --base master --fill would do it in one step.)
+
+Suggested PR title
+
+SEO/perf/a11y overhaul: full schema, self-hosted fonts, per-page OG images
+Suggested PR description
+
+## On-site SEO / Performance / Accessibility pass
+
+### SEO
+- FAQPage + HowTo structured data for **all 100 calculators** (58 FAQ + 57 HowTo were missing)
+- Fix homepage meta description that rendered the literal `{totalCalculators}`
+- Blog posts emit `og:type=article` + `article:published_time` / `modified_time`
+- Add Organization JSON-LD (entity SEO) + `og:site_name`
+- Per-page branded OG images for every calculator + post via astro-og-canvas (`/og/<route>.png`)
+
+### Performance
+- Self-host fonts via `@fontsource` (removed render-blocking Google Fonts CDN)
+- Remove global Netlify Identity widget from every public page (`/admin` loads its own)
+- Pin `NODE_VERSION=22` (Astro 6 requires Node ≥22.12)
+
+### Accessibility
+- Skip-to-content link + `id="main-content"`
+- Fix duplicate `<main>` elements (calculator + category layouts → `<section>`)
+
+## ⚠️ Verify on the deploy preview
+Built locally only as far as Node 18 allows (Astro 6 needs ≥22.12 — hence the pin).
+On the Netlify preview, confirm:
+1. A calculator page renders with the correct fonts
+2. `/og/calculators/mortgage-payment-calculator.png` returns a branded image
+3. View-source shows the FAQ/HowTo JSON-LD
+4. Spot-check a few URLs in Google's Rich Results Test
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
