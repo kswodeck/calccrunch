@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Home Affordability Calculator
-description: Calculate how much house you can afford based on income, debts, down payment, and interest rates. See your maximum home price and comfortable monthly payment.
-category: home-real-estate
-tags: ['home affordability', 'buying power', 'mortgage', 'home price', 'debt to income']
-featured: true
 calcType: home-affordability
-seoTitle: Free Home Affordability Calculator - How Much House Can I Afford?
-seoDescription: Calculate how much house you can afford based on your income and debts. Get your maximum home price with our free calculator.
-estimatedTime: 3 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator
@@ -79,7 +70,7 @@ difficulty: Easy
             class="form-input"
             placeholder="20000"
             value="20000"
-            step="500"
+            step="1"
             required
           />
           <span class="input-addon input-addon-toggle" id="down-payment-unit" title="Click to switch between $ and %">$</span>
@@ -150,7 +141,7 @@ difficulty: Easy
             class="form-input"
             placeholder="1200"
             value="1200"
-            step="50"
+            step="0.1"
           />
           <span class="input-addon input-addon-toggle" id="insurance-unit" title="Click to switch between $ and %">$</span>
         </div>
@@ -205,8 +196,8 @@ difficulty: Easy
           <input 
             type="range" 
             id="dti-housing-slider"
-            min="15"
-            max="40"
+            min="10"
+            max="80"
             value="28"
             step="1"
             class="form-slider"
@@ -216,8 +207,8 @@ difficulty: Easy
               type="number" 
               id="max-dti-housing" 
               class="form-input"
-              min="15"
-              max="40"
+              min="10"
+              max="80"
               value="28"
               step="1"
             />
@@ -234,8 +225,8 @@ difficulty: Easy
           <input 
             type="range" 
             id="dti-total-slider"
-            min="20"
-            max="50"
+            min="10"
+            max="90"
             value="36"
             step="1"
             class="form-slider"
@@ -245,8 +236,8 @@ difficulty: Easy
               type="number" 
               id="max-dti-total" 
               class="form-input"
-              min="20"
-              max="50"
+              min="10"
+              max="90"
               value="36"
               step="1"
             />
@@ -287,15 +278,7 @@ difficulty: Easy
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
-  <h4>🔗 Save & Share Your Calculation</h4>
-  <p>
-    Your inputs are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
-    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values will be restored automatically.
-  </p>
-</div>
-
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>🏠 Maximum vs. Comfortable Price</h4>
   <p>
     <strong>Maximum Price:</strong> The highest home price you qualify for based on lender limits. 
@@ -304,12 +287,20 @@ difficulty: Easy
   </p>
 </div>
 
-<div class="info-box" style="background: #FEF3C7; border-left-color: #D97706;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>⚠️ Don't Forget These Costs</h4>
   <p>
     Remember to budget for additional homeownership costs not included in your mortgage payment:
     <strong>Maintenance (1-3% of home value annually)</strong>, <strong>Utilities</strong>, 
     <strong>Closing costs (2-5% of purchase price)</strong>, and <strong>Emergency repairs</strong>.
+  </p>
+</div>
+
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
+  <h4>🔗 Save & Share Your Calculation</h4>
+  <p>
+    Your inputs are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
+    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values will be restored automatically.
   </p>
 </div>
 
@@ -322,8 +313,8 @@ difficulty: Easy
   }
   
   .btn-success {
-    background: #10b981 !important;
-    border-color: #10b981 !important;
+    background: var(--color-success) !important;
+    border-color: var(--color-success) !important;
   }
   
   .affordability-status {
@@ -332,28 +323,28 @@ difficulty: Easy
     padding: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 12px;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-left: 4px solid #10b981;
   }
   
   .affordability-status.status-excellent {
-    background: #f0fdf4;
-    border-left-color: #10b981;
+    background: var(--color-highlight-green);
+    border-left-color: var(--color-success);
   }
   
   .affordability-status.status-aggressive {
-    background: #fef3c7;
-    border-left-color: #f59e0b;
+    background: var(--color-highlight-yellow);
+    border-left-color: var(--color-warning);
   }
   
   .affordability-status.status-stretched {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     border-left-color: #f97316;
   }
   
   .affordability-status.status-risky {
-    background: #fef2f2;
-    border-left-color: #ef4444;
+    background: var(--color-highlight-red);
+    border-left-color: var(--color-error);
   }
   
   .result-card {
@@ -376,7 +367,7 @@ difficulty: Easy
     gap: 1rem;
     margin-top: 0.5rem;
     font-size: 0.85rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
   }
   
   .income-visualization {
@@ -462,7 +453,7 @@ difficulty: Easy
   .bar-container {
     width: 100%;
     height: 32px;
-    background: #e5e7eb;
+    background: var(--color-gray);
     border-radius: 16px;
     overflow: hidden;
   }
@@ -501,7 +492,7 @@ difficulty: Easy
   }
   
   .dti-analysis {
-    background: white;
+    background: var(--color-white);
     padding: 1.5rem;
     border-radius: 12px;
     margin: 2rem 0;
@@ -527,7 +518,7 @@ difficulty: Easy
   .meter-bar {
     width: 100%;
     height: 40px;
-    background: #e5e7eb;
+    background: var(--color-gray);
     border-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -570,7 +561,7 @@ difficulty: Easy
   .marker {
     position: absolute;
     font-size: 0.75rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
     transform: translateX(-50%);
   }
   
@@ -581,7 +572,7 @@ difficulty: Easy
   }
   
   .detail-section {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     padding: 1.5rem;
     border-radius: 8px;
   }
@@ -589,15 +580,15 @@ difficulty: Easy
   .detail-section h5 {
     margin-top: 0;
     margin-bottom: 1rem;
-    color: #374151;
+    color: var(--color-gray-dark);
   }
   
   .table-highlight {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
   }
   
   .key-insights {
-    background: white;
+    background: var(--color-white);
     padding: 1.5rem;
     border-radius: 12px;
     margin: 2rem 0;
@@ -620,22 +611,22 @@ difficulty: Easy
   }
   
   .insight-card.insight-warning {
-    background: #fef2f2;
+    background: var(--color-highlight-red);
     border-color: #fca5a5;
   }
   
   .insight-card.insight-info {
-    background: #eff6ff;
+    background: var(--color-highlight-blue);
     border-color: #93c5fd;
   }
   
   .insight-card.insight-caution {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     border-color: #fcd34d;
   }
   
   .insight-card.insight-success {
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
     border-color: #86efac;
   }
   
@@ -653,7 +644,7 @@ difficulty: Easy
   .insight-content p {
     margin: 0;
     font-size: 0.9rem;
-    color: #4b5563;
+    color: var(--color-gray-dark);
   }
   
   .action-cards {
@@ -667,7 +658,7 @@ difficulty: Easy
     display: flex;
     align-items: center;
     padding: 1rem;
-    background: white;
+    background: var(--color-white);
     border: 2px solid #e5e7eb;
     border-radius: 8px;
     cursor: pointer;
@@ -692,7 +683,7 @@ difficulty: Easy
   }
   
   .action-text small {
-    color: #6b7280;
+    color: var(--color-gray-dark);
   }
   
   .slider-group {
@@ -709,9 +700,9 @@ difficulty: Easy
     width: 100px;
   }
   
-  .text-success { color: #10b981; }
-  .text-warning { color: #f59e0b; }
-  .text-danger { color: #ef4444; }
+  .text-success { color: var(--color-success); }
+  .text-warning { color: var(--color-warning); }
+  .text-danger { color: var(--color-error); }
   
   .disabled {
     opacity: 0.5;

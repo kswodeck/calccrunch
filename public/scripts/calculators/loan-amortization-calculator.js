@@ -75,7 +75,7 @@
     // Auto-calculate if we loaded values
     if (params.toString()) {
       setTimeout(() => {
-        calculateLoan();
+        calculateResults();
       }, 100);
     }
   }
@@ -113,7 +113,10 @@
     // Calculate button
     const calculateBtn = document.getElementById('calculate-btn');
     if (calculateBtn) {
-      calculateBtn.addEventListener('click', calculateLoan);
+      calculateBtn.addEventListener('click', () => {
+        calculateResults();
+        document.querySelector(".calculator-result")?.scrollIntoView({behavior: 'smooth', block: 'start'});
+      });
     }
 
     // Add change listeners to all inputs to save to URL
@@ -123,7 +126,7 @@
       input.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
           e.preventDefault();
-          calculateLoan();
+          calculateResults();
         }
       });
       
@@ -153,7 +156,7 @@
     // Print button will be attached after results render
   }
 
-  function calculateLoan() {
+  function calculateResults() {
     // Get input values
     const loanAmount = getValue('loan-amount');
     const annualRate = getValue('interest-rate');

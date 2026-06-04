@@ -111,7 +111,7 @@
     // Auto-calculate if we loaded values
     if (params.toString()) {
       setTimeout(() => {
-        calculateLoan();
+        calculateResults();
       }, 100);
     }
   }
@@ -180,7 +180,10 @@
     // Calculate button
     const calculateBtn = document.getElementById('calculate-btn');
     if (calculateBtn) {
-      calculateBtn.addEventListener('click', calculateLoan);
+      calculateBtn.addEventListener('click', () => {
+        calculateResults();
+        document.querySelector(".calculator-result")?.scrollIntoView({behavior: 'smooth', block: 'start'});
+      });
     }
 
     // Toggle down payment unit
@@ -213,7 +216,7 @@
       // Auto-calculate on enter key
       input.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
-          calculateLoan();
+          calculateResults();
         }
       });
       
@@ -329,7 +332,7 @@
     }
   }
 
-  function calculateLoan() {
+  function calculateResults() {
     // Get input values
     const vehiclePrice = getValue('vehicle-price');
     const downPaymentValue = getValue('down-payment');

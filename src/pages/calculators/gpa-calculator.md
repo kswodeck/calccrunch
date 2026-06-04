@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: GPA Calculator
-description: Calculate your cumulative GPA with weighted or unweighted grades. Add multiple classes with credit hours and letter grades to see your grade point average.
-category: math-conversions
-tags: ['GPA', 'grades', 'education', 'grade point average', 'academic']
-featured: true
 calcType: gpa
-seoTitle: Free GPA Calculator - Grade Point Average Calculator
-seoDescription: Calculate your GPA with multiple classes and credit hours. Track weighted and unweighted grades with our free calculator.
-estimatedTime: 3 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator
@@ -76,8 +67,8 @@ difficulty: Easy
           id="cumulative-gpa" 
           class="form-input"
           min="0"
-          max="4.3"
-          step="0.001"
+          max="5.0"
+          step="0.01"
           placeholder="3.500"
         />
         <small class="form-help">Your GPA before this semester</small>
@@ -91,7 +82,7 @@ difficulty: Easy
           id="cumulative-credits" 
           class="form-input"
           min="0"
-          max="999"
+          max="10000"
           step="0.5"
           placeholder="45"
         />
@@ -136,15 +127,7 @@ difficulty: Easy
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
-  <h4>🔗 Save & Share Your Calculation</h4>
-  <p>
-    Your grades are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
-    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values will be restored automatically.
-  </p>
-</div>
-
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>🎯 GPA Calculation Formula</h4>
   <p>
     <strong>GPA = Total Grade Points ÷ Total Credit Hours</strong>
@@ -162,7 +145,7 @@ difficulty: Easy
   </p>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>📈 Understanding GPA Scales</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>4.0 Scale:</strong> Most common in US colleges (A = 4.0)</li>
@@ -176,7 +159,7 @@ difficulty: Easy
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>💡 Tips to Improve Your GPA</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Focus on high-credit classes:</strong> They have more impact on your GPA</li>
@@ -188,7 +171,7 @@ difficulty: Easy
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
+<div class="info-box" style="background: var(--color-highlight-red); border-left-color: var(--color-error);">
   <h4>⚠️ Important GPA Considerations</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li>Different schools may calculate GPA differently</li>
@@ -198,6 +181,14 @@ difficulty: Easy
     <li>Transfer credits may be calculated separately</li>
     <li>Graduate schools often look at major GPA separately</li>
   </ul>
+</div>
+
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
+  <h4>🔗 Save & Share Your Calculation</h4>
+  <p>
+    Your grades are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
+    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values will be restored automatically.
+  </p>
 </div>
 
 <style>
@@ -213,11 +204,11 @@ difficulty: Easy
     grid-template-columns: 2fr 1fr 1.5fr 0.8fr 50px;
     gap: 1rem;
     padding: 0.75rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 8px;
     margin-bottom: 1rem;
     font-weight: 600;
-    color: #4b5563;
+    color: var(--color-gray-dark);
   }
   
   .course-list {
@@ -253,9 +244,9 @@ difficulty: Easy
   .grade-points {
     text-align: center;
     font-weight: 600;
-    color: #2C5F8D;
+    color: var(--color-primary-blue);
     padding: 0.5rem;
-    background: #E8F4F8;
+    background: var(--color-highlight-blue);
     border-radius: 6px;
   }
   
@@ -263,8 +254,8 @@ difficulty: Easy
     width: 40px;
     height: 40px;
     border: 2px solid #ef4444;
-    background: white;
-    color: #ef4444;
+    background: var(--color-white);
+    color: var(--color-error);
     border-radius: 6px;
     font-size: 1.5rem;
     font-weight: bold;

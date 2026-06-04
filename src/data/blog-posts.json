@@ -1,0 +1,514 @@
+{
+  "posts": [
+    {
+      "slug": "how-much-house-can-i-afford",
+      "title": "How Much House Can I Afford? A Complete Guide for 2026",
+      "description": "Learn exactly how much house you can afford based on your income, debts, and down payment. Includes the 28/36 rule, FHA limits, and real examples at every salary level.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-02T18:00:00-07:00",
+      "updatedDate": "2026-06-02T18:00:00-07:00",
+      "category": "Financial Planning",
+      "tags": [
+        "mortgage",
+        "home buying",
+        "affordability",
+        "budgeting",
+        "first-time buyer"
+      ],
+      "readTime": "8 min read",
+      "featured": true,
+      "relatedCalculators": [
+        "mortgage-payment-calculator",
+        "home-affordability-calculator",
+        "debt-to-income-calculator"
+      ],
+      "seoTitle": "How Much House Can I Afford? Calculator & Guide (2026)",
+      "seoDescription": "Use our free calculator and guide to find out how much house you can afford on your salary. Covers the 28/36 rule, down payments, and real examples from $50K to $200K income.",
+      "keywords": [
+        "how much house can I afford",
+        "home affordability",
+        "mortgage calculator",
+        "house budget",
+        "28/36 rule"
+      ]
+    },
+    {
+      "slug": "compound-interest-explained",
+      "title": "Compound Interest Explained: How Your Money Grows While You Sleep",
+      "description": "Understand how compound interest works, why Einstein called it the 8th wonder, and how to use it to build wealth. Includes real growth examples and a free calculator.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-02T18:00:00-07:00",
+      "updatedDate": "2026-06-02T18:00:00-07:00",
+      "category": "Investing",
+      "tags": [
+        "compound interest",
+        "investing",
+        "savings",
+        "wealth building",
+        "passive income"
+      ],
+      "readTime": "7 min read",
+      "featured": true,
+      "relatedCalculators": [
+        "compound-interest-calculator",
+        "savings-goal-calculator",
+        "retirement-planning-calculator"
+      ],
+      "seoTitle": "Compound Interest Explained Simply (With Calculator & Examples)",
+      "seoDescription": "Learn how compound interest works with real examples showing $100/month growing to $1M+. Free compound interest calculator included. Start building wealth today.",
+      "keywords": [
+        "compound interest",
+        "how compound interest works",
+        "compound interest calculator",
+        "compound growth",
+        "Rule of 72"
+      ]
+    },
+    {
+      "slug": "50-30-20-budget-rule",
+      "title": "The 50/30/20 Budget Rule: A Simple System That Actually Works",
+      "description": "Master the 50/30/20 budgeting method with practical examples at every income level. Learn how to allocate your paycheck for needs, wants, and savings without spreadsheets.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-02T18:00:00-07:00",
+      "updatedDate": "2026-06-02T18:00:00-07:00",
+      "category": "Budgeting",
+      "tags": [
+        "budgeting",
+        "50/30/20 rule",
+        "personal finance",
+        "saving money",
+        "money management"
+      ],
+      "readTime": "6 min read",
+      "featured": true,
+      "relatedCalculators": [
+        "budget-calculator",
+        "savings-goal-calculator",
+        "paycheck-calculator"
+      ],
+      "seoTitle": "50/30/20 Budget Rule Explained (With Free Calculator)",
+      "seoDescription": "Learn the 50/30/20 budget rule with real examples at $40K-$150K income. Free budget calculator included. The simplest budgeting method that actually works.",
+      "keywords": [
+        "50/30/20 rule",
+        "budget rule",
+        "how to budget",
+        "budgeting method",
+        "50 30 20"
+      ]
+    },
+    {
+      "slug": "how-to-calculate-bmi",
+      "title": "How to Calculate BMI: Formula, Chart, and What Your Number Actually Means",
+      "description": "Learn how BMI is calculated, what the categories mean, when BMI is misleading, and better alternatives for measuring health. Includes the formula, a chart, and free calculator.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-02T18:00:00-07:00",
+      "updatedDate": "2026-06-02T18:00:00-07:00",
+      "category": "Health & Fitness",
+      "tags": [
+        "BMI",
+        "body mass index",
+        "health",
+        "weight",
+        "fitness"
+      ],
+      "readTime": "6 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "bmi-calculator",
+        "body-fat-calculator",
+        "calorie-calculator"
+      ],
+      "seoTitle": "BMI Calculator & Chart: How to Calculate Body Mass Index",
+      "seoDescription": "Calculate your BMI with our free tool and understand what the number means. Includes the formula, BMI chart by age, and when BMI is misleading for athletes.",
+      "keywords": [
+        "BMI calculator",
+        "how to calculate BMI",
+        "BMI chart",
+        "body mass index",
+        "healthy BMI"
+      ]
+    },
+    {
+      "slug": "retirement-savings-by-age",
+      "title": "How Much Should You Have Saved for Retirement by Age?",
+      "description": "Retirement savings benchmarks for every age from 25 to 65. See if you're on track, how to catch up if you're behind, and the power of starting early with real numbers.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-02T18:00:00-07:00",
+      "updatedDate": "2026-06-02T18:00:00-07:00",
+      "category": "Retirement",
+      "tags": [
+        "retirement",
+        "savings",
+        "401k",
+        "investing",
+        "financial planning"
+      ],
+      "readTime": "9 min read",
+      "featured": true,
+      "relatedCalculators": [
+        "retirement-planning-calculator",
+        "compound-interest-calculator",
+        "fire-calculator"
+      ],
+      "seoTitle": "Retirement Savings by Age: How Much Should You Have? (2026)",
+      "seoDescription": "See retirement savings benchmarks by age 25-65. Find out if you're on track and how to catch up. Includes Fidelity's guidelines, the 4% rule, and free retirement calculator.",
+      "keywords": [
+        "retirement savings by age",
+        "how much to save for retirement",
+        "retirement calculator",
+        "401k savings",
+        "retirement benchmarks"
+      ]
+    },
+    {
+      "slug": "emergency-fund-how-much",
+      "title": "How Much Should You Have in an Emergency Fund? (And Where to Keep It)",
+      "description": "Find out exactly how much you need in an emergency fund based on your expenses, job stability, and life situation. Plus the best places to keep it earning interest.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-05T18:00:00-07:00",
+      "updatedDate": "2026-06-05T18:00:00-07:00",
+      "category": "Budgeting",
+      "tags": [
+        "emergency fund",
+        "savings",
+        "personal finance",
+        "budgeting",
+        "high-yield savings"
+      ],
+      "readTime": "6 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "savings-goal-calculator",
+        "budget-calculator",
+        "compound-interest-calculator"
+      ],
+      "seoTitle": "Emergency Fund: How Much Do You Need? (2026 Guide)",
+      "seoDescription": "Calculate your ideal emergency fund size based on expenses and risk factors. Learn where to keep it for maximum interest while staying accessible.",
+      "keywords": [
+        "emergency fund",
+        "how much emergency fund",
+        "emergency savings",
+        "rainy day fund",
+        "high-yield savings account"
+      ]
+    },
+    {
+      "slug": "debt-avalanche-vs-snowball",
+      "title": "Debt Avalanche vs Snowball: Which Payoff Method Saves You More?",
+      "description": "Compare the two most popular debt payoff strategies with real numbers. See which method saves the most interest and which keeps you motivated longer.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-09T18:00:00-07:00",
+      "updatedDate": "2026-06-09T18:00:00-07:00",
+      "category": "Financial Planning",
+      "tags": [
+        "debt payoff",
+        "avalanche method",
+        "snowball method",
+        "credit card debt",
+        "personal finance"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "credit-card-payoff-calculator",
+        "loan-amortization-calculator",
+        "budget-calculator"
+      ],
+      "seoTitle": "Debt Avalanche vs Snowball Method: Which Is Better? (With Calculator)",
+      "seoDescription": "Compare debt avalanche vs snowball with real examples. See how much interest you save with each method and which keeps you motivated to become debt-free.",
+      "keywords": [
+        "debt avalanche vs snowball",
+        "debt payoff method",
+        "how to pay off debt",
+        "debt snowball",
+        "debt avalanche"
+      ]
+    },
+    {
+      "slug": "what-is-tdee",
+      "title": "What Is TDEE? How to Calculate Your Total Daily Energy Expenditure",
+      "description": "Understand TDEE (Total Daily Energy Expenditure), how it's calculated, and how to use it for weight loss, maintenance, or muscle gain with practical daily examples.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-12T18:00:00-07:00",
+      "updatedDate": "2026-06-12T18:00:00-07:00",
+      "category": "Health & Fitness",
+      "tags": [
+        "TDEE",
+        "calories",
+        "weight loss",
+        "metabolism",
+        "fitness"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "tdee-calculator",
+        "calorie-calculator",
+        "macro-calculator"
+      ],
+      "seoTitle": "TDEE Calculator & Guide: How Many Calories Do You Actually Burn?",
+      "seoDescription": "Calculate your TDEE and learn exactly how many calories you burn daily. Includes activity level breakdowns, weight loss strategies, and a free calculator.",
+      "keywords": [
+        "TDEE",
+        "total daily energy expenditure",
+        "TDEE calculator",
+        "how many calories do I burn",
+        "calories burned per day"
+      ]
+    },
+    {
+      "slug": "refinance-mortgage-when",
+      "title": "When Should You Refinance Your Mortgage? The Break-Even Rule",
+      "description": "Learn the exact math behind refinancing decisions. Calculate your break-even point, see when refinancing saves money, and avoid the common traps that cost homeowners thousands.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-16T18:00:00-07:00",
+      "updatedDate": "2026-06-16T18:00:00-07:00",
+      "category": "Financial Planning",
+      "tags": [
+        "refinance",
+        "mortgage",
+        "interest rates",
+        "home loan",
+        "savings"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "refinance-calculator",
+        "mortgage-payment-calculator",
+        "loan-amortization-calculator"
+      ],
+      "seoTitle": "Should I Refinance My Mortgage? Break-Even Calculator & Guide",
+      "seoDescription": "Calculate if refinancing your mortgage is worth it. Learn the break-even rule, when to refinance, and how much you could save at today's rates.",
+      "keywords": [
+        "when to refinance mortgage",
+        "refinance calculator",
+        "mortgage refinance",
+        "break-even point refinance",
+        "refinance worth it"
+      ]
+    },
+    {
+      "slug": "meal-prep-cost-savings",
+      "title": "How Much Does Meal Prepping Actually Save? We Did the Math",
+      "description": "A real cost comparison of meal prepping vs eating out vs grocery shopping without a plan. Includes weekly breakdowns, time investment analysis, and tips to maximize savings.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-19T18:00:00-07:00",
+      "updatedDate": "2026-06-19T18:00:00-07:00",
+      "category": "Budgeting",
+      "tags": [
+        "meal prep",
+        "food budget",
+        "saving money",
+        "cooking",
+        "grocery savings"
+      ],
+      "readTime": "6 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "budget-calculator",
+        "recipe-scaler-converter",
+        "tip-calculator"
+      ],
+      "seoTitle": "Meal Prep Cost Savings: How Much Can You Save Per Week?",
+      "seoDescription": "See exactly how much meal prepping saves vs eating out. Real cost breakdowns for singles, couples, and families with time investment analysis.",
+      "keywords": [
+        "meal prep savings",
+        "how much does meal prep save",
+        "food budget",
+        "meal prep cost",
+        "cooking vs eating out"
+      ]
+    },
+    {
+      "slug": "understanding-tax-brackets",
+      "title": "How Tax Brackets Actually Work (Most People Get This Wrong)",
+      "description": "Clear up the most common tax misconception and learn how marginal tax rates work with visual examples. See exactly how much tax you owe at every income level.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-23T18:00:00-07:00",
+      "updatedDate": "2026-06-23T18:00:00-07:00",
+      "category": "Financial Planning",
+      "tags": [
+        "taxes",
+        "tax brackets",
+        "income tax",
+        "marginal rate",
+        "effective rate"
+      ],
+      "readTime": "6 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "tax-bracket-calculator",
+        "paycheck-calculator",
+        "budget-calculator"
+      ],
+      "seoTitle": "How Tax Brackets Work: Marginal vs Effective Tax Rate Explained",
+      "seoDescription": "Learn how tax brackets really work (hint: you don't pay the top rate on all your income). Visual examples showing exactly how much tax you owe at every income level.",
+      "keywords": [
+        "how tax brackets work",
+        "marginal tax rate",
+        "effective tax rate",
+        "tax brackets 2026",
+        "income tax explained"
+      ]
+    },
+    {
+      "slug": "gpa-calculator-guide",
+      "title": "How to Calculate Your GPA: Weighted vs Unweighted (With Examples)",
+      "description": "Learn how to calculate both weighted and unweighted GPA, understand the 4.0 scale, and see what GPA you need for your target colleges. Includes grade conversion charts.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-26T18:00:00-07:00",
+      "updatedDate": "2026-06-26T18:00:00-07:00",
+      "category": "Education",
+      "tags": [
+        "GPA",
+        "college",
+        "grades",
+        "education",
+        "academic"
+      ],
+      "readTime": "6 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "gpa-calculator",
+        "grade-calculator",
+        "percentage-calculator"
+      ],
+      "seoTitle": "GPA Calculator: How to Calculate Weighted & Unweighted GPA",
+      "seoDescription": "Calculate your GPA with our free tool. Learn the difference between weighted and unweighted GPA, see grade conversion charts, and find target GPAs for top colleges.",
+      "keywords": [
+        "GPA calculator",
+        "how to calculate GPA",
+        "weighted GPA",
+        "unweighted GPA",
+        "4.0 scale"
+      ]
+    },
+    {
+      "slug": "electric-bill-too-high",
+      "title": "Why Is My Electric Bill So High? 10 Appliances That Cost More Than You Think",
+      "description": "Find out which appliances are driving up your electricity costs with real kWh calculations. Learn simple changes that can cut your bill by 20-40% without sacrificing comfort.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-30T18:00:00-07:00",
+      "updatedDate": "2026-06-30T18:00:00-07:00",
+      "category": "Home & Living",
+      "tags": [
+        "electricity",
+        "energy costs",
+        "utility bills",
+        "home savings",
+        "energy efficiency"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "electricity-cost-calculator",
+        "budget-calculator",
+        "home-improvement-cost-calculator"
+      ],
+      "seoTitle": "10 Appliances Costing You the Most on Your Electric Bill (2026)",
+      "seoDescription": "Find out which appliances use the most electricity and what they actually cost per month. Simple tips to cut your electric bill by 20-40% without major changes.",
+      "keywords": [
+        "high electric bill",
+        "electricity costs by appliance",
+        "reduce electric bill",
+        "energy saving tips",
+        "appliance electricity cost"
+      ]
+    },
+    {
+      "slug": "kg-to-lbs-conversion-guide",
+      "title": "How to Convert KG to LBS (With a Simple Formula & Chart)",
+      "description": "Learn how to convert kilograms to pounds with a simple formula, a quick mental-math shortcut, and a kg-to-lbs reference chart.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-03T09:00:00-07:00",
+      "updatedDate": "2026-06-03T09:00:00-07:00",
+      "category": "Guides",
+      "tags": [
+        "unit conversion",
+        "kg to lbs",
+        "weight",
+        "metric",
+        "measurement"
+      ],
+      "readTime": "5 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "kg-to-lbs",
+        "lbs-to-kg"
+      ],
+      "seoTitle": "How to Convert KG to LBS (With a Simple Formula & Chart)",
+      "seoDescription": "Convert kg to lbs the easy way: the formula (×2.20462), a fast mental-math trick, a full conversion chart, and the reverse lbs-to-kg method.",
+      "keywords": [
+        "how to convert kg to lbs",
+        "kg to lbs formula",
+        "kilograms to pounds",
+        "kg to lbs chart",
+        "convert kg to pounds"
+      ]
+    },
+    {
+      "slug": "sales-tax-by-state-guide",
+      "title": "Sales Tax by State: 2026 Rates and How to Calculate It",
+      "description": "See how sales tax works by state, which states have none, and how to calculate the tax and total price on any purchase.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-06T09:00:00-07:00",
+      "updatedDate": "2026-06-06T09:00:00-07:00",
+      "category": "Financial Planning",
+      "tags": [
+        "sales tax",
+        "taxes",
+        "state taxes",
+        "personal finance",
+        "shopping"
+      ],
+      "readTime": "6 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "sales-tax-calculator",
+        "discount-calculator"
+      ],
+      "seoTitle": "Sales Tax by State: 2026 Rates and How to Calculate It",
+      "seoDescription": "2026 sales tax by state: base rates, the 5 no-tax states, how local taxes stack, and how to calculate sales tax on any purchase.",
+      "keywords": [
+        "sales tax by state",
+        "state sales tax rates",
+        "how to calculate sales tax",
+        "states with no sales tax",
+        "2026 sales tax"
+      ]
+    },
+    {
+      "slug": "how-to-calculate-a-discount",
+      "title": "How to Calculate a Discount (Percent Off Made Easy)",
+      "description": "Calculate any discount in seconds: the percent-off formula, mental-math shortcuts, and how stacked discounts really work.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-09T09:00:00-07:00",
+      "updatedDate": "2026-06-09T09:00:00-07:00",
+      "category": "Guides",
+      "tags": [
+        "discount",
+        "percent off",
+        "shopping",
+        "mental math",
+        "savings"
+      ],
+      "readTime": "5 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "discount-calculator",
+        "percentage-calculator",
+        "sales-tax-calculator"
+      ],
+      "seoTitle": "How to Calculate a Discount (Percent Off Made Easy)",
+      "seoDescription": "How to calculate a discount: the percent-off formula, fast mental-math tricks, stacked-discount math, and finding the original price.",
+      "keywords": [
+        "how to calculate a discount",
+        "percent off calculator",
+        "discount formula",
+        "stacked discounts",
+        "calculate sale price"
+      ]
+    }
+  ]
+}

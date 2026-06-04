@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load holidays from JSON file
     async function loadHolidays() {
         try {
-            const response = await fetch('../src/data/holidays.json');
+            const response = await fetch('/data/holidays.json');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Initial calculation if data exists
         if (hasValidInput()) {
-            calculateBusinessDays();
+            calculateResults();
         }
     }
     
@@ -85,14 +85,14 @@ document.addEventListener('DOMContentLoaded', function() {
             startDate.addEventListener('change', () => {
                 updateHolidayToggles(); // Update holiday dates when start date changes
                 saveToURL();
-                if (hasValidInput()) calculateBusinessDays();
+                if (hasValidInput()) calculateResults();
             });
         }
         
         if (endDate) {
             endDate.addEventListener('change', () => {
                 saveToURL();
-                if (hasValidInput()) calculateBusinessDays();
+                if (hasValidInput()) calculateResults();
             });
         }
         
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
             baseDate.addEventListener('change', () => {
                 updateHolidayToggles(); // Update holiday dates when base date changes
                 saveToURL();
-                if (hasValidInput()) calculateBusinessDays();
+                if (hasValidInput()) calculateResults();
             });
         }
         
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (businessDaysCount) {
             businessDaysCount.addEventListener('input', () => {
                 saveToURL();
-                if (hasValidInput()) calculateBusinessDays();
+                if (hasValidInput()) calculateResults();
             });
         }
         
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
             countrySelect.addEventListener('change', () => {
                 updateHolidayToggles();
                 saveToURL();
-                if (hasValidInput()) calculateBusinessDays();
+                if (hasValidInput()) calculateResults();
             });
         }
         
@@ -125,12 +125,15 @@ document.addEventListener('DOMContentLoaded', function() {
             excludeHolidays.addEventListener('change', () => {
                 updateHolidayToggles();
                 saveToURL();
-                if (hasValidInput()) calculateBusinessDays();
+                if (hasValidInput()) calculateResults();
             });
         }
         
         // Action buttons
-        if (calculateBtn) calculateBtn.addEventListener('click', calculateBusinessDays);
+        if (calculateBtn) calculateBtn.addEventListener('click', () => {
+          calculateResults();
+          document.querySelector(".calculator-result")?.scrollIntoView({behavior: 'smooth', block: 'start'});
+        });
         if (clearBtn) clearBtn.addEventListener('click', clearAll);
         if (shareBtn) shareBtn.addEventListener('click', shareResults);
     }
@@ -209,23 +212,23 @@ document.addEventListener('DOMContentLoaded', function() {
         if (country === 'custom') {
             // Custom holidays only mode
             container.innerHTML = `
-                <h4 style="margin-top: 1rem; margin-bottom: 0.75rem; color: #2C5F8D;">Custom Holidays</h4>
+                <h4 style="margin-top: 1rem; margin-bottom: 0.75rem; color: var(--color-primary-blue);">Custom Holidays</h4>
                 
-                <div class="add-holiday-section" style="margin-bottom: 1rem; padding: 1rem; background: white; border-radius: 8px; border: 2px dashed #93c5fd;">
-                    <h5 style="margin: 0 0 0.75rem 0; color: #2C5F8D;">Add Custom Holiday</h5>
+                <div class="add-holiday-section" style="margin-bottom: 1rem; padding: 1rem; background: var(--color-white); border-radius: 8px; border: 2px dashed #93c5fd;">
+                    <h5 style="margin: 0 0 0.75rem 0; color: var(--color-primary-blue);">Add Custom Holiday</h5>
                     <div style="display: grid; grid-template-columns: 1fr 1fr auto; gap: 0.5rem; align-items: end;">
                         <div>
-                            <label style="display: block; font-size: 0.9rem; margin-bottom: 0.25rem; color: #6b7280;">Holiday Name</label>
+                            <label style="display: block; font-size: 0.9rem; margin-bottom: 0.25rem; color: var(--color-gray-dark);">Holiday Name</label>
                             <input type="text" 
                                    id="custom-holiday-name" 
                                    placeholder="e.g., Company Holiday"
-                                   style="width: 100%; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 4px;">
+                                   style="width: 100%; padding: 0.5rem; border: 1px solid var(--color-surface-table-border); border-radius: 4px;">
                         </div>
                         <div>
-                            <label style="display: block; font-size: 0.9rem; margin-bottom: 0.25rem; color: #6b7280;">Date</label>
+                            <label style="display: block; font-size: 0.9rem; margin-bottom: 0.25rem; color: var(--color-gray-dark);">Date</label>
                             <input type="date" 
                                    id="custom-holiday-date"
-                                   style="width: 100%; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 4px;">
+                                   style="width: 100%; padding: 0.5rem; border: 1px solid var(--color-surface-table-border); border-radius: 4px;">
                         </div>
                         <button type="button" 
                                 onclick="addCustomHoliday()"
@@ -237,7 +240,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 <div class="holiday-toggles" style="display: grid; gap: 0.5rem;">
                     ${customHolidays.map((holiday, index) => `
-                        <div class="holiday-toggle custom-holiday" style="display: flex; align-items: center; padding: 0.5rem; background: white; border-radius: 4px; border: 1px solid #e5e7eb;">
+                        <div class="holiday-toggle custom-holiday" style="display: flex; align-items: center; padding: 0.5rem; background: var(--color-white); border-radius: 4px; border: 1px solid var(--color-surface-table-border);">
                             <input type="checkbox" 
                                    data-custom-holiday-index="${index}" 
                                    ${holiday.enabled !== false ? 'checked' : ''}
@@ -251,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <input type="date" 
                                    value="${holiday.date}"
                                    onchange="updateCustomHolidayDate(${index}, this.value)"
-                                   style="padding: 0.25rem 0.5rem; border: 1px solid transparent; background: transparent; color: #6b7280; font-size: 0.9rem; margin-right: 0.5rem; cursor: pointer;"
+                                   style="padding: 0.25rem 0.5rem; border: 1px solid transparent; background: transparent; color: var(--color-gray-dark); font-size: 0.9rem; margin-right: 0.5rem; cursor: pointer;"
                                    onfocus="this.style.borderColor='#93c5fd'; this.style.background='#f0f9ff';"
                                    onblur="this.style.borderColor='transparent'; this.style.background='transparent';">
                             <button type="button"
@@ -261,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             </button>
                         </div>
                     `).join('')}
-                    ${customHolidays.length === 0 ? '<p style="color: #9ca3af; text-align: center; padding: 1rem;">No custom holidays added yet</p>' : ''}
+                    ${customHolidays.length === 0 ? '<p style="color: var(--color-gray); text-align: center; padding: 1rem;">No custom holidays added yet</p>' : ''}
                 </div>
             `;
         } else {
@@ -273,40 +276,40 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             container.innerHTML = `
-                <h4 style="margin-top: 1rem; margin-bottom: 0.75rem; color: #2C5F8D;">Select Holidays to Exclude</h4>
+                <h4 style="margin-top: 1rem; margin-bottom: 0.75rem; color: var(--color-primary-blue);">Select Holidays to Exclude</h4>
                 
                 <div class="holiday-toggles" style="display: grid; gap: 0.5rem;">
                     ${countryHolidays.holidays.map((holiday, index) => {
                         const holidayDate = getHolidayDate(holiday, year);
                         const dateStr = holidayDate ? formatDateShort(holidayDate) : '';
                         return `
-                            <label class="holiday-toggle" style="display: flex; align-items: center; padding: 0.5rem; background: white; border-radius: 4px; cursor: pointer; border: 1px solid #e5e7eb;">
+                            <label class="holiday-toggle" style="display: flex; align-items: center; padding: 0.5rem; background: var(--color-white); border-radius: 4px; cursor: pointer; border: 1px solid var(--color-surface-table-border);">
                                 <input type="checkbox" 
                                        data-holiday-index="${index}" 
                                        ${holiday.enabled ? 'checked' : ''}
                                        style="margin-right: 0.75rem;">
                                 <span class="holiday-name" style="flex: 1; font-weight: 500;">${holiday.name}</span>
-                                <span class="holiday-date" style="color: #6b7280; font-size: 0.9rem;">${dateStr}</span>
+                                <span class="holiday-date" style="color: var(--color-gray-dark); font-size: 0.9rem;">${dateStr}</span>
                             </label>
                         `;
                     }).join('')}
                 </div>
                 
-                <div class="add-holiday-section" style="margin-top: 1rem; padding: 1rem; background: #f0f9ff; border-radius: 8px; border: 2px dashed #93c5fd;">
-                    <h5 style="margin: 0 0 0.75rem 0; color: #2C5F8D;">Add Custom Holiday</h5>
+                <div class="add-holiday-section" style="margin-top: 1rem; padding: 1rem; background: var(--color-highlight-blue); border-radius: 8px; border: 2px dashed #93c5fd;">
+                    <h5 style="margin: 0 0 0.75rem 0; color: var(--color-primary-blue);">Add Custom Holiday</h5>
                     <div style="display: grid; grid-template-columns: 1fr 1fr auto; gap: 0.5rem; align-items: end;">
                         <div>
-                            <label style="display: block; font-size: 0.9rem; margin-bottom: 0.25rem; color: #6b7280;">Holiday Name</label>
+                            <label style="display: block; font-size: 0.9rem; margin-bottom: 0.25rem; color: var(--color-gray-dark);">Holiday Name</label>
                             <input type="text" 
                                    id="custom-holiday-name" 
                                    placeholder="e.g., Office Closed"
-                                   style="width: 100%; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 4px;">
+                                   style="width: 100%; padding: 0.5rem; border: 1px solid var(--color-surface-table-border); border-radius: 4px;">
                         </div>
                         <div>
-                            <label style="display: block; font-size: 0.9rem; margin-bottom: 0.25rem; color: #6b7280;">Date</label>
+                            <label style="display: block; font-size: 0.9rem; margin-bottom: 0.25rem; color: var(--color-gray-dark);">Date</label>
                             <input type="date" 
                                    id="custom-holiday-date"
-                                   style="width: 100%; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 4px;">
+                                   style="width: 100%; padding: 0.5rem; border: 1px solid var(--color-surface-table-border); border-radius: 4px;">
                         </div>
                         <button type="button" 
                                 onclick="addCustomHoliday()"
@@ -317,10 +320,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 
                 ${customHolidays.length > 0 ? `
-                    <h5 style="margin-top: 1rem; margin-bottom: 0.5rem; color: #2C5F8D;">Custom Holidays</h5>
+                    <h5 style="margin-top: 1rem; margin-bottom: 0.5rem; color: var(--color-primary-blue);">Custom Holidays</h5>
                     <div class="custom-holiday-toggles" style="display: grid; gap: 0.5rem;">
                         ${customHolidays.map((holiday, index) => `
-                            <div class="holiday-toggle custom-holiday" style="display: flex; align-items: center; padding: 0.5rem; background: #f0f9ff; border-radius: 4px; border: 1px solid #93c5fd;">
+                            <div class="holiday-toggle custom-holiday" style="display: flex; align-items: center; padding: 0.5rem; background: var(--color-highlight-blue); border-radius: 4px; border: 1px solid #93c5fd;">
                                 <input type="checkbox" 
                                        data-custom-holiday-index="${index}" 
                                        ${holiday.enabled !== false ? 'checked' : ''}
@@ -334,7 +337,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <input type="date" 
                                        value="${holiday.date}"
                                        onchange="updateCustomHolidayDate(${index}, this.value)"
-                                       style="padding: 0.25rem 0.5rem; border: 1px solid transparent; background: transparent; color: #6b7280; font-size: 0.9rem; margin-right: 0.5rem; cursor: pointer;"
+                                       style="padding: 0.25rem 0.5rem; border: 1px solid transparent; background: transparent; color: var(--color-gray-dark); font-size: 0.9rem; margin-right: 0.5rem; cursor: pointer;"
                                        onfocus="this.style.borderColor='#2563eb'; this.style.background='white';"
                                        onblur="this.style.borderColor='transparent'; this.style.background='transparent';">
                                 <button type="button"
@@ -357,12 +360,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 .holiday-toggles-container {
                     margin-top: 1rem;
                     padding: 1rem;
-                    background: #f8f9fa;
+                    background: var(--color-surface-neutral);
                     border-radius: 8px;
                 }
                 .holiday-toggle:hover {
-                    border-color: #FF6B35 !important;
-                    background: #fff8f5 !important;
+                    border-color: var(--color-accent-orange) !important;
+                    background: var(--color-highlight-orange-alt) !important;
                 }
                 .holiday-toggle input[type="checkbox"] {
                     width: 18px;
@@ -371,7 +374,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 .add-holiday-section input:focus {
                     outline: none;
-                    border-color: #FF6B35;
+                    border-color: var(--color-accent-orange);
                 }
                 .add-holiday-section button:hover {
                     background: #E5521F !important;
@@ -384,12 +387,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     font-size: 16px;
                 }
                 .custom-holiday input[type="date"] {
-                    color: #6b7280;
+                    color: var(--color-gray-dark);
                     font-size: 0.9rem;
                 }
                 .custom-holiday input[type="text"]:hover,
                 .custom-holiday input[type="date"]:hover {
-                    background: #f0f9ff !important;
+                    background: var(--color-highlight-blue) !important;
                 }
                 .custom-holiday button:hover {
                     background: #dc2626 !important;
@@ -419,7 +422,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (countryHolidays && countryHolidays.holidays[index]) {
                         countryHolidays.holidays[index].enabled = this.checked;
                         saveToURL();
-                        if (hasValidInput()) calculateBusinessDays();
+                        if (hasValidInput()) calculateResults();
                     }
                 });
             });
@@ -432,7 +435,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (customHolidays[index]) {
                     customHolidays[index].enabled = this.checked;
                     saveToURL();
-                    if (hasValidInput()) calculateBusinessDays();
+                    if (hasValidInput()) calculateResults();
                 }
             });
         });
@@ -490,7 +493,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update UI and save
         updateHolidayToggles();
         saveToURL();
-        if (hasValidInput()) calculateBusinessDays();
+        if (hasValidInput()) calculateResults();
     };
     
     window.removeCustomHoliday = function(index) {
@@ -498,7 +501,7 @@ document.addEventListener('DOMContentLoaded', function() {
             customHolidays.splice(index, 1);
             updateHolidayToggles();
             saveToURL();
-            if (hasValidInput()) calculateBusinessDays();
+            if (hasValidInput()) calculateResults();
         }
     };
     
@@ -506,7 +509,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (index >= 0 && index < customHolidays.length && newName.trim()) {
             customHolidays[index].name = newName.trim();
             saveToURL();
-            if (hasValidInput()) calculateBusinessDays();
+            if (hasValidInput()) calculateResults();
         }
     };
     
@@ -520,7 +523,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Update UI to reflect new sort order
             updateHolidayToggles();
             saveToURL();
-            if (hasValidInput()) calculateBusinessDays();
+            if (hasValidInput()) calculateResults();
         }
     };
     
@@ -791,7 +794,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    function calculateBusinessDays() {
+    function calculateResults() {
         const calcType = getSelectedCalcType();
         
         try {
@@ -1340,7 +1343,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 });
                 if (disabledHolidays.length > 0) {
-                    debugger;
                     params.set('disabled', disabledHolidays.join(','));
                 }
             }
@@ -1384,7 +1386,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (countryHolidays && countryHolidays.holidays) {
                 const disabledIndices = params.get('disabled').split(',').map(i => parseInt(i));
                 countryHolidays?.holidays?.forEach((holiday, index) => {
-                    debugger;
                     if (disabledIndices?.includes(index)) {
                         countryHolidays.holidays[index].enabled = false;
                     } else countryHolidays.holidays[index].enabled = true;
@@ -1414,12 +1415,12 @@ style.textContent = `
     }
     
     .result-header h2 {
-        color: #2C5F8D;
+        color: var(--color-primary-blue);
         margin-bottom: 0.5rem;
     }
     
     .result-header p {
-        color: #6b7280;
+        color: var(--color-gray-dark);
         font-size: 1.1rem;
     }
     
@@ -1439,14 +1440,14 @@ style.textContent = `
     
     .result-value-container {
         padding: 1.5rem;
-        background: white;
+        background: var(--color-white);
         border-radius: 12px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
     
     .result-label {
         font-size: 1.1rem;
-        color: #6b7280;
+        color: var(--color-gray-dark);
         margin-bottom: 0.5rem;
     }
     
@@ -1458,20 +1459,20 @@ style.textContent = `
     
     .result-sublabel {
         font-size: 0.9rem;
-        color: #9ca3af;
+        color: var(--color-gray);
     }
     
     .result-date {
         margin-top: 1.5rem;
         padding: 1rem;
-        background: #f8f9fa;
+        background: var(--color-surface-neutral);
         border-radius: 8px;
     }
     
     .date-label {
         display: block;
         font-size: 0.9rem;
-        color: #6b7280;
+        color: var(--color-gray-dark);
         margin-bottom: 0.5rem;
     }
     
@@ -1479,7 +1480,7 @@ style.textContent = `
         display: block;
         font-size: 1.2rem;
         font-weight: 600;
-        color: #2C5F8D;
+        color: var(--color-primary-blue);
     }
     
     .result-details {
@@ -1493,34 +1494,34 @@ style.textContent = `
         display: flex;
         justify-content: space-between;
         padding: 1rem;
-        background: white;
+        background: var(--color-white);
         border-radius: 8px;
-        border: 1px solid #e5e7eb;
+        border: 1px solid var(--color-surface-table-border);
     }
     
     .detail-label {
-        color: #6b7280;
+        color: var(--color-gray-dark);
     }
     
     .detail-value {
         font-weight: 700;
-        color: #2C5F8D;
+        color: var(--color-primary-blue);
         font-size: 1.2rem;
     }
     
-    .text-success { color: #10b981; }
+    .text-success { color: var(--color-success); }
     
     .calculation-breakdown {
         margin: 2rem 0;
         padding: 1.5rem;
-        background: white;
+        background: var(--color-white);
         border-radius: 12px;
-        border: 1px solid #e5e7eb;
+        border: 1px solid var(--color-surface-table-border);
     }
     
     .calculation-breakdown h3 {
         margin-bottom: 1rem;
-        color: #2C5F8D;
+        color: var(--color-primary-blue);
     }
     
     .breakdown-chart {
@@ -1528,7 +1529,7 @@ style.textContent = `
         height: 80px;
         border-radius: 8px;
         overflow: hidden;
-        background: #e5e7eb;
+        background: var(--color-gray);
     }
     
     .chart-bar {
@@ -1564,14 +1565,14 @@ style.textContent = `
     .calendar-view {
         margin: 2rem 0;
         padding: var(--space-lg) var(--space-md);
-        background: white;
+        background: var(--color-white);
         border-radius: 12px;
-        border: 1px solid #e5e7eb;
+        border: 1px solid var(--color-surface-table-border);
     }
     
     .calendar-view h3 {
         margin-bottom: 1rem;
-        color: #2C5F8D;
+        color: var(--color-primary-blue);
     }
     
     .calendar-legend {
@@ -1607,7 +1608,7 @@ style.textContent = `
     }
     
     .legend-dot.out-of-range {
-        background: #e5e7eb;
+        background: var(--color-gray);
     }
     
     .calendar-months {
@@ -1619,7 +1620,7 @@ style.textContent = `
     
     .calendar-month h4 {
         margin-bottom: 1rem;
-        color: #374151;
+        color: var(--color-black);
         font-size: 1.1rem;
     }
     
@@ -1627,7 +1628,7 @@ style.textContent = `
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         gap: 2px;
-        background: #f3f4f6;
+        background: var(--color-surface-neutral);
         padding: 2px;
         border-radius: 8px;
     }
@@ -1637,14 +1638,14 @@ style.textContent = `
         text-align: center;
         font-weight: 600;
         font-size: 0.8rem;
-        background: #374151;
+        background: var(--color-surface-table-head);
         color: white;
     }
     
     .calendar-day {
         padding: 0.5rem;
         text-align: center;
-        background: white;
+        background: var(--color-white);
         cursor: pointer;
         transition: all 0.2s;
         min-height: 32px;
@@ -1660,25 +1661,25 @@ style.textContent = `
     }
     
     .calendar-day.business {
-        background: #f0fdf4;
-        color: #166534;
+        background: var(--color-highlight-green);
+        color: var(--color-success);
         font-weight: 500;
     }
     
     .calendar-day.weekend {
-        background: #f9fafb;
-        color: #6b7280;
+        background: var(--color-surface-neutral);
+        color: var(--color-gray-dark);
     }
     
     .calendar-day.holiday {
-        background: #fef3c7;
-        color: #92400e;
+        background: var(--color-highlight-yellow);
+        color: var(--color-warning);
         font-weight: 600;
     }
     
     .calendar-day.out-of-range {
-        background: #f9fafb;
-        color: #d1d5db;
+        background: var(--color-surface-neutral);
+        color: var(--color-gray);
     }
     
     .calendar-day:hover:not(.empty):not(.out-of-range) {
@@ -1692,14 +1693,14 @@ style.textContent = `
     .holiday-list-result {
         margin: 2rem 0;
         padding: 1.5rem;
-        background: white;
+        background: var(--color-white);
         border-radius: 12px;
-        border: 1px solid #e5e7eb;
+        border: 1px solid var(--color-surface-table-border);
     }
     
     .holiday-list-result h3 {
         margin-bottom: 1rem;
-        color: #2C5F8D;
+        color: var(--color-primary-blue);
     }
     
     .holiday-table {
@@ -1711,32 +1712,32 @@ style.textContent = `
         display: flex;
         justify-content: space-between;
         padding: 0.75rem;
-        background: #f8f9fa;
+        background: var(--color-surface-neutral);
         border-radius: 6px;
         border-left: 3px solid #f59e0b;
     }
     
     .holiday-row .holiday-name {
         font-weight: 500;
-        color: #374151;
+        color: var(--color-black);
     }
     
     .holiday-row .holiday-date {
-        color: #6b7280;
+        color: var(--color-gray-dark);
         font-size: 0.9rem;
     }
     
     .date-insights {
         margin: 2rem 0;
         padding: 1.5rem;
-        background: white;
+        background: var(--color-white);
         border-radius: 12px;
-        border: 1px solid #e5e7eb;
+        border: 1px solid var(--color-surface-table-border);
     }
     
     .date-insights h3 {
         margin-bottom: 1rem;
-        color: #2C5F8D;
+        color: var(--color-primary-blue);
     }
     
     .insights-grid {
@@ -1750,22 +1751,22 @@ style.textContent = `
         align-items: center;
         padding: 1rem;
         border-radius: 8px;
-        border: 1px solid #e5e7eb;
+        border: 1px solid var(--color-surface-table-border);
     }
     
     .insight-card.insight-info {
-        background: #eff6ff;
-        border-color: #93c5fd;
+        background: var(--color-highlight-blue);
+        border-color: var(--color-light-blue);
     }
     
     .insight-card.insight-success {
-        background: #f0fdf4;
-        border-color: #86efac;
+        background: var(--color-highlight-green);
+        border-color: var(--color-success);
     }
     
     .insight-card.insight-warning {
-        background: #fef3c7;
-        border-color: #fcd34d;
+        background: var(--color-highlight-yellow);
+        border-color: var(--color-warning);
     }
     
     .insight-icon {
@@ -1775,22 +1776,22 @@ style.textContent = `
     
     .insight-content h5 {
         margin: 0 0 0.25rem 0;
-        color: #374151;
+        color: var(--color-black);
         font-size: 0.9rem;
     }
     
     .insight-content p {
         margin: 0;
-        color: #6b7280;
+        color: var(--color-gray-dark);
         font-weight: 600;
     }
     
     .error-message {
         padding: 1rem;
-        background: #fee2e2;
+        background: var(--color-highlight-red);
         border: 1px solid #fecaca;
         border-radius: 8px;
-        color: #991b1b;
+        color: var(--color-error);
         text-align: center;
     }
     

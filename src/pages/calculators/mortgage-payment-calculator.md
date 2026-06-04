@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Mortgage Payment Calculator
-description: Calculate your monthly mortgage payments including principal, interest, taxes, and insurance (PITI). Free, accurate, and easy to use.
-category: financial
-tags: ['mortgage', 'home loan', 'monthly payment', 'PITI', 'home buying']
-featured: true
 calcType: mortgage
-seoTitle: Free Mortgage Payment Calculator with Taxes & Insurance
-seoDescription: Calculate your monthly mortgage payment with our free calculator. Includes principal, interest, property taxes, and insurance.
-estimatedTime: 2 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator
@@ -37,6 +28,7 @@ difficulty: Easy
             class="form-input"
             placeholder="300000"
             value="300000"
+            min="0"
             step="1000"
             required
           />
@@ -54,7 +46,7 @@ difficulty: Easy
             class="form-input"
             placeholder="60000"
             value="60000"
-            step="500"
+            step="1"
             required
           />
           <span class="input-addon input-addon-toggle" id="down-payment-unit" title="Click to switch between $ and %">$</span>
@@ -74,6 +66,8 @@ difficulty: Easy
             class="form-input"
             placeholder="6.5"
             value="6.5"
+            min="0"
+            max="100"
             step="0.05"
             required
           />
@@ -108,7 +102,8 @@ difficulty: Easy
             class="form-input"
             placeholder="3500"
             value="3500"
-            step="50"
+            min="0"
+            step="0.1"
           />
           <span class="input-addon input-addon-toggle" id="property-tax-unit" title="Click to switch between $ and %">$</span>
         </div>
@@ -125,7 +120,8 @@ difficulty: Easy
             class="form-input"
             placeholder="1200"
             value="1200"
-            step="50"
+            min="0"
+            step="0.1"
           />
           <span class="input-addon input-addon-toggle" id="insurance-unit" title="Click to switch between $ and %">$</span>
         </div>
@@ -144,7 +140,8 @@ difficulty: Easy
             class="form-input"
             placeholder="0"
             value="0"
-            step="25"
+            min="0"
+            step="1"
           />
           <span class="input-addon">$</span>
         </div>
@@ -199,15 +196,7 @@ difficulty: Easy
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
-  <h4>🔗 Save & Share Your Calculation</h4>
-  <p>
-    Your mortgage details are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
-    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values will be restored automatically.
-  </p>
-</div>
-
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>🏠 What is PMI?</h4>
   <p>
     Private Mortgage Insurance (PMI) is required when your down payment is less than 20% of the home price. 
@@ -216,7 +205,7 @@ difficulty: Easy
   </p>
 </div>
 
-<div class="info-box" style="background: #FEF3C7; border-left-color: #F59E0B;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>📊 The 28/36 Rule</h4>
   <p>
     Lenders typically follow the <strong>28/36 rule</strong> for mortgage approval:
@@ -230,6 +219,14 @@ difficulty: Easy
   </p>
 </div>
 
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
+  <h4>🔗 Save & Share Your Calculation</h4>
+  <p>
+    Your mortgage details are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
+    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values will be restored automatically.
+  </p>
+</div>
+
 <style>
   .form-actions {
     display: flex;
@@ -239,14 +236,14 @@ difficulty: Easy
   }
   
   .btn-success {
-    background: #10b981 !important;
-    border-color: #10b981 !important;
+    background: var(--color-success) !important;
+    border-color: var(--color-success) !important;
   }
   
   .payment-visualization {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 12px;
   }
   
@@ -336,7 +333,7 @@ difficulty: Easy
   }
   
   .affordability-note {
-    background: #f0f9ff;
+    background: var(--color-highlight-blue);
     padding: 1.5rem;
     border-radius: 8px;
     margin: 2rem 0;
@@ -345,11 +342,11 @@ difficulty: Easy
   
   .affordability-note h4 {
     margin-top: 0;
-    color: #1e40af;
+    color: var(--color-primary-blue);
   }
   
   .text-success { 
-    color: #10b981; 
+    color: var(--color-success); 
   }
   
   .disabled {
@@ -362,7 +359,7 @@ difficulty: Easy
   }
   
   .table-total {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     font-weight: bold;
   }
   

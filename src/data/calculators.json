@@ -1,13 +1,17 @@
 {
   "calculators": [
     {
-      "id": "mortgage-payment-calculator",
       "title": "Mortgage Payment Calculator",
       "slug": "mortgage-payment-calculator",
       "description": "Calculate your monthly mortgage payments including principal, interest, taxes, and insurance (PITI).",
       "shortDescription": "Calculate monthly mortgage payments",
       "category": "home-real-estate",
-      "tags": ["mortgage", "home loan", "monthly payment", "PITI"],
+      "tags": [
+        "mortgage",
+        "home loan",
+        "monthly payment",
+        "PITI"
+      ],
       "featured": true,
       "popular": true,
       "difficulty": "Easy",
@@ -15,83 +19,98 @@
       "icon": "🏠",
       "seoTitle": "Free Mortgage Payment Calculator",
       "seoDescription": "Calculate your monthly mortgage payment with our free calculator.",
-      "keywords": ["mortgage calculator", "home loan calculator"],
+      "keywords": [
+        "mortgage calculator",
+        "home loan calculator"
+      ],
       "lastUpdated": "2025-11-09",
       "uses": 0,
       "rating": 0,
-      "relatedCalculators": ["loan-amortization-calculator", "home-affordability-calculator", "refinance-calculator"]
+      "affiliateHeadlines": [
+        "Essential First-Time Homebuyer Guide",
+        "Professional Financial Calculator for Complex Math",
+        "Complete Home Inspection Toolkit"
+      ],
+      "affiliateDescriptions": [
+        "Navigate the home buying process with confidence using this comprehensive guide covering financing, negotiations, and closing procedures.",
+        "Handle complex mortgage calculations and financial planning with this industry-standard calculator trusted by real estate professionals.",
+        "Ensure your investment is sound with this complete inspection checklist and guide to identifying potential issues before purchase."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4oIJHXu",
+        "https://amzn.to/3XEjnSq",
+        "https://amzn.to/3K8Gxx4"
+      ],
+      "relatedCalculators": [
+        "loan-amortization-calculator",
+        "home-affordability-calculator",
+        "refinance-calculator"
+      ]
     },
     {
-      "id": "bmi-calculator",
-      "title": "BMI Calculator",
-      "slug": "bmi-calculator",
-      "description": "Calculate your Body Mass Index (BMI) and find your ideal weight range.",
-      "shortDescription": "Calculate your BMI and ideal weight",
-      "category": "health-fitness",
-      "tags": ["BMI", "body mass index", "weight", "health"],
-      "featured": true,
-      "popular": true,
-      "difficulty": "Easy",
-      "estimatedTime": "1 minute",
-      "icon": "❤️",
-      "seoTitle": "Free BMI Calculator",
-      "seoDescription": "Calculate your BMI instantly with our free calculator.",
-      "keywords": ["BMI calculator", "body mass index"],
-      "lastUpdated": "2025-11-06",
-      "uses": 0,
-      "rating": 0,
-      "relatedCalculators": ["calorie-calculator", "body-fat-calculator", "macro-calculator"]
-    },
-    {
-      "id": "loan-amortization-calculator",
-      "title": "Loan Amortization Calculator",
-      "slug": "loan-amortization-calculator",
-      "description": "View a complete loan payoff schedule with detailed breakdown of principal and interest payments over time. Visualize your loan amortization schedule.",
-      "shortDescription": "View complete loan payoff schedule",
-      "category": "financial",
-      "tags": ["loan", "amortization", "payment schedule", "interest", "principal"],
-      "featured": true,
-      "popular": false,
-      "difficulty": "Easy",
-      "estimatedTime": "3 minutes",
-      "icon": "📊",
-      "seoTitle": "Free Loan Amortization Calculator with Payment Schedule",
-      "seoDescription": "Calculate your loan amortization schedule with our free calculator. See detailed monthly payments, principal, interest, and remaining balance.",
-      "keywords": ["amortization calculator", "loan schedule", "loan payment schedule", "amortization table"],
-      "lastUpdated": "2025-11-06",
-      "uses": 0,
-      "rating": 0,
-      "relatedCalculators": ["mortgage-payment-calculator", "auto-loan-calculator", "student-loan-calculator"]
-    },
-    {
-      "id": "calorie-calculator",
       "title": "Daily Calorie Calculator",
       "slug": "calorie-calculator",
       "description": "Calculate your daily calorie needs based on age, gender, weight, height, and activity level. Get your TDEE (Total Daily Energy Expenditure) and personalized macros.",
       "shortDescription": "Calculate daily calorie needs and goals",
       "category": "health-fitness",
-      "tags": ["calories", "nutrition", "weight loss", "TDEE", "macros"],
+      "tags": [
+        "calories",
+        "nutrition",
+        "weight loss",
+        "TDEE",
+        "macros"
+      ],
       "featured": true,
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "🔥",
+      "icon": "🍽️",
       "seoTitle": "Free Daily Calorie Calculator - TDEE & Macro Calculator",
       "seoDescription": "Calculate your daily calorie needs with our free TDEE calculator. Get personalized calorie targets for weight loss, maintenance, or muscle gain.",
-      "keywords": ["calorie calculator", "TDEE calculator", "daily calories", "macro calculator"],
+      "keywords": [
+        "calorie calculator",
+        "TDEE calculator",
+        "daily calories",
+        "macro calculator"
+      ],
       "lastUpdated": "2025-11-06",
       "uses": 0,
       "rating": 0,
-      "relatedCalculators": ["bmi-calculator", "macro-calculator", "body-fat-calculator"]
+      "affiliateHeadlines": [
+        "Digital Food Scale for Accurate Tracking",
+        "Meal Prep Container Set",
+        "Calorie Counter Reference Book"
+      ],
+      "affiliateDescriptions": [
+        "Ensure accurate calorie counting with this precision digital scale featuring nutritional database and portion control guidance.",
+        "Simplify meal planning and portion control with these glass containers perfect for weekly meal prep and calorie management.",
+        "Quick reference guide with calorie counts for thousands of foods, making tracking easier when dining out or cooking at home."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4rr2zfF",
+        "https://amzn.to/3K6H6Yh",
+        "https://amzn.to/4pnTRwM"
+      ],
+      "relatedCalculators": [
+        "bmi-calculator",
+        "macro-calculator",
+        "body-fat-calculator",
+        "sleep-calculator"
+      ]
     },
     {
-      "id": "compound-interest-calculator",
       "title": "Compound Interest Calculator",
       "slug": "compound-interest-calculator",
       "description": "Calculate compound interest and see how your money grows over time. Visualize the power of compounding with detailed year-by-year breakdown and interactive charts.",
       "shortDescription": "Calculate compound interest growth",
       "category": "financial",
-      "tags": ["compound interest", "investment", "savings", "growth", "retirement"],
+      "tags": [
+        "compound interest",
+        "investment",
+        "savings",
+        "growth",
+        "retirement"
+      ],
       "featured": true,
       "popular": true,
       "difficulty": "Medium",
@@ -99,20 +118,49 @@
       "icon": "💹",
       "seoTitle": "Free Compound Interest Calculator - Investment Growth Calculator",
       "seoDescription": "Calculate compound interest on your investments and savings. See how your money grows over time with our free compound interest calculator. Includes charts and year-by-year breakdown.",
-      "keywords": ["compound interest calculator", "investment calculator", "savings calculator", "interest growth"],
-      "lastUpdated": "2025-11-07",
+      "keywords": [
+        "compound interest calculator",
+        "investment calculator",
+        "savings calculator",
+        "interest growth"
+      ],
+      "lastUpdated": "2025-11-19",
       "uses": 0,
       "rating": 0,
-      "relatedCalculators": ["retirement-income-calculator", "savings-goal-calculator", "college-savings-calculator"]
+      "affiliateHeadlines": [
+        "Index Fund Investing Bible",
+        "Retirement Planning Workbook",
+        "Warren Buffett Investment Strategy"
+      ],
+      "affiliateDescriptions": [
+        "Learn the power of low-cost index fund investing with this comprehensive guide to building wealth through compound returns.",
+        "Plan your retirement systematically with worksheets for calculating compound growth, withdrawal rates, and income needs.",
+        "Discover the Oracle of Omaha's time-tested investment principles that harness compound interest for long-term wealth building."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/48oiYtq",
+        "https://amzn.to/4ogsDr2",
+        "https://amzn.to/3K8HN3g"
+      ],
+      "relatedCalculators": [
+        "retirement-income-calculator",
+        "savings-goal-calculator",
+        "college-savings-calculator"
+      ]
     },
     {
-      "id": "retirement-income-calculator",
       "title": "Retirement Income Calculator",
       "slug": "retirement-income-calculator",
       "description": "Plan your retirement income and see how long your savings will last. Calculate sustainable withdrawal rates, account for inflation, and visualize your retirement portfolio over time.",
       "shortDescription": "Plan retirement withdrawals & income",
       "category": "financial",
-      "tags": ["retirement", "income", "withdrawal", "4% rule", "retirement planning"],
+      "tags": [
+        "retirement",
+        "income",
+        "withdrawal",
+        "4% rule",
+        "retirement planning"
+      ],
       "featured": true,
       "popular": false,
       "difficulty": "Medium",
@@ -120,41 +168,194 @@
       "icon": "🏖️",
       "seoTitle": "Free Retirement Income Calculator - Withdrawal & Drawdown Planner",
       "seoDescription": "Calculate how long your retirement savings will last. Plan sustainable withdrawals with our free retirement income calculator. Includes 4% rule, inflation adjustments, and year-by-year breakdown.",
-      "keywords": ["retirement calculator", "retirement income", "4% rule", "retirement withdrawal", "retirement planning"],
-      "lastUpdated": "2025-11-07",
+      "keywords": [
+        "retirement calculator",
+        "retirement income",
+        "4% rule",
+        "retirement withdrawal",
+        "retirement planning"
+      ],
+      "lastUpdated": "2025-11-19",
       "uses": 0,
       "rating": 0,
-      "relatedCalculators": ["compound-interest-calculator", "retirement-date-calculator", "savings-goal-calculator"]
+      "affiliateHeadlines": [
+        "Complete Retirement Planning Guide",
+        "Social Security Maximization Book",
+        "Estate Planning Document Kit"
+      ],
+      "affiliateDescriptions": [
+        "Create a comprehensive retirement plan with strategies for maximizing income, minimizing taxes, and ensuring your money lasts.",
+        "Optimize your Social Security benefits with timing strategies that can increase lifetime benefits by tens of thousands of dollars.",
+        "Protect your retirement assets with essential estate planning documents including wills, trusts, and power of attorney templates."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4pc6b2Q",
+        "https://amzn.to/4rehWYE",
+        "https://amzn.to/4oSBuAe"
+      ],
+      "relatedCalculators": [
+        "compound-interest-calculator",
+        "retirement-planning-calculator",
+        "savings-goal-calculator"
+      ]
     },
     {
-      "id": "home-affordability-calculator",
       "title": "Home Affordability Calculator",
       "slug": "home-affordability-calculator",
       "description": "Calculate how much house you can afford based on income, debts, down payment, and interest rates. See your maximum home price and comfortable monthly payment.",
       "shortDescription": "Calculate how much house you can afford",
       "category": "home-real-estate",
-      "tags": ["home affordability", "buying power", "mortgage", "home price"],
+      "tags": [
+        "home affordability",
+        "buying power",
+        "mortgage",
+        "home price"
+      ],
       "featured": true,
-      "popular": false,
+      "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
       "icon": "🏡",
       "seoTitle": "Free Home Affordability Calculator - How Much House Can I Afford?",
       "seoDescription": "Calculate how much house you can afford based on your income and debts. Get your maximum home price with our free calculator.",
-      "keywords": ["home affordability calculator", "how much house can I afford", "home buying calculator"],
+      "keywords": [
+        "home affordability calculator",
+        "how much house can I afford",
+        "home buying calculator"
+      ],
       "lastUpdated": "2025-11-09",
       "uses": 0,
       "rating": 0,
-      "relatedCalculators": ["mortgage-payment-calculator", "debt-to-income-calculator", "rent-vs-buy-calculator"]
+      "affiliateHeadlines": [
+        "First-Time Buyer's Complete Guide",
+        "Credit Score Improvement Kit",
+        "Home Down Payment Savings Tracker"
+      ],
+      "affiliateDescriptions": [
+        "Everything first-time buyers need to know about affordability, financing options, and navigating the home buying process successfully.",
+        "Boost your credit score to qualify for better rates and increase your home buying power with proven credit repair strategies.",
+        "Visual savings tracker to help you reach your down payment goal faster with milestone celebrations and motivation tips."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/47QcGCT",
+        "https://amzn.to/4o8x8DD",
+        "https://amzn.to/47SMOq4"
+      ],
+      "relatedCalculators": [
+        "mortgage-payment-calculator",
+        "debt-to-income-calculator",
+        "rent-vs-buy-calculator"
+      ]
     },
     {
-      "id": "auto-loan-calculator",
+      "title": "BMI Calculator",
+      "slug": "bmi-calculator",
+      "description": "Calculate your Body Mass Index (BMI) and find your ideal weight range.",
+      "shortDescription": "Calculate your BMI and ideal weight",
+      "category": "health-fitness",
+      "tags": [
+        "BMI",
+        "body mass index",
+        "weight",
+        "health"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "❤️",
+      "seoTitle": "Free BMI Calculator",
+      "seoDescription": "Calculate your BMI instantly with our free calculator.",
+      "keywords": [
+        "BMI calculator",
+        "body mass index"
+      ],
+      "lastUpdated": "2025-11-06",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Smart Scale with BMI Tracking",
+        "Top-Rated Fitness Tracker Watch",
+        "Body Measurement Tape Set"
+      ],
+      "affiliateDescriptions": [
+        "Track your BMI progress automatically with this smart scale that syncs to your phone and monitors body composition trends over time.",
+        "Monitor your health metrics 24/7 with this comprehensive fitness tracker featuring heart rate, activity, and health insights.",
+        "Accurately measure body dimensions for tracking fitness progress with this professional-grade retractable measuring tape set."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/3LM6xiw",
+        "https://amzn.to/487cldM",
+        "https://amzn.to/4ppvFdr"
+      ],
+      "relatedCalculators": [
+        "calorie-calculator",
+        "body-fat-calculator",
+        "macro-calculator"
+      ]
+    },
+    {
+      "title": "Loan Amortization Calculator",
+      "slug": "loan-amortization-calculator",
+      "description": "View a complete loan payoff schedule with detailed breakdown of principal and interest payments over time. Visualize your loan amortization schedule.",
+      "shortDescription": "View complete loan payoff schedule",
+      "category": "financial",
+      "tags": [
+        "loan",
+        "amortization",
+        "payment schedule",
+        "interest",
+        "principal"
+      ],
+      "featured": true,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "📊",
+      "seoTitle": "Free Loan Amortization Calculator with Payment Schedule",
+      "seoDescription": "Calculate your loan amortization schedule with our free calculator. See detailed monthly payments, principal, interest, and remaining balance.",
+      "keywords": [
+        "amortization calculator",
+        "loan schedule",
+        "loan payment schedule",
+        "amortization table"
+      ],
+      "lastUpdated": "2025-11-06",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Dave Ramsey's Debt-Free Guide",
+        "Financial Planning Software Suite",
+        "Debt Elimination Workbook"
+      ],
+      "affiliateDescriptions": [
+        "Accelerate your debt payoff with Dave Ramsey's proven baby steps system that has helped millions achieve financial freedom.",
+        "Manage all your loans and financial planning in one place with this comprehensive software suite featuring amortization schedules and payoff strategies.",
+        "Track multiple debts and create your personalized elimination plan with this hands-on workbook featuring payment trackers and motivational milestones."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4oR3K6h",
+        "https://amzn.to/4a1wSmA",
+        "https://amzn.to/3M8U4p0"
+      ],
+      "relatedCalculators": [
+        "mortgage-payment-calculator",
+        "auto-loan-calculator",
+        "student-loan-calculator"
+      ]
+    },
+    {
       "title": "Auto Loan Calculator",
       "slug": "auto-loan-calculator",
       "description": "Calculate your monthly car payment including principal, interest, trade-in value, down payment, sales tax, and fees. Compare different loan terms and see total interest paid.",
       "shortDescription": "Calculate monthly car payments",
-      "category": "financial",
-      "tags": ["auto loan", "car loan", "vehicle financing", "monthly payment"],
+      "category": "automotive",
+      "tags": [
+        "auto loan",
+        "car loan",
+        "vehicle financing",
+        "monthly payment"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -162,41 +363,93 @@
       "icon": "🚗",
       "seoTitle": "Free Auto Loan Calculator - Car Payment Calculator",
       "seoDescription": "Calculate your monthly car payment with our free auto loan calculator. Include trade-in, down payment, taxes, and fees.",
-      "keywords": ["auto loan calculator", "car payment calculator", "car loan calculator"],
-      "lastUpdated": "2025-11-07",
+      "keywords": [
+        "auto loan calculator",
+        "car payment calculator",
+        "car loan calculator"
+      ],
+      "lastUpdated": "2025-11-19",
       "uses": 0,
       "rating": 0,
-      "relatedCalculators": ["loan-amortization-calculator", "car-lease-buy-calculator", "gas-mileage-calculator"]
+      "affiliateHeadlines": [
+        "Kelley Blue Book Used Car Guide",
+        "Car Buying Negotiation Secrets",
+        "Vehicle History Report Service"
+      ],
+      "affiliateDescriptions": [
+        "Get accurate vehicle valuations to ensure you're paying a fair price and maximize your trade-in value with official KBB data.",
+        "Save thousands on your next car with insider negotiation tactics that dealers don't want you to know about.",
+        "Protect yourself from buying a problem vehicle with comprehensive history reports revealing accidents, ownership, and maintenance records."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/3JGOkCo",
+        "https://amzn.to/4oSCNiC",
+        "https://amzn.to/4i92kRO"
+      ],
+      "relatedCalculators": [
+        "loan-amortization-calculator",
+        "car-lease-buy-calculator",
+        "gas-mileage-calculator"
+      ]
     },
-      {
-      "id": "gpa-calculator",
+    {
       "title": "GPA Calculator",
       "slug": "gpa-calculator",
       "description": "Calculate your cumulative GPA with weighted or unweighted grades. Add multiple courses with credit hours and letter grades to see your grade point average.",
       "shortDescription": "Calculate GPA with multiple courses",
       "category": "math-conversions",
-      "tags": ["GPA", "grades", "education", "grade point average"],
-      "featured": true,
+      "tags": [
+        "GPA",
+        "grades",
+        "education",
+        "grade point average"
+      ],
+      "featured": false,
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
       "icon": "📚",
       "seoTitle": "Free GPA Calculator - Grade Point Average Calculator",
       "seoDescription": "Calculate your GPA with multiple courses and credit hours. Track weighted and unweighted grades with our free calculator.",
-      "keywords": ["GPA calculator", "grade point average", "college GPA calculator"],
+      "keywords": [
+        "GPA calculator",
+        "grade point average",
+        "college GPA calculator"
+      ],
       "lastUpdated": "2025-11-12",
       "uses": 0,
       "rating": 0,
-      "relatedCalculators": ["college-savings-calculator", "student-loan-calculator"]
+      "affiliateHeadlines": [
+        "College Success Study Guide",
+        "Student Planner & Grade Tracker",
+        "Test Prep Bundle Pack"
+      ],
+      "affiliateDescriptions": [
+        "Master effective study techniques and time management strategies that help top students maintain high GPAs throughout college.",
+        "Stay organized and track your grades all semester with this comprehensive academic planner featuring GPA calculators and goal setting.",
+        "Boost your test scores and overall GPA with proven test-taking strategies and practice materials for major standardized exams."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "college-savings-calculator",
+        "student-loan-calculator"
+      ]
     },
     {
-      "id": "business-days-calculator",
       "title": "Business Days Calculator",
       "slug": "business-days-calculator",
       "description": "Calculate business days between two dates excluding weekends and holidays. Add or subtract business days from a date for project planning and deadline tracking.",
       "shortDescription": "Calculate business days between dates",
       "category": "time-date",
-      "tags": ["business days", "workdays", "project planning"],
+      "tags": [
+        "business days",
+        "workdays",
+        "project planning"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -204,14 +457,92 @@
       "icon": "📆",
       "seoTitle": "Free Business Days Calculator - Workday Calculator",
       "seoDescription": "Calculate business days between dates excluding weekends and holidays. Plan project deadlines with our free calculator.",
-      "keywords": ["business days calculator", "workday calculator", "working days calculator"],
-      "lastUpdated": "2025-11-07",
+      "keywords": [
+        "business days calculator",
+        "workday calculator",
+        "working days calculator"
+      ],
+      "lastUpdated": "2025-11-19",
       "uses": 0,
       "rating": 0,
-      "relatedCalculators": ["age-calculator", "hours-calculator", "retirement-date-calculator"]
+      "affiliateHeadlines": [
+        "Project Management Planner",
+        "Productivity Method Bestseller",
+        "Desktop Calendar with Holidays"
+      ],
+      "affiliateDescriptions": [
+        "Master project timelines and deadline management with this comprehensive planner featuring Gantt charts and milestone tracking.",
+        "Transform your productivity with David Allen's revolutionary GTD method for managing tasks, projects, and deadlines effectively.",
+        "Never miss a deadline with this desktop calendar featuring all major holidays, business days counter, and project planning space."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4idftcO",
+        "https://amzn.to/4icOyOj",
+        "https://amzn.to/49pjSah"
+      ],
+      "relatedCalculators": [
+        "age-calculator",
+        "paycheck-calculator",
+        "retirement-planning-calculator",
+        "pto-calculator",
+        "hours-calculator"
+      ]
     },
     {
-      "id": "investment-income-goal-calculator",
+      "title": "PTO Calculator",
+      "slug": "pto-calculator",
+      "description": "Calculate and plan your paid time off (PTO) accrual. Project future balances, find out how long it takes to earn target hours, and calculate the monetary value of your PTO. Supports multiple accrual types including per pay period, monthly, annually frontloaded, and hourly-based accrual.",
+      "shortDescription": "Plan & calculate paid time off accrual",
+      "category": "time-date",
+      "tags": [
+        "PTO",
+        "paid time off",
+        "vacation days",
+        "accrual calculator",
+        "time off planning",
+        "vacation planning",
+        "leave calculator"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "🌴",
+      "seoTitle": "Free PTO Calculator - Paid Time Off Accrual Calculator",
+      "seoDescription": "Calculate your PTO balance and accrual with our free PTO calculator. Project future balances, plan vacation time, and calculate the monetary value of your paid time off.",
+      "keywords": [
+        "PTO calculator",
+        "paid time off calculator",
+        "vacation accrual calculator",
+        "PTO accrual",
+        "vacation days calculator",
+        "time off calculator"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Employee Handbook & HR Essentials",
+        "Work-Life Balance Planner",
+        "Vacation Planning Guide"
+      ],
+      "affiliateDescriptions": [
+        "Comprehensive HR guide covering PTO policies, leave management, and employee benefits administration for managers and HR professionals.",
+        "Plan your time off strategically with this planner featuring work-life balance strategies, vacation budgeting, and scheduling tools.",
+        "Ultimate vacation planning resource with destination guides, budget calculators, and tips for maximizing your paid time off."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "business-days-calculator",
+        "paycheck-calculator",
+        "hours-calculator"
+      ]
+    },
+    {
       "title": "Investment Income Goal Calculator",
       "slug": "investment-income-goal-calculator",
       "description": "Calculate how much you need to invest to replace your income or reach financial independence. Plan multiple investment scenarios with ROI analysis, breakeven timeline, and income projections to achieve your financial goals.",
@@ -226,7 +557,7 @@
         "retirement planning"
       ],
       "featured": true,
-      "popular": false,
+      "popular": true,
       "difficulty": "Medium",
       "estimatedTime": "3 minutes",
       "icon": "🎯",
@@ -243,9 +574,4021 @@
       "lastUpdated": "2025-11-16",
       "uses": 0,
       "rating": 0,
+      "affiliateHeadlines": [
+        "FIRE Movement Complete Guide",
+        "Passive Income Strategy Bible",
+        "Real Estate Investment Starter"
+      ],
+      "affiliateDescriptions": [
+        "Achieve financial independence with the complete FIRE playbook covering savings rates, investment strategies, and early retirement planning.",
+        "Build multiple streams of passive income with proven strategies for dividends, real estate, online business, and more.",
+        "Start your real estate investment journey with this beginner's guide to rental properties, REITs, and property analysis."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4a7YTsC",
+        "https://amzn.to/4raaFcg",
+        "https://amzn.to/487SXgS"
+      ],
       "relatedCalculators": [
         "retirement-income-calculator",
         "compound-interest-calculator",
+        "savings-goal-calculator"
+      ]
+    },
+    {
+      "title": "Credit Card Payoff Calculator",
+      "slug": "credit-card-payoff-calculator",
+      "description": "Calculate how long it will take to pay off your credit card debt. Compare minimum payments vs fixed monthly payments, see total interest paid, and create a payoff strategy.",
+      "shortDescription": "Calculate credit card debt payoff time",
+      "category": "financial",
+      "tags": [
+        "credit card",
+        "debt payoff",
+        "interest",
+        "debt repayment"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "💳",
+      "seoTitle": "Free Credit Card Payoff Calculator - Debt Payoff Planner",
+      "seoDescription": "Calculate how long to pay off credit card debt. See total interest and create a debt payoff plan with our free calculator.",
+      "keywords": [
+        "credit card payoff calculator",
+        "debt calculator",
+        "credit card interest calculator"
+      ],
+      "lastUpdated": "2025-11-19",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Debt Snowball Method Guide",
+        "Credit Repair Secrets Book",
+        "Budget Envelope System Wallet"
+      ],
+      "affiliateDescriptions": [
+        "Eliminate credit card debt faster with Dave Ramsey's proven debt snowball method that builds momentum through quick wins.",
+        "Repair your credit while paying off debt with insider strategies for disputing errors and negotiating with creditors.",
+        "Take control of spending with this cash envelope wallet system that prevents credit card overspending and accelerates debt payoff."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/49XY6dS",
+        "https://amzn.to/48oad2z",
+        "https://amzn.to/3X2BgKD"
+      ],
+      "relatedCalculators": [
+        "debt-to-income-calculator",
+        "student-loan-calculator",
+        "budget-calculator"
+      ]
+    },
+    {
+      "title": "Rent vs Buy Calculator",
+      "slug": "rent-vs-buy-calculator",
+      "description": "Compare the total cost of renting versus buying a home over time. Factor in mortgage, property taxes, maintenance, rent increases, investment returns, and opportunity costs.",
+      "shortDescription": "Compare renting vs buying a home",
+      "category": "home-real-estate",
+      "tags": [
+        "rent vs buy",
+        "home buying",
+        "real estate",
+        "housing"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Medium",
+      "estimatedTime": "5 minutes",
+      "icon": "🏘️",
+      "seoTitle": "Free Rent vs Buy Calculator - Should You Rent or Buy?",
+      "seoDescription": "Compare the true cost of renting vs buying a home. Factor in all costs and opportunity costs with our comprehensive calculator.",
+      "keywords": [
+        "rent vs buy calculator",
+        "rent or buy",
+        "renting vs buying"
+      ],
+      "lastUpdated": "2025-11-19",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Rent vs Buy Decision Guide",
+        "Real Estate Investing Basics",
+        "Home Inspection Handbook"
+      ],
+      "affiliateDescriptions": [
+        "Make the right housing decision with this comprehensive guide comparing all financial and lifestyle factors of renting versus buying.",
+        "Learn how to evaluate real estate as an investment with analysis techniques for rental properties and personal residences.",
+        "Protect your investment with this detailed inspection guide covering everything to check before buying any property."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/3Kc7eB5",
+        "https://amzn.to/4r7M7kb",
+        "https://amzn.to/4pcMZ5g"
+      ],
+      "relatedCalculators": [
+        "mortgage-payment-calculator",
+        "home-affordability-calculator",
+        "home-equity-calculator"
+      ]
+    },
+    {
+      "title": "Body Fat Percentage Calculator",
+      "slug": "body-fat-calculator",
+      "description": "Calculate your body fat percentage using multiple methods including Navy method, skinfold calipers, and body measurements. Track lean mass and fat mass over time.",
+      "shortDescription": "Calculate body fat percentage",
+      "category": "health-fitness",
+      "tags": [
+        "body fat",
+        "body composition",
+        "lean mass",
+        "fitness"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "⚖️",
+      "seoTitle": "Free Body Fat Calculator - Body Fat Percentage Calculator",
+      "seoDescription": "Calculate your body fat percentage with multiple measurement methods. Track body composition with our free calculator.",
+      "keywords": [
+        "body fat calculator",
+        "body fat percentage",
+        "body composition calculator"
+      ],
+      "lastUpdated": "2025-11-19",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Body Fat Caliper Set",
+        "DEXA Scan Alternative Scale",
+        "Athlete's Nutrition Guide"
+      ],
+      "affiliateDescriptions": [
+        "Get accurate body fat measurements at home with these professional-grade calipers including measurement charts and instructions.",
+        "Track body fat percentage daily with this advanced bioimpedance scale offering DEXA-level accuracy for home use.",
+        "Optimize body composition with science-based nutrition strategies for losing fat while maintaining or building lean muscle mass."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4plfptY",
+        "https://amzn.to/4r7uYa3",
+        "https://amzn.to/47REWoJ"
+      ],
+      "relatedCalculators": [
+        "bmi-calculator",
+        "calorie-calculator",
+        "macro-calculator"
+      ]
+    },
+    {
+      "title": "Recipe Scaler & Converter",
+      "slug": "recipe-scaler-converter",
+      "description": "Scale recipes up or down for any number of servings. Convert between cooking measurements and temperature units (Fahrenheit/Celsius) for international recipes.",
+      "shortDescription": "Scale recipes & convert measurements",
+      "category": "food-cooking",
+      "tags": [
+        "recipe",
+        "cooking",
+        "baking",
+        "measurement conversion"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "👨‍🍳",
+      "seoTitle": "Free Recipe Scaler & Converter - Cooking Calculator",
+      "seoDescription": "Scale recipes and convert cooking measurements. Adjust servings and convert temperatures with our free recipe calculator.",
+      "keywords": [
+        "recipe scaler",
+        "recipe converter",
+        "cooking calculator"
+      ],
+      "lastUpdated": "2025-11-19",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Digital Kitchen Scale Essential",
+        "Complete Baking Conversion Chart",
+        "Adjustable Measuring Cup Set"
+      ],
+      "affiliateDescriptions": [
+        "Ensure perfect recipe scaling with this precise digital scale featuring unit conversion and tare function for accurate ingredient measuring.",
+        "Never guess measurements again with this magnetic conversion chart set covering volume, weight, and temperature conversions.",
+        "Scale recipes easily with this innovative adjustable measuring cup that slides to show different measurements from 1/8 cup to 2 cups."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4o3h3za",
+        "https://amzn.to/4pnjT37",
+        "https://amzn.to/4oR9yN7"
+      ],
+      "relatedCalculators": [
+        "unit-converter"
+      ]
+    },
+    {
+      "title": "Retirement Planning Calculator",
+      "slug": "retirement-planning-calculator",
+      "description": "Plan your entire retirement journey from accumulation to distribution. Calculate investment growth during working years, then see retirement income projections and whether your money will last throughout retirement.",
+      "shortDescription": "Complete retirement planning from savings to income",
+      "category": "financial",
+      "tags": [
+        "retirement planning",
+        "compound interest",
+        "retirement income",
+        "investment growth",
+        "4% rule",
+        "financial independence",
+        "retirement calculator"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Advanced",
+      "estimatedTime": "5 minutes",
+      "icon": "🪺",
+      "seoTitle": "Free Retirement Planning Calculator - Investment Growth & Income Planner",
+      "seoDescription": "Plan your complete retirement journey with our comprehensive calculator. See investment growth during working years and calculate retirement income. Includes compound interest, 4% rule, inflation adjustments, and year-by-year projections.",
+      "keywords": [
+        "retirement planning calculator",
+        "retirement calculator",
+        "investment growth",
+        "compound interest",
+        "retirement income",
+        "4% rule",
+        "financial independence",
+        "retirement withdrawal"
+      ],
+      "lastUpdated": "2025-01-20",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Complete Retirement Planning Bible",
+        "FIRE Movement Financial Independence Guide",
+        "Social Security & Medicare Optimization Kit"
+      ],
+      "affiliateDescriptions": [
+        "Master every aspect of retirement planning with this comprehensive guide covering investments, taxes, healthcare, estate planning, and creating sustainable retirement income.",
+        "Achieve financial independence and retire early with proven strategies for accelerated wealth building, expense optimization, and passive income generation.",
+        "Maximize your government benefits with expert strategies for Social Security timing, Medicare enrollment, and coordination of spousal benefits."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/3ZQKvNb",
+        "https://amzn.to/4aX5JmR",
+        "https://amzn.to/3Pv2mKN"
+      ],
+      "relatedCalculators": [
+        "compound-interest-calculator",
+        "retirement-income-calculator",
+        "savings-goal-calculator",
+        "roi-calculator",
+        "social-security-calculator"
+      ]
+    },
+    {
+      "title": "Social Security Benefits Calculator",
+      "slug": "social-security-calculator",
+      "description": "Estimate your Social Security retirement benefits based on earnings history and claiming age. Compare strategies for claiming at 62, Full Retirement Age, or 70, with breakeven analysis, spousal benefits, earnings test calculations, and COLA projections.",
+      "shortDescription": "Estimate & optimize Social Security benefits",
+      "category": "financial",
+      "tags": [
+        "social security",
+        "retirement benefits",
+        "claiming age",
+        "PIA",
+        "spousal benefits",
+        "earnings test",
+        "breakeven analysis"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Intermediate",
+      "estimatedTime": "4 minutes",
+      "icon": "🏛️",
+      "seoTitle": "Free Social Security Benefits Calculator - Estimate & Optimize Your Benefits",
+      "seoDescription": "Estimate your Social Security retirement benefits and find your optimal claiming age. Compare benefits at 62, FRA, and 70 with breakeven analysis, spousal benefits, and COLA projections.",
+      "keywords": [
+        "social security calculator",
+        "social security benefits",
+        "retirement benefits calculator",
+        "claiming age calculator",
+        "social security estimator",
+        "spousal benefits",
+        "delayed retirement credits"
+      ],
+      "lastUpdated": "2025-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Social Security & Medicare Optimization Guide",
+        "Retirement Income Planning Workbook",
+        "Complete Guide to Maximizing Your Benefits"
+      ],
+      "affiliateDescriptions": [
+        "Maximize your government benefits with expert strategies for Social Security timing, Medicare enrollment, and coordination of spousal benefits.",
+        "Plan your retirement income streams with this hands-on workbook covering Social Security, pensions, investments, and tax-efficient withdrawal strategies.",
+        "Learn the insider strategies to maximize your lifetime Social Security benefits with claiming strategies, spousal coordination, and tax optimization."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/3Pv2mKN",
+        "https://amzn.to/3ZQKvNb",
+        "https://amzn.to/4aX5JmR"
+      ],
+      "relatedCalculators": [
+        "retirement-planning-calculator",
+        "retirement-income-calculator",
+        "fire-calculator",
+        "paycheck-calculator"
+      ]
+    },
+    {
+      "title": "Net Worth Calculator",
+      "slug": "net-worth-calculator",
+      "description": "Calculate your total net worth by adding up all assets (home, investments, cash, vehicles) and subtracting all liabilities (mortgages, loans, credit cards). Track wealth over time.",
+      "shortDescription": "Calculate your total net worth",
+      "category": "financial",
+      "tags": [
+        "net worth",
+        "assets",
+        "liabilities",
+        "wealth",
+        "personal finance"
+      ],
+      "featured": true,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "5 minutes",
+      "icon": "💎",
+      "seoTitle": "Free Net Worth Calculator - Assets vs Liabilities",
+      "seoDescription": "Calculate your net worth by tracking all assets and liabilities. Monitor your wealth over time with our free calculator.",
+      "keywords": [
+        "net worth calculator",
+        "assets and liabilities",
+        "wealth calculator"
+      ],
+      "lastUpdated": "2025-11-07",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Wealth Building Blueprint Book",
+        "Asset Tracking Spreadsheet Tool",
+        "Millionaire Next Door Guide"
+      ],
+      "affiliateDescriptions": [
+        "Learn proven strategies for building wealth systematically with this comprehensive guide to increasing assets and reducing liabilities.",
+        "Professional Excel-compatible spreadsheet templates for tracking all your assets, investments, and liabilities in one dashboard.",
+        "Discover the surprising habits and strategies of everyday millionaires who built wealth through consistent financial discipline."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4a7YTsC",
+        "https://amzn.to/4raaFcg",
+        "https://amzn.to/487SXgS"
+      ],
+      "relatedCalculators": [
+        "budget-calculator",
+        "retirement-income-calculator",
+        "home-equity-calculator"
+      ]
+    },
+    {
+      "title": "Student Loan Calculator",
+      "slug": "student-loan-calculator",
+      "description": "Calculate student loan payments with multiple repayment plans including standard, graduated, extended, and income-driven options. Compare forgiveness programs and refinancing options.",
+      "shortDescription": "Calculate student loan payments & plans",
+      "category": "financial",
+      "tags": [
+        "student loan",
+        "education",
+        "loan repayment",
+        "forgiveness"
+      ],
+      "featured": true,
+      "popular": false,
+      "difficulty": "Medium",
+      "estimatedTime": "4 minutes",
+      "icon": "🎓",
+      "seoTitle": "Free Student Loan Calculator - Repayment Plans & Forgiveness",
+      "seoDescription": "Calculate student loan payments with different repayment plans. Compare options and estimate loan forgiveness with our free calculator.",
+      "keywords": [
+        "student loan calculator",
+        "student loan repayment",
+        "loan forgiveness calculator"
+      ],
+      "lastUpdated": "2025-11-07",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Student Loan Refinancing Guide",
+        "Debt Freedom Workbook System",
+        "FAFSA & Financial Aid Handbook"
+      ],
+      "affiliateDescriptions": [
+        "Master the complete process of student loan refinancing with proven strategies to lower your interest rate and save thousands over your loan term.",
+        "Track all your student loans in one place with this comprehensive debt elimination system designed specifically for graduates managing multiple loans.",
+        "Navigate the complex world of financial aid with expert guidance on maximizing grants, scholarships, and choosing the best loan options."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4oR3K6h",
+        "https://amzn.to/4a1wSmA",
+        "https://amzn.to/3M8U4p0"
+      ],
+      "relatedCalculators": [
+        "loan-amortization-calculator",
+        "college-savings-calculator",
+        "budget-calculator"
+      ]
+    },
+    {
+      "title": "Budget Calculator",
+      "slug": "budget-calculator",
+      "description": "Create a comprehensive monthly budget with income, expenses, savings, and debt payments. Track spending by category and see where your money goes with the 50/30/20 rule.",
+      "shortDescription": "Create a monthly budget plan",
+      "category": "financial",
+      "tags": [
+        "budget",
+        "expenses",
+        "income",
+        "savings",
+        "50/30/20"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "5 minutes",
+      "icon": "💰",
+      "seoTitle": "Free Budget Calculator - Monthly Budget Planner",
+      "seoDescription": "Create a monthly budget with our free calculator. Track income, expenses, and savings using the 50/30/20 rule.",
+      "keywords": [
+        "budget calculator",
+        "monthly budget",
+        "budget planner",
+        "50/30/20 budget"
+      ],
+      "lastUpdated": "2025-11-07",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Zero-Based Budget Planner",
+        "YNAB Alternative Workbook",
+        "Cash Envelope Budget System"
+      ],
+      "affiliateDescriptions": [
+        "Take control of every dollar with this comprehensive zero-based budgeting planner that helps you allocate income before the month begins.",
+        "Physical budgeting workbook that mirrors popular budgeting apps, perfect for those who prefer pen-and-paper financial planning.",
+        "Complete cash envelope wallet system with labeled dividers for groceries, entertainment, and personal spending categories."
+      ],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "net-worth-calculator",
+        "savings-goal-calculator",
+        "debt-to-income-calculator"
+      ]
+    },
+    {
+      "title": "Debt-to-Income Ratio Calculator",
+      "slug": "debt-to-income-calculator",
+      "description": "Calculate your debt-to-income (DTI) ratio for mortgage qualification. Include all monthly debt payments and gross income to see if you meet lender requirements.",
+      "shortDescription": "Calculate DTI for mortgage approval",
+      "category": "financial",
+      "tags": [
+        "DTI",
+        "debt-to-income",
+        "mortgage qualification",
+        "lending"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "📋",
+      "seoTitle": "Free Debt-to-Income Calculator - DTI Ratio for Mortgage",
+      "seoDescription": "Calculate your debt-to-income ratio for mortgage approval. See if you meet lender requirements with our free DTI calculator.",
+      "keywords": [
+        "debt to income calculator",
+        "DTI calculator",
+        "debt to income ratio"
+      ],
+      "lastUpdated": "2025-11-07",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Credit Score Improvement Kit",
+        "Mortgage Pre-Approval Guide",
+        "Debt Reduction Strategy Book"
+      ],
+      "affiliateDescriptions": [
+        "Boost your credit score fast with proven dispute letter templates and strategies to improve your DTI ratio for better loan terms.",
+        "Navigate the mortgage pre-approval process with insider tips on improving your DTI and presenting your finances to lenders.",
+        "Systematic approach to paying down debt strategically to improve your debt-to-income ratio and qualify for better loans."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/49XY6dS",
+        "https://amzn.to/48oad2z",
+        "https://amzn.to/3X2BgKD"
+      ],
+      "relatedCalculators": [
+        "mortgage-payment-calculator",
+        "home-affordability-calculator",
+        "budget-calculator"
+      ]
+    },
+    {
+      "title": "Home Equity Calculator",
+      "slug": "home-equity-calculator",
+      "description": "Calculate your home equity based on current home value, remaining mortgage balance, and appreciation over time. Estimate borrowing power for HELOC or home equity loan.",
+      "shortDescription": "Calculate your home equity",
+      "category": "home-real-estate",
+      "tags": [
+        "home equity",
+        "HELOC",
+        "home value",
+        "mortgage balance"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🏦",
+      "seoTitle": "Free Home Equity Calculator - HELOC & Equity Loan Calculator",
+      "seoDescription": "Calculate your home equity and borrowing power for HELOC or home equity loans with our free calculator.",
+      "keywords": [
+        "home equity calculator",
+        "HELOC calculator",
+        "home equity loan calculator"
+      ],
+      "lastUpdated": "2025-11-07",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "HELOC vs Home Equity Loan Guide",
+        "Home Value Maximization Book",
+        "Property Investment Strategy"
+      ],
+      "affiliateDescriptions": [
+        "Compare HELOC and home equity loan options with detailed pros, cons, and strategies for leveraging your home's value wisely.",
+        "Increase your home's value with proven renovation and maintenance strategies that maximize equity growth over time.",
+        "Learn how to use home equity strategically for real estate investing and building a property portfolio."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/47QcGCT",
+        "https://amzn.to/4o8x8DD",
+        "https://amzn.to/47SMOq4"
+      ],
+      "relatedCalculators": [
+        "mortgage-payment-calculator",
+        "refinance-calculator",
+        "net-worth-calculator"
+      ]
+    },
+    {
+      "title": "Profit Margin Calculator",
+      "slug": "profit-margin-calculator",
+      "description": "Calculate profit margin, markup percentage, gross profit, and net profit. Compare margin vs markup and see the impact of costs on profitability.",
+      "shortDescription": "Calculate profit margins & markup",
+      "category": "business-sales",
+      "tags": [
+        "profit margin",
+        "markup",
+        "gross profit",
+        "pricing"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "💲",
+      "seoTitle": "Free Profit Margin Calculator - Margin & Markup Calculator",
+      "seoDescription": "Calculate profit margin and markup percentage. Optimize pricing with our free profit calculator.",
+      "keywords": [
+        "profit margin calculator",
+        "markup calculator",
+        "gross profit calculator"
+      ],
+      "lastUpdated": "2025-11-07",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Pricing Strategy Playbook",
+        "Business Finance Fundamentals",
+        "Profit First System Book"
+      ],
+      "affiliateDescriptions": [
+        "Set profitable prices with psychological pricing strategies and competitive analysis techniques that maximize margins.",
+        "Master essential business finance concepts including profit margins, cash flow, and financial ratios for better decision-making.",
+        "Transform your business profitability with this revolutionary cash management system that ensures profit from every sale."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4a7YTsC",
+        "https://amzn.to/4raaFcg",
+        "https://amzn.to/487SXgS"
+      ],
+      "relatedCalculators": [
+        "break-even-calculator",
+        "roi-calculator",
+        "sales-commission-calculator"
+      ]
+    },
+    {
+      "title": "Car Lease vs Buy Calculator",
+      "slug": "car-lease-buy-calculator",
+      "description": "Compare the total cost of leasing versus buying a car. Factor in down payment, monthly payments, equity, depreciation, and end-of-lease options.",
+      "shortDescription": "Compare leasing vs buying a car",
+      "category": "financial",
+      "tags": [
+        "car lease",
+        "lease vs buy",
+        "auto financing"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Medium",
+      "estimatedTime": "5 minutes",
+      "icon": "🚙",
+      "seoTitle": "Free Car Lease vs Buy Calculator - Should I Lease or Buy?",
+      "seoDescription": "Compare leasing vs buying a car. Calculate total costs and equity with our free lease vs buy calculator.",
+      "keywords": [
+        "lease vs buy calculator",
+        "car lease calculator",
+        "should I lease or buy"
+      ],
+      "lastUpdated": "2025-11-07",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Car Buying Secrets Guide",
+        "Lease Negotiation Handbook",
+        "Used Car Inspection Checklist"
+      ],
+      "affiliateDescriptions": [
+        "Save thousands on your next car purchase with insider negotiation tactics and timing strategies used by industry professionals.",
+        "Master the art of lease negotiation with specific scripts and strategies to get the best monthly payment and terms.",
+        "Never buy a lemon again with this comprehensive used car inspection checklist covering 150+ critical checkpoints."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/3JGOkCo",
+        "https://amzn.to/4oSCNiC",
+        "https://amzn.to/4i92kRO"
+      ],
+      "relatedCalculators": [
+        "auto-loan-calculator",
+        "gas-mileage-calculator"
+      ]
+    },
+    {
+      "title": "Sales Commission Calculator",
+      "slug": "sales-commission-calculator",
+      "description": "Calculate sales commissions with multiple tiers, quotas, and bonus structures. Track earnings across different products and commission rates.",
+      "shortDescription": "Calculate sales commissions & bonuses",
+      "category": "business-sales",
+      "tags": [
+        "sales commission",
+        "commission",
+        "sales",
+        "earnings"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "💼",
+      "seoTitle": "Free Sales Commission Calculator - Commission Calculator",
+      "seoDescription": "Calculate sales commissions with multiple tiers and bonuses. Track earnings with our free commission calculator.",
+      "keywords": [
+        "sales commission calculator",
+        "commission calculator",
+        "sales earnings calculator"
+      ],
+      "lastUpdated": "2025-11-07",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Sales Closing Techniques Bible",
+        "Commission Tracking Software",
+        "Top Producer Success System"
+      ],
+      "affiliateDescriptions": [
+        "Master proven closing techniques that top salespeople use to consistently exceed quotas and maximize commission earnings.",
+        "Professional spreadsheet templates for tracking sales, commissions, and bonuses across multiple products and time periods.",
+        "Complete training system for becoming a top producer including prospecting, presenting, and closing strategies."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4a7YTsC",
+        "https://amzn.to/4raaFcg",
+        "https://amzn.to/487SXgS"
+      ],
+      "relatedCalculators": [
+        "profit-margin-calculator",
+        "roi-calculator"
+      ]
+    },
+    {
+      "title": "ROI Calculator",
+      "slug": "roi-calculator",
+      "description": "Calculate return on investment (ROI) for business investments, marketing campaigns, or projects. See percentage return and payback period.",
+      "shortDescription": "Calculate return on investment",
+      "category": "business-sales",
+      "tags": [
+        "ROI",
+        "return on investment",
+        "investment return"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🧮",
+      "seoTitle": "Free ROI Calculator - Return on Investment Calculator",
+      "seoDescription": "Calculate ROI for investments and projects. Measure investment returns with our free calculator.",
+      "keywords": [
+        "ROI calculator",
+        "return on investment calculator",
+        "investment return calculator"
+      ],
+      "lastUpdated": "2025-11-07",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Investment Analysis Handbook",
+        "Marketing ROI Optimization",
+        "Business Metrics Dashboard"
+      ],
+      "affiliateDescriptions": [
+        "Make smarter investment decisions with comprehensive ROI analysis techniques including risk assessment and scenario planning.",
+        "Maximize marketing ROI with data-driven strategies for tracking, attribution, and optimization across all channels.",
+        "Track all key business metrics including ROI, CAC, LTV, and more with these professional Excel dashboard templates."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4a7YTsC",
+        "https://amzn.to/4raaFcg",
+        "https://amzn.to/487SXgS"
+      ],
+      "relatedCalculators": [
+        "compound-interest-calculator",
+        "break-even-calculator",
+        "profit-margin-calculator"
+      ]
+    },
+    {
+      "title": "International Size Converter",
+      "slug": "size-converter",
+      "description": "Convert clothing and shoe sizes between US, UK, EU, and international sizing systems. Find your size when shopping from different countries.",
+      "shortDescription": "Convert clothing & shoe sizes",
+      "category": "math-conversions",
+      "tags": [
+        "size conversion",
+        "clothing size",
+        "shoe size",
+        "international sizes"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "👕",
+      "seoTitle": "Free Size Converter - International Clothing & Shoe Sizes",
+      "seoDescription": "Convert clothing and shoe sizes between US, UK, EU, and other countries. Shop internationally with our free size converter.",
+      "keywords": [
+        "size converter",
+        "clothing size converter",
+        "shoe size converter"
+      ],
+      "lastUpdated": "2025-11-07",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "International Shopping Guide",
+        "Measuring Tape Set",
+        "Size Chart Reference Book"
+      ],
+      "affiliateDescriptions": [
+        "Shop confidently from international retailers with comprehensive size conversion charts and fitting tips for all clothing types.",
+        "Professional body measuring tape set for accurate measurements ensuring perfect fit when ordering clothes online.",
+        "Pocket-sized reference guide with size charts for clothing, shoes, and accessories across 50+ countries."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4o3h3za",
+        "https://amzn.to/4pnjT37",
+        "https://amzn.to/4oR9yN7"
+      ],
+      "relatedCalculators": [
+        "unit-converter"
+      ]
+    },
+    {
+      "title": "Password Generator",
+      "slug": "password-generator",
+      "description": "Generate strong, secure passwords instantly with customizable length and character options. Create random passwords with uppercase, lowercase, numbers, and special symbols. Check password strength and get security recommendations for protecting your online accounts.",
+      "shortDescription": "Generate strong, secure random passwords",
+      "category": "generators",
+      "tags": [
+        "password generator",
+        "secure password",
+        "random password",
+        "strong password",
+        "password creator",
+        "online security"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🔐",
+      "seoTitle": "Free Password Generator - Create Strong, Secure Passwords Instantly",
+      "seoDescription": "Generate strong, random passwords with our free password generator. Customize length, include uppercase, lowercase, numbers, and symbols. Secure your accounts today.",
+      "keywords": [
+        "password generator",
+        "strong password generator",
+        "random password generator",
+        "secure password creator",
+        "password maker"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Best-Selling Password Manager Subscription",
+        "Hardware Security Key for 2FA",
+        "Cybersecurity Guide for Beginners"
+      ],
+      "affiliateDescriptions": [
+        "Store all your passwords securely with this top-rated password manager featuring auto-fill, secure sharing, and breach monitoring.",
+        "Add an extra layer of security to your accounts with this hardware authentication key supporting FIDO2, U2F, and more.",
+        "Learn essential cybersecurity practices to protect your digital life with this comprehensive guide covering passwords, privacy, and online safety."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "passphrase-generator",
+        "pin-generator",
+        "username-generator"
+      ]
+    },
+    {
+      "title": "Random Number Generator",
+      "slug": "random-number-generator",
+      "description": "Generate random numbers within any range you specify. Perfect for lotteries, raffles, games, statistical sampling, and decision-making. Choose single numbers or generate multiple random numbers at once with options to allow or exclude duplicates and sort results.",
+      "shortDescription": "Generate random numbers in any range",
+      "category": "generators",
+      "tags": [
+        "random number",
+        "number generator",
+        "RNG",
+        "lottery numbers",
+        "random picker",
+        "dice roller"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🎲",
+      "seoTitle": "Free Random Number Generator - Generate Numbers in Any Range",
+      "seoDescription": "Generate random numbers instantly with our free random number generator. Set custom ranges, generate multiple numbers, exclude duplicates. Perfect for lotteries, games, and more.",
+      "keywords": [
+        "random number generator",
+        "RNG",
+        "number picker",
+        "lottery number generator",
+        "random generator",
+        "dice roller online"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Premium Dice Set Collection",
+        "Statistics & Probability Textbook",
+        "Random Selection Spinner Wheel"
+      ],
+      "affiliateDescriptions": [
+        "High-quality polyhedral dice set for tabletop gaming, featuring precision-balanced dice in multiple colors and styles.",
+        "Master probability and statistics with this comprehensive textbook covering random sampling, distributions, and statistical analysis.",
+        "Classroom and party-ready spinning wheel for random selections, customizable sections, and fair decision-making."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "password-generator",
+        "pin-generator",
+        "color-generator"
+      ]
+    },
+    {
+      "title": "Baby Name Generator",
+      "slug": "baby-name-generator",
+      "description": "Discover the perfect baby name with our comprehensive name generator. Filter by gender, origin (American, Irish, Hebrew, Greek, Latin, and more), starting letter, name length, and popularity trends. Get name meanings, pronunciation guides, and popularity rankings to help you choose the ideal name for your little one.",
+      "shortDescription": "Find the perfect baby name by origin, meaning & style",
+      "category": "generators",
+      "tags": [
+        "baby names",
+        "name generator",
+        "boy names",
+        "girl names",
+        "baby name meanings",
+        "unique baby names",
+        "popular baby names"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "5 minutes",
+      "icon": "👶",
+      "seoTitle": "Free Baby Name Generator - Find Perfect Boy & Girl Names by Origin & Meaning",
+      "seoDescription": "Find the perfect baby name with our free generator. Filter by gender, origin, meaning, and popularity. Discover unique and popular boy and girl names with meanings.",
+      "keywords": [
+        "baby name generator",
+        "boy name generator",
+        "girl name generator",
+        "baby names",
+        "unique baby names",
+        "name meanings",
+        "popular baby names 2026"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "100,000+ Baby Names Book",
+        "Baby Memory Book & Journal",
+        "Pregnancy Planning Guide"
+      ],
+      "affiliateDescriptions": [
+        "The ultimate baby name resource with over 100,000 names from around the world, including meanings, origins, and popularity trends.",
+        "Document your pregnancy journey and baby's first year with this beautiful memory book featuring name selection pages and milestone trackers.",
+        "Prepare for parenthood with this comprehensive guide covering pregnancy planning, baby prep, and essential decisions including naming."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "pet-name-generator",
+        "username-generator",
+        "fantasy-name-generator"
+      ]
+    },
+    {
+      "title": "Lorem Ipsum Generator",
+      "slug": "lorem-ipsum-generator",
+      "description": "Generate placeholder text for your designs, websites, and documents. Choose from classic Lorem Ipsum, hipster ipsum, corporate ipsum, or other styles. Specify the number of paragraphs, sentences, or words you need. Perfect for designers, developers, and content creators working on mockups and prototypes.",
+      "shortDescription": "Generate placeholder text for designs & mockups",
+      "category": "generators",
+      "tags": [
+        "lorem ipsum",
+        "placeholder text",
+        "dummy text",
+        "filler text",
+        "design mockup",
+        "sample text"
+      ],
+      "featured": true,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "📝",
+      "seoTitle": "Free Lorem Ipsum Generator - Placeholder Text for Designs & Websites",
+      "seoDescription": "Generate Lorem Ipsum placeholder text instantly. Choose paragraphs, sentences, or words. Multiple styles available. Perfect for web design, mockups, and prototypes.",
+      "keywords": [
+        "lorem ipsum generator",
+        "placeholder text generator",
+        "dummy text",
+        "filler text generator",
+        "sample text",
+        "lipsum"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Web Design Fundamentals Book",
+        "UI/UX Design Course Guide",
+        "Graphic Design Software Subscription"
+      ],
+      "affiliateDescriptions": [
+        "Master modern web design principles including typography, layout, and responsive design with this comprehensive reference guide.",
+        "Learn professional UI/UX design workflows from wireframing to prototyping with industry-standard practices and real-world projects.",
+        "Access professional design tools for creating stunning layouts, mockups, and prototypes with this industry-leading creative software."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "uuid-generator",
+        "color-generator",
+        "username-generator"
+      ]
+    },
+    {
+      "title": "Color Generator",
+      "slug": "color-generator",
+      "description": "Generate random colors with HEX, RGB, and HSL values. Create color palettes, find complementary colors, and check accessibility contrast ratios. Perfect for designers, developers, and artists looking for color inspiration. Copy color codes instantly for use in your projects.",
+      "shortDescription": "Generate random colors with HEX, RGB & HSL codes",
+      "category": "generators",
+      "tags": [
+        "color generator",
+        "random color",
+        "hex color",
+        "RGB color",
+        "color palette",
+        "color picker"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🎨",
+      "seoTitle": "Free Color Generator - HEX, RGB & HSL Color Codes",
+      "seoDescription": "Generate random colors with HEX, RGB, and HSL codes. Create color palettes and check contrast ratios. Free color generator for designers and developers.",
+      "keywords": [
+        "random color generator",
+        "color generator",
+        "hex color generator",
+        "RGB generator",
+        "color palette generator",
+        "color picker"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Color Theory Design Book",
+        "Professional Pantone Color Guide",
+        "Digital Art Tablet for Designers"
+      ],
+      "affiliateDescriptions": [
+        "Master color theory fundamentals with this essential guide covering color psychology, harmonies, and practical applications in design.",
+        "The industry-standard color reference guide with thousands of Pantone colors for accurate color matching across print and digital.",
+        "Create stunning digital art and designs with this professional drawing tablet featuring pressure sensitivity and color accuracy."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "lorem-ipsum-generator",
+        "uuid-generator",
+        "random-number-generator"
+      ]
+    },
+    {
+      "title": "Savings Goal Calculator",
+      "slug": "savings-goal-calculator",
+      "description": "Calculate how much to save monthly to reach your financial goal. Set a target amount, timeline, and interest rate to see your progress with compound interest.",
+      "shortDescription": "Calculate monthly savings needed",
+      "category": "financial",
+      "tags": [
+        "savings",
+        "goal",
+        "financial planning",
+        "compound interest"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🐷",
+      "seoTitle": "Free Savings Goal Calculator - Reach Your Financial Goals",
+      "seoDescription": "Calculate how much to save monthly to reach your financial goal. Plan your savings with compound interest projections.",
+      "keywords": [
+        "savings goal calculator",
+        "savings calculator",
+        "financial goal calculator"
+      ],
+      "lastUpdated": "2025-11-07",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "52-Week Savings Challenge Kit",
+        "Automatic Millionaire System",
+        "Savings Tracker Journal"
+      ],
+      "affiliateDescriptions": [
+        "Visual savings challenge kit with stickers and tracking sheets that gamifies saving money throughout the year.",
+        "Learn how to automate your savings and build wealth without budgeting through proven pay-yourself-first strategies.",
+        "Beautiful hardcover journal designed to track multiple savings goals with motivational quotes and progress charts."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/48oiYtq",
+        "https://amzn.to/4ogsDr2",
+        "https://amzn.to/3K8HN3g"
+      ],
+      "relatedCalculators": [
+        "compound-interest-calculator",
+        "budget-calculator",
+        "retirement-income-calculator"
+      ]
+    },
+    {
+      "title": "Mortgage Refinance Calculator",
+      "slug": "refinance-calculator",
+      "description": "Determine if refinancing your mortgage makes sense. Compare current loan vs new loan, calculate break-even point, and see lifetime savings on interest payments.",
+      "shortDescription": "Should you refinance your mortgage?",
+      "category": "home-real-estate",
+      "tags": [
+        "refinance",
+        "mortgage",
+        "interest rate",
+        "break-even"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Medium",
+      "estimatedTime": "4 minutes",
+      "icon": "♻️",
+      "seoTitle": "Free Mortgage Refinance Calculator - Should I Refinance?",
+      "seoDescription": "Calculate if refinancing saves you money. Compare current vs new loan with break-even analysis using our free calculator.",
+      "keywords": [
+        "refinance calculator",
+        "mortgage refinance",
+        "should I refinance"
+      ],
+      "lastUpdated": "2025-11-07",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Refinancing Decision Guide",
+        "Mortgage Rate Shopping Handbook",
+        "Home Equity Strategy Book"
+      ],
+      "affiliateDescriptions": [
+        "Make informed refinancing decisions with this comprehensive guide covering rate comparisons, closing costs, and break-even analysis.",
+        "Learn insider secrets for getting the best mortgage rates by shopping effectively and negotiating with multiple lenders.",
+        "Maximize your home's value with strategic refinancing and home equity management techniques for long-term wealth building."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4oIJHXu",
+        "https://amzn.to/3XEjnSq",
+        "https://amzn.to/3K8Gxx4"
+      ],
+      "relatedCalculators": [
+        "mortgage-payment-calculator",
+        "loan-amortization-calculator",
+        "home-equity-calculator"
+      ]
+    },
+    {
+      "title": "Home Improvement Cost Calculator",
+      "slug": "home-improvement-cost-calculator",
+      "description": "Estimate costs for home renovation projects including kitchen, bathroom, flooring, and more. Compare DIY vs professional costs and calculate ROI on improvements.",
+      "shortDescription": "Estimate home renovation costs",
+      "category": "home-real-estate",
+      "tags": [
+        "renovation",
+        "home improvement",
+        "construction costs",
+        "ROI"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Medium",
+      "estimatedTime": "4 minutes",
+      "icon": "🔨",
+      "seoTitle": "Free Home Improvement Cost Calculator - Renovation Estimator",
+      "seoDescription": "Estimate home renovation costs for any project. Calculate ROI and compare DIY vs professional costs with our free calculator.",
+      "keywords": [
+        "home improvement calculator",
+        "renovation cost calculator",
+        "remodeling calculator"
+      ],
+      "lastUpdated": "2025-11-07",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Complete Home Renovation Guide",
+        "DIY Home Improvement Manual",
+        "Contractor Hiring Handbook"
+      ],
+      "affiliateDescriptions": [
+        "Plan and budget any home renovation project with detailed cost breakdowns, timelines, and contractor management tips.",
+        "Save thousands with step-by-step DIY instructions for common home improvements, including tool lists and safety guidelines.",
+        "Avoid contractor nightmares with this guide to hiring, negotiating, and managing home improvement professionals."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/47QcGCT",
+        "https://amzn.to/4o8x8DD",
+        "https://amzn.to/47SMOq4"
+      ],
+      "relatedCalculators": [
+        "home-equity-calculator",
+        "roi-calculator",
+        "budget-calculator"
+      ]
+    },
+    {
+      "title": "Tip Calculator",
+      "slug": "tip-calculator",
+      "description": "Calculate tips for restaurants, bars, and services. Split bills among multiple people and round to convenient amounts. Includes international tipping guidelines.",
+      "shortDescription": "Calculate tips and split bills",
+      "category": "miscellaneous",
+      "tags": [
+        "tip",
+        "gratuity",
+        "bill splitting",
+        "restaurant"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🪙",
+      "seoTitle": "Free Tip Calculator - Restaurant & Service Gratuity",
+      "seoDescription": "Calculate tips instantly and split bills among friends. International tipping guide included in our free calculator.",
+      "keywords": [
+        "tip calculator",
+        "gratuity calculator",
+        "bill split calculator"
+      ],
+      "lastUpdated": "2025-11-07",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "International Etiquette Guide",
+        "Money Saving Dining Book",
+        "Restaurant Receipt Organizer"
+      ],
+      "affiliateDescriptions": [
+        "Navigate tipping customs worldwide with this comprehensive guide to international service etiquette and gratuity standards.",
+        "Discover insider tips for dining out on a budget without sacrificing quality or experience at your favorite restaurants.",
+        "Keep track of dining expenses for budgeting or tax purposes with this organized receipt tracking system."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4idftcO",
+        "https://amzn.to/4icOyOj",
+        "https://amzn.to/49pjSah"
+      ],
+      "relatedCalculators": [
+        "budget-calculator",
+        "savings-goal-calculator",
+        "sales-tax-calculator",
+        "discount-calculator"
+      ]
+    },
+    {
+      "title": "Gas Mileage Calculator (MPG)",
+      "slug": "gas-mileage-calculator",
+      "description": "Calculate your vehicle's fuel efficiency in MPG or L/100km. Track gas costs per mile, compare vehicles, and estimate trip fuel costs based on current gas prices.",
+      "shortDescription": "Calculate MPG and fuel costs",
+      "category": "automotive",
+      "tags": [
+        "MPG",
+        "fuel efficiency",
+        "gas mileage",
+        "fuel economy"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "⛽",
+      "seoTitle": "Free Gas Mileage Calculator - MPG & Fuel Cost Calculator",
+      "seoDescription": "Calculate your car's MPG and fuel costs per mile. Compare vehicle efficiency with our free gas mileage calculator.",
+      "keywords": [
+        "gas mileage calculator",
+        "MPG calculator",
+        "fuel economy calculator"
+      ],
+      "lastUpdated": "2025-11-07",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Fuel Economy Improvement Guide",
+        "Vehicle Maintenance Log Book",
+        "OBD2 Diagnostic Scanner"
+      ],
+      "affiliateDescriptions": [
+        "Maximize your vehicle's fuel efficiency with proven driving techniques and maintenance tips that can improve MPG by up to 30%.",
+        "Track all vehicle maintenance, repairs, and fuel consumption in one organized logbook to optimize your car's performance.",
+        "Monitor your vehicle's real-time fuel efficiency and diagnose issues affecting gas mileage with this professional diagnostic tool."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/3JGOkCo",
+        "https://amzn.to/4oSCNiC",
+        "https://amzn.to/4i92kRO"
+      ],
+      "relatedCalculators": [
+        "auto-loan-calculator",
+        "car-lease-buy-calculator"
+      ]
+    },
+    {
+      "title": "College Savings Calculator (529 Plan)",
+      "slug": "college-savings-calculator",
+      "description": "Calculate how much to save for college with 529 plan projections. Factor in current savings, monthly contributions, years until college, and expected education costs with tax advantages.",
+      "shortDescription": "Calculate 529 college savings",
+      "category": "financial",
+      "tags": [
+        "college savings",
+        "529 plan",
+        "education",
+        "saving for college"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Medium",
+      "estimatedTime": "4 minutes",
+      "icon": "🎒",
+      "seoTitle": "Free College Savings Calculator - 529 Plan Calculator",
+      "seoDescription": "Calculate how much to save for college with 529 plan projections. Plan education savings with our free calculator.",
+      "keywords": [
+        "college savings calculator",
+        "529 calculator",
+        "education savings calculator"
+      ],
+      "lastUpdated": "2025-11-07",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "529 Plan Complete Guide",
+        "College Financial Aid Secrets",
+        "Education Savings Workbook"
+      ],
+      "affiliateDescriptions": [
+        "Navigate 529 plans with state-by-state comparisons, tax strategies, and optimal contribution timing for maximum education savings.",
+        "Unlock hidden financial aid opportunities with insider strategies for maximizing grants, scholarships, and need-based aid.",
+        "Track college savings goals with this comprehensive workbook including projection calculators and milestone tracking sheets."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/48oiYtq",
+        "https://amzn.to/4ogsDr2",
+        "https://amzn.to/3K8HN3g"
+      ],
+      "relatedCalculators": [
+        "compound-interest-calculator",
+        "savings-goal-calculator",
+        "student-loan-calculator"
+      ]
+    },
+    {
+      "title": "Business Name Generator",
+      "slug": "business-name-generator",
+      "description": "Generate creative, memorable business names for your startup, company, or brand. Enter keywords related to your industry and get unique name suggestions in various styles: modern, classic, playful, professional, or abstract. Each suggestion includes tips on domain availability and branding potential.",
+      "shortDescription": "Generate creative company & brand names",
+      "category": "generators",
+      "tags": [
+        "business name",
+        "company name",
+        "brand name",
+        "startup name",
+        "business name ideas",
+        "company name generator"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "5 minutes",
+      "icon": "🏢",
+      "seoTitle": "Free Business Name Generator - Creative Company & Brand Name Ideas",
+      "seoDescription": "Generate unique business names for your startup or brand. Enter keywords to get creative company name ideas. Find the perfect name for your business today.",
+      "keywords": [
+        "business name generator",
+        "company name generator",
+        "brand name generator",
+        "startup name ideas",
+        "business name ideas",
+        "company name ideas"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Brand Naming Strategy Guide",
+        "Business Formation Legal Kit",
+        "Entrepreneur's Startup Handbook"
+      ],
+      "affiliateDescriptions": [
+        "Learn the art and science of naming your business with strategies for memorability, trademark considerations, and brand positioning.",
+        "Everything you need to legally form your business including naming guidelines, trademark search tips, and registration checklists.",
+        "Start your business right with this comprehensive guide covering naming, branding, legal structure, and launch strategies."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "username-generator",
+        "password-generator",
+        "profit-margin-calculator"
+      ]
+    },
+    {
+      "title": "Username Generator",
+      "slug": "username-generator",
+      "description": "Create unique, memorable usernames for social media, gaming, forums, and online accounts. Combine words, add numbers, use different styles (cool, funny, professional, aesthetic). Generate multiple options at once and check availability hints for popular platforms like Instagram, TikTok, Twitter, and gaming networks.",
+      "shortDescription": "Create unique usernames for social media & gaming",
+      "category": "generators",
+      "tags": [
+        "username generator",
+        "username ideas",
+        "gaming username",
+        "social media username",
+        "screen name",
+        "gamertag generator"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "👤",
+      "seoTitle": "Free Username Generator - Unique Names for Gaming & Social Media",
+      "seoDescription": "Generate unique usernames for gaming, Instagram, TikTok, and more. Create cool, aesthetic, or funny usernames. Get multiple ideas instantly with our free generator.",
+      "keywords": [
+        "username generator",
+        "gamertag generator",
+        "username ideas",
+        "cool usernames",
+        "aesthetic usernames",
+        "gaming name generator"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Social Media Marketing Guide",
+        "Gaming Headset for Online Play",
+        "Personal Branding Workbook"
+      ],
+      "affiliateDescriptions": [
+        "Build your online presence with proven social media strategies including profile optimization, content creation, and audience growth.",
+        "Enhance your gaming experience with this premium headset featuring crystal-clear voice chat and immersive surround sound.",
+        "Craft your perfect online identity with exercises for defining your personal brand, choosing usernames, and building consistency."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "password-generator",
+        "business-name-generator",
+        "fantasy-name-generator"
+      ]
+    },
+    {
+      "title": "UUID Generator",
+      "slug": "uuid-generator",
+      "description": "Generate universally unique identifiers (UUIDs) for software development, databases, and system integration. Create single or bulk UUIDs in version 4 format. Copy individual UUIDs or download lists for use in your applications, APIs, and databases.",
+      "shortDescription": "Generate UUIDs for developers & databases",
+      "category": "generators",
+      "tags": [
+        "UUID",
+        "GUID",
+        "unique identifier",
+        "UUID generator",
+        "developer tools",
+        "database ID"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🔧",
+      "seoTitle": "Free UUID Generator - Generate Unique Identifiers Online",
+      "seoDescription": "Generate UUID v4 identifiers instantly. Create single or bulk UUIDs for databases, APIs, and software development. Free online UUID generator tool.",
+      "keywords": [
+        "UUID generator",
+        "GUID generator",
+        "unique identifier generator",
+        "UUID v4",
+        "random UUID",
+        "bulk UUID generator"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Software Development Best Practices",
+        "Database Design Fundamentals",
+        "API Development Handbook"
+      ],
+      "affiliateDescriptions": [
+        "Write better code with this comprehensive guide to software development patterns, practices, and architectural decisions.",
+        "Design robust databases with proper primary keys, indexing strategies, and data modeling techniques for scalable applications.",
+        "Build professional APIs with this handbook covering RESTful design, authentication, versioning, and best practices."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "password-generator",
+        "lorem-ipsum-generator",
+        "random-number-generator"
+      ]
+    },
+    {
+      "title": "Pet Name Generator",
+      "slug": "pet-name-generator",
+      "description": "Find the perfect name for your new pet! Generate names for dogs, cats, birds, fish, hamsters, and other pets. Filter by personality traits (playful, regal, fierce, cute), themes (food names, human names, nature names), and name length. Get hundreds of creative pet name ideas instantly.",
+      "shortDescription": "Find perfect names for dogs, cats & pets",
+      "category": "generators",
+      "tags": [
+        "pet names",
+        "dog names",
+        "cat names",
+        "puppy names",
+        "kitten names",
+        "pet name ideas"
+      ],
+      "featured": false,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "🐾",
+      "seoTitle": "Free Pet Name Generator - Dog Names, Cat Names & More",
+      "seoDescription": "Find the perfect pet name with our free generator. Get creative dog names, cat names, and names for all pets. Filter by personality, theme, and style.",
+      "keywords": [
+        "pet name generator",
+        "dog name generator",
+        "cat name generator",
+        "puppy names",
+        "kitten names",
+        "unique pet names"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Personalized Pet ID Tag",
+        "New Pet Owner's Handbook",
+        "Custom Pet Portrait Commission"
+      ],
+      "affiliateDescriptions": [
+        "Engrave your pet's new name on this durable, stylish ID tag available in multiple shapes, colors, and materials for any pet.",
+        "Everything first-time pet owners need to know about naming, training, nutrition, and care for dogs, cats, and other pets.",
+        "Immortalize your pet with a beautiful custom portrait - the perfect way to celebrate your new furry friend and their name."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "baby-name-generator",
+        "username-generator",
+        "fantasy-name-generator"
+      ]
+    },
+    {
+      "title": "PIN Generator",
+      "slug": "pin-generator",
+      "description": "Generate secure random PIN codes for bank cards, devices, safes, and access systems. Choose 4-digit, 6-digit, or custom length PINs. Options to avoid sequential numbers (1234), repeated digits (1111), and commonly used weak PINs. Generate multiple PINs at once for different uses.",
+      "shortDescription": "Generate secure random PIN codes",
+      "category": "generators",
+      "tags": [
+        "PIN generator",
+        "PIN code",
+        "random PIN",
+        "secure PIN",
+        "4 digit code",
+        "access code"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🔢",
+      "seoTitle": "Free PIN Generator - Generate Secure Random PIN Codes",
+      "seoDescription": "Generate secure random PIN codes for cards, devices, and safes. Create 4-digit or 6-digit PINs. Avoid weak patterns with our free PIN generator.",
+      "keywords": [
+        "PIN generator",
+        "PIN code generator",
+        "random PIN",
+        "4 digit PIN generator",
+        "secure PIN",
+        "access code generator"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "RFID Blocking Wallet",
+        "Home Safe with Digital Keypad",
+        "Identity Protection Guide"
+      ],
+      "affiliateDescriptions": [
+        "Protect your cards and PINs from electronic theft with this premium RFID-blocking wallet featuring multiple card slots and slim design.",
+        "Secure your valuables with this fireproof home safe featuring programmable PIN code access and backup key entry.",
+        "Comprehensive guide to protecting your identity including PIN security, fraud prevention, and what to do if your information is compromised."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "password-generator",
+        "passphrase-generator",
+        "random-number-generator"
+      ]
+    },
+    {
+      "title": "Passphrase Generator",
+      "slug": "passphrase-generator",
+      "description": "Generate memorable yet secure passphrases using random word combinations. Choose the number of words, add optional numbers and symbols, and customize separators (spaces, hyphens, periods). Passphrases are easier to remember than complex passwords while providing excellent security for your accounts.",
+      "shortDescription": "Generate memorable secure passphrases",
+      "category": "generators",
+      "tags": [
+        "passphrase generator",
+        "passphrase",
+        "secure passphrase",
+        "word password",
+        "memorable password",
+        "diceware"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🔑",
+      "seoTitle": "Free Passphrase Generator - Create Memorable Secure Passphrases",
+      "seoDescription": "Generate secure, memorable passphrases with random word combinations. Stronger than passwords and easier to remember. Free passphrase generator tool.",
+      "keywords": [
+        "passphrase generator",
+        "secure passphrase",
+        "random passphrase",
+        "diceware generator",
+        "word password generator",
+        "memorable password"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Password Security Deep Dive",
+        "YubiKey Hardware Authentication",
+        "Privacy & Security Toolkit"
+      ],
+      "affiliateDescriptions": [
+        "Understand the science of password security including entropy, passphrase strength, and modern authentication best practices.",
+        "Hardware security key for unbreakable two-factor authentication compatible with hundreds of services and password managers.",
+        "Complete digital privacy toolkit including password management strategies, encryption guides, and online security practices."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "password-generator",
+        "pin-generator",
+        "username-generator"
+      ]
+    },
+    {
+      "title": "Fantasy Name Generator",
+      "slug": "fantasy-name-generator",
+      "description": "Generate unique fantasy names for characters, stories, games, and worldbuilding. Choose from multiple genres and races: elven, dwarven, orcish, human medieval, sci-fi, steampunk, and more. Perfect for D&D characters, fiction writing, video games, and creative projects. Generate first names, surnames, and full character names.",
+      "shortDescription": "Generate fantasy & D&D character names",
+      "category": "generators",
+      "tags": [
+        "fantasy names",
+        "character name generator",
+        "D&D names",
+        "RPG names",
+        "elf names",
+        "dwarf names",
+        "fictional names"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "⚔️",
+      "seoTitle": "Free Fantasy Name Generator - D&D, Elf, Dwarf & Character Names",
+      "seoDescription": "Generate fantasy names for D&D characters, fiction writing, and games. Create elven, dwarven, human, and sci-fi names. Free character name generator.",
+      "keywords": [
+        "fantasy name generator",
+        "D&D name generator",
+        "character name generator",
+        "elf name generator",
+        "dwarf name generator",
+        "RPG name generator"
+      ],
+      "lastUpdated": "2025-06-10",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "D&D Player's Handbook",
+        "Worldbuilding Guide for Writers",
+        "Fantasy Map Making Kit"
+      ],
+      "affiliateDescriptions": [
+        "The essential guide for D&D players with everything you need to create memorable characters, including naming conventions for all races.",
+        "Build rich fantasy worlds with this comprehensive guide to naming languages, cultures, geography, and lore for fiction writing.",
+        "Create beautiful fantasy maps for your stories and campaigns with this complete cartography kit including templates and tutorials."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "baby-name-generator",
+        "pet-name-generator",
+        "username-generator"
+      ]
+    },
+    {
+      "title": "Tax Bracket Calculator",
+      "slug": "tax-bracket-calculator",
+      "description": "Calculate your 2026 federal income tax using current US tax brackets. See your effective and marginal tax rates, bracket breakdown, and compare across all filing statuses. Visualize how much of your income falls in each bracket.",
+      "shortDescription": "Calculate federal income tax by bracket",
+      "category": "financial",
+      "tags": [
+        "tax brackets",
+        "income tax",
+        "federal tax",
+        "marginal rate",
+        "effective rate",
+        "tax planning"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🏛️",
+      "seoTitle": "Free Tax Bracket Calculator 2026 - Federal Income Tax Calculator",
+      "seoDescription": "Calculate your 2026 federal income tax with our free tax bracket calculator. See marginal and effective tax rates, bracket breakdown, and compare filing statuses.",
+      "keywords": [
+        "tax bracket calculator",
+        "income tax calculator",
+        "federal tax calculator",
+        "marginal tax rate",
+        "effective tax rate"
+      ],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Tax Planning Strategy Guide",
+        "TurboTax Premium Software",
+        "Tax Deduction Finder Workbook"
+      ],
+      "affiliateDescriptions": [
+        "Minimize your tax burden legally with proven strategies for deductions, credits, and tax-advantaged account optimization.",
+        "File your taxes confidently with this comprehensive tax software that maximizes refunds and handles all filing statuses.",
+        "Discover overlooked deductions with this organized workbook tracking expenses by category throughout the year."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/48oiYtq",
+        "https://amzn.to/4ogsDr2",
+        "https://amzn.to/3K8HN3g"
+      ],
+      "relatedCalculators": [
+        "paycheck-calculator",
+        "budget-calculator",
+        "retirement-planning-calculator"
+      ]
+    },
+    {
+      "title": "Paycheck Calculator",
+      "slug": "paycheck-calculator",
+      "description": "Calculate your take-home pay from gross salary. See federal tax, Social Security, Medicare, state tax withholdings, and voluntary deductions like 401(k), health insurance, and HSA contributions.",
+      "shortDescription": "Calculate take-home pay from gross salary",
+      "category": "financial",
+      "tags": [
+        "paycheck",
+        "take-home pay",
+        "net pay",
+        "salary",
+        "withholding",
+        "deductions"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "💸",
+      "seoTitle": "Free Paycheck Calculator - Take-Home Pay & Tax Withholding",
+      "seoDescription": "Calculate your take-home pay with our free paycheck calculator. See federal tax, FICA, state tax, and deductions from your gross salary.",
+      "keywords": [
+        "paycheck calculator",
+        "take-home pay calculator",
+        "salary calculator",
+        "net pay calculator",
+        "withholding calculator"
+      ],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Personal Finance Fundamentals",
+        "Payroll & Tax Record Organizer",
+        "Salary Negotiation Playbook"
+      ],
+      "affiliateDescriptions": [
+        "Master personal finance basics including understanding your paycheck, tax planning, and maximizing take-home pay.",
+        "Keep track of all pay stubs, tax documents, and deduction records with this comprehensive financial organizer.",
+        "Negotiate a higher salary with proven techniques that top performers use to earn what they're worth."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/48oiYtq",
+        "https://amzn.to/4ogsDr2",
+        "https://amzn.to/3K8HN3g"
+      ],
+      "relatedCalculators": [
+        "tax-bracket-calculator",
+        "budget-calculator",
+        "retirement-planning-calculator",
+        "salary-to-hourly-calculator",
+        "hourly-to-salary-calculator",
+        "overtime-calculator"
+      ]
+    },
+    {
+      "title": "Inflation Calculator",
+      "slug": "inflation-calculator",
+      "description": "Calculate the impact of inflation on purchasing power using historical US CPI data from 1960-2026. Compare dollar values across any two years, or project future purchasing power at custom inflation rates.",
+      "shortDescription": "Calculate inflation impact on purchasing power",
+      "category": "financial",
+      "tags": [
+        "inflation",
+        "purchasing power",
+        "CPI",
+        "cost of living",
+        "dollar value"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "📈",
+      "seoTitle": "Free Inflation Calculator - CPI & Purchasing Power Calculator",
+      "seoDescription": "Calculate inflation and purchasing power changes with historical US CPI data from 1960-2026. See how much your money is really worth.",
+      "keywords": [
+        "inflation calculator",
+        "CPI calculator",
+        "purchasing power calculator",
+        "cost of living calculator",
+        "dollar value calculator"
+      ],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Inflation-Proof Investment Guide",
+        "Economic History Reference Book",
+        "Treasury Bond & TIPS Handbook"
+      ],
+      "affiliateDescriptions": [
+        "Protect your wealth from inflation with proven investment strategies including TIPS, commodities, and real assets.",
+        "Understand how inflation has shaped the economy over decades with this comprehensive economic history reference.",
+        "Learn how Treasury Inflation-Protected Securities work and how to use them to hedge against rising prices."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/48oiYtq",
+        "https://amzn.to/4ogsDr2",
+        "https://amzn.to/3K8HN3g"
+      ],
+      "relatedCalculators": [
+        "compound-interest-calculator",
+        "retirement-income-calculator",
+        "fire-calculator"
+      ]
+    },
+    {
+      "title": "FIRE Calculator",
+      "slug": "fire-calculator",
+      "description": "Calculate your Financial Independence, Retire Early (FIRE) number and timeline. See years to FIRE, Coast FIRE number, savings rate analysis, portfolio growth projections, and what-if scenarios for accelerating your path to financial independence.",
+      "shortDescription": "Calculate your path to financial independence",
+      "category": "financial",
+      "tags": [
+        "FIRE",
+        "financial independence",
+        "early retirement",
+        "savings rate",
+        "Coast FIRE",
+        "4% rule"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Medium",
+      "estimatedTime": "4 minutes",
+      "icon": "🔥",
+      "seoTitle": "Free FIRE Calculator - Financial Independence & Early Retirement",
+      "seoDescription": "Calculate your FIRE number, years to financial independence, and Coast FIRE target. Plan early retirement with portfolio projections and what-if scenarios.",
+      "keywords": [
+        "FIRE calculator",
+        "financial independence calculator",
+        "early retirement calculator",
+        "FIRE number",
+        "Coast FIRE",
+        "savings rate calculator"
+      ],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "FIRE Movement Complete Guide",
+        "Passive Income Strategy Bible",
+        "Early Retirement Planning Workbook"
+      ],
+      "affiliateDescriptions": [
+        "Achieve financial independence with the complete FIRE playbook covering savings rates, investment strategies, and early retirement planning.",
+        "Build multiple streams of passive income with proven strategies for dividends, real estate, online business, and more.",
+        "Plan your early retirement systematically with worksheets for FIRE number calculation, milestone tracking, and withdrawal strategies."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4a7YTsC",
+        "https://amzn.to/4raaFcg",
+        "https://amzn.to/487SXgS"
+      ],
+      "relatedCalculators": [
+        "retirement-planning-calculator",
+        "compound-interest-calculator",
+        "investment-income-goal-calculator"
+      ]
+    },
+    {
+      "title": "Macro Calculator",
+      "slug": "macro-calculator",
+      "description": "Calculate your daily macronutrient targets (protein, carbs, fat) based on your body stats, activity level, and fitness goals. See gram targets, calorie breakdown, per-meal splits, and food examples for each macro.",
+      "shortDescription": "Calculate daily protein, carbs & fat targets",
+      "category": "health-fitness",
+      "tags": [
+        "macros",
+        "macronutrients",
+        "protein",
+        "carbs",
+        "fat",
+        "nutrition",
+        "meal planning"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🥗",
+      "seoTitle": "Free Macro Calculator - Daily Protein, Carbs & Fat Calculator",
+      "seoDescription": "Calculate your daily macronutrient needs with our free macro calculator. Get personalized protein, carbs, and fat targets for your fitness goals.",
+      "keywords": [
+        "macro calculator",
+        "macronutrient calculator",
+        "protein calculator",
+        "carbs calculator",
+        "nutrition calculator"
+      ],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Digital Food Scale for Accurate Tracking",
+        "Meal Prep Container Set",
+        "Macro-Friendly Cookbook"
+      ],
+      "affiliateDescriptions": [
+        "Ensure accurate macro counting with this precision digital scale featuring nutritional database and portion control guidance.",
+        "Simplify meal planning and portion control with these glass containers perfect for weekly meal prep and macro management.",
+        "Hit your macro targets deliciously with recipes designed for specific protein, carb, and fat ratios for any fitness goal."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4rr2zfF",
+        "https://amzn.to/3K6H6Yh",
+        "https://amzn.to/4pnTRwM"
+      ],
+      "relatedCalculators": [
+        "tdee-calculator",
+        "calorie-calculator",
+        "bmi-calculator"
+      ]
+    },
+    {
+      "title": "TDEE Calculator",
+      "slug": "tdee-calculator",
+      "description": "Calculate your Total Daily Energy Expenditure (TDEE) using the Mifflin-St Jeor equation. See BMR, TDEE at different activity levels, and calorie targets for weight loss, maintenance, and muscle gain.",
+      "shortDescription": "Calculate total daily energy expenditure",
+      "category": "health-fitness",
+      "tags": [
+        "TDEE",
+        "BMR",
+        "calories",
+        "metabolism",
+        "energy expenditure",
+        "weight management"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🏃",
+      "seoTitle": "Free TDEE Calculator - Total Daily Energy Expenditure",
+      "seoDescription": "Calculate your TDEE and BMR with our free calculator. See daily calorie needs for your activity level and get targets for weight loss or muscle gain.",
+      "keywords": [
+        "TDEE calculator",
+        "BMR calculator",
+        "total daily energy expenditure",
+        "metabolism calculator",
+        "calorie needs calculator"
+      ],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Smart Scale with BMI Tracking",
+        "Top-Rated Fitness Tracker Watch",
+        "Body Measurement Tape Set"
+      ],
+      "affiliateDescriptions": [
+        "Track your BMI progress automatically with this smart scale that syncs to your phone and monitors body composition trends over time.",
+        "Monitor your health metrics 24/7 with this comprehensive fitness tracker featuring heart rate, activity, and health insights.",
+        "Accurately measure body dimensions for tracking fitness progress with this professional-grade retractable measuring tape set."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/3LM6xiw",
+        "https://amzn.to/487cldM",
+        "https://amzn.to/4ppvFdr"
+      ],
+      "relatedCalculators": [
+        "calorie-calculator",
+        "macro-calculator",
+        "bmi-calculator"
+      ]
+    },
+    {
+      "title": "Age Calculator",
+      "slug": "age-calculator",
+      "description": "Calculate your exact age in years, months, and days. See your zodiac sign, Chinese zodiac, generation, birthday countdown, life milestones timeline, and fun statistics like heartbeats and breaths since birth.",
+      "shortDescription": "Calculate exact age with fun stats & milestones",
+      "category": "time-date",
+      "tags": [
+        "age calculator",
+        "birthday",
+        "zodiac",
+        "milestones",
+        "date calculator"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🎂",
+      "seoTitle": "Free Age Calculator - Exact Age in Years, Months & Days",
+      "seoDescription": "Calculate your exact age in years, months, and days. See zodiac sign, generation, birthday countdown, and fun life statistics.",
+      "keywords": [
+        "age calculator",
+        "birthday calculator",
+        "how old am I",
+        "date of birth calculator",
+        "exact age calculator"
+      ],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Project Management Planner",
+        "Productivity Method Bestseller",
+        "Desktop Calendar with Holidays"
+      ],
+      "affiliateDescriptions": [
+        "Master project timelines and deadline management with this comprehensive planner featuring Gantt charts and milestone tracking.",
+        "Transform your productivity with David Allen's revolutionary GTD method for managing tasks, projects, and deadlines effectively.",
+        "Never miss a deadline with this desktop calendar featuring all major holidays, business days counter, and project planning space."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4idftcO",
+        "https://amzn.to/4icOyOj",
+        "https://amzn.to/49pjSah"
+      ],
+      "relatedCalculators": [
+        "business-days-calculator",
+        "time-zone-converter",
+        "pto-calculator"
+      ]
+    },
+    {
+      "title": "Percentage Calculator",
+      "slug": "percentage-calculator",
+      "description": "Calculate percentages with four different modes: find a percentage of a number, find what percent one number is of another, find percentage change between values, and find original values from percentages. Visual bars, formulas, and quick reference tables included.",
+      "shortDescription": "Calculate percentages in multiple ways",
+      "category": "math-conversions",
+      "tags": [
+        "percentage",
+        "percent",
+        "math",
+        "percentage change",
+        "discount"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "➗",
+      "seoTitle": "Free Percentage Calculator - Calculate Percentages Instantly",
+      "seoDescription": "Calculate percentages easily with our free calculator. Find percentage of a number, percentage change, and more with visual explanations.",
+      "keywords": [
+        "percentage calculator",
+        "percent calculator",
+        "percentage change calculator",
+        "discount calculator",
+        "percent of a number"
+      ],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "College Success Study Guide",
+        "Student Planner & Grade Tracker",
+        "Test Prep Bundle Pack"
+      ],
+      "affiliateDescriptions": [
+        "Master effective study techniques and time management strategies that help top students maintain high GPAs throughout college.",
+        "Stay organized and track your grades all semester with this comprehensive academic planner featuring GPA calculators and goal setting.",
+        "Boost your test scores and overall GPA with proven test-taking strategies and practice materials for major standardized exams."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "gpa-calculator",
+        "grade-calculator",
+        "unit-converter",
+        "sales-tax-calculator",
+        "discount-calculator"
+      ]
+    },
+    {
+      "title": "Unit Converter",
+      "slug": "unit-converter",
+      "description": "Convert between units across 8 categories: length, weight, temperature, volume, area, speed, digital storage, and time. See instant conversions to all related units at once with a swap function for quick reverse conversion.",
+      "shortDescription": "Convert units across 8 measurement categories",
+      "category": "math-conversions",
+      "tags": [
+        "unit converter",
+        "conversion",
+        "measurement",
+        "length",
+        "weight",
+        "temperature",
+        "volume"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🔄",
+      "seoTitle": "Free Unit Converter - Length, Weight, Temperature & More",
+      "seoDescription": "Convert between units of measurement instantly. Length, weight, temperature, volume, area, speed, digital, and time conversions in one tool.",
+      "keywords": [
+        "unit converter",
+        "measurement converter",
+        "length converter",
+        "weight converter",
+        "temperature converter",
+        "conversion calculator"
+      ],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "College Success Study Guide",
+        "Student Planner & Grade Tracker",
+        "Test Prep Bundle Pack"
+      ],
+      "affiliateDescriptions": [
+        "Master effective study techniques and time management strategies that help top students maintain high GPAs throughout college.",
+        "Stay organized and track your grades all semester with this comprehensive academic planner featuring GPA calculators and goal setting.",
+        "Boost your test scores and overall GPA with proven test-taking strategies and practice materials for major standardized exams."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "percentage-calculator",
+        "recipe-scaler-converter",
+        "size-converter"
+      ]
+    },
+    {
+      "title": "Time Zone Converter",
+      "slug": "time-zone-converter",
+      "description": "Convert time between any world time zones instantly. Add multiple target zones, plan meetings across time zones with business hours overlap visualization, and use the current time button for quick conversions.",
+      "shortDescription": "Convert time between world time zones",
+      "category": "time-date",
+      "tags": [
+        "time zone",
+        "time converter",
+        "world clock",
+        "meeting planner",
+        "UTC"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🌍",
+      "seoTitle": "Free Time Zone Converter - World Clock & Meeting Planner",
+      "seoDescription": "Convert time between time zones instantly. Plan meetings across time zones with business hours overlap. Free world clock converter.",
+      "keywords": [
+        "time zone converter",
+        "world clock",
+        "time zone calculator",
+        "meeting planner time zones",
+        "UTC converter"
+      ],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Project Management Planner",
+        "Productivity Method Bestseller",
+        "Desktop Calendar with Holidays"
+      ],
+      "affiliateDescriptions": [
+        "Master project timelines and deadline management with this comprehensive planner featuring Gantt charts and milestone tracking.",
+        "Transform your productivity with David Allen's revolutionary GTD method for managing tasks, projects, and deadlines effectively.",
+        "Never miss a deadline with this desktop calendar featuring all major holidays, business days counter, and project planning space."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4idftcO",
+        "https://amzn.to/4icOyOj",
+        "https://amzn.to/49pjSah"
+      ],
+      "relatedCalculators": [
+        "business-days-calculator",
+        "age-calculator",
+        "pto-calculator"
+      ]
+    },
+    {
+      "title": "QR Code Generator",
+      "slug": "qr-code-generator",
+      "description": "Generate QR codes for URLs, text, WiFi networks, emails, phone numbers, and SMS messages. Download as PNG or copy as SVG. Customize size and error correction level.",
+      "shortDescription": "Generate QR codes for URLs, WiFi & more",
+      "category": "generators",
+      "tags": [
+        "QR code",
+        "QR generator",
+        "barcode",
+        "WiFi QR",
+        "URL QR code"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "📱",
+      "seoTitle": "Free QR Code Generator - Create QR Codes for URLs, WiFi & More",
+      "seoDescription": "Generate QR codes for URLs, text, WiFi, email, phone, and SMS. Download PNG or copy SVG. Free QR code generator with multiple content types.",
+      "keywords": [
+        "QR code generator",
+        "QR code maker",
+        "free QR code",
+        "WiFi QR code",
+        "URL QR code generator"
+      ],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Creative Writing Workbook",
+        "Business Naming Guide",
+        "Content Creator's Handbook"
+      ],
+      "affiliateDescriptions": [
+        "Unlock your creative potential with exercises and prompts designed to generate unique names, characters, and story ideas.",
+        "Build a memorable brand with proven naming strategies, trademark guidance, and domain availability tips for your business.",
+        "Master the art of creating engaging usernames, team names, and online identities that stand out across all platforms."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "password-generator",
+        "uuid-generator",
+        "lorem-ipsum-generator"
+      ]
+    },
+    {
+      "title": "Break-Even Calculator",
+      "slug": "break-even-calculator",
+      "description": "Calculate your break-even point in units and revenue. See contribution margin, profit at various volumes, pricing and cost scenarios, and safety margin analysis for your business.",
+      "shortDescription": "Calculate break-even point for your business",
+      "category": "business-sales",
+      "tags": [
+        "break-even",
+        "break even analysis",
+        "contribution margin",
+        "fixed costs",
+        "business planning"
+      ],
+      "featured": true,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "🏁",
+      "seoTitle": "Free Break-Even Calculator - Break-Even Analysis Tool",
+      "seoDescription": "Calculate your break-even point in units and revenue. Analyze contribution margins and pricing scenarios with our free break-even calculator.",
+      "keywords": [
+        "break-even calculator",
+        "break even analysis",
+        "break even point",
+        "contribution margin calculator",
+        "business planning calculator"
+      ],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Pricing Strategy Playbook",
+        "Business Finance Fundamentals",
+        "Profit First System Book"
+      ],
+      "affiliateDescriptions": [
+        "Set profitable prices with psychological pricing strategies and competitive analysis techniques that maximize margins.",
+        "Master essential business finance concepts including profit margins, cash flow, and financial ratios for better decision-making.",
+        "Transform your business profitability with this revolutionary cash management system that ensures profit from every sale."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4a7YTsC",
+        "https://amzn.to/4raaFcg",
+        "https://amzn.to/487SXgS"
+      ],
+      "relatedCalculators": [
+        "profit-margin-calculator",
+        "roi-calculator",
+        "sales-commission-calculator"
+      ]
+    },
+    {
+      "title": "Grade Calculator",
+      "slug": "grade-calculator",
+      "description": "Calculate your weighted grade average or find out what score you need on your final exam. Add multiple assignments with scores and weights, see letter grades, and get targets for achieving each grade level.",
+      "shortDescription": "Calculate weighted grades & final exam score needed",
+      "category": "math-conversions",
+      "tags": [
+        "grade calculator",
+        "weighted average",
+        "final grade",
+        "GPA",
+        "school",
+        "college"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "🅰️",
+      "seoTitle": "Free Grade Calculator - Weighted Average & Final Exam Score",
+      "seoDescription": "Calculate your weighted grade average and find out what you need on your final exam. Free grade calculator for students.",
+      "keywords": [
+        "grade calculator",
+        "final grade calculator",
+        "weighted grade calculator",
+        "what do I need on my final",
+        "class grade calculator"
+      ],
+      "lastUpdated": "2026-05-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "College Success Study Guide",
+        "Student Planner & Grade Tracker",
+        "Test Prep Bundle Pack"
+      ],
+      "affiliateDescriptions": [
+        "Master effective study techniques and time management strategies that help top students maintain high GPAs throughout college.",
+        "Stay organized and track your grades all semester with this comprehensive academic planner featuring GPA calculators and goal setting.",
+        "Boost your test scores and overall GPA with proven test-taking strategies and practice materials for major standardized exams."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "gpa-calculator",
+        "percentage-calculator",
+        "unit-converter"
+      ]
+    },
+    {
+      "title": "Sleep Cycle Calculator",
+      "slug": "sleep-calculator",
+      "description": "Calculate optimal bedtimes and wake times based on 90-minute sleep cycles. Choose wake-up or bedtime mode, plan naps, and get age-specific sleep recommendations from CDC/NIH guidelines. Wake up refreshed by aligning with your natural sleep cycles.",
+      "shortDescription": "Calculate optimal sleep & wake times by cycle",
+      "category": "health-fitness",
+      "tags": [
+        "sleep calculator",
+        "sleep cycle",
+        "bedtime",
+        "wake time",
+        "nap calculator",
+        "sleep schedule",
+        "circadian rhythm"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🌙",
+      "seoTitle": "Free Sleep Cycle Calculator - Optimal Bedtime & Wake Time",
+      "seoDescription": "Calculate the best time to sleep and wake up based on 90-minute sleep cycles. Get age-specific recommendations, nap planning, and sleep stage visualization. Wake up refreshed.",
+      "keywords": [
+        "sleep calculator",
+        "sleep cycle calculator",
+        "bedtime calculator",
+        "when should I go to sleep",
+        "when to wake up",
+        "nap calculator",
+        "how much sleep do I need"
+      ],
+      "lastUpdated": "2026-06-01",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Best-Selling Sleep Aid Sound Machine",
+        "Blue Light Blocking Glasses",
+        "Weighted Blanket for Better Sleep"
+      ],
+      "affiliateDescriptions": [
+        "Fall asleep faster with this premium white noise machine featuring 30+ soothing sounds, timer settings, and travel-friendly design.",
+        "Protect your sleep quality by blocking blue light from screens in the evening. Stylish frames with amber-tinted lenses.",
+        "Improve sleep quality with gentle deep pressure stimulation. Premium weighted blanket available in multiple weights for your body size."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "calorie-calculator",
+        "bmi-calculator",
+        "age-calculator"
+      ]
+    },
+    {
+      "title": "Electricity Cost Calculator",
+      "slug": "electricity-cost-calculator",
+      "description": "Calculate your electricity costs by appliance. Add devices from a preset library or enter custom wattages, see per-appliance and total monthly/annual costs, visualize which appliances cost the most, and compare EV charging costs vs gasoline.",
+      "shortDescription": "Calculate electricity costs by appliance",
+      "category": "home-real-estate",
+      "tags": [
+        "electricity calculator",
+        "energy cost",
+        "electric bill",
+        "appliance cost",
+        "kWh calculator",
+        "EV charging cost",
+        "power consumption"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "💡",
+      "seoTitle": "Free Electricity Cost Calculator - Appliance Energy Usage & Bill Estimator",
+      "seoDescription": "Calculate electricity costs per appliance with our free calculator. See monthly and annual costs, compare EV vs gas, and find your biggest energy consumers.",
+      "keywords": [
+        "electricity cost calculator",
+        "electric bill calculator",
+        "energy usage calculator",
+        "appliance electricity cost",
+        "EV charging cost calculator",
+        "kWh calculator",
+        "power consumption calculator"
+      ],
+      "lastUpdated": "2026-06-01",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Smart Plug with Energy Monitoring",
+        "Kill A Watt Electricity Monitor",
+        "Programmable Smart Thermostat"
+      ],
+      "affiliateDescriptions": [
+        "Track real-time energy usage for any appliance with this WiFi smart plug featuring energy monitoring, scheduling, and voice control.",
+        "Measure exact electricity consumption of any device. Simply plug in and see watts, kWh, and projected monthly costs instantly.",
+        "Save up to 23% on heating/cooling costs with this smart thermostat featuring learning algorithms, scheduling, and remote control."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/4r38xTv",
+        "https://amzn.to/48o8Vof",
+        "https://amzn.to/47QcW4T"
+      ],
+      "relatedCalculators": [
+        "budget-calculator",
+        "home-improvement-cost-calculator",
+        "gas-mileage-calculator"
+      ]
+    },
+    {
+      "title": "Kilograms to Pounds Converter",
+      "slug": "kg-to-lbs",
+      "description": "Convert kilograms to pounds instantly. 1 kilogram equals 2.20462 pounds. To convert kilograms to pounds, multiply by 2.20462. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert kilograms to pounds instantly",
+      "category": "math-conversions",
+      "tags": [
+        "kilograms",
+        "pounds",
+        "weight",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🏋️",
+      "seoTitle": "Kilograms to Pounds Converter — Free & Instant (kg to lbs)",
+      "seoDescription": "Convert kilograms to pounds instantly with our free calculator. 1 kilogram equals 2.20462 pounds. To convert kilograms to pounds, multiply by 2.20462. Conversion table included.",
+      "keywords": [
+        "kg to lbs",
+        "kilograms to pounds",
+        "convert kilograms to pounds",
+        "kg to lbs",
+        "weight converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "lbs-to-kg",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Pounds to Kilograms Converter",
+      "slug": "lbs-to-kg",
+      "description": "Convert pounds to kilograms instantly. 1 pound equals 0.453592 kilograms. To convert pounds to kilograms, divide by 2.20462 (or multiply by 0.453592). Includes a quick-reference conversion table.",
+      "shortDescription": "Convert pounds to kilograms instantly",
+      "category": "math-conversions",
+      "tags": [
+        "pounds",
+        "kilograms",
+        "weight",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🪨",
+      "seoTitle": "Pounds to Kilograms Converter — Free & Instant (lbs to kg)",
+      "seoDescription": "Convert pounds to kilograms instantly with our free calculator. 1 pound equals 0.453592 kilograms. To convert pounds to kilograms, divide by 2.20462 (or multiply by 0.453592). Conversion table included.",
+      "keywords": [
+        "lbs to kg",
+        "pounds to kilograms",
+        "convert pounds to kilograms",
+        "lbs to kg",
+        "weight converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "kg-to-lbs",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Centimeters to Inches Converter",
+      "slug": "cm-to-inches",
+      "description": "Convert centimeters to inches instantly. 1 centimeter equals 0.393701 inches. To convert centimeters to inches, divide by 2.54 (or multiply by 0.393701). Includes a quick-reference conversion table.",
+      "shortDescription": "Convert centimeters to inches instantly",
+      "category": "math-conversions",
+      "tags": [
+        "centimeters",
+        "inches",
+        "length",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "📏",
+      "seoTitle": "Centimeters to Inches Converter — Free & Instant (cm to in)",
+      "seoDescription": "Convert centimeters to inches instantly with our free calculator. 1 centimeter equals 0.393701 inches. To convert centimeters to inches, divide by 2.54 (or multiply by 0.393701). Conversion table included.",
+      "keywords": [
+        "cm to inches",
+        "centimeters to inches",
+        "convert centimeters to inches",
+        "cm to in",
+        "length converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "inches-to-cm",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Inches to Centimeters Converter",
+      "slug": "inches-to-cm",
+      "description": "Convert inches to centimeters instantly. 1 inch equals exactly 2.54 centimeters. To convert inches to centimeters, multiply by 2.54. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert inches to centimeters instantly",
+      "category": "math-conversions",
+      "tags": [
+        "inches",
+        "centimeters",
+        "length",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "📐",
+      "seoTitle": "Inches to Centimeters Converter — Free & Instant (in to cm)",
+      "seoDescription": "Convert inches to centimeters instantly with our free calculator. 1 inch equals exactly 2.54 centimeters. To convert inches to centimeters, multiply by 2.54. Conversion table included.",
+      "keywords": [
+        "inches to cm",
+        "inches to centimeters",
+        "convert inches to centimeters",
+        "in to cm",
+        "length converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "cm-to-inches",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Celsius to Fahrenheit Converter",
+      "slug": "celsius-to-fahrenheit",
+      "description": "Convert celsius to fahrenheit instantly. To convert Celsius to Fahrenheit, multiply by 1.8 (9/5) and add 32. So °F = °C × 9/5 + 32. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert celsius to fahrenheit instantly",
+      "category": "math-conversions",
+      "tags": [
+        "celsius",
+        "fahrenheit",
+        "temperature",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🌡️",
+      "seoTitle": "Celsius to Fahrenheit Converter — Free & Instant (°C to °F)",
+      "seoDescription": "Convert celsius to fahrenheit instantly with our free calculator. To convert Celsius to Fahrenheit, multiply by 1.8 (9/5) and add 32. So °F = °C × 9/5 + 32. Conversion table included.",
+      "keywords": [
+        "celsius to fahrenheit",
+        "celsius to fahrenheit",
+        "convert celsius to fahrenheit",
+        "°C to °F",
+        "temperature converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "fahrenheit-to-celsius",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Fahrenheit to Celsius Converter",
+      "slug": "fahrenheit-to-celsius",
+      "description": "Convert fahrenheit to celsius instantly. To convert Fahrenheit to Celsius, subtract 32 and multiply by 0.5556 (5/9). So °C = (°F − 32) × 5/9. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert fahrenheit to celsius instantly",
+      "category": "math-conversions",
+      "tags": [
+        "fahrenheit",
+        "celsius",
+        "temperature",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "☀️",
+      "seoTitle": "Fahrenheit to Celsius Converter — Free & Instant (°F to °C)",
+      "seoDescription": "Convert fahrenheit to celsius instantly with our free calculator. To convert Fahrenheit to Celsius, subtract 32 and multiply by 0.5556 (5/9). So °C = (°F − 32) × 5/9. Conversion table included.",
+      "keywords": [
+        "fahrenheit to celsius",
+        "fahrenheit to celsius",
+        "convert fahrenheit to celsius",
+        "°F to °C",
+        "temperature converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "celsius-to-fahrenheit",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Miles to Kilometers Converter",
+      "slug": "miles-to-km",
+      "description": "Convert miles to kilometers instantly. 1 mile equals 1.609344 kilometers. To convert miles to kilometers, multiply by 1.60934. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert miles to kilometers instantly",
+      "category": "math-conversions",
+      "tags": [
+        "miles",
+        "kilometers",
+        "distance",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🛣️",
+      "seoTitle": "Miles to Kilometers Converter — Free & Instant (mi to km)",
+      "seoDescription": "Convert miles to kilometers instantly with our free calculator. 1 mile equals 1.609344 kilometers. To convert miles to kilometers, multiply by 1.60934. Conversion table included.",
+      "keywords": [
+        "miles to km",
+        "miles to kilometers",
+        "convert miles to kilometers",
+        "mi to km",
+        "distance converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "km-to-miles",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Kilometers to Miles Converter",
+      "slug": "km-to-miles",
+      "description": "Convert kilometers to miles instantly. 1 kilometer equals 0.621371 miles. To convert kilometers to miles, multiply by 0.621371 (or divide by 1.60934). Includes a quick-reference conversion table.",
+      "shortDescription": "Convert kilometers to miles instantly",
+      "category": "math-conversions",
+      "tags": [
+        "kilometers",
+        "miles",
+        "distance",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🗺️",
+      "seoTitle": "Kilometers to Miles Converter — Free & Instant (km to mi)",
+      "seoDescription": "Convert kilometers to miles instantly with our free calculator. 1 kilometer equals 0.621371 miles. To convert kilometers to miles, multiply by 0.621371 (or divide by 1.60934). Conversion table included.",
+      "keywords": [
+        "km to miles",
+        "kilometers to miles",
+        "convert kilometers to miles",
+        "km to mi",
+        "distance converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "miles-to-km",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Sales Tax Calculator",
+      "slug": "sales-tax-calculator",
+      "description": "Calculate sales tax and the total price for any amount and tax rate. Add or remove tax, and look up state sales tax rates.",
+      "shortDescription": "Calculate sales tax and the total price for any amount and tax rate",
+      "category": "financial",
+      "tags": [],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🧾",
+      "seoTitle": "Free Sales Tax Calculator — Instant & Accurate",
+      "seoDescription": "Calculate sales tax and the total price for any amount and tax rate. Add or remove tax, and look up state sales tax rates.",
+      "keywords": [
+        "sales tax calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "discount-calculator",
+        "percentage-calculator",
+        "tip-calculator"
+      ]
+    },
+    {
+      "title": "Discount Calculator",
+      "slug": "discount-calculator",
+      "description": "Calculate the sale price and how much you save for any discount percentage. Supports stacked discounts and percent-off math.",
+      "shortDescription": "Calculate the sale price and how much you save for any discount percentage",
+      "category": "math-conversions",
+      "tags": [],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🏷️",
+      "seoTitle": "Free Discount Calculator — Instant & Accurate",
+      "seoDescription": "Calculate the sale price and how much you save for any discount percentage. Supports stacked discounts and percent-off math.",
+      "keywords": [
+        "discount calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "sales-tax-calculator",
+        "percentage-calculator",
+        "tip-calculator"
+      ]
+    },
+    {
+      "title": "Grams to Ounces Converter",
+      "slug": "grams-to-ounces",
+      "description": "Convert grams to ounces instantly. 1 gram equals 0.035274 ounces. To convert grams to ounces, divide by 28.3495 (or multiply by 0.035274). Includes a quick-reference conversion table.",
+      "shortDescription": "Convert grams to ounces instantly",
+      "category": "math-conversions",
+      "tags": [
+        "grams",
+        "ounces",
+        "weight",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "⚗️",
+      "seoTitle": "Grams to Ounces Converter — Free & Instant (g to oz)",
+      "seoDescription": "Convert grams to ounces instantly with our free calculator. 1 gram equals 0.035274 ounces. To convert grams to ounces, divide by 28.3495 (or multiply by 0.035274). Conversion table included.",
+      "keywords": [
+        "grams to ounces",
+        "grams to ounces",
+        "convert grams to ounces",
+        "g to oz",
+        "weight converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "ounces-to-grams",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Ounces to Grams Converter",
+      "slug": "ounces-to-grams",
+      "description": "Convert ounces to grams instantly. 1 ounce equals 28.3495 grams. To convert ounces to grams, multiply by 28.3495. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert ounces to grams instantly",
+      "category": "math-conversions",
+      "tags": [
+        "ounces",
+        "grams",
+        "weight",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🧪",
+      "seoTitle": "Ounces to Grams Converter — Free & Instant (oz to g)",
+      "seoDescription": "Convert ounces to grams instantly with our free calculator. 1 ounce equals 28.3495 grams. To convert ounces to grams, multiply by 28.3495. Conversion table included.",
+      "keywords": [
+        "ounces to grams",
+        "ounces to grams",
+        "convert ounces to grams",
+        "oz to g",
+        "weight converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "grams-to-ounces",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Feet to Meters Converter",
+      "slug": "feet-to-meters",
+      "description": "Convert feet to meters instantly. 1 foot equals exactly 0.3048 meters. To convert feet to meters, multiply by 0.3048. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert feet to meters instantly",
+      "category": "math-conversions",
+      "tags": [
+        "feet",
+        "meters",
+        "length",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🏗️",
+      "seoTitle": "Feet to Meters Converter — Free & Instant (ft to m)",
+      "seoDescription": "Convert feet to meters instantly with our free calculator. 1 foot equals exactly 0.3048 meters. To convert feet to meters, multiply by 0.3048. Conversion table included.",
+      "keywords": [
+        "feet to meters",
+        "feet to meters",
+        "convert feet to meters",
+        "ft to m",
+        "length converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "meters-to-feet",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Meters to Feet Converter",
+      "slug": "meters-to-feet",
+      "description": "Convert meters to feet instantly. 1 meter equals 3.28084 feet. To convert meters to feet, multiply by 3.28084 (or divide by 0.3048). Includes a quick-reference conversion table.",
+      "shortDescription": "Convert meters to feet instantly",
+      "category": "math-conversions",
+      "tags": [
+        "meters",
+        "feet",
+        "length",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🧱",
+      "seoTitle": "Meters to Feet Converter — Free & Instant (m to ft)",
+      "seoDescription": "Convert meters to feet instantly with our free calculator. 1 meter equals 3.28084 feet. To convert meters to feet, multiply by 3.28084 (or divide by 0.3048). Conversion table included.",
+      "keywords": [
+        "meters to feet",
+        "meters to feet",
+        "convert meters to feet",
+        "m to ft",
+        "length converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "feet-to-meters",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Milliliters to Cups Converter",
+      "slug": "ml-to-cups",
+      "description": "Convert milliliters to cups instantly. 1 milliliter equals 0.004227 US cups. To convert milliliters to cups, divide by 236.588. (Based on the US customary cup.) Includes a quick-reference conversion table.",
+      "shortDescription": "Convert milliliters to cups instantly",
+      "category": "math-conversions",
+      "tags": [
+        "milliliters",
+        "cups",
+        "volume",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🥛",
+      "seoTitle": "Milliliters to Cups Converter — Free & Instant (ml to cups)",
+      "seoDescription": "Convert milliliters to cups instantly with our free calculator. 1 milliliter equals 0.004227 US cups. To convert milliliters to cups, divide by 236.588. (Based on the US customary cup.) Conversion table included.",
+      "keywords": [
+        "ml to cups",
+        "milliliters to cups",
+        "convert milliliters to cups",
+        "ml to cups",
+        "volume converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "cups-to-ml",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Cups to Milliliters Converter",
+      "slug": "cups-to-ml",
+      "description": "Convert cups to milliliters instantly. 1 US cup equals 236.588 milliliters. To convert cups to milliliters, multiply by 236.588. (Based on the US customary cup.) Includes a quick-reference conversion table.",
+      "shortDescription": "Convert cups to milliliters instantly",
+      "category": "math-conversions",
+      "tags": [
+        "cups",
+        "milliliters",
+        "volume",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "☕",
+      "seoTitle": "Cups to Milliliters Converter — Free & Instant (cups to ml)",
+      "seoDescription": "Convert cups to milliliters instantly with our free calculator. 1 US cup equals 236.588 milliliters. To convert cups to milliliters, multiply by 236.588. (Based on the US customary cup.) Conversion table included.",
+      "keywords": [
+        "cups to ml",
+        "cups to milliliters",
+        "convert cups to milliliters",
+        "cups to ml",
+        "volume converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "ml-to-cups",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Liters to Gallons Converter",
+      "slug": "liters-to-gallons",
+      "description": "Convert liters to gallons instantly. 1 liter equals 0.264172 US gallons. To convert liters to gallons, divide by 3.78541. (Based on the US liquid gallon.) Includes a quick-reference conversion table.",
+      "shortDescription": "Convert liters to gallons instantly",
+      "category": "math-conversions",
+      "tags": [
+        "liters",
+        "gallons",
+        "volume",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🚰",
+      "seoTitle": "Liters to Gallons Converter — Free & Instant (L to gal)",
+      "seoDescription": "Convert liters to gallons instantly with our free calculator. 1 liter equals 0.264172 US gallons. To convert liters to gallons, divide by 3.78541. (Based on the US liquid gallon.) Conversion table included.",
+      "keywords": [
+        "liters to gallons",
+        "liters to gallons",
+        "convert liters to gallons",
+        "L to gal",
+        "volume converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "gallons-to-liters",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Gallons to Liters Converter",
+      "slug": "gallons-to-liters",
+      "description": "Convert gallons to liters instantly. 1 US gallon equals 3.78541 liters. To convert gallons to liters, multiply by 3.78541. (Based on the US liquid gallon.) Includes a quick-reference conversion table.",
+      "shortDescription": "Convert gallons to liters instantly",
+      "category": "math-conversions",
+      "tags": [
+        "gallons",
+        "liters",
+        "volume",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🛢️",
+      "seoTitle": "Gallons to Liters Converter — Free & Instant (gal to L)",
+      "seoDescription": "Convert gallons to liters instantly with our free calculator. 1 US gallon equals 3.78541 liters. To convert gallons to liters, multiply by 3.78541. (Based on the US liquid gallon.) Conversion table included.",
+      "keywords": [
+        "gallons to liters",
+        "gallons to liters",
+        "convert gallons to liters",
+        "gal to L",
+        "volume converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "liters-to-gallons",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Miles per Hour to Kilometers per Hour Converter",
+      "slug": "mph-to-kmh",
+      "description": "Convert miles per hour to kilometers per hour instantly. 1 mph equals 1.60934 km/h. To convert miles per hour to kilometers per hour, multiply by 1.60934. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert miles per hour to kilometers per hour instantly",
+      "category": "math-conversions",
+      "tags": [
+        "miles per hour",
+        "kilometers per hour",
+        "speed",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🏎️",
+      "seoTitle": "Miles per Hour to Kilometers per Hour Converter — Free & Instant (mph to km/h)",
+      "seoDescription": "Convert miles per hour to kilometers per hour instantly with our free calculator. 1 mph equals 1.60934 km/h. To convert miles per hour to kilometers per hour, multiply by 1.60934. Conversion table included.",
+      "keywords": [
+        "mph to kmh",
+        "miles per hour to kilometers per hour",
+        "convert miles per hour to kilometers per hour",
+        "mph to km/h",
+        "speed converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "kmh-to-mph",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Kilometers per Hour to Miles per Hour Converter",
+      "slug": "kmh-to-mph",
+      "description": "Convert kilometers per hour to miles per hour instantly. 1 km/h equals 0.621371 mph. To convert kilometers per hour to miles per hour, multiply by 0.621371 (or divide by 1.60934). Includes a quick-reference conversion table.",
+      "shortDescription": "Convert kilometers per hour to miles per hour instantly",
+      "category": "math-conversions",
+      "tags": [
+        "kilometers per hour",
+        "miles per hour",
+        "speed",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "✈️",
+      "seoTitle": "Kilometers per Hour to Miles per Hour Converter — Free & Instant (km/h to mph)",
+      "seoDescription": "Convert kilometers per hour to miles per hour instantly with our free calculator. 1 km/h equals 0.621371 mph. To convert kilometers per hour to miles per hour, multiply by 0.621371 (or divide by 1.60934). Conversion table included.",
+      "keywords": [
+        "kmh to mph",
+        "kilometers per hour to miles per hour",
+        "convert kilometers per hour to miles per hour",
+        "km/h to mph",
+        "speed converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "mph-to-kmh",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Feet to Inches Converter",
+      "slug": "feet-to-inches",
+      "description": "Convert feet to inches instantly. 1 foot equals exactly 12 inches. To convert feet to inches, multiply by 12. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert feet to inches instantly",
+      "category": "math-conversions",
+      "tags": [
+        "feet",
+        "inches",
+        "length",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "👣",
+      "seoTitle": "Feet to Inches Converter — Free & Instant (ft to in)",
+      "seoDescription": "Convert feet to inches instantly with our free calculator. 1 foot equals exactly 12 inches. To convert feet to inches, multiply by 12. Conversion table included.",
+      "keywords": [
+        "feet to inches",
+        "feet to inches",
+        "convert feet to inches",
+        "ft to in",
+        "length converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "inches-to-feet",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Inches to Feet Converter",
+      "slug": "inches-to-feet",
+      "description": "Convert inches to feet instantly. 1 inch equals 0.08333 feet (1/12). To convert inches to feet, divide by 12. Includes a quick-reference conversion table.",
+      "shortDescription": "Convert inches to feet instantly",
+      "category": "math-conversions",
+      "tags": [
+        "inches",
+        "feet",
+        "length",
+        "unit conversion",
+        "converter"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "10 seconds",
+      "icon": "🦶",
+      "seoTitle": "Inches to Feet Converter — Free & Instant (in to ft)",
+      "seoDescription": "Convert inches to feet instantly with our free calculator. 1 inch equals 0.08333 feet (1/12). To convert inches to feet, divide by 12. Conversion table included.",
+      "keywords": [
+        "inches to feet",
+        "inches to feet",
+        "convert inches to feet",
+        "in to ft",
+        "length converter"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "feet-to-inches",
+        "unit-converter",
+        "size-converter"
+      ],
+      "generatedBy": "generate-conversions"
+    },
+    {
+      "title": "Salary to Hourly Calculator",
+      "slug": "salary-to-hourly-calculator",
+      "description": "Convert an annual salary into an hourly wage. See your hourly, daily, weekly, and monthly pay based on your work hours.",
+      "shortDescription": "Convert an annual salary into an hourly wage",
+      "category": "financial",
+      "tags": [],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🕐",
+      "seoTitle": "Free Salary to Hourly Calculator — Instant & Accurate",
+      "seoDescription": "Convert an annual salary into an hourly wage. See your hourly, daily, weekly, and monthly pay based on your work hours.",
+      "keywords": [
+        "salary to hourly calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "hourly-to-salary-calculator",
+        "paycheck-calculator",
+        "overtime-calculator"
+      ]
+    },
+    {
+      "title": "Hourly to Salary Calculator",
+      "slug": "hourly-to-salary-calculator",
+      "description": "Convert an hourly wage into an annual salary. See your weekly, monthly, and yearly income based on your hours.",
+      "shortDescription": "Convert an hourly wage into an annual salary",
+      "category": "financial",
+      "tags": [],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🤑",
+      "seoTitle": "Free Hourly to Salary Calculator — Instant & Accurate",
+      "seoDescription": "Convert an hourly wage into an annual salary. See your weekly, monthly, and yearly income based on your hours.",
+      "keywords": [
+        "hourly to salary calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "salary-to-hourly-calculator",
+        "paycheck-calculator",
+        "hours-calculator"
+      ]
+    },
+    {
+      "title": "Hours Calculator",
+      "slug": "hours-calculator",
+      "description": "Calculate hours worked between a start and end time, minus breaks. A free time card calculator with decimal and HH:MM totals.",
+      "shortDescription": "Calculate hours worked between a start and end time, minus breaks",
+      "category": "time-date",
+      "tags": [],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "⏱️",
+      "seoTitle": "Free Hours Calculator — Instant & Accurate",
+      "seoDescription": "Calculate hours worked between a start and end time, minus breaks. A free time card calculator with decimal and HH:MM totals.",
+      "keywords": [
+        "hours calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "hourly-to-salary-calculator",
+        "overtime-calculator",
+        "pto-calculator",
+        "business-days-calculator"
+      ]
+    },
+    {
+      "title": "Overtime Calculator",
+      "slug": "overtime-calculator",
+      "description": "Calculate overtime pay and total earnings from regular hours, overtime hours, and your hourly rate and multiplier.",
+      "shortDescription": "Calculate overtime pay and total earnings from regular hours, overtime hours, and your hourly rate and multiplier",
+      "category": "financial",
+      "tags": [],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "⏰",
+      "seoTitle": "Free Overtime Calculator — Instant & Accurate",
+      "seoDescription": "Calculate overtime pay and total earnings from regular hours, overtime hours, and your hourly rate and multiplier.",
+      "keywords": [
+        "overtime calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "salary-to-hourly-calculator",
+        "hours-calculator",
+        "paycheck-calculator"
+      ]
+    },
+    {
+      "title": "Subscription Cost Calculator",
+      "slug": "subscription-calculator",
+      "description": "Audit all your subscriptions, calculate total monthly and annual spending, identify rarely-used services, detect overlapping subscriptions, and find potential savings.",
+      "shortDescription": "Audit subscriptions and find savings",
+      "category": "financial",
+      "tags": [
+        "subscriptions",
+        "recurring charges",
+        "streaming",
+        "subscription audit",
+        "savings"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "5 minutes",
+      "icon": "🔄",
+      "seoTitle": "Free Subscription Cost Calculator — Audit Your Recurring Charges",
+      "seoDescription": "Calculate your total subscription spending, find rarely-used services, detect overlaps, and discover how much you could save or invest instead.",
+      "keywords": [
+        "subscription calculator",
+        "subscription audit",
+        "recurring charges calculator",
+        "subscription cost"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "budget-calculator",
+        "savings-goal-calculator",
+        "compound-interest-calculator"
+      ]
+    },
+    {
+      "title": "Freelance Rate Calculator",
+      "slug": "freelance-rate-calculator",
+      "description": "Calculate your ideal freelance hourly rate to meet income goals after accounting for taxes, self-employment tax, benefits, business expenses, and non-billable time.",
+      "shortDescription": "Calculate your ideal freelance hourly rate",
+      "category": "financial",
+      "tags": [
+        "freelance",
+        "hourly rate",
+        "self-employed",
+        "consulting rate",
+        "freelance pricing",
+        "independent contractor"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Medium",
+      "estimatedTime": "5 minutes",
+      "icon": "💼",
+      "seoTitle": "Free Freelance Rate Calculator — Find Your Ideal Hourly Rate",
+      "seoDescription": "Calculate the freelance hourly rate you need to meet your income goals after taxes, expenses, benefits, and non-billable time.",
+      "keywords": [
+        "freelance rate calculator",
+        "freelance hourly rate",
+        "consulting rate calculator",
+        "freelance pricing"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "hourly-to-salary-calculator",
+        "tax-bracket-calculator",
+        "profit-margin-calculator",
+        "break-even-calculator"
+      ]
+    },
+    {
+      "title": "Self-Employment Quarterly Tax Calculator",
+      "slug": "self-employment-tax-calculator",
+      "description": "Estimate your quarterly estimated tax payments as a freelancer or self-employed worker. Calculates SE tax (Social Security + Medicare), federal income tax, and state income tax with 2024 brackets. Includes safe harbor amounts and tax-saving strategies.",
+      "shortDescription": "Estimate quarterly tax payments for freelancers",
+      "category": "financial",
+      "tags": [
+        "self-employment tax",
+        "quarterly taxes",
+        "estimated tax payments",
+        "freelancer taxes",
+        "1099 taxes",
+        "SE tax",
+        "gig worker taxes"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Medium",
+      "estimatedTime": "4 minutes",
+      "icon": "📝",
+      "seoTitle": "Free Self-Employment Quarterly Tax Calculator 2024",
+      "seoDescription": "Calculate your quarterly estimated tax payments with our free self-employment tax calculator. Includes SE tax, federal income tax, state tax, and safe harbor amounts for freelancers and gig workers.",
+      "keywords": [
+        "self-employment tax calculator",
+        "quarterly tax calculator",
+        "freelancer tax calculator",
+        "1099 tax calculator",
+        "estimated tax payments"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "tax-bracket-calculator",
+        "paycheck-calculator",
+        "profit-margin-calculator",
+        "retirement-planning-calculator"
+      ]
+    },
+    {
+      "title": "Cost of Living Comparison Calculator",
+      "slug": "cost-of-living-calculator",
+      "description": "Compare the cost of living between 60+ major US cities and calculate the equivalent salary needed to maintain your standard of living. Includes category breakdowns for housing, groceries, transportation, healthcare, utilities, and tax impact analysis.",
+      "shortDescription": "Compare cost of living between cities",
+      "category": "financial",
+      "tags": [
+        "cost of living",
+        "city comparison",
+        "salary comparison",
+        "relocation",
+        "moving costs",
+        "equivalent salary"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🏙️",
+      "seoTitle": "Free Cost of Living Comparison Calculator — Compare Cities",
+      "seoDescription": "Compare the cost of living between 60+ US cities. Calculate the equivalent salary needed, view category breakdowns, and analyze tax impacts for relocation planning.",
+      "keywords": [
+        "cost of living calculator",
+        "city comparison calculator",
+        "salary equivalent calculator",
+        "cost of living comparison",
+        "relocation calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "paycheck-calculator",
+        "tax-bracket-calculator",
+        "budget-calculator",
+        "rent-vs-buy-calculator"
+      ]
+    },
+    {
+      "title": "Construction Material Calculator",
+      "slug": "construction-calculator",
+      "description": "Estimate materials and costs for concrete, decking, fencing, drywall, flooring, roofing, paint, and insulation projects. Get detailed shopping lists with quantities and cost ranges.",
+      "shortDescription": "Estimate materials for construction projects",
+      "category": "home-real-estate",
+      "tags": [
+        "construction",
+        "materials",
+        "building",
+        "DIY",
+        "home improvement",
+        "concrete",
+        "decking",
+        "fencing"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Medium",
+      "estimatedTime": "3 minutes",
+      "icon": "🔨",
+      "seoTitle": "Free Construction Material Calculator — Estimate Quantities & Costs",
+      "seoDescription": "Calculate materials needed for concrete, decking, fencing, drywall, flooring, roofing, paint, and insulation. Get accurate quantity estimates with cost ranges.",
+      "keywords": [
+        "construction calculator",
+        "material calculator",
+        "concrete calculator",
+        "decking calculator",
+        "fencing calculator",
+        "drywall calculator",
+        "roofing calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "home-improvement-cost-calculator",
+        "unit-converter"
+      ]
+    },
+    {
+      "title": "Dog Food Calculator",
+      "slug": "dog-food-calculator",
+      "description": "Calculate how much to feed your dog daily based on weight, age, breed size, activity level, and food type. Get personalized feeding portions for puppies, adults, and senior dogs.",
+      "shortDescription": "Calculate daily dog feeding amounts",
+      "category": "miscellaneous",
+      "tags": [
+        "dog food",
+        "pet nutrition",
+        "feeding guide",
+        "puppy feeding",
+        "dog diet",
+        "pet care"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🐕",
+      "seoTitle": "Free Dog Food Calculator — Daily Feeding Guide by Weight & Age",
+      "seoDescription": "Calculate exactly how much to feed your dog daily. Personalized portions based on weight, age, breed size, activity level, and food type.",
+      "keywords": [
+        "dog food calculator",
+        "how much to feed my dog",
+        "dog feeding guide",
+        "puppy food calculator",
+        "dog calorie calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "calorie-calculator"
+      ]
+    },
+    {
+      "title": "EV vs Gas Car Calculator",
+      "slug": "ev-vs-gas-calculator",
+      "description": "Compare total cost of ownership between electric vehicles and gas cars. Factor in purchase price, fuel/electricity costs, maintenance, tax credits, insurance, and depreciation over time.",
+      "shortDescription": "Compare EV vs gas car total costs",
+      "category": "automotive",
+      "tags": [
+        "electric vehicle",
+        "EV",
+        "gas car",
+        "cost comparison",
+        "total cost of ownership",
+        "fuel savings",
+        "EV tax credit"
+      ],
+      "featured": true,
+      "popular": false,
+      "difficulty": "Medium",
+      "estimatedTime": "4 minutes",
+      "icon": "⚡",
+      "seoTitle": "Free EV vs Gas Car Calculator — Total Cost of Ownership Comparison",
+      "seoDescription": "Compare the total cost of owning an electric vehicle vs a gas car. Include purchase price, fuel, maintenance, tax credits, and depreciation.",
+      "keywords": [
+        "EV vs gas calculator",
+        "electric car cost calculator",
+        "EV cost comparison",
+        "electric vehicle savings",
+        "EV total cost of ownership"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "auto-loan-calculator",
+        "gas-mileage-calculator",
+        "car-lease-buy-calculator"
+      ]
+    },
+    {
+      "title": "Pregnancy Due Date Calculator",
+      "slug": "pregnancy-calculator",
+      "description": "Calculate your estimated due date, current trimester, and week-by-week pregnancy milestones. Track fetal development stages and get key appointment reminders.",
+      "shortDescription": "Calculate due date & track pregnancy",
+      "category": "health-fitness",
+      "tags": [
+        "pregnancy",
+        "due date",
+        "trimester",
+        "prenatal",
+        "baby",
+        "conception date"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🤰",
+      "seoTitle": "Free Pregnancy Due Date Calculator — Week by Week Timeline",
+      "seoDescription": "Calculate your baby's due date and track pregnancy week by week. See trimester milestones, fetal development, and important appointment dates.",
+      "keywords": [
+        "pregnancy calculator",
+        "due date calculator",
+        "pregnancy week calculator",
+        "conception date calculator",
+        "trimester calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "age-calculator",
+        "sleep-calculator"
+      ]
+    },
+    {
+      "title": "Rental Property Calculator",
+      "slug": "rental-property-calculator",
+      "description": "Analyze rental property investments with cash flow projections, cap rate, cash-on-cash return, ROI, and mortgage analysis. Compare buy-and-hold vs short-term rental strategies.",
+      "shortDescription": "Analyze rental property ROI & cash flow",
+      "category": "home-real-estate",
+      "tags": [
+        "rental property",
+        "real estate investment",
+        "cash flow",
+        "cap rate",
+        "ROI",
+        "landlord",
+        "passive income"
+      ],
+      "featured": true,
+      "popular": false,
+      "difficulty": "Advanced",
+      "estimatedTime": "5 minutes",
+      "icon": "🏘️",
+      "seoTitle": "Free Rental Property Calculator — Cash Flow, Cap Rate & ROI Analysis",
+      "seoDescription": "Analyze rental property investments with cash flow projections, cap rate, cash-on-cash return, and ROI calculations. Compare strategies and estimate long-term returns.",
+      "keywords": [
+        "rental property calculator",
+        "investment property calculator",
+        "cash flow calculator",
+        "cap rate calculator",
+        "rental ROI calculator",
+        "landlord calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "mortgage-payment-calculator",
+        "roi-calculator",
+        "home-equity-calculator",
+        "rent-vs-buy-calculator"
+      ]
+    },
+    {
+      "title": "Startup Cost Calculator",
+      "slug": "startup-cost-calculator",
+      "description": "Estimate startup costs by business type including legal fees, equipment, marketing, inventory, rent, insurance, and working capital. Get a realistic budget for launching your business.",
+      "shortDescription": "Estimate costs to start your business",
+      "category": "business-sales",
+      "tags": [
+        "startup costs",
+        "business launch",
+        "entrepreneur",
+        "small business",
+        "business plan",
+        "funding"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Medium",
+      "estimatedTime": "5 minutes",
+      "icon": "🚀",
+      "seoTitle": "Free Startup Cost Calculator — Estimate Business Launch Expenses",
+      "seoDescription": "Estimate how much it costs to start a business. Calculate startup expenses including legal, equipment, marketing, inventory, and working capital needs.",
+      "keywords": [
+        "startup cost calculator",
+        "business startup costs",
+        "how much to start a business",
+        "startup budget calculator",
+        "small business costs"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "break-even-calculator",
+        "profit-margin-calculator",
+        "roi-calculator"
+      ]
+    },
+    {
+      "title": "Wedding Budget Calculator",
+      "slug": "wedding-budget-calculator",
+      "description": "Plan your wedding budget with category breakdowns for venue, catering, photography, attire, flowers, entertainment, and more. Get recommended allocations based on your total budget and guest count.",
+      "shortDescription": "Plan & allocate your wedding budget",
+      "category": "financial",
+      "tags": [
+        "wedding budget",
+        "wedding planning",
+        "wedding costs",
+        "marriage",
+        "event planning"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "💒",
+      "seoTitle": "Free Wedding Budget Calculator — Plan Your Wedding Costs",
+      "seoDescription": "Plan your wedding budget with recommended allocations by category. Calculate costs for venue, catering, photography, and more based on total budget and guest count.",
+      "keywords": [
+        "wedding budget calculator",
+        "wedding cost calculator",
+        "wedding planning calculator",
+        "how much does a wedding cost",
+        "wedding budget breakdown"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "budget-calculator",
+        "savings-goal-calculator"
+      ]
+    },
+    {
+      "title": "Calories Burned Calculator",
+      "slug": "calories-burned-calculator",
+      "description": "Calculate calories burned for 150+ activities using MET values. Enter your weight, activity, duration, and intensity to get personalized results with food equivalents, comparisons, and weekly projections.",
+      "shortDescription": "Calculate calories burned by activity",
+      "category": "health-fitness",
+      "tags": [
+        "calories burned",
+        "exercise",
+        "MET values",
+        "workout",
+        "activity",
+        "weight loss",
+        "fitness"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🔥",
+      "seoTitle": "Free Calories Burned Calculator — 150+ Activities with MET Values",
+      "seoDescription": "Calculate calories burned for running, walking, cycling, swimming, and 150+ activities. Personalized results based on your weight, duration, and intensity.",
+      "keywords": [
+        "calories burned calculator",
+        "calories burned walking",
+        "calories burned running",
+        "exercise calorie calculator",
+        "activity calorie calculator",
+        "MET calculator",
+        "workout calorie burn"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "calorie-calculator",
+        "macro-calculator",
+        "bmi-calculator",
+        "tdee-calculator"
+      ]
+    },
+    {
+      "title": "Debt Payoff Calculator",
+      "slug": "debt-payoff-calculator",
+      "description": "Compare debt snowball vs avalanche payoff strategies side by side. Enter multiple debts to see which method saves more money, get payoff timelines, milestone dates, and detailed month-by-month schedules.",
+      "shortDescription": "Compare snowball vs avalanche debt payoff",
+      "category": "financial",
+      "tags": [
+        "debt payoff",
+        "debt snowball",
+        "debt avalanche",
+        "debt free",
+        "debt repayment",
+        "financial freedom"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Medium",
+      "estimatedTime": "4 minutes",
+      "icon": "💪",
+      "seoTitle": "Free Debt Payoff Calculator — Snowball vs Avalanche Comparison",
+      "seoDescription": "Compare debt snowball and avalanche methods side by side. See which strategy saves more money and gets you debt-free faster with timeline visualization.",
+      "keywords": [
+        "debt payoff calculator",
+        "debt snowball calculator",
+        "debt avalanche calculator",
+        "debt payoff planner",
+        "debt free calculator",
+        "debt repayment calculator",
+        "how to pay off debt"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "credit-card-payoff-calculator",
+        "student-loan-calculator",
+        "budget-calculator",
         "savings-goal-calculator"
       ]
     }

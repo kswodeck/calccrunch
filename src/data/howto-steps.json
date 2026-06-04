@@ -1,0 +1,475 @@
+{
+  "mortgage-payment-calculator": {
+    "name": "How to Calculate Your Monthly Mortgage Payment",
+    "description": "Use our free mortgage calculator to determine your monthly home loan payment including principal, interest, taxes, and insurance.",
+    "totalTime": "PT2M",
+    "steps": [
+      "Enter your home price (the total purchase price of the property)",
+      "Add your down payment amount in dollars or as a percentage",
+      "Input your annual interest rate (check current rates from your lender)",
+      "Select your loan term (15 or 30 years are most common)",
+      "Add yearly property taxes and homeowners insurance amounts",
+      "PMI is automatically calculated if your down payment is less than 20%",
+      "Click Calculate to see your complete monthly payment breakdown"
+    ]
+  },
+  "compound-interest-calculator": {
+    "name": "How to Calculate Compound Interest on Your Investments",
+    "description": "Calculate how your money grows over time with compound interest using our free calculator.",
+    "totalTime": "PT2M",
+    "steps": [
+      "Enter your initial investment or principal amount",
+      "Set your expected annual interest rate or rate of return",
+      "Choose how long you plan to invest (in years)",
+      "Select compounding frequency (daily, monthly, quarterly, or annually)",
+      "Add any recurring monthly contributions you plan to make",
+      "Click Calculate to see your projected growth and total returns"
+    ]
+  },
+  "bmi-calculator": {
+    "name": "How to Calculate Your BMI (Body Mass Index)",
+    "description": "Calculate your BMI to understand where you fall on the weight scale using height and weight measurements.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Select your measurement system (Imperial: feet/lbs or Metric: cm/kg)",
+      "Enter your height in the appropriate units",
+      "Enter your current weight",
+      "Optionally enter your age and gender for more accurate health insights",
+      "Click Calculate to see your BMI score and health category",
+      "Review the healthy weight range for your height"
+    ]
+  },
+  "calorie-calculator": {
+    "name": "How to Calculate Your Daily Calorie Needs",
+    "description": "Determine your Total Daily Energy Expenditure (TDEE) and recommended calorie intake for your fitness goals.",
+    "totalTime": "PT2M",
+    "steps": [
+      "Enter your age, gender, height, and current weight",
+      "Select your activity level from sedentary to very active",
+      "Choose your goal: lose weight, maintain weight, or gain muscle",
+      "Click Calculate to see your TDEE and recommended daily calories",
+      "Review your personalized macro breakdown (protein, carbs, fats)"
+    ]
+  },
+  "budget-calculator": {
+    "name": "How to Create a Monthly Budget",
+    "description": "Use the 50/30/20 rule to create a balanced budget based on your income and expenses.",
+    "totalTime": "PT3M",
+    "steps": [
+      "Enter your monthly after-tax income (take-home pay)",
+      "List your fixed expenses (rent, utilities, insurance, minimum debt payments)",
+      "Add your variable expenses (groceries, transportation, subscriptions)",
+      "Review the suggested 50/30/20 allocation for your income",
+      "Adjust categories to match your priorities and financial goals",
+      "Click Calculate to see your budget breakdown and savings potential"
+    ]
+  },
+  "retirement-planning-calculator": {
+    "name": "How to Calculate How Much You Need to Retire",
+    "description": "Estimate your retirement savings goal and determine if you're on track based on your age, income, and savings rate.",
+    "totalTime": "PT3M",
+    "steps": [
+      "Enter your current age and desired retirement age",
+      "Input your current retirement savings balance",
+      "Add your monthly contribution amount",
+      "Set your expected annual return rate (typically 7-10% for stock market)",
+      "Enter your estimated annual expenses in retirement",
+      "Click Calculate to see if you'll reach your retirement goal"
+    ]
+  },
+  "tip-calculator": {
+    "name": "How to Calculate a Tip at a Restaurant",
+    "description": "Quickly calculate the right tip amount and split the bill evenly among your group.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Enter the total bill amount (pre-tax subtotal recommended)",
+      "Select or enter your desired tip percentage (15%, 18%, 20%, or custom)",
+      "Enter the number of people splitting the bill",
+      "Click Calculate to see the tip amount and per-person total",
+      "Review the split breakdown showing each person's share"
+    ]
+  },
+  "auto-loan-calculator": {
+    "name": "How to Calculate Your Monthly Car Payment",
+    "description": "Determine your monthly auto loan payment based on the vehicle price, down payment, interest rate, and loan term.",
+    "totalTime": "PT2M",
+    "steps": [
+      "Enter the vehicle purchase price",
+      "Add your down payment or trade-in value",
+      "Input the annual interest rate from your lender or pre-approval",
+      "Select the loan term (36, 48, 60, or 72 months)",
+      "Optionally add sales tax rate for your state",
+      "Click Calculate to see your monthly payment and total loan cost"
+    ]
+  },
+  "tax-bracket-calculator": {
+    "name": "How to Calculate Your Federal Tax Bracket",
+    "description": "Find your marginal and effective tax rates based on your taxable income and filing status.",
+    "totalTime": "PT2M",
+    "steps": [
+      "Enter your annual gross income",
+      "Select your filing status (single, married filing jointly, head of household)",
+      "Add any deductions (standard or itemized)",
+      "Click Calculate to see your tax bracket and estimated tax owed",
+      "Review the breakdown showing how much is taxed at each rate"
+    ]
+  },
+  "loan-amortization-calculator": {
+    "name": "How to Create a Loan Amortization Schedule",
+    "description": "Generate a complete payment schedule showing how each payment splits between principal and interest over the life of your loan.",
+    "totalTime": "PT2M",
+    "steps": [
+      "Enter your total loan amount (principal)",
+      "Input your annual interest rate",
+      "Select the loan term in years or months",
+      "Choose your payment frequency (monthly is most common)",
+      "Click Calculate to generate your full amortization schedule",
+      "Review the table showing principal vs interest for each payment"
+    ]
+  },
+  "kg-to-lbs": {
+    "name": "How to Convert Kilograms to Pounds",
+    "description": "Convert kilograms to pounds in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in kilograms (kg) you want to convert",
+      "The result in pounds (lbs) updates instantly",
+      "Use the reference table to look up common weight conversions"
+    ]
+  },
+  "lbs-to-kg": {
+    "name": "How to Convert Pounds to Kilograms",
+    "description": "Convert pounds to kilograms in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in pounds (lbs) you want to convert",
+      "The result in kilograms (kg) updates instantly",
+      "Use the reference table to look up common weight conversions"
+    ]
+  },
+  "cm-to-inches": {
+    "name": "How to Convert Centimeters to Inches",
+    "description": "Convert centimeters to inches in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in centimeters (cm) you want to convert",
+      "The result in inches (in) updates instantly",
+      "Use the reference table to look up common length conversions"
+    ]
+  },
+  "inches-to-cm": {
+    "name": "How to Convert Inches to Centimeters",
+    "description": "Convert inches to centimeters in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in inches (in) you want to convert",
+      "The result in centimeters (cm) updates instantly",
+      "Use the reference table to look up common length conversions"
+    ]
+  },
+  "celsius-to-fahrenheit": {
+    "name": "How to Convert Celsius to Fahrenheit",
+    "description": "Convert celsius to fahrenheit in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in celsius (°C) you want to convert",
+      "The result in fahrenheit (°F) updates instantly",
+      "Use the reference table to look up common temperature conversions"
+    ]
+  },
+  "fahrenheit-to-celsius": {
+    "name": "How to Convert Fahrenheit to Celsius",
+    "description": "Convert fahrenheit to celsius in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in fahrenheit (°F) you want to convert",
+      "The result in celsius (°C) updates instantly",
+      "Use the reference table to look up common temperature conversions"
+    ]
+  },
+  "miles-to-km": {
+    "name": "How to Convert Miles to Kilometers",
+    "description": "Convert miles to kilometers in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in miles (mi) you want to convert",
+      "The result in kilometers (km) updates instantly",
+      "Use the reference table to look up common distance conversions"
+    ]
+  },
+  "km-to-miles": {
+    "name": "How to Convert Kilometers to Miles",
+    "description": "Convert kilometers to miles in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in kilometers (km) you want to convert",
+      "The result in miles (mi) updates instantly",
+      "Use the reference table to look up common distance conversions"
+    ]
+  },
+  "sales-tax-calculator": {
+    "name": "How to Calculate Sales Tax",
+    "description": "Calculate sales tax and the total price, or work backward to find the pre-tax price, with our free calculator.",
+    "totalTime": "PT30S",
+    "steps": [
+      "Enter the amount — the pre-tax price, or the total if you're removing tax",
+      "Enter the sales tax rate, or pick your state to auto-fill the base rate",
+      "Choose 'Add tax' to add tax to a price, or 'Remove tax' to find the pre-tax price",
+      "Read the tax amount, total, and pre-tax price in the results"
+    ]
+  },
+  "discount-calculator": {
+    "name": "How to Calculate a Discount",
+    "description": "Find the sale price and your savings for any discount percentage, including stacked discounts and tax.",
+    "totalTime": "PT30S",
+    "steps": [
+      "Enter the original price",
+      "Enter the discount percentage (e.g. 25 for 25% off)",
+      "Optionally add a second stacked discount or a sales tax rate",
+      "Read the sale price, total savings, and effective discount instantly"
+    ]
+  },
+  "home-affordability-calculator": {
+    "name": "How to Calculate Home Affordability",
+    "description": "Estimate how much house you can afford based on income, debts, and down payment.",
+    "totalTime": "PT2M",
+    "steps": [
+      "Enter your gross annual or monthly income",
+      "Add your monthly debt payments (car, student loans, credit cards)",
+      "Enter your planned down payment",
+      "Set the interest rate and loan term",
+      "Review your maximum affordable home price and monthly payment"
+    ]
+  },
+  "gpa-calculator": {
+    "name": "How to Calculate Your GPA",
+    "description": "Calculate your grade point average from course grades and credit hours.",
+    "totalTime": "PT2M",
+    "steps": [
+      "Enter each course name (optional) and its credit hours",
+      "Select the letter grade you earned in each course",
+      "Add rows for all your courses",
+      "Click Calculate to see your GPA on a 4.0 scale"
+    ]
+  },
+  "net-worth-calculator": {
+    "name": "How to Calculate Your Net Worth",
+    "description": "Find your net worth by subtracting what you owe from what you own.",
+    "totalTime": "PT2M",
+    "steps": [
+      "List your assets: cash, investments, retirement accounts, home, and vehicles",
+      "List your liabilities: mortgage, loans, and credit card balances",
+      "Enter the values into the calculator",
+      "Your net worth is total assets minus total liabilities"
+    ]
+  },
+  "debt-to-income-calculator": {
+    "name": "How to Calculate Debt-to-Income Ratio",
+    "description": "Calculate your DTI ratio to see how much of your income goes to debt.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Enter your gross monthly income (before taxes)",
+      "Add up your monthly debt payments: housing, loans, and minimum credit card payments",
+      "Enter the total monthly debt",
+      "Your DTI ratio is monthly debt divided by gross monthly income"
+    ]
+  },
+  "savings-goal-calculator": {
+    "name": "How to Calculate Monthly Savings for a Goal",
+    "description": "Find out how much to save each month to reach a savings goal.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Enter your savings goal amount",
+      "Set your timeframe in months or years",
+      "Add your current savings and expected interest rate",
+      "See the monthly contribution needed to reach your goal"
+    ]
+  },
+  "percentage-calculator": {
+    "name": "How to Calculate a Percentage",
+    "description": "Calculate percentages, percentage change, and what percent one number is of another.",
+    "totalTime": "PT30S",
+    "steps": [
+      "Choose the type of percentage calculation",
+      "Enter your numbers",
+      "Read the result instantly"
+    ]
+  },
+  "paycheck-calculator": {
+    "name": "How to Calculate Your Take-Home Pay",
+    "description": "Estimate your net paycheck after taxes and deductions.",
+    "totalTime": "PT2M",
+    "steps": [
+      "Enter your gross pay and pay frequency",
+      "Select your filing status and state",
+      "Add pre-tax deductions like 401(k) and health insurance",
+      "Review your estimated take-home pay and tax withholding"
+    ]
+  },
+  "grams-to-ounces": {
+    "name": "How to Convert Grams to Ounces",
+    "description": "Convert grams to ounces in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in grams (g) you want to convert",
+      "The result in ounces (oz) updates instantly",
+      "Use the reference table to look up common weight conversions"
+    ]
+  },
+  "ounces-to-grams": {
+    "name": "How to Convert Ounces to Grams",
+    "description": "Convert ounces to grams in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in ounces (oz) you want to convert",
+      "The result in grams (g) updates instantly",
+      "Use the reference table to look up common weight conversions"
+    ]
+  },
+  "feet-to-meters": {
+    "name": "How to Convert Feet to Meters",
+    "description": "Convert feet to meters in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in feet (ft) you want to convert",
+      "The result in meters (m) updates instantly",
+      "Use the reference table to look up common length conversions"
+    ]
+  },
+  "meters-to-feet": {
+    "name": "How to Convert Meters to Feet",
+    "description": "Convert meters to feet in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in meters (m) you want to convert",
+      "The result in feet (ft) updates instantly",
+      "Use the reference table to look up common length conversions"
+    ]
+  },
+  "ml-to-cups": {
+    "name": "How to Convert Milliliters to Cups",
+    "description": "Convert milliliters to cups in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in milliliters (ml) you want to convert",
+      "The result in cups (cups) updates instantly",
+      "Use the reference table to look up common volume conversions"
+    ]
+  },
+  "cups-to-ml": {
+    "name": "How to Convert Cups to Milliliters",
+    "description": "Convert cups to milliliters in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in cups (cups) you want to convert",
+      "The result in milliliters (ml) updates instantly",
+      "Use the reference table to look up common volume conversions"
+    ]
+  },
+  "liters-to-gallons": {
+    "name": "How to Convert Liters to Gallons",
+    "description": "Convert liters to gallons in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in liters (L) you want to convert",
+      "The result in gallons (gal) updates instantly",
+      "Use the reference table to look up common volume conversions"
+    ]
+  },
+  "gallons-to-liters": {
+    "name": "How to Convert Gallons to Liters",
+    "description": "Convert gallons to liters in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in gallons (gal) you want to convert",
+      "The result in liters (L) updates instantly",
+      "Use the reference table to look up common volume conversions"
+    ]
+  },
+  "mph-to-kmh": {
+    "name": "How to Convert Miles per Hour to Kilometers per Hour",
+    "description": "Convert miles per hour to kilometers per hour in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in miles per hour (mph) you want to convert",
+      "The result in kilometers per hour (km/h) updates instantly",
+      "Use the reference table to look up common speed conversions"
+    ]
+  },
+  "kmh-to-mph": {
+    "name": "How to Convert Kilometers per Hour to Miles per Hour",
+    "description": "Convert kilometers per hour to miles per hour in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in kilometers per hour (km/h) you want to convert",
+      "The result in miles per hour (mph) updates instantly",
+      "Use the reference table to look up common speed conversions"
+    ]
+  },
+  "feet-to-inches": {
+    "name": "How to Convert Feet to Inches",
+    "description": "Convert feet to inches in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in feet (ft) you want to convert",
+      "The result in inches (in) updates instantly",
+      "Use the reference table to look up common length conversions"
+    ]
+  },
+  "inches-to-feet": {
+    "name": "How to Convert Inches to Feet",
+    "description": "Convert inches to feet in seconds with our free online converter.",
+    "totalTime": "PT10S",
+    "steps": [
+      "Enter the value in inches (in) you want to convert",
+      "The result in feet (ft) updates instantly",
+      "Use the reference table to look up common length conversions"
+    ]
+  },
+  "salary-to-hourly-calculator": {
+    "name": "How to Convert Salary to an Hourly Rate",
+    "description": "Convert an annual salary into an equivalent hourly wage.",
+    "totalTime": "PT30S",
+    "steps": [
+      "Enter your gross annual salary",
+      "Set your hours worked per week (40 for full-time)",
+      "Set your paid weeks per year (usually 52)",
+      "Read your hourly rate plus daily, weekly, and monthly pay"
+    ]
+  },
+  "hourly-to-salary-calculator": {
+    "name": "How to Convert Hourly Pay to a Salary",
+    "description": "Convert an hourly wage into an equivalent annual salary.",
+    "totalTime": "PT30S",
+    "steps": [
+      "Enter your hourly wage",
+      "Set your hours worked per week (40 for full-time)",
+      "Set your paid weeks per year (usually 52)",
+      "Read your annual salary plus weekly and monthly pay"
+    ]
+  },
+  "hours-calculator": {
+    "name": "How to Calculate Hours Worked",
+    "description": "Calculate hours worked from a start time, end time, and break.",
+    "totalTime": "PT30S",
+    "steps": [
+      "Enter your start time",
+      "Enter your end time (overnight shifts are supported)",
+      "Enter your break length in minutes",
+      "Optionally add an hourly rate to see your pay",
+      "Read your hours in decimal and hours:minutes format"
+    ]
+  },
+  "overtime-calculator": {
+    "name": "How to Calculate Overtime Pay",
+    "description": "Calculate overtime pay and total earnings from your hours and rate.",
+    "totalTime": "PT30S",
+    "steps": [
+      "Enter your hourly rate",
+      "Enter your regular hours (typically up to 40)",
+      "Enter your overtime hours",
+      "Choose your overtime multiplier (1.5 for time and a half)",
+      "Read your regular pay, overtime pay, and total"
+    ]
+  }
+}

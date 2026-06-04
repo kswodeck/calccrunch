@@ -1,0 +1,21 @@
+{
+  "name": "CalcCrunch - Free Online Calculators",
+  "short_name": "CalcCrunch",
+  "description": "Free online calculators for financial planning, health tracking, home projects, and more.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#2C5F8D",
+  "icons": [
+    {
+      "src": "/images/logos/logo-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/logos/logo-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -40,7 +40,10 @@
     }
 
     // Event listeners
-    calculateBtn.addEventListener('click', calculate);
+    calculateBtn.addEventListener('click', () => {
+      calculateResults();
+      document.querySelector(".calculator-result")?.scrollIntoView({behavior: 'smooth', block: 'start'});
+    });
     clearBtn.addEventListener('click', clearForm);
     shareBtn.addEventListener('click', shareCalculation);
     addInvestmentBtn.addEventListener('click', () => addInvestment());
@@ -71,7 +74,8 @@
       name: data?.name || '',
       amount: data?.amount || '',
       returnRate: data?.returnRate || '',
-      quantity: data?.quantity || '1'
+      quantity: data?.quantity || '1',
+      isCompounding: data?.isCompounding !== undefined ? data.isCompounding : true
     };
 
     investments.push(investment);
@@ -163,9 +167,25 @@
               data-investment-id="${investmentId}"
               required
             />
-            <span class="input-addon" style="left: auto; right: 12px;">%</span>
+            <span class="input-addon">%</span>
           </div>
           <small class="form-help">Average annual return rate</small>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label style="display: flex; align-items: center; cursor: pointer; user-select: none;">
+            <input 
+              type="checkbox" 
+              id="${investmentId}-compound" 
+              class="investment-compound"
+              ${investment.isCompounding ? 'checked' : ''}
+              data-investment-id="${investmentId}"
+              style="margin-right: 0.5rem; width: 18px; height: 18px; cursor: pointer;"
+            />
+            <span style="font-weight: 600;">Compounding Asset</span>
+          </label>
+          <small class="form-help">Check if returns are reinvested (stocks, funds). Uncheck for fixed income (rental property, bonds with no reinvestment)</small>
         </div>
       </div>
     `;
@@ -177,12 +197,14 @@
     const quantityInput = investmentRow.querySelector('.investment-quantity');
     const amountInput = investmentRow.querySelector('.investment-amount');
     const returnInput = investmentRow.querySelector('.investment-return');
+    const compoundCheckbox = investmentRow.querySelector('.investment-compound');
     const removeBtn = investmentRow.querySelector('.remove-investment-btn');
 
     nameInput.addEventListener('input', debounce(() => updateInvestmentData(investmentId), 500));
     quantityInput.addEventListener('input', debounce(() => updateInvestmentData(investmentId), 500));
     amountInput.addEventListener('input', debounce(() => updateInvestmentData(investmentId), 500));
     returnInput.addEventListener('input', debounce(() => updateInvestmentData(investmentId), 500));
+    compoundCheckbox.addEventListener('change', () => updateInvestmentData(investmentId));
     removeBtn.addEventListener('click', () => removeInvestment(investmentId));
 
     // Update investment numbers
@@ -230,11 +252,13 @@
     const quantityInput = document.querySelector(`#${investmentId}-quantity`);
     const amountInput = document.querySelector(`#${investmentId}-amount`);
     const returnInput = document.querySelector(`#${investmentId}-return`);
+    const compoundCheckbox = document.querySelector(`#${investmentId}-compound`);
 
     investment.name = nameInput.value;
     investment.quantity = quantityInput.value;
     investment.amount = amountInput.value;
     investment.returnRate = returnInput.value;
+    investment.isCompounding = compoundCheckbox.checked;
 
     saveToURL();
   }
@@ -254,20 +278,28 @@
   function handleContributionFrequencyChange() {
     const frequency = contributionFrequencySelect.value;
     
-    if (frequency === 'none') {
+    if (!frequency) {
       contributionAmountGroup.style.display = 'none';
       contributionAmountInput.value = '';
     } else {
       contributionAmountGroup.style.display = 'block';
-      contributionHelp.textContent = frequency === 'monthly' ? 
+      contributionHelp.textContent = frequency === 'daily' ? 
+        'Amount to contribute each day' :
+        frequency === 'weekly' ? 
+        'Amount to contribute each week' :
+        frequency === 'biweekly' ? 
+        'Amount to contribute every other week' :
+        frequency === 'monthly' ? 
         'Amount to contribute each month' : 
+        frequency === 'quarterly' ? 
+        'Amount to contribute each quarter' : 
         'Amount to contribute each year';
     }
     
     saveToURL();
   }
 
-  function calculate() {
+  function calculateResults() {
     // Validate inputs
     const annualGoal = parseFloat(annualIncomeGoalInput.value);
     const years = parseInt(investmentYearsInput.value);
@@ -289,6 +321,7 @@
       const quantity = parseInt(document.querySelector(`#${investment.id}-quantity`).value);
       const amount = parseFloat(document.querySelector(`#${investment.id}-amount`).value);
       const returnRate = parseFloat(document.querySelector(`#${investment.id}-return`).value);
+      const isCompounding = document.querySelector(`#${investment.id}-compound`).checked;
 
       if (!name || !quantity || quantity <= 0 || !amount || amount <= 0 || !returnRate || returnRate < 0) {
         alert('Please fill in all investment fields with valid values.');
@@ -300,7 +333,8 @@
         name: name,
         quantity: quantity,
         amount: amount,
-        returnRate: returnRate / 100 // Convert to decimal
+        returnRate: returnRate / 100, // Convert to decimal
+        isCompounding: isCompounding
       });
     }
 
@@ -313,9 +347,6 @@
 
     // Display results
     displayResults(results, annualGoal, years);
-
-    // Scroll to results
-    resultDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
   function calculateInvestmentResults(investments, annualGoal, years, contributionFreq, contributionAmount) {
@@ -339,7 +370,8 @@
         years,
         contributionFreq,
         contributionAmount,
-        investments.length
+        investments.length,
+        inv.isCompounding
       );
 
       // Multiply by quantity
@@ -355,6 +387,7 @@
         initialAmount: inv.amount,
         totalInitialAmount: totalInitialForInvestment,
         returnRate: inv.returnRate,
+        isCompounding: inv.isCompounding,
         finalValue: investmentResult.finalValue,
         totalFinalValue: totalFinalForInvestment,
         annualIncome: investmentResult.annualIncome,
@@ -378,6 +411,7 @@
     const totalInvested = results.totalInitialInvestment + results.totalContributions;
     const totalGain = results.totalFinalValue - totalInvested;
     results.overallROI = (totalGain / totalInvested) * 100;
+    if (totalGain <= 0) results.overallROI = (results.totalAnnualIncome / totalInvested) * 100;
 
     // Find breakeven and goal reached years
     results.breakevenYear = findBreakevenYear(investments, contributionFreq, contributionAmount);
@@ -386,34 +420,43 @@
     return results;
   }
 
-  function calculateSingleInvestment(principal, rate, years, contributionFreq, contributionAmount, numInvestments) {
+  function calculateSingleInvestment(principal, rate, years, contributionFreq, contributionAmount, numInvestments, isCompounding) {
     // Divide contributions equally among investments
     const contributionPerInvestment = contributionAmount / numInvestments;
     
     let balance = principal;
     let totalContributions = 0;
     
-    // Calculate year by year with contributions
-    for (let year = 1; year <= years; year++) {
-      // Add contributions
-      if (contributionFreq === 'monthly') {
-        for (let month = 0; month < 12; month++) {
-          balance += contributionPerInvestment;
-          totalContributions += contributionPerInvestment;
-          // Compound monthly
-          balance *= (1 + rate / 12);
+    if (isCompounding) {
+      // Compounding asset - returns are reinvested
+      for (let year = 1; year <= years; year++) {
+        if (contributionFreq) {
+          for (let compound = 0; compound < contributionFreq; compound++) {
+            balance += contributionPerInvestment;
+            totalContributions += contributionPerInvestment;
+            // Compound
+            balance *= (1 + rate / contributionFreq);
+          }
+        } else {
+          // No contributions, just annual compounding
+          balance *= (1 + rate);
         }
-      } else if (contributionFreq === 'annual') {
-        balance += contributionPerInvestment;
-        totalContributions += contributionPerInvestment;
-        balance *= (1 + rate);
-      } else {
-        // No contributions, just annual compounding
-        balance *= (1 + rate);
       }
+    } else {
+      // Non-compounding asset - simple interest, returns not reinvested
+      for (let year = 1; year <= years; year++) {
+        if (contributionFreq) {
+          for (let compound = 0; compound < contributionFreq; compound++) {
+            balance += contributionPerInvestment;
+            totalContributions += contributionPerInvestment;
+          }
+        }
+      }
+      // For non-compounding, balance stays as principal + contributions
     }
 
     const finalValue = balance;
+    // Annual income is always the rate applied to final value for income generation
     const annualIncome = finalValue * rate;
     const monthlyIncome = annualIncome / 12;
     const totalGain = finalValue - principal - totalContributions;
@@ -442,7 +485,8 @@
           year,
           contributionFreq,
           contributionAmount,
-          investments.length
+          investments.length,
+          inv.isCompounding
         );
         totalValue += result.finalValue * inv.quantity;
       });
@@ -470,7 +514,8 @@
           year,
           contributionFreq,
           contributionAmount,
-          investments.length
+          investments.length,
+          inv.isCompounding
         );
         totalAnnualIncome += result.annualIncome * inv.quantity;
       });
@@ -484,10 +529,8 @@
   }
 
   function calculateTotalContributions(frequency, amount, years) {
-    if (frequency === 'monthly') {
-      return amount * 12 * years;
-    } else if (frequency === 'annual') {
-      return amount * years;
+    if (frequency) {
+      return amount * frequency * years;
     }
     return 0;
   }
@@ -567,8 +610,8 @@
                 </div>
               </div>
             </div>
-          ` : `
-            <div style="padding: var(--space-lg); background: #FFF8DC; border-radius: var(--border-radius); border-left: 4px solid var(--color-warning);">
+          ` : `${results.totalFinalValue > results.totalInitialInvestment + results.totalContributions ? `
+            <div style="padding: var(--space-lg); background: var(--color-highlight-yellow); border-radius: var(--border-radius); border-left: 4px solid var(--color-warning);">
               <div style="display: flex; align-items: center; gap: var(--space-md);">
                 <div style="font-size: 2rem;">⚠️</div>
                 <div>
@@ -576,7 +619,7 @@
                   <p style="margin: 0.25rem 0 0; color: var(--color-gray-dark);">Based on these return rates, breakeven would take more than 50 years</p>
                 </div>
               </div>
-            </div>
+            </div>` : ``}
           `}
           
           ${results.goalReachedYear ? `
@@ -590,7 +633,7 @@
               </div>
             </div>
           ` : `
-            <div style="padding: var(--space-lg); background: #FFE5E5; border-radius: var(--border-radius); border-left: 4px solid var(--color-error);">
+            <div style="padding: var(--space-lg); background: var(--color-highlight-red); border-radius: var(--border-radius); border-left: 4px solid var(--color-error);">
               <div style="display: flex; align-items: center; gap: var(--space-md);">
                 <div style="font-size: 2rem;">📈</div>
                 <div>
@@ -606,14 +649,19 @@
       <div class="result-breakdown" style="margin-top: var(--space-2xl);">
         <h4 style="color: var(--color-primary-blue); margin-bottom: var(--space-lg);">💼 Individual Investment Performance</h4>
         ${results.investments.map((inv, index) => `
-          <div style="background: var(--color-gray-light); padding: var(--space-xl); border-radius: var(--border-radius-lg); margin-bottom: var(--space-lg); border: 2px solid var(--color-gray);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-lg); padding-bottom: var(--space-md); border-bottom: 2px solid var(--color-gray);">
-              <h5 style="margin: 0; color: var(--color-primary-blue); font-size: 1.25rem;">${inv.name}${inv.quantity > 1 ? ` (×${inv.quantity})` : ''}</h5>
+          <div style="background: var(--color-gray-light); padding: var(--space-md); border-radius: var(--border-radius-lg); margin-bottom: var(--space-lg); border: 2px solid var(--color-gray);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-lg); padding-bottom: var(--space-md); border-bottom: 2px solid var(--color-gray); flex-flow: wrap;">
+              <div>
+                <h5 style="margin: 0 0 0.25rem 0; color: var(--color-primary-blue); font-size: 1.25rem;">${inv.name}${inv.quantity > 1 ? ` (×${inv.quantity})` : ''}</h5>
+                <span style="background: ${inv.isCompounding ? 'linear-gradient(135deg, #E8F8E8 0%, #C8E6C9 100%)' : 'linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%)'}; color: ${inv.isCompounding ? 'var(--color-chart-green-dark)' : 'var(--color-chart-blue-dark)'}; padding: 0.25rem 0.75rem; border-radius: 12px; font-weight: 600; font-size: 0.75rem; display: inline-block;">
+                  ${inv.isCompounding ? '📈 Compounding' : '📊 Non-Compounding'}
+                </span>
+              </div>
               <span style="background: var(--color-lighter-blue); color: var(--color-primary-blue); padding: 0.25rem 0.75rem; border-radius: 4px; font-weight: 600; font-size: 0.875rem;">Investment #${index + 1}</span>
             </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-lg);">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--space-lg);">
               ${inv.quantity > 1 ? `
-                <div style="background: #FFF8DC; padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
+                <div style="background: var(--color-highlight-yellow); padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
                   <div style="font-size: 0.875rem; color: var(--color-gray-dark); margin-bottom: 0.25rem;">Quantity</div>
                   <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-accent-orange);">${inv.quantity} investments</div>
                 </div>
@@ -623,7 +671,7 @@
                 <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-primary-blue);">${formatCurrency(inv.initialAmount)}</div>
               </div>
               ${inv.quantity > 1 ? `
-                <div style="background: #FFF8DC; padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
+                <div style="background: var(--color-highlight-yellow); padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
                   <div style="font-size: 0.875rem; color: var(--color-gray-dark); margin-bottom: 0.25rem;">Total Initial Investment</div>
                   <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-accent-orange);">${formatCurrency(inv.totalInitialAmount)}</div>
                 </div>
@@ -632,26 +680,26 @@
                 <div style="font-size: 0.875rem; color: var(--color-gray-dark); margin-bottom: 0.25rem;">Expected Return</div>
                 <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-primary-blue);">${(inv.returnRate * 100).toFixed(2)}%/year</div>
               </div>
-              <div style="background: var(--color-white); padding: var(--space-md); border-radius: var(--border-radius);">
+              ${inv.isCompounding ? `<div style="background: var(--color-white); padding: var(--space-md); border-radius: var(--border-radius);">
                 <div style="font-size: 0.875rem; color: var(--color-gray-dark); margin-bottom: 0.25rem;">${inv.quantity > 1 ? 'Final Value (Each)' : 'Final Value'}</div>
                 <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-primary-blue);">${formatCurrency(inv.finalValue)}</div>
-              </div>
-              ${inv.quantity > 1 ? `
-                <div style="background: #FFF8DC; padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
+              </div>` : ''}
+              ${inv.quantity > 1 && inv.isCompounding ? `
+                <div style="background: var(--color-highlight-yellow); padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
                   <div style="font-size: 0.875rem; color: var(--color-gray-dark); margin-bottom: 0.25rem;">Total Final Value</div>
                   <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-accent-orange);">${formatCurrency(inv.totalFinalValue)}</div>
                 </div>
               ` : ''}
-              <div style="background: var(--color-white); padding: var(--space-md); border-radius: var(--border-radius);">
+              ${inv.isCompounding ? `<div style="background: var(--color-white); padding: var(--space-md); border-radius: var(--border-radius);">
                 <div style="font-size: 0.875rem; color: var(--color-gray-dark); margin-bottom: 0.25rem;">Total Gain</div>
                 <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-chart-green);">${formatCurrency(inv.totalGain)}</div>
-              </div>
+              </div>` : ''}
               <div style="background: var(--color-white); padding: var(--space-md); border-radius: var(--border-radius);">
                 <div style="font-size: 0.875rem; color: var(--color-gray-dark); margin-bottom: 0.25rem;">${inv.quantity > 1 ? 'Annual Income (Each)' : 'Annual Income'}</div>
                 <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-primary-blue);">${formatCurrency(inv.annualIncome)}</div>
               </div>
               ${inv.quantity > 1 ? `
-                <div style="background: #FFF8DC; padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
+                <div style="background: var(--color-highlight-yellow); padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
                   <div style="font-size: 0.875rem; color: var(--color-gray-dark); margin-bottom: 0.25rem;">Total Annual Income</div>
                   <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-accent-orange);">${formatCurrency(inv.totalAnnualIncome)}</div>
                 </div>
@@ -661,15 +709,15 @@
                 <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-primary-blue);">${formatCurrency(inv.monthlyIncome)}</div>
               </div>
               ${inv.quantity > 1 ? `
-                <div style="background: #FFF8DC; padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
+                <div style="background: var(--color-highlight-yellow); padding: var(--space-md); border-radius: var(--border-radius); border-left: 3px solid var(--color-accent-orange);">
                   <div style="font-size: 0.875rem; color: var(--color-gray-dark); margin-bottom: 0.25rem;">Total Monthly Income</div>
                   <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-accent-orange);">${formatCurrency(inv.totalMonthlyIncome)}</div>
                 </div>
               ` : ''}
-              <div style="background: var(--color-white); padding: var(--space-md); border-radius: var(--border-radius);">
+              ${inv.isCompounding ? `<div style="background: var(--color-white); padding: var(--space-md); border-radius: var(--border-radius);">
                 <div style="font-size: 0.875rem; color: var(--color-gray-dark); margin-bottom: 0.25rem;">ROI</div>
                 <div style="font-size: 1.25rem; font-weight: 700; color: var(--color-primary-blue);">${inv.roi.toFixed(2)}%</div>
-              </div>
+              </div>` : ''}
               ${inv.totalContributions > 0 ? `
                 <div style="background: var(--color-white); padding: var(--space-md); border-radius: var(--border-radius);">
                   <div style="font-size: 0.875rem; color: var(--color-gray-dark); margin-bottom: 0.25rem;">Contributions</div>
@@ -688,26 +736,26 @@
             `<li style="padding: var(--space-md); background: linear-gradient(135deg, #E8F8E8 0%, #fff 100%); border-radius: var(--border-radius); border-left: 3px solid var(--color-chart-green);">
               <strong style="color: var(--color-chart-green);">✓</strong> Your investment plan will generate <strong>${formatCurrency(results.totalAnnualIncome)}</strong> annually after ${years} years, exceeding your goal of ${formatCurrency(annualGoal)}.
             </li>` :
-            `<li style="padding: var(--space-md); background: #FFF8DC; border-radius: var(--border-radius); border-left: 3px solid var(--color-warning);">
+            `<li style="padding: var(--space-md); background: var(--color-highlight-yellow); border-radius: var(--border-radius); border-left: 3px solid var(--color-warning);">
               <strong style="color: var(--color-warning);">⚠</strong> Your current plan generates <strong>${formatCurrency(results.totalAnnualIncome)}</strong> annually, which is <strong>${formatCurrency(Math.abs(incomeGap))}</strong> short of your ${formatCurrency(annualGoal)} goal.
             </li>`
           }
-          <li style="padding: var(--space-md); background: var(--color-white); border-radius: var(--border-radius);">
+          ${results.totalFinalValue > results.totalInitialInvestment ? `<li style="padding: var(--space-md); background: var(--color-white); border-radius: var(--border-radius);">
             Your portfolio will grow from <strong>${formatCurrency(results.totalInitialInvestment)}</strong> to <strong>${formatCurrency(results.totalFinalValue)}</strong>, a gain of <strong>${formatCurrency(results.totalFinalValue - results.totalInitialInvestment - results.totalContributions)}</strong>.
-          </li>
+          </li>` : ``}
           ${results.totalContributions > 0 ? 
             `<li style="padding: var(--space-md); background: var(--color-white); border-radius: var(--border-radius);">
               Regular contributions of <strong>${formatCurrency(results.totalContributions)}</strong> over ${years} years will significantly accelerate your portfolio growth.
             </li>` : 
             `<li style="padding: var(--space-md); background: linear-gradient(135deg, #E3F2FD 0%, #fff 100%); border-radius: var(--border-radius); border-left: 3px solid var(--color-chart-blue);">
-              <strong style="color: var(--color-chart-blue);">💡</strong> Consider adding regular monthly or annual contributions to reach your goal faster.
+              <strong style="color: var(--color-chart-blue);">💡</strong> Consider adding regular, weekly, monthly or annual contributions to reach your goal faster.
             </li>`
           }
           ${results.breakevenYear && results.breakevenYear <= years ?
             `<li style="padding: var(--space-md); background: var(--color-white); border-radius: var(--border-radius);">
               You'll reach breakeven (100% ROI) in year ${results.breakevenYear}, after which all gains are pure profit.
             </li>` :
-            `<li style="padding: var(--space-md); background: #FFF8DC; border-radius: var(--border-radius); border-left: 3px solid var(--color-warning);">
+            `<li style="padding: var(--space-md); background: var(--color-highlight-yellow); border-radius: var(--border-radius); border-left: 3px solid var(--color-warning);">
               Consider increasing your expected returns or extending your timeframe to reach breakeven sooner.
             </li>`
           }
@@ -718,7 +766,7 @@
             ''
           }
           ${!goalMet && !results.goalReachedYear ?
-            `<li style="padding: var(--space-md); background: #FFE5E5; border-radius: var(--border-radius); border-left: 3px solid var(--color-error);">
+            `<li style="padding: var(--space-md); background: var(--color-highlight-red); border-radius: var(--border-radius); border-left: 3px solid var(--color-error);">
               <strong style="color: var(--color-error);">⚠</strong> To reach your goal, consider: increasing initial investments, boosting expected returns, adding regular contributions, or extending the timeframe.
             </li>` :
             ''
@@ -737,7 +785,7 @@
     // Save basic inputs
     if (annualIncomeGoalInput.value) params.set('goal', annualIncomeGoalInput.value);
     if (investmentYearsInput.value) params.set('years', investmentYearsInput.value);
-    if (contributionFrequencySelect.value !== 'none') {
+    if (contributionFrequencySelect.value) {
       params.set('contribFreq', contributionFrequencySelect.value);
       if (contributionAmountInput.value) params.set('contribAmt', contributionAmountInput.value);
     }
@@ -748,13 +796,15 @@
       const quantityInput = document.querySelector(`#${inv.id}-quantity`);
       const amountInput = document.querySelector(`#${inv.id}-amount`);
       const returnInput = document.querySelector(`#${inv.id}-return`);
+      const compoundCheckbox = document.querySelector(`#${inv.id}-compound`);
 
       return {
         id: inv.id,
         name: nameInput?.value || '',
         quantity: quantityInput?.value || '1',
         amount: amountInput?.value || '',
-        returnRate: returnInput?.value || ''
+        returnRate: returnInput?.value || '',
+        isCompounding: compoundCheckbox?.checked !== undefined ? compoundCheckbox.checked : true
       };
     }).filter(inv => inv.name || inv.amount || inv.returnRate);
 
@@ -797,7 +847,7 @@
     // Clear inputs
     annualIncomeGoalInput.value = '';
     investmentYearsInput.value = '';
-    contributionFrequencySelect.value = 'none';
+    contributionFrequencySelect.value = 0;
     contributionAmountInput.value = '';
     monthlyEquivalentDiv.style.display = 'none';
     contributionAmountGroup.style.display = 'none';

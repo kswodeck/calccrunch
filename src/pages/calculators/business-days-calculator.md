@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Business Days Calculator
-description: Calculate business days between two dates excluding weekends and holidays. Add or subtract business days from a date for project planning and deadline tracking.
-category: time-date
-tags: ['business days', 'workdays', 'project planning', 'deadlines', 'holidays']
-featured: false
 calcType: business-days
-seoTitle: Free Business Days Calculator - Workday Calculator
-seoDescription: Calculate business days between dates excluding weekends and holidays. Plan project deadlines with our free calculator.
-estimatedTime: 2 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator
@@ -161,16 +152,7 @@ difficulty: Easy
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
-  <h4>🔗 Save & Share Your Calculation</h4>
-  <p>
-    Your calculation is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
-    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values will be restored automatically.
-    <strong>Holiday toggle states are also saved</strong>, so your custom holiday selections persist when sharing or bookmarking.
-  </p>
-</div>
-
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>🎯 Key Features</h4>
   <p><strong>This calculator includes:</strong></p>
   <ul style="margin: 10px 0; padding-left: 20px;">
@@ -182,7 +164,7 @@ difficulty: Easy
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>📊 Understanding the Results</h4>
   <p><strong>The calculator provides:</strong></p>
   <ul style="margin: 10px 0; padding-left: 20px;">
@@ -200,7 +182,7 @@ difficulty: Easy
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>💡 Using Holiday Toggles</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Automatic Display:</strong> When you select a country, all its holidays appear below</li>
@@ -211,7 +193,7 @@ difficulty: Easy
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
+<div class="info-box" style="background: var(--color-highlight-red); border-left-color: var(--color-error);">
   <h4>⚠️ Important Notes</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li>Holiday dates may vary by state/province within countries</li>
@@ -220,6 +202,15 @@ difficulty: Easy
     <li>Always verify critical deadlines with the relevant organization</li>
     <li>The calculator uses local dates to avoid timezone conversion issues</li>
   </ul>
+</div>
+
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
+  <h4>🔗 Save & Share Your Calculation</h4>
+  <p>
+    Your calculation is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
+    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values will be restored automatically.
+    <strong>Holiday toggle states are also saved</strong>, so your custom holiday selections persist when sharing or bookmarking.
+  </p>
 </div>
 
 <style>
@@ -240,7 +231,7 @@ difficulty: Easy
     display: flex;
     align-items: center;
     padding: 0.75rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border: 2px solid #e5e7eb;
     border-radius: 8px;
     cursor: pointer;
@@ -249,7 +240,7 @@ difficulty: Easy
   
   .radio-label:hover {
     border-color: #FF6B35;
-    background: #fff8f5;
+    background: var(--color-highlight-orange-alt);
   }
   
   .radio-label input[type="radio"] {
@@ -258,7 +249,7 @@ difficulty: Easy
   
   .radio-label input[type="radio"]:checked + span {
     font-weight: 600;
-    color: #2C5F8D;
+    color: var(--color-primary-blue);
   }
   
   .checkbox-label {

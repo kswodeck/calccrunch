@@ -1,0 +1,243 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import categoriesData from "../data/categories.json";
+import { allCalculators } from "../utils/calculators.js";
+
+const popularCalculators = allCalculators
+  .filter((calc) => calc.featured || calc.popular)
+  .slice(0, 6);
+
+const topCategories = categoriesData.categories
+  .filter((cat) => cat.featured)
+  .slice(0, 4);
+---
+
+<BaseLayout
+  title="Page Not Found"
+  description="The page you're looking for doesn't exist. Browse our free online calculators or search for what you need."
+>
+  <div class="not-found-page">
+    <div class="container">
+      <div class="not-found-content">
+        <div class="error-icon">404</div>
+        <h1>Page Not Found</h1>
+        <p class="error-description">
+          The page you're looking for doesn't exist or has been moved. Try searching for what you need, or browse our popular calculators below.
+        </p>
+
+        <div class="search-box">
+          <form action="/search" method="get" class="search-form">
+            <input
+              type="text"
+              name="q"
+              placeholder="Search calculators..."
+              class="search-input"
+              aria-label="Search calculators"
+            />
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+        </div>
+
+        <div class="quick-links">
+          <a href="/" class="btn btn-secondary">Go Home</a>
+          <a href="/calculators" class="btn btn-secondary">All Calculators</a>
+        </div>
+      </div>
+
+      <section class="popular-section">
+        <h2>Popular Calculators</h2>
+        <div class="popular-grid">
+          {popularCalculators.map((calc) => (
+            <a href={`/calculators/${calc.slug}`} class="popular-card">
+              <span class="popular-icon">{calc.icon}</span>
+              <span class="popular-title">{calc.title}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section class="categories-section">
+        <h2>Browse by Category</h2>
+        <div class="categories-grid">
+          {topCategories.map((cat) => (
+            <a href={`/categories/${cat.slug}`} class="category-card">
+              <span class="category-icon">{cat.icon}</span>
+              <span class="category-name">{cat.name}</span>
+              <span class="category-count">{cat.calculatorCount} tools</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .not-found-page {
+    padding: var(--space-3xl) 0;
+    min-height: 60vh;
+  }
+
+  .not-found-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto var(--space-3xl);
+  }
+
+  .error-icon {
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--color-accent-orange);
+    margin-bottom: var(--space-md);
+    font-family: var(--font-primary);
+  }
+
+  .not-found-content h1 {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-md);
+  }
+
+  .error-description {
+    font-size: var(--text-lg);
+    color: var(--color-gray-dark);
+    margin-bottom: var(--space-xl);
+    line-height: 1.6;
+  }
+
+  .search-box {
+    margin-bottom: var(--space-xl);
+  }
+
+  .search-form {
+    display: flex;
+    gap: var(--space-sm);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .search-input {
+    flex: 1;
+    padding: var(--space-sm) var(--space-md);
+    border: 2px solid var(--color-gray);
+    border-radius: var(--border-radius);
+    font-size: var(--text-base);
+  }
+
+  .search-input:focus {
+    outline: none;
+    border-color: var(--color-primary-blue);
+  }
+
+  .quick-links {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .popular-section,
+  .categories-section {
+    margin-top: var(--space-3xl);
+  }
+
+  .popular-section h2,
+  .categories-section h2 {
+    text-align: center;
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-xl);
+  }
+
+  .popular-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+  }
+
+  .popular-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-md) var(--space-lg);
+    background: var(--color-gray-light);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: var(--color-gray-dark);
+    transition: all var(--transition-fast);
+  }
+
+  .popular-card:hover {
+    background: var(--color-white);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    color: var(--color-primary-blue);
+  }
+
+  .popular-icon {
+    font-size: var(--text-xl);
+  }
+
+  .popular-title {
+    font-weight: 600;
+    font-size: var(--text-sm);
+  }
+
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--space-md);
+  }
+
+  .category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-xl);
+    background: var(--color-gray-light);
+    border-radius: var(--border-radius-lg);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+
+  .category-card:hover {
+    background: var(--color-white);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+
+  .category-icon {
+    font-size: var(--text-3xl);
+  }
+
+  .category-name {
+    font-weight: 700;
+    color: var(--color-primary-blue);
+  }
+
+  .category-count {
+    font-size: var(--text-sm);
+    color: var(--color-gray-dark);
+  }
+
+  @media (max-width: 768px) {
+    .error-icon {
+      font-size: 3.5rem;
+    }
+
+    .not-found-content h1 {
+      font-size: var(--text-3xl);
+    }
+
+    .search-form {
+      flex-direction: column;
+    }
+
+    .popular-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .categories-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

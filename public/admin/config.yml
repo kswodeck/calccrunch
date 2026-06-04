@@ -1,0 +1,68 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+
+media_folder: "public/images/blog"
+public_folder: "/images/blog"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    editor:
+      preview: true
+    sortable_fields: ["publishDate", "title"]
+    view_filters:
+      - label: "Published"
+        field: "status"
+        pattern: "published"
+      - label: "Drafts"
+        field: "status"
+        pattern: "draft"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string", pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Must be lowercase with hyphens only"] }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Author", name: "author", widget: "string", default: "CalcCrunch Team" }
+      - { label: "Publish Date", name: "publishDate", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ" }
+      - { label: "Updated Date", name: "updatedDate", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", required: false }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Financial Planning"
+          - "Investing"
+          - "Budgeting"
+          - "Health & Fitness"
+          - "Retirement"
+          - "Home & Living"
+          - "Education"
+          - "Automotive"
+          - "Food & Cooking"
+          - "Business"
+          - "Technology"
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true }
+      - { label: "Read Time", name: "readTime", widget: "string", default: "5 min read" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - label: "Status"
+        name: "status"
+        widget: "select"
+        default: "draft"
+        options:
+          - { label: "Draft", value: "draft" }
+          - { label: "Published", value: "published" }
+      - label: "Related Calculators"
+        name: "relatedCalculators"
+        widget: "list"
+        required: false
+        field: { label: "Calculator Slug", name: "slug", widget: "string" }
+      - { label: "SEO Title", name: "seoTitle", widget: "string", required: false }
+      - { label: "SEO Description", name: "seoDescription", widget: "text", required: false }
+      - { label: "Keywords", name: "keywords", widget: "list", required: false, allow_add: true }
+      - { label: "Body", name: "body", widget: "markdown" }

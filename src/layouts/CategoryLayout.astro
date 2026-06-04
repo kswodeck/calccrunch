@@ -3,7 +3,6 @@ import BaseLayout from "./BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import CalculatorCard from "../components/CalculatorCard.astro";
 import AdUnit from "../components/AdUnit.astro";
-import EmailCapture from "../components/EmailCapture.astro";
 
 // Get props
 const {
@@ -124,14 +123,15 @@ const keywords = categoryKeywords[category] || "free online calculator";
       <div class="category-layout">
         <!-- Main Calculator Grid -->
         <main class="calculators-main">
-          <!-- Top Ad Unit -->
-          <!-- <AdUnit slot="category-top" format="horizontal" /> -->
-
           <!-- Calculators Grid -->
-          <div class="calculators-grid">
+          <div class="calculators-grid" id="category-grid">
             {
               calculators.length > 0 ? (
-                calculators.map((calc) => <CalculatorCard {...calc} />)
+                calculators.map((calc) => (
+                  <div class="calc-grid-item">
+                    <CalculatorCard {...calc} />
+                  </div>
+                ))
               ) : (
                 <div class="no-calculators">
                   <p>
@@ -143,18 +143,8 @@ const keywords = categoryKeywords[category] || "free online calculator";
                 </div>
               )
             }
+            <AdUnit slot="4441095467" format="auto" />
           </div>
-
-          <!-- Email Capture -->
-          <!-- <EmailCapture 
-            calculatorType={category}
-            headline="📬 Get New Calculator Updates"
-            description={`Be the first to know when we add new ${categoryName.toLowerCase()} calculators and tools.`}
-            buttonText="Subscribe for Updates"
-          /> -->
-
-          <!-- Bottom Ad Unit -->
-          <!-- <AdUnit slot="category-bottom" format="rectangle" /> -->
         </main>
 
         <!-- Sidebar -->
@@ -220,9 +210,6 @@ const keywords = categoryKeywords[category] || "free online calculator";
               </ul>
             </div>
 
-            <!-- Sidebar Ad -->
-            <!-- <AdUnit slot="category-sidebar" format="square" className="sidebar" /> -->
-
             <!-- Help Card -->
             <div class="sidebar-card help-card">
               <h3>💡 Pro Tip</h3>
@@ -252,7 +239,33 @@ const keywords = categoryKeywords[category] || "free online calculator";
   </div>
 </BaseLayout>
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("show-more-category-btn");
+    if (btn) {
+      btn.addEventListener("click", () => {
+        document
+          .querySelectorAll("#category-grid .hidden-card")
+          .forEach((card) => {
+            card.classList.remove("hidden-card");
+          });
+        document.getElementById("show-more-wrapper")!.style.display = "none";
+      });
+    }
+  });
+</script>
+
 <style>
+  .hidden-card {
+    display: none;
+  }
+
+  .show-more-wrapper {
+    text-align: center;
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-2xl);
+  }
+
   .category-page {
     min-height: 100vh;
   }
@@ -405,7 +418,7 @@ const keywords = categoryKeywords[category] || "free online calculator";
 
   .category-nav a.active {
     background: var(--color-accent-orange);
-    color: var(--color-white);
+    color: #ffffff;
     font-weight: 700;
   }
 
@@ -416,7 +429,11 @@ const keywords = categoryKeywords[category] || "free online calculator";
   }
 
   .help-card {
-    background: linear-gradient(135deg, #fff8dc 0%, var(--color-white) 100%);
+    background: linear-gradient(
+      135deg,
+      var(--color-highlight-yellow) 0%,
+      var(--color-white) 100%
+    );
     border-color: var(--color-accent-orange);
   }
 
@@ -437,7 +454,7 @@ const keywords = categoryKeywords[category] || "free online calculator";
   }
 
   .category-cta h2 {
-    color: var(--color-white);
+    color: #ffffff;
     font-size: var(--text-4xl);
     margin-bottom: var(--space-md);
   }

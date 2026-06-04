@@ -3,7 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import CalculatorCard from "../../components/CalculatorCard.astro";
 import AdUnit from "../../components/AdUnit.astro";
-import calculatorsData from "../../data/calculators.json";
+import { allCalculators } from "../../utils/calculators.js";
 import categoriesData from "../../data/categories.json";
 
 const breadcrumbItems = [
@@ -11,13 +11,10 @@ const breadcrumbItems = [
   { label: "All Calculators", href: null },
 ];
 
-// Get all calculators
-const allCalculators = calculatorsData?.calculators;
-
 // Get category name helper function
 function getCategoryName(categoryId) {
   const category = categoriesData.categories.find(
-    (cat) => cat.id === categoryId
+    (cat) => cat.id === categoryId,
   );
   return category ? category.name : categoryId;
 }
@@ -30,7 +27,7 @@ function getCategoryData(categoryId) {
 // Group by category and sort categories by order
 const calculatorsByCategory = {};
 const sortedCategories = [...categoriesData.categories].sort(
-  (a, b) => a.order - b.order
+  (a, b) => a.order - b.order,
 );
 
 sortedCategories.forEach((cat) => {
@@ -67,7 +64,7 @@ sortedCategories.forEach((cat) => {
         <!-- Quick Stats -->
         <div class="quick-stats">
           <div class="stat">
-            <strong>{allCalculators.length}+</strong>
+            <strong>{allCalculators.length}</strong>
             <span>Free Calculators</span>
           </div>
           <div class="stat">
@@ -81,13 +78,10 @@ sortedCategories.forEach((cat) => {
         </div>
       </header>
 
-      <!-- Top Ad Unit -->
-      <!-- <AdUnit slot="all-calculators-top" format="horizontal" /> -->
-
       <!-- Calculators by Category -->
       {
         Object.entries(calculatorsByCategory)?.map(
-          ([categoryId, categoryData]) => {
+          ([categoryId, categoryData], idx) => {
             const catInfo = getCategoryData(categoryId);
             return (
               <section class="category-section">
@@ -107,31 +101,70 @@ sortedCategories.forEach((cat) => {
                   </a>
                 </div>
 
-                <div class="calculators-grid">
+                <div class="calculators-grid" data-category-grid={categoryId}>
                   {categoryData?.calculators
                     ?.sort((a, b) => !!b.popular - !!a.popular)
-                    ?.map((calc) => (
-                      <CalculatorCard
-                        title={calc.title}
-                        description={calc.shortDescription}
-                        category={categoryData.name}
-                        slug={calc.slug}
-                        popular={calc.popular}
-                        icon={calc.icon}
-                      />
+                    ?.map((calc, i) => (
+                      <div
+                        class={`calc-grid-item ${i >= 8 ? "hidden-card" : ""}`}
+                        data-index={i}
+                      >
+                        <CalculatorCard
+                          title={calc.title}
+                          description={calc.shortDescription}
+                          category={categoryData.name}
+                          slug={calc.slug}
+                          popular={calc.popular}
+                          icon={calc.icon}
+                        />
+                      </div>
                     ))}
+                  {idx % 2 == 0 &&
+                  idx + 1 < Object.keys(calculatorsByCategory).length ? (
+                    <AdUnit slot="4441095467" format="auto" />
+                  ) : (
+                    ""
+                  )}
                 </div>
+                {categoryData.calculators.length > 8 && (
+                  <div class="show-more-wrapper">
+                    <button
+                      class="btn btn-secondary show-more-category"
+                      data-category-id={categoryId}
+                      data-total={categoryData.calculators.length}
+                    >
+                      Show All {categoryData.calculators.length}{" "}
+                      {categoryData.name} Calculators
+                    </button>
+                  </div>
+                )}
               </section>
             );
-          }
+          },
         )
       }
-
-      <!-- Bottom Ad Unit -->
-      <!-- <AdUnit slot="all-calculators-bottom" format="rectangle" /> -->
     </div>
   </div>
 </BaseLayout>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".show-more-category").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const categoryId = (btn as HTMLElement).dataset.categoryId;
+        const grid = document.querySelector(
+          `[data-category-grid="${categoryId}"]`,
+        );
+        if (grid) {
+          grid.querySelectorAll(".hidden-card").forEach((card) => {
+            card.classList.remove("hidden-card");
+          });
+          (btn as HTMLElement).parentElement!.style.display = "none";
+        }
+      });
+    });
+  });
+</script>
 
 <style>
   .all-calculators-page {
@@ -236,6 +269,15 @@ sortedCategories.forEach((cat) => {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: var(--space-xl);
+  }
+
+  .hidden-card {
+    display: none;
+  }
+
+  .show-more-wrapper {
+    text-align: center;
+    margin-top: var(--space-xl);
   }
 
   @media (max-width: 768px) {

@@ -1,0 +1,783 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+
+const breadcrumbItems = [
+  { label: "Home", href: "/" },
+  { label: "Write for Us", href: null },
+];
+
+const benefits = [
+  {
+    icon: "✍️",
+    title: "Share Your Expertise",
+    description:
+      "Publish articles on personal finance, health, and productivity to a growing audience of engaged readers.",
+  },
+  {
+    icon: "📈",
+    title: "Build Your Portfolio",
+    description:
+      "Get a published byline with your name and bio on a professional platform with strong domain authority.",
+  },
+  {
+    icon: "🌍",
+    title: "Reach Thousands",
+    description:
+      "Your content will be read by thousands of monthly visitors looking for practical, actionable advice.",
+  },
+  {
+    icon: "🤝",
+    title: "Collaborative Editing",
+    description:
+      "Work with our editorial team to polish your piece. We provide feedback and help you publish your best work.",
+  },
+];
+
+const topics = [
+  "Personal Finance & Budgeting",
+  "Investing & Compound Growth",
+  "Mortgage & Home Buying",
+  "Health, Fitness & Nutrition",
+  "Retirement Planning",
+  "Debt Management & Credit",
+  "Tax Strategies",
+  "Education & Student Finance",
+  "Energy Savings & Home Costs",
+  "Food Budgeting & Meal Planning",
+];
+
+const guidelines = [
+  {
+    rule: "Original content only",
+    detail:
+      "No plagiarism or AI-generated content without significant human editing and expertise.",
+  },
+  {
+    rule: "1,000 - 2,500 words",
+    detail: "Long enough to be comprehensive, short enough to stay focused.",
+  },
+  {
+    rule: "Practical and actionable",
+    detail:
+      "Include real numbers, examples, tables, and steps readers can follow immediately.",
+  },
+  {
+    rule: "Link to CalcCrunch tools",
+    detail:
+      "Reference relevant calculators so readers can apply what they learn.",
+  },
+  {
+    rule: "Accurate and sourced",
+    detail:
+      "Financial claims should be verifiable. Cite sources for statistics.",
+  },
+  {
+    rule: "Conversational tone",
+    detail: "Write like you're explaining to a smart friend, not a textbook.",
+  },
+];
+---
+
+<BaseLayout
+  title="Write for Us - Become a CalcCrunch Author"
+  description="Apply to write for CalcCrunch. Share your expertise in personal finance, health, budgeting, and more with thousands of monthly readers."
+  keywords="write for us, guest post, contribute, author application, finance blog, health blog"
+>
+  <!-- EmailJS Library -->
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+  ></script>
+
+  <div class="write-page">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbItems} />
+    </div>
+
+    <!-- Hero Section -->
+    <section class="write-hero bg-gradient">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="text-white">Write for CalcCrunch</h1>
+          <p class="hero-tagline text-white">
+            Share your knowledge. Build your portfolio. Help thousands make
+            better decisions.
+          </p>
+          <p class="hero-description text-white">
+            We're looking for knowledgeable writers who can turn complex
+            financial, health, and productivity topics into clear, actionable
+            guides.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+      <div class="container">
+        <h2 class="section-title">Why Write for Us?</h2>
+        <div class="benefits-grid">
+          {
+            benefits.map((benefit) => (
+              <div class="benefit-card">
+                <span class="benefit-icon">{benefit.icon}</span>
+                <h3>{benefit.title}</h3>
+                <p>{benefit.description}</p>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section class="topics-section bg-light">
+      <div class="container">
+        <h2 class="section-title">Topics We're Looking For</h2>
+        <div class="topics-grid">
+          {topics.map((topic) => <div class="topic-chip">{topic}</div>)}
+        </div>
+        <p class="topics-note">
+          Don't see your topic? Pitch it anyway — we're open to related subjects
+          that help our readers.
+        </p>
+      </div>
+    </section>
+
+    <!-- Guidelines Section -->
+    <section class="guidelines-section">
+      <div class="container">
+        <h2 class="section-title">Submission Guidelines</h2>
+        <div class="guidelines-list">
+          {
+            guidelines.map((g, i) => (
+              <div class="guideline-item">
+                <span class="guideline-number">{i + 1}</span>
+                <div class="guideline-content">
+                  <h3>{g.rule}</h3>
+                  <p>{g.detail}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application-section" id="apply">
+      <div class="container">
+        <div class="form-wrapper">
+          <h2>Apply to Write</h2>
+          <p class="form-intro">
+            Tell us about yourself and what you'd like to write about. We review
+            applications within 3-5 business days. <br /><span
+              class="form-alt-link"
+              >Not looking to write? <a href="/contact">Contact us here</a> instead.</span>
+          </p>
+
+          <div id="formMessage" class="form-message hidden"></div>
+
+          <form id="authorForm" class="author-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="author-name" class="form-label">
+                  Full Name <span class="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="author-name"
+                  name="author_name"
+                  class="form-input"
+                  placeholder="Jane Smith"
+                  required
+                  minlength="2"
+                  maxlength="100"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="author-email" class="form-label">
+                  Email Address <span class="required">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="author-email"
+                  name="author_email"
+                  class="form-input"
+                  placeholder="jane@example.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="author-bio" class="form-label">
+                Short Bio <span class="required">*</span>
+              </label>
+              <textarea
+                id="author-bio"
+                name="author_bio"
+                class="form-input form-textarea"
+                rows="3"
+                placeholder="Tell us about your background, expertise, and why you want to write for CalcCrunch..."
+                required
+                minlength="20"
+                maxlength="500"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="topic-ideas" class="form-label">
+                Topic Ideas <span class="required">*</span>
+              </label>
+              <textarea
+                id="topic-ideas"
+                name="topic_ideas"
+                class="form-input form-textarea"
+                rows="3"
+                placeholder="List 2-3 article ideas you'd like to write about..."
+                required
+                minlength="10"
+                maxlength="500"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="writing-samples" class="form-label">
+                Writing Samples (URLs)
+              </label>
+              <input
+                type="text"
+                id="writing-samples"
+                name="writing_samples"
+                class="form-input"
+                placeholder="https://example.com/my-article (separate multiple with commas)"
+                maxlength="500"
+              />
+              <small class="form-hint"
+                >Links to published articles, a blog, or a portfolio. Optional
+                but strengthens your application.</small
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="experience" class="form-label">
+                Relevant Experience <span class="required">*</span>
+              </label>
+              <select
+                id="experience"
+                name="experience"
+                class="form-input"
+                required
+              >
+                <option value="">Select your experience level</option>
+                <option value="beginner"
+                  >Beginner — I'm new to writing but knowledgeable in my field</option
+                >
+                <option value="intermediate"
+                  >Intermediate — I've published a few articles</option
+                >
+                <option value="experienced"
+                  >Experienced — I write regularly (blog, freelance, or
+                  professional)</option
+                >
+                <option value="expert"
+                  >Expert — I'm a professional writer or subject matter expert</option
+                >
+              </select>
+            </div>
+
+            <!-- Honeypot -->
+            <div class="form-group" style="position: absolute; left: -9999px;">
+              <label for="website">Website</label>
+              <input
+                type="text"
+                id="website"
+                name="website"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="form-actions">
+              <button
+                type="submit"
+                id="submitButton"
+                class="btn btn-primary btn-large"
+              >
+                Submit Application →
+              </button>
+              <p class="form-disclaimer">
+                We'll never share your email. Review takes 3-5 business days.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section bg-light">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="process-steps">
+          <div class="process-step">
+            <span class="step-number">1</span>
+            <h3>Apply</h3>
+            <p>Fill out the form above with your info and topic ideas</p>
+          </div>
+          <div class="process-step">
+            <span class="step-number">2</span>
+            <h3>Get Approved</h3>
+            <p>We review within 3-5 days and send you access to our CMS</p>
+          </div>
+          <div class="process-step">
+            <span class="step-number">3</span>
+            <h3>Write & Submit</h3>
+            <p>Draft your article in our editor and submit for review</p>
+          </div>
+          <div class="process-step">
+            <span class="step-number">4</span>
+            <h3>Get Published</h3>
+            <p>
+              After editorial review, your article goes live with your byline
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("authorForm");
+      const submitBtn = document.getElementById("submitButton");
+      const formMessage = document.getElementById("formMessage");
+
+      if (!form) return;
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Honeypot check
+        if (document.getElementById("website").value) return;
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Submitting...";
+
+        const templateParams = {
+          author_name: document.getElementById("author-name").value,
+          author_email: document.getElementById("author-email").value,
+          author_bio: document.getElementById("author-bio").value,
+          topic_ideas: document.getElementById("topic-ideas").value,
+          writing_samples:
+            document.getElementById("writing-samples").value || "None provided",
+          experience:
+            document.getElementById("experience").value || "Not specified",
+          subject:
+            "New Author Application - " +
+            document.getElementById("author-name").value,
+          message:
+            "Author Application:\n\nName: " +
+            document.getElementById("author-name").value +
+            "\nEmail: " +
+            document.getElementById("author-email").value +
+            "\nBio: " +
+            document.getElementById("author-bio").value +
+            "\nTopics: " +
+            document.getElementById("topic-ideas").value +
+            "\nSamples: " +
+            (document.getElementById("writing-samples").value || "None") +
+            "\nExperience: " +
+            (document.getElementById("experience").value || "Not specified"),
+        };
+
+        emailjs
+          .send(
+            "service_4lr49ci",
+            "template_u1dabor",
+            templateParams,
+            "5BTJMoMuZEoOJVIXt",
+          )
+          .then(function () {
+            formMessage.className = "form-message success";
+            formMessage.textContent =
+              "Application submitted successfully! We'll review it within 3-5 business days and reach out via email.";
+            form.reset();
+            submitBtn.textContent = "Application Sent ✓";
+          })
+          .catch(function () {
+            formMessage.className = "form-message error";
+            formMessage.textContent =
+              "Something went wrong. Please try again or email us directly at info@calccrunch.com.";
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Submit Application →";
+          });
+      });
+    });
+  </script>
+</BaseLayout>
+
+<style>
+  .write-page {
+    background: var(--color-white);
+  }
+
+  /* Hero */
+  .write-hero {
+    padding: var(--space-3xl) 0;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: var(--text-5xl);
+    font-weight: 800;
+    margin-bottom: var(--space-md);
+  }
+
+  .hero-tagline {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-lg);
+    opacity: 0.95;
+  }
+
+  .hero-description {
+    font-size: var(--text-xl);
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* Section Title */
+  .section-title {
+    font-size: var(--text-3xl);
+    color: var(--color-primary-blue);
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+  }
+
+  /* Benefits */
+  .benefits-section {
+    padding: var(--space-3xl) 0;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-xl);
+  }
+
+  .benefit-card {
+    text-align: center;
+    padding: var(--space-xl);
+    background: var(--color-gray-light);
+    border-radius: var(--border-radius-lg);
+    transition: all var(--transition-fast);
+  }
+
+  .benefit-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .benefit-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: var(--space-md);
+  }
+
+  .benefit-card h3 {
+    color: var(--color-primary-blue);
+    margin-bottom: var(--space-sm);
+    font-size: var(--text-lg);
+  }
+
+  .benefit-card p {
+    color: var(--color-gray-dark);
+    line-height: 1.6;
+    margin: 0;
+    font-size: var(--text-sm);
+  }
+
+  /* Topics */
+  .topics-section {
+    padding: var(--space-3xl) 0;
+  }
+
+  .topics-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    justify-content: center;
+    margin-bottom: var(--space-xl);
+  }
+
+  .topic-chip {
+    background: var(--color-white);
+    border: 2px solid var(--color-primary-blue);
+    color: var(--color-primary-blue);
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: var(--text-sm);
+  }
+
+  .topics-note {
+    text-align: center;
+    color: var(--color-gray-dark);
+    font-style: italic;
+  }
+
+  /* Guidelines */
+  .guidelines-section {
+    padding: var(--space-3xl) 0;
+  }
+
+  .guidelines-list {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .guideline-item {
+    display: flex;
+    gap: var(--space-lg);
+    align-items: flex-start;
+  }
+
+  .guideline-number {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--color-primary-blue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: var(--text-sm);
+    flex-shrink: 0;
+  }
+
+  .guideline-content h3 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-base);
+    margin-bottom: var(--space-xs);
+  }
+
+  .guideline-content p {
+    color: var(--color-gray-dark);
+    margin: 0;
+    font-size: var(--text-sm);
+    line-height: 1.5;
+  }
+
+  /* Application Form */
+  .application-section {
+    padding: var(--space-3xl) 0;
+    background: var(--color-gray-light);
+  }
+
+  .form-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    background: var(--color-white);
+    padding: var(--space-2xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .form-wrapper h2 {
+    color: var(--color-primary-blue);
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-sm);
+  }
+
+  .form-intro {
+    color: var(--color-gray-dark);
+    margin-bottom: var(--space-xl);
+    line-height: 1.6;
+  }
+
+  .form-alt-link {
+    font-size: var(--text-sm);
+    opacity: 0.8;
+  }
+
+  .form-alt-link a {
+    color: var(--color-accent-orange);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .form-alt-link a:hover {
+    text-decoration: underline;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+  }
+
+  .form-group {
+    margin-bottom: var(--space-lg);
+  }
+
+  .form-label {
+    display: block;
+    font-weight: 600;
+    color: var(--color-gray-dark);
+    margin-bottom: var(--space-sm);
+    font-size: var(--text-sm);
+  }
+
+  .required {
+    color: var(--color-accent-orange);
+  }
+
+  .form-input {
+    width: 100%;
+    padding: var(--space-sm) var(--space-md);
+    border: 2px solid var(--color-gray);
+    border-radius: var(--border-radius);
+    font-size: var(--text-base);
+    font-family: var(--font-body);
+    transition: border-color var(--transition-fast);
+  }
+
+  .form-input:focus {
+    outline: none;
+    border-color: var(--color-primary-blue);
+  }
+
+  .form-textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  .form-hint {
+    display: block;
+    margin-top: var(--space-xs);
+    font-size: var(--text-xs);
+    color: var(--color-gray-dark);
+    opacity: 0.7;
+  }
+
+  .form-actions {
+    text-align: center;
+    margin-top: var(--space-xl);
+  }
+
+  .btn-large {
+    padding: var(--space-md) var(--space-2xl);
+    font-size: var(--text-lg);
+  }
+
+  .form-disclaimer {
+    margin-top: var(--space-md);
+    font-size: var(--text-xs);
+    color: var(--color-gray-dark);
+    opacity: 0.7;
+  }
+
+  .form-message {
+    padding: var(--space-md) var(--space-lg);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--space-xl);
+    font-weight: 500;
+  }
+
+  .form-message.success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+  }
+
+  .form-message.error {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+  }
+
+  .form-message.hidden {
+    display: none;
+  }
+
+  /* Process Steps */
+  .process-section {
+    padding: var(--space-3xl) 0;
+  }
+
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-xl);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .process-step {
+    text-align: center;
+    padding: var(--space-xl);
+  }
+
+  .step-number {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--color-accent-orange);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-md);
+  }
+
+  .process-step h3 {
+    color: var(--color-primary-blue);
+    margin-bottom: var(--space-sm);
+    font-size: var(--text-lg);
+  }
+
+  .process-step p {
+    color: var(--color-gray-dark);
+    font-size: var(--text-sm);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: var(--text-4xl);
+    }
+
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+
+    .process-steps {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: var(--text-3xl);
+    }
+
+    .form-wrapper {
+      padding: var(--space-lg);
+    }
+
+    .process-steps {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

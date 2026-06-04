@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Investment Income Goal Calculator
-description: Calculate how much you need to invest to replace your income or reach financial independence. Includes ROI, breakeven analysis, and multiple investment scenarios.
-category: financial
-tags: ['investment income', 'financial independence', 'ROI', 'breakeven', 'passive income', 'retirement planning']
-featured: true
 calcType: investment-income-goal
-seoTitle: Free Investment Income Goal Calculator - ROI & Breakeven Calculator
-seoDescription: Calculate how much to invest to replace your income and reach financial independence. Plan multiple investments with our comprehensive ROI and breakeven calculator.
-estimatedTime: 3 minutes
-difficulty: Medium
 ---
 
 ## How to Use This Calculator
@@ -57,6 +48,7 @@ difficulty: Medium
           placeholder="10"
           min="1"
           max="50"
+          value="1"
           required
         />
         <small class="form-help">How many years you plan to invest</small>
@@ -86,9 +78,13 @@ difficulty: Medium
           Contribution Frequency
         </label>
         <select id="contribution-frequency" class="form-select">
-          <option value="none">No Additional Contributions</option>
-          <option value="monthly">Monthly</option>
-          <option value="annual">Annual</option>
+          <option value="0">No Additional Contributions</option>
+          <option value="365">Daily</option>
+          <option value="52">Weekly</option>
+          <option value="26">Bi-Weekly</option>
+          <option value="12">Monthly</option>
+          <option value="4">Quarterly</option>
+          <option value="1">Annual</option>
         </select>
         <small class="form-help">How often you'll add money</small>
       </div>
@@ -104,7 +100,7 @@ difficulty: Medium
             class="form-input"
             placeholder="500"
             min="0"
-            step="100"
+            step="10"
           />
         </div>
         <small class="form-help" id="contribution-help">Amount to contribute</small>
@@ -147,16 +143,7 @@ difficulty: Medium
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
-  <h4>🔗 Save & Share Your Calculation</h4>
-  <p>
-    Your calculation is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your investment plan, 
-    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values including 
-    all investment scenarios will be restored automatically.
-  </p>
-</div>
-
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>🎯 Key Features</h4>
   <p><strong>This calculator includes:</strong></p>
   <ul style="margin: 10px 0; padding-left: 20px;">
@@ -169,7 +156,7 @@ difficulty: Medium
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>📊 Understanding the Results</h4>
   <p><strong>The calculator provides:</strong></p>
   <ul style="margin: 10px 0; padding-left: 20px;">
@@ -183,7 +170,7 @@ difficulty: Medium
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>💡 Investment Strategy Tips</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Diversification:</strong> Spread investments across different asset types to reduce risk</li>
@@ -194,7 +181,7 @@ difficulty: Medium
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
+<div class="info-box" style="background: var(--color-highlight-red); border-left-color: var(--color-error);">
   <h4>⚠️ Important Disclaimers</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Not Financial Advice:</strong> This calculator is for educational purposes only</li>
@@ -204,6 +191,15 @@ difficulty: Medium
     <li><strong>Taxes:</strong> Investment income may be subject to taxes - consult a tax professional</li>
     <li><strong>Professional Advice:</strong> Consider consulting with a financial advisor for personalized guidance</li>
   </ul>
+</div>
+
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
+  <h4>🔗 Save & Share Your Calculation</h4>
+  <p>
+    Your calculation is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your investment plan, 
+    or use the <strong>Share button</strong> to send it to others. When you return or share the link, all values including 
+    all investment scenarios will be restored automatically.
+  </p>
 </div>
 
 <style>
@@ -221,8 +217,6 @@ difficulty: Medium
   }
 
   .input-addon {
-    position: absolute;
-    left: 12px;
     color: var(--color-gray-dark);
     font-weight: 600;
     pointer-events: none;
@@ -235,7 +229,7 @@ difficulty: Medium
   .monthly-display {
     margin-top: 0.5rem;
     padding: 0.75rem;
-    background: #E8F4F8;
+    background: var(--color-highlight-blue);
     border-left: 3px solid var(--color-accent-orange);
     border-radius: 4px;
     font-size: 0.95rem;
@@ -252,7 +246,7 @@ difficulty: Medium
   }
 
   .investment-row {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border: 2px solid #e5e7eb;
     border-radius: 8px;
     padding: 1.5rem;
@@ -290,8 +284,8 @@ difficulty: Medium
   }
 
   .remove-investment-btn:hover {
-    color: #c62828;
-    background: #ffebee;
+    color: var(--color-error);
+    background: var(--color-highlight-red);
     border-radius: 4px;
   }
 
@@ -303,7 +297,7 @@ difficulty: Medium
   }
 
   .highlight-stat {
-    background: #fff8dc;
+    background: var(--color-highlight-yellow);
     border-left: 3px solid var(--color-accent-orange);
     padding-left: 0.5rem !important;
   }

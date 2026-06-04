@@ -59,7 +59,7 @@
     // Auto-calculate if we loaded values
     if (params.toString()) {
       setTimeout(() => {
-        calculateCompoundInterest();
+        calculateResults();
       }, 100);
     }
   }
@@ -84,7 +84,10 @@
     // Calculate button
     const calculateBtn = document.getElementById('calculate-btn');
     if (calculateBtn) {
-      calculateBtn.addEventListener('click', calculateCompoundInterest);
+      calculateBtn.addEventListener('click', () => {
+        calculateResults();
+        document.querySelector(".calculator-result")?.scrollIntoView({behavior: 'smooth', block: 'start'});
+      });
     }
 
     // Add change listeners to all inputs to save to URL
@@ -94,7 +97,7 @@
       input.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
           e.preventDefault();
-          calculateCompoundInterest();
+          calculateResults();
         }
       });
       
@@ -124,7 +127,7 @@
     // Print button will be attached after results render
   }
 
-  function calculateCompoundInterest() {
+  function calculateResults() {
     // Get input values
     const principal = getValue('principal');
     const monthlyContribution = getValue('monthly-contribution');
@@ -362,13 +365,13 @@
         <h4>Investment Growth Breakdown</h4>
         <div class="growth-bar">
           <div class="growth-segment principal" style="width: ${principalPercent}%" title="Principal: ${principalPercent.toFixed(0)}%">
-            <span class="segment-label">${principalPercent.toFixed(0)}%</span>
+            <span class="segment-label" style="top: -15px;">${principalPercent.toFixed(0)}%</span>
           </div>
           <div class="growth-segment contributions" style="width: ${contributionsPercent}%" title="Contributions: ${contributionsPercent.toFixed(0)}%">
             <span class="segment-label">${contributionsPercent.toFixed(0)}%</span>
           </div>
           <div class="growth-segment interest" style="width: ${interestPercent}%" title="Interest: ${interestPercent.toFixed(0)}%">
-            <span class="segment-label">${interestPercent.toFixed(0)}%</span>
+            <span class="segment-label" style="top: 15px;">${interestPercent.toFixed(0)}%</span>
           </div>
         </div>
         <div class="growth-legend">

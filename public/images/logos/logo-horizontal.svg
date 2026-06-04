@@ -2,23 +2,17 @@
   <!-- Calculator Icon Background -->
   <rect x="30" y="23" width="50" height="50" rx="8" fill="#FFF" />
   
-  <!-- Calculator Display (top section) -->
+  <!-- Calculator Display and Buttons (same as before) -->
   <rect x="36" y="28" width="38" height="10" rx="2" fill="#2C5F8D"/>
-  
-  <!-- Calculator Buttons Grid (3x4 grid) -->
-  <!-- Row 1 -->
   <rect x="36" y="44" width="10" height="10" rx="2" fill="#2C5F8D"/>
   <rect x="50" y="44" width="10" height="10" rx="2" fill="#2C5F8D"/>
   <rect x="64" y="44" width="10" height="10" rx="2" fill="#2C5F8D"/>
-  
-  <!-- Row 2 -->
   <rect x="36" y="59" width="10" height="10" rx="2" fill="#2C5F8D"/>
   <rect x="50" y="59" width="10" height="10" rx="2" fill="#2C5F8D"/>
   <rect x="64" y="59" width="10" height="10" rx="2" fill="#2C5F8D"/>
   
-  <!-- Text: Calc -->
-  <text x="90" y="65" font-family="Arial, sans-serif" font-size="48" font-weight="800" fill="#FFF" letter-spacing="-1">Calc</text>
-  
-  <!-- Text: Crunch -->
-  <text x="215" y="65" font-family="Arial, sans-serif" font-size="48" font-weight="800" fill="#FF6B35" letter-spacing="-1">Crunch</text>
+  <!-- Combined Text with tspan for color control -->
+  <text x="90" y="65" font-family="Arial, sans-serif" font-size="48" font-weight="800" letter-spacing="-1">
+    <tspan fill="#FFF">Calc</tspan><tspan fill="#FF6B35"> Crunch</tspan>
+  </text>
 </svg>

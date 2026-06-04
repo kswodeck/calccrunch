@@ -1,0 +1,234 @@
+{
+  "mortgage-payment-calculator": {
+    "calculatorTitle": "Mortgage Payment Calculator",
+    "formula": "M = P[r(1+r)^n] / [(1+r)^n - 1]",
+    "formulaExplanation": "Where M = monthly payment, P = principal loan amount, r = monthly interest rate, n = number of payments (loan term in months).",
+    "examples": [
+      {
+        "slug": "300k-home-20-percent-down-6-5-rate",
+        "title": "Mortgage Payment on a $300,000 Home with 20% Down at 6.5%",
+        "description": "See the monthly mortgage payment for a $300,000 home with 20% down payment ($60,000) at a 6.5% interest rate over 30 years.",
+        "inputs": {
+          "Home Price": "$300,000",
+          "Down Payment": "$60,000 (20%)",
+          "Loan Amount": "$240,000",
+          "Interest Rate": "6.5%",
+          "Loan Term": "30 years"
+        },
+        "result": {
+          "monthlyPayment": "$1,517",
+          "totalInterest": "$306,108",
+          "totalCost": "$546,108"
+        },
+        "insight": "With 20% down, you avoid PMI (Private Mortgage Insurance), saving roughly $100-200/month. Over 30 years, you'll pay more in interest ($306,108) than the original loan amount ($240,000)."
+      },
+      {
+        "slug": "400k-home-10-percent-down-7-rate",
+        "title": "Mortgage Payment on a $400,000 Home with 10% Down at 7%",
+        "description": "Calculate monthly payments for a $400,000 home with only 10% down ($40,000) at a 7% interest rate, including PMI.",
+        "inputs": {
+          "Home Price": "$400,000",
+          "Down Payment": "$40,000 (10%)",
+          "Loan Amount": "$360,000",
+          "Interest Rate": "7%",
+          "Loan Term": "30 years"
+        },
+        "result": {
+          "monthlyPayment": "$2,395",
+          "totalInterest": "$502,277",
+          "totalCost": "$862,277",
+          "pmi": "~$150/month until 20% equity"
+        },
+        "insight": "With less than 20% down, PMI adds approximately $150/month to your payment. Once you reach 20% equity (around year 7-8 with normal appreciation), you can request PMI removal."
+      },
+      {
+        "slug": "250k-home-15-year-mortgage",
+        "title": "15-Year Mortgage Payment on a $250,000 Home",
+        "description": "Compare the monthly payment and total savings of a 15-year mortgage vs 30-year on a $250,000 home with 20% down at 6%.",
+        "inputs": {
+          "Home Price": "$250,000",
+          "Down Payment": "$50,000 (20%)",
+          "Loan Amount": "$200,000",
+          "Interest Rate": "6%",
+          "Loan Term": "15 years"
+        },
+        "result": {
+          "monthlyPayment": "$1,688",
+          "totalInterest": "$103,788",
+          "totalCost": "$303,788",
+          "vs30Year": "Saves $155,332 in interest vs 30-year"
+        },
+        "insight": "A 15-year mortgage has a higher monthly payment ($1,688 vs $1,199 for 30-year) but saves over $155,000 in total interest. You'll own your home outright 15 years sooner."
+      },
+      {
+        "slug": "500k-home-first-time-buyer-fha",
+        "title": "FHA Mortgage Payment on a $500,000 Home with 3.5% Down",
+        "description": "Monthly payment calculation for a first-time homebuyer using an FHA loan with 3.5% down payment on a $500,000 home.",
+        "inputs": {
+          "Home Price": "$500,000",
+          "Down Payment": "$17,500 (3.5%)",
+          "Loan Amount": "$482,500",
+          "Interest Rate": "6.75%",
+          "Loan Term": "30 years"
+        },
+        "result": {
+          "monthlyPayment": "$3,130",
+          "totalInterest": "$644,293",
+          "totalCost": "$1,126,793",
+          "pmi": "~$402/month (FHA MIP for life of loan)"
+        },
+        "insight": "FHA loans allow as little as 3.5% down, but require Mortgage Insurance Premium (MIP) for the life of the loan — unlike conventional PMI which drops off at 20% equity. Many buyers refinance to conventional once they reach 20% equity."
+      },
+      {
+        "slug": "200k-home-paid-off-in-10-years",
+        "title": "How to Pay Off a $200,000 Mortgage in 10 Years",
+        "description": "See what monthly payment is needed to pay off a $200,000 home in just 10 years at current rates.",
+        "inputs": {
+          "Home Price": "$200,000",
+          "Down Payment": "$40,000 (20%)",
+          "Loan Amount": "$160,000",
+          "Interest Rate": "6.5%",
+          "Loan Term": "10 years"
+        },
+        "result": {
+          "monthlyPayment": "$1,817",
+          "totalInterest": "$57,998",
+          "totalCost": "$217,998",
+          "vs30Year": "Saves $205,922 in interest vs 30-year"
+        },
+        "insight": "Paying off a mortgage in 10 years requires a significantly higher monthly payment ($1,817 vs $1,011 for 30-year), but you save over $205,000 in interest and build equity 3x faster."
+      }
+    ]
+  },
+  "compound-interest-calculator": {
+    "calculatorTitle": "Compound Interest Calculator",
+    "formula": "A = P(1 + r/n)^(nt)",
+    "formulaExplanation": "Where A = final amount, P = principal, r = annual interest rate, n = compounding frequency per year, t = time in years.",
+    "examples": [
+      {
+        "slug": "10000-invested-7-percent-20-years",
+        "title": "$10,000 Invested at 7% for 20 Years (Compound Interest)",
+        "description": "See how $10,000 grows with compound interest at 7% annual return over 20 years with monthly compounding.",
+        "inputs": {
+          "Initial Investment": "$10,000",
+          "Annual Rate": "7%",
+          "Time Period": "20 years",
+          "Compounding": "Monthly",
+          "Monthly Contribution": "$0"
+        },
+        "result": {
+          "finalBalance": "$40,387",
+          "totalInterest": "$30,387",
+          "totalContributions": "$10,000"
+        },
+        "insight": "Your $10,000 quadruples in 20 years at 7% — and you didn't add a single dollar. This is the power of compound interest. The S&P 500 has historically averaged roughly 10% annually before inflation."
+      },
+      {
+        "slug": "500-per-month-30-years-index-fund",
+        "title": "$500/Month Invested in Index Funds for 30 Years",
+        "description": "Calculate how investing $500 monthly in a broad index fund at 10% average return grows over 30 years.",
+        "inputs": {
+          "Initial Investment": "$0",
+          "Annual Rate": "10%",
+          "Time Period": "30 years",
+          "Compounding": "Monthly",
+          "Monthly Contribution": "$500"
+        },
+        "result": {
+          "finalBalance": "$1,130,244",
+          "totalInterest": "$950,244",
+          "totalContributions": "$180,000"
+        },
+        "insight": "Investing $500/month ($6,000/year) makes you a millionaire in 30 years at market-average returns. You contribute only $180,000 of your own money — compound interest provides the other $950,000."
+      },
+      {
+        "slug": "100000-retirement-nest-egg-5-percent",
+        "title": "$100,000 Retirement Savings at 5% for 15 Years",
+        "description": "How much does a $100,000 retirement account grow in 15 years at a conservative 5% return with no additional contributions?",
+        "inputs": {
+          "Initial Investment": "$100,000",
+          "Annual Rate": "5%",
+          "Time Period": "15 years",
+          "Compounding": "Monthly",
+          "Monthly Contribution": "$0"
+        },
+        "result": {
+          "finalBalance": "$211,370",
+          "totalInterest": "$111,370",
+          "totalContributions": "$100,000"
+        },
+        "insight": "Even at a conservative 5% return, $100,000 more than doubles in 15 years. This shows why starting early matters — time is the most powerful factor in compound growth."
+      },
+      {
+        "slug": "1000-per-month-saving-for-house-5-years",
+        "title": "Saving $1,000/Month for a House Down Payment (5 Years)",
+        "description": "Calculate how much you'll have for a down payment saving $1,000 monthly in a high-yield savings account at 4.5% APY.",
+        "inputs": {
+          "Initial Investment": "$5,000",
+          "Annual Rate": "4.5%",
+          "Time Period": "5 years",
+          "Compounding": "Monthly",
+          "Monthly Contribution": "$1,000"
+        },
+        "result": {
+          "finalBalance": "$73,298",
+          "totalInterest": "$8,298",
+          "totalContributions": "$65,000"
+        },
+        "insight": "Saving $1,000/month in a high-yield savings account gives you $73,298 in 5 years — enough for a 20% down payment on a ~$365,000 home. The interest earned ($8,298) is essentially a free bonus."
+      }
+    ]
+  },
+  "bmi-calculator": {
+    "calculatorTitle": "BMI Calculator",
+    "formula": "BMI = weight (kg) / height (m)²",
+    "formulaExplanation": "BMI (Body Mass Index) divides your weight in kilograms by the square of your height in meters. For imperial: BMI = (weight in lbs × 703) / (height in inches)².",
+    "examples": [
+      {
+        "slug": "5-foot-10-180-pounds",
+        "title": "BMI for 5'10\" and 180 lbs — Is It Normal?",
+        "description": "Calculate BMI for someone who is 5 feet 10 inches tall and weighs 180 pounds. See where this falls on the BMI scale.",
+        "inputs": {
+          "Height": "5'10\" (178 cm)",
+          "Weight": "180 lbs (81.6 kg)"
+        },
+        "result": {
+          "bmi": "25.8",
+          "category": "Overweight (25.0 - 29.9)",
+          "healthyRange": "129 - 174 lbs for this height"
+        },
+        "insight": "A BMI of 25.8 falls just into the 'overweight' category. However, BMI doesn't distinguish between muscle and fat — a muscular person at this weight might be perfectly healthy. Consider body fat percentage for a more complete picture."
+      },
+      {
+        "slug": "5-foot-4-woman-140-pounds",
+        "title": "BMI for a 5'4\" Woman at 140 lbs",
+        "description": "Calculate BMI for a woman who is 5 feet 4 inches tall and weighs 140 pounds.",
+        "inputs": {
+          "Height": "5'4\" (163 cm)",
+          "Weight": "140 lbs (63.5 kg)"
+        },
+        "result": {
+          "bmi": "24.0",
+          "category": "Normal weight (18.5 - 24.9)",
+          "healthyRange": "108 - 145 lbs for this height"
+        },
+        "insight": "A BMI of 24.0 is within the normal/healthy range. This person is near the upper end of healthy weight, which is common and perfectly fine. Focus on how you feel, your energy levels, and overall fitness rather than just the number."
+      },
+      {
+        "slug": "6-foot-man-200-pounds",
+        "title": "BMI for a 6'0\" Man at 200 lbs",
+        "description": "Is 200 pounds overweight for a 6-foot tall man? Calculate the BMI and see the healthy weight range.",
+        "inputs": {
+          "Height": "6'0\" (183 cm)",
+          "Weight": "200 lbs (90.7 kg)"
+        },
+        "result": {
+          "bmi": "27.1",
+          "category": "Overweight (25.0 - 29.9)",
+          "healthyRange": "136 - 184 lbs for this height"
+        },
+        "insight": "At 200 lbs and 6'0\", you're technically in the 'overweight' BMI range. For men who exercise regularly, this is very common and often reflects muscle mass rather than excess fat. If you strength train, body fat percentage is a better metric."
+      }
+    ]
+  }
+}

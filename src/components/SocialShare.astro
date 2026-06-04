@@ -1,6 +1,5 @@
 ---
-// SocialShare component for sharing calculators
-const { title, description, url } = Astro.props;
+const { title, description, url, label = "Share this calculator:" } = Astro.props;
 
 const encodedUrl = encodeURIComponent(url || Astro.url.toString());
 const encodedTitle = encodeURIComponent(title);
@@ -15,7 +14,7 @@ const shareLinks = {
 ---
 
 <div class="social-share">
-  <span class="share-label">Share this calculator:</span>
+  <span class="share-label">{label}</span>
 
   <div class="share-buttons">
     <a

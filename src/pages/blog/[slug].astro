@@ -1,0 +1,43 @@
+---
+import BlogLayout from "../../layouts/BlogLayout.astro";
+import blogPostsData from "../../data/blog-posts.json";
+
+const allContent = import.meta.glob('../../content/blog/*.md', { eager: true }) as Record<string, { default: any, frontmatter?: any }>;
+
+export function getStaticPaths() {
+  const today = new Date().toISOString().split('T')[0];
+  const contentFiles = import.meta.glob('../../content/blog/*.md', { eager: true }) as Record<string, { default: any, frontmatter?: any }>;
+  const jsonData = blogPostsData;
+
+  // Posts from JSON
+  const jsonPosts = jsonData.posts
+    .filter(post => post.publishDate.split('T')[0] <= today)
+    .map(post => ({ ...post, source: 'json' }));
+
+  // Posts from frontmatter (Decap CMS)
+  const cmsPosts = Object.entries(contentFiles)
+    .filter(([_, mod]) => mod.frontmatter?.slug && mod.frontmatter?.publishDate)
+    .map(([key, mod]) => ({
+      ...mod.frontmatter,
+      source: 'cms',
+      contentKey: key,
+    }))
+    .filter(post => post.publishDate.split('T')[0] <= today)
+    .filter(post => post.status !== 'draft')
+    .filter(post => !jsonPosts.some(jp => jp.slug === post.slug));
+
+  return [...jsonPosts, ...cmsPosts].map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+
+const contentKey = post.contentKey || Object.keys(allContent).find(k => k.includes(post.slug));
+const Content = contentKey ? allContent[contentKey]?.default : null;
+---
+
+<BlogLayout post={post}>
+  {Content ? <Content /> : <p>Content coming soon.</p>}
+</BlogLayout>

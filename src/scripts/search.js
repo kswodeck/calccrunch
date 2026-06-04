@@ -1,8 +1,15 @@
 // CalcCrunch Search Functionality
 // Integrates with calculators.json and provides real-time search
 
-import calculatorsData from '../data/calculators.json';
+import calculatorsDataRaw from '../data/calculators.json';
 import categoriesData from '../data/categories.json';
+
+const today = new Date().toISOString().split('T')[0];
+const calculatorsData = {
+  calculators: calculatorsDataRaw.calculators.filter(
+    c => !c.lastUpdated || c.lastUpdated.split('T')[0] <= today
+  )
+};
 
 /**
  * Initialize search functionality
@@ -202,6 +209,10 @@ function performPageSearch() {
   trackSearch(query, results.length);
 }
 
+const RESULTS_PER_PAGE = 10;
+let allSearchResults = [];
+let visibleResults = RESULTS_PER_PAGE;
+
 /**
  * Display search results on the page
  */
@@ -209,36 +220,82 @@ function displaySearchResults(results, query) {
   const resultsContainer = document.getElementById('search-results');
   const resultsCount = document.getElementById('results-count');
   const searchQuery = document.getElementById('search-query');
-  
+
   if (!resultsContainer) return;
-  
+
+  allSearchResults = results;
+  visibleResults = RESULTS_PER_PAGE;
+
   // Update query display
   if (searchQuery) {
     searchQuery.textContent = query;
   }
-  
-  // Update count
-  if (resultsCount) {
-    resultsCount.textContent = `${results?.length} result${results?.length != 1 ? 's' : ''}`;
-  }
-  
+
   // Clear previous results
   resultsContainer.innerHTML = '';
-  
+
   if (!results?.length) {
     displayNoResults(query);
+    if (resultsCount) {
+      resultsCount.textContent = '0 results';
+    }
     return;
   }
-  
-  // Group results by category
-  const resultsByCategory = groupByCategory(results);
-  
+
+  renderVisibleResults(resultsContainer, resultsCount);
+}
+
+/**
+ * Render the currently visible subset of results
+ */
+function renderVisibleResults(container, countEl) {
+  if (!container) {
+    container = document.getElementById('search-results');
+  }
+  if (!countEl) {
+    countEl = document.getElementById('results-count');
+  }
+
+  container.innerHTML = '';
+
+  const showing = Math.min(visibleResults, allSearchResults.length);
+  const visibleSlice = allSearchResults.slice(0, showing);
+
+  // Update count
+  if (countEl) {
+    if (allSearchResults.length <= RESULTS_PER_PAGE) {
+      countEl.textContent = `${allSearchResults.length} result${allSearchResults.length != 1 ? 's' : ''}`;
+    } else {
+      countEl.textContent = `Showing ${showing} of ${allSearchResults.length} results`;
+    }
+  }
+
+  // Group visible results by category
+  const resultsByCategory = groupByCategory(visibleSlice);
+
   // Display results
   Object.entries(resultsByCategory).forEach(([category, calcs]) => {
     const categoryName = getCategoryName(category);
     const categorySection = createCategorySection(categoryName, calcs);
-    resultsContainer.appendChild(categorySection);
+    container.appendChild(categorySection);
   });
+
+  // Add "Show More" button if there are more results
+  if (showing < allSearchResults.length) {
+    const showMoreWrapper = document.createElement('div');
+    showMoreWrapper.className = 'show-more-search-wrapper';
+    showMoreWrapper.innerHTML = `
+      <button class="btn btn-primary" id="search-show-more">
+        Show More Results (${allSearchResults.length - showing} remaining)
+      </button>
+    `;
+    container.appendChild(showMoreWrapper);
+
+    document.getElementById('search-show-more').addEventListener('click', () => {
+      visibleResults += RESULTS_PER_PAGE;
+      renderVisibleResults();
+    });
+  }
 }
 
 /**
@@ -364,14 +421,18 @@ function displaySearchSuggestions(results, inputElement) {
     
     const title = document.createElement('div');
     title.className = 'suggestion-title';
-    title.textContent = calc.title;
+    title.textContent = calc.title + (calc.popular ? " 🔥" : '');
+
+    const categoryRow = document.createElement('div');
+    categoryRow.className = 'suggestion-category-div';
     
     const category = document.createElement('div');
     category.className = 'suggestion-category';
     category.textContent = getCategoryName(calc.category);
-    
+    categoryRow.appendChild(category);
+
     content.appendChild(title);
-    content.appendChild(category);
+    content.appendChild(categoryRow);
     
     suggestion.appendChild(icon);
     suggestion.appendChild(content);

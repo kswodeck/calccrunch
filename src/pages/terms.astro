@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
-import EmailCapture from "../components/EmailCapture.astro";
+import AdUnit from "../components/AdUnit.astro";
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
@@ -160,6 +160,8 @@ const quickLinks = [
                 }
               </div>
             </div>
+            <!-- Ad Unit (display) -->
+            <AdUnit slot="4441095467" format="square" />
           </aside>
 
           <!-- Terms Content -->
@@ -219,8 +221,6 @@ const quickLinks = [
       </div>
     </section>
 
-    <!-- Email Capture -->
-    <!-- <EmailCapture /> -->
   </div>
 </BaseLayout>
 

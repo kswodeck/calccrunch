@@ -2,16 +2,17 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import CategoryCard from "../components/CategoryCard.astro";
 import CalculatorCard from "../components/CalculatorCard.astro";
+import TrendingCalculators from "../components/TrendingCalculators.astro";
 import AdUnit from "../components/AdUnit.astro";
-import EmailCapture from "../components/EmailCapture.astro";
+import NewsletterSignup from "../components/NewsletterSignup.astro";
 
 // Import JSON data
 import categoriesData from "../data/categories.json";
-import calculatorsData from "../data/calculators.json";
+import { allCalculators } from "../utils/calculators.js";
 import Image from "astro/components/Image.astro";
 
 // Calculate actual counts from data
-const totalCalculators = calculatorsData.calculators.length;
+const totalCalculators = allCalculators.length;
 const totalCategories = categoriesData?.categories?.filter(
   (c) => c?.calculatorCount
 )?.length;
@@ -19,12 +20,16 @@ const totalCategories = categoriesData?.categories?.filter(
 // Get featured categories from JSON
 const categories = categoriesData.categories
   .filter((cat) => cat.featured)
-  .sort((a, b) => b.calculatorCount - a.calculatorCount)
-  .slice(0, 6); // Top 6 featured categories
+  .sort((a, b) =>
+    a.calculatorCount === b.calculatorCount
+      ? a.order - b.order
+      : b.calculatorCount - a.calculatorCount
+  )
+  .slice(0, 4); // Top 4 featured categories
 
 // Get featured calculators from JSON
-const featuredCalculators = calculatorsData.calculators
-  .filter((calc) => calc.featured || calc.popular)
+const featuredCalculators = allCalculators
+  .filter((calc) => calc.featured)
   .sort((a, b) => b.uses - a.uses)
   .slice(0, 8); // Top 8 calculators
 
@@ -49,8 +54,8 @@ function getCategoryName(categoryId) {
         <div class="hero-text">
           <h1 class="text-white">Free Online Calculators for Everything</h1>
           <p class="hero-subtitle text-white">
-            {totalCalculators}+ calculators across {totalCategories}+ different
-            categories. No registration, no fees, always free.
+            {totalCalculators}+ calculators across {totalCategories} different categories.
+            No registration, no fees, always free.
           </p>
 
           <!-- Search Bar -->
@@ -58,13 +63,13 @@ function getCategoryName(categoryId) {
           <!-- Hero Stats -->
           <div class="hero-stats">
             <div class="stat">
-              <strong>{totalCalculators}+</strong>
+              <strong>{totalCalculators}</strong>
               <span>Free Calculators</span>
             </div>
-            <div class="stat d-none">
+            <!-- <div class="stat d-none">
               <strong>500K+</strong>
               <span>Monthly Users</span>
-            </div>
+            </div> -->
             <div class="stat">
               <strong>100%</strong>
               <span>Free Forever</span>
@@ -117,9 +122,6 @@ function getCategoryName(categoryId) {
     </div>
   </section>
 
-  <!-- Top Ad Unit -->
-  <!-- <AdUnit slot="home-top" format="horizontal" /> -->
-
   <!-- Featured Calculators Section -->
   <section class="featured-calculators bg-light">
     <div class="container">
@@ -150,6 +152,13 @@ function getCategoryName(categoryId) {
       </div>
     </div>
   </section>
+  <!-- Trending Calculators -->
+  <TrendingCalculators />
+
+  <div>
+    <!-- Top Ad Unit -->
+    <AdUnit slot="4441095467" format="auto" />
+  </div>
 
   <!-- Why Choose Us Section -->
   <section class="why-choose-us">
@@ -164,8 +173,8 @@ function getCategoryName(categoryId) {
           <div class="feature-icon">🆓</div>
           <h3>100% Free</h3>
           <p>
-            All {totalCalculators}+ calculators are completely free. No hidden
-            fees, no subscriptions, no credit card required. Ever.
+            All calculators are completely free. No hidden fees, no
+            subscriptions, no credit card required. Ever.
           </p>
         </div>
 
@@ -217,22 +226,23 @@ function getCategoryName(categoryId) {
     </div>
   </section>
 
-  <!-- Bottom Ad Unit -->
-  <!-- <AdUnit slot="home-bottom" format="rectangle" /> -->
-
-  <!-- Email Capture -->
-  <!-- <EmailCapture
-    calculatorType="general"
-    headline="📬 Get Calculator Updates"
-    description="Be the first to know when we add new calculators and features. Join our community of smart decision-makers."
-  /> -->
+  <!-- Newsletter Section -->
+  <section class="home-newsletter">
+    <div class="container">
+      <NewsletterSignup
+        headline="Stay in the Loop"
+        description="Get weekly calculator tips, money-saving guides, and new tool announcements. Free, no spam."
+        buttonText="Subscribe Free"
+      />
+    </div>
+  </section>
 
   <!-- CTA Section -->
   <section class="cta-section bg-gradient">
     <div class="container text-center">
       <h2 class="text-white">Ready to Start Calculating?</h2>
       <p class="text-white" style="margin-bottom: var(--space-3xl);">
-        Join 500,000+ people who use CalcCrunch every month for accurate, free
+        Join thousands who use CalcCrunch for accurate, free
         calculations.
       </p>
       <a href="/calculators" class="btn btn-secondary btn-lg">
@@ -260,7 +270,7 @@ function getCategoryName(categoryId) {
     font-size: var(--text-5xl);
     margin-bottom: var(--space-lg);
     line-height: 1.1;
-    color: var(--color-white);
+    color: #FFFFFF;
   }
 
   .hero-subtitle {
@@ -283,7 +293,7 @@ function getCategoryName(categoryId) {
   .hero-stats .stat strong {
     display: block;
     font-size: var(--text-3xl);
-    color: var(--color-white);
+    color: #FFFFFF;
     font-family: var(--font-primary);
     font-weight: 800;
     margin-bottom: var(--space-xs);
@@ -291,7 +301,7 @@ function getCategoryName(categoryId) {
 
   .hero-stats .stat span {
     display: block;
-    color: var(--color-white);
+    color: #FFFFFF;
     opacity: 0.9;
     font-weight: 600;
   }
@@ -393,6 +403,11 @@ function getCategoryName(categoryId) {
     line-height: 1.7;
   }
 
+  /* Newsletter Section */
+  .home-newsletter {
+    padding: var(--space-xl) 0;
+  }
+
   /* CTA Section */
   .cta-section {
     padding: var(--space-3xl) 0;
@@ -400,7 +415,7 @@ function getCategoryName(categoryId) {
   }
 
   .cta-section h2 {
-    color: var(--color-white);
+    color: #FFFFFF;
     font-size: var(--text-4xl);
     margin-bottom: var(--space-lg);
   }

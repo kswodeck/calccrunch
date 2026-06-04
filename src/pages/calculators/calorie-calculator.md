@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Daily Calorie Calculator
-description: Calculate your daily calorie needs (TDEE) based on age, gender, weight, height, and activity level. Get personalized recommendations for weight loss, maintenance, or muscle gain. Save and share your results with automatic URL parameters.
-category: health-fitness
-tags: ['calories', 'nutrition', 'weight loss', 'TDEE', 'macros']
-featured: true
 calcType: calorie
-seoTitle: Free Daily Calorie Calculator - TDEE & Weight Loss Calculator
-seoDescription: Calculate your Total Daily Energy Expenditure (TDEE) with our free calorie calculator. Get personalized calorie targets for your fitness goals. Save and share your calculations with automatic URL parameters.
-estimatedTime: 2 minutes
-difficulty: Easy
 ---
 
 ## How to Use This Calculator
@@ -217,7 +208,7 @@ difficulty: Easy
   </p>
 </div>
 
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>📊 How It Works</h4>
   <p>
     We use the <strong>Mifflin-St Jeor equation</strong>, the most accurate formula for calculating BMR. 
@@ -226,7 +217,7 @@ difficulty: Easy
   </p>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>💡 Pro Tips</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Start conservative:</strong> It's easier to lower calories than to increase them</li>
@@ -236,7 +227,7 @@ difficulty: Easy
   </ul>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
   <h4>🔗 Save & Share Your Calculation</h4>
   <p>
     Your inputs are automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 

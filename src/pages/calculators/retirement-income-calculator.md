@@ -1,15 +1,6 @@
 ---
 layout: ../../layouts/CalculatorLayout.astro
-title: Retirement Income Calculator
-description: Plan your retirement income and see how long your savings will last. Calculate sustainable withdrawal rates, account for inflation, and visualize your retirement portfolio over time.
-category: financial
-tags: ['retirement', 'income', 'withdrawal', '4% rule', 'retirement planning']
-featured: true
 calcType: retirement-income
-seoTitle: Free Retirement Income Calculator - Withdrawal & Drawdown Planner
-seoDescription: Calculate how long your retirement savings will last. Plan sustainable withdrawals with our free retirement income calculator.
-estimatedTime: 4 minutes
-difficulty: Medium
 ---
 
 ## How to Use This Calculator
@@ -36,8 +27,8 @@ difficulty: Medium
             class="form-input"
             placeholder="1000000"
             value="1000000"
-            min="10000"
-            step="10000"
+            min="0"
+            step="1000"
             required
           />
           <span class="input-addon">$</span>
@@ -113,7 +104,7 @@ difficulty: Medium
             placeholder="24000"
             value="0"
             min="0"
-            step="1000"
+            step="500"
           />
           <span class="input-addon">$</span>
         </div>
@@ -134,10 +125,10 @@ difficulty: Medium
             type="number" 
             id="return-rate" 
             class="form-input"
-            placeholder="7"
-            value="7"
+            placeholder="9"
+            value="9"
             min="0"
-            max="20"
+            max="1000"
             step="0.1"
             required
           />
@@ -156,8 +147,7 @@ difficulty: Medium
             class="form-input"
             placeholder="3"
             value="3"
-            min="0"
-            max="10"
+            max="100"
             step="0.1"
             required
           />
@@ -218,15 +208,7 @@ difficulty: Medium
   </p>
 </div>
 
-<div class="info-box" style="background: #F0F9FF; border-left-color: #3B82F6;">
-  <h4>🔗 Save & Share Your Retirement Plan</h4>
-  <p>
-    Your retirement plan is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
-    or use the <strong>Share button</strong> to send it to your spouse or financial advisor. All values will be restored automatically.
-  </p>
-</div>
-
-<div class="info-box" style="background: #E8F8E8; border-left-color: #4CAF50;">
+<div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>📊 The 4% Rule Explained</h4>
   <p>
     The <strong>4% Rule</strong> is a popular retirement withdrawal strategy:
@@ -243,7 +225,7 @@ difficulty: Medium
   </p>
 </div>
 
-<div class="info-box" style="background: #FFF8DC; border-left-color: #FFB900;">
+<div class="info-box" style="background: var(--color-highlight-yellow); border-left-color: var(--color-warning);">
   <h4>⚖️ Withdrawal Strategies Compared</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Fixed Dollar:</strong> Same amount every year (no inflation adjustment) - simplest but loses purchasing power</li>
@@ -252,7 +234,7 @@ difficulty: Medium
   </ul>
 </div>
 
-<div class="info-box" style="background: #E8F4F8; border-left-color: #2C5F8D;">
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-primary-blue);">
   <h4>💡 Retirement Income Tips</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li><strong>Start conservative:</strong> It's easier to spend more later than to recover from overspending</li>
@@ -264,7 +246,7 @@ difficulty: Medium
   </ul>
 </div>
 
-<div class="info-box" style="background: #FFE5E5; border-left-color: #EF5350;">
+<div class="info-box" style="background: var(--color-highlight-red); border-left-color: var(--color-error);">
   <h4>⚠️ Important Considerations</h4>
   <ul style="margin: 10px 0; padding-left: 20px;">
     <li>This calculator assumes consistent returns - real markets fluctuate</li>
@@ -277,6 +259,14 @@ difficulty: Medium
   </ul>
 </div>
 
+<div class="info-box" style="background: var(--color-highlight-blue); border-left-color: var(--color-light-blue);">
+  <h4>🔗 Save & Share Your Retirement Plan</h4>
+  <p>
+    Your retirement plan is automatically saved in the URL. You can <strong>bookmark this page</strong> to save your calculation, 
+    or use the <strong>Share button</strong> to send it to your spouse or financial advisor. All values will be restored automatically.
+  </p>
+</div>
+
 <style>
   .form-actions {
     display: flex;
@@ -286,8 +276,8 @@ difficulty: Medium
   }
   
   .btn-success {
-    background: #10b981 !important;
-    border-color: #10b981 !important;
+    background: var(--color-success) !important;
+    border-color: var(--color-success) !important;
   }
   
   .retirement-status {
@@ -296,39 +286,39 @@ difficulty: Medium
     padding: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 12px;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-left: 4px solid #10b981;
   }
   
   .retirement-status.status-excellent {
-    background: #f0fdf4;
-    border-left-color: #10b981;
+    background: var(--color-highlight-green);
+    border-left-color: var(--color-success);
   }
   
   .retirement-status.status-conservative {
-    background: #eff6ff;
-    border-left-color: #3b82f6;
+    background: var(--color-highlight-blue);
+    border-left-color: var(--color-light-blue);
   }
   
   .retirement-status.status-moderate {
-    background: #fef3c7;
-    border-left-color: #f59e0b;
+    background: var(--color-highlight-yellow);
+    border-left-color: var(--color-warning);
   }
   
   .retirement-status.status-risky {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     border-left-color: #f97316;
   }
   
   .retirement-status.status-poor {
-    background: #fef2f2;
-    border-left-color: #ef4444;
+    background: var(--color-highlight-red);
+    border-left-color: var(--color-error);
   }
   
   .balance-visualization {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     border-radius: 12px;
   }
   
@@ -342,7 +332,7 @@ difficulty: Medium
     justify-content: space-between;
     margin-top: 0.5rem;
     font-size: 0.875rem;
-    color: #6b7280;
+    color: var(--color-gray-dark);
   }
   
   .chart-legend {
@@ -377,7 +367,7 @@ difficulty: Medium
   .income-breakdown {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -390,7 +380,7 @@ difficulty: Medium
   }
   
   .income-section {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
     padding: 1.5rem;
     border-radius: 8px;
   }
@@ -398,13 +388,13 @@ difficulty: Medium
   .income-section h5 {
     margin-top: 0;
     margin-bottom: 1rem;
-    color: #374151;
+    color: var(--color-gray-dark);
   }
   
   .projection-table {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -424,7 +414,7 @@ difficulty: Medium
   }
   
   table.projection-table thead {
-    background: #f8f9fa;
+    background: var(--color-surface-neutral);
   }
   
   table.projection-table th,
@@ -440,17 +430,17 @@ difficulty: Medium
   }
   
   table.projection-table .milestone-year {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
   }
   
   table.projection-table .depleted-year {
-    background: #fef2f2;
+    background: var(--color-highlight-red);
   }
   
   .retirement-insights {
     margin: 2rem 0;
     padding: 1.5rem;
-    background: white;
+    background: var(--color-white);
     border-radius: 12px;
     border: 1px solid #e5e7eb;
   }
@@ -471,17 +461,17 @@ difficulty: Medium
   }
   
   .insight-card.insight-success {
-    background: #f0fdf4;
+    background: var(--color-highlight-green);
     border-color: #86efac;
   }
   
   .insight-card.insight-info {
-    background: #eff6ff;
+    background: var(--color-highlight-blue);
     border-color: #93c5fd;
   }
   
   .insight-card.insight-warning {
-    background: #fef3c7;
+    background: var(--color-highlight-yellow);
     border-color: #fcd34d;
   }
   
@@ -494,13 +484,13 @@ difficulty: Medium
   .insight-content h5 {
     margin: 0 0 0.5rem 0;
     font-size: 1rem;
-    color: #111827;
+    color: var(--color-black);
   }
   
   .insight-content p {
     margin: 0;
     font-size: 0.9rem;
-    color: #4b5563;
+    color: var(--color-gray-dark);
   }
   
   .result-card-warning {
@@ -508,8 +498,8 @@ difficulty: Medium
     border: 2px solid #f59e0b;
   }
   
-  .text-danger { color: #ef4444; }
-  .text-muted { color: #6b7280; }
+  .text-danger { color: var(--color-error); }
+  .text-muted { color: var(--color-gray-dark); }
   .font-bold { font-weight: bold; }
   
   @media (max-width: 768px) {
