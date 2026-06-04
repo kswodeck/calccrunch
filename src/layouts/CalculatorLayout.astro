@@ -89,6 +89,7 @@ const howto = howtoSteps[slug];
   title={seoTitle || `${title} - Free ${categoryDisplay} Calculator`}
   description={seoDescription || description}
   keywords={`${title}, ${category} calculator, free calculator, online calculator, ${tags.join(", ")}`}
+  ogImage={`https://calccrunch.com/og/calculators/${slug}.png`}
 >
   <!-- Structured Data for Calculator -->
   <script is:inline type="application/ld+json" set:html={JSON.stringify({
@@ -154,7 +155,7 @@ const howto = howtoSteps[slug];
 
       <div class="calculator-layout">
         <!-- Main Content Area -->
-        <main class="calculator-main">
+        <section class="calculator-main">
           <!-- Calculator Header -->
           <header class="calculator-header">
             <div class="calculator-meta">
@@ -259,7 +260,7 @@ const howto = howtoSteps[slug];
               </div>
             )
           }
-        </main>
+        </section>
 
         <!-- Sidebar -->
         <aside class="calculator-sidebar">

@@ -30,6 +30,10 @@ const isoDate = post.publishDate;
   title={post.seoTitle || post.title}
   description={post.seoDescription || post.description}
   keywords={post.keywords?.join(', ') || post.tags.join(', ')}
+  type="article"
+  publishedTime={post.publishDate}
+  modifiedTime={post.updatedDate || post.publishDate}
+  ogImage={`https://calccrunch.com/og/blog/${post.slug}.png`}
 >
   <!-- Article Schema -->
   <script is:inline type="application/ld+json" set:html={JSON.stringify({

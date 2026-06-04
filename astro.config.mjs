@@ -22,8 +22,10 @@ const scheduledSlugs = new Set(
 export default defineConfig({
   site: 'https://calccrunch.com',
   integrations: [sitemap({
+    filter: (page) => !page.includes('/og/'),
     serialize(item) {
       if (scheduledSlugs.has(item.url)) return undefined;
+      if (item.url.includes('/og/')) return undefined;
       const lastUpdated = lastModMap[item.url];
       if (lastUpdated) {
         item.lastmod = lastUpdated;

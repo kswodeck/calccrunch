@@ -1,66 +1,24 @@
 {
-  "mortgage-payment-calculator": [
+  "age-calculator": [
     {
-      "q": "What is a good mortgage interest rate?",
-      "a": "A good mortgage rate is typically 0.5-1% below the national average. As of 2026, rates between 6-7% are common for 30-year fixed mortgages. Your actual rate depends on credit score (740+ gets the best rates), down payment size, loan type, and market conditions."
+      "q": "How is my exact age calculated?",
+      "a": "Your age is found by counting the full years, months, and days between your birth date and the reference date. The calculator subtracts your birth date from the as-of date, accounting for leap years and varying month lengths, to give precise years, months, and days. By default it uses today's date, but you can set any as-of date."
     },
     {
-      "q": "How much house can I afford on a $100,000 salary?",
-      "a": "Using the 28/36 rule, your mortgage payment shouldn't exceed 28% of gross income. On $100,000/year, that's about $2,333/month for housing. At 6.5% interest with 20% down, this typically supports a home price of $350,000-$420,000 depending on taxes and insurance in your area."
+      "q": "Can I calculate my age on a future or past date?",
+      "a": "Yes, set the as-of date to any date you want and the calculator shows how old you were or will be then. This is handy for checking your age on a specific milestone, event, or anniversary. Leave the as-of date blank to use today's date."
     },
     {
-      "q": "Should I get a 15-year or 30-year mortgage?",
-      "a": "A 15-year mortgage has higher monthly payments but saves 50-60% in total interest and builds equity faster. Choose 15-year if you can comfortably afford the higher payment. Choose 30-year for lower monthly obligations and more cash flow flexibility — you can always make extra payments."
+      "q": "What is my zodiac sign and how is it determined?",
+      "a": "Your Western zodiac sign is based on the position of the sun on your birth date, falling into one of twelve signs like Aries or Leo. Your Chinese zodiac animal is determined by your birth year in a repeating 12-year cycle. The calculator displays both automatically from your birth date."
     },
     {
-      "q": "What is PMI and how do I avoid it?",
-      "a": "Private Mortgage Insurance (PMI) is required when your down payment is less than 20%. It typically costs 0.5-1.5% of the loan amount annually ($50-$150/month on a $200k loan). To avoid it: put 20% down, use a VA loan (no PMI required), or ask about lender-paid PMI options."
-    }
-  ],
-  "compound-interest-calculator": [
-    {
-      "q": "What is compound interest and how does it work?",
-      "a": "Compound interest is interest earned on both your original investment AND previously earned interest. Unlike simple interest (earned only on principal), compound interest creates exponential growth. For example, $10,000 at 7% compound interest becomes $19,672 in 10 years vs $17,000 with simple interest."
+      "q": "How does the birthday countdown work?",
+      "a": "The calculator finds your next birthday after the current date and counts the days remaining until it. If your birthday has already passed this year, it counts to next year's date. It also highlights life milestones and a timeline based on your age."
     },
     {
-      "q": "How long does it take to double your money with compound interest?",
-      "a": "Use the Rule of 72: divide 72 by your annual interest rate. At 7% returns, money doubles in ~10.3 years. At 10% (stock market average), it doubles in ~7.2 years. At 4% (savings account), it takes ~18 years. This assumes reinvesting all returns."
-    },
-    {
-      "q": "How much should I invest monthly to become a millionaire?",
-      "a": "At 10% average annual returns (S&P 500 historical average): invest $500/month for 30 years ($1.13M), $1,000/month for 25 years ($1.18M), or $2,000/month for 20 years ($1.53M). Starting earlier dramatically reduces how much you need to contribute each month."
-    },
-    {
-      "q": "Is daily or monthly compounding better?",
-      "a": "Daily compounding earns slightly more than monthly, but the difference is minimal. $10,000 at 5% for 10 years: daily compounding = $16,487, monthly = $16,470 — a difference of only $17. Focus on the interest rate and time period rather than compounding frequency."
-    }
-  ],
-  "bmi-calculator": [
-    {
-      "q": "What is a healthy BMI for adults?",
-      "a": "A healthy BMI is between 18.5 and 24.9. Below 18.5 is underweight, 25-29.9 is overweight, and 30+ is obese. However, BMI doesn't account for muscle mass, bone density, age, or fat distribution — a muscular athlete may have a 'high' BMI but excellent health."
-    },
-    {
-      "q": "Is BMI accurate for athletes and muscular people?",
-      "a": "No, BMI is less accurate for athletes, bodybuilders, and very muscular individuals. Muscle weighs more than fat, so muscular people often have 'overweight' BMIs despite low body fat. For these individuals, body fat percentage, waist circumference, or DEXA scans provide better health assessments."
-    },
-    {
-      "q": "How do I lower my BMI safely?",
-      "a": "To lower BMI safely, aim for 1-2 pounds of weight loss per week through a moderate calorie deficit (500-750 calories/day below maintenance) combined with regular exercise. Focus on whole foods, lean protein, and strength training to preserve muscle. Consult a healthcare provider before starting any weight loss plan."
-    }
-  ],
-  "calorie-calculator": [
-    {
-      "q": "How many calories should I eat per day to lose weight?",
-      "a": "For safe weight loss of 1 lb/week, eat 500 calories below your TDEE (Total Daily Energy Expenditure). For most adults, this means 1,500-2,000 calories/day for women and 2,000-2,500 for men, depending on activity level. Never go below 1,200 (women) or 1,500 (men) without medical supervision."
-    },
-    {
-      "q": "What is TDEE and why does it matter?",
-      "a": "TDEE (Total Daily Energy Expenditure) is the total calories your body burns daily including basal metabolism, digestion, and physical activity. It matters because eating above TDEE causes weight gain, eating below causes weight loss, and eating at TDEE maintains weight. It's the foundation of any nutrition plan."
-    },
-    {
-      "q": "Does exercise increase how many calories I can eat?",
-      "a": "Yes, exercise increases your TDEE, allowing more food intake while maintaining or losing weight. However, most people overestimate exercise calories. A 30-minute jog burns approximately 250-350 calories — about one small meal. Combine exercise with mindful eating rather than 'eating back' all exercise calories."
+      "q": "Are the heartbeat and breath statistics exact?",
+      "a": "No, those are fun estimates based on typical average rates, such as roughly 60-100 heartbeats and 12-20 breaths per minute, multiplied by the time you have been alive. Individual rates vary with age, fitness, and activity, so treat the numbers as approximate. They are meant for entertainment rather than medical accuracy."
     }
   ],
   "auto-loan-calculator": [
@@ -77,32 +35,84 @@
       "a": "Longer terms (72-84 months) reduce monthly payments but cost significantly more in interest and risk being 'underwater' (owing more than the car is worth). A $30,000 car at 6%: 48 months = $704/month, $3,800 interest. 72 months = $497/month, $5,800 interest — $2,000 more for the same car."
     }
   ],
-  "tip-calculator": [
+  "baby-name-generator": [
     {
-      "q": "How much should you tip at a restaurant?",
-      "a": "Standard restaurant tipping in the US: 15% for adequate service, 18-20% for good service, 20-25% for exceptional service. For large parties (6+), many restaurants add automatic 18-20% gratuity. For takeout, 10-15% is appreciated but not expected. Always tip on the pre-tax bill amount."
+      "q": "How does the baby name generator work?",
+      "a": "Set your filters such as gender, origin, starting letter, name length, and popularity, then click generate to get matching name ideas. Each suggestion comes with meaning, origin, and popularity context so you can compare options quickly. You can keep generating as many times as you like until you find names you love."
     },
     {
-      "q": "Do you tip on tax or before tax?",
-      "a": "Etiquette experts agree you should tip on the pre-tax subtotal, not the total after tax. For example, on a $50 meal with $4 tax, tip 20% on $50 ($10), not on $54 ($10.80). The difference is small but adds up over time."
+      "q": "Can I filter baby names by origin or meaning?",
+      "a": "Yes. You can filter by origins such as American, Irish, Hebrew, Greek, and Latin, and narrow results by gender, starting letter, and length. Many suggestions include the name's meaning and pronunciation so you can choose a name that fits your family and heritage."
     },
     {
-      "q": "How do you split a tip between multiple servers?",
-      "a": "When splitting a check, each person should tip 18-20% on their portion. If one person pays the full bill, they should tip on the full pre-tax amount and split the total (bill + tip) evenly. For group dining, rounding up slightly ensures servers aren't shortchanged."
+      "q": "How do I pick the right baby name?",
+      "a": "Try saying the full name out loud with your last name, check the initials, and consider common nicknames. Think about how the name will suit both a child and an adult, and whether the spelling is easy for others to read and pronounce. Generating a shortlist and living with your favorites for a few days often helps the right one stand out."
+    },
+    {
+      "q": "Are the popularity rankings up to date?",
+      "a": "The popularity context is based on widely recognized US naming trends and is meant as a general guide, not an official live ranking. If you want to avoid a very common name or find something more unique, use the popularity filter to steer toward rarer options. For the latest official data, the US Social Security Administration publishes annual name rankings."
+    },
+    {
+      "q": "Is the baby name generator free to use?",
+      "a": "Yes, the tool is completely free with no sign-up required, and you can generate unlimited name ideas. Nothing you enter is saved to an account, so you can explore options privately."
     }
   ],
-  "retirement-planning-calculator": [
+  "bmi-calculator": [
     {
-      "q": "How much money do I need to retire?",
-      "a": "The common guideline is 25x your annual expenses (the 4% rule). If you spend $50,000/year, you need $1.25 million. If you spend $80,000/year, you need $2 million. This assumes a 4% safe withdrawal rate and a portfolio lasting 30+ years. Adjust upward for early retirement or conservative estimates."
+      "q": "What is a healthy BMI for adults?",
+      "a": "A healthy BMI is between 18.5 and 24.9. Below 18.5 is underweight, 25-29.9 is overweight, and 30+ is obese. However, BMI doesn't account for muscle mass, bone density, age, or fat distribution — a muscular athlete may have a 'high' BMI but excellent health."
     },
     {
-      "q": "At what age can I retire?",
-      "a": "You can retire when your investments generate enough income to cover expenses. Social Security starts at 62 (reduced) or 67 (full). To retire earlier, you need more savings. The FIRE movement targets 50-55 by saving 50-70% of income. Most financial advisors suggest having 10-12x your salary saved by age 67."
+      "q": "Is BMI accurate for athletes and muscular people?",
+      "a": "No, BMI is less accurate for athletes, bodybuilders, and very muscular individuals. Muscle weighs more than fat, so muscular people often have 'overweight' BMIs despite low body fat. For these individuals, body fat percentage, waist circumference, or DEXA scans provide better health assessments."
     },
     {
-      "q": "How much should I save for retirement each month?",
-      "a": "Save at least 15% of gross income for retirement (including employer match). Starting at 25, that's roughly $375/month on a $60,000 salary. Starting at 35, you need $750/month to catch up. Starting at 45, you'd need $1,500+/month. The earlier you start, the less you need to save monthly due to compound growth."
+      "q": "How do I lower my BMI safely?",
+      "a": "To lower BMI safely, aim for 1-2 pounds of weight loss per week through a moderate calorie deficit (500-750 calories/day below maintenance) combined with regular exercise. Focus on whole foods, lean protein, and strength training to preserve muscle. Consult a healthcare provider before starting any weight loss plan."
+    }
+  ],
+  "body-fat-calculator": [
+    {
+      "q": "What is a healthy body fat percentage?",
+      "a": "Healthy ranges differ by sex and age. For men, roughly 10-20% is generally considered healthy, with athletes often around 6-13%; for women, roughly 18-28% is typical, with athletes often around 14-20%. Some essential fat is necessary for normal body function, so very low percentages are not a goal for most people."
+    },
+    {
+      "q": "How does the U.S. Navy body fat method work?",
+      "a": "The Navy method estimates body fat from tape measurements rather than calipers. Men enter neck and waist circumference plus height; women also add hip circumference. The calculator applies the standard Navy formula to those measurements to estimate your body fat percentage, which is why it is popular when calipers are not available."
+    },
+    {
+      "q": "Is body fat percentage more useful than BMI?",
+      "a": "Body fat percentage distinguishes fat mass from lean mass, while BMI only compares weight to height. That means a muscular person can have a high BMI but low body fat, where BMI would be misleading. Body fat percentage gives a clearer picture of body composition, though no field method is as precise as a DEXA scan."
+    },
+    {
+      "q": "How accurate is this body fat calculator?",
+      "a": "These methods estimate body fat and typically fall within a few percentage points of lab measurements like DEXA or hydrostatic weighing. The 7-site skinfold method is usually the most accurate of the options here when calipers are used correctly, while the Navy tape method is convenient but slightly less precise. Use consistent technique and track trends over time rather than fixating on a single reading."
+    },
+    {
+      "q": "What is the difference between fat mass and lean mass?",
+      "a": "Fat mass is the total weight of body fat, while lean mass includes muscle, bone, organs, and water. The calculator splits your body weight into these two figures based on your estimated body fat percentage. Tracking both helps you confirm whether weight changes come from losing fat or losing muscle."
+    }
+  ],
+  "break-even-calculator": [
+    {
+      "q": "What is the break-even point?",
+      "a": "The break-even point is the sales volume at which total revenue exactly equals total costs, so you make neither a profit nor a loss. Below it you lose money; above it every additional unit adds profit. It is expressed both in units sold and in total revenue dollars."
+    },
+    {
+      "q": "How do you calculate the break-even point?",
+      "a": "Divide your fixed costs by the contribution margin per unit, which is the selling price minus the variable cost per unit. For example, $10,000 in fixed costs and a $50 contribution margin per unit gives a break-even of 200 units. Multiply that unit count by the selling price to get break-even revenue."
+    },
+    {
+      "q": "What is contribution margin?",
+      "a": "Contribution margin is the amount each unit sold contributes toward covering fixed costs and then profit, calculated as selling price minus variable cost per unit. A higher contribution margin means you reach break-even faster and earn more on each additional sale. It can also be shown as a percentage of the selling price."
+    },
+    {
+      "q": "What is the margin of safety?",
+      "a": "The margin of safety is how far your actual or expected sales exceed the break-even point, shown as units or a percentage. A larger safety margin means sales can drop more before you start losing money. It is a quick gauge of how much cushion your business has against a downturn."
+    },
+    {
+      "q": "How can I lower my break-even point?",
+      "a": "You can lower break-even by reducing fixed costs, cutting variable cost per unit, or raising your selling price to widen the contribution margin. Even small price increases or supplier savings can sharply reduce the units you need to sell. Use the calculator to test each change and see the new break-even instantly."
     }
   ],
   "budget-calculator": [
@@ -119,39 +129,123 @@
       "a": "The standard guideline is spending no more than 30% of gross income on housing (rent + utilities). On $60,000/year ($5,000/month), that's $1,500 for rent. In high-cost cities, many spend 35-40%, but this leaves less for savings and flexibility. If possible, aim for 25% to build wealth faster."
     }
   ],
-  "kg-to-lbs": [
+  "business-days-calculator": [
     {
-      "q": "How do you convert kilograms to pounds?",
-      "a": "1 kilogram equals 2.20462 pounds. To convert kilograms to pounds, multiply by 2.20462."
+      "q": "How do I count business days between two dates?",
+      "a": "Business days are the weekdays (Monday through Friday) between two dates, excluding weekends and public holidays. The calculator counts every day in the range, then subtracts Saturdays, Sundays, and any holidays for the country you select. This gives an accurate workday count for deadlines and project planning."
     },
     {
-      "q": "What is 1 kilogram in pounds?",
-      "a": "1 kilogram equals 2.2 lbs."
+      "q": "Does the calculator account for holidays?",
+      "a": "Yes, you select a country and the calculator excludes that country's recognized public holidays from the business-day count. This matters for deadlines because a federal holiday can push a due date later than a simple weekday count would suggest. Holiday observance can vary by region, so verify local holidays for critical deadlines."
     },
     {
-      "q": "What is 60 kg in pounds?",
-      "a": "60 kg equals 132.28 lbs."
+      "q": "How do I add business days to a date?",
+      "a": "Choose the Add mode, enter a starting date, and enter the number of business days to add. The calculator skips weekends and holidays as it counts forward, landing on the resulting workday. This is useful for figuring out delivery dates, contract deadlines, or processing-time estimates."
     },
     {
-      "q": "Is this kilograms to pounds converter free?",
-      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+      "q": "Are the start and end dates included in the count?",
+      "a": "When counting business days between two dates, the calculator counts the workdays in the range based on its standard convention; check the result label to confirm whether both endpoints are included. For deadline planning, it is best to verify by checking a known example. Adjust your start or end date by one day if you need inclusive or exclusive counting."
+    },
+    {
+      "q": "Why use business days instead of calendar days?",
+      "a": "Many contracts, shipping estimates, and legal deadlines are defined in business days because work does not happen on weekends or holidays. Counting only workdays gives a realistic timeline for tasks that depend on offices being open. This calculator removes the manual effort of skipping non-working days."
     }
   ],
-  "lbs-to-kg": [
+  "business-name-generator": [
     {
-      "q": "How do you convert pounds to kilograms?",
-      "a": "1 pound equals 0.453592 kilograms. To convert pounds to kilograms, divide by 2.20462 (or multiply by 0.453592)."
+      "q": "How does the business name generator create ideas?",
+      "a": "Enter keywords related to your industry or product, choose a naming style such as modern, classic, playful, professional, or abstract, and the tool combines and transforms your words into name suggestions. Each idea is built to be readable and brandable. You can regenerate as many times as you want to explore different directions."
     },
     {
-      "q": "What is 1 pound in kilograms?",
-      "a": "1 pound equals 0.45 kg."
+      "q": "Are these business names available to use?",
+      "a": "The generator gives you creative ideas, but you should always verify availability before committing. Check whether the matching domain is free, search your state's business registry, and run a US trademark search through the USPTO. Confirming social media handles is also a good idea for a consistent brand."
     },
     {
-      "q": "What is 100 lbs in kilograms?",
-      "a": "100 lbs equals 45.36 kg."
+      "q": "What makes a good business name?",
+      "a": "A strong business name is easy to say, spell, and remember, and it hints at what you do without boxing you in for the future. Shorter names and those with an available .com domain tend to perform better. Avoid names that are easily confused with established competitors."
     },
     {
-      "q": "Is this pounds to kilograms converter free?",
+      "q": "How do I check if a business name is trademarked?",
+      "a": "Search the USPTO's free Trademark Electronic Search System (TESS) for the exact name and close variations in your industry class. You should also check your state's business name database and do a general web search. For high-stakes decisions, consult a trademark attorney before filing or branding."
+    },
+    {
+      "q": "Can I use the generated name for my LLC or startup?",
+      "a": "Yes, once you have confirmed the name is available and not trademarked, you can use it for an LLC, corporation, or startup. Registration requirements vary by state, so check your local Secretary of State office for naming rules and filing steps."
+    }
+  ],
+  "calorie-calculator": [
+    {
+      "q": "How many calories should I eat per day to lose weight?",
+      "a": "For safe weight loss of 1 lb/week, eat 500 calories below your TDEE (Total Daily Energy Expenditure). For most adults, this means 1,500-2,000 calories/day for women and 2,000-2,500 for men, depending on activity level. Never go below 1,200 (women) or 1,500 (men) without medical supervision."
+    },
+    {
+      "q": "What is TDEE and why does it matter?",
+      "a": "TDEE (Total Daily Energy Expenditure) is the total calories your body burns daily including basal metabolism, digestion, and physical activity. It matters because eating above TDEE causes weight gain, eating below causes weight loss, and eating at TDEE maintains weight. It's the foundation of any nutrition plan."
+    },
+    {
+      "q": "Does exercise increase how many calories I can eat?",
+      "a": "Yes, exercise increases your TDEE, allowing more food intake while maintaining or losing weight. However, most people overestimate exercise calories. A 30-minute jog burns approximately 250-350 calories — about one small meal. Combine exercise with mindful eating rather than 'eating back' all exercise calories."
+    }
+  ],
+  "calories-burned-calculator": [
+    {
+      "q": "How are calories burned calculated?",
+      "a": "This calculator uses MET (Metabolic Equivalent of Task) values for each activity. The formula is Calories = MET x weight in kilograms x duration in hours. Because heavier people and longer or more intense sessions burn more energy, your weight, activity, intensity, and duration all factor into the result."
+    },
+    {
+      "q": "How many calories do I burn walking?",
+      "a": "It depends on your weight, pace, and time. As a rough example, a brisk walk has a MET of about 4-5, so a 160 lb (about 73 kg) person walking for 30 minutes burns roughly 150-180 calories. Enter your exact weight, walking speed, and duration for a personalized estimate."
+    },
+    {
+      "q": "What is a MET value?",
+      "a": "A MET, or Metabolic Equivalent of Task, measures how much energy an activity uses compared to sitting at rest, which equals 1 MET. An activity rated at 8 METs burns about eight times as many calories per minute as resting. Higher-intensity activities have higher MET values and therefore burn more calories."
+    },
+    {
+      "q": "How many calories do I need to burn to lose a pound?",
+      "a": "A pound of body fat is commonly estimated at about 3,500 calories, so a cumulative deficit of roughly that amount equates to about one pound lost. Exercise contributes to that deficit, but diet plays an equal or larger role for most people. Sustainable fat loss usually combines moderate activity with mindful eating rather than exercise alone."
+    },
+    {
+      "q": "Are calorie burn estimates accurate?",
+      "a": "MET-based estimates are reliable averages but are not exact for any individual. Actual burn varies with fitness level, body composition, terrain, and efficiency of movement. Treat the number as a useful approximation for planning rather than a precise measurement."
+    }
+  ],
+  "car-lease-buy-calculator": [
+    {
+      "q": "Is it cheaper to lease or buy a car?",
+      "a": "Leasing usually has lower monthly payments but you build no equity and pay again when the lease ends. Buying costs more per month but you own an asset and eventually have no payment at all. Over a multi-year horizon, buying and keeping the car is typically cheaper, while leasing can win if you trade vehicles every two to three years."
+    },
+    {
+      "q": "What costs should I compare beyond the monthly payment?",
+      "a": "Compare down payments, sales tax, acquisition and disposition fees on a lease, loan interest when buying, insurance, maintenance, and the resale or equity value at the end. Lease excess-mileage charges and the residual value also matter. This calculator totals all of these so you compare true cost, not just the sticker monthly payment."
+    },
+    {
+      "q": "What is residual value in a lease?",
+      "a": "Residual value is the predicted worth of the car at lease end, set as a percentage of the original price. A higher residual means lower depreciation during your lease and therefore lower monthly payments. It also becomes the buyout price if you choose to purchase the car when the lease ends."
+    },
+    {
+      "q": "What happens if I drive more miles than my lease allows?",
+      "a": "Most leases cap annual mileage, commonly around 10,000 to 15,000 miles, and charge a per-mile fee for anything over the limit, often $0.15 to $0.30 per mile. Going 5,000 miles over at $0.25 could add $1,250 at lease end. If you drive a lot, buying usually makes more financial sense."
+    },
+    {
+      "q": "Does leasing or buying build equity?",
+      "a": "Only buying builds equity, because each loan payment increases your ownership stake and the car retains resale value. Leasing builds no equity since you return the vehicle at the end. This calculator factors the car's end-of-term value into the buy scenario so you see the ownership advantage."
+    }
+  ],
+  "celsius-to-fahrenheit": [
+    {
+      "q": "How do you convert celsius to fahrenheit?",
+      "a": "To convert Celsius to Fahrenheit, multiply by 1.8 (9/5) and add 32. So °F = °C × 9/5 + 32."
+    },
+    {
+      "q": "What is 1 degree Celsius in fahrenheit?",
+      "a": "1 degree Celsius equals 33.8 °F."
+    },
+    {
+      "q": "What is 30 °C in fahrenheit?",
+      "a": "30 °C equals 86 °F."
+    },
+    {
+      "q": "Is this celsius to fahrenheit converter free?",
       "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
     }
   ],
@@ -173,116 +267,190 @@
       "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
     }
   ],
-  "inches-to-cm": [
+  "college-savings-calculator": [
     {
-      "q": "How do you convert inches to centimeters?",
-      "a": "1 inch equals exactly 2.54 centimeters. To convert inches to centimeters, multiply by 2.54."
+      "q": "How much should I save for my child's college?",
+      "a": "A common target for 2026 is to cover about half of projected costs through savings, with the rest from income, financial aid, and scholarships. For an in-state public university, total four-year costs are often projected near $115,000 to $130,000 for a child born today once education inflation is factored in. Use the calculator to set a monthly contribution that grows your 529 balance to your chosen share of that number by the start year."
     },
     {
-      "q": "What is 1 inch in centimeters?",
-      "a": "1 inch equals 2.54 cm."
+      "q": "What is a 529 plan and how does it work?",
+      "a": "A 529 plan is a state-sponsored, tax-advantaged investment account for education expenses. Contributions grow tax-deferred, and withdrawals are completely tax-free at the federal level when used for qualified costs like tuition, fees, room, and board. Many states also offer a state income tax deduction or credit for contributions."
     },
     {
-      "q": "What is 24 in in centimeters?",
-      "a": "24 in equals 60.96 cm."
+      "q": "When should I start saving for college?",
+      "a": "The earlier the better, because compounding does most of the heavy lifting. Starting when your child is a newborn versus age 10 can roughly double the impact of the same monthly contribution. Even small amounts started early benefit from 18 years of tax-free growth."
     },
     {
-      "q": "Is this inches to centimeters converter free?",
+      "q": "What return and inflation rates should I assume?",
+      "a": "A diversified 529 portfolio is often modeled at roughly 6% to 7% annual returns, shifting more conservative as college nears. College cost inflation has historically run higher than general inflation, frequently estimated around 4% to 5% per year. The calculator lets you adjust both so you can stress-test your plan."
+    },
+    {
+      "q": "What happens to leftover 529 money if my child doesn't go to college?",
+      "a": "You can change the beneficiary to another family member, use it for K-12 tuition, apprenticeships, or student loan repayment within limits, or roll a portion into a Roth IRA for the beneficiary under newer rules. Non-qualified withdrawals are taxed on earnings plus a 10% penalty, so it's worth exploring the qualified options first."
+    }
+  ],
+  "color-generator": [
+    {
+      "q": "What color formats does the generator output?",
+      "a": "Each generated color includes HEX, RGB, and HSL values so you can use it in CSS, design tools, or code. You can copy any format with one click. This makes it easy to drop colors straight into your projects."
+    },
+    {
+      "q": "How do I generate a random color?",
+      "a": "Just click Generate to get a new random color with its HEX, RGB, and HSL codes. Keep clicking to cycle through fresh colors until one catches your eye. You can copy the format you need and use it immediately."
+    },
+    {
+      "q": "Can I build a color palette with this tool?",
+      "a": "Yes, you can generate colors and combine them into a palette, and the tool can help you find complementary and related colors for a cohesive look. This is useful for branding, UI design, and illustration. Copy each color code as you finalize your scheme."
+    },
+    {
+      "q": "What is a HEX color code?",
+      "a": "A HEX code is a six-digit hexadecimal representation of a color, such as #3B82F6, where pairs of digits set the red, green, and blue channels. It is the most common way to specify colors in web design and CSS. The generator gives you the HEX value alongside RGB and HSL for every color."
+    },
+    {
+      "q": "Does the tool check color contrast for accessibility?",
+      "a": "Yes, you can check contrast ratios to help meet accessibility guidelines for text and backgrounds. Aim for a contrast ratio of at least 4.5:1 for normal text under WCAG AA. Good contrast keeps your designs readable for everyone."
+    }
+  ],
+  "compound-interest-calculator": [
+    {
+      "q": "What is compound interest and how does it work?",
+      "a": "Compound interest is interest earned on both your original investment AND previously earned interest. Unlike simple interest (earned only on principal), compound interest creates exponential growth. For example, $10,000 at 7% compound interest becomes $19,672 in 10 years vs $17,000 with simple interest."
+    },
+    {
+      "q": "How long does it take to double your money with compound interest?",
+      "a": "Use the Rule of 72: divide 72 by your annual interest rate. At 7% returns, money doubles in ~10.3 years. At 10% (stock market average), it doubles in ~7.2 years. At 4% (savings account), it takes ~18 years. This assumes reinvesting all returns."
+    },
+    {
+      "q": "How much should I invest monthly to become a millionaire?",
+      "a": "At 10% average annual returns (S&P 500 historical average): invest $500/month for 30 years ($1.13M), $1,000/month for 25 years ($1.18M), or $2,000/month for 20 years ($1.53M). Starting earlier dramatically reduces how much you need to contribute each month."
+    },
+    {
+      "q": "Is daily or monthly compounding better?",
+      "a": "Daily compounding earns slightly more than monthly, but the difference is minimal. $10,000 at 5% for 10 years: daily compounding = $16,487, monthly = $16,470 — a difference of only $17. Focus on the interest rate and time period rather than compounding frequency."
+    }
+  ],
+  "construction-calculator": [
+    {
+      "q": "How much concrete do I need for a slab?",
+      "a": "Concrete volume in cubic feet equals length x width x thickness (in feet), then divide by 27 to get cubic yards. For example, a 10 ft x 10 ft slab at 4 inches thick is 10 x 10 x 0.333 = 33.3 cubic feet, or about 1.24 cubic yards. Always add 5-10% extra for spillage and uneven subgrade."
+    },
+    {
+      "q": "What materials does this construction calculator estimate?",
+      "a": "It covers eight common project types: concrete (slabs, footings, columns, stairs), decking, fencing, drywall, flooring, roofing, paint, and insulation. For each you enter dimensions and it returns a quantity shopping list. It also provides estimated cost ranges so you can budget materials before you buy."
+    },
+    {
+      "q": "How do I calculate how much paint I need?",
+      "a": "Estimate wall area by multiplying total wall length by ceiling height, then subtract roughly 20 sq ft per door and 15 sq ft per window. One gallon of paint typically covers about 350-400 sq ft per coat, so divide your paintable area by that and multiply by the number of coats. This calculator does the math once you enter the room dimensions."
+    },
+    {
+      "q": "Are the cost estimates accurate for my area?",
+      "a": "The calculator returns national-average cost ranges to help you budget, not exact quotes. Material prices vary by region, supplier, season, and quality grade. Use the estimate as a starting point and confirm with local suppliers or contractors before purchasing."
+    },
+    {
+      "q": "How many fence pickets and posts do I need?",
+      "a": "Posts are spaced roughly every 6-8 feet, so divide your fence length by the post spacing and add one for the end post. Picket count depends on board width plus any gap; for a standard 5.5-inch picket with no gap you need about 2.2 pickets per linear foot. Enter your fence length and style and the calculator returns posts, rails, and pickets."
+    }
+  ],
+  "cost-of-living-calculator": [
+    {
+      "q": "How do I compare the cost of living between two cities?",
+      "a": "Compare the cost of major categories like housing, groceries, transportation, healthcare, utilities, and taxes between the cities. This calculator covers 60+ major US cities and shows the percentage difference plus the salary you'd need in the new city to maintain your current standard of living."
+    },
+    {
+      "q": "What salary do I need to maintain my lifestyle after moving?",
+      "a": "The equivalent salary adjusts your current income for the difference in living costs between cities, including taxes. Moving to a pricier city raises the number; moving to a cheaper one lowers it. Enter your current salary and the two cities to see your equivalent salary instantly."
+    },
+    {
+      "q": "What costs differ most between cities?",
+      "a": "Housing is by far the biggest driver of cost-of-living differences, sometimes varying two or three times between metros. State and local taxes, transportation, and healthcare also vary meaningfully. The calculator breaks down each category so you can see exactly where a move helps or hurts."
+    },
+    {
+      "q": "How do state taxes affect a move?",
+      "a": "Moving between states can change your income tax substantially, since some states have no income tax while others are high. Sales and property taxes differ too. The calculator includes a tax impact analysis based on your filing status so the salary comparison reflects take-home, not just gross pay."
+    },
+    {
+      "q": "Is a higher salary in an expensive city worth it?",
+      "a": "Not always. A big raise can be erased by higher housing, taxes, and daily costs, leaving you with less real purchasing power. Comparing the equivalent salary to the actual offer tells you whether you'd come out ahead, which is exactly what this calculator is for."
+    }
+  ],
+  "credit-card-payoff-calculator": [
+    {
+      "q": "How long will it take to pay off my credit card?",
+      "a": "Your payoff time depends on the balance, interest rate, and how much you pay each month. Paying only the minimum can stretch repayment over many years and multiply the interest you owe. Entering a fixed monthly payment or a target payoff date in this calculator shows the exact timeline and total interest."
+    },
+    {
+      "q": "Why does paying only the minimum cost so much?",
+      "a": "Minimum payments are often just 1 to 3 percent of the balance, so most of each payment goes to interest rather than principal. As the balance shrinks the required minimum also shrinks, dragging payoff out for years or even decades. Paying a fixed amount above the minimum dramatically cuts both the time and the interest."
+    },
+    {
+      "q": "How is credit card interest calculated?",
+      "a": "Card interest is based on your annual percentage rate divided into a daily or monthly periodic rate applied to your balance. A 19% APR on a $5,000 balance accrues roughly $80 in interest the first month alone. Because interest compounds on the remaining balance, paying down principal faster saves the most money."
+    },
+    {
+      "q": "Should I pay a fixed amount or aim for a payoff date?",
+      "a": "Both approaches work; choose a fixed monthly payment if you have a set budget, or set a target payoff date to see the payment required to hit it. This calculator supports minimum payment, fixed payment, and payoff-goal modes so you can compare. Adding even a small extra payment each month shortens the timeline noticeably."
+    },
+    {
+      "q": "Does an extra payment really make a difference?",
+      "a": "Yes. Because extra payments go straight to principal, they reduce the balance that interest is charged on going forward. Even $50 to $100 extra per month can cut months or years off the payoff and save hundreds in interest. Use the extra-payment field to see your personal impact."
+    }
+  ],
+  "cups-to-ml": [
+    {
+      "q": "How do you convert cups to milliliters?",
+      "a": "1 US cup equals 236.588 milliliters. To convert cups to milliliters, multiply by 236.588. (Based on the US customary cup.)"
+    },
+    {
+      "q": "What is 1 cup in milliliters?",
+      "a": "1 cup equals 236.6 ml."
+    },
+    {
+      "q": "What is 2 cups in milliliters?",
+      "a": "2 cups equals 473.2 ml."
+    },
+    {
+      "q": "Is this cups to milliliters converter free?",
       "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
     }
   ],
-  "celsius-to-fahrenheit": [
+  "debt-payoff-calculator": [
     {
-      "q": "How do you convert celsius to fahrenheit?",
-      "a": "To convert Celsius to Fahrenheit, multiply by 1.8 (9/5) and add 32. So °F = °C × 9/5 + 32."
+      "q": "What is the difference between the debt snowball and debt avalanche?",
+      "a": "The debt snowball pays off your smallest balances first for quick psychological wins, while the debt avalanche targets the highest interest rate first to save the most money. The avalanche almost always costs less in total interest, but the snowball can keep you motivated. This calculator runs both side by side so you can see the trade-off."
     },
     {
-      "q": "What is 1 degree Celsius in fahrenheit?",
-      "a": "1 degree Celsius equals 33.8 °F."
+      "q": "Which payoff method saves more money?",
+      "a": "The debt avalanche saves the most because it eliminates your most expensive interest first, reducing the total interest paid and often the payoff time. The snowball may cost a bit more but builds momentum by closing accounts faster. Enter your debts to see the exact dollar difference for your situation."
     },
     {
-      "q": "What is 30 °C in fahrenheit?",
-      "a": "30 °C equals 86 °F."
+      "q": "How does an extra monthly payment speed up payoff?",
+      "a": "Any extra payment goes straight to principal on your focus debt, then rolls onto the next debt once one is cleared, accelerating each successive payoff. This rolling effect is why both strategies finish far faster than paying minimums alone. Even $100 extra a month can shave years off your debt-free date."
     },
     {
-      "q": "Is this celsius to fahrenheit converter free?",
-      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+      "q": "How do I become debt-free fastest?",
+      "a": "Pay every debt's minimum, then put all available extra money toward one target debt using the avalanche method for maximum interest savings. As each debt is paid off, redirect its payment to the next, keeping your total monthly outlay constant. The calculator shows milestone dates and a debt-free timeline for your plan."
+    },
+    {
+      "q": "Should I pay off debt or save first?",
+      "a": "A common approach is to keep a small starter emergency fund, then aggressively pay down high-interest debt like credit cards before building larger savings. Interest on credit card debt usually outpaces what savings accounts earn, so payoff comes first. Once high-rate debt is gone, redirect those payments into savings and investing."
     }
   ],
-  "fahrenheit-to-celsius": [
+  "debt-to-income-calculator": [
     {
-      "q": "How do you convert fahrenheit to celsius?",
-      "a": "To convert Fahrenheit to Celsius, subtract 32 and multiply by 0.5556 (5/9). So °C = (°F − 32) × 5/9."
+      "q": "What is debt-to-income (DTI) ratio?",
+      "a": "DTI is the share of your gross monthly income that goes to debt payments. DTI = total monthly debt payments ÷ gross monthly income × 100. It tells lenders how much of your income is already committed."
     },
     {
-      "q": "What is 1 degree Fahrenheit in celsius?",
-      "a": "1 degree Fahrenheit equals -17.2 °C."
+      "q": "What is a good DTI ratio?",
+      "a": "Lenders generally prefer a DTI of 36% or lower, with no more than 28% going to housing. Many mortgage programs allow up to 43%, and some up to 50% with strong credit and reserves."
     },
     {
-      "q": "What is 72 °F in celsius?",
-      "a": "72 °F equals 22.2 °C."
+      "q": "What debts are included in DTI?",
+      "a": "Include recurring monthly debt: mortgage or rent, auto loans, student loans, minimum credit card payments, and other loan payments. Utilities, groceries, and insurance are typically excluded."
     },
     {
-      "q": "Is this fahrenheit to celsius converter free?",
-      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
-    }
-  ],
-  "miles-to-km": [
-    {
-      "q": "How do you convert miles to kilometers?",
-      "a": "1 mile equals 1.609344 kilometers. To convert miles to kilometers, multiply by 1.60934."
-    },
-    {
-      "q": "What is 1 mile in kilometers?",
-      "a": "1 mile equals 1.609 km."
-    },
-    {
-      "q": "What is 13 mi in kilometers?",
-      "a": "13 mi equals 21.082 km."
-    },
-    {
-      "q": "Is this miles to kilometers converter free?",
-      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
-    }
-  ],
-  "km-to-miles": [
-    {
-      "q": "How do you convert kilometers to miles?",
-      "a": "1 kilometer equals 0.621371 miles. To convert kilometers to miles, multiply by 0.621371 (or divide by 1.60934)."
-    },
-    {
-      "q": "What is 1 kilometer in miles?",
-      "a": "1 kilometer equals 0.621 mi."
-    },
-    {
-      "q": "What is 42 km in miles?",
-      "a": "42 km equals 26.222 mi."
-    },
-    {
-      "q": "Is this kilometers to miles converter free?",
-      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
-    }
-  ],
-  "sales-tax-calculator": [
-    {
-      "q": "How do you calculate sales tax?",
-      "a": "Multiply the price by the tax rate as a decimal. Sales tax = Price × (Rate ÷ 100). For a $100 item at 7.25%, the tax is $7.25 and the total is $107.25."
-    },
-    {
-      "q": "How do I find the price before tax (reverse sales tax)?",
-      "a": "Divide the total by 1 plus the tax rate as a decimal: Pre-tax price = Total ÷ (1 + Rate ÷ 100). A $107.25 total at 7.25% works out to $100.00 before tax. Use the calculator's 'Remove tax' mode to do this automatically."
-    },
-    {
-      "q": "Which states have no sales tax?",
-      "a": "Five states have no statewide sales tax: Alaska, Delaware, Montana, New Hampshire, and Oregon. Note that some Alaska localities still charge a local sales tax."
-    },
-    {
-      "q": "Is the sales tax rate the same everywhere in a state?",
-      "a": "No. The state sets a base rate, but counties and cities often add their own sales tax. The combined rate at checkout can be several percent higher than the state base rate, so confirm the rate for your exact location."
-    },
-    {
-      "q": "What is the highest combined sales tax in the US?",
-      "a": "Combined state-plus-local rates can exceed 10% in parts of states like Louisiana, Tennessee, Arkansas, and Washington. California has the highest state base rate at 7.25%."
+      "q": "How can I lower my DTI?",
+      "a": "Pay down loan balances, avoid new debt, and increase income. Even paying off one small loan can meaningfully lower your ratio and improve loan approval odds."
     }
   ],
   "discount-calculator": [
@@ -307,183 +475,127 @@
       "a": "Divide the sale price by (1 − discount ÷ 100). If something costs $60 after 25% off, the original was $60 ÷ 0.75 = $80.00."
     }
   ],
-  "home-affordability-calculator": [
+  "dog-food-calculator": [
     {
-      "q": "How much house can I afford on my salary?",
-      "a": "A common guideline is the 28/36 rule: spend no more than 28% of gross monthly income on housing and 36% on total debt. On a $100,000 salary (~$8,333/month), that's about $2,333 for housing. Your down payment, interest rate, and existing debts adjust the final number."
+      "q": "How much food should I feed my dog?",
+      "a": "Daily food amount depends on your dog's weight, age, activity level, and the calorie density of the food. The calculator estimates your dog's daily calorie needs (based on resting energy requirement scaled by life stage and activity) and converts that into cups or cans. Always cross-check with your vet and your food's feeding guide."
     },
     {
-      "q": "What is the 28/36 rule?",
-      "a": "It's a lending guideline: your monthly housing costs should stay under 28% of gross monthly income, and all debt payments (housing + car + student loans + credit cards) under 36%. Lenders use it to gauge how much mortgage you can safely carry."
+      "q": "How often should I feed my dog?",
+      "a": "Most adult dogs do well with two meals a day, spaced roughly 8 to 12 hours apart. Puppies need more frequent feeding, often three to four times daily, to support growth and stable blood sugar. The calculator gives a daily total that you can then divide across your dog's meals."
     },
     {
-      "q": "Does my down payment change how much house I can afford?",
-      "a": "Yes. A larger down payment means a smaller loan and lower monthly payment, so you can afford a higher purchase price. Putting down 20% or more also avoids private mortgage insurance (PMI), freeing up budget."
+      "q": "How much should I feed a puppy?",
+      "a": "Puppies need more calories per pound than adults because they are growing rapidly, so feeding guidelines scale up for younger dogs. Selecting the correct puppy life stage adjusts the estimate accordingly, and large-breed puppies have specific needs to avoid growing too fast. Confirm portions with your veterinarian, especially during the first year."
     },
     {
-      "q": "Should I include property taxes and insurance?",
-      "a": "Yes — lenders count your full PITI payment (principal, interest, taxes, and insurance) against the 28% housing limit, so always include estimated property taxes and homeowners insurance when judging affordability."
+      "q": "Why does spaying or neutering affect feeding amounts?",
+      "a": "Spaying or neutering can lower a dog's metabolism, so altered dogs often need slightly fewer calories to avoid weight gain. The calculator factors this in when you indicate your dog's status. Monitor your dog's body condition and adjust portions if you notice weight changes."
+    },
+    {
+      "q": "How do I know the calorie content of my dog's food?",
+      "a": "Calorie density is usually listed as kcal per cup or per can, often on the bag, the manufacturer's website, or by calling the company. If you do not know it, the calculator lets you select a food quality tier to estimate it. Accurate calorie information leads to more precise portion recommendations."
     }
   ],
-  "loan-amortization-calculator": [
+  "electricity-cost-calculator": [
     {
-      "q": "What is loan amortization?",
-      "a": "Amortization is the process of paying off a loan with fixed payments over time. Each payment covers interest first, then reduces the principal. Early payments are mostly interest; later payments are mostly principal."
+      "q": "How do I calculate the electricity cost of an appliance?",
+      "a": "Multiply the appliance wattage by hours used per day, divide by 1,000 to get kilowatt-hours (kWh), then multiply by your electricity rate. The formula is: (watts / 1000) x hours x rate = daily cost. For example, a 1,500W space heater run 6 hours at $0.16/kWh costs (1500/1000) x 6 x 0.16 = $1.44 per day."
     },
     {
-      "q": "How is an amortization schedule calculated?",
-      "a": "The monthly payment is fixed using the loan amount, interest rate, and term. Each month, interest = balance × (annual rate ÷ 12), and the rest of the payment reduces the balance. Repeat until the balance reaches zero."
+      "q": "What is a kilowatt-hour (kWh)?",
+      "a": "A kilowatt-hour is the unit utilities use to bill electricity: it equals using 1,000 watts of power for one hour. A 100W device running 10 hours uses 1 kWh, and so does a 1,000W device running 1 hour. Your monthly bill is essentially your total kWh used multiplied by your rate per kWh."
     },
     {
-      "q": "Why is most of my early payment going to interest?",
-      "a": "Interest is charged on the outstanding balance, which is highest at the start. As you pay down principal, the interest portion shrinks and more of each payment goes toward the balance."
+      "q": "What electricity rate should I enter?",
+      "a": "Use the rate per kWh shown on your utility bill, which in the US commonly falls in the $0.10 to $0.30 range depending on state and time of year. The calculator defaults to $0.16/kWh, but entering your exact rate gives more accurate results. Look for the line labeled price per kWh or energy charge on your statement."
     },
     {
-      "q": "How can I pay off an amortized loan faster?",
-      "a": "Make extra principal payments. Any amount above the scheduled payment goes straight to principal, which lowers future interest and shortens the loan term — often by years."
+      "q": "Which appliances cost the most to run?",
+      "a": "High-wattage devices that run for long periods cost the most, especially heating and cooling equipment like central AC, electric dryers, space heaters, and water heaters. Always-on low-wattage devices like refrigerators and WiFi routers add up too because they run 24 hours a day. The calculator ranks your appliances so you can see which drive your bill."
+    },
+    {
+      "q": "Can I compare EV charging cost to gasoline here?",
+      "a": "Yes, the calculator includes an EV charging comparison so you can see the cost of charging at home versus filling up with gas. It uses your electricity rate and the EV's efficiency to estimate per-mile and monthly charging costs. This helps you gauge potential fuel savings from switching to an electric vehicle."
     }
   ],
-  "gpa-calculator": [
+  "ev-vs-gas-calculator": [
     {
-      "q": "How is GPA calculated?",
-      "a": "Convert each grade to points (A=4.0, B=3.0, C=2.0, D=1.0, F=0), multiply by the course's credit hours, add up the points, and divide by total credit hours. The result is your grade point average."
+      "q": "How do I compare the total cost of owning an EV vs a gas car?",
+      "a": "Total cost of ownership adds up purchase price (minus tax credits), fuel or electricity, maintenance, insurance, and depreciation over your ownership period. EVs usually have higher upfront cost but lower fuel and maintenance costs, while gas cars are cheaper to buy but cost more to run. This calculator totals both over the years you plan to keep the car so you can see the breakeven point."
     },
     {
-      "q": "What is a weighted vs. unweighted GPA?",
-      "a": "Unweighted GPA uses a 4.0 scale regardless of course difficulty. Weighted GPA adds extra points for honors or AP/IB classes (often up to 5.0), rewarding harder coursework."
+      "q": "How much can I save on fuel with an electric vehicle?",
+      "a": "Charging an EV at home is often cheaper per mile than buying gasoline because electricity costs less per unit of energy and EVs are very efficient. Your savings depend on your electricity rate, local gas prices, and annual miles driven. Enter your numbers and the calculator estimates the annual and lifetime fuel cost difference."
     },
     {
-      "q": "What is a good GPA?",
-      "a": "A 3.0 is solid, 3.5+ is strong, and 3.7–4.0 is excellent and competitive for selective colleges and scholarships. Standards vary by school and program."
+      "q": "How does the federal EV tax credit affect the comparison?",
+      "a": "The federal clean vehicle tax credit can reduce an eligible EV's effective purchase price by up to $7,500, and many states add their own incentives. This calculator subtracts the credits you enter from the EV's purchase price to give a fair comparison. Check current IRS eligibility rules and your vehicle's qualification before assuming the full amount."
     },
     {
-      "q": "How do I raise my GPA?",
-      "a": "Earn higher grades in high-credit courses, retake classes where your school replaces the grade, and balance difficult courses across terms. The more credit hours remaining, the more room to move your average."
+      "q": "Do EVs really have lower maintenance costs?",
+      "a": "Generally yes, because EVs have no oil changes, fewer moving parts, no exhaust system, and reduced brake wear thanks to regenerative braking. Gas cars require regular oil changes, spark plugs, transmission service, and more frequent brake jobs. The calculator lets you enter maintenance estimates for both so the comparison reflects your expectations."
+    },
+    {
+      "q": "What inputs does the EV vs gas calculator need?",
+      "a": "You enter each vehicle's purchase price, the EV's tax credits and battery/efficiency details, fuel and electricity prices, annual mileage, maintenance, insurance, and depreciation assumptions. The more accurate your inputs, the more reliable the total-cost comparison. Defaults are provided so you can start quickly and refine as needed."
     }
   ],
-  "net-worth-calculator": [
+  "fahrenheit-to-celsius": [
     {
-      "q": "How do you calculate net worth?",
-      "a": "Net worth = total assets − total liabilities. Add up everything you own (cash, investments, home, car, retirement accounts) and subtract everything you owe (mortgage, loans, credit card balances)."
+      "q": "How do you convert fahrenheit to celsius?",
+      "a": "To convert Fahrenheit to Celsius, subtract 32 and multiply by 0.5556 (5/9). So °C = (°F − 32) × 5/9."
     },
     {
-      "q": "What counts as an asset vs. a liability?",
-      "a": "Assets are things of value you own: bank balances, investments, retirement accounts, real estate, and vehicles. Liabilities are debts you owe: mortgages, auto and student loans, and credit card balances."
+      "q": "What is 1 degree Fahrenheit in celsius?",
+      "a": "1 degree Fahrenheit equals -17.2 °C."
     },
     {
-      "q": "What is a good net worth?",
-      "a": "It depends on age and income. One common benchmark is the 'age × income ÷ 10' rule. More important than any single number is whether your net worth is growing year over year."
+      "q": "What is 72 °F in celsius?",
+      "a": "72 °F equals 22.2 °C."
     },
     {
-      "q": "Can net worth be negative?",
-      "a": "Yes. If your debts exceed your assets — common early in life with student loans or a new mortgage — net worth is negative. Paying down debt and building savings moves it positive over time."
-    }
-  ],
-  "debt-to-income-calculator": [
-    {
-      "q": "What is debt-to-income (DTI) ratio?",
-      "a": "DTI is the share of your gross monthly income that goes to debt payments. DTI = total monthly debt payments ÷ gross monthly income × 100. It tells lenders how much of your income is already committed."
-    },
-    {
-      "q": "What is a good DTI ratio?",
-      "a": "Lenders generally prefer a DTI of 36% or lower, with no more than 28% going to housing. Many mortgage programs allow up to 43%, and some up to 50% with strong credit and reserves."
-    },
-    {
-      "q": "What debts are included in DTI?",
-      "a": "Include recurring monthly debt: mortgage or rent, auto loans, student loans, minimum credit card payments, and other loan payments. Utilities, groceries, and insurance are typically excluded."
-    },
-    {
-      "q": "How can I lower my DTI?",
-      "a": "Pay down loan balances, avoid new debt, and increase income. Even paying off one small loan can meaningfully lower your ratio and improve loan approval odds."
-    }
-  ],
-  "savings-goal-calculator": [
-    {
-      "q": "How do I calculate how much to save each month?",
-      "a": "Divide your goal by the number of months you have, then adjust for interest. For a $12,000 goal in 24 months, you'd need about $500/month before interest — less if your savings earn a return."
-    },
-    {
-      "q": "How does interest affect my savings goal?",
-      "a": "Interest helps your money grow, so you need to contribute slightly less to reach the same goal. The higher the rate and the longer the timeframe, the bigger the boost from compounding."
-    },
-    {
-      "q": "Should I save in a high-yield savings account?",
-      "a": "For short-term goals, yes — a high-yield savings account or money-market account earns more than a standard account while keeping your money safe and accessible."
-    },
-    {
-      "q": "What if I can't hit my monthly savings target?",
-      "a": "Extend your timeline, lower the goal amount, or increase income. Automating transfers on payday makes consistent saving far more likely than relying on willpower."
-    }
-  ],
-  "percentage-calculator": [
-    {
-      "q": "How do you calculate a percentage of a number?",
-      "a": "Multiply the number by the percentage as a decimal. 20% of 150 is 150 × 0.20 = 30. To find what percent one number is of another, divide and multiply by 100."
-    },
-    {
-      "q": "How do I calculate percentage increase or decrease?",
-      "a": "Percent change = (new − old) ÷ old × 100. If a price rises from $80 to $100, that's (100 − 80) ÷ 80 × 100 = 25% increase."
-    },
-    {
-      "q": "What is X as a percentage of Y?",
-      "a": "Divide X by Y and multiply by 100. For example, 45 out of 60 is 45 ÷ 60 × 100 = 75%."
-    },
-    {
-      "q": "How do I add or subtract a percentage from a number?",
-      "a": "To add 15% to 200: 200 × 1.15 = 230. To subtract 15%: 200 × 0.85 = 170. Multiply by (1 + rate) to add or (1 − rate) to subtract."
-    }
-  ],
-  "paycheck-calculator": [
-    {
-      "q": "How is my take-home pay calculated?",
-      "a": "Take-home pay is your gross pay minus federal and state income tax withholding, Social Security (6.2%), Medicare (1.45%), and any pre-tax deductions like 401(k) and health insurance."
-    },
-    {
-      "q": "What's the difference between gross and net pay?",
-      "a": "Gross pay is your salary before any deductions. Net pay (take-home) is what lands in your bank account after taxes and deductions are withheld."
-    },
-    {
-      "q": "How much of my paycheck goes to taxes?",
-      "a": "It varies by income and location, but FICA alone takes 7.65% (Social Security + Medicare). Add federal and state income tax, and total withholding often ranges from about 15% to 35%."
-    },
-    {
-      "q": "How can I increase my take-home pay?",
-      "a": "Adjust your W-4 withholding to match your actual tax liability, and review pre-tax deductions. Note that pre-tax 401(k) or HSA contributions lower taxable income, reducing tax even as they build savings."
-    }
-  ],
-  "grams-to-ounces": [
-    {
-      "q": "How do you convert grams to ounces?",
-      "a": "1 gram equals 0.035274 ounces. To convert grams to ounces, divide by 28.3495 (or multiply by 0.035274)."
-    },
-    {
-      "q": "What is 1 gram in ounces?",
-      "a": "1 gram equals 0.035 oz."
-    },
-    {
-      "q": "What is 100 g in ounces?",
-      "a": "100 g equals 3.527 oz."
-    },
-    {
-      "q": "Is this grams to ounces converter free?",
+      "q": "Is this fahrenheit to celsius converter free?",
       "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
     }
   ],
-  "ounces-to-grams": [
+  "fantasy-name-generator": [
     {
-      "q": "How do you convert ounces to grams?",
-      "a": "1 ounce equals 28.3495 grams. To convert ounces to grams, multiply by 28.3495."
+      "q": "What kinds of fantasy names can I generate?",
+      "a": "You can generate names across many genres and races, including elven, dwarven, orcish, human medieval, sci-fi, and steampunk. The tool can create first names, surnames, and full character names. It is great for D&D characters, fiction, video games, and worldbuilding."
     },
     {
-      "q": "What is 1 ounce in grams?",
-      "a": "1 ounce equals 28.35 g."
+      "q": "Are these names good for D&D characters?",
+      "a": "Yes, the generator is built with tabletop role-playing in mind and includes race and genre styles that fit common D&D settings. Pick a race such as elf, dwarf, or orc, then generate until you find a name that suits your character. You can mix and match first names and surnames for a custom result."
     },
     {
-      "q": "What is 12 oz in grams?",
-      "a": "12 oz equals 340.19 g."
+      "q": "Can I use generated fantasy names in my published book or game?",
+      "a": "Generated names are random combinations and are generally free for you to use in your creative projects. Since names can coincide with real people or existing characters, it is wise to do a quick search before using a name for a major character or commercial release. For published work, confirm the name is not a registered trademark in your genre."
     },
     {
-      "q": "Is this ounces to grams converter free?",
+      "q": "How do I create a name that fits a specific race or culture?",
+      "a": "Choose the matching genre or race option, such as elven for flowing melodic names or dwarven for harder consonant sounds, before generating. Generate several options and pick the one whose sound and rhythm fit your character's background. You can regenerate freely to fine-tune the feel."
+    },
+    {
+      "q": "Is the fantasy name generator free?",
+      "a": "Yes, it is completely free and requires no account, and you can generate as many names as you need. Nothing is saved, so you can experiment as much as you like."
+    }
+  ],
+  "feet-to-inches": [
+    {
+      "q": "How do you convert feet to inches?",
+      "a": "1 foot equals exactly 12 inches. To convert feet to inches, multiply by 12."
+    },
+    {
+      "q": "What is 1 foot in inches?",
+      "a": "1 foot equals 12 in."
+    },
+    {
+      "q": "What is 6 ft in inches?",
+      "a": "6 ft equals 66 in."
+    },
+    {
+      "q": "Is this feet to inches converter free?",
       "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
     }
   ],
@@ -505,76 +617,48 @@
       "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
     }
   ],
-  "meters-to-feet": [
+  "fire-calculator": [
     {
-      "q": "How do you convert meters to feet?",
-      "a": "1 meter equals 3.28084 feet. To convert meters to feet, multiply by 3.28084 (or divide by 0.3048)."
+      "q": "What is the FIRE number and how is it calculated?",
+      "a": "Your FIRE number is the portfolio size that lets you live off investment returns indefinitely, commonly estimated as 25 times your annual expenses. This comes from the 4% safe withdrawal rule, where withdrawing 4% of a diversified portfolio each year has historically lasted 30+ years. For example, $50,000 in annual spending implies a FIRE number of about $1.25 million."
     },
     {
-      "q": "What is 1 meter in feet?",
-      "a": "1 meter equals 3.281 ft."
+      "q": "What is Coast FIRE?",
+      "a": "Coast FIRE is the point where your existing investments will grow to your full FIRE number by traditional retirement age without any additional contributions. After reaching it, you only need to earn enough to cover current expenses and can stop saving aggressively. The calculator shows your Coast FIRE number so you can see when you've crossed that threshold."
     },
     {
-      "q": "What is 20 m in feet?",
-      "a": "20 m equals 65.617 ft."
+      "q": "How does my savings rate affect when I can retire?",
+      "a": "Savings rate is the single biggest lever for early retirement because it both raises contributions and lowers the expenses you need to fund. A 50% savings rate can lead to financial independence in roughly 15 to 17 years, while a 25% rate typically takes around 30 years. The calculator translates your savings rate directly into a years-to-FIRE estimate."
     },
     {
-      "q": "Is this meters to feet converter free?",
-      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+      "q": "Is the 4% rule still safe in 2026?",
+      "a": "The 4% rule remains a widely used baseline, though some planners now favor a more conservative 3.5% withdrawal rate for very long retirements or uncertain markets. A lower rate means a larger FIRE number but more cushion against sequence-of-returns risk. You can adjust your target expenses and return assumptions to test a more conservative plan."
+    },
+    {
+      "q": "What return rate should I use for FIRE projections?",
+      "a": "Many FIRE plans model a 5% to 7% real (after-inflation) return for a stock-heavy portfolio, or about 7% to 10% nominal. Using a real return keeps your FIRE number in today's dollars, which is simpler for planning. Run a few scenarios to see how sensitive your timeline is to lower returns."
     }
   ],
-  "ml-to-cups": [
+  "freelance-rate-calculator": [
     {
-      "q": "How do you convert milliliters to cups?",
-      "a": "1 milliliter equals 0.004227 US cups. To convert milliliters to cups, divide by 236.588. (Based on the US customary cup.)"
+      "q": "How do I calculate my freelance hourly rate?",
+      "a": "Start with the take-home income you want, then add the costs an employer would normally cover: income tax, self-employment tax, health insurance, retirement savings, and business expenses. Divide that total by your actual billable hours, which are far fewer than your working hours once you subtract admin time, marketing, vacation, and holidays. The result is the minimum rate you must charge to hit your goal."
     },
     {
-      "q": "What is 1 milliliter in cups?",
-      "a": "1 milliliter equals 0.004 cups."
+      "q": "Why is my freelance rate so much higher than an equivalent salary?",
+      "a": "As a freelancer you pay both halves of payroll taxes (self-employment tax of about 15.3%), buy your own health insurance and retirement, and absorb unpaid time off and business costs. You also bill only a fraction of your working hours. Because of this, a sustainable freelance rate is often roughly 1.5 to 2 times the hourly equivalent of a comparable salaried job."
     },
     {
-      "q": "What is 250 ml in cups?",
-      "a": "250 ml equals 1.057 cups."
+      "q": "What is a billable utilization rate?",
+      "a": "Utilization is the percentage of your working hours that you actually bill to clients. Most freelancers realistically bill 50% to 70% of their time, with the rest going to sales, admin, invoicing, and learning. A lower utilization rate means each billable hour has to cover more overhead, so your rate must be higher."
     },
     {
-      "q": "Is this milliliters to cups converter free?",
-      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
-    }
-  ],
-  "cups-to-ml": [
-    {
-      "q": "How do you convert cups to milliliters?",
-      "a": "1 US cup equals 236.588 milliliters. To convert cups to milliliters, multiply by 236.588. (Based on the US customary cup.)"
+      "q": "How much should I set aside for self-employment taxes?",
+      "a": "In 2026, plan for self-employment tax of about 15.3% on net earnings plus federal and state income tax. Many freelancers set aside roughly 25% to 35% of income for taxes and pay quarterly estimated taxes to avoid penalties. The calculator factors your tax region and filing status into the rate so taxes are baked in rather than a surprise."
     },
     {
-      "q": "What is 1 cup in milliliters?",
-      "a": "1 cup equals 236.6 ml."
-    },
-    {
-      "q": "What is 2 cups in milliliters?",
-      "a": "2 cups equals 473.2 ml."
-    },
-    {
-      "q": "Is this cups to milliliters converter free?",
-      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
-    }
-  ],
-  "liters-to-gallons": [
-    {
-      "q": "How do you convert liters to gallons?",
-      "a": "1 liter equals 0.264172 US gallons. To convert liters to gallons, divide by 3.78541. (Based on the US liquid gallon.)"
-    },
-    {
-      "q": "What is 1 liter in gallons?",
-      "a": "1 liter equals 0.264 gal."
-    },
-    {
-      "q": "What is 40 L in gallons?",
-      "a": "40 L equals 10.567 gal."
-    },
-    {
-      "q": "Is this liters to gallons converter free?",
-      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+      "q": "Should I charge hourly or per project?",
+      "a": "Your calculated hourly rate is the foundation either way. For project pricing, estimate the hours a project will take and multiply by your minimum rate, then add a margin for risk and scope changes. Value-based pricing can earn more, but knowing your floor rate ensures no project loses you money."
     }
   ],
   "gallons-to-liters": [
@@ -595,94 +679,146 @@
       "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
     }
   ],
-  "mph-to-kmh": [
+  "gas-mileage-calculator": [
     {
-      "q": "How do you convert miles per hour to kilometers per hour?",
-      "a": "1 mph equals 1.60934 km/h. To convert miles per hour to kilometers per hour, multiply by 1.60934."
+      "q": "How do I calculate gas mileage (MPG)?",
+      "a": "Miles per gallon equals the miles driven divided by the gallons of fuel used: MPG = miles / gallons. Fill your tank, reset the trip odometer, drive until you refill, then divide the trip miles by the gallons it took to fill up again. For example, 300 miles on 10 gallons is 30 MPG."
     },
     {
-      "q": "What is 1 mile per hour in kilometers per hour?",
-      "a": "1 mile per hour equals 1.61 km/h."
+      "q": "How do I calculate fuel cost per mile?",
+      "a": "Divide the price per gallon by your MPG to get cost per mile: cost per mile = gas price / MPG. At $3.50 per gallon and 30 MPG, that is $3.50 / 30 = about $0.117 per mile. Multiply by trip distance to estimate the fuel cost of any drive."
     },
     {
-      "q": "What is 55 mph in kilometers per hour?",
-      "a": "55 mph equals 88.51 km/h."
+      "q": "How do I convert MPG to L/100km?",
+      "a": "Divide 235.215 by your MPG value to get liters per 100 kilometers. For example, 30 MPG equals 235.215 / 30 = about 7.84 L/100km. This calculator can display results in US MPG, L/100km, or km/L so you can use whichever standard you prefer."
     },
     {
-      "q": "Is this miles per hour to kilometers per hour converter free?",
+      "q": "Can I estimate the fuel cost of a road trip?",
+      "a": "Yes, the Trip Planner mode estimates fuel needed and cost based on trip distance, your vehicle's MPG, and the current gas price you enter. It divides distance by MPG to find gallons needed, then multiplies by price per gallon. This helps you budget fuel before a long drive."
+    },
+    {
+      "q": "Why is my actual MPG lower than the EPA rating?",
+      "a": "Real-world MPG is affected by city driving, hard acceleration, idling, cold weather, cargo weight, low tire pressure, and highway speeds above 60 mph. EPA ratings are measured under controlled lab conditions, so most drivers see somewhat lower numbers. Tracking your actual fill-ups with this calculator gives a truer picture of your fuel economy."
+    }
+  ],
+  "gpa-calculator": [
+    {
+      "q": "How is GPA calculated?",
+      "a": "Convert each grade to points (A=4.0, B=3.0, C=2.0, D=1.0, F=0), multiply by the course's credit hours, add up the points, and divide by total credit hours. The result is your grade point average."
+    },
+    {
+      "q": "What is a weighted vs. unweighted GPA?",
+      "a": "Unweighted GPA uses a 4.0 scale regardless of course difficulty. Weighted GPA adds extra points for honors or AP/IB classes (often up to 5.0), rewarding harder coursework."
+    },
+    {
+      "q": "What is a good GPA?",
+      "a": "A 3.0 is solid, 3.5+ is strong, and 3.7–4.0 is excellent and competitive for selective colleges and scholarships. Standards vary by school and program."
+    },
+    {
+      "q": "How do I raise my GPA?",
+      "a": "Earn higher grades in high-credit courses, retake classes where your school replaces the grade, and balance difficult courses across terms. The more credit hours remaining, the more room to move your average."
+    }
+  ],
+  "grade-calculator": [
+    {
+      "q": "How is my weighted grade calculated?",
+      "a": "Each assignment's score is multiplied by its weight, those products are summed, and the total is divided by the sum of the weights. The formula is: weighted grade = sum(score x weight) / sum(weights). For example, an 85 worth 30% and a 92 worth 20% give (85x30 + 92x20) / 50 = 87.8%."
+    },
+    {
+      "q": "What score do I need on my final exam?",
+      "a": "Switch to Final Grade Needed mode and the calculator solves for the final score using: needed = (desired grade - current grade x completed weight) / final weight. It tells you exactly what you must earn on the final to reach your target overall grade. If the required score exceeds 100%, your goal may not be reachable with that final alone."
+    },
+    {
+      "q": "Do my assignment weights need to add up to 100%?",
+      "a": "Not necessarily; the calculator divides by the total of the weights you enter, so it works even if they sum to less than 100% (treating it as a partial picture). For a true final course grade, however, the weights should reflect your full syllabus and ideally total 100%. Double-check your syllabus to match each category's weight."
+    },
+    {
+      "q": "How are letter grades assigned?",
+      "a": "The calculator maps your percentage to a standard US letter scale, such as 90-100 = A, 80-89 = B, 70-79 = C, 60-69 = D, and below 60 = F (often with plus and minus bands). Your school's exact cutoffs may differ slightly. Use the result as a guide and confirm against your institution's grading policy."
+    },
+    {
+      "q": "Can I add as many assignments as I need?",
+      "a": "Yes, you can add multiple assignments with individual names, scores, and weights, and remove any you do not need. This lets you model exams, quizzes, homework, and projects together for an accurate weighted average. The result updates to reflect every entry you include."
+    }
+  ],
+  "grams-to-ounces": [
+    {
+      "q": "How do you convert grams to ounces?",
+      "a": "1 gram equals 0.035274 ounces. To convert grams to ounces, divide by 28.3495 (or multiply by 0.035274)."
+    },
+    {
+      "q": "What is 1 gram in ounces?",
+      "a": "1 gram equals 0.035 oz."
+    },
+    {
+      "q": "What is 100 g in ounces?",
+      "a": "100 g equals 3.527 oz."
+    },
+    {
+      "q": "Is this grams to ounces converter free?",
       "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
     }
   ],
-  "kmh-to-mph": [
+  "home-affordability-calculator": [
     {
-      "q": "How do you convert kilometers per hour to miles per hour?",
-      "a": "1 km/h equals 0.621371 mph. To convert kilometers per hour to miles per hour, multiply by 0.621371 (or divide by 1.60934)."
+      "q": "How much house can I afford on my salary?",
+      "a": "A common guideline is the 28/36 rule: spend no more than 28% of gross monthly income on housing and 36% on total debt. On a $100,000 salary (~$8,333/month), that's about $2,333 for housing. Your down payment, interest rate, and existing debts adjust the final number."
     },
     {
-      "q": "What is 1 kilometer per hour in miles per hour?",
-      "a": "1 kilometer per hour equals 0.62 mph."
+      "q": "What is the 28/36 rule?",
+      "a": "It's a lending guideline: your monthly housing costs should stay under 28% of gross monthly income, and all debt payments (housing + car + student loans + credit cards) under 36%. Lenders use it to gauge how much mortgage you can safely carry."
     },
     {
-      "q": "What is 80 km/h in miles per hour?",
-      "a": "80 km/h equals 49.71 mph."
+      "q": "Does my down payment change how much house I can afford?",
+      "a": "Yes. A larger down payment means a smaller loan and lower monthly payment, so you can afford a higher purchase price. Putting down 20% or more also avoids private mortgage insurance (PMI), freeing up budget."
     },
     {
-      "q": "Is this kilometers per hour to miles per hour converter free?",
-      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+      "q": "Should I include property taxes and insurance?",
+      "a": "Yes — lenders count your full PITI payment (principal, interest, taxes, and insurance) against the 28% housing limit, so always include estimated property taxes and homeowners insurance when judging affordability."
     }
   ],
-  "feet-to-inches": [
+  "home-equity-calculator": [
     {
-      "q": "How do you convert feet to inches?",
-      "a": "1 foot equals exactly 12 inches. To convert feet to inches, multiply by 12."
+      "q": "How is home equity calculated?",
+      "a": "Home equity is your home's current market value minus everything you owe against it, including your mortgage balance and any HELOC or other liens. If your home is worth $450,000 and you owe $280,000, you have $170,000 in equity. Equity grows as you pay down your mortgage and as the home appreciates."
     },
     {
-      "q": "What is 1 foot in inches?",
-      "a": "1 foot equals 12 in."
+      "q": "How much can I borrow against my home equity?",
+      "a": "Lenders typically let you borrow up to a combined loan-to-value ratio of about 80 to 85 percent of your home's value, minus what you already owe. On a $450,000 home at 85% LTV, that caps total debt around $382,500, so your available borrowing equals that figure minus your current balance. This calculator estimates your borrowing power based on the max LTV you set."
     },
     {
-      "q": "What is 6 ft in inches?",
-      "a": "6 ft equals 66 in."
+      "q": "What is the difference between a HELOC and a home equity loan?",
+      "a": "A home equity loan gives you a lump sum at a fixed rate with set monthly payments, while a HELOC is a revolving line of credit you draw from as needed, usually at a variable rate. HELOCs offer flexibility for ongoing expenses, while home equity loans suit one-time costs. Both use your home as collateral."
     },
     {
-      "q": "Is this feet to inches converter free?",
-      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+      "q": "What is loan-to-value ratio (LTV)?",
+      "a": "Loan-to-value ratio is the total you owe on your home divided by its current value, expressed as a percentage. A lower LTV means more equity and usually better borrowing terms. Lenders use LTV limits, commonly 80 to 85 percent, to cap how much equity you can tap."
+    },
+    {
+      "q": "How does home appreciation affect my equity?",
+      "a": "As your home's market value rises with appreciation, your equity increases even if your loan balance stays the same. Entering a purchase price, purchase date, and an annual appreciation rate lets the calculator project how equity builds over time. Faster appreciation and steady mortgage paydown both accelerate equity growth."
     }
   ],
-  "inches-to-feet": [
+  "home-improvement-cost-calculator": [
     {
-      "q": "How do you convert inches to feet?",
-      "a": "1 inch equals 0.08333 feet (1/12). To convert inches to feet, divide by 12."
+      "q": "How much does a kitchen or bathroom remodel cost?",
+      "a": "Costs vary widely by size, quality tier, and region, so this calculator estimates a range based on your project square footage and whether you choose budget, mid-range, or high-end finishes. Kitchens and bathrooms are typically the most expensive rooms per square foot because of plumbing, cabinetry, and appliances. Enter your details to get a tailored estimate for budgeting."
     },
     {
-      "q": "What is 1 inch in feet?",
-      "a": "1 inch equals 0.083 ft."
+      "q": "Should I DIY or hire a professional?",
+      "a": "The calculator compares DIY costs (mostly materials) against professional costs (materials plus labor) so you can weigh the savings. DIY can cut costs significantly but requires time, skill, and the right tools, and some work like electrical or structural changes is better left to licensed pros. Use the comparison to decide where doing it yourself makes sense."
     },
     {
-      "q": "What is 48 in in feet?",
-      "a": "48 in equals 4 ft."
+      "q": "What is ROI on a home improvement project?",
+      "a": "Return on investment measures how much of a project's cost you recoup in added home value, calculated as (value added / project cost) x 100. Projects like kitchen updates, new flooring, and curb-appeal landscaping often recoup a large share, while highly personalized renovations recoup less. The calculator estimates ROI so you can prioritize improvements that pay back."
     },
     {
-      "q": "Is this inches to feet converter free?",
-      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
-    }
-  ],
-  "salary-to-hourly-calculator": [
-    {
-      "q": "How do I convert my salary to an hourly rate?",
-      "a": "Divide your annual salary by the number of hours you work in a year. Hourly rate = salary ÷ (hours per week × weeks per year). At 40 hours/week and 52 weeks, that's salary ÷ 2,080."
+      "q": "What affects the cost of my renovation?",
+      "a": "Major drivers are project size in square footage, the quality tier of materials, labor rates in your area, structural or permit requirements, and the project type itself. Choosing mid-range instead of high-end finishes, or limiting the scope, can substantially lower the total. The calculator lets you adjust these inputs to see their impact."
     },
     {
-      "q": "What is $60,000 a year per hour?",
-      "a": "About $28.85 per hour, based on a 40-hour week and 52 weeks ($60,000 ÷ 2,080 = $28.85)."
-    },
-    {
-      "q": "How many work hours are in a year?",
-      "a": "A standard full-time year is about 2,080 hours (40 hours × 52 weeks). If you take unpaid time off, use fewer weeks to get a more accurate hourly rate."
-    },
-    {
-      "q": "Is the hourly rate before or after taxes?",
-      "a": "It's your gross (pre-tax) hourly rate. Your take-home rate will be lower after income tax, Social Security, Medicare, and other deductions."
+      "q": "How accurate are these renovation estimates?",
+      "a": "They are planning-level estimates built on national averages and your chosen quality tier, not firm contractor quotes. Actual costs depend on your local market, material availability, and unforeseen issues like water damage or code upgrades. Always get itemized bids from local contractors before committing to a project."
     }
   ],
   "hourly-to-salary-calculator": [
@@ -721,6 +857,364 @@
       "a": "7.5 hours, because 30 minutes is half an hour (30 ÷ 60 = 0.5)."
     }
   ],
+  "inches-to-cm": [
+    {
+      "q": "How do you convert inches to centimeters?",
+      "a": "1 inch equals exactly 2.54 centimeters. To convert inches to centimeters, multiply by 2.54."
+    },
+    {
+      "q": "What is 1 inch in centimeters?",
+      "a": "1 inch equals 2.54 cm."
+    },
+    {
+      "q": "What is 24 in in centimeters?",
+      "a": "24 in equals 60.96 cm."
+    },
+    {
+      "q": "Is this inches to centimeters converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "inches-to-feet": [
+    {
+      "q": "How do you convert inches to feet?",
+      "a": "1 inch equals 0.08333 feet (1/12). To convert inches to feet, divide by 12."
+    },
+    {
+      "q": "What is 1 inch in feet?",
+      "a": "1 inch equals 0.083 ft."
+    },
+    {
+      "q": "What is 48 in in feet?",
+      "a": "48 in equals 4 ft."
+    },
+    {
+      "q": "Is this inches to feet converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "inflation-calculator": [
+    {
+      "q": "How do I calculate the effect of inflation on the dollar?",
+      "a": "Inflation is measured by the change in the Consumer Price Index (CPI) between two years. To find what an old amount is worth today, multiply it by the ratio of the later year's CPI to the earlier year's CPI. This calculator uses historical US CPI data from 1960 to 2026 so you can compare any two years instantly."
+    },
+    {
+      "q": "What is purchasing power?",
+      "a": "Purchasing power is how many goods and services a fixed amount of money can buy. As prices rise, the same dollar buys less, so its purchasing power falls over time. The calculator shows how much an amount from one year is worth in another year's dollars."
+    },
+    {
+      "q": "How much has the dollar's value changed over time?",
+      "a": "Due to cumulative inflation, a dollar from the 1980s buys only a fraction of what it once did, and prices roughly triple or more over a few decades at typical inflation rates. Even modest inflation of around 3% per year cuts purchasing power roughly in half over about 24 years. Enter specific years to see the exact change for your amount."
+    },
+    {
+      "q": "How do I project future inflation?",
+      "a": "Switch to Projection mode and enter an assumed annual inflation rate plus the number of years ahead. The calculator compounds that rate to show what today's money will be worth in the future. A common planning assumption is 2% to 3% per year, near the Federal Reserve's long-run target."
+    },
+    {
+      "q": "What is a realistic inflation rate to assume for the future?",
+      "a": "For long-term planning, many people use about 2% to 3% annually, in line with the Fed's 2% target and historical averages. Short periods can run much higher, as seen in the early 2020s. Running both a low and high scenario gives you a useful range rather than a single guess."
+    }
+  ],
+  "investment-income-goal-calculator": [
+    {
+      "q": "How much do I need to invest to replace my income?",
+      "a": "A common rule is to accumulate about 25 times the annual income you want to replace, which supports a 4% withdrawal rate. To generate $40,000 a year, that points to roughly $1 million invested. The calculator lets you set your target income and timeframe, then shows how much capital and what contributions get you there."
+    },
+    {
+      "q": "What is a good ROI for reaching financial independence?",
+      "a": "Diversified stock and bond portfolios have historically returned roughly 6% to 10% per year before inflation over long periods. Higher expected returns shorten your timeline but come with more volatility. The calculator lets you set an expected return for each investment so you can compare conservative and aggressive scenarios."
+    },
+    {
+      "q": "What is a breakeven timeline?",
+      "a": "Breakeven is the point at which your cumulative returns and contributions have grown the portfolio to the size needed to fund your income goal. It shows how many years of investing and compounding it takes to reach financial independence. The calculator estimates this based on your inputs and contributions."
+    },
+    {
+      "q": "Can I model more than one investment at once?",
+      "a": "Yes. Click Add Investment to create multiple scenarios, each with its own name, quantity, amount, and expected return. This is useful for comparing, say, an index fund against a rental property or dividend portfolio. The results combine them into a single income and ROI projection."
+    },
+    {
+      "q": "How do extra contributions speed up my goal?",
+      "a": "Adding monthly or annual contributions accelerates compounding by adding fresh capital that also earns returns. Even modest, consistent contributions can dramatically shorten your timeline to financial independence. Use the optional contribution fields to see the difference."
+    }
+  ],
+  "kg-to-lbs": [
+    {
+      "q": "How do you convert kilograms to pounds?",
+      "a": "1 kilogram equals 2.20462 pounds. To convert kilograms to pounds, multiply by 2.20462."
+    },
+    {
+      "q": "What is 1 kilogram in pounds?",
+      "a": "1 kilogram equals 2.2 lbs."
+    },
+    {
+      "q": "What is 60 kg in pounds?",
+      "a": "60 kg equals 132.28 lbs."
+    },
+    {
+      "q": "Is this kilograms to pounds converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "km-to-miles": [
+    {
+      "q": "How do you convert kilometers to miles?",
+      "a": "1 kilometer equals 0.621371 miles. To convert kilometers to miles, multiply by 0.621371 (or divide by 1.60934)."
+    },
+    {
+      "q": "What is 1 kilometer in miles?",
+      "a": "1 kilometer equals 0.621 mi."
+    },
+    {
+      "q": "What is 42 km in miles?",
+      "a": "42 km equals 26.222 mi."
+    },
+    {
+      "q": "Is this kilometers to miles converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "kmh-to-mph": [
+    {
+      "q": "How do you convert kilometers per hour to miles per hour?",
+      "a": "1 km/h equals 0.621371 mph. To convert kilometers per hour to miles per hour, multiply by 0.621371 (or divide by 1.60934)."
+    },
+    {
+      "q": "What is 1 kilometer per hour in miles per hour?",
+      "a": "1 kilometer per hour equals 0.62 mph."
+    },
+    {
+      "q": "What is 80 km/h in miles per hour?",
+      "a": "80 km/h equals 49.71 mph."
+    },
+    {
+      "q": "Is this kilometers per hour to miles per hour converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "lbs-to-kg": [
+    {
+      "q": "How do you convert pounds to kilograms?",
+      "a": "1 pound equals 0.453592 kilograms. To convert pounds to kilograms, divide by 2.20462 (or multiply by 0.453592)."
+    },
+    {
+      "q": "What is 1 pound in kilograms?",
+      "a": "1 pound equals 0.45 kg."
+    },
+    {
+      "q": "What is 100 lbs in kilograms?",
+      "a": "100 lbs equals 45.36 kg."
+    },
+    {
+      "q": "Is this pounds to kilograms converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "liters-to-gallons": [
+    {
+      "q": "How do you convert liters to gallons?",
+      "a": "1 liter equals 0.264172 US gallons. To convert liters to gallons, divide by 3.78541. (Based on the US liquid gallon.)"
+    },
+    {
+      "q": "What is 1 liter in gallons?",
+      "a": "1 liter equals 0.264 gal."
+    },
+    {
+      "q": "What is 40 L in gallons?",
+      "a": "40 L equals 10.567 gal."
+    },
+    {
+      "q": "Is this liters to gallons converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "loan-amortization-calculator": [
+    {
+      "q": "What is loan amortization?",
+      "a": "Amortization is the process of paying off a loan with fixed payments over time. Each payment covers interest first, then reduces the principal. Early payments are mostly interest; later payments are mostly principal."
+    },
+    {
+      "q": "How is an amortization schedule calculated?",
+      "a": "The monthly payment is fixed using the loan amount, interest rate, and term. Each month, interest = balance × (annual rate ÷ 12), and the rest of the payment reduces the balance. Repeat until the balance reaches zero."
+    },
+    {
+      "q": "Why is most of my early payment going to interest?",
+      "a": "Interest is charged on the outstanding balance, which is highest at the start. As you pay down principal, the interest portion shrinks and more of each payment goes toward the balance."
+    },
+    {
+      "q": "How can I pay off an amortized loan faster?",
+      "a": "Make extra principal payments. Any amount above the scheduled payment goes straight to principal, which lowers future interest and shortens the loan term — often by years."
+    }
+  ],
+  "lorem-ipsum-generator": [
+    {
+      "q": "What is Lorem Ipsum and why is it used?",
+      "a": "Lorem Ipsum is scrambled, meaningless placeholder text derived from classical Latin, used to fill layouts before real copy is ready. Designers use it because it lets you focus on visual layout, spacing, and typography without being distracted by readable content. It has been the industry standard dummy text for decades."
+    },
+    {
+      "q": "How much placeholder text can I generate?",
+      "a": "You can specify the exact number of paragraphs, sentences, or words you need. This lets you fill anything from a short caption to a full multi-paragraph article mockup. Generate as many times as you want until the length fits your design."
+    },
+    {
+      "q": "What text styles are available besides classic Lorem Ipsum?",
+      "a": "In addition to classic Lorem Ipsum, you can choose themed styles such as hipster ipsum and corporate ipsum for a different flavor of filler. These are handy when you want placeholder text that matches the tone of a project. The output is still meaningless, so it will not be mistaken for final copy."
+    },
+    {
+      "q": "Is it safe to publish Lorem Ipsum on a live site?",
+      "a": "Lorem Ipsum is only meant for mockups and prototypes, so you should always replace it with real content before going live. Accidentally shipping placeholder text can look unprofessional and confuse visitors. Search your site for the word lorem before launch to be sure none remains."
+    },
+    {
+      "q": "Is the generated text copyright-free?",
+      "a": "Yes, Lorem Ipsum is standard placeholder text and is free to use in your designs and documents. You can copy and paste it into any project without attribution."
+    }
+  ],
+  "macro-calculator": [
+    {
+      "q": "What are macros?",
+      "a": "Macros, short for macronutrients, are the three nutrients that supply calories: protein, carbohydrates, and fat. Protein and carbs each provide about 4 calories per gram, while fat provides about 9 calories per gram. Tracking macros lets you control not just how many calories you eat but how those calories are distributed."
+    },
+    {
+      "q": "How are my macro targets calculated?",
+      "a": "The calculator first estimates your daily calorie needs from your body stats and activity level, then adjusts for your goal (lose fat, maintain, or build muscle). Those calories are split into protein, carb, and fat targets, with protein typically set relative to body weight to support muscle. The result shows gram targets, a calorie breakdown, and per-meal splits."
+    },
+    {
+      "q": "What is a good macro split for weight loss?",
+      "a": "A common starting point for fat loss is higher protein with moderate carbs and fat, for example around 40% carbs, 30% protein, and 30% fat. Higher protein helps preserve muscle and supports satiety during a calorie deficit. The best split depends on your preferences and how your body responds, so adjust based on results."
+    },
+    {
+      "q": "How much protein do I need to build muscle?",
+      "a": "For muscle building, many guidelines suggest roughly 0.7 to 1 gram of protein per pound of body weight per day. Spreading that intake across several meals can help with muscle protein synthesis. The calculator sets a protein target in this range based on your stats and goal."
+    },
+    {
+      "q": "Do I have to hit my macros exactly every day?",
+      "a": "No, your macro targets are guidelines, not strict rules. Getting within about 5-10 grams of each target is generally close enough to see results. Consistency over weeks matters far more than precision on any single day."
+    }
+  ],
+  "meters-to-feet": [
+    {
+      "q": "How do you convert meters to feet?",
+      "a": "1 meter equals 3.28084 feet. To convert meters to feet, multiply by 3.28084 (or divide by 0.3048)."
+    },
+    {
+      "q": "What is 1 meter in feet?",
+      "a": "1 meter equals 3.281 ft."
+    },
+    {
+      "q": "What is 20 m in feet?",
+      "a": "20 m equals 65.617 ft."
+    },
+    {
+      "q": "Is this meters to feet converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "miles-to-km": [
+    {
+      "q": "How do you convert miles to kilometers?",
+      "a": "1 mile equals 1.609344 kilometers. To convert miles to kilometers, multiply by 1.60934."
+    },
+    {
+      "q": "What is 1 mile in kilometers?",
+      "a": "1 mile equals 1.609 km."
+    },
+    {
+      "q": "What is 13 mi in kilometers?",
+      "a": "13 mi equals 21.082 km."
+    },
+    {
+      "q": "Is this miles to kilometers converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "ml-to-cups": [
+    {
+      "q": "How do you convert milliliters to cups?",
+      "a": "1 milliliter equals 0.004227 US cups. To convert milliliters to cups, divide by 236.588. (Based on the US customary cup.)"
+    },
+    {
+      "q": "What is 1 milliliter in cups?",
+      "a": "1 milliliter equals 0.004 cups."
+    },
+    {
+      "q": "What is 250 ml in cups?",
+      "a": "250 ml equals 1.057 cups."
+    },
+    {
+      "q": "Is this milliliters to cups converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "mortgage-payment-calculator": [
+    {
+      "q": "What is a good mortgage interest rate?",
+      "a": "A good mortgage rate is typically 0.5-1% below the national average. As of 2026, rates between 6-7% are common for 30-year fixed mortgages. Your actual rate depends on credit score (740+ gets the best rates), down payment size, loan type, and market conditions."
+    },
+    {
+      "q": "How much house can I afford on a $100,000 salary?",
+      "a": "Using the 28/36 rule, your mortgage payment shouldn't exceed 28% of gross income. On $100,000/year, that's about $2,333/month for housing. At 6.5% interest with 20% down, this typically supports a home price of $350,000-$420,000 depending on taxes and insurance in your area."
+    },
+    {
+      "q": "Should I get a 15-year or 30-year mortgage?",
+      "a": "A 15-year mortgage has higher monthly payments but saves 50-60% in total interest and builds equity faster. Choose 15-year if you can comfortably afford the higher payment. Choose 30-year for lower monthly obligations and more cash flow flexibility — you can always make extra payments."
+    },
+    {
+      "q": "What is PMI and how do I avoid it?",
+      "a": "Private Mortgage Insurance (PMI) is required when your down payment is less than 20%. It typically costs 0.5-1.5% of the loan amount annually ($50-$150/month on a $200k loan). To avoid it: put 20% down, use a VA loan (no PMI required), or ask about lender-paid PMI options."
+    }
+  ],
+  "mph-to-kmh": [
+    {
+      "q": "How do you convert miles per hour to kilometers per hour?",
+      "a": "1 mph equals 1.60934 km/h. To convert miles per hour to kilometers per hour, multiply by 1.60934."
+    },
+    {
+      "q": "What is 1 mile per hour in kilometers per hour?",
+      "a": "1 mile per hour equals 1.61 km/h."
+    },
+    {
+      "q": "What is 55 mph in kilometers per hour?",
+      "a": "55 mph equals 88.51 km/h."
+    },
+    {
+      "q": "Is this miles per hour to kilometers per hour converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
+  "net-worth-calculator": [
+    {
+      "q": "How do you calculate net worth?",
+      "a": "Net worth = total assets − total liabilities. Add up everything you own (cash, investments, home, car, retirement accounts) and subtract everything you owe (mortgage, loans, credit card balances)."
+    },
+    {
+      "q": "What counts as an asset vs. a liability?",
+      "a": "Assets are things of value you own: bank balances, investments, retirement accounts, real estate, and vehicles. Liabilities are debts you owe: mortgages, auto and student loans, and credit card balances."
+    },
+    {
+      "q": "What is a good net worth?",
+      "a": "It depends on age and income. One common benchmark is the 'age × income ÷ 10' rule. More important than any single number is whether your net worth is growing year over year."
+    },
+    {
+      "q": "Can net worth be negative?",
+      "a": "Yes. If your debts exceed your assets — common early in life with student loans or a new mortgage — net worth is negative. Paying down debt and building savings moves it positive over time."
+    }
+  ],
+  "ounces-to-grams": [
+    {
+      "q": "How do you convert ounces to grams?",
+      "a": "1 ounce equals 28.3495 grams. To convert ounces to grams, multiply by 28.3495."
+    },
+    {
+      "q": "What is 1 ounce in grams?",
+      "a": "1 ounce equals 28.35 g."
+    },
+    {
+      "q": "What is 12 oz in grams?",
+      "a": "12 oz equals 340.19 g."
+    },
+    {
+      "q": "Is this ounces to grams converter free?",
+      "a": "Yes. CalcCrunch is 100% free with no sign-up required, and your conversion runs instantly in your browser."
+    }
+  ],
   "overtime-calculator": [
     {
       "q": "How is overtime pay calculated?",
@@ -737,6 +1231,788 @@
     {
       "q": "What is $20 an hour at time and a half?",
       "a": "$30 per hour. Multiply $20 by 1.5 to get the overtime rate."
+    }
+  ],
+  "passphrase-generator": [
+    {
+      "q": "Is this passphrase generator safe to use?",
+      "a": "Yes. Passphrases are generated entirely in your browser using your device's cryptographically secure random number generator (crypto.getRandomValues), and nothing is sent to a server. Because generation happens client-side, your passphrase is never transmitted, logged, or stored. For maximum safety, generate on a trusted device and save the result in a password manager."
+    },
+    {
+      "q": "What makes a strong passphrase?",
+      "a": "Use at least four truly random words, which gives roughly 44 or more bits of entropy from a standard word list and is far easier to remember than a random password. Adding a number or symbol and capitalizing a word increases strength against dictionary attacks. Crucially, the words must be random, not a famous quote or a meaningful phrase you invented."
+    },
+    {
+      "q": "Are passphrases more secure than passwords?",
+      "a": "Length matters most for resisting brute-force attacks, and passphrases tend to be much longer while staying memorable, so a 4-to-6 word passphrase can match or exceed a typical complex password. They are also faster to type and produce fewer errors than random symbols. For accounts where you cannot use a password manager, a random passphrase is an excellent choice."
+    },
+    {
+      "q": "How many words should my passphrase have?",
+      "a": "Four words is a solid minimum for most accounts, and five to six words is recommended for high-value accounts like email, banking, or your password manager's master password. You can adjust the word count from three to eight in the tool. Longer is stronger, so choose the most words you can comfortably remember."
+    },
+    {
+      "q": "What is diceware and how does it relate to this tool?",
+      "a": "Diceware is a method of building passphrases by selecting random words from a list, traditionally using physical dice for true randomness. This generator follows the same principle but uses your browser's secure random generator to pick the words automatically. You get diceware-style strength without rolling dice by hand."
+    }
+  ],
+  "password-generator": [
+    {
+      "q": "Is this password generator safe?",
+      "a": "Yes. Passwords are created entirely in your browser using the cryptographically secure crypto.getRandomValues method, and they are never sent to, stored on, or transmitted to any server. Because generation is client-side, no one but you ever sees the password. For best results, generate on a trusted device and store the result in a password manager."
+    },
+    {
+      "q": "What is a strong password?",
+      "a": "A strong password is at least 16 characters long and mixes uppercase, lowercase, numbers, and symbols, with no personal information or predictable patterns like 123456. Length is the single most important factor for resisting brute-force attacks, so longer is always better. This tool defaults to 16 characters with all character types enabled to give you a strong result out of the box."
+    },
+    {
+      "q": "How long should my password be?",
+      "a": "Use at least 16 characters for everyday accounts, and 20 or more for high-value accounts such as email, banking, or a password manager master password. You can set any length from 4 up to 128 characters with the slider. Since you are using a generator and a password manager, there is no reason to keep passwords short."
+    },
+    {
+      "q": "Can I exclude ambiguous or similar characters?",
+      "a": "Yes. Advanced options let you exclude ambiguous characters like 0, O, l, 1, and I, exclude similar-looking characters, remove brackets, or block specific custom characters. This makes passwords easier to read and type when you must enter them manually. You can also require the password to start with a letter or avoid sequential and repeated characters."
+    },
+    {
+      "q": "Should I reuse the same password across accounts?",
+      "a": "No. Reusing passwords means a breach on one site can compromise all your other accounts through credential stuffing. Generate a unique password for every account and store them in a password manager so you do not have to remember each one. Also enable two-factor authentication wherever it is offered."
+    }
+  ],
+  "paycheck-calculator": [
+    {
+      "q": "How is my take-home pay calculated?",
+      "a": "Take-home pay is your gross pay minus federal and state income tax withholding, Social Security (6.2%), Medicare (1.45%), and any pre-tax deductions like 401(k) and health insurance."
+    },
+    {
+      "q": "What's the difference between gross and net pay?",
+      "a": "Gross pay is your salary before any deductions. Net pay (take-home) is what lands in your bank account after taxes and deductions are withheld."
+    },
+    {
+      "q": "How much of my paycheck goes to taxes?",
+      "a": "It varies by income and location, but FICA alone takes 7.65% (Social Security + Medicare). Add federal and state income tax, and total withholding often ranges from about 15% to 35%."
+    },
+    {
+      "q": "How can I increase my take-home pay?",
+      "a": "Adjust your W-4 withholding to match your actual tax liability, and review pre-tax deductions. Note that pre-tax 401(k) or HSA contributions lower taxable income, reducing tax even as they build savings."
+    }
+  ],
+  "percentage-calculator": [
+    {
+      "q": "How do you calculate a percentage of a number?",
+      "a": "Multiply the number by the percentage as a decimal. 20% of 150 is 150 × 0.20 = 30. To find what percent one number is of another, divide and multiply by 100."
+    },
+    {
+      "q": "How do I calculate percentage increase or decrease?",
+      "a": "Percent change = (new − old) ÷ old × 100. If a price rises from $80 to $100, that's (100 − 80) ÷ 80 × 100 = 25% increase."
+    },
+    {
+      "q": "What is X as a percentage of Y?",
+      "a": "Divide X by Y and multiply by 100. For example, 45 out of 60 is 45 ÷ 60 × 100 = 75%."
+    },
+    {
+      "q": "How do I add or subtract a percentage from a number?",
+      "a": "To add 15% to 200: 200 × 1.15 = 230. To subtract 15%: 200 × 0.85 = 170. Multiply by (1 + rate) to add or (1 − rate) to subtract."
+    }
+  ],
+  "pet-name-generator": [
+    {
+      "q": "What types of pets does the generator cover?",
+      "a": "You can find names for dogs, cats, birds, fish, hamsters, and other common pets. Filter by personality traits like playful, regal, fierce, or cute, and by themes such as food, human, or nature names. Generate as many ideas as you want until one feels right."
+    },
+    {
+      "q": "How do I choose a good pet name?",
+      "a": "Pick a name that is short enough to call out easily, usually one or two syllables, and that sounds clearly different from common commands like sit or stay. Try saying it out loud a few times and see how your pet responds. Names that match your pet's personality or appearance tend to stick best."
+    },
+    {
+      "q": "Can I filter pet names by personality or theme?",
+      "a": "Yes, you can narrow results by personality traits and themes, plus name length, to match your pet's character. For example, choose regal for an elegant cat or playful for an energetic puppy. This helps you get suggestions that feel tailored rather than random."
+    },
+    {
+      "q": "Are there names for both male and female pets?",
+      "a": "Yes, the generator produces names suitable for any pet, and many ideas work well regardless of gender. You can keep generating to see a wide range of masculine, feminine, and gender-neutral options. Pick whichever fits your new companion."
+    },
+    {
+      "q": "Is the pet name generator free?",
+      "a": "Yes, it is completely free with no sign-up, and you can generate unlimited pet name ideas. Nothing you enter is saved, so you can browse names privately."
+    }
+  ],
+  "pin-generator": [
+    {
+      "q": "Is this PIN generator secure?",
+      "a": "Yes. PINs are generated in your browser using the cryptographically secure crypto.getRandomValues method, and they are never sent to or stored on any server. Because generation happens client-side, your PIN stays private to your device. By default the tool also avoids weak patterns to give you a stronger result."
+    },
+    {
+      "q": "What makes a PIN weak, and how does the tool avoid it?",
+      "a": "Weak PINs include sequential digits (1234), repeated digits (1111), and the most commonly used codes that attackers try first. This generator can automatically block sequential and repeated digits, the top 50 most common PINs, and optionally birth-year patterns like 19xx or 20xx. Keeping these filters on ensures your PIN avoids easily guessed patterns."
+    },
+    {
+      "q": "How many digits should a secure PIN have?",
+      "a": "A 6-digit PIN is far more secure than a 4-digit one because it has 100 times more possible combinations, and 8-digit PINs are stronger still. Use the longest PIN your card, device, or system allows. You can choose 4, 6, 8, or a custom length from 3 to 12 digits in the tool."
+    },
+    {
+      "q": "Can I generate multiple PINs at once?",
+      "a": "Yes, you can generate up to 20 PINs at a time, which is handy when you need different codes for several cards, devices, or accounts. Each PIN can be copied individually with one click. The security filters apply to every PIN in the batch."
+    },
+    {
+      "q": "Should I use the same PIN for everything?",
+      "a": "No. Reusing one PIN means a single compromise puts all your cards and devices at risk. Generate a separate PIN for each account or device, and never use birth dates, anniversaries, or address numbers. Avoid writing your PIN on your card or storing it in your wallet."
+    }
+  ],
+  "pregnancy-calculator": [
+    {
+      "q": "How is a pregnancy due date calculated?",
+      "a": "The most common method, Naegele's rule, adds 280 days (40 weeks) to the first day of your last menstrual period (LMP). This calculator can also estimate your due date from a known conception date, an IVF transfer date, or an early ultrasound. Remember that a due date is an estimate, and only about 1 in 20 babies arrive on the exact date."
+    },
+    {
+      "q": "How many weeks pregnant am I?",
+      "a": "Pregnancy is usually counted in weeks from the first day of your last menstrual period, not from conception, which makes the dating about two weeks ahead of actual fertilization. Once you enter your dates, the calculator shows your current gestational week and trimester. An early ultrasound is often used to confirm or adjust this dating."
+    },
+    {
+      "q": "What are the three trimesters of pregnancy?",
+      "a": "Pregnancy is divided into three trimesters: the first runs from week 1 through week 12, the second from week 13 through week 27, and the third from week 28 through birth. Each trimester is associated with different stages of fetal development and different symptoms. The calculator identifies your current trimester based on your week."
+    },
+    {
+      "q": "How does cycle length affect the due date?",
+      "a": "Naegele's rule assumes a 28-day cycle with ovulation around day 14. If your cycle is longer or shorter, ovulation and conception shift, which can move your due date by a few days. Entering your average cycle length helps the calculator adjust the estimate accordingly."
+    },
+    {
+      "q": "Should I rely on this calculator for medical decisions?",
+      "a": "This tool gives a helpful estimate of your due date and milestones, but it is not a substitute for medical care. Your due date may be adjusted based on ultrasounds and clinical findings. Always confirm dates and any health concerns with your doctor or midwife."
+    }
+  ],
+  "profit-margin-calculator": [
+    {
+      "q": "How do you calculate profit margin?",
+      "a": "Profit margin is profit divided by revenue, expressed as a percentage. Gross margin uses revenue minus cost of goods sold, while net margin subtracts all expenses, interest, depreciation, and taxes. For example, $40,000 gross profit on $100,000 revenue is a 40% gross margin."
+    },
+    {
+      "q": "What is the difference between margin and markup?",
+      "a": "Margin is profit as a percentage of the selling price, while markup is profit as a percentage of cost. A product costing $60 sold for $100 has a 40% margin but a 67% markup. Confusing the two leads to underpricing, so this calculator shows both side by side."
+    },
+    {
+      "q": "What is a good profit margin?",
+      "a": "A good margin varies widely by industry; retail often runs thin single-digit net margins while software can exceed 30%. Generally a 10% net margin is considered average and 20% or higher is strong, but compare against peers in your sector. Use the calculator to see your gross, operating, and net margins together."
+    },
+    {
+      "q": "What is the difference between gross and net profit?",
+      "a": "Gross profit is revenue minus the direct cost of goods sold, showing how profitable your products are before overhead. Net profit subtracts operating expenses, interest, depreciation, and taxes, showing what actually reaches the bottom line. A healthy gross margin can still produce low net profit if overhead is high."
+    },
+    {
+      "q": "How can I improve my profit margin?",
+      "a": "Raise margins by increasing prices, lowering cost of goods sold through better sourcing, cutting operating expenses, or shifting sales toward higher-margin products. Even a small price increase can meaningfully lift net margin because it flows straight to profit. Test scenarios in the calculator to see which lever helps most."
+    }
+  ],
+  "pto-calculator": [
+    {
+      "q": "How is PTO accrual calculated?",
+      "a": "Your balance grows by an accrual rate applied each period: per pay period, monthly, annually frontloaded, or per hours worked. For example, accruing 4.62 hours per biweekly pay period over 26 periods adds about 120 hours of PTO per year. The calculator multiplies your rate by the number of periods between now and your target date and adds your current balance."
+    },
+    {
+      "q": "How do I find my hourly PTO accrual rate?",
+      "a": "Divide your annual PTO hours by the hours you work in a year. For example, 120 PTO hours divided by 2,080 work hours (40 hours x 52 weeks) is about 0.0577 hours of PTO earned per hour worked. The calculator supports this hourly method directly when you select Per Hours Worked accrual."
+    },
+    {
+      "q": "What will my PTO balance be on a future date?",
+      "a": "In Future Balance mode, the calculator projects your balance by adding accrued time between today and the date you enter to your current balance. It accounts for your accrual type, frequency, and any maximum balance cap. This helps you confirm you will have enough hours banked before booking a vacation."
+    },
+    {
+      "q": "How much is my PTO worth in dollars?",
+      "a": "Switch to PTO Value mode and the calculator multiplies your PTO hours by your hourly pay rate to estimate its monetary value. For example, 80 hours at $30 per hour is worth $2,400. This is useful for understanding payout value at termination or the cost of unused time off."
+    },
+    {
+      "q": "Does the calculator handle a maximum PTO balance cap?",
+      "a": "Yes, you can enter a maximum balance and the projection will not exceed that cap, reflecting use-it-or-lose-it or accrual-ceiling policies common at many employers. Once you hit the cap, further accrual stops until you use some time. Enter your company's cap to keep projections realistic."
+    }
+  ],
+  "qr-code-generator": [
+    {
+      "q": "What types of QR codes can I create?",
+      "a": "You can generate QR codes for URLs, plain text, WiFi network logins, email addresses, phone numbers, and SMS messages. Just select the content type and fill in the relevant fields. The tool formats the data correctly so scanners recognize the action automatically."
+    },
+    {
+      "q": "How do I make a WiFi QR code?",
+      "a": "Choose the WiFi content type, enter your network name (SSID) and password, and select the encryption type such as WPA/WPA2. When someone scans the resulting code with their phone camera, they can join your network without typing the password. This is ideal for guests, cafes, and offices."
+    },
+    {
+      "q": "Can I download the QR code, and in what format?",
+      "a": "Yes, you can download the QR code as a PNG image or copy it as SVG for crisp scaling in print and design. PNG is best for quick use online or in documents, while SVG stays sharp at any size. You can also adjust the size before downloading."
+    },
+    {
+      "q": "What is error correction level and which should I choose?",
+      "a": "Error correction adds redundancy so a code still scans even if part of it is dirty, damaged, or covered by a logo. Higher levels tolerate more damage but make the code denser. A medium level works for most uses; choose a higher level if the code will be printed small or placed in a rough environment."
+    },
+    {
+      "q": "Do the generated QR codes expire?",
+      "a": "No. These are static QR codes that encode your content directly, so they never expire and do not rely on any third-party service. As long as the destination they point to (such as a URL) stays active, the code will keep working. There is no tracking or redirect involved."
+    }
+  ],
+  "random-number-generator": [
+    {
+      "q": "How do I generate random numbers in a specific range?",
+      "a": "Enter your minimum and maximum values, or use a quick-range preset like 1-100 or dice (1-6), then set how many numbers you want and click Generate. The results fall within your chosen range, inclusive of both endpoints. You can copy the results or share your settings via the URL."
+    },
+    {
+      "q": "Can I generate numbers without duplicates?",
+      "a": "Yes, uncheck the Allow Duplicates option to ensure every generated number is unique, which is ideal for raffles, lotteries, and drawing winners. Note that the range must be large enough to supply the quantity you request. With duplicates allowed, the same number can appear more than once."
+    },
+    {
+      "q": "What number types can the generator produce?",
+      "a": "Beyond any number, you can restrict results to integers, odd, even, prime, perfect squares, perfect cubes, Fibonacci numbers, or numbers divisible by a value you choose. You can also set decimal places for non-integer results. This makes the tool useful for math practice, simulations, and games."
+    },
+    {
+      "q": "Is this random number generator truly random?",
+      "a": "It produces high-quality pseudo-random numbers in your browser that are well suited for games, raffles, sampling, and everyday decision-making. For casual and most statistical uses this is more than sufficient. For cryptographic purposes, use a dedicated secure tool such as our password or passphrase generator."
+    },
+    {
+      "q": "Can I generate multiple numbers and sort them?",
+      "a": "Yes, you can generate up to 1000 numbers at once and optionally sort the results in ascending or descending order. You can also enable statistics to see a quick analysis of the output. Excluded numbers and a custom step interval are available under advanced options."
+    }
+  ],
+  "recipe-scaler-converter": [
+    {
+      "q": "How do I scale a recipe to a different number of servings?",
+      "a": "Multiply each ingredient amount by a scaling factor equal to desired servings divided by original servings. For example, doubling a 4-serving recipe to 8 uses a factor of 8 / 4 = 2, so every quantity doubles. Enter both serving counts and the calculator scales each ingredient for you."
+    },
+    {
+      "q": "Can I convert between cups, tablespoons, and milliliters?",
+      "a": "Yes, the converter handles US volume units (tsp, tbsp, fluid ounce, cup, pint, quart, gallon) and metric units (ml, liter), plus weight units like ounces, pounds, grams, and kilograms. Choose an amount, a From unit, and a To unit to get the converted measurement. Note that volume-to-weight conversions depend on the ingredient's density."
+    },
+    {
+      "q": "How do I convert oven temperatures between Fahrenheit and Celsius?",
+      "a": "To convert Fahrenheit to Celsius, subtract 32 and multiply by 5/9; to go the other way, multiply Celsius by 9/5 and add 32. For example, 350 degrees F equals (350 - 32) x 5/9 = about 177 degrees C. The tool includes temperature conversion so you can follow international recipes accurately."
+    },
+    {
+      "q": "Why can't I directly convert cups to grams?",
+      "a": "Cups measure volume while grams measure weight, and the relationship changes by ingredient because flour, sugar, and water all have different densities. A cup of flour weighs much less than a cup of honey, so a single conversion factor would be wrong. For accuracy, use a weight scale or an ingredient-specific reference when baking."
+    },
+    {
+      "q": "Does scaling affect cooking times?",
+      "a": "Scaling ingredient quantities does not proportionally change cooking time, though larger batches may need somewhat longer and a different pan size. Temperatures usually stay the same, but check for doneness rather than relying solely on the original time. Use judgment, especially when significantly increasing a recipe."
+    }
+  ],
+  "refinance-calculator": [
+    {
+      "q": "When does it make sense to refinance my mortgage?",
+      "a": "Refinancing often makes sense when you can lower your interest rate enough to recover the closing costs within a few years and you plan to stay in the home past that break-even point. Shortening the term or switching from an adjustable to a fixed rate are other common reasons. This calculator compares your current and new loans to show whether it pays off."
+    },
+    {
+      "q": "What is the refinance break-even point?",
+      "a": "The break-even point is how many months it takes for your monthly payment savings to cover the upfront closing costs and points. If closing costs are $5,000 and you save $200 a month, you break even in 25 months. If you will sell or refinance again before then, the refinance may not be worth it."
+    },
+    {
+      "q": "What are points and closing costs?",
+      "a": "Closing costs are the fees to originate the new loan, such as appraisal, title, and lender charges, often a few thousand dollars. Points are optional upfront fees, each typically 1 percent of the loan, paid to buy down your interest rate. Both add to the cost you must recover through monthly savings."
+    },
+    {
+      "q": "Will refinancing actually save me money overall?",
+      "a": "It depends on the rate drop, the new term, and how long you keep the loan. A lower rate cuts monthly payments, but stretching back out to a 30-year term can increase total interest even with a lower rate. The calculator shows both monthly savings and lifetime interest so you see the full picture."
+    },
+    {
+      "q": "Does refinancing reset my loan term?",
+      "a": "Yes, refinancing replaces your existing loan with a new one whose term you choose, which can restart the clock. If you are 5 years into a 30-year mortgage and refinance into a new 30-year loan, you extend total repayment. Choosing a shorter new term keeps you on track to pay off sooner."
+    }
+  ],
+  "rent-vs-buy-calculator": [
+    {
+      "q": "Is it better to rent or buy a home?",
+      "a": "It depends on how long you'll stay, local prices, mortgage rates, and what you could earn by investing your down payment instead. Buying usually wins the longer you stay, since upfront costs spread out and equity builds, while renting can win over short horizons or in expensive markets. This calculator compares the full cost of each path, including the opportunity cost of your cash."
+    },
+    {
+      "q": "What is the breakeven point for buying vs renting?",
+      "a": "The breakeven is the number of years you must own before buying becomes cheaper than renting overall. It commonly falls somewhere around 5 to 7 years, but high closing costs, high rates, or fast-rising rents can shift it. The calculator pinpoints the breakeven based on your specific inputs."
+    },
+    {
+      "q": "What costs of buying do people forget to include?",
+      "a": "Beyond the mortgage, owners pay property taxes, homeowners insurance, HOA dues, and ongoing maintenance often estimated at about 1% of the home's value per year. There are also closing costs to buy and selling costs later. This calculator includes these so the comparison reflects true cost, not just the monthly payment."
+    },
+    {
+      "q": "What is opportunity cost in the rent vs buy decision?",
+      "a": "If you buy, your down payment and extra ownership costs are tied up in the home instead of invested elsewhere. Opportunity cost estimates what that money could have earned in the market, typically modeled around 6% to 7% per year. Including it gives renters fair credit for investing the cash they didn't spend on a down payment."
+    },
+    {
+      "q": "Does buying always build wealth?",
+      "a": "Not automatically. Home equity grows through appreciation and paying down the loan, but transaction costs, maintenance, and interest can offset gains, especially if you sell within a few years. A renter who diligently invests the difference can come out ahead in some scenarios, which is exactly what this tool helps you test."
+    }
+  ],
+  "rental-property-calculator": [
+    {
+      "q": "How do I know if a rental property is a good investment?",
+      "a": "Look at cash flow, cap rate, and cash-on-cash return together rather than any single number. Positive monthly cash flow after all expenses, a cap rate that beats safer alternatives, and a cash-on-cash return that compensates for the risk and effort are good signs. This calculator computes all three so you can evaluate a deal quickly."
+    },
+    {
+      "q": "What is cap rate and what is a good one?",
+      "a": "Cap rate is annual net operating income divided by the purchase price, ignoring financing. Investors often look for cap rates in the 5% to 10% range depending on the market and property type, with higher cap rates reflecting more risk or less desirable locations. The calculator derives cap rate from your income and expense inputs."
+    },
+    {
+      "q": "What is cash-on-cash return?",
+      "a": "Cash-on-cash return is your annual pre-tax cash flow divided by the actual cash you invested (down payment plus closing and renovation costs). It measures the return on the money you put in, accounting for leverage from your mortgage. Many investors target cash-on-cash returns of around 8% or higher."
+    },
+    {
+      "q": "What vacancy rate and expenses should I budget for?",
+      "a": "A common vacancy assumption is 5% to 10% of rent depending on your market. Operating expenses including taxes, insurance, maintenance, and management often consume 35% to 50% of rent (the basis of the 50% rule). Budgeting realistically here is what separates accurate projections from overly optimistic ones."
+    },
+    {
+      "q": "Should I include property management costs?",
+      "a": "Yes, even if you self-manage, because it reflects the true cost and effort of the property. Professional management typically runs about 8% to 12% of collected rent. Including it gives you a more honest cash flow figure and the option to scale or hand off the property later."
+    }
+  ],
+  "retirement-income-calculator": [
+    {
+      "q": "How long will my retirement savings last?",
+      "a": "It depends on your withdrawal amount, investment return, and inflation. As a rule of thumb, withdrawing about 4% of your starting balance each year (adjusted for inflation) has historically lasted 30 years or more. This calculator models your specific savings, withdrawals, and returns to show the year your money could run out."
+    },
+    {
+      "q": "What is the 4% rule?",
+      "a": "The 4% rule suggests withdrawing 4% of your portfolio in the first year of retirement, then adjusting that dollar amount for inflation each year. It was designed to give a high chance of lasting 30 years with a balanced stock and bond portfolio. Some planners now use 3.5% for added safety in long retirements."
+    },
+    {
+      "q": "How much do I need to retire?",
+      "a": "A quick estimate is 25 times your desired annual withdrawal, which corresponds to the 4% rule. For $60,000 a year of portfolio income, that's about $1.5 million, before counting Social Security or pensions. Enter your numbers to see whether your savings support your target withdrawal."
+    },
+    {
+      "q": "Why does inflation matter in retirement planning?",
+      "a": "Inflation steadily raises your cost of living, so a fixed income buys less each year. Over a 25 to 30 year retirement, even 3% inflation can roughly double your annual expenses. Including an inflation rate makes the projection realistic by increasing your withdrawals over time."
+    },
+    {
+      "q": "What return should I assume during retirement?",
+      "a": "Retirees often hold more conservative portfolios, so modeled returns are commonly in the 4% to 6% range depending on stock allocation. A lower assumed return makes the plan more cautious. Testing a few return scenarios shows how sensitive your money's longevity is to market performance."
+    }
+  ],
+  "retirement-planning-calculator": [
+    {
+      "q": "How much money do I need to retire?",
+      "a": "The common guideline is 25x your annual expenses (the 4% rule). If you spend $50,000/year, you need $1.25 million. If you spend $80,000/year, you need $2 million. This assumes a 4% safe withdrawal rate and a portfolio lasting 30+ years. Adjust upward for early retirement or conservative estimates."
+    },
+    {
+      "q": "At what age can I retire?",
+      "a": "You can retire when your investments generate enough income to cover expenses. Social Security starts at 62 (reduced) or 67 (full). To retire earlier, you need more savings. The FIRE movement targets 50-55 by saving 50-70% of income. Most financial advisors suggest having 10-12x your salary saved by age 67."
+    },
+    {
+      "q": "How much should I save for retirement each month?",
+      "a": "Save at least 15% of gross income for retirement (including employer match). Starting at 25, that's roughly $375/month on a $60,000 salary. Starting at 35, you need $750/month to catch up. Starting at 45, you'd need $1,500+/month. The earlier you start, the less you need to save monthly due to compound growth."
+    }
+  ],
+  "roi-calculator": [
+    {
+      "q": "How do you calculate ROI?",
+      "a": "Return on investment is the net gain divided by the cost of the investment, expressed as a percentage. If you invest $10,000 and it grows to $15,000, your $5,000 gain is a 50% ROI. The calculator also factors in additional costs and recurring income for a complete return figure."
+    },
+    {
+      "q": "What is a good ROI?",
+      "a": "A good ROI depends on the investment type and risk; broad stock market returns have historically averaged around 7 to 10% per year, while business projects often target higher returns to justify the risk. Compare your ROI against a risk-free rate and inflation to judge whether it is worthwhile. Higher-risk investments should deliver higher ROI to compensate."
+    },
+    {
+      "q": "What is payback period?",
+      "a": "The payback period is how long it takes for an investment's returns to recoup its initial cost. A shorter payback period means you recover your money faster and carry less risk. This calculator reports the payback period alongside the percentage return so you can weigh both."
+    },
+    {
+      "q": "How is marketing campaign ROI different?",
+      "a": "Marketing ROI compares the revenue generated by a campaign to its cost, often using leads, conversion rate, and customer lifetime value rather than a single resale figure. For example, 100 leads at a 5% conversion rate and $500 lifetime value produces $2,500 in revenue. The calculator's Marketing mode uses these metrics to estimate campaign return."
+    },
+    {
+      "q": "Should ROI account for time and inflation?",
+      "a": "Yes, comparing ROI over different time periods can mislead, so it helps to annualize returns and compare against inflation and a risk-free rate. A 20% return over five years is far weaker than 20% in one year. Entering the time period and inflation rate lets the calculator put your return in real, comparable terms."
+    }
+  ],
+  "salary-to-hourly-calculator": [
+    {
+      "q": "How do I convert my salary to an hourly rate?",
+      "a": "Divide your annual salary by the number of hours you work in a year. Hourly rate = salary ÷ (hours per week × weeks per year). At 40 hours/week and 52 weeks, that's salary ÷ 2,080."
+    },
+    {
+      "q": "What is $60,000 a year per hour?",
+      "a": "About $28.85 per hour, based on a 40-hour week and 52 weeks ($60,000 ÷ 2,080 = $28.85)."
+    },
+    {
+      "q": "How many work hours are in a year?",
+      "a": "A standard full-time year is about 2,080 hours (40 hours × 52 weeks). If you take unpaid time off, use fewer weeks to get a more accurate hourly rate."
+    },
+    {
+      "q": "Is the hourly rate before or after taxes?",
+      "a": "It's your gross (pre-tax) hourly rate. Your take-home rate will be lower after income tax, Social Security, Medicare, and other deductions."
+    }
+  ],
+  "sales-commission-calculator": [
+    {
+      "q": "How is sales commission calculated?",
+      "a": "Commission can be a percentage of each sale, a flat amount per deal, or tiered rates that rise as you sell more. A 10% rate on $25,000 in sales pays $2,500, plus any base salary, bonuses, or quota accelerators. This calculator supports percentage, flat, and tiered structures so your earnings match your real comp plan."
+    },
+    {
+      "q": "What is a tiered commission structure?",
+      "a": "A tiered structure pays a higher commission rate as your sales pass set thresholds, rewarding top performers. For example, you might earn 8% up to $50,000 in sales and 12% on everything above that. Tiered plans motivate reps to exceed quota, and you can enter each tier to see your total payout."
+    },
+    {
+      "q": "What is a quota accelerator?",
+      "a": "A quota accelerator boosts your commission rate once you exceed your sales quota, so sales beyond target earn more per dollar. If your quota is $50,000 and you hit $70,000, the extra $20,000 may be paid at an accelerated rate plus a quota bonus. Enter your quota, bonus, and accelerator rate to model this."
+    },
+    {
+      "q": "How does base salary plus commission work?",
+      "a": "Many sales roles combine a fixed base salary with variable commission, giving income stability plus upside. Your total pay is the base for the period plus all commissions, bonuses, and spiffs you earn. Enter your base salary and time period so the calculator shows your full expected earnings."
+    },
+    {
+      "q": "What are SPIFFs and referral bonuses?",
+      "a": "A SPIFF is a short-term sales incentive, an extra cash bonus for selling a specific product or hitting a quick target. A referral bonus rewards you for bringing in new leads or customers. Both add on top of regular commission, and you can include them as additional bonuses in your earnings total."
+    }
+  ],
+  "sales-tax-calculator": [
+    {
+      "q": "How do you calculate sales tax?",
+      "a": "Multiply the price by the tax rate as a decimal. Sales tax = Price × (Rate ÷ 100). For a $100 item at 7.25%, the tax is $7.25 and the total is $107.25."
+    },
+    {
+      "q": "How do I find the price before tax (reverse sales tax)?",
+      "a": "Divide the total by 1 plus the tax rate as a decimal: Pre-tax price = Total ÷ (1 + Rate ÷ 100). A $107.25 total at 7.25% works out to $100.00 before tax. Use the calculator's 'Remove tax' mode to do this automatically."
+    },
+    {
+      "q": "Which states have no sales tax?",
+      "a": "Five states have no statewide sales tax: Alaska, Delaware, Montana, New Hampshire, and Oregon. Note that some Alaska localities still charge a local sales tax."
+    },
+    {
+      "q": "Is the sales tax rate the same everywhere in a state?",
+      "a": "No. The state sets a base rate, but counties and cities often add their own sales tax. The combined rate at checkout can be several percent higher than the state base rate, so confirm the rate for your exact location."
+    },
+    {
+      "q": "What is the highest combined sales tax in the US?",
+      "a": "Combined state-plus-local rates can exceed 10% in parts of states like Louisiana, Tennessee, Arkansas, and Washington. California has the highest state base rate at 7.25%."
+    }
+  ],
+  "savings-goal-calculator": [
+    {
+      "q": "How do I calculate how much to save each month?",
+      "a": "Divide your goal by the number of months you have, then adjust for interest. For a $12,000 goal in 24 months, you'd need about $500/month before interest — less if your savings earn a return."
+    },
+    {
+      "q": "How does interest affect my savings goal?",
+      "a": "Interest helps your money grow, so you need to contribute slightly less to reach the same goal. The higher the rate and the longer the timeframe, the bigger the boost from compounding."
+    },
+    {
+      "q": "Should I save in a high-yield savings account?",
+      "a": "For short-term goals, yes — a high-yield savings account or money-market account earns more than a standard account while keeping your money safe and accessible."
+    },
+    {
+      "q": "What if I can't hit my monthly savings target?",
+      "a": "Extend your timeline, lower the goal amount, or increase income. Automating transfers on payday makes consistent saving far more likely than relying on willpower."
+    }
+  ],
+  "self-employment-tax-calculator": [
+    {
+      "q": "What is self-employment tax?",
+      "a": "Self-employment tax covers your Social Security and Medicare contributions, since no employer withholds them for you. The combined rate is 15.3% on net self-employment earnings, made up of 12.4% Social Security up to an annual wage cap and 2.9% Medicare with no cap. You can deduct half of this tax when figuring your income tax."
+    },
+    {
+      "q": "How do I calculate quarterly estimated taxes?",
+      "a": "Estimate your annual self-employment tax plus federal and state income tax on your net business income, then divide the total into four quarterly payments. This calculator uses your gross income, expenses, filing status, and state to estimate each quarterly payment. Quarterly due dates generally fall in April, June, September, and the following January."
+    },
+    {
+      "q": "What is the safe harbor rule for estimated taxes?",
+      "a": "The safe harbor rule helps you avoid an underpayment penalty if you pay either 90% of the current year's tax or 100% of last year's tax, rising to 110% for higher incomes. Meeting safe harbor protects you even if you end up owing more at filing. This calculator shows safe harbor amounts so you can target a penalty-free payment."
+    },
+    {
+      "q": "Can I lower my self-employment tax?",
+      "a": "You lower it by deducting all legitimate business expenses, since SE tax applies to net profit, not gross revenue. Contributing to a retirement plan like a SEP-IRA or Solo 401(k) reduces income tax, and some owners elect S-corp status to reduce the portion subject to SE tax. Track expenses carefully and enter them to see the effect."
+    },
+    {
+      "q": "Do I owe self-employment tax on a side gig?",
+      "a": "Yes, if your net self-employment earnings are $400 or more for the year, you generally owe SE tax even on a part-time side gig or 1099 work. This applies on top of any regular job's withholding. Use the calculator to estimate what your side income adds to your tax bill."
+    }
+  ],
+  "size-converter": [
+    {
+      "q": "How do I convert clothing sizes between US, UK, and EU?",
+      "a": "Select the garment category, choose the system you know (US, UK, or EU), and pick your size; the converter shows the equivalent in other systems. Sizing differs by country and brand, so the result is based on standard conversion charts. For example, a US women's size often runs several numbers lower than its EU equivalent."
+    },
+    {
+      "q": "How do shoe sizes convert across countries?",
+      "a": "US, UK, and EU shoe sizes use different scales, with EU sizes based on the Paris point (foot length) and US/UK based on inches. Generally US sizes run about 1 to 1.5 numbers higher than UK, and EU sizes are substantially higher numbers. Select the footwear category and your size to see the equivalents."
+    },
+    {
+      "q": "Can I find my size from body measurements?",
+      "a": "Yes, switch to Find Size by Measurements mode and enter measurements like bust, waist, hips, or foot length. The converter matches your measurements to the appropriate size in each system. This is helpful when shopping a brand whose numbered sizing you do not already know."
+    },
+    {
+      "q": "Why do sizes vary so much between brands?",
+      "a": "There is no enforced universal standard, so each brand sets its own fit, a phenomenon often called vanity sizing. Cut, country of origin, and target customer all affect how a labeled size actually fits. Use this converter as a starting point and check each retailer's specific size chart when possible."
+    },
+    {
+      "q": "Does this converter handle accessories like rings and bras?",
+      "a": "Yes, it includes categories for ring sizes and bra sizes in addition to clothing and footwear. Ring sizing converts between US numeric, UK letter, and EU circumference systems, while bra sizing converts band and cup measurements. Select the accessory category to convert those sizes."
+    }
+  ],
+  "sleep-calculator": [
+    {
+      "q": "How does the sleep cycle calculator work?",
+      "a": "Sleep happens in cycles of roughly 90 minutes, moving through light, deep, and REM stages. Waking at the end of a cycle, rather than in the middle of deep sleep, tends to leave you feeling more refreshed. This calculator works backward or forward in 90-minute increments from your wake or bedtime to suggest ideal times."
+    },
+    {
+      "q": "What time should I go to bed to wake up at a certain hour?",
+      "a": "Enter your desired wake-up time and the calculator counts back in 90-minute cycles to suggest bedtimes that let you complete full cycles. It also accounts for the time it takes you to fall asleep, which averages around 15 minutes. Most adults feel best with five to six complete cycles, or about 7.5 to 9 hours of sleep."
+    },
+    {
+      "q": "How much sleep do I need by age?",
+      "a": "Sleep needs change across the lifespan. Per CDC and NIH guidance, adults generally need 7 or more hours, teenagers about 8 to 10 hours, and school-age children about 9 to 12 hours. The calculator tailors its recommendations to the age group you select."
+    },
+    {
+      "q": "How long should a nap be?",
+      "a": "A short nap of about 10 to 20 minutes can boost alertness without leaving you groggy. A full 90-minute nap completes one sleep cycle and can aid memory and recovery, but napping for 30 to 60 minutes may cause grogginess from waking mid-cycle. The nap mode helps you time naps to avoid that mid-cycle wake-up."
+    },
+    {
+      "q": "Why do I wake up tired even after 8 hours of sleep?",
+      "a": "Waking in the middle of a deep sleep stage can leave you groggy even after adequate total sleep. Aligning your wake time with the end of a 90-minute cycle often helps. Sleep quality also depends on consistency, a dark cool room, and limiting screens and caffeine before bed."
+    }
+  ],
+  "social-security-calculator": [
+    {
+      "q": "When should I claim Social Security?",
+      "a": "You can claim as early as 62 or as late as 70, and waiting increases your monthly benefit. Claiming early permanently reduces your benefit, while delaying past Full Retirement Age earns delayed retirement credits of about 8% per year until 70. The best age depends on your health, life expectancy, and income needs, which this calculator helps you compare."
+    },
+    {
+      "q": "How much will my benefit be reduced if I claim at 62?",
+      "a": "Claiming at 62 typically reduces your monthly benefit by about 25% to 30% compared to your Full Retirement Age amount, depending on your birth year. That reduction is permanent. The calculator shows your estimated benefit at 62, at Full Retirement Age, and at 70 side by side."
+    },
+    {
+      "q": "What is the breakeven age for delaying Social Security?",
+      "a": "Breakeven is the age at which the larger delayed benefits catch up to the total you'd have collected by claiming earlier. It often falls somewhere in the late 70s to early 80s. If you expect to live past breakeven, delaying usually pays more in lifetime benefits, which the calculator estimates for you."
+    },
+    {
+      "q": "How do spousal benefits work?",
+      "a": "A spouse can receive up to 50% of the higher earner's Full Retirement Age benefit if that's more than their own. Claiming before Full Retirement Age reduces the spousal amount. Enter your marital status and spouse details to factor spousal benefits into your strategy."
+    },
+    {
+      "q": "Will working while collecting Social Security reduce my benefits?",
+      "a": "If you claim before Full Retirement Age and keep working, the earnings test temporarily withholds some benefits once your wages exceed an annual limit. Those withheld benefits are credited back later as a higher monthly amount once you reach Full Retirement Age. Indicate that you'll keep working so the calculator can apply the earnings test."
+    }
+  ],
+  "startup-cost-calculator": [
+    {
+      "q": "How much does it cost to start a business?",
+      "a": "It varies widely by type: a home-based service or online business might launch for a few thousand dollars, while a restaurant or retail store can require well into six figures. Costs fall into one-time startup expenses (legal, equipment, buildout) and ongoing monthly costs (rent, payroll, marketing). This calculator estimates both plus the working capital you need to survive until revenue catches up."
+    },
+    {
+      "q": "What startup costs do new founders forget?",
+      "a": "Common blind spots include working capital to cover months of operating losses, business insurance, legal and licensing fees, software subscriptions, and a contingency buffer. Underestimating these is a leading reason new businesses run out of cash. The calculator prompts for one-time and recurring costs plus runway so nothing major is missed."
+    },
+    {
+      "q": "What is runway and why does it matter?",
+      "a": "Runway is how many months your available funding will last before you run out of cash, based on your monthly burn rate. A healthy startup usually wants at least 6 to 12 months of runway to reach profitability or the next funding round. The calculator computes runway from your costs, revenue projections, and available funding."
+    },
+    {
+      "q": "How much working capital should I have before launching?",
+      "a": "A common guideline is enough cash to cover several months of operating expenses before revenue becomes reliable, often 3 to 6 months at minimum. Businesses with slow ramp-ups may need more. Entering realistic revenue projections for months 1, 6, and 12 helps the calculator estimate how much cushion you need."
+    },
+    {
+      "q": "How should I fund my startup?",
+      "a": "Options include personal savings, loans, investors, grants, and revenue itself. The right mix depends on how much you need, how fast you'll become profitable, and how much ownership you're willing to give up. Use the calculator's funding and runway outputs to see how much capital you must raise to reach your goals."
+    }
+  ],
+  "student-loan-calculator": [
+    {
+      "q": "What student loan repayment plans can I compare?",
+      "a": "Federal borrowers can choose standard, graduated, and extended plans, as well as income-driven repayment options that cap payments based on your income and family size. Standard plans pay loans off fastest with the least interest, while income-driven plans lower monthly payments but can stretch the term. This calculator lets you compare these plans side by side."
+    },
+    {
+      "q": "How are income-driven repayment payments calculated?",
+      "a": "Income-driven plans base your monthly payment on your discretionary income, which depends on your annual income, family size, and state, rather than your loan balance. Payments are recalculated each year as your income changes. Enter your income and family size so the calculator can estimate your IDR payments."
+    },
+    {
+      "q": "What is Public Service Loan Forgiveness?",
+      "a": "Public Service Loan Forgiveness, or PSLF, can forgive the remaining federal loan balance after 120 qualifying monthly payments while working full time for a government or eligible nonprofit employer. Payments must be made under a qualifying repayment plan, usually an income-driven one. If you mark PSLF eligibility, the calculator factors potential forgiveness into your results."
+    },
+    {
+      "q": "Should I refinance my student loans?",
+      "a": "Refinancing into a private loan can lower your interest rate if you have strong credit and stable income, reducing total cost. However, refinancing federal loans forfeits federal protections like income-driven plans and forgiveness programs. Weigh the rate savings against losing those benefits before refinancing."
+    },
+    {
+      "q": "How do extra payments affect my student loans?",
+      "a": "Extra payments reduce principal directly, cutting both the interest you pay and the time to payoff. Applying even a small extra amount monthly or an annual lump sum can save significant interest over the life of the loan. Use the extra-payment fields to see the impact on your timeline."
+    }
+  ],
+  "subscription-calculator": [
+    {
+      "q": "How much do Americans spend on subscriptions?",
+      "a": "Many people underestimate their subscription spending by a wide margin, since charges are spread across streaming, software, fitness, news, and more. Totals frequently run well over $200 a month once everything is added up. This calculator tallies every service so you can see your real monthly and annual spend."
+    },
+    {
+      "q": "How can I find subscriptions I'm not using?",
+      "a": "Compare each subscription's cost against how often you actually use it. Services you rarely or never use are prime candidates to cancel. The calculator flags rarely-used and overlapping subscriptions and estimates how much you could save by trimming them."
+    },
+    {
+      "q": "How do I cancel unwanted subscriptions?",
+      "a": "Review your bank and card statements for recurring charges, then cancel directly through each provider or your app store. Watch for free trials that auto-renew and annual plans that quietly renew. After identifying low-value services in the calculator, cancel them and recheck your statements the next billing cycle."
+    },
+    {
+      "q": "Is it cheaper to pay monthly or annually?",
+      "a": "Annual plans usually cost less per month, often saving 15% to 20% versus monthly billing. The tradeoff is paying upfront and committing for a year. For services you're confident you'll keep, switching to annual billing is an easy way to cut costs."
+    },
+    {
+      "q": "How can I reduce my subscription spending without losing services?",
+      "a": "Look for overlapping subscriptions, share family plans where allowed, rotate streaming services instead of keeping them all year, and downgrade to ad-supported tiers. Switching steady services to annual billing also helps. The calculator's insights highlight the biggest savings opportunities."
+    }
+  ],
+  "tax-bracket-calculator": [
+    {
+      "q": "How do federal tax brackets work?",
+      "a": "Federal income tax is progressive, so only the income that falls within each bracket is taxed at that bracket's rate, not your whole income. The 2026 federal brackets range from 10% to 37%, with the thresholds depending on your filing status. This means moving into a higher bracket only raises the rate on the dollars above the threshold."
+    },
+    {
+      "q": "What is the difference between marginal and effective tax rate?",
+      "a": "Your marginal tax rate is the rate applied to your last dollar of taxable income, which is the bracket you top out in. Your effective tax rate is your total tax divided by your income, which is always lower because earlier dollars are taxed at lower rates. This calculator shows both so you understand your true tax burden."
+    },
+    {
+      "q": "How does my filing status affect my taxes?",
+      "a": "Filing status determines your bracket thresholds and standard deduction, so the same income is taxed differently for single, married filing jointly, married filing separately, or head of household filers. Married filing jointly generally has the widest brackets. You can switch filing status in the calculator to compare outcomes."
+    },
+    {
+      "q": "How do deductions lower my taxable income?",
+      "a": "Above-the-line deductions like 401(k), traditional IRA, HSA contributions, and student loan interest reduce your adjusted gross income before tax is figured. You then subtract either the standard deduction or your itemized deductions, whichever is larger. Lowering taxable income can drop you into a lower marginal bracket and reduce total tax."
+    },
+    {
+      "q": "Should I take the standard or itemized deduction?",
+      "a": "Take whichever is larger: most filers use the standard deduction because it exceeds their itemizable expenses, but homeowners with large mortgage interest, state taxes, and charitable gifts may save more by itemizing. The calculator lets you choose the deduction type and enter an itemized amount to compare. Choosing the bigger deduction minimizes your tax."
+    }
+  ],
+  "tdee-calculator": [
+    {
+      "q": "What is TDEE?",
+      "a": "TDEE stands for Total Daily Energy Expenditure, the total number of calories you burn in a day. It includes your resting metabolism (BMR), the energy used to digest food, and calories burned through daily movement and exercise. Knowing your TDEE helps you set calorie targets for losing, maintaining, or gaining weight."
+    },
+    {
+      "q": "How is TDEE calculated?",
+      "a": "This calculator uses the Mifflin-St Jeor equation to estimate your BMR from your weight, height, age, and gender, then multiplies it by an activity factor. Activity multipliers range from about 1.2 for sedentary to 1.9 for extra active. The result is your estimated total daily calorie burn."
+    },
+    {
+      "q": "What is the difference between BMR and TDEE?",
+      "a": "BMR (Basal Metabolic Rate) is the calories your body burns at complete rest just to stay alive. TDEE adds the calories you burn through digestion, daily activity, and exercise on top of BMR. Your TDEE is always higher than your BMR, with the gap depending on how active you are."
+    },
+    {
+      "q": "How many calories should I eat to lose weight?",
+      "a": "To lose weight, you generally eat below your TDEE; a deficit of about 500 calories per day roughly corresponds to losing about a pound per week. The calculator shows calorie targets for weight loss, maintenance, and muscle gain based on your TDEE. Avoid extreme deficits, which can be hard to sustain and may cost you muscle."
+    },
+    {
+      "q": "Should I enter my body fat percentage?",
+      "a": "Entering body fat percentage is optional. When provided, it allows a body-composition-based BMR estimate (the Katch-McArdle approach) that can be more accurate for very lean or very muscular people. If you do not know your body fat, the Mifflin-St Jeor equation works well for most people."
+    }
+  ],
+  "time-zone-converter": [
+    {
+      "q": "How do I convert a time between two time zones?",
+      "a": "Choose the source time zone and a target zone, then enter the date and time you want to convert; the difference between the two UTC offsets is applied to get the local time elsewhere. For example, 3:00 PM Eastern (UTC-5) is 8:00 PM in London (UTC+0). The converter handles the offset math for you across world zones."
+    },
+    {
+      "q": "Does the converter account for daylight saving time?",
+      "a": "The tool uses standard UTC offsets for each zone, and many regions shift their clocks by an hour during daylight saving. Because not all countries observe DST or change on the same dates, double-check the offset for the specific date you are converting. For meetings around DST transition dates, verify the local times carefully."
+    },
+    {
+      "q": "Can I plan a meeting across multiple time zones?",
+      "a": "Yes, you can add several target zones and the converter shows the corresponding local time in each, with a business-hours overlap visualization. This makes it easy to find a window that works for everyone. Use it to schedule calls spanning the Americas, Europe, Asia, and Oceania."
+    },
+    {
+      "q": "What does the Use Current Time button do?",
+      "a": "It fills in the current date and time so you can instantly convert from now without typing anything. This is handy for a quick check of what time it is somewhere else right now. After clicking it, just pick your source and target zones to see the conversion."
+    },
+    {
+      "q": "What is UTC and why does it matter?",
+      "a": "UTC (Coordinated Universal Time) is the global reference time from which all zones are offset, for example UTC-5 for US Eastern or UTC+9 for Japan. Converting through UTC is how the tool relates any two zones accurately. Knowing the UTC offset of each zone explains the time difference between them."
+    }
+  ],
+  "tip-calculator": [
+    {
+      "q": "How much should you tip at a restaurant?",
+      "a": "Standard restaurant tipping in the US: 15% for adequate service, 18-20% for good service, 20-25% for exceptional service. For large parties (6+), many restaurants add automatic 18-20% gratuity. For takeout, 10-15% is appreciated but not expected. Always tip on the pre-tax bill amount."
+    },
+    {
+      "q": "Do you tip on tax or before tax?",
+      "a": "Etiquette experts agree you should tip on the pre-tax subtotal, not the total after tax. For example, on a $50 meal with $4 tax, tip 20% on $50 ($10), not on $54 ($10.80). The difference is small but adds up over time."
+    },
+    {
+      "q": "How do you split a tip between multiple servers?",
+      "a": "When splitting a check, each person should tip 18-20% on their portion. If one person pays the full bill, they should tip on the full pre-tax amount and split the total (bill + tip) evenly. For group dining, rounding up slightly ensures servers aren't shortchanged."
+    }
+  ],
+  "unit-converter": [
+    {
+      "q": "What units can I convert with this tool?",
+      "a": "It covers eight categories: length, weight, temperature, volume, area, speed, digital storage, and time. Within each category you can convert between common units, such as meters to feet, kilograms to pounds, or gigabytes to megabytes. Selecting a category loads its relevant From and To unit options."
+    },
+    {
+      "q": "How do I convert between units?",
+      "a": "Pick a category tab, enter the value to convert, choose the From unit and the To unit, then read the result. The converter also shows the value in all related units at once, so you see every equivalent. Use the swap button to instantly reverse the From and To direction."
+    },
+    {
+      "q": "How does temperature conversion work?",
+      "a": "Temperature is not a simple multiplier because the scales have different zero points. Fahrenheit to Celsius is (F - 32) x 5/9, Celsius to Fahrenheit is (C x 9/5) + 32, and Kelvin is Celsius + 273.15. The converter applies the correct formula automatically when you select the temperature category."
+    },
+    {
+      "q": "What does the swap button do?",
+      "a": "The swap button instantly switches your From and To units so you can do the reverse conversion without re-selecting. For example, if you converted miles to kilometers, swapping converts kilometers to miles. It saves time when you need conversions in both directions."
+    },
+    {
+      "q": "Can it convert digital storage units?",
+      "a": "Yes, the digital category converts between bytes, kilobytes, megabytes, gigabytes, terabytes, and more. This is useful for understanding file sizes, storage capacity, and data limits. Select the Digital tab and choose your From and To units to convert."
+    }
+  ],
+  "username-generator": [
+    {
+      "q": "How does the username generator create ideas?",
+      "a": "It combines words, optional numbers, and a chosen style such as cool, funny, professional, or aesthetic to produce unique username suggestions. You can generate several options at once and keep regenerating to explore different vibes. Pick the one that best fits your platform and personality."
+    },
+    {
+      "q": "Can I check if a username is available?",
+      "a": "The tool gives availability hints for popular platforms, but you should confirm the exact handle on each site before settling on it. Availability changes constantly, so search the username directly on Instagram, TikTok, or the gaming network you plan to use. Securing the same handle across platforms helps keep your identity consistent."
+    },
+    {
+      "q": "What makes a good username?",
+      "a": "A good username is easy to read, spell, and remember, and it reflects your interests or brand without being too long. Avoid hard-to-type special characters and excessive numbers, which make it harder for others to find you. Aim for something distinctive that still looks clean across different platforms."
+    },
+    {
+      "q": "Are these usernames good for gaming and social media?",
+      "a": "Yes, you can generate gamertags and handles suited to gaming networks, Instagram, TikTok, forums, and more. Choose a style like cool or aesthetic for social platforms, or something bold for gaming. Generate multiple options and pick the one that matches your audience."
+    },
+    {
+      "q": "Should I use my real name as a username?",
+      "a": "For privacy, it is usually better to avoid using your full real name, especially on gaming and public platforms. A distinct username protects personal information while still being memorable. Reserve real-name handles for professional networks where transparency is expected."
+    }
+  ],
+  "uuid-generator": [
+    {
+      "q": "What is a UUID?",
+      "a": "A UUID (universally unique identifier), also called a GUID, is a 128-bit value used to label data so it is unique across systems without a central authority. It is typically written as 32 hexadecimal digits in five groups, like 550e8400-e29b-41d4-a716-446655440000. UUIDs are widely used for database keys, API resources, and distributed system IDs."
+    },
+    {
+      "q": "What version of UUID does this tool generate?",
+      "a": "This generator produces version 4 UUIDs, which are based on random numbers rather than timestamps or MAC addresses. Version 4 is the most common choice because it requires no coordination and carries no identifying hardware information. The values are created in your browser using a secure random generator."
+    },
+    {
+      "q": "Are these UUIDs generated client-side?",
+      "a": "Yes. UUIDs are generated entirely in your browser using the cryptographically secure crypto.getRandomValues method, so nothing is sent to a server. This keeps generation fast, private, and available even offline. You can generate single UUIDs or bulk batches without any data leaving your device."
+    },
+    {
+      "q": "How likely are UUID collisions?",
+      "a": "Version 4 UUIDs draw from 122 random bits, making accidental collisions so improbable that they are safe to treat as unique in practice. You would need to generate an astronomically large number of UUIDs before a collision became realistically likely. For typical application use, you can rely on each UUID being unique."
+    },
+    {
+      "q": "Can I generate UUIDs in bulk and in different formats?",
+      "a": "Yes, you can generate batches of up to 100 at once and choose formats including standard, no hyphens, uppercase, braces, or URN. You can copy individual values, copy all, or download the list as a text file. There is also a validator to check whether a given string is a valid UUID."
+    }
+  ],
+  "wedding-budget-calculator": [
+    {
+      "q": "How much does the average wedding cost in 2026?",
+      "a": "US wedding costs vary enormously by region and guest count, but national averages commonly land in the low-to-mid $30,000 range. Major metro areas run significantly higher, while smaller and DIY weddings cost far less. This calculator builds a budget around your own total and guest count rather than a one-size-fits-all average."
+    },
+    {
+      "q": "How should I split my wedding budget by category?",
+      "a": "A typical allocation puts the largest share toward venue and catering (often around 40% to 50% combined), followed by photography, attire, flowers, and entertainment. The right split depends on your priorities. The calculator recommends allocations based on your total budget, guest count, and style."
+    },
+    {
+      "q": "How does guest count affect the budget?",
+      "a": "Guest count is one of the biggest cost drivers because catering, rentals, invitations, and favors are largely per-person. Trimming the guest list is often the fastest way to lower the total cost. Enter your guest count so per-person categories scale accurately."
+    },
+    {
+      "q": "How much should I budget for catering per person?",
+      "a": "Per-person catering commonly ranges from roughly $70 to $200 or more depending on the menu, service style, and region. Plated dinners and open bars push costs higher than buffets or limited bars. The calculator estimates catering from your guest count and region."
+    },
+    {
+      "q": "How can I save money on my wedding?",
+      "a": "Reduce the guest list, choose an off-peak season or weekday, prioritize a few categories and trim the rest, and consider all-inclusive venues. Toggling categories off in the calculator shows how much each vendor adds and where you can cut. The result is a budget tailored to what matters most to you."
     }
   ]
 }

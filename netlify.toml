@@ -2,6 +2,10 @@
   command = "npm run build"
   publish = "dist"
 
+[build.environment]
+  # Astro 6 requires Node >=22.12. Pin it so builds don't break on Netlify default changes.
+  NODE_VERSION = "22"
+
 [[headers]]
   for = "/*.html"
   [headers.values]
