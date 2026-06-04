@@ -44,7 +44,11 @@
       "Bash(cat > *)",
       "Bash(python -c *)",
       "Skill(deep-research)",
-      "Skill(deep-research:*)"
+      "Skill(deep-research:*)",
+      "Bash(nslookup *)",
+      "Bash(git *)",
+      "Skill(claude-api)",
+      "Skill(claude-api:*)"
     ],
     "deny": [
       "Bash(git push *)",

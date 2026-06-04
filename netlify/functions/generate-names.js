@@ -22,11 +22,30 @@ export const handler = async (event, context) => {
   }
 
   try {
-    // Get API key from environment variable
-    const apiKey = process.env.GEMINI_API_KEY;
-    
-    if (!apiKey) {
-      console.error('GEMINI_API_KEY environment variable not set');
+    // Parse request body
+    const params = JSON.parse(event.body);
+
+    // Build the prompt based on user criteria
+    const prompt = buildPrompt(params);
+    console.debug(prompt);
+
+    // Decide which providers we can try. Claude is primary, Gemini is the
+    // fallback. Each entry runs the provider AND parses its output; the first
+    // one that yields a non-empty list of names wins.
+    const providers = [];
+    if (process.env.ANTHROPIC_API_KEY) {
+      providers.push({ name: 'claude', call: callClaude });
+    } else {
+      console.warn('ANTHROPIC_API_KEY not set - skipping Claude');
+    }
+    if (process.env.GEMINI_API_KEY) {
+      providers.push({ name: 'gemini', call: callGemini });
+    } else {
+      console.warn('GEMINI_API_KEY not set - skipping Gemini');
+    }
+
+    if (providers.length === 0) {
+      console.error('No AI provider configured (need ANTHROPIC_API_KEY and/or GEMINI_API_KEY)');
       return {
         statusCode: 500,
         headers,
@@ -34,88 +53,44 @@ export const handler = async (event, context) => {
       };
     }
 
-    // Parse request body
-    const params = JSON.parse(event.body);
-    
-    // Build the prompt based on user criteria
-    const prompt = buildPrompt(params);
-    console.debug(prompt);
-    
-    // Call Gemini API
-    const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent?key=${apiKey}`,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          contents: [{
-            parts: [{ text: prompt }]
-          }],
-          generationConfig: {
-            temperature: 0.9,
-            topK: 40,
-            topP: 0.95,
-            maxOutputTokens: 4096,
-          },
-          safetySettings: [
-            {
-              category: "HARM_CATEGORY_HARASSMENT",
-              threshold: "BLOCK_NONE"
-            },
-            {
-              category: "HARM_CATEGORY_HATE_SPEECH", 
-              threshold: "BLOCK_NONE"
-            },
-            {
-              category: "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-              threshold: "BLOCK_NONE"
-            },
-            {
-              category: "HARM_CATEGORY_DANGEROUS_CONTENT",
-              threshold: "BLOCK_NONE"
-            }
-          ]
-        })
+    let names = null;
+    let usedProvider = null;
+    let lastError = null;
+
+    for (const provider of providers) {
+      try {
+        const generatedText = await provider.call(prompt);
+        console.log(`AI Response (${provider.name}):`, generatedText);
+
+        const parsed = parseNamesFromResponse(generatedText, params);
+        if (!parsed || parsed.length === 0) {
+          throw new Error('Provider returned no usable names');
+        }
+
+        names = parsed;
+        usedProvider = provider.name;
+        break;
+      } catch (err) {
+        console.error(`Provider "${provider.name}" failed, trying next:`, err.message);
+        lastError = err;
       }
-    );
+    }
 
-    if (!response.ok) {
-      const errorText = await response.text();
-      console.error('Gemini API error:', response.status, errorText);
+    if (!names) {
+      console.error('All AI providers failed. Last error:', lastError?.message);
       return {
-        statusCode: response.status,
+        statusCode: 502,
         headers,
-        body: JSON.stringify({ error: 'AI service error', details: errorText })
+        body: JSON.stringify({ error: 'AI service error', details: lastError?.message })
       };
     }
 
-    const data = await response.json();
-    
-    // Extract the generated text
-    const generatedText = data.candidates?.[0]?.content?.parts?.[0]?.text;
-    
-    if (!generatedText) {
-      console.error('No generated text in response:', JSON.stringify(data));
-      return {
-        statusCode: 500,
-        headers,
-        body: JSON.stringify({ error: 'No response from AI' })
-      };
-    }
-
-    console.log('AI Response:', generatedText);
-
-    // Parse the JSON from the response
-    const names = parseNamesFromResponse(generatedText, params);
-    
-    console.log('Parsed names:', JSON.stringify(names, null, 2));
+    console.log(`Parsed names (via ${usedProvider}):`, JSON.stringify(names, null, 2));
 
     return {
       statusCode: 200,
       headers,
-      body: JSON.stringify({ names })
+      body: JSON.stringify({ names, provider: usedProvider })
     };
 
   } catch (error) {
@@ -127,6 +102,118 @@ export const handler = async (event, context) => {
     };
   }
 };
+
+// ---------------------------------------------------------------------------
+// AI providers. Each takes the prompt and returns the raw generated text, or
+// throws on any failure so the caller can fall back to the next provider.
+// ---------------------------------------------------------------------------
+
+// PRIMARY: Anthropic Claude (Messages API, called via plain fetch - no SDK).
+async function callClaude(prompt) {
+  const apiKey = process.env.ANTHROPIC_API_KEY;
+  // Use a TIER ALIAS (not a dated snapshot like `...-20251001`). A tier alias
+  // auto-rolls forward to the newest snapshot within its line with no code
+  // change needed, so this does not require maintenance for routine updates.
+  // It intentionally does NOT jump across major versions (e.g. 4-5 -> 5-0) on
+  // its own - that stays a deliberate, opt-in change so a new generation can't
+  // silently alter output and break the strict-JSON parsing below.
+  // To override (e.g. bump to a new generation, or use Sonnet), set the
+  // ANTHROPIC_MODEL env var in Netlify - no redeploy of this file required.
+  const model = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5';
+
+  const response = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      'x-api-key': apiKey,
+      'anthropic-version': '2023-06-01'
+    },
+    body: JSON.stringify({
+      model,
+      max_tokens: 4096,
+      temperature: 1,
+      messages: [
+        { role: 'user', content: prompt }
+      ]
+    })
+  });
+
+  if (!response.ok) {
+    const errorText = await response.text();
+    throw new Error(`Claude API ${response.status}: ${errorText}`);
+  }
+
+  const data = await response.json();
+  // Concatenate any text blocks in the response.
+  const text = (data.content || [])
+    .filter(block => block.type === 'text')
+    .map(block => block.text)
+    .join('');
+
+  if (!text) {
+    throw new Error(`Claude returned no text: ${JSON.stringify(data)}`);
+  }
+
+  return text;
+}
+
+// FALLBACK: Google Gemini (unchanged behavior from the original implementation).
+async function callGemini(prompt) {
+  const apiKey = process.env.GEMINI_API_KEY;
+
+  const response = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent?key=${apiKey}`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        contents: [{
+          parts: [{ text: prompt }]
+        }],
+        generationConfig: {
+          temperature: 0.9,
+          topK: 40,
+          topP: 0.95,
+          maxOutputTokens: 4096,
+        },
+        safetySettings: [
+          {
+            category: "HARM_CATEGORY_HARASSMENT",
+            threshold: "BLOCK_NONE"
+          },
+          {
+            category: "HARM_CATEGORY_HATE_SPEECH",
+            threshold: "BLOCK_NONE"
+          },
+          {
+            category: "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            threshold: "BLOCK_NONE"
+          },
+          {
+            category: "HARM_CATEGORY_DANGEROUS_CONTENT",
+            threshold: "BLOCK_NONE"
+          }
+        ]
+      })
+    }
+  );
+
+  if (!response.ok) {
+    const errorText = await response.text();
+    throw new Error(`Gemini API ${response.status}: ${errorText}`);
+  }
+
+  const data = await response.json();
+  const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+
+  if (!text) {
+    throw new Error(`Gemini returned no text: ${JSON.stringify(data)}`);
+  }
+
+  return text;
+}
 
 function buildPrompt(params) {
   const {
