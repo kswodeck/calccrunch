@@ -49,3 +49,4 @@ notes.md
 Thumbs.db
 *.local
 .cache/
+.claude/

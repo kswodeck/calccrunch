@@ -64,7 +64,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "🔥",
+      "icon": "🍽️",
       "seoTitle": "Free Daily Calorie Calculator - TDEE & Macro Calculator",
       "seoDescription": "Calculate your daily calorie needs with our free TDEE calculator. Get personalized calorie targets for weight loss, maintenance, or muscle gain.",
       "keywords": [
@@ -507,7 +507,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "🏖️",
+      "icon": "🌴",
       "seoTitle": "Free PTO Calculator - Paid Time Off Accrual Calculator",
       "seoDescription": "Calculate your PTO balance and accrual with our free PTO calculator. Project future balances, plan vacation time, and calculate the monetary value of your paid time off.",
       "keywords": [
@@ -839,7 +839,64 @@
         "compound-interest-calculator",
         "retirement-income-calculator",
         "savings-goal-calculator",
-        "roi-calculator"
+        "roi-calculator",
+        "social-security-calculator"
+      ]
+    },
+    {
+      "title": "Social Security Benefits Calculator",
+      "slug": "social-security-calculator",
+      "description": "Estimate your Social Security retirement benefits based on earnings history and claiming age. Compare strategies for claiming at 62, Full Retirement Age, or 70, with breakeven analysis, spousal benefits, earnings test calculations, and COLA projections.",
+      "shortDescription": "Estimate & optimize Social Security benefits",
+      "category": "financial",
+      "tags": [
+        "social security",
+        "retirement benefits",
+        "claiming age",
+        "PIA",
+        "spousal benefits",
+        "earnings test",
+        "breakeven analysis"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Intermediate",
+      "estimatedTime": "4 minutes",
+      "icon": "🏛️",
+      "seoTitle": "Free Social Security Benefits Calculator - Estimate & Optimize Your Benefits",
+      "seoDescription": "Estimate your Social Security retirement benefits and find your optimal claiming age. Compare benefits at 62, FRA, and 70 with breakeven analysis, spousal benefits, and COLA projections.",
+      "keywords": [
+        "social security calculator",
+        "social security benefits",
+        "retirement benefits calculator",
+        "claiming age calculator",
+        "social security estimator",
+        "spousal benefits",
+        "delayed retirement credits"
+      ],
+      "lastUpdated": "2025-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [
+        "Social Security & Medicare Optimization Guide",
+        "Retirement Income Planning Workbook",
+        "Complete Guide to Maximizing Your Benefits"
+      ],
+      "affiliateDescriptions": [
+        "Maximize your government benefits with expert strategies for Social Security timing, Medicare enrollment, and coordination of spousal benefits.",
+        "Plan your retirement income streams with this hands-on workbook covering Social Security, pensions, investments, and tax-efficient withdrawal strategies.",
+        "Learn the insider strategies to maximize your lifetime Social Security benefits with claiming strategies, spousal coordination, and tax optimization."
+      ],
+      "affiliateLinks": [
+        "https://amzn.to/3Pv2mKN",
+        "https://amzn.to/3ZQKvNb",
+        "https://amzn.to/4aX5JmR"
+      ],
+      "relatedCalculators": [
+        "retirement-planning-calculator",
+        "retirement-income-calculator",
+        "fire-calculator",
+        "paycheck-calculator"
       ]
     },
     {
@@ -1097,7 +1154,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "📊",
+      "icon": "💲",
       "seoTitle": "Free Profit Margin Calculator - Margin & Markup Calculator",
       "seoDescription": "Calculate profit margin and markup percentage. Optimize pricing with our free profit calculator.",
       "keywords": [
@@ -1237,7 +1294,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "💹",
+      "icon": "🧮",
       "seoTitle": "Free ROI Calculator - Return on Investment Calculator",
       "seoDescription": "Calculate ROI for investments and projects. Measure investment returns with our free calculator.",
       "keywords": [
@@ -1597,7 +1654,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "🎯",
+      "icon": "🐷",
       "seoTitle": "Free Savings Goal Calculator - Reach Your Financial Goals",
       "seoDescription": "Calculate how much to save monthly to reach your financial goal. Plan your savings with compound interest projections.",
       "keywords": [
@@ -1645,7 +1702,7 @@
       "popular": false,
       "difficulty": "Medium",
       "estimatedTime": "4 minutes",
-      "icon": "🔄",
+      "icon": "♻️",
       "seoTitle": "Free Mortgage Refinance Calculator - Should I Refinance?",
       "seoDescription": "Calculate if refinancing saves you money. Compare current vs new loan with break-even analysis using our free calculator.",
       "keywords": [
@@ -1741,7 +1798,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "💵",
+      "icon": "🪙",
       "seoTitle": "Free Tip Calculator - Restaurant & Service Gratuity",
       "seoDescription": "Calculate tips instantly and split bills among friends. International tipping guide included in our free calculator.",
       "keywords": [
@@ -1837,7 +1894,7 @@
       "popular": false,
       "difficulty": "Medium",
       "estimatedTime": "4 minutes",
-      "icon": "🎓",
+      "icon": "🎒",
       "seoTitle": "Free College Savings Calculator - 529 Plan Calculator",
       "seoDescription": "Calculate how much to save for college with 529 plan projections. Plan education savings with our free calculator.",
       "keywords": [
@@ -2311,7 +2368,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "💵",
+      "icon": "💸",
       "seoTitle": "Free Paycheck Calculator - Take-Home Pay & Tax Withholding",
       "seoDescription": "Calculate your take-home pay with our free paycheck calculator. See federal tax, FICA, state tax, and deductions from your gross salary.",
       "keywords": [
@@ -2523,7 +2580,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "⚡",
+      "icon": "🏃",
       "seoTitle": "Free TDEE Calculator - Total Daily Energy Expenditure",
       "seoDescription": "Calculate your TDEE and BMR with our free calculator. See daily calorie needs for your activity level and get targets for weight loss or muscle gain.",
       "keywords": [
@@ -2834,7 +2891,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "⚖️",
+      "icon": "🏁",
       "seoTitle": "Free Break-Even Calculator - Break-Even Analysis Tool",
       "seoDescription": "Calculate your break-even point in units and revenue. Analyze contribution margins and pricing scenarios with our free break-even calculator.",
       "keywords": [
@@ -2886,7 +2943,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "📚",
+      "icon": "🅰️",
       "seoTitle": "Free Grade Calculator - Weighted Average & Final Exam Score",
       "seoDescription": "Calculate your weighted grade average and find out what you need on your final exam. Free grade calculator for students.",
       "keywords": [
@@ -2994,7 +3051,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "⚡",
+      "icon": "💡",
       "seoTitle": "Free Electricity Cost Calculator - Appliance Energy Usage & Bill Estimator",
       "seoDescription": "Calculate electricity costs per appliance with our free calculator. See monthly and annual costs, compare EV vs gas, and find your biggest energy consumers.",
       "keywords": [
@@ -3047,7 +3104,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "🏋️",
       "seoTitle": "Kilograms to Pounds Converter — Free & Instant (kg to lbs)",
       "seoDescription": "Convert kilograms to pounds instantly with our free calculator. 1 kilogram equals 2.20462 pounds. To convert kilograms to pounds, multiply by 2.20462. Conversion table included.",
       "keywords": [
@@ -3087,7 +3144,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "🪨",
       "seoTitle": "Pounds to Kilograms Converter — Free & Instant (lbs to kg)",
       "seoDescription": "Convert pounds to kilograms instantly with our free calculator. 1 pound equals 0.453592 kilograms. To convert pounds to kilograms, divide by 2.20462 (or multiply by 0.453592). Conversion table included.",
       "keywords": [
@@ -3127,7 +3184,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "📏",
       "seoTitle": "Centimeters to Inches Converter — Free & Instant (cm to in)",
       "seoDescription": "Convert centimeters to inches instantly with our free calculator. 1 centimeter equals 0.393701 inches. To convert centimeters to inches, divide by 2.54 (or multiply by 0.393701). Conversion table included.",
       "keywords": [
@@ -3167,7 +3224,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "📐",
       "seoTitle": "Inches to Centimeters Converter — Free & Instant (in to cm)",
       "seoDescription": "Convert inches to centimeters instantly with our free calculator. 1 inch equals exactly 2.54 centimeters. To convert inches to centimeters, multiply by 2.54. Conversion table included.",
       "keywords": [
@@ -3207,7 +3264,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "🌡️",
       "seoTitle": "Celsius to Fahrenheit Converter — Free & Instant (°C to °F)",
       "seoDescription": "Convert celsius to fahrenheit instantly with our free calculator. To convert Celsius to Fahrenheit, multiply by 1.8 (9/5) and add 32. So °F = °C × 9/5 + 32. Conversion table included.",
       "keywords": [
@@ -3247,7 +3304,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "☀️",
       "seoTitle": "Fahrenheit to Celsius Converter — Free & Instant (°F to °C)",
       "seoDescription": "Convert fahrenheit to celsius instantly with our free calculator. To convert Fahrenheit to Celsius, subtract 32 and multiply by 0.5556 (5/9). So °C = (°F − 32) × 5/9. Conversion table included.",
       "keywords": [
@@ -3287,7 +3344,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "🛣️",
       "seoTitle": "Miles to Kilometers Converter — Free & Instant (mi to km)",
       "seoDescription": "Convert miles to kilometers instantly with our free calculator. 1 mile equals 1.609344 kilometers. To convert miles to kilometers, multiply by 1.60934. Conversion table included.",
       "keywords": [
@@ -3327,7 +3384,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "🗺️",
       "seoTitle": "Kilometers to Miles Converter — Free & Instant (km to mi)",
       "seoDescription": "Convert kilometers to miles instantly with our free calculator. 1 kilometer equals 0.621371 miles. To convert kilometers to miles, multiply by 0.621371 (or divide by 1.60934). Conversion table included.",
       "keywords": [
@@ -3425,7 +3482,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "⚗️",
       "seoTitle": "Grams to Ounces Converter — Free & Instant (g to oz)",
       "seoDescription": "Convert grams to ounces instantly with our free calculator. 1 gram equals 0.035274 ounces. To convert grams to ounces, divide by 28.3495 (or multiply by 0.035274). Conversion table included.",
       "keywords": [
@@ -3465,7 +3522,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "🧪",
       "seoTitle": "Ounces to Grams Converter — Free & Instant (oz to g)",
       "seoDescription": "Convert ounces to grams instantly with our free calculator. 1 ounce equals 28.3495 grams. To convert ounces to grams, multiply by 28.3495. Conversion table included.",
       "keywords": [
@@ -3505,7 +3562,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "🏗️",
       "seoTitle": "Feet to Meters Converter — Free & Instant (ft to m)",
       "seoDescription": "Convert feet to meters instantly with our free calculator. 1 foot equals exactly 0.3048 meters. To convert feet to meters, multiply by 0.3048. Conversion table included.",
       "keywords": [
@@ -3545,7 +3602,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "🧱",
       "seoTitle": "Meters to Feet Converter — Free & Instant (m to ft)",
       "seoDescription": "Convert meters to feet instantly with our free calculator. 1 meter equals 3.28084 feet. To convert meters to feet, multiply by 3.28084 (or divide by 0.3048). Conversion table included.",
       "keywords": [
@@ -3585,7 +3642,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "🥛",
       "seoTitle": "Milliliters to Cups Converter — Free & Instant (ml to cups)",
       "seoDescription": "Convert milliliters to cups instantly with our free calculator. 1 milliliter equals 0.004227 US cups. To convert milliliters to cups, divide by 236.588. (Based on the US customary cup.) Conversion table included.",
       "keywords": [
@@ -3625,7 +3682,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "☕",
       "seoTitle": "Cups to Milliliters Converter — Free & Instant (cups to ml)",
       "seoDescription": "Convert cups to milliliters instantly with our free calculator. 1 US cup equals 236.588 milliliters. To convert cups to milliliters, multiply by 236.588. (Based on the US customary cup.) Conversion table included.",
       "keywords": [
@@ -3665,7 +3722,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "🚰",
       "seoTitle": "Liters to Gallons Converter — Free & Instant (L to gal)",
       "seoDescription": "Convert liters to gallons instantly with our free calculator. 1 liter equals 0.264172 US gallons. To convert liters to gallons, divide by 3.78541. (Based on the US liquid gallon.) Conversion table included.",
       "keywords": [
@@ -3705,7 +3762,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "🛢️",
       "seoTitle": "Gallons to Liters Converter — Free & Instant (gal to L)",
       "seoDescription": "Convert gallons to liters instantly with our free calculator. 1 US gallon equals 3.78541 liters. To convert gallons to liters, multiply by 3.78541. (Based on the US liquid gallon.) Conversion table included.",
       "keywords": [
@@ -3745,7 +3802,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "🏎️",
       "seoTitle": "Miles per Hour to Kilometers per Hour Converter — Free & Instant (mph to km/h)",
       "seoDescription": "Convert miles per hour to kilometers per hour instantly with our free calculator. 1 mph equals 1.60934 km/h. To convert miles per hour to kilometers per hour, multiply by 1.60934. Conversion table included.",
       "keywords": [
@@ -3785,7 +3842,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "✈️",
       "seoTitle": "Kilometers per Hour to Miles per Hour Converter — Free & Instant (km/h to mph)",
       "seoDescription": "Convert kilometers per hour to miles per hour instantly with our free calculator. 1 km/h equals 0.621371 mph. To convert kilometers per hour to miles per hour, multiply by 0.621371 (or divide by 1.60934). Conversion table included.",
       "keywords": [
@@ -3825,7 +3882,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "👣",
       "seoTitle": "Feet to Inches Converter — Free & Instant (ft to in)",
       "seoDescription": "Convert feet to inches instantly with our free calculator. 1 foot equals exactly 12 inches. To convert feet to inches, multiply by 12. Conversion table included.",
       "keywords": [
@@ -3865,7 +3922,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "🔄",
+      "icon": "🦶",
       "seoTitle": "Inches to Feet Converter — Free & Instant (in to ft)",
       "seoDescription": "Convert inches to feet instantly with our free calculator. 1 inch equals 0.08333 feet (1/12). To convert inches to feet, divide by 12. Conversion table included.",
       "keywords": [
@@ -3899,7 +3956,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "💵",
+      "icon": "🕐",
       "seoTitle": "Free Salary to Hourly Calculator — Instant & Accurate",
       "seoDescription": "Convert an annual salary into an hourly wage. See your hourly, daily, weekly, and monthly pay based on your work hours.",
       "keywords": [
@@ -3928,7 +3985,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "💵",
+      "icon": "🤑",
       "seoTitle": "Free Hourly to Salary Calculator — Instant & Accurate",
       "seoDescription": "Convert an hourly wage into an annual salary. See your weekly, monthly, and yearly income based on your hours.",
       "keywords": [
@@ -4003,6 +4060,167 @@
         "salary-to-hourly-calculator",
         "hours-calculator",
         "paycheck-calculator"
+      ]
+    },
+    {
+      "title": "Subscription Cost Calculator",
+      "slug": "subscription-calculator",
+      "description": "Audit all your subscriptions, calculate total monthly and annual spending, identify rarely-used services, detect overlapping subscriptions, and find potential savings.",
+      "shortDescription": "Audit subscriptions and find savings",
+      "category": "financial",
+      "tags": [
+        "subscriptions",
+        "recurring charges",
+        "streaming",
+        "subscription audit",
+        "savings"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "5 minutes",
+      "icon": "🔄",
+      "seoTitle": "Free Subscription Cost Calculator — Audit Your Recurring Charges",
+      "seoDescription": "Calculate your total subscription spending, find rarely-used services, detect overlaps, and discover how much you could save or invest instead.",
+      "keywords": [
+        "subscription calculator",
+        "subscription audit",
+        "recurring charges calculator",
+        "subscription cost"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "budget-calculator",
+        "savings-goal-calculator",
+        "compound-interest-calculator"
+      ]
+    },
+    {
+      "title": "Freelance Rate Calculator",
+      "slug": "freelance-rate-calculator",
+      "description": "Calculate your ideal freelance hourly rate to meet income goals after accounting for taxes, self-employment tax, benefits, business expenses, and non-billable time.",
+      "shortDescription": "Calculate your ideal freelance hourly rate",
+      "category": "financial",
+      "tags": [
+        "freelance",
+        "hourly rate",
+        "self-employed",
+        "consulting rate",
+        "freelance pricing",
+        "independent contractor"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Medium",
+      "estimatedTime": "5 minutes",
+      "icon": "💼",
+      "seoTitle": "Free Freelance Rate Calculator — Find Your Ideal Hourly Rate",
+      "seoDescription": "Calculate the freelance hourly rate you need to meet your income goals after taxes, expenses, benefits, and non-billable time.",
+      "keywords": [
+        "freelance rate calculator",
+        "freelance hourly rate",
+        "consulting rate calculator",
+        "freelance pricing"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "hourly-to-salary-calculator",
+        "tax-bracket-calculator",
+        "profit-margin-calculator",
+        "break-even-calculator"
+      ]
+    },
+    {
+      "title": "Self-Employment Quarterly Tax Calculator",
+      "slug": "self-employment-tax-calculator",
+      "description": "Estimate your quarterly estimated tax payments as a freelancer or self-employed worker. Calculates SE tax (Social Security + Medicare), federal income tax, and state income tax with 2024 brackets. Includes safe harbor amounts and tax-saving strategies.",
+      "shortDescription": "Estimate quarterly tax payments for freelancers",
+      "category": "financial",
+      "tags": [
+        "self-employment tax",
+        "quarterly taxes",
+        "estimated tax payments",
+        "freelancer taxes",
+        "1099 taxes",
+        "SE tax",
+        "gig worker taxes"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Medium",
+      "estimatedTime": "4 minutes",
+      "icon": "📝",
+      "seoTitle": "Free Self-Employment Quarterly Tax Calculator 2024",
+      "seoDescription": "Calculate your quarterly estimated tax payments with our free self-employment tax calculator. Includes SE tax, federal income tax, state tax, and safe harbor amounts for freelancers and gig workers.",
+      "keywords": [
+        "self-employment tax calculator",
+        "quarterly tax calculator",
+        "freelancer tax calculator",
+        "1099 tax calculator",
+        "estimated tax payments"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "tax-bracket-calculator",
+        "paycheck-calculator",
+        "profit-margin-calculator",
+        "retirement-planning-calculator"
+      ]
+    },
+    {
+      "title": "Cost of Living Comparison Calculator",
+      "slug": "cost-of-living-calculator",
+      "description": "Compare the cost of living between 60+ major US cities and calculate the equivalent salary needed to maintain your standard of living. Includes category breakdowns for housing, groceries, transportation, healthcare, utilities, and tax impact analysis.",
+      "shortDescription": "Compare cost of living between cities",
+      "category": "financial",
+      "tags": [
+        "cost of living",
+        "city comparison",
+        "salary comparison",
+        "relocation",
+        "moving costs",
+        "equivalent salary"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🏙️",
+      "seoTitle": "Free Cost of Living Comparison Calculator — Compare Cities",
+      "seoDescription": "Compare the cost of living between 60+ US cities. Calculate the equivalent salary needed, view category breakdowns, and analyze tax impacts for relocation planning.",
+      "keywords": [
+        "cost of living calculator",
+        "city comparison calculator",
+        "salary equivalent calculator",
+        "cost of living comparison",
+        "relocation calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "paycheck-calculator",
+        "tax-bracket-calculator",
+        "budget-calculator",
+        "rent-vs-buy-calculator"
       ]
     }
   ]
