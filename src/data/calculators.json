@@ -4222,6 +4222,375 @@
         "budget-calculator",
         "rent-vs-buy-calculator"
       ]
+    },
+    {
+      "title": "Construction Material Calculator",
+      "slug": "construction-calculator",
+      "description": "Estimate materials and costs for concrete, decking, fencing, drywall, flooring, roofing, paint, and insulation projects. Get detailed shopping lists with quantities and cost ranges.",
+      "shortDescription": "Estimate materials for construction projects",
+      "category": "home-real-estate",
+      "tags": [
+        "construction",
+        "materials",
+        "building",
+        "DIY",
+        "home improvement",
+        "concrete",
+        "decking",
+        "fencing"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Medium",
+      "estimatedTime": "3 minutes",
+      "icon": "🔨",
+      "seoTitle": "Free Construction Material Calculator — Estimate Quantities & Costs",
+      "seoDescription": "Calculate materials needed for concrete, decking, fencing, drywall, flooring, roofing, paint, and insulation. Get accurate quantity estimates with cost ranges.",
+      "keywords": [
+        "construction calculator",
+        "material calculator",
+        "concrete calculator",
+        "decking calculator",
+        "fencing calculator",
+        "drywall calculator",
+        "roofing calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "home-improvement-cost-calculator",
+        "unit-converter"
+      ]
+    },
+    {
+      "title": "Dog Food Calculator",
+      "slug": "dog-food-calculator",
+      "description": "Calculate how much to feed your dog daily based on weight, age, breed size, activity level, and food type. Get personalized feeding portions for puppies, adults, and senior dogs.",
+      "shortDescription": "Calculate daily dog feeding amounts",
+      "category": "miscellaneous",
+      "tags": [
+        "dog food",
+        "pet nutrition",
+        "feeding guide",
+        "puppy feeding",
+        "dog diet",
+        "pet care"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🐕",
+      "seoTitle": "Free Dog Food Calculator — Daily Feeding Guide by Weight & Age",
+      "seoDescription": "Calculate exactly how much to feed your dog daily. Personalized portions based on weight, age, breed size, activity level, and food type.",
+      "keywords": [
+        "dog food calculator",
+        "how much to feed my dog",
+        "dog feeding guide",
+        "puppy food calculator",
+        "dog calorie calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "calorie-calculator"
+      ]
+    },
+    {
+      "title": "EV vs Gas Car Calculator",
+      "slug": "ev-vs-gas-calculator",
+      "description": "Compare total cost of ownership between electric vehicles and gas cars. Factor in purchase price, fuel/electricity costs, maintenance, tax credits, insurance, and depreciation over time.",
+      "shortDescription": "Compare EV vs gas car total costs",
+      "category": "automotive",
+      "tags": [
+        "electric vehicle",
+        "EV",
+        "gas car",
+        "cost comparison",
+        "total cost of ownership",
+        "fuel savings",
+        "EV tax credit"
+      ],
+      "featured": true,
+      "popular": false,
+      "difficulty": "Medium",
+      "estimatedTime": "4 minutes",
+      "icon": "⚡",
+      "seoTitle": "Free EV vs Gas Car Calculator — Total Cost of Ownership Comparison",
+      "seoDescription": "Compare the total cost of owning an electric vehicle vs a gas car. Include purchase price, fuel, maintenance, tax credits, and depreciation.",
+      "keywords": [
+        "EV vs gas calculator",
+        "electric car cost calculator",
+        "EV cost comparison",
+        "electric vehicle savings",
+        "EV total cost of ownership"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "auto-loan-calculator",
+        "gas-mileage-calculator",
+        "car-lease-buy-calculator"
+      ]
+    },
+    {
+      "title": "Pregnancy Due Date Calculator",
+      "slug": "pregnancy-calculator",
+      "description": "Calculate your estimated due date, current trimester, and week-by-week pregnancy milestones. Track fetal development stages and get key appointment reminders.",
+      "shortDescription": "Calculate due date & track pregnancy",
+      "category": "health-fitness",
+      "tags": [
+        "pregnancy",
+        "due date",
+        "trimester",
+        "prenatal",
+        "baby",
+        "conception date"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🤰",
+      "seoTitle": "Free Pregnancy Due Date Calculator — Week by Week Timeline",
+      "seoDescription": "Calculate your baby's due date and track pregnancy week by week. See trimester milestones, fetal development, and important appointment dates.",
+      "keywords": [
+        "pregnancy calculator",
+        "due date calculator",
+        "pregnancy week calculator",
+        "conception date calculator",
+        "trimester calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "age-calculator",
+        "sleep-calculator"
+      ]
+    },
+    {
+      "title": "Rental Property Calculator",
+      "slug": "rental-property-calculator",
+      "description": "Analyze rental property investments with cash flow projections, cap rate, cash-on-cash return, ROI, and mortgage analysis. Compare buy-and-hold vs short-term rental strategies.",
+      "shortDescription": "Analyze rental property ROI & cash flow",
+      "category": "home-real-estate",
+      "tags": [
+        "rental property",
+        "real estate investment",
+        "cash flow",
+        "cap rate",
+        "ROI",
+        "landlord",
+        "passive income"
+      ],
+      "featured": true,
+      "popular": false,
+      "difficulty": "Advanced",
+      "estimatedTime": "5 minutes",
+      "icon": "🏘️",
+      "seoTitle": "Free Rental Property Calculator — Cash Flow, Cap Rate & ROI Analysis",
+      "seoDescription": "Analyze rental property investments with cash flow projections, cap rate, cash-on-cash return, and ROI calculations. Compare strategies and estimate long-term returns.",
+      "keywords": [
+        "rental property calculator",
+        "investment property calculator",
+        "cash flow calculator",
+        "cap rate calculator",
+        "rental ROI calculator",
+        "landlord calculator"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "mortgage-payment-calculator",
+        "roi-calculator",
+        "home-equity-calculator",
+        "rent-vs-buy-calculator"
+      ]
+    },
+    {
+      "title": "Startup Cost Calculator",
+      "slug": "startup-cost-calculator",
+      "description": "Estimate startup costs by business type including legal fees, equipment, marketing, inventory, rent, insurance, and working capital. Get a realistic budget for launching your business.",
+      "shortDescription": "Estimate costs to start your business",
+      "category": "business-sales",
+      "tags": [
+        "startup costs",
+        "business launch",
+        "entrepreneur",
+        "small business",
+        "business plan",
+        "funding"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Medium",
+      "estimatedTime": "5 minutes",
+      "icon": "🚀",
+      "seoTitle": "Free Startup Cost Calculator — Estimate Business Launch Expenses",
+      "seoDescription": "Estimate how much it costs to start a business. Calculate startup expenses including legal, equipment, marketing, inventory, and working capital needs.",
+      "keywords": [
+        "startup cost calculator",
+        "business startup costs",
+        "how much to start a business",
+        "startup budget calculator",
+        "small business costs"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "break-even-calculator",
+        "profit-margin-calculator",
+        "roi-calculator"
+      ]
+    },
+    {
+      "title": "Wedding Budget Calculator",
+      "slug": "wedding-budget-calculator",
+      "description": "Plan your wedding budget with category breakdowns for venue, catering, photography, attire, flowers, entertainment, and more. Get recommended allocations based on your total budget and guest count.",
+      "shortDescription": "Plan & allocate your wedding budget",
+      "category": "financial",
+      "tags": [
+        "wedding budget",
+        "wedding planning",
+        "wedding costs",
+        "marriage",
+        "event planning"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "3 minutes",
+      "icon": "💒",
+      "seoTitle": "Free Wedding Budget Calculator — Plan Your Wedding Costs",
+      "seoDescription": "Plan your wedding budget with recommended allocations by category. Calculate costs for venue, catering, photography, and more based on total budget and guest count.",
+      "keywords": [
+        "wedding budget calculator",
+        "wedding cost calculator",
+        "wedding planning calculator",
+        "how much does a wedding cost",
+        "wedding budget breakdown"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "budget-calculator",
+        "savings-goal-calculator"
+      ]
+    },
+    {
+      "title": "Calories Burned Calculator",
+      "slug": "calories-burned-calculator",
+      "description": "Calculate calories burned for 150+ activities using MET values. Enter your weight, activity, duration, and intensity to get personalized results with food equivalents, comparisons, and weekly projections.",
+      "shortDescription": "Calculate calories burned by activity",
+      "category": "health-fitness",
+      "tags": [
+        "calories burned",
+        "exercise",
+        "MET values",
+        "workout",
+        "activity",
+        "weight loss",
+        "fitness"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🔥",
+      "seoTitle": "Free Calories Burned Calculator — 150+ Activities with MET Values",
+      "seoDescription": "Calculate calories burned for running, walking, cycling, swimming, and 150+ activities. Personalized results based on your weight, duration, and intensity.",
+      "keywords": [
+        "calories burned calculator",
+        "calories burned walking",
+        "calories burned running",
+        "exercise calorie calculator",
+        "activity calorie calculator",
+        "MET calculator",
+        "workout calorie burn"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "calorie-calculator",
+        "macro-calculator",
+        "bmi-calculator",
+        "tdee-calculator"
+      ]
+    },
+    {
+      "title": "Debt Payoff Calculator",
+      "slug": "debt-payoff-calculator",
+      "description": "Compare debt snowball vs avalanche payoff strategies side by side. Enter multiple debts to see which method saves more money, get payoff timelines, milestone dates, and detailed month-by-month schedules.",
+      "shortDescription": "Compare snowball vs avalanche debt payoff",
+      "category": "financial",
+      "tags": [
+        "debt payoff",
+        "debt snowball",
+        "debt avalanche",
+        "debt free",
+        "debt repayment",
+        "financial freedom"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Medium",
+      "estimatedTime": "4 minutes",
+      "icon": "💪",
+      "seoTitle": "Free Debt Payoff Calculator — Snowball vs Avalanche Comparison",
+      "seoDescription": "Compare debt snowball and avalanche methods side by side. See which strategy saves more money and gets you debt-free faster with timeline visualization.",
+      "keywords": [
+        "debt payoff calculator",
+        "debt snowball calculator",
+        "debt avalanche calculator",
+        "debt payoff planner",
+        "debt free calculator",
+        "debt repayment calculator",
+        "how to pay off debt"
+      ],
+      "lastUpdated": "2026-06-03",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "credit-card-payoff-calculator",
+        "student-loan-calculator",
+        "budget-calculator",
+        "savings-goal-calculator"
+      ]
     }
   ]
 }

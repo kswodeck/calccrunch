@@ -11,7 +11,7 @@
       "color": "#D4B300",
       "order": 1,
       "featured": true,
-      "calculatorCount": 22,
+      "calculatorCount": 28,
       "seoTitle": "Financial Calculators - Free Mortgage, Loan & Investment Tools",
       "seoDescription": "Free financial calculators for mortgages, loans, investments, retirement planning, and budgeting. Fast, accurate, and easy to use.",
       "keywords": [
@@ -48,7 +48,7 @@
       "color": "#FF6B35",
       "order": 2,
       "featured": true,
-      "calculatorCount": 7,
+      "calculatorCount": 9,
       "seoTitle": "Home & Real Estate Calculators - Mortgage & Renovation Tools",
       "seoDescription": "Free home and real estate calculators for mortgage affordability, home improvements, and DIY projects. Plan your home purchase or renovation.",
       "keywords": [
@@ -85,7 +85,7 @@
       "color": "#4CAF50",
       "order": 3,
       "featured": true,
-      "calculatorCount": 4,
+      "calculatorCount": 5,
       "seoTitle": "Business & Sales Calculators - Profit, ROI & Pricing Tools",
       "seoDescription": "Free business calculators for profit margins, ROI, break-even analysis, and pricing. Make smarter business decisions.",
       "keywords": [
@@ -121,7 +121,7 @@
       "color": "#EF5350",
       "order": 4,
       "featured": true,
-      "calculatorCount": 6,
+      "calculatorCount": 8,
       "seoTitle": "Health & Fitness Calculators - BMI, Calorie & Macro Tools",
       "seoDescription": "Free health and fitness calculators including BMI, calorie needs, macro tracking, and more. Achieve your wellness goals with accurate calculations.",
       "keywords": [
@@ -307,7 +307,7 @@
       "color": "#546E7A",
       "order": 10,
       "featured": false,
-      "calculatorCount": 2,
+      "calculatorCount": 3,
       "seoTitle": "Automotive Calculators - Gas Mileage, Fuel Cost & Auto Tools",
       "seoDescription": "Free automotive calculators for gas mileage (MPG), fuel costs, auto loans, and vehicle comparisons. Make smarter car decisions.",
       "keywords": [
@@ -343,7 +343,7 @@
       "color": "#78909C",
       "order": 11,
       "featured": false,
-      "calculatorCount": 1,
+      "calculatorCount": 2,
       "seoTitle": "Miscellaneous Calculators - Various Useful Tools",
       "seoDescription": "Free miscellaneous calculators for various everyday tasks and calculations. Useful tools for any situation.",
       "keywords": [
