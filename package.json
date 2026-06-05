@@ -1,7 +1,7 @@
 {
   "name": "calccrunch",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "dev": "npm run update-counts && astro dev",
     "build": "npm run clean && npm run validate:content && npm run update-counts && astro build",

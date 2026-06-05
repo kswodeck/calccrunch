@@ -12,14 +12,18 @@ const categoriesPath = join(__dirname, '../data/categories.json');
 const calculatorsData = JSON.parse(readFileSync(calculatorsPath, 'utf-8'));
 const categoriesData = JSON.parse(readFileSync(categoriesPath, 'utf-8'));
 
-// Count calculators per category
+const today = new Date().toISOString().split('T')[0];
+
+// Count only released calculators per category (lastUpdated <= today or no lastUpdated)
 const categoryCounts = {};
-calculatorsData.calculators.forEach(calc => {
-  if (!categoryCounts[calc.category]) {
-    categoryCounts[calc.category] = 0;
-  }
-  categoryCounts[calc.category]++;
-});
+calculatorsData.calculators
+  .filter(calc => !calc.lastUpdated || calc.lastUpdated.split('T')[0] <= today)
+  .forEach(calc => {
+    if (!categoryCounts[calc.category]) {
+      categoryCounts[calc.category] = 0;
+    }
+    categoryCounts[calc.category]++;
+  });
 
 // Update categories with actual counts
 categoriesData.categories.forEach(cat => {
