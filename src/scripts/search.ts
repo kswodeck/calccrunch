@@ -2,37 +2,44 @@
 // Integrates with calculators.json and provides real-time search
 
 import calculatorsDataRaw from '../data/calculators.json';
-import categoriesData from '../data/categories.json';
+import categoriesDataRaw from '../data/categories.json';
+import type {
+  Calculator,
+  CalculatorsData,
+  CategoriesData,
+  ScoredCalculator,
+} from '../types/calculator';
 
 const today = new Date().toISOString().split('T')[0];
-const calculatorsData = {
-  calculators: calculatorsDataRaw.calculators.filter(
+const calculatorsData: CalculatorsData = {
+  calculators: (calculatorsDataRaw as unknown as CalculatorsData).calculators.filter(
     c => !c.lastUpdated || c.lastUpdated.split('T')[0] <= today
   )
 };
+const categoriesData = categoriesDataRaw as unknown as CategoriesData;
 
 /**
  * Initialize search functionality
  */
-export function initSearch() {
+export function initSearch(): void {
   // Get search elements
-  const searchForms = document.querySelectorAll('.search-form, .search-form-hero');
-  const searchInputs = document.querySelectorAll('.search-input, .search-input-hero');
-  
+  const searchForms = document.querySelectorAll<HTMLFormElement>('.search-form, .search-form-hero');
+  const searchInputs = document.querySelectorAll<HTMLInputElement>('.search-input, .search-input-hero');
+
   if (!searchForms.length) return;
-  
+
   // Add event listeners to all search forms
   searchForms.forEach(form => {
     form.addEventListener('submit', handleSearchSubmit);
   });
-  
+
   // Add real-time search suggestions (optional)
   searchInputs.forEach(input => {
     input.addEventListener('input', debounce(handleSearchInput, 300));
     input.addEventListener('focus', showSearchSuggestions);
     input.addEventListener('blur', hideSearchSuggestions);
   });
-  
+
   // Handle search on search results page
   if (window.location.pathname.includes('/search')) {
     performPageSearch();
@@ -42,18 +49,18 @@ export function initSearch() {
 /**
  * Handle search form submission
  */
-function handleSearchSubmit(e) {
+function handleSearchSubmit(e: SubmitEvent): void {
   e.preventDefault();
-  
-  const form = e.target;
-  const input = form.querySelector('input[name="q"]');
-  const query = input.value.trim();
-  
+
+  const form = e.target as HTMLFormElement;
+  const input = form.querySelector<HTMLInputElement>('input[name="q"]');
+  const query = input?.value.trim() ?? '';
+
   if (!query) {
     showSearchError('Please enter a search term');
     return;
   }
-  
+
   // Redirect to search page with query
   window.location.href = `/search?q=${encodeURIComponent(query)}`;
 }
@@ -61,162 +68,159 @@ function handleSearchSubmit(e) {
 /**
  * Handle real-time search input (for suggestions)
  */
-function handleSearchInput(e) {
-  const query = e.target.value.trim();
-  
+function handleSearchInput(e: Event): void {
+  const target = e.target as HTMLInputElement;
+  const query = target.value.trim();
+
   if (query.length < 2) {
     hideSearchSuggestions();
     return;
   }
-  
+
   const results = searchCalculators(query, 5); // Get top 5 suggestions
-  displaySearchSuggestions(results, e.target);
+  displaySearchSuggestions(results, target);
 }
 
 /**
  * Main search function
- * @param {string} query - Search query
- * @param {number} limit - Maximum number of results (0 = no limit)
- * @returns {Array} - Array of matching calculators
  */
-function searchCalculators(query, limit = 0) {
+function searchCalculators(query: string, limit = 0): ScoredCalculator[] {
   if (!query) return [];
-  
-  const lowerQuery = query?.toLowerCase();
-  const words = lowerQuery?.split(' ')?.filter(word => word?.length);
-  
-  // Search through all calculators
+
+  const lowerQuery = query.toLowerCase();
+  const words = lowerQuery.split(' ').filter(word => word.length);
+
   // Search through all calculators (exclude hidden ones)
-  const results = calculatorsData?.calculators
-    ?.filter(calc => !calc.hidden) // Only show non-hidden calculators
-    ?.map(calc => {
+  const results = calculatorsData.calculators
+    .filter(calc => !calc.hidden) // Only show non-hidden calculators
+    .map((calc): ScoredCalculator => {
       let score = 0;
-      
+
       // Title match (highest weight)
-      if (calc?.title?.toLowerCase()?.includes(lowerQuery)) {
+      if (calc.title?.toLowerCase()?.includes(lowerQuery)) {
         score += 100;
         // Exact match gets bonus
-        if (calc?.title?.toLowerCase() === lowerQuery) {
+        if (calc.title?.toLowerCase() === lowerQuery) {
           score += 50;
         }
       }
-      
+
       // Check each word in title
-      words?.forEach(word => {
-        if (calc?.title?.toLowerCase()?.includes(word)) {
+      words.forEach(word => {
+        if (calc.title?.toLowerCase()?.includes(word)) {
           score += 20;
         }
       });
-      
+
       // Description match
-      if (calc?.description?.toLowerCase()?.includes(lowerQuery)) {
+      if (calc.description?.toLowerCase()?.includes(lowerQuery)) {
         score += 30;
       }
-      
-      words?.forEach(word => {
-        if (calc?.description?.toLowerCase()?.includes(word)) {
-          score += 10;
-        }
-      });
-      
-      // SEO Description match
-      if (calc?.seoDescription?.toLowerCase()?.includes(lowerQuery)) {
-        score += 30;
-      }
-      
+
       words.forEach(word => {
-        if (calc?.seoDescription?.toLowerCase()?.includes(word)) {
+        if (calc.description?.toLowerCase()?.includes(word)) {
           score += 10;
         }
       });
-      
+
+      // SEO Description match
+      if (calc.seoDescription?.toLowerCase()?.includes(lowerQuery)) {
+        score += 30;
+      }
+
+      words.forEach(word => {
+        if (calc.seoDescription?.toLowerCase()?.includes(word)) {
+          score += 10;
+        }
+      });
+
       // Tags match
-      calc?.tags?.forEach(tag => {
+      calc.tags?.forEach(tag => {
         if (tag?.toLowerCase()?.includes(lowerQuery)) {
           score += 40;
         }
-        words?.forEach(word => {
+        words.forEach(word => {
           if (tag?.toLowerCase()?.includes(word)) {
             score += 15;
           }
         });
       });
-      
+
       // Keywords match
-      calc?.keywords?.forEach(keyword => {
+      calc.keywords?.forEach(keyword => {
         if (keyword?.toLowerCase()?.includes(lowerQuery)) {
           score += 35;
         }
-        words?.forEach(word => {
+        words.forEach(word => {
           if (keyword?.toLowerCase()?.includes(word)) {
             score += 12;
           }
         });
       });
-      
+
       // Category match
-      const categoryName = getCategoryName(calc?.category);
+      const categoryName = getCategoryName(calc.category);
       if (categoryName?.toLowerCase()?.includes(lowerQuery)) {
         score += 20;
       }
-      
+
       // Boost popular calculators slightly
-      if (calc?.popular) {
+      if (calc.popular) {
         score += 3;
       }
-      
+
       // Boost featured calculators slightly
-      if (calc?.featured) {
+      if (calc.featured) {
         score += 2;
       }
-      
+
       return {
         ...calc,
         searchScore: score
       };
     })
-    ?.filter(calc => calc?.searchScore > 5) // Only include matches that have a connections other than just being popular/featured
-    ?.sort((a, b) => b.searchScore - a.searchScore);
-  
+    .filter(calc => calc.searchScore > 5) // Only include matches that have a connections other than just being popular/featured
+    .sort((a, b) => b.searchScore - a.searchScore);
+
   return limit > 0 ? results.slice(0, limit) : results;
 }
 
 /**
  * Perform search on the search results page
  */
-function performPageSearch() {
+function performPageSearch(): void {
   const urlParams = new URLSearchParams(window.location.search);
   const query = urlParams.get('q') || '';
-  
+
   // Update search input with query
-  const searchInputs = document.querySelectorAll('input[name="q"]');
+  const searchInputs = document.querySelectorAll<HTMLInputElement>('input[name="q"]');
   searchInputs.forEach(input => {
     input.value = query;
   });
-  
+
   if (!query) {
     displayNoQuery();
     return;
   }
-  
+
   // Perform search
   const results = searchCalculators(query);
-  
+
   // Display results
   displaySearchResults(results, query);
-  
+
   // Track search (for analytics)
   trackSearch(query, results.length);
 }
 
 const RESULTS_PER_PAGE = 10;
-let allSearchResults = [];
+let allSearchResults: ScoredCalculator[] = [];
 let visibleResults = RESULTS_PER_PAGE;
 
 /**
  * Display search results on the page
  */
-function displaySearchResults(results, query) {
+function displaySearchResults(results: ScoredCalculator[], query: string): void {
   const resultsContainer = document.getElementById('search-results');
   const resultsCount = document.getElementById('results-count');
   const searchQuery = document.getElementById('search-query');
@@ -234,7 +238,7 @@ function displaySearchResults(results, query) {
   // Clear previous results
   resultsContainer.innerHTML = '';
 
-  if (!results?.length) {
+  if (!results.length) {
     displayNoResults(query);
     if (resultsCount) {
       resultsCount.textContent = '0 results';
@@ -248,7 +252,7 @@ function displaySearchResults(results, query) {
 /**
  * Render the currently visible subset of results
  */
-function renderVisibleResults(container, countEl) {
+function renderVisibleResults(container?: HTMLElement | null, countEl?: HTMLElement | null): void {
   if (!container) {
     container = document.getElementById('search-results');
   }
@@ -256,6 +260,7 @@ function renderVisibleResults(container, countEl) {
     countEl = document.getElementById('results-count');
   }
 
+  if (!container) return;
   container.innerHTML = '';
 
   const showing = Math.min(visibleResults, allSearchResults.length);
@@ -277,7 +282,7 @@ function renderVisibleResults(container, countEl) {
   Object.entries(resultsByCategory).forEach(([category, calcs]) => {
     const categoryName = getCategoryName(category);
     const categorySection = createCategorySection(categoryName, calcs);
-    container.appendChild(categorySection);
+    container!.appendChild(categorySection);
   });
 
   // Add "Show More" button if there are more results
@@ -291,7 +296,7 @@ function renderVisibleResults(container, countEl) {
     `;
     container.appendChild(showMoreWrapper);
 
-    document.getElementById('search-show-more').addEventListener('click', () => {
+    document.getElementById('search-show-more')?.addEventListener('click', () => {
       visibleResults += RESULTS_PER_PAGE;
       renderVisibleResults();
     });
@@ -301,8 +306,8 @@ function renderVisibleResults(container, countEl) {
 /**
  * Group calculators by category
  */
-function groupByCategory(calculators) {
-  return calculators.reduce((acc, calc) => {
+function groupByCategory(calculators: ScoredCalculator[]): Record<string, ScoredCalculator[]> {
+  return calculators.reduce<Record<string, ScoredCalculator[]>>((acc, calc) => {
     if (!acc[calc.category]) {
       acc[calc.category] = [];
     }
@@ -314,36 +319,36 @@ function groupByCategory(calculators) {
 /**
  * Create category section HTML
  */
-function createCategorySection(categoryName, calculators) {
+function createCategorySection(categoryName: string, calculators: ScoredCalculator[]): HTMLDivElement {
   const section = document.createElement('div');
   section.className = 'search-category-section';
-  
+
   const header = document.createElement('h3');
   header.className = 'category-header';
   header.textContent = `${categoryName} (${calculators.length})`;
-  
+
   const grid = document.createElement('div');
   grid.className = 'search-results-grid';
-  
+
   calculators.forEach(calc => {
     const card = createCalculatorCard(calc);
     grid.appendChild(card);
   });
-  
+
   section.appendChild(header);
   section.appendChild(grid);
-  
+
   return section;
 }
 
 /**
  * Create calculator card HTML
  */
-function createCalculatorCard(calc) {
+function createCalculatorCard(calc: Calculator): HTMLAnchorElement {
   const card = document.createElement('a');
   card.href = `/calculators/${calc.slug}`;
   card.className = 'calc-card';
-  
+
   // Add popular badge if applicable
   if (calc.popular) {
     const badge = document.createElement('div');
@@ -351,81 +356,81 @@ function createCalculatorCard(calc) {
     badge.textContent = '🔥 Popular';
     card.appendChild(badge);
   }
-  
+
   // Card icon
   const icon = document.createElement('div');
   icon.className = 'calc-card-icon';
   icon.textContent = calc.icon || '🔢';
-  
+
   // Card content container
   const content = document.createElement('div');
   content.className = 'calc-card-content';
-  
+
   // Title
   const title = document.createElement('h4');
   title.className = 'calc-card-title';
   title.textContent = calc.title;
-  
+
   // Description
   const description = document.createElement('p');
   description.className = 'calc-card-description';
   description.textContent = calc.shortDescription || calc.description;
-  
+
   // Category tag
   const categoryTag = document.createElement('span');
   categoryTag.className = 'calc-card-category';
   categoryTag.textContent = getCategoryName(calc.category);
-  
+
   // Append to content
   content.appendChild(title);
   content.appendChild(description);
   content.appendChild(categoryTag);
-  
+
   // Card arrow
   const arrow = document.createElement('div');
   arrow.className = 'calc-card-arrow';
   arrow.textContent = '→';
-  
+
   // Append all to card
   card.appendChild(icon);
   card.appendChild(content);
   card.appendChild(arrow);
-  
+
   return card;
 }
 
 /**
  * Display search suggestions dropdown
  */
-function displaySearchSuggestions(results, inputElement) {
+function displaySearchSuggestions(results: ScoredCalculator[], inputElement: HTMLInputElement): void {
   // Remove any existing suggestions
   hideSearchSuggestions();
-  
+
   if (results.length === 0) return;
-  
+
   const dropdown = document.createElement('div');
   dropdown.className = 'search-suggestions';
   dropdown.id = 'search-suggestions';
-  
+
   results.forEach(calc => {
     const suggestion = document.createElement('a');
     suggestion.href = `/calculators/${calc.slug}`;
     suggestion.className = 'suggestion-item';
-    
+
     const icon = document.createElement('span');
     icon.className = 'suggestion-icon';
     icon.textContent = calc.icon || '🔢';
-    
+
     const content = document.createElement('div');
     content.className = 'suggestion-content';
-    
+
     const title = document.createElement('div');
     title.className = 'suggestion-title';
     title.textContent = calc.title + (calc.popular ? " 🔥" : '');
 
     const categoryRow = document.createElement('div');
     categoryRow.className = 'suggestion-category-div';
-    
+
     const category = document.createElement('div');
     category.className = 'suggestion-category';
     category.textContent = getCategoryName(calc.category);
@@ -433,43 +438,44 @@ function displaySearchSuggestions(results, inputElement) {
 
     content.appendChild(title);
     content.appendChild(categoryRow);
-    
+
     suggestion.appendChild(icon);
     suggestion.appendChild(content);
-    
+
     // Prevent blur event from hiding suggestions before click
     suggestion.addEventListener('mousedown', (e) => {
       e.preventDefault();
     });
-    
+
     dropdown.appendChild(suggestion);
   });
-  
+
   // Position dropdown below input
   const inputRect = inputElement.getBoundingClientRect();
   dropdown.style.position = 'absolute';
   dropdown.style.top = `${inputRect.bottom + window.scrollY}px`;
   dropdown.style.left = `${inputRect.left + window.scrollX}px`;
   dropdown.style.width = `${inputRect.width}px`;
-  
+
   document.body.appendChild(dropdown);
 }
 
 /**
  * Show search suggestions
  */
-function showSearchSuggestions(e) {
-  const query = e.target.value.trim();
+function showSearchSuggestions(e: FocusEvent): void {
+  const target = e.target as HTMLInputElement;
+  const query = target.value.trim();
   if (query.length >= 2) {
     const results = searchCalculators(query, 5);
-    displaySearchSuggestions(results, e.target);
+    displaySearchSuggestions(results, target);
   }
 }
 
 /**
  * Hide search suggestions
  */
-function hideSearchSuggestions() {
+function hideSearchSuggestions(): void {
   const existingSuggestions = document.getElementById('search-suggestions');
   if (existingSuggestions) {
     existingSuggestions.remove();
@@ -479,10 +485,10 @@ function hideSearchSuggestions() {
 /**
  * Display no results message
  */
-function displayNoResults(query) {
+function displayNoResults(query: string): void {
   const resultsContainer = document.getElementById('search-results');
   if (!resultsContainer) return;
-  
+
   resultsContainer.innerHTML = `
     <div class="no-results">
       <div class="no-results-icon">🔍</div>
@@ -507,10 +513,10 @@ function displayNoResults(query) {
 /**
  * Display no query message
  */
-function displayNoQuery() {
+function displayNoQuery(): void {
   const resultsContainer = document.getElementById('search-results');
   if (!resultsContainer) return;
-  
+
   resultsContainer.innerHTML = `
     <div class="no-results">
       <div class="no-results-icon">🔎</div>
@@ -535,19 +541,19 @@ function displayNoQuery() {
 /**
  * Show search error
  */
-function showSearchError(message) {
+function showSearchError(message: string): void {
   // Create a simple toast notification
   const toast = document.createElement('div');
   toast.className = 'search-toast error';
   toast.textContent = message;
-  
+
   document.body.appendChild(toast);
-  
+
   // Show toast
   setTimeout(() => {
     toast.classList.add('show');
   }, 10);
-  
+
   // Hide and remove toast after 3 seconds
   setTimeout(() => {
     toast.classList.remove('show');
@@ -560,7 +566,7 @@ function showSearchError(message) {
 /**
  * Get category name from category ID
  */
-function getCategoryName(categoryId) {
+function getCategoryName(categoryId: string): string {
   const category = categoriesData.categories.find(cat => cat.id === categoryId);
   return category ? category.name : categoryId;
 }
@@ -568,9 +574,9 @@ function getCategoryName(categoryId) {
 /**
  * Debounce function for performance
  */
-function debounce(func, wait) {
-  let timeout;
-  return function executedFunction(...args) {
+function debounce<Args extends unknown[]>(func: (...args: Args) => void, wait: number) {
+  let timeout: ReturnType<typeof setTimeout>;
+  return function executedFunction(...args: Args) {
     const later = () => {
       clearTimeout(timeout);
       func(...args);
@@ -583,8 +589,8 @@ function debounce(func, wait) {
 /**
  * Escape HTML to prevent XSS
  */
-function escapeHtml(text) {
-  const map = {
+function escapeHtml(text: string): string {
+  const map: Record<string, string> = {
     '&': '&amp;',
     '<': '&lt;',
     '>': '&gt;',
@@ -597,7 +603,7 @@ function escapeHtml(text) {
 /**
  * Track search for analytics
  */
-function trackSearch(query, resultsCount) {
+function trackSearch(query: string, resultsCount: number): void {
   // Google Analytics tracking
   if (typeof gtag !== 'undefined') {
     gtag('event', 'search', {
@@ -605,7 +611,7 @@ function trackSearch(query, resultsCount) {
       results_count: resultsCount
     });
   }
-  
+
   // You can add other analytics here (Plausible, etc.)
   if (typeof plausible !== 'undefined') {
     plausible('Search', {

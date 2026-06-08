@@ -48,7 +48,16 @@
       "Bash(nslookup *)",
       "Bash(git *)",
       "Skill(claude-api)",
-      "Skill(claude-api:*)"
+      "Skill(claude-api:*)",
+      "WebSearch",
+      "Bash(gh repo *)",
+      "Bash(echo 'const x: number = 5; console.log\\(x\\);')",
+      "Bash(rm _tstest.ts)",
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(sleep 12 && tail -30 /tmp/astro-dev.log)",
+      "Read(//tmp/**)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill //F //PID 32068)"
     ],
     "deny": [
       "Bash(git push *)",
@@ -61,8 +70,6 @@
       "Bash(curl *)",
       "Bash(wget *)"
     ],
-    "additionalDirectories": [
-      "\\tmp"
-    ]
+    "additionalDirectories": ["\\tmp"]
   }
 }

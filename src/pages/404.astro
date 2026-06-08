@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import categoriesData from "../data/categories.json";
-import { allCalculators } from "../utils/calculators.js";
+import { allCalculators } from "../utils/calculators";
 
 const popularCalculators = allCalculators
   .filter((calc) => calc.featured || calc.popular)

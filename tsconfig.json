@@ -1,12 +1,6 @@
 {
+  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "allowJs": true,
-    "checkJs": false,
-    "noEmit": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "jsx": "preserve",
-    "strict": false,
     "skipLibCheck": true
   },
   "exclude": ["node_modules", "dist"]
