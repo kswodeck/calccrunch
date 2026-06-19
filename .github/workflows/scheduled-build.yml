@@ -2,11 +2,11 @@ name: Scheduled Build (Publish Blog Posts)
 
 on:
   schedule:
-    # Runs daily at 8:00 AM PST (4:00 PM UTC). Calculators/posts are statically
+    # Runs daily at 6:00 AM PST (2:00 PM UTC). Calculators/posts are statically
     # gated by `lastUpdated`/`publishDate` (hidden until that date), so a daily
     # rebuild is what actually makes drip-scheduled content go live on its day —
     # see engine/playbooks/weekly-content-agent.md for how content gets scheduled.
-    - cron: '0 16 * * *'
+    - cron: '0 14 * * 1,3,5'                  
   workflow_dispatch: # Allow manual trigger from GitHub Actions UI anytime
 
 jobs:

@@ -57,7 +57,8 @@
       "Bash(sleep 12 && tail -30 /tmp/astro-dev.log)",
       "Read(//tmp/**)",
       "Bash(netstat -ano)",
-      "Bash(taskkill //F //PID 32068)"
+      "Bash(taskkill //F //PID 32068)",
+      "Bash(echo \"=== search repo for the stray \\\\\\\\tmp path from the failed log ===\")"
     ],
     "deny": [
       "Bash(git push *)",
@@ -70,6 +71,8 @@
       "Bash(curl *)",
       "Bash(wget *)"
     ],
-    "additionalDirectories": ["\\tmp"]
+    "additionalDirectories": [
+      "\\tmp"
+    ]
   }
 }
