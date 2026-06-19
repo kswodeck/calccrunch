@@ -58,6 +58,14 @@ jobs:
           echo "Claude run did not conclude successfully — aborting before any commit/push."
           exit 1
 
+      # The Claude action installs and activates its own Node 18 on the runner,
+      # which clobbers the Node 22 from the earlier Setup Node step. Astro needs
+      # >=22.12, so re-pin Node 22 here before building.
+      - name: Re-pin Node 22 for the build
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
       - name: Build (validates content + does a full production build)
         run: npm run build
 
