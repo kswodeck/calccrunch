@@ -485,7 +485,8 @@
         "paycheck-calculator",
         "retirement-planning-calculator",
         "pto-calculator",
-        "hours-calculator"
+        "hours-calculator",
+        "date-difference-calculator"
       ]
     },
     {
@@ -2662,7 +2663,8 @@
       "relatedCalculators": [
         "business-days-calculator",
         "time-zone-converter",
-        "pto-calculator"
+        "pto-calculator",
+        "date-difference-calculator"
       ]
     },
     {
@@ -4030,7 +4032,8 @@
         "hourly-to-salary-calculator",
         "overtime-calculator",
         "pto-calculator",
-        "business-days-calculator"
+        "business-days-calculator",
+        "date-difference-calculator"
       ]
     },
     {
@@ -4590,6 +4593,45 @@
         "student-loan-calculator",
         "budget-calculator",
         "savings-goal-calculator"
+      ]
+    },
+    {
+      "title": "Date Difference Calculator",
+      "slug": "date-difference-calculator",
+      "description": "Calculate the exact number of days, weeks, months, and years between any two dates. Instant results with inclusive/exclusive options and quick date shortcuts.",
+      "shortDescription": "Days, weeks & months between two dates",
+      "category": "time-date",
+      "tags": [
+        "date calculator",
+        "days between dates",
+        "date difference",
+        "time calculator",
+        "countdown"
+      ],
+      "featured": false,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "📅",
+      "seoTitle": "Date Difference Calculator — Days Between Dates",
+      "seoDescription": "Calculate the exact days, weeks, months, and years between any two dates. Free, instant, and works for deadlines, countdowns, age, and contract durations.",
+      "keywords": [
+        "date difference calculator",
+        "days between dates",
+        "how many days between two dates",
+        "date calculator",
+        "days until calculator"
+      ],
+      "lastUpdated": "2026-06-20",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "age-calculator",
+        "business-days-calculator",
+        "hours-calculator"
       ]
     }
   ]

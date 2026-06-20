@@ -30,7 +30,7 @@ These are huge-volume, low-difficulty queries. Each is one row + `npm run gen:co
 | hourly-to-salary-calculator | "hourly to salary" | financial | done |
 | hours-calculator | "hours calculator" (time card) | time-date | done |
 | overtime-calculator | "overtime pay calculator" | financial | done |
-| date-difference-calculator | "days between dates" | time-date | todo |
+| date-difference-calculator | "days between dates" | time-date | done |
 
 ## Tier 3 — Math & misc (bespoke)
 
@@ -58,8 +58,18 @@ Each post links ≥2 calculators via `relatedCalculators`.
 | kg-to-lbs-conversion-guide | "how to convert kg to lbs" | kg-to-lbs, lbs-to-kg | done |
 | sales-tax-by-state-guide | "sales tax by state" | sales-tax-calculator | done |
 | how-to-calculate-a-discount | "how to calculate a discount" | discount-calculator, percentage-calculator | done |
-| celsius-fahrenheit-explained | "celsius to fahrenheit formula" | celsius-to-fahrenheit, fahrenheit-to-celsius | todo |
-| salary-vs-hourly-pay | "salary vs hourly" | salary-to-hourly-calculator, paycheck-calculator | todo |
+| celsius-fahrenheit-explained | "celsius to fahrenheit formula" | celsius-to-fahrenheit, fahrenheit-to-celsius | done |
+| salary-vs-hourly-pay | "salary vs hourly" | salary-to-hourly-calculator, paycheck-calculator | done |
+
+## Blog backlog (new ideas from 2026-06-20 research run)
+
+| Slug | Target query | Links to | Status |
+|---|---|---|---|
+| fraction-calculator-guide | "how to add fractions" / "fraction calculator" | fraction-calculator, percentage-calculator | todo |
+| running-pace-guide | "how to calculate running pace" / "pace calculator" | pace-calculator, calories-burned-calculator | todo |
+| how-to-calculate-percentage-change | "percentage change formula" | percentage-change-calculator, percentage-calculator | todo |
+| how-much-water-should-you-drink | "how much water per day" / "water intake calculator" | water-intake-calculator, calorie-calculator | todo |
+| average-vs-median | "average vs median" / "how to calculate average" | average-calculator, percentage-calculator | todo |
 
 ## Retention backlog
 

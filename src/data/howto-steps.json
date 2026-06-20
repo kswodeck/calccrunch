@@ -471,5 +471,18 @@
       "Choose your overtime multiplier (1.5 for time and a half)",
       "Read your regular pay, overtime pay, and total"
     ]
+  },
+  "date-difference-calculator": {
+    "name": "How to Calculate the Number of Days Between Two Dates",
+    "description": "Use this free date difference calculator to find the exact number of days, weeks, months, and years between any two dates in seconds.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Enter the earlier date in the Start Date field using the date picker or type it in YYYY-MM-DD format",
+      "Enter the later date in the End Date field",
+      "Choose whether to count the end date itself: select 'No' for 'days between' (exclusive) or 'Yes' to include the end day",
+      "Optionally use a Quick Shortcut button (e.g., 'Today + 30 days' or 'Since Jan 1') to pre-fill common ranges",
+      "Click 'Calculate Difference' to see the result in days, weeks, months, and a years+months+days breakdown",
+      "Use the Share button to copy a bookmarkable link to your exact calculation"
+    ]
   }
 }
