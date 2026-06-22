@@ -438,7 +438,7 @@
         "lbs-to-kg"
       ],
       "seoTitle": "How to Convert KG to LBS (With a Simple Formula & Chart)",
-      "seoDescription": "Convert kg to lbs the easy way: the formula (×2.20462), a fast mental-math trick, a full conversion chart, and the reverse lbs-to-kg method.",
+      "seoDescription": "Convert kg to lbs the easy way: the formula (\u00d72.20462), a fast mental-math trick, a full conversion chart, and the reverse lbs-to-kg method.",
       "keywords": [
         "how to convert kg to lbs",
         "kg to lbs formula",
@@ -513,7 +513,7 @@
     {
       "slug": "celsius-fahrenheit-explained",
       "title": "Celsius to Fahrenheit Explained: The Formula, a Quick Mental Trick, and a Free Calculator",
-      "description": "Learn the Celsius to Fahrenheit formula, a fast mental-math shortcut, and when each scale is used — plus a free converter for any temperature.",
+      "description": "Learn the Celsius to Fahrenheit formula, a fast mental-math shortcut, and when each scale is used \u2014 plus a free converter for any temperature.",
       "author": "CalcCrunch Team",
       "publishDate": "2026-06-22T09:00:00-07:00",
       "updatedDate": "2026-06-22T09:00:00-07:00",
@@ -533,7 +533,7 @@
         "date-difference-calculator"
       ],
       "seoTitle": "Celsius to Fahrenheit Formula & Conversion Guide (With Calculator)",
-      "seoDescription": "Convert Celsius to Fahrenheit instantly with the formula (°C × 9/5) + 32. Includes a mental-math shortcut, a reference chart, and a free temperature converter.",
+      "seoDescription": "Convert Celsius to Fahrenheit instantly with the formula (\u00b0C \u00d7 9/5) + 32. Includes a mental-math shortcut, a reference chart, and a free temperature converter.",
       "keywords": [
         "celsius to fahrenheit",
         "celsius to fahrenheit formula",
@@ -545,7 +545,7 @@
     {
       "slug": "salary-vs-hourly-pay",
       "title": "Salary vs Hourly Pay: Which Is Better for You? A Complete Comparison",
-      "description": "Compare salary vs hourly pay across overtime, benefits, taxes, and job security. See which pay structure puts more money in your pocket — with real examples.",
+      "description": "Compare salary vs hourly pay across overtime, benefits, taxes, and job security. See which pay structure puts more money in your pocket \u2014 with real examples.",
       "author": "CalcCrunch Team",
       "publishDate": "2026-06-25T09:00:00-07:00",
       "updatedDate": "2026-06-25T09:00:00-07:00",
@@ -572,6 +572,71 @@
         "is salary or hourly better",
         "salary to hourly calculator",
         "hourly vs salary pros cons"
+      ]
+    },
+    {
+      "slug": "fraction-calculator-guide",
+      "title": "How to Add, Subtract, Multiply, and Divide Fractions (With Examples)",
+      "description": "Master fraction operations with this step-by-step guide. Learn to add, subtract, multiply, and divide fractions and mixed numbers with worked examples and simple rules.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-24T09:00:00-07:00",
+      "updatedDate": "2026-06-24T09:00:00-07:00",
+      "category": "Guides",
+      "tags": [
+        "fractions",
+        "math",
+        "arithmetic",
+        "mixed numbers",
+        "education"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "fraction-calculator",
+        "percentage-calculator",
+        "discount-calculator"
+      ],
+      "seoTitle": "How to Add, Subtract, Multiply & Divide Fractions (With Examples)",
+      "seoDescription": "Learn to add, subtract, multiply, and divide fractions step by step. Includes rules for mixed numbers, worked examples for every operation, and a free fraction calculator.",
+      "keywords": [
+        "how to add fractions",
+        "how to subtract fractions",
+        "how to multiply fractions",
+        "how to divide fractions",
+        "fraction calculator",
+        "mixed numbers"
+      ]
+    },
+    {
+      "slug": "how-to-calculate-percentage-change",
+      "title": "How to Calculate Percentage Change (Increase, Decrease & Formula Explained)",
+      "description": "Learn the percentage change formula with step-by-step examples for increases, decreases, and real-world applications like price changes, salary raises, and test scores.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-27T09:00:00-07:00",
+      "updatedDate": "2026-06-27T09:00:00-07:00",
+      "category": "Guides",
+      "tags": [
+        "percentage change",
+        "percent increase",
+        "percent decrease",
+        "math",
+        "personal finance"
+      ],
+      "readTime": "6 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "percentage-calculator",
+        "fraction-calculator",
+        "discount-calculator"
+      ],
+      "seoTitle": "How to Calculate Percentage Change: Formula, Examples & Calculator",
+      "seoDescription": "Learn the percentage change formula: ((New \u2212 Old) / |Old|) \u00d7 100. Step-by-step examples for price increases, salary changes, and more. Free calculator included.",
+      "keywords": [
+        "percentage change formula",
+        "how to calculate percentage change",
+        "percent increase formula",
+        "percent decrease",
+        "percentage change calculator"
       ]
     }
   ]

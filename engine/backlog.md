@@ -36,7 +36,7 @@ These are huge-volume, low-difficulty queries. Each is one row + `npm run gen:co
 
 | Slug | Query | Category | Status |
 |---|---|---|---|
-| fraction-calculator | "fraction calculator" | math-conversions | todo |
+| fraction-calculator | "fraction calculator" | math-conversions | done |
 | percentage-change-calculator | "percentage change" | math-conversions | todo |
 | average-calculator | "average calculator" | math-conversions | todo |
 | ratio-calculator | "ratio calculator" | math-conversions | todo |
@@ -65,11 +65,21 @@ Each post links ≥2 calculators via `relatedCalculators`.
 
 | Slug | Target query | Links to | Status |
 |---|---|---|---|
-| fraction-calculator-guide | "how to add fractions" / "fraction calculator" | fraction-calculator, percentage-calculator | todo |
+| fraction-calculator-guide | "how to add fractions" / "fraction calculator" | fraction-calculator, percentage-calculator | done |
+| how-to-calculate-percentage-change | "percentage change formula" | percentage-calculator, fraction-calculator | done |
 | running-pace-guide | "how to calculate running pace" / "pace calculator" | pace-calculator, calories-burned-calculator | todo |
-| how-to-calculate-percentage-change | "percentage change formula" | percentage-change-calculator, percentage-calculator | todo |
 | how-much-water-should-you-drink | "how much water per day" / "water intake calculator" | water-intake-calculator, calorie-calculator | todo |
 | average-vs-median | "average vs median" / "how to calculate average" | average-calculator, percentage-calculator | todo |
+
+## Blog backlog (new ideas from 2026-06-22 research run)
+
+| Slug | Target query | Links to | Status |
+|---|---|---|---|
+| ratio-calculator-guide | "how to calculate a ratio" / "ratio simplifier" | ratio-calculator, fraction-calculator | todo |
+| average-calculator-guide | "how to find the average" / "mean median mode" | average-calculator, percentage-calculator | todo |
+| percentage-change-calculator-bespoke | Ship the actual percentage-change-calculator tool (Tier 3) | percentage-calculator, fraction-calculator | todo |
+| summer-road-trip-fuel-cost | "road trip fuel cost calculator" (summer seasonal) | gas-mileage-calculator, budget-calculator | todo |
+| back-to-school-budget-guide | "back to school budget" / "school supply costs" | budget-calculator, savings-goal-calculator | todo |
 
 ## Retention backlog
 
