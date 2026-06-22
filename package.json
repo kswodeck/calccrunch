@@ -2,12 +2,15 @@
   "name": "calccrunch",
   "type": "module",
   "version": "1.0.2",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "npm run update-counts && astro dev",
     "build": "npm run clean && npm run validate:content && npm run update-counts && astro build",
     "preview": "astro preview",
     "analyze": "npm run build && npx lighthouse https://calccrunch.com --output html --view",
-    "update-counts": "node --experimental-strip-types src/scripts/update-category-counts.ts",
+    "update-counts": "node src/scripts/update-category-counts.mjs",
     "validate:content": "node scripts/validate-content.mjs",
     "gen:conversions": "node scripts/generate-conversions.mjs",
     "new:calc": "node scripts/new-calculator.mjs",

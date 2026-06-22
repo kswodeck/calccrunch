@@ -738,5 +738,31 @@
       "q": "What is $20 an hour at time and a half?",
       "a": "$30 per hour. Multiply $20 by 1.5 to get the overtime rate."
     }
+  ],
+  "date-difference-calculator": [
+    {
+      "q": "How do I calculate the number of days between two dates?",
+      "a": "Subtract the earlier date from the later date. The formula is: Days = End Date − Start Date. For example, January 1 to March 31 spans 89 days (31 + 28 + 31 − 1). Our calculator handles leap years, month-length variations, and daylight-saving edge cases automatically."
+    },
+    {
+      "q": "What is the difference between inclusive and exclusive day counting?",
+      "a": "Exclusive counting (the default) counts the gaps between dates — January 1 to January 3 = 2 days. Inclusive counting adds the end date itself — January 1 to January 3 = 3 days. Use inclusive when counting event nights (e.g., a 3-night hotel stay), contract days, or subscription days. Use exclusive for 'how many days until' countdowns."
+    },
+    {
+      "q": "How many weeks are in a year?",
+      "a": "A calendar year has exactly 52 weeks and 1 day (365 days ÷ 7 = 52.14 weeks), or 52 weeks and 2 days in a leap year (366 days). That's why the same date shifts by one weekday each year (two days after a leap year)."
+    },
+    {
+      "q": "How do I count business days between two dates?",
+      "a": "Business days exclude weekends (Saturday and Sunday) and public holidays. To estimate: take the total calendar days, subtract the number of Saturdays and Sundays in the range, then subtract any holidays. Our business days calculator handles this automatically if you need precise working-day counts."
+    },
+    {
+      "q": "How do I calculate someone's exact age in days?",
+      "a": "Enter the person's birth date as the start date and today's date as the end date, then click Calculate. The result is their exact age in total days, weeks, months, and years. For example, someone born on June 20, 2000, turns exactly 26 years old on June 20, 2026 — that's 9,497 days."
+    },
+    {
+      "q": "Does daylight saving time affect the day count?",
+      "a": "No. This calculator uses UTC midnight timestamps for both dates, so 'spring forward' and 'fall back' clock changes do not affect the result. The answer is always the correct number of calendar days regardless of time zone."
+    }
   ]
 }

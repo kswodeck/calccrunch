@@ -509,6 +509,70 @@
         "stacked discounts",
         "calculate sale price"
       ]
+    },
+    {
+      "slug": "celsius-fahrenheit-explained",
+      "title": "Celsius to Fahrenheit Explained: The Formula, a Quick Mental Trick, and a Free Calculator",
+      "description": "Learn the Celsius to Fahrenheit formula, a fast mental-math shortcut, and when each scale is used — plus a free converter for any temperature.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-22T09:00:00-07:00",
+      "updatedDate": "2026-06-22T09:00:00-07:00",
+      "category": "Guides",
+      "tags": [
+        "temperature conversion",
+        "celsius to fahrenheit",
+        "unit conversion",
+        "math",
+        "science"
+      ],
+      "readTime": "6 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "celsius-to-fahrenheit",
+        "fahrenheit-to-celsius",
+        "date-difference-calculator"
+      ],
+      "seoTitle": "Celsius to Fahrenheit Formula & Conversion Guide (With Calculator)",
+      "seoDescription": "Convert Celsius to Fahrenheit instantly with the formula (°C × 9/5) + 32. Includes a mental-math shortcut, a reference chart, and a free temperature converter.",
+      "keywords": [
+        "celsius to fahrenheit",
+        "celsius to fahrenheit formula",
+        "how to convert celsius to fahrenheit",
+        "temperature conversion",
+        "fahrenheit to celsius"
+      ]
+    },
+    {
+      "slug": "salary-vs-hourly-pay",
+      "title": "Salary vs Hourly Pay: Which Is Better for You? A Complete Comparison",
+      "description": "Compare salary vs hourly pay across overtime, benefits, taxes, and job security. See which pay structure puts more money in your pocket — with real examples.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-06-25T09:00:00-07:00",
+      "updatedDate": "2026-06-25T09:00:00-07:00",
+      "category": "Financial Planning",
+      "tags": [
+        "salary",
+        "hourly pay",
+        "compensation",
+        "personal finance",
+        "employment"
+      ],
+      "readTime": "8 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "salary-to-hourly-calculator",
+        "hourly-to-salary-calculator",
+        "paycheck-calculator"
+      ],
+      "seoTitle": "Salary vs Hourly Pay: Which Is Better? (2026 Guide + Calculator)",
+      "seoDescription": "Should you take a salary or hourly job? Compare overtime pay, benefits, taxes, and take-home pay at every income level. Free salary-to-hourly calculator included.",
+      "keywords": [
+        "salary vs hourly",
+        "salary vs hourly pay",
+        "is salary or hourly better",
+        "salary to hourly calculator",
+        "hourly vs salary pros cons"
+      ]
     }
   ]
 }
