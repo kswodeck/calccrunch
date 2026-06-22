@@ -49,6 +49,7 @@ jobs:
           prompt_file: engine/playbooks/weekly-content-agent.md
           allowed_tools: "Read,Write,Edit,Glob,Grep,Bash,WebSearch,WebFetch,TodoWrite"
           max_turns: "120"
+          timeout: "3000"
           model: claude-sonnet-4-6
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
 

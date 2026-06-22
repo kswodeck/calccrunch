@@ -93,8 +93,9 @@ publish time) and set the calculator's `lastUpdated` to today's date
 
 Run `npm run validate:content` and fix every error it reports (warnings about
 missing FAQ/HowTo on *other* calculators are pre-existing — don't try to fix
-those, just make sure your new content has none). Then run `npm run build` as
-a full smoke test. Both must pass cleanly before you stop.
+those, just make sure your new content has none). This must pass cleanly before
+you stop. Do **not** run `npm run build` — the workflow runs the full build
+after you finish, and that step is the safety gate before anything is pushed.
 
 ## 6. Update the backlog
 
