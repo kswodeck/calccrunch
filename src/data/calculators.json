@@ -16,7 +16,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83c\udfe0",
+      "icon": "🏠",
       "seoTitle": "Free Mortgage Payment Calculator",
       "seoDescription": "Calculate your monthly mortgage payment with our free calculator.",
       "keywords": [
@@ -64,7 +64,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83c\udf7d\ufe0f",
+      "icon": "🍽️",
       "seoTitle": "Free Daily Calorie Calculator - TDEE & Macro Calculator",
       "seoDescription": "Calculate your daily calorie needs with our free TDEE calculator. Get personalized calorie targets for weight loss, maintenance, or muscle gain.",
       "keywords": [
@@ -115,7 +115,7 @@
       "popular": true,
       "difficulty": "Medium",
       "estimatedTime": "3 minutes",
-      "icon": "\ud83d\udcb9",
+      "icon": "💹",
       "seoTitle": "Free Compound Interest Calculator - Investment Growth Calculator",
       "seoDescription": "Calculate compound interest on your investments and savings. See how your money grows over time with our free compound interest calculator. Includes charts and year-by-year breakdown.",
       "keywords": [
@@ -165,7 +165,7 @@
       "popular": false,
       "difficulty": "Medium",
       "estimatedTime": "4 minutes",
-      "icon": "\ud83c\udfd6\ufe0f",
+      "icon": "🏖️",
       "seoTitle": "Free Retirement Income Calculator - Withdrawal & Drawdown Planner",
       "seoDescription": "Calculate how long your retirement savings will last. Plan sustainable withdrawals with our free retirement income calculator. Includes 4% rule, inflation adjustments, and year-by-year breakdown.",
       "keywords": [
@@ -215,7 +215,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "\ud83c\udfe1",
+      "icon": "🏡",
       "seoTitle": "Free Home Affordability Calculator - How Much House Can I Afford?",
       "seoDescription": "Calculate how much house you can afford based on your income and debts. Get your maximum home price with our free calculator.",
       "keywords": [
@@ -263,7 +263,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\u2764\ufe0f",
+      "icon": "❤️",
       "seoTitle": "Free BMI Calculator",
       "seoDescription": "Calculate your BMI instantly with our free calculator.",
       "keywords": [
@@ -311,7 +311,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "\ud83d\udcca",
+      "icon": "📊",
       "seoTitle": "Free Loan Amortization Calculator with Payment Schedule",
       "seoDescription": "Calculate your loan amortization schedule with our free calculator. See detailed monthly payments, principal, interest, and remaining balance.",
       "keywords": [
@@ -360,7 +360,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "\ud83d\ude97",
+      "icon": "🚗",
       "seoTitle": "Free Auto Loan Calculator - Car Payment Calculator",
       "seoDescription": "Calculate your monthly car payment with our free auto loan calculator. Include trade-in, down payment, taxes, and fees.",
       "keywords": [
@@ -408,7 +408,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "\ud83d\udcda",
+      "icon": "📚",
       "seoTitle": "Free GPA Calculator - Grade Point Average Calculator",
       "seoDescription": "Calculate your GPA with multiple courses and credit hours. Track weighted and unweighted grades with our free calculator.",
       "keywords": [
@@ -454,7 +454,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83d\udcc6",
+      "icon": "📆",
       "seoTitle": "Free Business Days Calculator - Workday Calculator",
       "seoDescription": "Calculate business days between dates excluding weekends and holidays. Plan project deadlines with our free calculator.",
       "keywords": [
@@ -508,7 +508,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "\ud83c\udf34",
+      "icon": "🌴",
       "seoTitle": "Free PTO Calculator - Paid Time Off Accrual Calculator",
       "seoDescription": "Calculate your PTO balance and accrual with our free PTO calculator. Project future balances, plan vacation time, and calculate the monetary value of your paid time off.",
       "keywords": [
@@ -561,7 +561,7 @@
       "popular": true,
       "difficulty": "Medium",
       "estimatedTime": "3 minutes",
-      "icon": "\ud83c\udfaf",
+      "icon": "🎯",
       "seoTitle": "Free Investment Income Goal Calculator - ROI & Breakeven Calculator",
       "seoDescription": "Calculate how much to invest to replace your income and reach financial independence. Plan multiple investments with our comprehensive ROI and breakeven calculator.",
       "keywords": [
@@ -612,7 +612,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83d\udcb3",
+      "icon": "💳",
       "seoTitle": "Free Credit Card Payoff Calculator - Debt Payoff Planner",
       "seoDescription": "Calculate how long to pay off credit card debt. See total interest and create a debt payoff plan with our free calculator.",
       "keywords": [
@@ -660,7 +660,7 @@
       "popular": false,
       "difficulty": "Medium",
       "estimatedTime": "5 minutes",
-      "icon": "\ud83c\udfd8\ufe0f",
+      "icon": "🏘️",
       "seoTitle": "Free Rent vs Buy Calculator - Should You Rent or Buy?",
       "seoDescription": "Compare the true cost of renting vs buying a home. Factor in all costs and opportunity costs with our comprehensive calculator.",
       "keywords": [
@@ -708,7 +708,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "\u2696\ufe0f",
+      "icon": "⚖️",
       "seoTitle": "Free Body Fat Calculator - Body Fat Percentage Calculator",
       "seoDescription": "Calculate your body fat percentage with multiple measurement methods. Track body composition with our free calculator.",
       "keywords": [
@@ -756,7 +756,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "\ud83d\udc68\u200d\ud83c\udf73",
+      "icon": "👨‍🍳",
       "seoTitle": "Free Recipe Scaler & Converter - Cooking Calculator",
       "seoDescription": "Scale recipes and convert cooking measurements. Adjust servings and convert temperatures with our free recipe calculator.",
       "keywords": [
@@ -805,7 +805,7 @@
       "popular": true,
       "difficulty": "Advanced",
       "estimatedTime": "5 minutes",
-      "icon": "\ud83e\udeba",
+      "icon": "🪺",
       "seoTitle": "Free Retirement Planning Calculator - Investment Growth & Income Planner",
       "seoDescription": "Plan your complete retirement journey with our comprehensive calculator. See investment growth during working years and calculate retirement income. Includes compound interest, 4% rule, inflation adjustments, and year-by-year projections.",
       "keywords": [
@@ -863,7 +863,7 @@
       "popular": true,
       "difficulty": "Intermediate",
       "estimatedTime": "4 minutes",
-      "icon": "\ud83c\udfdb\ufe0f",
+      "icon": "🏛️",
       "seoTitle": "Free Social Security Benefits Calculator - Estimate & Optimize Your Benefits",
       "seoDescription": "Estimate your Social Security retirement benefits and find your optimal claiming age. Compare benefits at 62, FRA, and 70 with breakeven analysis, spousal benefits, and COLA projections.",
       "keywords": [
@@ -917,7 +917,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "5 minutes",
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "seoTitle": "Free Net Worth Calculator - Assets vs Liabilities",
       "seoDescription": "Calculate your net worth by tracking all assets and liabilities. Monitor your wealth over time with our free calculator.",
       "keywords": [
@@ -965,7 +965,7 @@
       "popular": false,
       "difficulty": "Medium",
       "estimatedTime": "4 minutes",
-      "icon": "\ud83c\udf93",
+      "icon": "🎓",
       "seoTitle": "Free Student Loan Calculator - Repayment Plans & Forgiveness",
       "seoDescription": "Calculate student loan payments with different repayment plans. Compare options and estimate loan forgiveness with our free calculator.",
       "keywords": [
@@ -1014,7 +1014,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "5 minutes",
-      "icon": "\ud83d\udcb0",
+      "icon": "💰",
       "seoTitle": "Free Budget Calculator - Monthly Budget Planner",
       "seoDescription": "Create a monthly budget with our free calculator. Track income, expenses, and savings using the 50/30/20 rule.",
       "keywords": [
@@ -1059,7 +1059,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83d\udccb",
+      "icon": "📋",
       "seoTitle": "Free Debt-to-Income Calculator - DTI Ratio for Mortgage",
       "seoDescription": "Calculate your debt-to-income ratio for mortgage approval. See if you meet lender requirements with our free DTI calculator.",
       "keywords": [
@@ -1107,7 +1107,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83c\udfe6",
+      "icon": "🏦",
       "seoTitle": "Free Home Equity Calculator - HELOC & Equity Loan Calculator",
       "seoDescription": "Calculate your home equity and borrowing power for HELOC or home equity loans with our free calculator.",
       "keywords": [
@@ -1155,7 +1155,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83d\udcb2",
+      "icon": "💲",
       "seoTitle": "Free Profit Margin Calculator - Margin & Markup Calculator",
       "seoDescription": "Calculate profit margin and markup percentage. Optimize pricing with our free profit calculator.",
       "keywords": [
@@ -1202,7 +1202,7 @@
       "popular": false,
       "difficulty": "Medium",
       "estimatedTime": "5 minutes",
-      "icon": "\ud83d\ude99",
+      "icon": "🚙",
       "seoTitle": "Free Car Lease vs Buy Calculator - Should I Lease or Buy?",
       "seoDescription": "Compare leasing vs buying a car. Calculate total costs and equity with our free lease vs buy calculator.",
       "keywords": [
@@ -1249,7 +1249,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "\ud83d\udcbc",
+      "icon": "💼",
       "seoTitle": "Free Sales Commission Calculator - Commission Calculator",
       "seoDescription": "Calculate sales commissions with multiple tiers and bonuses. Track earnings with our free commission calculator.",
       "keywords": [
@@ -1295,7 +1295,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83e\uddee",
+      "icon": "🧮",
       "seoTitle": "Free ROI Calculator - Return on Investment Calculator",
       "seoDescription": "Calculate ROI for investments and projects. Measure investment returns with our free calculator.",
       "keywords": [
@@ -1343,7 +1343,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83d\udc55",
+      "icon": "👕",
       "seoTitle": "Free Size Converter - International Clothing & Shoe Sizes",
       "seoDescription": "Convert clothing and shoe sizes between US, UK, EU, and other countries. Shop internationally with our free size converter.",
       "keywords": [
@@ -1391,7 +1391,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83d\udd10",
+      "icon": "🔐",
       "seoTitle": "Free Password Generator - Create Strong, Secure Passwords Instantly",
       "seoDescription": "Generate strong, random passwords with our free password generator. Customize length, include uppercase, lowercase, numbers, and symbols. Secure your accounts today.",
       "keywords": [
@@ -1443,7 +1443,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83c\udfb2",
+      "icon": "🎲",
       "seoTitle": "Free Random Number Generator - Generate Numbers in Any Range",
       "seoDescription": "Generate random numbers instantly with our free random number generator. Set custom ranges, generate multiple numbers, exclude duplicates. Perfect for lotteries, games, and more.",
       "keywords": [
@@ -1497,7 +1497,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "5 minutes",
-      "icon": "\ud83d\udc76",
+      "icon": "👶",
       "seoTitle": "Free Baby Name Generator - Find Perfect Boy & Girl Names by Origin & Meaning",
       "seoDescription": "Find the perfect baby name with our free generator. Filter by gender, origin, meaning, and popularity. Discover unique and popular boy and girl names with meanings.",
       "keywords": [
@@ -1551,7 +1551,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83d\udcdd",
+      "icon": "📝",
       "seoTitle": "Free Lorem Ipsum Generator - Placeholder Text for Designs & Websites",
       "seoDescription": "Generate Lorem Ipsum placeholder text instantly. Choose paragraphs, sentences, or words. Multiple styles available. Perfect for web design, mockups, and prototypes.",
       "keywords": [
@@ -1604,7 +1604,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83c\udfa8",
+      "icon": "🎨",
       "seoTitle": "Free Color Generator - HEX, RGB & HSL Color Codes",
       "seoDescription": "Generate random colors with HEX, RGB, and HSL codes. Create color palettes and check contrast ratios. Free color generator for designers and developers.",
       "keywords": [
@@ -1655,7 +1655,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83d\udc37",
+      "icon": "🐷",
       "seoTitle": "Free Savings Goal Calculator - Reach Your Financial Goals",
       "seoDescription": "Calculate how much to save monthly to reach your financial goal. Plan your savings with compound interest projections.",
       "keywords": [
@@ -1703,7 +1703,7 @@
       "popular": false,
       "difficulty": "Medium",
       "estimatedTime": "4 minutes",
-      "icon": "\u267b\ufe0f",
+      "icon": "♻️",
       "seoTitle": "Free Mortgage Refinance Calculator - Should I Refinance?",
       "seoDescription": "Calculate if refinancing saves you money. Compare current vs new loan with break-even analysis using our free calculator.",
       "keywords": [
@@ -1751,7 +1751,7 @@
       "popular": false,
       "difficulty": "Medium",
       "estimatedTime": "4 minutes",
-      "icon": "\ud83d\udd28",
+      "icon": "🔨",
       "seoTitle": "Free Home Improvement Cost Calculator - Renovation Estimator",
       "seoDescription": "Estimate home renovation costs for any project. Calculate ROI and compare DIY vs professional costs with our free calculator.",
       "keywords": [
@@ -1799,7 +1799,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83e\ude99",
+      "icon": "🪙",
       "seoTitle": "Free Tip Calculator - Restaurant & Service Gratuity",
       "seoDescription": "Calculate tips instantly and split bills among friends. International tipping guide included in our free calculator.",
       "keywords": [
@@ -1848,7 +1848,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\u26fd",
+      "icon": "⛽",
       "seoTitle": "Free Gas Mileage Calculator - MPG & Fuel Cost Calculator",
       "seoDescription": "Calculate your car's MPG and fuel costs per mile. Compare vehicle efficiency with our free gas mileage calculator.",
       "keywords": [
@@ -1895,7 +1895,7 @@
       "popular": false,
       "difficulty": "Medium",
       "estimatedTime": "4 minutes",
-      "icon": "\ud83c\udf92",
+      "icon": "🎒",
       "seoTitle": "Free College Savings Calculator - 529 Plan Calculator",
       "seoDescription": "Calculate how much to save for college with 529 plan projections. Plan education savings with our free calculator.",
       "keywords": [
@@ -1945,7 +1945,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "5 minutes",
-      "icon": "\ud83c\udfe2",
+      "icon": "🏢",
       "seoTitle": "Free Business Name Generator - Creative Company & Brand Name Ideas",
       "seoDescription": "Generate unique business names for your startup or brand. Enter keywords to get creative company name ideas. Find the perfect name for your business today.",
       "keywords": [
@@ -1998,7 +1998,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83d\udc64",
+      "icon": "👤",
       "seoTitle": "Free Username Generator - Unique Names for Gaming & Social Media",
       "seoDescription": "Generate unique usernames for gaming, Instagram, TikTok, and more. Create cool, aesthetic, or funny usernames. Get multiple ideas instantly with our free generator.",
       "keywords": [
@@ -2051,7 +2051,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83d\udd27",
+      "icon": "🔧",
       "seoTitle": "Free UUID Generator - Generate Unique Identifiers Online",
       "seoDescription": "Generate UUID v4 identifiers instantly. Create single or bulk UUIDs for databases, APIs, and software development. Free online UUID generator tool.",
       "keywords": [
@@ -2104,7 +2104,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "\ud83d\udc3e",
+      "icon": "🐾",
       "seoTitle": "Free Pet Name Generator - Dog Names, Cat Names & More",
       "seoDescription": "Find the perfect pet name with our free generator. Get creative dog names, cat names, and names for all pets. Filter by personality, theme, and style.",
       "keywords": [
@@ -2157,7 +2157,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83d\udd22",
+      "icon": "🔢",
       "seoTitle": "Free PIN Generator - Generate Secure Random PIN Codes",
       "seoDescription": "Generate secure random PIN codes for cards, devices, and safes. Create 4-digit or 6-digit PINs. Avoid weak patterns with our free PIN generator.",
       "keywords": [
@@ -2210,7 +2210,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83d\udd11",
+      "icon": "🔑",
       "seoTitle": "Free Passphrase Generator - Create Memorable Secure Passphrases",
       "seoDescription": "Generate secure, memorable passphrases with random word combinations. Stronger than passwords and easier to remember. Free passphrase generator tool.",
       "keywords": [
@@ -2264,7 +2264,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\u2694\ufe0f",
+      "icon": "⚔️",
       "seoTitle": "Free Fantasy Name Generator - D&D, Elf, Dwarf & Character Names",
       "seoDescription": "Generate fantasy names for D&D characters, fiction writing, and games. Create elven, dwarven, human, and sci-fi names. Free character name generator.",
       "keywords": [
@@ -2317,7 +2317,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83c\udfdb\ufe0f",
+      "icon": "🏛️",
       "seoTitle": "Free Tax Bracket Calculator 2026 - Federal Income Tax Calculator",
       "seoDescription": "Calculate your 2026 federal income tax with our free tax bracket calculator. See marginal and effective tax rates, bracket breakdown, and compare filing statuses.",
       "keywords": [
@@ -2369,7 +2369,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "\ud83d\udcb8",
+      "icon": "💸",
       "seoTitle": "Free Paycheck Calculator - Take-Home Pay & Tax Withholding",
       "seoDescription": "Calculate your take-home pay with our free paycheck calculator. See federal tax, FICA, state tax, and deductions from your gross salary.",
       "keywords": [
@@ -2423,7 +2423,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83d\udcc8",
+      "icon": "📈",
       "seoTitle": "Free Inflation Calculator - CPI & Purchasing Power Calculator",
       "seoDescription": "Calculate inflation and purchasing power changes with historical US CPI data from 1960-2026. See how much your money is really worth.",
       "keywords": [
@@ -2475,7 +2475,7 @@
       "popular": true,
       "difficulty": "Medium",
       "estimatedTime": "4 minutes",
-      "icon": "\ud83d\udd25",
+      "icon": "🔥",
       "seoTitle": "Free FIRE Calculator - Financial Independence & Early Retirement",
       "seoDescription": "Calculate your FIRE number, years to financial independence, and Coast FIRE target. Plan early retirement with portfolio projections and what-if scenarios.",
       "keywords": [
@@ -2529,7 +2529,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83e\udd57",
+      "icon": "🥗",
       "seoTitle": "Free Macro Calculator - Daily Protein, Carbs & Fat Calculator",
       "seoDescription": "Calculate your daily macronutrient needs with our free macro calculator. Get personalized protein, carbs, and fat targets for your fitness goals.",
       "keywords": [
@@ -2581,7 +2581,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83c\udfc3",
+      "icon": "🏃",
       "seoTitle": "Free TDEE Calculator - Total Daily Energy Expenditure",
       "seoDescription": "Calculate your TDEE and BMR with our free calculator. See daily calorie needs for your activity level and get targets for weight loss or muscle gain.",
       "keywords": [
@@ -2632,7 +2632,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83c\udf82",
+      "icon": "🎂",
       "seoTitle": "Free Age Calculator - Exact Age in Years, Months & Days",
       "seoDescription": "Calculate your exact age in years, months, and days. See zodiac sign, generation, birthday countdown, and fun life statistics.",
       "keywords": [
@@ -2684,7 +2684,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\u2797",
+      "icon": "➗",
       "seoTitle": "Free Percentage Calculator - Calculate Percentages Instantly",
       "seoDescription": "Calculate percentages easily with our free calculator. Find percentage of a number, percentage change, and more with visual explanations.",
       "keywords": [
@@ -2718,7 +2718,8 @@
         "unit-converter",
         "sales-tax-calculator",
         "discount-calculator",
-        "fraction-calculator"
+        "fraction-calculator",
+        "average-calculator"
       ]
     },
     {
@@ -2740,7 +2741,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83d\udd04",
+      "icon": "🔄",
       "seoTitle": "Free Unit Converter - Length, Weight, Temperature & More",
       "seoDescription": "Convert between units of measurement instantly. Length, weight, temperature, volume, area, speed, digital, and time conversions in one tool.",
       "keywords": [
@@ -2792,7 +2793,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83c\udf0d",
+      "icon": "🌍",
       "seoTitle": "Free Time Zone Converter - World Clock & Meeting Planner",
       "seoDescription": "Convert time between time zones instantly. Plan meetings across time zones with business hours overlap. Free world clock converter.",
       "keywords": [
@@ -2843,7 +2844,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83d\udcf1",
+      "icon": "📱",
       "seoTitle": "Free QR Code Generator - Create QR Codes for URLs, WiFi & More",
       "seoDescription": "Generate QR codes for URLs, text, WiFi, email, phone, and SMS. Download PNG or copy SVG. Free QR code generator with multiple content types.",
       "keywords": [
@@ -2894,7 +2895,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "\ud83c\udfc1",
+      "icon": "🏁",
       "seoTitle": "Free Break-Even Calculator - Break-Even Analysis Tool",
       "seoDescription": "Calculate your break-even point in units and revenue. Analyze contribution margins and pricing scenarios with our free break-even calculator.",
       "keywords": [
@@ -2946,7 +2947,7 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "\ud83c\udd70\ufe0f",
+      "icon": "🅰️",
       "seoTitle": "Free Grade Calculator - Weighted Average & Final Exam Score",
       "seoDescription": "Calculate your weighted grade average and find out what you need on your final exam. Free grade calculator for students.",
       "keywords": [
@@ -2978,7 +2979,8 @@
         "gpa-calculator",
         "percentage-calculator",
         "unit-converter",
-        "fraction-calculator"
+        "fraction-calculator",
+        "average-calculator"
       ]
     },
     {
@@ -3000,7 +3002,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83c\udf19",
+      "icon": "🌙",
       "seoTitle": "Free Sleep Cycle Calculator - Optimal Bedtime & Wake Time",
       "seoDescription": "Calculate the best time to sleep and wake up based on 90-minute sleep cycles. Get age-specific recommendations, nap planning, and sleep stage visualization. Wake up refreshed.",
       "keywords": [
@@ -3055,7 +3057,7 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "\ud83d\udca1",
+      "icon": "💡",
       "seoTitle": "Free Electricity Cost Calculator - Appliance Energy Usage & Bill Estimator",
       "seoDescription": "Calculate electricity costs per appliance with our free calculator. See monthly and annual costs, compare EV vs gas, and find your biggest energy consumers.",
       "keywords": [
@@ -3108,8 +3110,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\ud83c\udfcb\ufe0f",
-      "seoTitle": "Kilograms to Pounds Converter \u2014 Free & Instant (kg to lbs)",
+      "icon": "🏋️",
+      "seoTitle": "Kilograms to Pounds Converter — Free & Instant (kg to lbs)",
       "seoDescription": "Convert kilograms to pounds instantly with our free calculator. 1 kilogram equals 2.20462 pounds. To convert kilograms to pounds, multiply by 2.20462. Conversion table included.",
       "keywords": [
         "kg to lbs",
@@ -3148,8 +3150,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\ud83e\udea8",
-      "seoTitle": "Pounds to Kilograms Converter \u2014 Free & Instant (lbs to kg)",
+      "icon": "🪨",
+      "seoTitle": "Pounds to Kilograms Converter — Free & Instant (lbs to kg)",
       "seoDescription": "Convert pounds to kilograms instantly with our free calculator. 1 pound equals 0.453592 kilograms. To convert pounds to kilograms, divide by 2.20462 (or multiply by 0.453592). Conversion table included.",
       "keywords": [
         "lbs to kg",
@@ -3188,8 +3190,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\ud83d\udccf",
-      "seoTitle": "Centimeters to Inches Converter \u2014 Free & Instant (cm to in)",
+      "icon": "📏",
+      "seoTitle": "Centimeters to Inches Converter — Free & Instant (cm to in)",
       "seoDescription": "Convert centimeters to inches instantly with our free calculator. 1 centimeter equals 0.393701 inches. To convert centimeters to inches, divide by 2.54 (or multiply by 0.393701). Conversion table included.",
       "keywords": [
         "cm to inches",
@@ -3228,8 +3230,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\ud83d\udcd0",
-      "seoTitle": "Inches to Centimeters Converter \u2014 Free & Instant (in to cm)",
+      "icon": "📐",
+      "seoTitle": "Inches to Centimeters Converter — Free & Instant (in to cm)",
       "seoDescription": "Convert inches to centimeters instantly with our free calculator. 1 inch equals exactly 2.54 centimeters. To convert inches to centimeters, multiply by 2.54. Conversion table included.",
       "keywords": [
         "inches to cm",
@@ -3254,7 +3256,7 @@
     {
       "title": "Celsius to Fahrenheit Converter",
       "slug": "celsius-to-fahrenheit",
-      "description": "Convert celsius to fahrenheit instantly. To convert Celsius to Fahrenheit, multiply by 1.8 (9/5) and add 32. So \u00b0F = \u00b0C \u00d7 9/5 + 32. Includes a quick-reference conversion table.",
+      "description": "Convert celsius to fahrenheit instantly. To convert Celsius to Fahrenheit, multiply by 1.8 (9/5) and add 32. So °F = °C × 9/5 + 32. Includes a quick-reference conversion table.",
       "shortDescription": "Convert celsius to fahrenheit instantly",
       "category": "math-conversions",
       "tags": [
@@ -3268,14 +3270,14 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\ud83c\udf21\ufe0f",
-      "seoTitle": "Celsius to Fahrenheit Converter \u2014 Free & Instant (\u00b0C to \u00b0F)",
-      "seoDescription": "Convert celsius to fahrenheit instantly with our free calculator. To convert Celsius to Fahrenheit, multiply by 1.8 (9/5) and add 32. So \u00b0F = \u00b0C \u00d7 9/5 + 32. Conversion table included.",
+      "icon": "🌡️",
+      "seoTitle": "Celsius to Fahrenheit Converter — Free & Instant (°C to °F)",
+      "seoDescription": "Convert celsius to fahrenheit instantly with our free calculator. To convert Celsius to Fahrenheit, multiply by 1.8 (9/5) and add 32. So °F = °C × 9/5 + 32. Conversion table included.",
       "keywords": [
         "celsius to fahrenheit",
         "celsius to fahrenheit",
         "convert celsius to fahrenheit",
-        "\u00b0C to \u00b0F",
+        "°C to °F",
         "temperature converter"
       ],
       "lastUpdated": "2026-06-03",
@@ -3294,7 +3296,7 @@
     {
       "title": "Fahrenheit to Celsius Converter",
       "slug": "fahrenheit-to-celsius",
-      "description": "Convert fahrenheit to celsius instantly. To convert Fahrenheit to Celsius, subtract 32 and multiply by 0.5556 (5/9). So \u00b0C = (\u00b0F \u2212 32) \u00d7 5/9. Includes a quick-reference conversion table.",
+      "description": "Convert fahrenheit to celsius instantly. To convert Fahrenheit to Celsius, subtract 32 and multiply by 0.5556 (5/9). So °C = (°F − 32) × 5/9. Includes a quick-reference conversion table.",
       "shortDescription": "Convert fahrenheit to celsius instantly",
       "category": "math-conversions",
       "tags": [
@@ -3308,14 +3310,14 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\u2600\ufe0f",
-      "seoTitle": "Fahrenheit to Celsius Converter \u2014 Free & Instant (\u00b0F to \u00b0C)",
-      "seoDescription": "Convert fahrenheit to celsius instantly with our free calculator. To convert Fahrenheit to Celsius, subtract 32 and multiply by 0.5556 (5/9). So \u00b0C = (\u00b0F \u2212 32) \u00d7 5/9. Conversion table included.",
+      "icon": "☀️",
+      "seoTitle": "Fahrenheit to Celsius Converter — Free & Instant (°F to °C)",
+      "seoDescription": "Convert fahrenheit to celsius instantly with our free calculator. To convert Fahrenheit to Celsius, subtract 32 and multiply by 0.5556 (5/9). So °C = (°F − 32) × 5/9. Conversion table included.",
       "keywords": [
         "fahrenheit to celsius",
         "fahrenheit to celsius",
         "convert fahrenheit to celsius",
-        "\u00b0F to \u00b0C",
+        "°F to °C",
         "temperature converter"
       ],
       "lastUpdated": "2026-06-03",
@@ -3348,8 +3350,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\ud83d\udee3\ufe0f",
-      "seoTitle": "Miles to Kilometers Converter \u2014 Free & Instant (mi to km)",
+      "icon": "🛣️",
+      "seoTitle": "Miles to Kilometers Converter — Free & Instant (mi to km)",
       "seoDescription": "Convert miles to kilometers instantly with our free calculator. 1 mile equals 1.609344 kilometers. To convert miles to kilometers, multiply by 1.60934. Conversion table included.",
       "keywords": [
         "miles to km",
@@ -3388,8 +3390,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\ud83d\uddfa\ufe0f",
-      "seoTitle": "Kilometers to Miles Converter \u2014 Free & Instant (km to mi)",
+      "icon": "🗺️",
+      "seoTitle": "Kilometers to Miles Converter — Free & Instant (km to mi)",
       "seoDescription": "Convert kilometers to miles instantly with our free calculator. 1 kilometer equals 0.621371 miles. To convert kilometers to miles, multiply by 0.621371 (or divide by 1.60934). Conversion table included.",
       "keywords": [
         "km to miles",
@@ -3422,8 +3424,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83e\uddfe",
-      "seoTitle": "Free Sales Tax Calculator \u2014 Instant & Accurate",
+      "icon": "🧾",
+      "seoTitle": "Free Sales Tax Calculator — Instant & Accurate",
       "seoDescription": "Calculate sales tax and the total price for any amount and tax rate. Add or remove tax, and look up state sales tax rates.",
       "keywords": [
         "sales tax calculator"
@@ -3451,8 +3453,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83c\udff7\ufe0f",
-      "seoTitle": "Free Discount Calculator \u2014 Instant & Accurate",
+      "icon": "🏷️",
+      "seoTitle": "Free Discount Calculator — Instant & Accurate",
       "seoDescription": "Calculate the sale price and how much you save for any discount percentage. Supports stacked discounts and percent-off math.",
       "keywords": [
         "discount calculator"
@@ -3487,8 +3489,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\u2697\ufe0f",
-      "seoTitle": "Grams to Ounces Converter \u2014 Free & Instant (g to oz)",
+      "icon": "⚗️",
+      "seoTitle": "Grams to Ounces Converter — Free & Instant (g to oz)",
       "seoDescription": "Convert grams to ounces instantly with our free calculator. 1 gram equals 0.035274 ounces. To convert grams to ounces, divide by 28.3495 (or multiply by 0.035274). Conversion table included.",
       "keywords": [
         "grams to ounces",
@@ -3527,8 +3529,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\ud83e\uddea",
-      "seoTitle": "Ounces to Grams Converter \u2014 Free & Instant (oz to g)",
+      "icon": "🧪",
+      "seoTitle": "Ounces to Grams Converter — Free & Instant (oz to g)",
       "seoDescription": "Convert ounces to grams instantly with our free calculator. 1 ounce equals 28.3495 grams. To convert ounces to grams, multiply by 28.3495. Conversion table included.",
       "keywords": [
         "ounces to grams",
@@ -3567,8 +3569,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\ud83c\udfd7\ufe0f",
-      "seoTitle": "Feet to Meters Converter \u2014 Free & Instant (ft to m)",
+      "icon": "🏗️",
+      "seoTitle": "Feet to Meters Converter — Free & Instant (ft to m)",
       "seoDescription": "Convert feet to meters instantly with our free calculator. 1 foot equals exactly 0.3048 meters. To convert feet to meters, multiply by 0.3048. Conversion table included.",
       "keywords": [
         "feet to meters",
@@ -3607,8 +3609,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\ud83e\uddf1",
-      "seoTitle": "Meters to Feet Converter \u2014 Free & Instant (m to ft)",
+      "icon": "🧱",
+      "seoTitle": "Meters to Feet Converter — Free & Instant (m to ft)",
       "seoDescription": "Convert meters to feet instantly with our free calculator. 1 meter equals 3.28084 feet. To convert meters to feet, multiply by 3.28084 (or divide by 0.3048). Conversion table included.",
       "keywords": [
         "meters to feet",
@@ -3647,8 +3649,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\ud83e\udd5b",
-      "seoTitle": "Milliliters to Cups Converter \u2014 Free & Instant (ml to cups)",
+      "icon": "🥛",
+      "seoTitle": "Milliliters to Cups Converter — Free & Instant (ml to cups)",
       "seoDescription": "Convert milliliters to cups instantly with our free calculator. 1 milliliter equals 0.004227 US cups. To convert milliliters to cups, divide by 236.588. (Based on the US customary cup.) Conversion table included.",
       "keywords": [
         "ml to cups",
@@ -3687,8 +3689,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\u2615",
-      "seoTitle": "Cups to Milliliters Converter \u2014 Free & Instant (cups to ml)",
+      "icon": "☕",
+      "seoTitle": "Cups to Milliliters Converter — Free & Instant (cups to ml)",
       "seoDescription": "Convert cups to milliliters instantly with our free calculator. 1 US cup equals 236.588 milliliters. To convert cups to milliliters, multiply by 236.588. (Based on the US customary cup.) Conversion table included.",
       "keywords": [
         "cups to ml",
@@ -3727,8 +3729,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\ud83d\udeb0",
-      "seoTitle": "Liters to Gallons Converter \u2014 Free & Instant (L to gal)",
+      "icon": "🚰",
+      "seoTitle": "Liters to Gallons Converter — Free & Instant (L to gal)",
       "seoDescription": "Convert liters to gallons instantly with our free calculator. 1 liter equals 0.264172 US gallons. To convert liters to gallons, divide by 3.78541. (Based on the US liquid gallon.) Conversion table included.",
       "keywords": [
         "liters to gallons",
@@ -3767,8 +3769,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\ud83d\udee2\ufe0f",
-      "seoTitle": "Gallons to Liters Converter \u2014 Free & Instant (gal to L)",
+      "icon": "🛢️",
+      "seoTitle": "Gallons to Liters Converter — Free & Instant (gal to L)",
       "seoDescription": "Convert gallons to liters instantly with our free calculator. 1 US gallon equals 3.78541 liters. To convert gallons to liters, multiply by 3.78541. (Based on the US liquid gallon.) Conversion table included.",
       "keywords": [
         "gallons to liters",
@@ -3807,8 +3809,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\ud83c\udfce\ufe0f",
-      "seoTitle": "Miles per Hour to Kilometers per Hour Converter \u2014 Free & Instant (mph to km/h)",
+      "icon": "🏎️",
+      "seoTitle": "Miles per Hour to Kilometers per Hour Converter — Free & Instant (mph to km/h)",
       "seoDescription": "Convert miles per hour to kilometers per hour instantly with our free calculator. 1 mph equals 1.60934 km/h. To convert miles per hour to kilometers per hour, multiply by 1.60934. Conversion table included.",
       "keywords": [
         "mph to kmh",
@@ -3847,8 +3849,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\u2708\ufe0f",
-      "seoTitle": "Kilometers per Hour to Miles per Hour Converter \u2014 Free & Instant (km/h to mph)",
+      "icon": "✈️",
+      "seoTitle": "Kilometers per Hour to Miles per Hour Converter — Free & Instant (km/h to mph)",
       "seoDescription": "Convert kilometers per hour to miles per hour instantly with our free calculator. 1 km/h equals 0.621371 mph. To convert kilometers per hour to miles per hour, multiply by 0.621371 (or divide by 1.60934). Conversion table included.",
       "keywords": [
         "kmh to mph",
@@ -3887,8 +3889,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\ud83d\udc63",
-      "seoTitle": "Feet to Inches Converter \u2014 Free & Instant (ft to in)",
+      "icon": "👣",
+      "seoTitle": "Feet to Inches Converter — Free & Instant (ft to in)",
       "seoDescription": "Convert feet to inches instantly with our free calculator. 1 foot equals exactly 12 inches. To convert feet to inches, multiply by 12. Conversion table included.",
       "keywords": [
         "feet to inches",
@@ -3927,8 +3929,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "10 seconds",
-      "icon": "\ud83e\uddb6",
-      "seoTitle": "Inches to Feet Converter \u2014 Free & Instant (in to ft)",
+      "icon": "🦶",
+      "seoTitle": "Inches to Feet Converter — Free & Instant (in to ft)",
       "seoDescription": "Convert inches to feet instantly with our free calculator. 1 inch equals 0.08333 feet (1/12). To convert inches to feet, divide by 12. Conversion table included.",
       "keywords": [
         "inches to feet",
@@ -3961,8 +3963,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83d\udd50",
-      "seoTitle": "Free Salary to Hourly Calculator \u2014 Instant & Accurate",
+      "icon": "🕐",
+      "seoTitle": "Free Salary to Hourly Calculator — Instant & Accurate",
       "seoDescription": "Convert an annual salary into an hourly wage. See your hourly, daily, weekly, and monthly pay based on your work hours.",
       "keywords": [
         "salary to hourly calculator"
@@ -3990,8 +3992,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83e\udd11",
-      "seoTitle": "Free Hourly to Salary Calculator \u2014 Instant & Accurate",
+      "icon": "🤑",
+      "seoTitle": "Free Hourly to Salary Calculator — Instant & Accurate",
       "seoDescription": "Convert an hourly wage into an annual salary. See your weekly, monthly, and yearly income based on your hours.",
       "keywords": [
         "hourly to salary calculator"
@@ -4019,8 +4021,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\u23f1\ufe0f",
-      "seoTitle": "Free Hours Calculator \u2014 Instant & Accurate",
+      "icon": "⏱️",
+      "seoTitle": "Free Hours Calculator — Instant & Accurate",
       "seoDescription": "Calculate hours worked between a start and end time, minus breaks. A free time card calculator with decimal and HH:MM totals.",
       "keywords": [
         "hours calculator"
@@ -4050,8 +4052,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\u23f0",
-      "seoTitle": "Free Overtime Calculator \u2014 Instant & Accurate",
+      "icon": "⏰",
+      "seoTitle": "Free Overtime Calculator — Instant & Accurate",
       "seoDescription": "Calculate overtime pay and total earnings from regular hours, overtime hours, and your hourly rate and multiplier.",
       "keywords": [
         "overtime calculator"
@@ -4085,8 +4087,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "5 minutes",
-      "icon": "\ud83d\udd04",
-      "seoTitle": "Free Subscription Cost Calculator \u2014 Audit Your Recurring Charges",
+      "icon": "🔄",
+      "seoTitle": "Free Subscription Cost Calculator — Audit Your Recurring Charges",
       "seoDescription": "Calculate your total subscription spending, find rarely-used services, detect overlaps, and discover how much you could save or invest instead.",
       "keywords": [
         "subscription calculator",
@@ -4124,8 +4126,8 @@
       "popular": false,
       "difficulty": "Medium",
       "estimatedTime": "5 minutes",
-      "icon": "\ud83d\udcbc",
-      "seoTitle": "Free Freelance Rate Calculator \u2014 Find Your Ideal Hourly Rate",
+      "icon": "💼",
+      "seoTitle": "Free Freelance Rate Calculator — Find Your Ideal Hourly Rate",
       "seoDescription": "Calculate the freelance hourly rate you need to meet your income goals after taxes, expenses, benefits, and non-billable time.",
       "keywords": [
         "freelance rate calculator",
@@ -4165,7 +4167,7 @@
       "popular": false,
       "difficulty": "Medium",
       "estimatedTime": "4 minutes",
-      "icon": "\ud83d\udcdd",
+      "icon": "📝",
       "seoTitle": "Free Self-Employment Quarterly Tax Calculator 2024",
       "seoDescription": "Calculate your quarterly estimated tax payments with our free self-employment tax calculator. Includes SE tax, federal income tax, state tax, and safe harbor amounts for freelancers and gig workers.",
       "keywords": [
@@ -4206,8 +4208,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83c\udfd9\ufe0f",
-      "seoTitle": "Free Cost of Living Comparison Calculator \u2014 Compare Cities",
+      "icon": "🏙️",
+      "seoTitle": "Free Cost of Living Comparison Calculator — Compare Cities",
       "seoDescription": "Compare the cost of living between 60+ US cities. Calculate the equivalent salary needed, view category breakdowns, and analyze tax impacts for relocation planning.",
       "keywords": [
         "cost of living calculator",
@@ -4249,8 +4251,8 @@
       "popular": false,
       "difficulty": "Medium",
       "estimatedTime": "3 minutes",
-      "icon": "\ud83d\udd28",
-      "seoTitle": "Free Construction Material Calculator \u2014 Estimate Quantities & Costs",
+      "icon": "🔨",
+      "seoTitle": "Free Construction Material Calculator — Estimate Quantities & Costs",
       "seoDescription": "Calculate materials needed for concrete, decking, fencing, drywall, flooring, roofing, paint, and insulation. Get accurate quantity estimates with cost ranges.",
       "keywords": [
         "construction calculator",
@@ -4290,8 +4292,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83d\udc15",
-      "seoTitle": "Free Dog Food Calculator \u2014 Daily Feeding Guide by Weight & Age",
+      "icon": "🐕",
+      "seoTitle": "Free Dog Food Calculator — Daily Feeding Guide by Weight & Age",
       "seoDescription": "Calculate exactly how much to feed your dog daily. Personalized portions based on weight, age, breed size, activity level, and food type.",
       "keywords": [
         "dog food calculator",
@@ -4329,8 +4331,8 @@
       "popular": false,
       "difficulty": "Medium",
       "estimatedTime": "4 minutes",
-      "icon": "\u26a1",
-      "seoTitle": "Free EV vs Gas Car Calculator \u2014 Total Cost of Ownership Comparison",
+      "icon": "⚡",
+      "seoTitle": "Free EV vs Gas Car Calculator — Total Cost of Ownership Comparison",
       "seoDescription": "Compare the total cost of owning an electric vehicle vs a gas car. Include purchase price, fuel, maintenance, tax credits, and depreciation.",
       "keywords": [
         "EV vs gas calculator",
@@ -4369,8 +4371,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83e\udd30",
-      "seoTitle": "Free Pregnancy Due Date Calculator \u2014 Week by Week Timeline",
+      "icon": "🤰",
+      "seoTitle": "Free Pregnancy Due Date Calculator — Week by Week Timeline",
       "seoDescription": "Calculate your baby's due date and track pregnancy week by week. See trimester milestones, fetal development, and important appointment dates.",
       "keywords": [
         "pregnancy calculator",
@@ -4409,8 +4411,8 @@
       "popular": false,
       "difficulty": "Advanced",
       "estimatedTime": "5 minutes",
-      "icon": "\ud83c\udfd8\ufe0f",
-      "seoTitle": "Free Rental Property Calculator \u2014 Cash Flow, Cap Rate & ROI Analysis",
+      "icon": "🏘️",
+      "seoTitle": "Free Rental Property Calculator — Cash Flow, Cap Rate & ROI Analysis",
       "seoDescription": "Analyze rental property investments with cash flow projections, cap rate, cash-on-cash return, and ROI calculations. Compare strategies and estimate long-term returns.",
       "keywords": [
         "rental property calculator",
@@ -4451,8 +4453,8 @@
       "popular": false,
       "difficulty": "Medium",
       "estimatedTime": "5 minutes",
-      "icon": "\ud83d\ude80",
-      "seoTitle": "Free Startup Cost Calculator \u2014 Estimate Business Launch Expenses",
+      "icon": "🚀",
+      "seoTitle": "Free Startup Cost Calculator — Estimate Business Launch Expenses",
       "seoDescription": "Estimate how much it costs to start a business. Calculate startup expenses including legal, equipment, marketing, inventory, and working capital needs.",
       "keywords": [
         "startup cost calculator",
@@ -4490,8 +4492,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "3 minutes",
-      "icon": "\ud83d\udc92",
-      "seoTitle": "Free Wedding Budget Calculator \u2014 Plan Your Wedding Costs",
+      "icon": "💒",
+      "seoTitle": "Free Wedding Budget Calculator — Plan Your Wedding Costs",
       "seoDescription": "Plan your wedding budget with recommended allocations by category. Calculate costs for venue, catering, photography, and more based on total budget and guest count.",
       "keywords": [
         "wedding budget calculator",
@@ -4530,8 +4532,8 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "2 minutes",
-      "icon": "\ud83d\udd25",
-      "seoTitle": "Free Calories Burned Calculator \u2014 150+ Activities with MET Values",
+      "icon": "🔥",
+      "seoTitle": "Free Calories Burned Calculator — 150+ Activities with MET Values",
       "seoDescription": "Calculate calories burned for running, walking, cycling, swimming, and 150+ activities. Personalized results based on your weight, duration, and intensity.",
       "keywords": [
         "calories burned calculator",
@@ -4573,8 +4575,8 @@
       "popular": true,
       "difficulty": "Medium",
       "estimatedTime": "4 minutes",
-      "icon": "\ud83d\udcaa",
-      "seoTitle": "Free Debt Payoff Calculator \u2014 Snowball vs Avalanche Comparison",
+      "icon": "💪",
+      "seoTitle": "Free Debt Payoff Calculator — Snowball vs Avalanche Comparison",
       "seoDescription": "Compare debt snowball and avalanche methods side by side. See which strategy saves more money and gets you debt-free faster with timeline visualization.",
       "keywords": [
         "debt payoff calculator",
@@ -4615,8 +4617,8 @@
       "popular": true,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\ud83d\udcc5",
-      "seoTitle": "Date Difference Calculator \u2014 Days Between Dates",
+      "icon": "📅",
+      "seoTitle": "Date Difference Calculator — Days Between Dates",
       "seoDescription": "Calculate the exact days, weeks, months, and years between any two dates. Free, instant, and works for deadlines, countdowns, age, and contract durations.",
       "keywords": [
         "date difference calculator",
@@ -4654,8 +4656,8 @@
       "popular": false,
       "difficulty": "Easy",
       "estimatedTime": "1 minute",
-      "icon": "\u00bd",
-      "seoTitle": "Fraction Calculator \u2014 Add, Subtract, Multiply & Divide Fractions",
+      "icon": "½",
+      "seoTitle": "Fraction Calculator — Add, Subtract, Multiply & Divide Fractions",
       "seoDescription": "Free fraction calculator for adding, subtracting, multiplying, and dividing fractions. Works with mixed numbers and improper fractions. Shows step-by-step solutions.",
       "keywords": [
         "fraction calculator",
@@ -4674,6 +4676,48 @@
       "relatedCalculators": [
         "percentage-calculator",
         "discount-calculator",
+        "grade-calculator",
+        "average-calculator"
+      ]
+    },
+    {
+      "title": "Average Calculator",
+      "slug": "average-calculator",
+      "description": "Calculate the mean, median, and mode of any set of numbers. Enter values separated by commas and get a full statistical summary instantly.",
+      "shortDescription": "Calculate mean, median, and mode instantly",
+      "category": "math-conversions",
+      "tags": [
+        "average",
+        "mean",
+        "median",
+        "mode",
+        "statistics",
+        "math"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "📊",
+      "seoTitle": "Average Calculator — Mean, Median & Mode",
+      "seoDescription": "Free average calculator. Enter a list of numbers to instantly find the mean, median, mode, range, sum, and count. Works with decimals and negatives.",
+      "keywords": [
+        "average calculator",
+        "mean calculator",
+        "median calculator",
+        "mode calculator",
+        "how to calculate average",
+        "mean median mode"
+      ],
+      "lastUpdated": "2026-06-29",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "percentage-calculator",
+        "fraction-calculator",
         "grade-calculator"
       ]
     }

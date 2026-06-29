@@ -438,7 +438,7 @@
         "lbs-to-kg"
       ],
       "seoTitle": "How to Convert KG to LBS (With a Simple Formula & Chart)",
-      "seoDescription": "Convert kg to lbs the easy way: the formula (\u00d72.20462), a fast mental-math trick, a full conversion chart, and the reverse lbs-to-kg method.",
+      "seoDescription": "Convert kg to lbs the easy way: the formula (×2.20462), a fast mental-math trick, a full conversion chart, and the reverse lbs-to-kg method.",
       "keywords": [
         "how to convert kg to lbs",
         "kg to lbs formula",
@@ -513,7 +513,7 @@
     {
       "slug": "celsius-fahrenheit-explained",
       "title": "Celsius to Fahrenheit Explained: The Formula, a Quick Mental Trick, and a Free Calculator",
-      "description": "Learn the Celsius to Fahrenheit formula, a fast mental-math shortcut, and when each scale is used \u2014 plus a free converter for any temperature.",
+      "description": "Learn the Celsius to Fahrenheit formula, a fast mental-math shortcut, and when each scale is used — plus a free converter for any temperature.",
       "author": "CalcCrunch Team",
       "publishDate": "2026-06-22T09:00:00-07:00",
       "updatedDate": "2026-06-22T09:00:00-07:00",
@@ -533,7 +533,7 @@
         "date-difference-calculator"
       ],
       "seoTitle": "Celsius to Fahrenheit Formula & Conversion Guide (With Calculator)",
-      "seoDescription": "Convert Celsius to Fahrenheit instantly with the formula (\u00b0C \u00d7 9/5) + 32. Includes a mental-math shortcut, a reference chart, and a free temperature converter.",
+      "seoDescription": "Convert Celsius to Fahrenheit instantly with the formula (°C × 9/5) + 32. Includes a mental-math shortcut, a reference chart, and a free temperature converter.",
       "keywords": [
         "celsius to fahrenheit",
         "celsius to fahrenheit formula",
@@ -545,7 +545,7 @@
     {
       "slug": "salary-vs-hourly-pay",
       "title": "Salary vs Hourly Pay: Which Is Better for You? A Complete Comparison",
-      "description": "Compare salary vs hourly pay across overtime, benefits, taxes, and job security. See which pay structure puts more money in your pocket \u2014 with real examples.",
+      "description": "Compare salary vs hourly pay across overtime, benefits, taxes, and job security. See which pay structure puts more money in your pocket — with real examples.",
       "author": "CalcCrunch Team",
       "publishDate": "2026-06-25T09:00:00-07:00",
       "updatedDate": "2026-06-25T09:00:00-07:00",
@@ -630,13 +630,77 @@
         "discount-calculator"
       ],
       "seoTitle": "How to Calculate Percentage Change: Formula, Examples & Calculator",
-      "seoDescription": "Learn the percentage change formula: ((New \u2212 Old) / |Old|) \u00d7 100. Step-by-step examples for price increases, salary changes, and more. Free calculator included.",
+      "seoDescription": "Learn the percentage change formula: ((New − Old) / |Old|) × 100. Step-by-step examples for price increases, salary changes, and more. Free calculator included.",
       "keywords": [
         "percentage change formula",
         "how to calculate percentage change",
         "percent increase formula",
         "percent decrease",
         "percentage change calculator"
+      ]
+    },
+    {
+      "slug": "average-vs-median",
+      "title": "Average vs. Median: Which One Should You Use?",
+      "description": "Learn the difference between mean and median, when each gives you misleading answers, and how to pick the right measure for your data.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-07-02T09:00:00-07:00",
+      "updatedDate": "2026-07-02T09:00:00-07:00",
+      "category": "Guides",
+      "tags": [
+        "average",
+        "median",
+        "statistics",
+        "math",
+        "data analysis"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "average-calculator",
+        "percentage-calculator",
+        "fraction-calculator"
+      ],
+      "seoTitle": "Average vs. Median: Which Should You Use? (With Examples)",
+      "seoDescription": "Understand the difference between average (mean) and median. Learn when each is misleading, with real examples from salaries, home prices, and test scores.",
+      "keywords": [
+        "average vs median",
+        "mean vs median",
+        "difference between mean and median",
+        "when to use median vs mean",
+        "average calculator"
+      ]
+    },
+    {
+      "slug": "summer-road-trip-fuel-cost",
+      "title": "How to Calculate Road Trip Fuel Cost (and Actually Stick to Your Budget)",
+      "description": "Learn the simple formula for estimating road trip gas costs, see a real worked example, and get tips to spend less at the pump this summer.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-07-05T09:00:00-07:00",
+      "updatedDate": "2026-07-05T09:00:00-07:00",
+      "category": "Budgeting",
+      "tags": [
+        "road trip",
+        "fuel cost",
+        "gas",
+        "travel budget",
+        "summer"
+      ],
+      "readTime": "6 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "gas-mileage-calculator",
+        "budget-calculator",
+        "tip-calculator"
+      ],
+      "seoTitle": "Road Trip Fuel Cost Calculator: How to Estimate Gas for Any Trip",
+      "seoDescription": "Calculate your road trip gas cost with the simple formula: miles ÷ MPG × price per gallon. Real examples, fuel-saving tips, and a free gas mileage calculator.",
+      "keywords": [
+        "road trip fuel cost",
+        "how to calculate gas cost for road trip",
+        "road trip gas calculator",
+        "fuel cost calculator",
+        "gas mileage calculator"
       ]
     }
   ]

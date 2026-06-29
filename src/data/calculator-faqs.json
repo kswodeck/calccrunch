@@ -10,7 +10,7 @@
     },
     {
       "q": "Should I get a 15-year or 30-year mortgage?",
-      "a": "A 15-year mortgage has higher monthly payments but saves 50-60% in total interest and builds equity faster. Choose 15-year if you can comfortably afford the higher payment. Choose 30-year for lower monthly obligations and more cash flow flexibility \u2014 you can always make extra payments."
+      "a": "A 15-year mortgage has higher monthly payments but saves 50-60% in total interest and builds equity faster. Choose 15-year if you can comfortably afford the higher payment. Choose 30-year for lower monthly obligations and more cash flow flexibility — you can always make extra payments."
     },
     {
       "q": "What is PMI and how do I avoid it?",
@@ -32,13 +32,13 @@
     },
     {
       "q": "Is daily or monthly compounding better?",
-      "a": "Daily compounding earns slightly more than monthly, but the difference is minimal. $10,000 at 5% for 10 years: daily compounding = $16,487, monthly = $16,470 \u2014 a difference of only $17. Focus on the interest rate and time period rather than compounding frequency."
+      "a": "Daily compounding earns slightly more than monthly, but the difference is minimal. $10,000 at 5% for 10 years: daily compounding = $16,487, monthly = $16,470 — a difference of only $17. Focus on the interest rate and time period rather than compounding frequency."
     }
   ],
   "bmi-calculator": [
     {
       "q": "What is a healthy BMI for adults?",
-      "a": "A healthy BMI is between 18.5 and 24.9. Below 18.5 is underweight, 25-29.9 is overweight, and 30+ is obese. However, BMI doesn't account for muscle mass, bone density, age, or fat distribution \u2014 a muscular athlete may have a 'high' BMI but excellent health."
+      "a": "A healthy BMI is between 18.5 and 24.9. Below 18.5 is underweight, 25-29.9 is overweight, and 30+ is obese. However, BMI doesn't account for muscle mass, bone density, age, or fat distribution — a muscular athlete may have a 'high' BMI but excellent health."
     },
     {
       "q": "Is BMI accurate for athletes and muscular people?",
@@ -60,7 +60,7 @@
     },
     {
       "q": "Does exercise increase how many calories I can eat?",
-      "a": "Yes, exercise increases your TDEE, allowing more food intake while maintaining or losing weight. However, most people overestimate exercise calories. A 30-minute jog burns approximately 250-350 calories \u2014 about one small meal. Combine exercise with mindful eating rather than 'eating back' all exercise calories."
+      "a": "Yes, exercise increases your TDEE, allowing more food intake while maintaining or losing weight. However, most people overestimate exercise calories. A 30-minute jog burns approximately 250-350 calories — about one small meal. Combine exercise with mindful eating rather than 'eating back' all exercise calories."
     }
   ],
   "auto-loan-calculator": [
@@ -74,7 +74,7 @@
     },
     {
       "q": "Should I choose a longer loan term for lower payments?",
-      "a": "Longer terms (72-84 months) reduce monthly payments but cost significantly more in interest and risk being 'underwater' (owing more than the car is worth). A $30,000 car at 6%: 48 months = $704/month, $3,800 interest. 72 months = $497/month, $5,800 interest \u2014 $2,000 more for the same car."
+      "a": "Longer terms (72-84 months) reduce monthly payments but cost significantly more in interest and risk being 'underwater' (owing more than the car is worth). A $30,000 car at 6%: 48 months = $704/month, $3,800 interest. 72 months = $497/month, $5,800 interest — $2,000 more for the same car."
     }
   ],
   "tip-calculator": [
@@ -194,15 +194,15 @@
   "celsius-to-fahrenheit": [
     {
       "q": "How do you convert celsius to fahrenheit?",
-      "a": "To convert Celsius to Fahrenheit, multiply by 1.8 (9/5) and add 32. So \u00b0F = \u00b0C \u00d7 9/5 + 32."
+      "a": "To convert Celsius to Fahrenheit, multiply by 1.8 (9/5) and add 32. So °F = °C × 9/5 + 32."
     },
     {
       "q": "What is 1 degree Celsius in fahrenheit?",
-      "a": "1 degree Celsius equals 33.8 \u00b0F."
+      "a": "1 degree Celsius equals 33.8 °F."
     },
     {
-      "q": "What is 30 \u00b0C in fahrenheit?",
-      "a": "30 \u00b0C equals 86 \u00b0F."
+      "q": "What is 30 °C in fahrenheit?",
+      "a": "30 °C equals 86 °F."
     },
     {
       "q": "Is this celsius to fahrenheit converter free?",
@@ -212,15 +212,15 @@
   "fahrenheit-to-celsius": [
     {
       "q": "How do you convert fahrenheit to celsius?",
-      "a": "To convert Fahrenheit to Celsius, subtract 32 and multiply by 0.5556 (5/9). So \u00b0C = (\u00b0F \u2212 32) \u00d7 5/9."
+      "a": "To convert Fahrenheit to Celsius, subtract 32 and multiply by 0.5556 (5/9). So °C = (°F − 32) × 5/9."
     },
     {
       "q": "What is 1 degree Fahrenheit in celsius?",
-      "a": "1 degree Fahrenheit equals -17.2 \u00b0C."
+      "a": "1 degree Fahrenheit equals -17.2 °C."
     },
     {
-      "q": "What is 72 \u00b0F in celsius?",
-      "a": "72 \u00b0F equals 22.2 \u00b0C."
+      "q": "What is 72 °F in celsius?",
+      "a": "72 °F equals 22.2 °C."
     },
     {
       "q": "Is this fahrenheit to celsius converter free?",
@@ -266,11 +266,11 @@
   "sales-tax-calculator": [
     {
       "q": "How do you calculate sales tax?",
-      "a": "Multiply the price by the tax rate as a decimal. Sales tax = Price \u00d7 (Rate \u00f7 100). For a $100 item at 7.25%, the tax is $7.25 and the total is $107.25."
+      "a": "Multiply the price by the tax rate as a decimal. Sales tax = Price × (Rate ÷ 100). For a $100 item at 7.25%, the tax is $7.25 and the total is $107.25."
     },
     {
       "q": "How do I find the price before tax (reverse sales tax)?",
-      "a": "Divide the total by 1 plus the tax rate as a decimal: Pre-tax price = Total \u00f7 (1 + Rate \u00f7 100). A $107.25 total at 7.25% works out to $100.00 before tax. Use the calculator's 'Remove tax' mode to do this automatically."
+      "a": "Divide the total by 1 plus the tax rate as a decimal: Pre-tax price = Total ÷ (1 + Rate ÷ 100). A $107.25 total at 7.25% works out to $100.00 before tax. Use the calculator's 'Remove tax' mode to do this automatically."
     },
     {
       "q": "Which states have no sales tax?",
@@ -288,15 +288,15 @@
   "discount-calculator": [
     {
       "q": "How do you calculate a discount?",
-      "a": "Multiply the original price by (1 \u2212 discount \u00f7 100). For $80 at 25% off: $80 \u00d7 0.75 = $60.00, so you save $20.00."
+      "a": "Multiply the original price by (1 − discount ÷ 100). For $80 at 25% off: $80 × 0.75 = $60.00, so you save $20.00."
     },
     {
       "q": "How do I calculate percent off?",
-      "a": "The savings equal Price \u00d7 (Percent \u00f7 100), and the sale price is what's left. 30% off a $50 item saves $15 and costs $35."
+      "a": "The savings equal Price × (Percent ÷ 100), and the sale price is what's left. 30% off a $50 item saves $15 and costs $35."
     },
     {
       "q": "How do stacked discounts work?",
-      "a": "Stacked discounts multiply rather than add. '25% off, then an extra 20% off' is 0.75 \u00d7 0.80 = 0.60 of the original price \u2014 a 40% effective discount, not 45%."
+      "a": "Stacked discounts multiply rather than add. '25% off, then an extra 20% off' is 0.75 × 0.80 = 0.60 of the original price — a 40% effective discount, not 45%."
     },
     {
       "q": "What is the final price after a 25% discount?",
@@ -304,7 +304,7 @@
     },
     {
       "q": "How do I find the original price from a sale price?",
-      "a": "Divide the sale price by (1 \u2212 discount \u00f7 100). If something costs $60 after 25% off, the original was $60 \u00f7 0.75 = $80.00."
+      "a": "Divide the sale price by (1 − discount ÷ 100). If something costs $60 after 25% off, the original was $60 ÷ 0.75 = $80.00."
     }
   ],
   "home-affordability-calculator": [
@@ -322,7 +322,7 @@
     },
     {
       "q": "Should I include property taxes and insurance?",
-      "a": "Yes \u2014 lenders count your full PITI payment (principal, interest, taxes, and insurance) against the 28% housing limit, so always include estimated property taxes and homeowners insurance when judging affordability."
+      "a": "Yes — lenders count your full PITI payment (principal, interest, taxes, and insurance) against the 28% housing limit, so always include estimated property taxes and homeowners insurance when judging affordability."
     }
   ],
   "loan-amortization-calculator": [
@@ -332,7 +332,7 @@
     },
     {
       "q": "How is an amortization schedule calculated?",
-      "a": "The monthly payment is fixed using the loan amount, interest rate, and term. Each month, interest = balance \u00d7 (annual rate \u00f7 12), and the rest of the payment reduces the balance. Repeat until the balance reaches zero."
+      "a": "The monthly payment is fixed using the loan amount, interest rate, and term. Each month, interest = balance × (annual rate ÷ 12), and the rest of the payment reduces the balance. Repeat until the balance reaches zero."
     },
     {
       "q": "Why is most of my early payment going to interest?",
@@ -340,7 +340,7 @@
     },
     {
       "q": "How can I pay off an amortized loan faster?",
-      "a": "Make extra principal payments. Any amount above the scheduled payment goes straight to principal, which lowers future interest and shortens the loan term \u2014 often by years."
+      "a": "Make extra principal payments. Any amount above the scheduled payment goes straight to principal, which lowers future interest and shortens the loan term — often by years."
     }
   ],
   "gpa-calculator": [
@@ -354,7 +354,7 @@
     },
     {
       "q": "What is a good GPA?",
-      "a": "A 3.0 is solid, 3.5+ is strong, and 3.7\u20134.0 is excellent and competitive for selective colleges and scholarships. Standards vary by school and program."
+      "a": "A 3.0 is solid, 3.5+ is strong, and 3.7–4.0 is excellent and competitive for selective colleges and scholarships. Standards vary by school and program."
     },
     {
       "q": "How do I raise my GPA?",
@@ -364,7 +364,7 @@
   "net-worth-calculator": [
     {
       "q": "How do you calculate net worth?",
-      "a": "Net worth = total assets \u2212 total liabilities. Add up everything you own (cash, investments, home, car, retirement accounts) and subtract everything you owe (mortgage, loans, credit card balances)."
+      "a": "Net worth = total assets − total liabilities. Add up everything you own (cash, investments, home, car, retirement accounts) and subtract everything you owe (mortgage, loans, credit card balances)."
     },
     {
       "q": "What counts as an asset vs. a liability?",
@@ -372,17 +372,17 @@
     },
     {
       "q": "What is a good net worth?",
-      "a": "It depends on age and income. One common benchmark is the 'age \u00d7 income \u00f7 10' rule. More important than any single number is whether your net worth is growing year over year."
+      "a": "It depends on age and income. One common benchmark is the 'age × income ÷ 10' rule. More important than any single number is whether your net worth is growing year over year."
     },
     {
       "q": "Can net worth be negative?",
-      "a": "Yes. If your debts exceed your assets \u2014 common early in life with student loans or a new mortgage \u2014 net worth is negative. Paying down debt and building savings moves it positive over time."
+      "a": "Yes. If your debts exceed your assets — common early in life with student loans or a new mortgage — net worth is negative. Paying down debt and building savings moves it positive over time."
     }
   ],
   "debt-to-income-calculator": [
     {
       "q": "What is debt-to-income (DTI) ratio?",
-      "a": "DTI is the share of your gross monthly income that goes to debt payments. DTI = total monthly debt payments \u00f7 gross monthly income \u00d7 100. It tells lenders how much of your income is already committed."
+      "a": "DTI is the share of your gross monthly income that goes to debt payments. DTI = total monthly debt payments ÷ gross monthly income × 100. It tells lenders how much of your income is already committed."
     },
     {
       "q": "What is a good DTI ratio?",
@@ -400,7 +400,7 @@
   "savings-goal-calculator": [
     {
       "q": "How do I calculate how much to save each month?",
-      "a": "Divide your goal by the number of months you have, then adjust for interest. For a $12,000 goal in 24 months, you'd need about $500/month before interest \u2014 less if your savings earn a return."
+      "a": "Divide your goal by the number of months you have, then adjust for interest. For a $12,000 goal in 24 months, you'd need about $500/month before interest — less if your savings earn a return."
     },
     {
       "q": "How does interest affect my savings goal?",
@@ -408,7 +408,7 @@
     },
     {
       "q": "Should I save in a high-yield savings account?",
-      "a": "For short-term goals, yes \u2014 a high-yield savings account or money-market account earns more than a standard account while keeping your money safe and accessible."
+      "a": "For short-term goals, yes — a high-yield savings account or money-market account earns more than a standard account while keeping your money safe and accessible."
     },
     {
       "q": "What if I can't hit my monthly savings target?",
@@ -418,19 +418,19 @@
   "percentage-calculator": [
     {
       "q": "How do you calculate a percentage of a number?",
-      "a": "Multiply the number by the percentage as a decimal. 20% of 150 is 150 \u00d7 0.20 = 30. To find what percent one number is of another, divide and multiply by 100."
+      "a": "Multiply the number by the percentage as a decimal. 20% of 150 is 150 × 0.20 = 30. To find what percent one number is of another, divide and multiply by 100."
     },
     {
       "q": "How do I calculate percentage increase or decrease?",
-      "a": "Percent change = (new \u2212 old) \u00f7 old \u00d7 100. If a price rises from $80 to $100, that's (100 \u2212 80) \u00f7 80 \u00d7 100 = 25% increase."
+      "a": "Percent change = (new − old) ÷ old × 100. If a price rises from $80 to $100, that's (100 − 80) ÷ 80 × 100 = 25% increase."
     },
     {
       "q": "What is X as a percentage of Y?",
-      "a": "Divide X by Y and multiply by 100. For example, 45 out of 60 is 45 \u00f7 60 \u00d7 100 = 75%."
+      "a": "Divide X by Y and multiply by 100. For example, 45 out of 60 is 45 ÷ 60 × 100 = 75%."
     },
     {
       "q": "How do I add or subtract a percentage from a number?",
-      "a": "To add 15% to 200: 200 \u00d7 1.15 = 230. To subtract 15%: 200 \u00d7 0.85 = 170. Multiply by (1 + rate) to add or (1 \u2212 rate) to subtract."
+      "a": "To add 15% to 200: 200 × 1.15 = 230. To subtract 15%: 200 × 0.85 = 170. Multiply by (1 + rate) to add or (1 − rate) to subtract."
     }
   ],
   "paycheck-calculator": [
@@ -670,15 +670,15 @@
   "salary-to-hourly-calculator": [
     {
       "q": "How do I convert my salary to an hourly rate?",
-      "a": "Divide your annual salary by the number of hours you work in a year. Hourly rate = salary \u00f7 (hours per week \u00d7 weeks per year). At 40 hours/week and 52 weeks, that's salary \u00f7 2,080."
+      "a": "Divide your annual salary by the number of hours you work in a year. Hourly rate = salary ÷ (hours per week × weeks per year). At 40 hours/week and 52 weeks, that's salary ÷ 2,080."
     },
     {
       "q": "What is $60,000 a year per hour?",
-      "a": "About $28.85 per hour, based on a 40-hour week and 52 weeks ($60,000 \u00f7 2,080 = $28.85)."
+      "a": "About $28.85 per hour, based on a 40-hour week and 52 weeks ($60,000 ÷ 2,080 = $28.85)."
     },
     {
       "q": "How many work hours are in a year?",
-      "a": "A standard full-time year is about 2,080 hours (40 hours \u00d7 52 weeks). If you take unpaid time off, use fewer weeks to get a more accurate hourly rate."
+      "a": "A standard full-time year is about 2,080 hours (40 hours × 52 weeks). If you take unpaid time off, use fewer weeks to get a more accurate hourly rate."
     },
     {
       "q": "Is the hourly rate before or after taxes?",
@@ -688,15 +688,15 @@
   "hourly-to-salary-calculator": [
     {
       "q": "How do I convert hourly pay to an annual salary?",
-      "a": "Multiply your hourly rate by the hours you work per week and the weeks you work per year. Annual salary = rate \u00d7 hours per week \u00d7 weeks per year."
+      "a": "Multiply your hourly rate by the hours you work per week and the weeks you work per year. Annual salary = rate × hours per week × weeks per year."
     },
     {
       "q": "What is $25 an hour annually?",
-      "a": "About $52,000 per year at 40 hours/week for 52 weeks ($25 \u00d7 40 \u00d7 52)."
+      "a": "About $52,000 per year at 40 hours/week for 52 weeks ($25 × 40 × 52)."
     },
     {
       "q": "What is $20 an hour annually?",
-      "a": "About $41,600 per year at 40 hours/week for 52 weeks ($20 \u00d7 40 \u00d7 52)."
+      "a": "About $41,600 per year at 40 hours/week for 52 weeks ($20 × 40 × 52)."
     },
     {
       "q": "Does this include taxes or benefits?",
@@ -706,7 +706,7 @@
   "hours-calculator": [
     {
       "q": "How do I calculate hours worked?",
-      "a": "Subtract your start time from your end time, then subtract any break. From 9:00 AM to 5:00 PM with a 30-minute break, that's 8 hours \u2212 0.5 = 7.5 hours."
+      "a": "Subtract your start time from your end time, then subtract any break. From 9:00 AM to 5:00 PM with a 30-minute break, that's 8 hours − 0.5 = 7.5 hours."
     },
     {
       "q": "How do I convert minutes to decimal hours?",
@@ -718,7 +718,7 @@
     },
     {
       "q": "What is 7 hours and 30 minutes in decimal?",
-      "a": "7.5 hours, because 30 minutes is half an hour (30 \u00f7 60 = 0.5)."
+      "a": "7.5 hours, because 30 minutes is half an hour (30 ÷ 60 = 0.5)."
     }
   ],
   "overtime-calculator": [
@@ -732,7 +732,7 @@
     },
     {
       "q": "When am I entitled to overtime?",
-      "a": "Under the US Fair Labor Standards Act, non-exempt employees earn at least 1.5\u00d7 their regular rate for hours worked beyond 40 in a workweek. Some states add daily overtime rules."
+      "a": "Under the US Fair Labor Standards Act, non-exempt employees earn at least 1.5× their regular rate for hours worked beyond 40 in a workweek. Some states add daily overtime rules."
     },
     {
       "q": "What is $20 an hour at time and a half?",
@@ -742,15 +742,15 @@
   "date-difference-calculator": [
     {
       "q": "How do I calculate the number of days between two dates?",
-      "a": "Subtract the earlier date from the later date. The formula is: Days = End Date \u2212 Start Date. For example, January 1 to March 31 spans 89 days (31 + 28 + 31 \u2212 1). Our calculator handles leap years, month-length variations, and daylight-saving edge cases automatically."
+      "a": "Subtract the earlier date from the later date. The formula is: Days = End Date − Start Date. For example, January 1 to March 31 spans 89 days (31 + 28 + 31 − 1). Our calculator handles leap years, month-length variations, and daylight-saving edge cases automatically."
     },
     {
       "q": "What is the difference between inclusive and exclusive day counting?",
-      "a": "Exclusive counting (the default) counts the gaps between dates \u2014 January 1 to January 3 = 2 days. Inclusive counting adds the end date itself \u2014 January 1 to January 3 = 3 days. Use inclusive when counting event nights (e.g., a 3-night hotel stay), contract days, or subscription days. Use exclusive for 'how many days until' countdowns."
+      "a": "Exclusive counting (the default) counts the gaps between dates — January 1 to January 3 = 2 days. Inclusive counting adds the end date itself — January 1 to January 3 = 3 days. Use inclusive when counting event nights (e.g., a 3-night hotel stay), contract days, or subscription days. Use exclusive for 'how many days until' countdowns."
     },
     {
       "q": "How many weeks are in a year?",
-      "a": "A calendar year has exactly 52 weeks and 1 day (365 days \u00f7 7 = 52.14 weeks), or 52 weeks and 2 days in a leap year (366 days). That's why the same date shifts by one weekday each year (two days after a leap year)."
+      "a": "A calendar year has exactly 52 weeks and 1 day (365 days ÷ 7 = 52.14 weeks), or 52 weeks and 2 days in a leap year (366 days). That's why the same date shifts by one weekday each year (two days after a leap year)."
     },
     {
       "q": "How do I count business days between two dates?",
@@ -758,7 +758,7 @@
     },
     {
       "q": "How do I calculate someone's exact age in days?",
-      "a": "Enter the person's birth date as the start date and today's date as the end date, then click Calculate. The result is their exact age in total days, weeks, months, and years. For example, someone born on June 20, 2000, turns exactly 26 years old on June 20, 2026 \u2014 that's 9,497 days."
+      "a": "Enter the person's birth date as the start date and today's date as the end date, then click Calculate. The result is their exact age in total days, weeks, months, and years. For example, someone born on June 20, 2000, turns exactly 26 years old on June 20, 2026 — that's 9,497 days."
     },
     {
       "q": "Does daylight saving time affect the day count?",
@@ -772,15 +772,15 @@
     },
     {
       "q": "How do you multiply fractions?",
-      "a": "To multiply fractions, simply multiply the numerators together and the denominators together. Then simplify the result. Example: 2/3 \u00d7 3/4 = (2\u00d73)/(3\u00d74) = 6/12 = 1/2. No common denominator is needed."
+      "a": "To multiply fractions, simply multiply the numerators together and the denominators together. Then simplify the result. Example: 2/3 × 3/4 = (2×3)/(3×4) = 6/12 = 1/2. No common denominator is needed."
     },
     {
       "q": "How do you divide fractions?",
-      "a": "To divide fractions, multiply the first fraction by the reciprocal (the flip) of the second fraction. Example: 2/3 \u00f7 4/5 = 2/3 \u00d7 5/4 = 10/12 = 5/6. The phrase \"keep, change, flip\" helps: keep the first fraction, change \u00f7 to \u00d7, flip the second fraction."
+      "a": "To divide fractions, multiply the first fraction by the reciprocal (the flip) of the second fraction. Example: 2/3 ÷ 4/5 = 2/3 × 5/4 = 10/12 = 5/6. The phrase \"keep, change, flip\" helps: keep the first fraction, change ÷ to ×, flip the second fraction."
     },
     {
       "q": "How do you calculate with mixed numbers like 2 3/4?",
-      "a": "Convert the mixed number to an improper fraction first: multiply the whole number by the denominator and add the numerator. For 2 3/4: (2 \u00d7 4) + 3 = 11, so 2 3/4 = 11/4. Then perform the operation normally and convert back to a mixed number if needed."
+      "a": "Convert the mixed number to an improper fraction first: multiply the whole number by the denominator and add the numerator. For 2 3/4: (2 × 4) + 3 = 11, so 2 3/4 = 11/4. Then perform the operation normally and convert back to a mixed number if needed."
     },
     {
       "q": "What is a simplified fraction?",
@@ -788,7 +788,33 @@
     },
     {
       "q": "How do you subtract fractions?",
-      "a": "Subtracting fractions works just like addition: find a common denominator, convert each fraction, then subtract the numerators. Example: 3/4 \u2212 1/3 = 9/12 \u2212 4/12 = 5/12. If the result is negative, the first fraction was smaller than the second."
+      "a": "Subtracting fractions works just like addition: find a common denominator, convert each fraction, then subtract the numerators. Example: 3/4 − 1/3 = 9/12 − 4/12 = 5/12. If the result is negative, the first fraction was smaller than the second."
+    }
+  ],
+  "average-calculator": [
+    {
+      "q": "What is the difference between mean, median, and mode?",
+      "a": "The mean (average) is the sum of all values divided by the count. The median is the middle value when numbers are sorted — it is less affected by outliers. The mode is the value that appears most often. For example, in [1, 2, 2, 3, 100]: mean = 21.6, median = 2, mode = 2. Use mean for symmetric data, median when outliers exist, mode for most-common-value questions."
+    },
+    {
+      "q": "How do I calculate the average of a set of numbers?",
+      "a": "Add all the numbers together, then divide by how many numbers there are. Formula: Mean = Sum ÷ Count. Example: the average of 10, 20, and 30 is (10 + 20 + 30) ÷ 3 = 60 ÷ 3 = 20."
+    },
+    {
+      "q": "What if my data set has no mode?",
+      "a": "If every number in the set appears exactly once (no repeats), there is no mode. This is normal — not every data set has a mode. Some data sets are bimodal (two modes) or multimodal (more than two), which means multiple values tie for the highest frequency."
+    },
+    {
+      "q": "How is the median calculated when there is an even number of values?",
+      "a": "When the count is even, sort the values and average the two middle ones. Example: for [3, 7, 9, 13], the two middle values are 7 and 9, so the median is (7 + 9) ÷ 2 = 8. This guarantees the median is always between the two center values."
+    },
+    {
+      "q": "Why is median salary used instead of average salary?",
+      "a": "Salary data is right-skewed — a small number of very high earners pull the mean upward. For example, if 9 workers earn $50,000 and 1 earns $500,000, the mean is $95,000 but the median is $50,000. The median better represents what a typical worker earns."
+    },
+    {
+      "q": "Can I calculate the average of negative numbers?",
+      "a": "Yes. The mean formula works the same for negative numbers. Example: the average of -10, -5, 0, 5, 10 is (-10 + -5 + 0 + 5 + 10) ÷ 5 = 0 ÷ 5 = 0. This calculator fully supports negative values and decimals."
     }
   ]
 }

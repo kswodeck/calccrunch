@@ -172,8 +172,8 @@
     "description": "Convert celsius to fahrenheit in seconds with our free online converter.",
     "totalTime": "PT10S",
     "steps": [
-      "Enter the value in celsius (\u00b0C) you want to convert",
-      "The result in fahrenheit (\u00b0F) updates instantly",
+      "Enter the value in celsius (°C) you want to convert",
+      "The result in fahrenheit (°F) updates instantly",
       "Use the reference table to look up common temperature conversions"
     ]
   },
@@ -182,8 +182,8 @@
     "description": "Convert fahrenheit to celsius in seconds with our free online converter.",
     "totalTime": "PT10S",
     "steps": [
-      "Enter the value in fahrenheit (\u00b0F) you want to convert",
-      "The result in celsius (\u00b0C) updates instantly",
+      "Enter the value in fahrenheit (°F) you want to convert",
+      "The result in celsius (°C) updates instantly",
       "Use the reference table to look up common temperature conversions"
     ]
   },
@@ -212,7 +212,7 @@
     "description": "Calculate sales tax and the total price, or work backward to find the pre-tax price, with our free calculator.",
     "totalTime": "PT30S",
     "steps": [
-      "Enter the amount \u2014 the pre-tax price, or the total if you're removing tax",
+      "Enter the amount — the pre-tax price, or the total if you're removing tax",
       "Enter the sales tax rate, or pick your state to auto-fill the base rate",
       "Choose 'Add tax' to add tax to a price, or 'Remove tax' to find the pre-tax price",
       "Read the tax amount, total, and pre-tax price in the results"
@@ -490,11 +490,24 @@
     "description": "Add, subtract, multiply, or divide any two fractions or mixed numbers and get a simplified result with step-by-step explanation.",
     "totalTime": "PT1M",
     "steps": [
-      "Select your operation: click Add (+), Subtract (\u2212), Multiply (\u00d7), or Divide (\u00f7) at the top.",
+      "Select your operation: click Add (+), Subtract (−), Multiply (×), or Divide (÷) at the top.",
       "Enter the first fraction: type the numerator and denominator. For a mixed number like 2 3/4, also enter 2 in the Whole Number field.",
       "Enter the second fraction in the same way: whole number (if any), numerator, and denominator.",
       "Click the Calculate button to see the simplified result, its decimal equivalent, and a step-by-step solution.",
       "Use the Clear button to reset all fields and start a new calculation."
+    ]
+  },
+  "average-calculator": {
+    "name": "How to Calculate the Average (Mean, Median, and Mode)",
+    "description": "Use our free average calculator to find the mean, median, mode, range, sum, and count of any set of numbers in seconds.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Enter your numbers in the input box, separated by commas, spaces, or line breaks",
+      "Decimals and negative numbers are fully supported — enter them exactly as they appear",
+      "Click \"Calculate Average\" to see the mean, median, mode, range, sum, count, min, and max",
+      "Review the results: the mean is the arithmetic average; the median is the middle value when sorted; the mode is the most common value",
+      "If you need to share or bookmark the result, the numbers are saved in the URL automatically",
+      "Click \"Clear\" to reset and enter a new set of numbers"
     ]
   }
 }
