@@ -816,5 +816,31 @@
       "q": "Can I calculate the average of negative numbers?",
       "a": "Yes. The mean formula works the same for negative numbers. Example: the average of -10, -5, 0, 5, 10 is (-10 + -5 + 0 + 5 + 10) ÷ 5 = 0 ÷ 5 = 0. This calculator fully supports negative values and decimals."
     }
+  ],
+  "percentage-change-calculator": [
+    {
+      "q": "What is the formula for percentage change?",
+      "a": "Percentage Change = ((New Value − Original Value) ÷ |Original Value|) × 100. A positive result is a percentage increase; a negative result is a percentage decrease. The absolute value in the denominator ensures the formula works correctly when the original value is negative."
+    },
+    {
+      "q": "What is the difference between percentage change and percentage points?",
+      "a": "Percentage change measures how much something changed relative to its starting value. Percentage points measure the raw arithmetic difference between two percentages. For example, if an interest rate rises from 2% to 3%, that is a 1 percentage point increase but a 50% percentage change in the rate."
+    },
+    {
+      "q": "Can the original value be zero?",
+      "a": "No. When the original value is zero, percentage change is undefined because you would be dividing by zero. In that case, you can only report the absolute difference (New − Original), not a meaningful percentage."
+    },
+    {
+      "q": "How do I calculate a percentage increase from 50 to 75?",
+      "a": "Percentage Change = ((75 − 50) ÷ 50) × 100 = (25 ÷ 50) × 100 = 50%. The value increased by 50%."
+    },
+    {
+      "q": "How do I find the new value after a percentage decrease?",
+      "a": "Multiply the original value by (1 − percentage/100). For example, a 20% decrease on 500: 500 × (1 − 0.20) = 500 × 0.80 = 400. Use the Reverse section of this calculator to do this automatically."
+    },
+    {
+      "q": "What does a multiplier of 1.25x mean?",
+      "a": "A multiplier of 1.25x means the new value is 1.25 times the original, which corresponds to a 25% increase. A multiplier below 1 (e.g. 0.80x) means a decrease — in this case a 20% decrease."
+    }
   ]
 }

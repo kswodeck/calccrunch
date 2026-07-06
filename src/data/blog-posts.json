@@ -702,6 +702,72 @@
         "fuel cost calculator",
         "gas mileage calculator"
       ]
+    },
+    {
+      "slug": "back-to-school-budget-guide",
+      "title": "Back-to-School Budget Guide: How Much to Spend (and How to Save)",
+      "description": "Plan your back-to-school spending with confidence. See average costs by grade level, a category-by-category budget breakdown, and smart strategies to save without skipping essentials.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-07-08T09:00:00-07:00",
+      "updatedDate": "2026-07-08T09:00:00-07:00",
+      "category": "Budgeting",
+      "tags": [
+        "back to school",
+        "budgeting",
+        "school supplies",
+        "personal finance",
+        "saving money",
+        "education"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "budget-calculator",
+        "savings-goal-calculator",
+        "percentage-change-calculator"
+      ],
+      "seoTitle": "Back-to-School Budget Guide: How Much to Spend by Grade (2026)",
+      "seoDescription": "See how much back-to-school shopping actually costs by grade level, a full category breakdown, and proven strategies to cut spending without skipping what kids need.",
+      "keywords": [
+        "back to school budget",
+        "back to school costs",
+        "school supply budget",
+        "how much to spend back to school",
+        "back to school savings tips"
+      ]
+    },
+    {
+      "slug": "average-calculator-guide",
+      "title": "How to Calculate the Average: Mean, Median, and Mode Explained",
+      "description": "Learn how to calculate the mean, median, and mode — and when each one gives you a more accurate picture. Includes step-by-step examples, a comparison table, and a free average calculator.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-07-11T09:00:00-07:00",
+      "updatedDate": "2026-07-11T09:00:00-07:00",
+      "category": "Guides",
+      "tags": [
+        "average",
+        "mean",
+        "median",
+        "mode",
+        "statistics",
+        "math"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "average-calculator",
+        "percentage-calculator",
+        "percentage-change-calculator"
+      ],
+      "seoTitle": "How to Calculate the Average: Mean, Median & Mode (With Examples)",
+      "seoDescription": "Learn the difference between mean, median, and mode. Step-by-step examples, a comparison table, and a free average calculator — find the right measure for your data.",
+      "keywords": [
+        "how to calculate the average",
+        "mean median mode",
+        "average calculator",
+        "mean vs median",
+        "how to find the average"
+      ]
     }
   ]
 }

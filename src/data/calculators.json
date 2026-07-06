@@ -2719,7 +2719,8 @@
         "sales-tax-calculator",
         "discount-calculator",
         "fraction-calculator",
-        "average-calculator"
+        "average-calculator",
+        "percentage-change-calculator"
       ]
     },
     {
@@ -3469,7 +3470,8 @@
         "sales-tax-calculator",
         "percentage-calculator",
         "tip-calculator",
-        "fraction-calculator"
+        "fraction-calculator",
+        "percentage-change-calculator"
       ]
     },
     {
@@ -4718,7 +4720,47 @@
       "relatedCalculators": [
         "percentage-calculator",
         "fraction-calculator",
-        "grade-calculator"
+        "grade-calculator",
+        "percentage-change-calculator"
+      ]
+    },
+    {
+      "title": "Percentage Change Calculator",
+      "slug": "percentage-change-calculator",
+      "description": "Calculate the percentage increase or decrease between any two values. Enter the original and new value to instantly see the percentage change, absolute difference, and multiplier.",
+      "shortDescription": "Calculate percentage increase or decrease between two values",
+      "category": "miscellaneous",
+      "tags": [
+        "percentage change",
+        "percent increase",
+        "percent decrease",
+        "math",
+        "statistics"
+      ],
+      "featured": false,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "📈",
+      "seoTitle": "Percentage Change Calculator — Instant Increase/Decrease",
+      "seoDescription": "Calculate the percentage change between any two numbers. See the formula, examples, and get your result instantly — no sign-up required.",
+      "keywords": [
+        "percentage change calculator",
+        "percent change",
+        "percent increase calculator",
+        "percent decrease calculator",
+        "percentage change formula"
+      ],
+      "lastUpdated": "2026-07-06",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "percentage-calculator",
+        "discount-calculator",
+        "average-calculator"
       ]
     }
   ]

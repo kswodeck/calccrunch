@@ -37,7 +37,7 @@ These are huge-volume, low-difficulty queries. Each is one row + `npm run gen:co
 | Slug | Query | Category | Status |
 |---|---|---|---|
 | fraction-calculator | "fraction calculator" | math-conversions | done |
-| percentage-change-calculator | "percentage change" | math-conversions | todo |
+| percentage-change-calculator | "percentage change" | math-conversions | done |
 | average-calculator | "average calculator" | math-conversions | done |
 | ratio-calculator | "ratio calculator" | math-conversions | todo |
 
@@ -76,10 +76,10 @@ Each post links ≥2 calculators via `relatedCalculators`.
 | Slug | Target query | Links to | Status |
 |---|---|---|---|
 | ratio-calculator-guide | "how to calculate a ratio" / "ratio simplifier" | ratio-calculator, fraction-calculator | todo |
-| average-calculator-guide | "how to find the average" / "mean median mode" | average-calculator, percentage-calculator | todo |
-| percentage-change-calculator-bespoke | Ship the actual percentage-change-calculator tool (Tier 3) | percentage-calculator, fraction-calculator | todo |
+| average-calculator-guide | "how to find the average" / "mean median mode" | average-calculator, percentage-calculator | done |
+| percentage-change-calculator-bespoke | Ship the actual percentage-change-calculator tool (Tier 3) | percentage-calculator, fraction-calculator | done |
 | summer-road-trip-fuel-cost | "road trip fuel cost calculator" (summer seasonal) | gas-mileage-calculator, budget-calculator | done |
-| back-to-school-budget-guide | "back to school budget" / "school supply costs" | budget-calculator, savings-goal-calculator | todo |
+| back-to-school-budget-guide | "back to school budget" / "school supply costs" | budget-calculator, savings-goal-calculator | done |
 
 ## Blog backlog (new ideas from 2026-06-29 research run)
 
@@ -87,9 +87,19 @@ Each post links ≥2 calculators via `relatedCalculators`.
 |---|---|---|---|
 | pace-calculator | Build pace-calculator tool first (Tier 4) then post | pace-calculator, calories-burned-calculator | todo |
 | water-intake-calculator | Build water-intake-calculator tool first (Tier 4) then post | water-intake-calculator, calorie-calculator | todo |
-| percentage-change-calculator | Ship percentage-change-calculator tool (Tier 3) then guide | percentage-calculator, average-calculator | todo |
+| percentage-change-calculator | Ship percentage-change-calculator tool (Tier 3) then guide | percentage-calculator, average-calculator | done |
 | ratio-calculator | Ship ratio-calculator tool (Tier 3) then guide | fraction-calculator, average-calculator | todo |
-| back-to-school-budget-guide | "back to school budget checklist 2026" | budget-calculator, savings-goal-calculator | todo |
+| back-to-school-budget-guide | "back to school budget checklist 2026" | budget-calculator, savings-goal-calculator | done |
+
+## Blog backlog (new ideas from 2026-07-06 research run)
+
+| Slug | Target query | Links to | Status |
+|---|---|---|---|
+| ratio-calculator-guide | "how to simplify a ratio" / "ratio calculator" | ratio-calculator, fraction-calculator, average-calculator | todo |
+| running-pace-guide | "running pace calculator" / "how to calculate pace per mile" | pace-calculator, calories-burned-calculator | todo |
+| how-much-water-should-you-drink | "water intake calculator" / "how much water per day" | water-intake-calculator, calorie-calculator, bmi-calculator | todo |
+| due-date-calculator-guide | "pregnancy due date" / "how is due date calculated" | pregnancy-calculator, date-difference-calculator | todo |
+| standard-deviation-guide | "how to calculate standard deviation" / "what is standard deviation" | average-calculator, percentage-change-calculator | todo |
 
 ## Retention backlog
 

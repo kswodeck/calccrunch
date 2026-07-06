@@ -509,5 +509,16 @@
       "If you need to share or bookmark the result, the numbers are saved in the URL automatically",
       "Click \"Clear\" to reset and enter a new set of numbers"
     ]
+  },
+  "percentage-change-calculator": {
+    "name": "How to Calculate Percentage Change",
+    "description": "Calculate the percentage increase or decrease between any two values using the percentage change formula.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Enter your original (starting) value in the \"Original Value\" field.",
+      "Enter your new (ending) value in the \"New Value\" field.",
+      "Click \"Calculate Change\" to see the percentage increase or decrease, the absolute difference, and the multiplier.",
+      "To find a new value from a known percentage change, enter the starting value and the percentage in the \"Reverse\" section and click \"Find New Value\"."
+    ]
   }
 }
