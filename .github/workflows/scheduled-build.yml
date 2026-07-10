@@ -2,19 +2,83 @@ name: Scheduled Build (Publish Blog Posts)
 
 on:
   schedule:
-    # Runs at 6:00 AM PST (2:00 PM UTC) every other day (days 1,3,5,...,31).
+    # Daily at 17:00 UTC (10:00 PDT) — after the 09:00-07:00 (16:00 UTC)
+    # publishDate stamp that `npm run new:post` writes, so drip-scheduled
+    # content goes live on its scheduled day (the previous every-other-day
+    # cadence made even-day posts land a day late).
     # Calculators/posts are statically gated by `lastUpdated`/`publishDate`
-    # (hidden until that date), so a periodic rebuild is what actually makes
-    # drip-scheduled content go live on its day — see
+    # (hidden until that date), so this periodic rebuild is what actually makes
+    # drip-scheduled content go live — see
     # engine/playbooks/weekly-content-agent.md for how content gets scheduled.
-    # Note: */2 is day-of-month based, so the gap resets at month boundaries
-    # (e.g. the 31st is followed by the 1st).
-    - cron: '0 14 */2 * *'
+    - cron: '0 17 * * *'
   workflow_dispatch: # Allow manual trigger from GitHub Actions UI anytime
+
+permissions:
+  contents: read
+  issues: write
 
 jobs:
   trigger-netlify-build:
     runs-on: ubuntu-latest
+    timeout-minutes: 40
     steps:
+      - name: Record the currently-deployed build stamp
+        id: baseline
+        # The site serves /build-info.json stamped at build time. Grab the
+        # pre-trigger value so verification requires a NEW deploy, not just any
+        # recent one (e.g. a git-push deploy that raced this run).
+        run: |
+          baseline=$(curl -fsS --max-time 30 "https://calccrunch.com/build-info.json?nocache=$(date +%s)" | jq -r '.builtAt // empty' || true)
+          echo "Current build stamp: ${baseline:-<none — site not serving build-info.json yet>}"
+          echo "built_at=$baseline" >> "$GITHUB_OUTPUT"
+
       - name: Trigger Netlify Build Hook
-        run: curl -X POST -d {} ${{ secrets.NETLIFY_BUILD_HOOK }}
+        # -f makes an HTTP error (e.g. revoked/invalid hook) fail the step
+        # instead of silently reporting success.
+        run: curl -fsS --max-time 30 --retry 2 -X POST -d '{}' "${{ secrets.NETLIFY_BUILD_HOOK }}"
+
+      - name: Verify the site actually redeployed
+        # If no fresh deploy shows up, Netlify isn't building (suspended site,
+        # exhausted build minutes, failing build, disconnected repo) — fail
+        # loudly so an outage can't go unnoticed for weeks again.
+        env:
+          BASELINE: ${{ steps.baseline.outputs.built_at }}
+        run: |
+          echo "Waiting for Netlify to build and publish (baseline: ${BASELINE:-none})..."
+          for i in $(seq 1 25); do
+            sleep 60
+            built_at=$(curl -fsS --max-time 30 "https://calccrunch.com/build-info.json?nocache=$(date +%s)" | jq -r '.builtAt // empty' || true)
+            if [ -n "$built_at" ] && [ "$built_at" != "$BASELINE" ]; then
+              age=$(( $(date -u +%s) - $(date -u -d "$built_at" +%s) ))
+              echo "Fresh deploy confirmed — new build stamp $built_at ($age seconds ago)."
+              exit 0
+            fi
+            echo "Attempt $i/25: no new deploy yet (current stamp: ${built_at:-unavailable})."
+          done
+          echo "::error::No new deploy appeared within 25 minutes of triggering the Netlify build hook. Check the Netlify dashboard (failed builds, stopped builds, build-minute limits, billing)."
+          exit 1
+
+  # Separate job so the alert fires even if trigger-netlify-build is cancelled
+  # by its own timeout-minutes (step-level `if: failure()` is false for
+  # cancellation).
+  notify-on-failure:
+    needs: [trigger-netlify-build]
+    if: always() && (contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled'))
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open/refresh an issue about the broken deploy pipeline
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          title="Site deploy pipeline appears broken (Netlify not publishing)"
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "in:title \"$title\"" --json number --jq '.[0].number' || true)
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --repo "$GITHUB_REPOSITORY" --body "Still broken as of $(date -u +'%Y-%m-%d %H:%M') UTC — $RUN_URL"
+          else
+            body=$(printf 'The daily scheduled rebuild could not confirm a fresh Netlify deploy: %s\n\nCheck the Netlify dashboard for this site:\n- failed or stopped builds\n- exhausted build minutes / billing issues\n- a revoked build hook (secret NETLIFY_BUILD_HOOK)\n- the repo becoming disconnected from the site\n\nUntil this is fixed, weekly generated content lands in the repo but never goes live.' "$RUN_URL")
+            gh label create automation-alert --repo "$GITHUB_REPOSITORY" \
+              --description "Automated content/deploy pipeline alerts" --color D93F0B 2>/dev/null || true
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body" --label automation-alert \
+              || gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body"
+          fi

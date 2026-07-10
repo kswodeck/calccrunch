@@ -51,3 +51,5 @@ Thumbs.db
 .cache/
 .claude/
 .env
+# Claude GitHub Action execution log (runner artifact, never commit)
+output.txt

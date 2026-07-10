@@ -30,20 +30,33 @@ Read these before doing anything else:
 
 ## 1. Research — find what's actually worth building
 
-Don't invent topics. Use `WebSearch`/`WebFetch` to find real, current demand:
+Don't invent topics, and don't skimp on this step — the whole point of this
+pipeline is that real search demand picks the topics. Budget roughly the first
+10 minutes of the run for research. Concretely, run **at least 5–6 distinct
+`WebSearch` queries spanning at least 3 of our niches** before you pick
+anything, covering:
 - Trending/seasonal queries in our niches (personal finance, health & fitness,
   time/date, everyday math & unit conversion). Consider what's topical right
-  now (mid-year financial check-ins, summer travel/fuel/road-trip costs,
-  back-to-school prep, outdoor fitness season, tax-extension deadlines, etc.)
-  — but verify with search rather than assuming the calendar.
+  now AND 2–6 weeks out — new content takes time to rank, so slightly-ahead
+  seasonal topics (upcoming deadlines, next season's planning) beat
+  already-peaked ones. Verify with search rather than assuming the calendar.
 - Search-intent signals: "people also ask" style questions, "X vs Y"
   comparisons, "how to calculate X", "X calculator", recent rate/rule changes
   (tax brackets, interest rates, minimum wage, BMI/health guidance, etc.).
 - Prefer **evergreen** topics that will still be accurate in 6–12 months over
   fast-moving news — a calculator/post that's stale in a month is wasted work.
 
+For each topic you pick, you must be able to state one sentence of "why now"
+evidence from your research (record it in `engine/backlog.md`, step 6). If a
+candidate has no demand evidence, drop it and pick one that does.
+
 Cross-reference candidates against `engine/backlog.md` (pull from it first —
-it's already prioritized) and the existing calculators/posts. Then pick:
+it's already prioritized) and the existing calculators/posts. **Duplication
+check is topic-level, not just slug-level**: if an existing post or calculator
+already substantially covers the topic (e.g. don't write an "average
+calculator guide" post when an "average vs median" post already exists, or
+build a calculator whose subject an existing post/calculator already owns),
+pick something else. Then pick:
 - **1 calculator**: either a high-volume unit conversion (add a row to
   `engine/conversions.json`, run `npm run gen:conversions`) or a bespoke one
   (`npm run new:calc ...`) — whichever your research justifies.
