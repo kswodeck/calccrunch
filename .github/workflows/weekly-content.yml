@@ -168,4 +168,5 @@ jobs:
           body=$(printf 'The scheduled weekly content run failed or was cancelled: %s\n\nJob results: guard=%s, generate-and-publish=%s\n\nCommon causes seen before:\n- Anthropic credit balance exhausted ("Credit balance is too low") — top up billing\n- Agent/job timeout — check the Claude step log\n- Agent finished but produced no content changes\n\nA backup run fires Tuesday 13:00 UTC automatically; if that also fails, re-run manually from the Actions tab after fixing the cause.' \
             "$RUN_URL" "${{ needs.guard.result }}" "${{ needs.generate-and-publish.result }}")
           gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body" --label automation-alert \
-            || gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body"
+            || gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body" \
+            || { echo "::error::Could not file the alert issue — GitHub Issues appear to be DISABLED for this repository. Enable them under Settings → General → Features → Issues so failure alerts can be delivered. This run still failed, see $RUN_URL"; exit 1; }
