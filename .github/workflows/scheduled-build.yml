@@ -35,7 +35,20 @@ jobs:
       - name: Trigger Netlify Build Hook
         # -f makes an HTTP error (e.g. revoked/invalid hook) fail the step
         # instead of silently reporting success.
-        run: curl -fsS --max-time 30 --retry 2 -X POST -d '{}' "${{ secrets.NETLIFY_BUILD_HOOK }}"
+        env:
+          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+        run: |
+          # Accept either the bare hook URL or Netlify's full example command
+          # ("curl -X POST -d {} https://api.netlify.com/build_hooks/<id>") —
+          # pasting the latter as the secret is an easy mistake and used to
+          # break curl with "empty string within braces in URL".
+          hook_url=$(grep -oE 'https://[A-Za-z0-9./_-]+' <<< "$NETLIFY_BUILD_HOOK" | head -n 1 || true)
+          if [ -z "$hook_url" ]; then
+            echo "::error::The NETLIFY_BUILD_HOOK secret contains no URL. Set it to the build-hook URL from Netlify (Project configuration → Build & deploy → Build hooks)."
+            exit 1
+          fi
+          echo "::add-mask::$hook_url"
+          curl -fsS --max-time 30 --retry 2 -X POST -d '{}' "$hook_url"
 
       - name: Verify the site actually redeployed
         # If no fresh deploy shows up, Netlify isn't building (suspended site,
@@ -72,7 +85,9 @@ jobs:
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           title="Site deploy pipeline appears broken (Netlify not publishing)"
-          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "in:title \"$title\"" --json number --jq '.[0].number' || true)
+          # `// empty` matters: without it jq prints the literal string "null"
+          # when no open issue matches, and we'd try to comment on issue "null".
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "in:title \"$title\"" --json number --jq '.[0].number // empty' 2>/dev/null || true)
           if [ -n "$existing" ]; then
             gh issue comment "$existing" --repo "$GITHUB_REPOSITORY" --body "Still broken as of $(date -u +'%Y-%m-%d %H:%M') UTC — $RUN_URL"
           else
@@ -80,5 +95,6 @@ jobs:
             gh label create automation-alert --repo "$GITHUB_REPOSITORY" \
               --description "Automated content/deploy pipeline alerts" --color D93F0B 2>/dev/null || true
             gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body" --label automation-alert \
-              || gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body"
+              || gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body" \
+              || { echo "::error::Could not file the alert issue — GitHub Issues appear to be DISABLED for this repository. Enable them under Settings → General → Features → Issues so deploy-outage alerts can be delivered. Meanwhile: the deploy pipeline is still broken, see $RUN_URL"; exit 1; }
           fi
