@@ -89,17 +89,21 @@ figure you can't verify here.
 
 The site hides any calculator whose `lastUpdated` is in the future and any
 post whose `publishDate` is in the future, and only reveals it once a build
-runs **on or after** that date (`scheduled-build.yml` rebuilds daily, so a
-date you set here will go live on its day). Use this to spread the batch out:
+runs **on or after** that date. `scheduled-build.yml` rebuilds at 15:00 UTC
+on **Monday and Wednesday–Saturday only** — there is **no rebuild on Sundays
+or Tuesdays**, so **never set a publish/lastUpdated date on a Sunday or a
+Tuesday** (it would sit hidden until the next rebuild day). Use this to
+spread the batch out:
 
 - **Calculator**: set `lastUpdated` to **today** (it ships with this run).
 - **Post 1**: schedule **2–3 days out**.
 - **Post 2**: schedule **5–7 days out**.
 
-Before picking exact dates, check `src/data/blog-posts.json` for posts
-already scheduled in the coming days and avoid stacking two releases on the
-same day. Use `--date YYYY-MM-DD` on `new:post` (it writes a `09:00:00-07:00`
-publish time) and set the calculator's `lastUpdated` to today's date
+Before picking exact dates, check the day of week (no Sundays, no Tuesdays)
+and check `src/data/blog-posts.json` for posts already scheduled in the
+coming days, avoiding stacking two releases on the same day. Use
+`--date YYYY-MM-DD` on `new:post` (it writes a `09:00:00-07:00` publish
+time) and set the calculator's `lastUpdated` to today's date
 (`YYYY-MM-DD`, no time component, matching the existing entries).
 
 ## 5. Validate before you finish
