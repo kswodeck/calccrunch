@@ -20,12 +20,14 @@ name: Weekly Content Generation (Claude)
 
 on:
   schedule:
-    # Primary: Mondays at 06:00 America/Los_Angeles (13:00 UTC) — ahead of the
-    # daily 17:00 UTC scheduled-build rebuild, so this week's batch ships with
-    # this run.
+    # Primary: Mondays at 06:00 America/Los_Angeles (13:00 UTC) — about 2
+    # hours ahead of the 15:00 UTC scheduled-build rebuild (Mon + Wed–Sat),
+    # so this week's batch ships with this run.
     - cron: '0 13 * * 1'
     # Backup: Tuesdays at the same time. The guard job below makes this a no-op
-    # when Monday's batch already shipped, so it only acts as a retry.
+    # when Monday's batch already shipped, so it only acts as a retry. (There
+    # is no scheduled-build rebuild on Tuesdays, but this workflow's own git
+    # push triggers a Netlify deploy, so a Tuesday batch still goes live.)
     - cron: '0 13 * * 2'
   workflow_dispatch: # allow manual runs from the Actions tab (always runs)
 
