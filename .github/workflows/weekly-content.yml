@@ -7,25 +7,75 @@ name: Weekly Content Generation (Claude)
 #   3. On success, the changes are committed and pushed straight to the
 #      default branch — Netlify's git integration deploys it from there.
 # No PRs, no manual review step. If validation/build fails, nothing is pushed.
+#
+# Reliability:
+#   - Primary run Mondays; a Tuesday backup run re-attempts automatically if
+#     Monday's batch didn't land (the guard job checks for this week's commit).
+#   - A "successful" run that produced no content is treated as a failure.
+#   - The notify-on-failure job opens a GitHub issue when any job fails, is
+#     cancelled (e.g. by timeout-minutes), or times out — so it never fails
+#     silently (past silent failures: Anthropic credit balance exhausted on
+#     2026-06-15, agent killed by the action's default 10-min timeout on
+#     2026-06-22).
 
 on:
   schedule:
-    # Mondays at 06:00 America/Los_Angeles (13:00 UTC) — ahead of the daily
-    # scheduled-build rebuild, so this week's batch ships with this run.
+    # Primary: Mondays at 06:00 America/Los_Angeles (13:00 UTC) — ahead of the
+    # daily 17:00 UTC scheduled-build rebuild, so this week's batch ships with
+    # this run.
     - cron: '0 13 * * 1'
-  workflow_dispatch: # allow manual runs from the Actions tab
+    # Backup: Tuesdays at the same time. The guard job below makes this a no-op
+    # when Monday's batch already shipped, so it only acts as a retry.
+    - cron: '0 13 * * 2'
+  workflow_dispatch: # allow manual runs from the Actions tab (always runs)
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: weekly-content-generation
   cancel-in-progress: false
 
 jobs:
-  generate-and-publish:
+  # Skip scheduled runs when this ISO week's batch already landed on the
+  # default branch — that's what lets the Tuesday cron act as a pure retry.
+  guard:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    outputs:
+      should_run: ${{ steps.check.outputs.should_run }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check whether this week's batch already shipped
+        id: check
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Manual run — always proceeding."
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          last_batch_week=$(git log -1 --grep='weekly auto-generated calculator' --format=%cd --date=format:'%G-%V' || true)
+          this_week=$(date -u +%G-%V)
+          if [ -n "$last_batch_week" ] && [ "$last_batch_week" = "$this_week" ]; then
+            echo "This week's batch already shipped (ISO week $this_week) — skipping."
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "No batch found for ISO week $this_week (last: ${last_batch_week:-none}) — running."
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  generate-and-publish:
+    needs: guard
+    if: needs.guard.outputs.should_run == 'true'
+    runs-on: ubuntu-latest
+    # Roomier than the agent's 45-min cap + bootstrap + npm ci + build + push,
+    # so a full-length generation can't be thrown away by a job cancellation
+    # mid-build.
+    timeout-minutes: 75
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -45,12 +95,20 @@ jobs:
       - name: Generate this week's content with Claude
         uses: anthropics/claude-code-base-action@beta
         id: claude
+        # Step-level ceiling above the action's own 45-min cap: the action's
+        # bootstrap (node/bun/CLI installs) runs before its internal timer
+        # starts, so a hang there would otherwise run to the job cap.
+        timeout-minutes: 55
         with:
           prompt_file: engine/playbooks/weekly-content-agent.md
           allowed_tools: "Read,Write,Edit,Glob,Grep,Bash,WebSearch,WebFetch,TodoWrite"
           max_turns: "120"
-          timeout: "3000"
-          model: claude-sonnet-4-6
+          # NOTE: the input is `timeout_minutes` — a previous `timeout: 3000`
+          # was an unknown input the action silently ignored, so its 10-minute
+          # default killed long runs (e.g. the 2026-06-22 scheduled run).
+          timeout_minutes: "45"
+          model: claude-sonnet-5
+          fallback_model: claude-sonnet-4-6
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
 
       - name: Fail fast if Claude didn't finish cleanly
@@ -74,10 +132,40 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if git diff --cached --quiet; then
-            echo "No content changes produced — nothing to commit."
-          else
-            git commit -m "content: weekly auto-generated calculator + blog posts ($(date -u +'%Y-%m-%d'))"
-            git push origin "HEAD:${{ github.ref_name }}"
+          # Only stage the directories content generation is allowed to touch —
+          # never runner artifacts like the Claude execution log (output.txt).
+          git add -- src public engine
+          # The mission is always "1 calculator + 2 posts"; a batch with no
+          # actual content artifacts (e.g. only a backlog.md note) must NOT be
+          # committed — the commit message below is what the guard job uses to
+          # decide the week shipped, so a contentless commit would silently
+          # suppress Tuesday's retry.
+          if ! git diff --cached --name-only | grep -qE '^(src/content/blog/|src/pages/calculators/|public/scripts/calculators/)'; then
+            echo "::error::Claude concluded successfully but staged no calculator or blog-post artifacts — failing so the backup run retries and an issue is opened."
+            git diff --cached --name-only
+            exit 1
           fi
+          git commit -m "content: weekly auto-generated calculator + blog posts ($(date -u +'%Y-%m-%d'))"
+          git push origin "HEAD:${{ github.ref_name }}"
+
+  # Separate job so a notification fires no matter WHERE things died: a guard
+  # failure (which skips generate-and-publish entirely), a step failure, or a
+  # job cancelled by timeout-minutes (`if: failure()` on a step is false for
+  # cancellation, which is how the 2026-06-22 hang stayed silent).
+  notify-on-failure:
+    needs: [guard, generate-and-publish]
+    if: always() && (contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled'))
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open an issue so the failure isn't silent
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh label create automation-alert --repo "$GITHUB_REPOSITORY" \
+            --description "Automated content/deploy pipeline alerts" --color D93F0B 2>/dev/null || true
+          title="Weekly content generation failed ($(date -u +%Y-%m-%d))"
+          body=$(printf 'The scheduled weekly content run failed or was cancelled: %s\n\nJob results: guard=%s, generate-and-publish=%s\n\nCommon causes seen before:\n- Anthropic credit balance exhausted ("Credit balance is too low") — top up billing\n- Agent/job timeout — check the Claude step log\n- Agent finished but produced no content changes\n\nA backup run fires Tuesday 13:00 UTC automatically; if that also fails, re-run manually from the Actions tab after fixing the cause.' \
+            "$RUN_URL" "${{ needs.guard.result }}" "${{ needs.generate-and-publish.result }}")
+          gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body" --label automation-alert \
+            || gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body"
