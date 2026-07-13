@@ -520,5 +520,18 @@
       "Click \"Calculate Change\" to see the percentage increase or decrease, the absolute difference, and the multiplier.",
       "To find a new value from a known percentage change, enter the starting value and the percentage in the \"Reverse\" section and click \"Find New Value\"."
     ]
+  },
+  "ratio-calculator": {
+    "name": "How to Use the Ratio Calculator",
+    "description": "Simplify ratios, scale them up or down, solve for a missing value, and compare two ratios instantly.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Choose a mode: Simplify, Scale, Solve for X, or Compare.",
+      "For Simplify, enter A and B to reduce the ratio to its simplest form.",
+      "For Scale, enter A, B, and a scale factor to multiply both sides proportionally.",
+      "For Solve for X, enter three of the four values in A:B = C:X, leaving the unknown blank.",
+      "For Compare, enter two ratios (A:B and C:D) to see which is larger or if they're equivalent.",
+      "Click \"Calculate\" to see the result, decimal equivalent, and step-by-step math."
+    ]
   }
 }

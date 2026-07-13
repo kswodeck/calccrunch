@@ -842,5 +842,31 @@
       "q": "What does a multiplier of 1.25x mean?",
       "a": "A multiplier of 1.25x means the new value is 1.25 times the original, which corresponds to a 25% increase. A multiplier below 1 (e.g. 0.80x) means a decrease — in this case a 20% decrease."
     }
+  ],
+  "ratio-calculator": [
+    {
+      "q": "How do you simplify a ratio?",
+      "a": "Find the greatest common factor (GCF) of both numbers, then divide each side by it. For 8:12, the GCF is 4, so 8÷4:12÷4 simplifies to 2:3."
+    },
+    {
+      "q": "How do you solve a proportion like A:B = C:X?",
+      "a": "Cross-multiply and divide: X = (B × C) ÷ A. For example, if 4:8 = 6:X, then X = (8 × 6) ÷ 4 = 12."
+    },
+    {
+      "q": "How do you know if two ratios are equivalent?",
+      "a": "Cross-multiply both ratios. If A:B and C:D are equivalent, then A × D equals B × C. For 3:4 and 6:8, 3×8=24 and 4×6=24, so they're equivalent."
+    },
+    {
+      "q": "How do you convert a ratio to a percentage?",
+      "a": "Divide the first number by the second, then multiply by 100. A ratio of 3:4 is 3÷4 = 0.75, or 75%."
+    },
+    {
+      "q": "What's the difference between a ratio and a fraction?",
+      "a": "A ratio (A:B) compares two separate quantities, while a fraction (A/B) usually represents a part of a whole. Mathematically they simplify the same way, but a ratio like 2:3 doesn't imply 2 is part of a total of 3 — it compares two distinct amounts."
+    },
+    {
+      "q": "How do you scale a ratio up or down?",
+      "a": "Multiply both sides of the ratio by the same scale factor. Scaling 2:3 by a factor of 5 gives 10:15 — the relationship between the two numbers stays the same."
+    }
   ]
 }

@@ -2720,7 +2720,8 @@
         "discount-calculator",
         "fraction-calculator",
         "average-calculator",
-        "percentage-change-calculator"
+        "percentage-change-calculator",
+        "ratio-calculator"
       ]
     },
     {
@@ -4679,7 +4680,8 @@
         "percentage-calculator",
         "discount-calculator",
         "grade-calculator",
-        "average-calculator"
+        "average-calculator",
+        "ratio-calculator"
       ]
     },
     {
@@ -4721,7 +4723,8 @@
         "percentage-calculator",
         "fraction-calculator",
         "grade-calculator",
-        "percentage-change-calculator"
+        "percentage-change-calculator",
+        "ratio-calculator"
       ]
     },
     {
@@ -4761,6 +4764,39 @@
         "percentage-calculator",
         "discount-calculator",
         "average-calculator"
+      ]
+    },
+    {
+      "title": "Ratio Calculator",
+      "slug": "ratio-calculator",
+      "description": "Simplify ratios, scale them up or down, solve for a missing value, and compare two ratios instantly.",
+      "shortDescription": "Simplify ratios, scale them up or down, solve for a missing value, and compare two ratios instantly",
+      "category": "math-conversions",
+      "tags": ["ratio", "proportion", "math", "simplify"],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "⚖️",
+      "seoTitle": "Free Ratio Calculator — Simplify, Scale & Solve Proportions",
+      "seoDescription": "Simplify ratios, scale them up or down, solve for a missing value in a proportion, and compare two ratios instantly. Free and accurate.",
+      "keywords": [
+        "ratio calculator",
+        "simplify a ratio",
+        "how to calculate a ratio",
+        "proportion calculator",
+        "ratio simplifier"
+      ],
+      "lastUpdated": "2026-07-13",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "fraction-calculator",
+        "average-calculator",
+        "percentage-calculator"
       ]
     }
   ]

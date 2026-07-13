@@ -768,6 +768,70 @@
         "mean vs median",
         "how to find the average"
       ]
+    },
+    {
+      "slug": "ratio-calculator-guide",
+      "title": "How to Calculate a Ratio (Simplify, Scale & Solve Proportions)",
+      "description": "Learn how to simplify a ratio, scale it up or down, solve for a missing value in a proportion, and tell whether two ratios are equivalent — with worked examples.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-07-16T09:00:00-07:00",
+      "updatedDate": "2026-07-16T09:00:00-07:00",
+      "category": "Guides",
+      "tags": [
+        "ratio",
+        "proportion",
+        "math",
+        "simplify",
+        "education"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "ratio-calculator",
+        "fraction-calculator",
+        "average-calculator"
+      ],
+      "seoTitle": "How to Calculate a Ratio: Simplify, Scale & Solve Proportions",
+      "seoDescription": "Learn how to simplify a ratio, scale it, solve for a missing value in a proportion, and check if two ratios are equivalent. Step-by-step examples and a free calculator.",
+      "keywords": [
+        "how to calculate a ratio",
+        "ratio calculator",
+        "simplify a ratio",
+        "how to solve a proportion",
+        "ratio simplifier"
+      ]
+    },
+    {
+      "slug": "back-to-school-tax-free-weekend-2026",
+      "title": "Back-to-School Tax-Free Weekend 2026: Dates by State (and How Much You'll Save)",
+      "description": "See every 2026 back-to-school sales tax holiday date by state, what qualifies, and exactly how much you save on a typical shopping list using the sales tax calculator.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-07-20T09:00:00-07:00",
+      "updatedDate": "2026-07-20T09:00:00-07:00",
+      "category": "Financial Planning",
+      "tags": [
+        "tax free weekend",
+        "back to school",
+        "sales tax",
+        "personal finance",
+        "shopping"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "sales-tax-calculator",
+        "discount-calculator",
+        "budget-calculator"
+      ],
+      "seoTitle": "Back-to-School Tax-Free Weekend 2026: Dates by State + Savings",
+      "seoDescription": "Find your state's 2026 back-to-school tax-free weekend dates, what items qualify, and how much you actually save. Free sales tax calculator included.",
+      "keywords": [
+        "tax free weekend 2026",
+        "back to school tax free weekend",
+        "sales tax holiday by state",
+        "back to school tax free weekend 2026",
+        "no tax weekend"
+      ]
     }
   ]
 }
