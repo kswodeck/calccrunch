@@ -533,5 +533,17 @@
       "For Compare, enter two ratios (A:B and C:D) to see which is larger or if they're equivalent.",
       "Click \"Calculate\" to see the result, decimal equivalent, and step-by-step math."
     ]
+  },
+  "game-score-calculator": {
+    "name": "How to Use the Game Score Calculator",
+    "description": "Keep score for any card or board game: add players, choose a scoring mode, record points each round, and rank players by score or name.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Add each player and type their name.",
+      "Pick a scoring mode: highest score wins, lowest score wins, or first to a target score.",
+      "Each round, enter the points every player earned and press Record Round.",
+      "Watch the running totals and leaderboard update, and sort by score or name to rank players.",
+      "Use Undo or edit the history to fix mistakes, and Reset to start a new game."
+    ]
   }
 }
