@@ -868,5 +868,31 @@
       "q": "How do you scale a ratio up or down?",
       "a": "Multiply both sides of the ratio by the same scale factor. Scaling 2:3 by a factor of 5 gives 10:15 — the relationship between the two numbers stays the same."
     }
+  ],
+  "game-score-calculator": [
+    {
+      "q": "How do I keep score for a card or board game?",
+      "a": "Add each player and give them a name, then enter the points they earn every round and press Record Round. The calculator adds each round to a running total automatically, shows a live leaderboard, and keeps a full round-by-round history so you can always see how the game unfolded."
+    },
+    {
+      "q": "Can I track games where the lowest score wins?",
+      "a": "Yes. Switch the scoring mode to \"Lowest score wins\" for games like golf, Hearts, or many rummy variants. The leaderboard and winner crown flip automatically so the player with the fewest points is ranked first. Choose \"Highest score wins\" for most other games, or \"First to target\" to race to a set number of points."
+    },
+    {
+      "q": "How do I rank players by score or by name?",
+      "a": "Use the sort buttons above the leaderboard. You can order players by score high-to-low, score low-to-high, or alphabetically by name (A–Z or Z–A). Sorting only changes the display order — every player's total stays the same."
+    },
+    {
+      "q": "What does \"First to target\" mode do?",
+      "a": "Set a target score (for example 100 or 500) and the calculator announces a winner as soon as a player reaches it. It's ideal for games that end when someone crosses a finishing line rather than after a fixed number of rounds."
+    },
+    {
+      "q": "Will my game be saved if I close the tab?",
+      "a": "Yes. Everything — player names, the scoring mode, and every round — is saved automatically in your browser, so you can close the tab or refresh and pick the game back up exactly where you left off. Use the Reset button to clear the board and start a fresh game."
+    },
+    {
+      "q": "Can I fix a mistake or undo a round?",
+      "a": "Yes. Press Undo Last Round to remove the most recent round of points, or delete any individual round from the history table. You can also rename players or add and remove players at any time during the game."
+    }
   ]
 }

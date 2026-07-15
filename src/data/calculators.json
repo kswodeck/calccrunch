@@ -1475,7 +1475,8 @@
       "relatedCalculators": [
         "password-generator",
         "pin-generator",
-        "color-generator"
+        "color-generator",
+        "game-score-calculator"
       ]
     },
     {
@@ -4724,7 +4725,8 @@
         "fraction-calculator",
         "grade-calculator",
         "percentage-change-calculator",
-        "ratio-calculator"
+        "ratio-calculator",
+        "game-score-calculator"
       ]
     },
     {
@@ -4772,7 +4774,12 @@
       "description": "Simplify ratios, scale them up or down, solve for a missing value, and compare two ratios instantly.",
       "shortDescription": "Simplify ratios, scale them up or down, solve for a missing value, and compare two ratios instantly",
       "category": "math-conversions",
-      "tags": ["ratio", "proportion", "math", "simplify"],
+      "tags": [
+        "ratio",
+        "proportion",
+        "math",
+        "simplify"
+      ],
       "featured": false,
       "popular": false,
       "difficulty": "Easy",
@@ -4797,6 +4804,46 @@
         "fraction-calculator",
         "average-calculator",
         "percentage-calculator"
+      ]
+    },
+    {
+      "title": "Game Score Calculator",
+      "slug": "game-score-calculator",
+      "description": "Free game score calculator and scoreboard for card and board games. Name your players, add points every round, keep a running total, and rank everyone by score or name — high-score or low-score wins.",
+      "shortDescription": "Track scores for card and board games — add points each round and rank players by score or name.",
+      "category": "miscellaneous",
+      "tags": [
+        "game score",
+        "scoreboard",
+        "card games",
+        "board games",
+        "points tracker"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🎲",
+      "seoTitle": "Game Score Calculator — Free Scoreboard for Card & Board Games",
+      "seoDescription": "Keep score for any card or board game. Add players, tally points each round, track running totals, and rank by highest or lowest score. Free, no sign-up, saves automatically.",
+      "keywords": [
+        "game score calculator",
+        "scoreboard",
+        "score keeper",
+        "card game score tracker",
+        "board game score sheet",
+        "points calculator",
+        "score counter"
+      ],
+      "lastUpdated": "2026-07-15",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "average-calculator",
+        "random-number-generator"
       ]
     }
   ]
