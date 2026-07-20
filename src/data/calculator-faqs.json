@@ -894,5 +894,27 @@
       "q": "Can I fix a mistake or undo a round?",
       "a": "Yes. Press Undo Last Round to remove the most recent round of points, or delete any individual round from the history table. You can also rename players or add and remove players at any time during the game."
     }
+  ],
+  "unit-price-calculator": [
+    {
+      "q": "What is unit price and how do you calculate it?",
+      "a": "Unit price is the cost of a product per single unit of measurement, such as per ounce, per pound, or per item. The formula is Unit Price = Total Price ÷ Quantity. For example, a $19.99, 32 oz jar works out to $19.99 ÷ 32 = $0.625 per ounce."
+    },
+    {
+      "q": "Is the bigger package always the better deal?",
+      "a": "No. Studies on grocery pricing regularly find that a meaningful share of bulk or family-size packages actually have a higher unit price than the smaller size. Always compare the unit price directly rather than assuming a larger package saves money."
+    },
+    {
+      "q": "How do I compare products that use different units, like ounces vs. pounds?",
+      "a": "Convert both prices to the same unit before comparing. Since 1 pound = 16 ounces, a $4.50/lb product is $4.50 ÷ 16 = $0.281/oz — this calculator does that conversion for you automatically as long as both units are the same measurement type (weight, volume, or count)."
+    },
+    {
+      "q": "Does unit price account for quality or sales tax?",
+      "a": "No. Unit price only measures the price per amount of product — it does not account for quality differences, coupons, loyalty discounts, sales tax, or how much of the product you will actually use before it expires. A lower unit price can still be the worse purchase if the product spoils before you finish it."
+    },
+    {
+      "q": "Why do stores list unit prices in different units for competing products?",
+      "a": "U.S. retailers are required by the FTC Unit Pricing Rule to display a per-unit price on the shelf tag, but they are not required to use the same unit for every product — one brand might show price per ounce while another shows price per pound. This makes it hard to compare mentally, which is exactly what a unit price calculator solves."
+    }
   ]
 }

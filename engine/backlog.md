@@ -40,7 +40,7 @@ These are huge-volume, low-difficulty queries. Each is one row + `npm run gen:co
 | percentage-change-calculator | "percentage change" | math-conversions | done |
 | average-calculator | "average calculator" | math-conversions | done |
 | ratio-calculator | "ratio calculator" | math-conversions | done |
-| unit-price-calculator | "unit price calculator" / "cost per ounce calculator" | math-conversions | todo |
+| unit-price-calculator | "unit price calculator" / "cost per ounce calculator" | math-conversions | done |
 | gcf-lcm-calculator | "GCF and LCM calculator" | math-conversions | todo |
 | aspect-ratio-calculator | "aspect ratio calculator" (16:9, 4:3) | math-conversions | todo |
 
@@ -109,8 +109,23 @@ Each post links ≥2 calculators via `relatedCalculators`.
 | Slug | Target query | Links to | Status |
 |---|---|---|---|
 | back-to-school-tax-free-weekend-2026 | "tax free weekend 2026" / "back to school sales tax holiday" | sales-tax-calculator, discount-calculator, budget-calculator | done |
-| college-dorm-budget-guide | "college dorm essentials budget" / "how much does move-in cost" | budget-calculator, savings-goal-calculator | todo |
-| unit-price-calculator-guide | "how to calculate unit price" / "better buy calculator" | unit-price-calculator, ratio-calculator | todo |
+| college-dorm-budget-guide | "college dorm essentials budget" / "how much does move-in cost" | budget-calculator, savings-goal-calculator | done |
+| unit-price-calculator-guide | "how to calculate unit price" / "better buy calculator" | unit-price-calculator, ratio-calculator | done |
+
+## Blog backlog (new ideas from 2026-07-20 research run)
+
+why now: unit-price-calculator (Tier 3 tool) + its guide post + the college-dorm-budget-guide post all shipped
+this run — real evidence: FTC unit-pricing rule / "price per ounce" comparisons are a stable high-intent query,
+and multiple 2026 sources put dorm move-in costs at $400-$900, confirming both topics as worth building now
+rather than waiting.
+
+| Slug | Target query | Links to | Status |
+|---|---|---|---|
+| gcf-lcm-calculator-guide | "how to find GCF and LCM" / "greatest common factor calculator" | gcf-lcm-calculator, fraction-calculator | todo (build gcf-lcm-calculator tool first, Tier 3) |
+| aspect-ratio-guide | "aspect ratio calculator 16:9 4:3" / "how to calculate aspect ratio" | aspect-ratio-calculator, ratio-calculator | todo (build aspect-ratio-calculator tool first, Tier 3) |
+| student-loan-rate-changes-2026-2027 | "student loan interest rate 2026 2027" | student-loan-calculator, loan-amortization-calculator | todo — hold until new federal rates are finalized/stable (confirmed changing July 1, 2026 at research time); revisit once official rate is settled so the post isn't outdated within weeks |
+| running-pace-guide | "running pace calculator" / "how to calculate pace per mile" (carried over — still blocked on pace-calculator tool, Tier 4) | pace-calculator, calories-burned-calculator | todo |
+| how-much-water-should-you-drink | "how much water should I drink calculator" / "water intake calculator" (carried over — still blocked on water-intake-calculator tool, Tier 4; EFSA/NAS guideline ranges confirmed current) | water-intake-calculator, calorie-calculator, bmi-calculator | todo |
 
 ## Retention backlog
 

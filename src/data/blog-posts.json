@@ -832,6 +832,67 @@
         "back to school tax free weekend 2026",
         "no tax weekend"
       ]
+    },
+    {
+      "slug": "unit-price-calculator-guide",
+      "title": "How to Calculate Unit Price (and Actually Find the Better Buy)",
+      "description": "Learn the unit price formula (price ÷ quantity) so you can compare any two package sizes and instantly see which one is the better deal — plus why bigger isn't always cheaper.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-07-23T09:00:00-07:00",
+      "updatedDate": "2026-07-23T09:00:00-07:00",
+      "category": "Everyday Math",
+      "tags": [
+        "unit price",
+        "grocery shopping",
+        "money saving",
+        "math"
+      ],
+      "readTime": "6 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "unit-price-calculator",
+        "ratio-calculator"
+      ],
+      "seoTitle": "How to Calculate Unit Price (and Find the Better Buy) — 2026 Guide",
+      "seoDescription": "Learn the unit price formula, how to compare products sold in different units, and why bigger packages aren't always cheaper. Free calculator included.",
+      "keywords": [
+        "unit price calculator",
+        "how to calculate unit price",
+        "better buy calculator",
+        "cost per ounce",
+        "price per unit"
+      ]
+    },
+    {
+      "slug": "college-dorm-budget-guide",
+      "title": "College Dorm Budget Guide 2026: What Move-In Really Costs",
+      "description": "How much does it cost to move into a college dorm? A full item-by-item budget breakdown ($400-$900) plus tips to save on essentials before move-in day.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-07-27T09:00:00-07:00",
+      "updatedDate": "2026-07-27T09:00:00-07:00",
+      "category": "Financial Planning",
+      "tags": [
+        "college budgeting",
+        "back to school",
+        "dorm essentials",
+        "savings goal",
+        "student budget"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "budget-calculator",
+        "savings-goal-calculator"
+      ],
+      "seoTitle": "College Dorm Move-In Cost Guide 2026: Budget $400-$900",
+      "seoDescription": "See exactly what dorm move-in costs in 2026 — a full item-by-item budget ($400-$900), what to skip, and how to save up before the semester starts.",
+      "keywords": [
+        "college dorm budget",
+        "dorm move in cost",
+        "dorm essentials cost",
+        "college move in checklist budget",
+        "how much does dorm move in cost"
+      ]
     }
   ]
 }

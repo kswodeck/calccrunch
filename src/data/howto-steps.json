@@ -545,5 +545,17 @@
       "Watch the running totals and leaderboard update, and sort by score or name to rank players.",
       "Use Undo or edit the history to fix mistakes, and Reset to start a new game."
     ]
+  },
+  "unit-price-calculator": {
+    "name": "How to Find the Better Buy with a Unit Price Calculator",
+    "description": "Compare two package sizes or brands to find which one actually costs less per ounce, pound, liter, or item.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Enter the total price and quantity for Product A, then choose its unit (weight, volume, or count)",
+      "Enter the total price and quantity for Product B using a compatible unit type",
+      "Click Compare Prices to see each product's price per unit",
+      "Check the verdict showing which product is cheaper and by what percentage",
+      "Use the price-per-larger-unit row (per lb, per L, or per 10 items) to sanity-check the comparison"
+    ]
   }
 }

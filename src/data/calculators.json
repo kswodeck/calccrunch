@@ -3442,7 +3442,8 @@
       "relatedCalculators": [
         "discount-calculator",
         "percentage-calculator",
-        "tip-calculator"
+        "tip-calculator",
+        "unit-price-calculator"
       ]
     },
     {
@@ -3473,7 +3474,8 @@
         "percentage-calculator",
         "tip-calculator",
         "fraction-calculator",
-        "percentage-change-calculator"
+        "percentage-change-calculator",
+        "unit-price-calculator"
       ]
     },
     {
@@ -4803,7 +4805,8 @@
       "relatedCalculators": [
         "fraction-calculator",
         "average-calculator",
-        "percentage-calculator"
+        "percentage-calculator",
+        "unit-price-calculator"
       ]
     },
     {
@@ -4844,6 +4847,45 @@
       "relatedCalculators": [
         "average-calculator",
         "random-number-generator"
+      ]
+    },
+    {
+      "title": "Unit Price Calculator",
+      "slug": "unit-price-calculator",
+      "description": "Compare prices per ounce, pound, liter, or item to find which package size is actually the better deal.",
+      "shortDescription": "Compare prices per ounce, pound, liter, or item to find which package size is actually the better deal",
+      "category": "math-conversions",
+      "tags": [
+        "unit price",
+        "cost comparison",
+        "grocery",
+        "better buy",
+        "price per ounce"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🏷️",
+      "seoTitle": "Unit Price Calculator — Find the Better Buy (Cost Per Unit)",
+      "seoDescription": "Compare two products by price per ounce, pound, liter, or item to instantly see which package size is the better deal.",
+      "keywords": [
+        "unit price calculator",
+        "cost per ounce calculator",
+        "price per unit",
+        "better buy calculator",
+        "cost per unit calculator"
+      ],
+      "lastUpdated": "2026-07-20",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "ratio-calculator",
+        "discount-calculator",
+        "sales-tax-calculator"
       ]
     }
   ]
