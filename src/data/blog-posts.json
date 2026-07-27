@@ -893,6 +893,70 @@
         "college move in checklist budget",
         "how much does dorm move in cost"
       ]
+    },
+    {
+      "slug": "how-much-water-should-you-drink",
+      "title": "How Much Water Should You Drink? A Science-Based Guide",
+      "description": "Learn exactly how much water you should drink based on your weight, activity, and climate — plus why the '8 glasses a day' rule falls short and how to spot dehydration early.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-07-29T09:00:00-07:00",
+      "updatedDate": "2026-07-29T09:00:00-07:00",
+      "category": "Health & Fitness",
+      "tags": [
+        "hydration",
+        "water intake",
+        "health",
+        "fitness",
+        "summer"
+      ],
+      "readTime": "6 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "water-intake-calculator",
+        "calorie-calculator",
+        "bmi-calculator"
+      ],
+      "seoTitle": "How Much Water Should You Drink Per Day? (2026 Guide + Calculator)",
+      "seoDescription": "Find out exactly how much water you need based on your weight, exercise, and climate. Learn why the 8x8 rule falls short and get a free water intake calculator.",
+      "keywords": [
+        "how much water should I drink",
+        "water intake calculator",
+        "daily water intake",
+        "hydration guide",
+        "how much water per day"
+      ]
+    },
+    {
+      "slug": "days-between-dates-guide",
+      "title": "How to Calculate the Number of Days Between Two Dates",
+      "description": "Learn how to calculate the exact number of days, weeks, or months between two dates by hand and with a free calculator — plus how to count down to school starting, a deadline, or any event.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-08-01T09:00:00-07:00",
+      "updatedDate": "2026-08-01T09:00:00-07:00",
+      "category": "Guides",
+      "tags": [
+        "date calculator",
+        "days between dates",
+        "time and date",
+        "countdown",
+        "school year"
+      ],
+      "readTime": "6 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "date-difference-calculator",
+        "age-calculator",
+        "business-days-calculator"
+      ],
+      "seoTitle": "How to Calculate Days Between Two Dates (With Free Calculator)",
+      "seoDescription": "Learn the formula for counting days between two dates by hand, common pitfalls (inclusive vs exclusive counting), and a free date difference calculator for any countdown.",
+      "keywords": [
+        "days between two dates",
+        "date difference calculator",
+        "how many days until",
+        "days until school starts",
+        "how to calculate days between dates"
+      ]
     }
   ]
 }

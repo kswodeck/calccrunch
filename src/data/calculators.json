@@ -95,7 +95,8 @@
         "bmi-calculator",
         "macro-calculator",
         "body-fat-calculator",
-        "sleep-calculator"
+        "sleep-calculator",
+        "water-intake-calculator"
       ]
     },
     {
@@ -291,7 +292,8 @@
       "relatedCalculators": [
         "calorie-calculator",
         "body-fat-calculator",
-        "macro-calculator"
+        "macro-calculator",
+        "water-intake-calculator"
       ]
     },
     {
@@ -2613,7 +2615,8 @@
       "relatedCalculators": [
         "calorie-calculator",
         "macro-calculator",
-        "bmi-calculator"
+        "bmi-calculator",
+        "water-intake-calculator"
       ]
     },
     {
@@ -4886,6 +4889,45 @@
         "ratio-calculator",
         "discount-calculator",
         "sales-tax-calculator"
+      ]
+    },
+    {
+      "title": "Water Intake Calculator",
+      "slug": "water-intake-calculator",
+      "description": "Calculate how many ounces, cups, or liters of water you should drink daily based on your weight, exercise minutes, and climate. Uses the standard 35 ml/kg hydration formula.",
+      "shortDescription": "Calculate your daily water intake needs",
+      "category": "health-fitness",
+      "tags": [
+        "water intake",
+        "hydration",
+        "daily water",
+        "health",
+        "fitness"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "💧",
+      "seoTitle": "Water Intake Calculator — How Much Water Should You Drink?",
+      "seoDescription": "Calculate your personalized daily water intake in ounces, cups, and liters based on your weight, exercise, and climate. Free, instant, science-based hydration calculator.",
+      "keywords": [
+        "water intake calculator",
+        "how much water should I drink",
+        "daily water intake",
+        "hydration calculator",
+        "how many ounces of water per day"
+      ],
+      "lastUpdated": "2026-07-27",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "calorie-calculator",
+        "bmi-calculator",
+        "tdee-calculator"
       ]
     }
   ]

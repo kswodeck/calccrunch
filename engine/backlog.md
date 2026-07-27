@@ -49,7 +49,7 @@ These are huge-volume, low-difficulty queries. Each is one row + `npm run gen:co
 | Slug | Query | Category | Status |
 |---|---|---|---|
 | due-date-calculator | "due date calculator" | health-fitness | todo |
-| water-intake-calculator | "water intake calculator" | health-fitness | todo |
+| water-intake-calculator | "water intake calculator" | health-fitness | done |
 | pace-calculator | "running pace calculator" | health-fitness | todo |
 
 ## Blog backlog (informational queries → funnel to calculators)
@@ -71,7 +71,7 @@ Each post links ≥2 calculators via `relatedCalculators`.
 | fraction-calculator-guide | "how to add fractions" / "fraction calculator" | fraction-calculator, percentage-calculator | done |
 | how-to-calculate-percentage-change | "percentage change formula" | percentage-calculator, fraction-calculator | done |
 | running-pace-guide | "how to calculate running pace" / "pace calculator" | pace-calculator, calories-burned-calculator | todo |
-| how-much-water-should-you-drink | "how much water per day" / "water intake calculator" | water-intake-calculator, calorie-calculator | todo |
+| how-much-water-should-you-drink | "how much water per day" / "water intake calculator" | water-intake-calculator, calorie-calculator | done |
 | average-vs-median | "average vs median" / "how to calculate average" | average-calculator, percentage-calculator | done |
 
 ## Blog backlog (new ideas from 2026-06-22 research run)
@@ -89,7 +89,7 @@ Each post links ≥2 calculators via `relatedCalculators`.
 | Slug | Target query | Links to | Status |
 |---|---|---|---|
 | pace-calculator | Build pace-calculator tool first (Tier 4) then post | pace-calculator, calories-burned-calculator | todo |
-| water-intake-calculator | Build water-intake-calculator tool first (Tier 4) then post | water-intake-calculator, calorie-calculator | todo |
+| water-intake-calculator | Build water-intake-calculator tool first (Tier 4) then post | water-intake-calculator, calorie-calculator | done |
 | percentage-change-calculator | Ship percentage-change-calculator tool (Tier 3) then guide | percentage-calculator, average-calculator | done |
 | ratio-calculator | Ship ratio-calculator tool (Tier 3) then guide | fraction-calculator, average-calculator | done |
 | back-to-school-budget-guide | "back to school budget checklist 2026" | budget-calculator, savings-goal-calculator | done |
@@ -100,7 +100,7 @@ Each post links ≥2 calculators via `relatedCalculators`.
 |---|---|---|---|
 | ratio-calculator-guide | "how to simplify a ratio" / "ratio calculator" | ratio-calculator, fraction-calculator, average-calculator | done |
 | running-pace-guide | "running pace calculator" / "how to calculate pace per mile" | pace-calculator, calories-burned-calculator | todo |
-| how-much-water-should-you-drink | "water intake calculator" / "how much water per day" | water-intake-calculator, calorie-calculator, bmi-calculator | todo |
+| how-much-water-should-you-drink | "water intake calculator" / "how much water per day" | water-intake-calculator, calorie-calculator, bmi-calculator | done |
 | due-date-calculator-guide | "pregnancy due date" / "how is due date calculated" | pregnancy-calculator, date-difference-calculator | todo |
 | standard-deviation-guide | "how to calculate standard deviation" / "what is standard deviation" | average-calculator, percentage-change-calculator | todo |
 
@@ -125,7 +125,22 @@ rather than waiting.
 | aspect-ratio-guide | "aspect ratio calculator 16:9 4:3" / "how to calculate aspect ratio" | aspect-ratio-calculator, ratio-calculator | todo (build aspect-ratio-calculator tool first, Tier 3) |
 | student-loan-rate-changes-2026-2027 | "student loan interest rate 2026 2027" | student-loan-calculator, loan-amortization-calculator | todo — hold until new federal rates are finalized/stable (confirmed changing July 1, 2026 at research time); revisit once official rate is settled so the post isn't outdated within weeks |
 | running-pace-guide | "running pace calculator" / "how to calculate pace per mile" (carried over — still blocked on pace-calculator tool, Tier 4) | pace-calculator, calories-burned-calculator | todo |
-| how-much-water-should-you-drink | "how much water should I drink calculator" / "water intake calculator" (carried over — still blocked on water-intake-calculator tool, Tier 4; EFSA/NAS guideline ranges confirmed current) | water-intake-calculator, calorie-calculator, bmi-calculator | todo |
+| how-much-water-should-you-drink | "how much water should I drink calculator" / "water intake calculator" (carried over — still blocked on water-intake-calculator tool, Tier 4; EFSA/NAS guideline ranges confirmed current) | water-intake-calculator, calorie-calculator, bmi-calculator | done |
+
+## Blog backlog (new ideas from 2026-07-27 research run)
+
+why now: shipped water-intake-calculator (Tier 4 tool, previously blocking two carried-over guide entries above)
+plus its "how much water should you drink" guide this run — NASEM/CDC hydration guidance is evergreen and summer
+heat searches confirm current demand. Also shipped days-between-dates-guide, a net-new topic (verified no existing
+post covered it) surfaced by back-to-school "days until school starts" countdown search interest in late July 2026.
+
+| Slug | Target query | Links to | Status |
+|---|---|---|---|
+| days-between-dates-guide | "days between two dates" / "how many days until school starts" (net-new topic, not previously in backlog — filled a genuine content gap) | date-difference-calculator, age-calculator, business-days-calculator | done |
+| pace-calculator | "running pace calculator" (Tier 4 tool, still todo — build next so running-pace-guide can finally ship) | pace-calculator, calories-burned-calculator | todo |
+| labor-day-2026-money-deadlines | "Labor Day 2026 sales" / "September financial deadlines" (FAFSA correction Sept 14, Q3 estimated tax Sept 15, 2026 — confirmed real calendar dates at research time) | sales-tax-calculator, budget-calculator | todo |
+| fsa-hsa-2026-contribution-limits | "2026 FSA limit" / "2026 HSA contribution limit" | budget-calculator, savings-goal-calculator | todo — hold: IRS figures were still being finalized at research time; revisit once limits are officially locked so the post doesn't go stale within weeks |
+| gcf-lcm-calculator-guide | "how to find GCF and LCM" / "greatest common factor calculator" (carried over — still blocked on gcf-lcm-calculator tool, Tier 3) | gcf-lcm-calculator, fraction-calculator | todo (build gcf-lcm-calculator tool first) |
 
 ## Retention backlog
 

@@ -916,5 +916,31 @@
       "q": "Why do stores list unit prices in different units for competing products?",
       "a": "U.S. retailers are required by the FTC Unit Pricing Rule to display a per-unit price on the shelf tag, but they are not required to use the same unit for every product — one brand might show price per ounce while another shows price per pound. This makes it hard to compare mentally, which is exactly what a unit price calculator solves."
     }
+  ],
+  "water-intake-calculator": [
+    {
+      "q": "How much water should I drink a day?",
+      "a": "Most healthy adults need about 2.7 to 3.7 liters (91 to 125 ounces) of total fluid a day, per U.S. National Academies guidance — roughly 2.7 L for women and 3.7 L for men, including water from food and other beverages. Your personal target depends on your body weight, activity level, and climate, which is what this calculator estimates."
+    },
+    {
+      "q": "Is the '8 glasses a day' rule accurate?",
+      "a": "Not really — the classic '8x8' rule (eight 8-ounce glasses, about 2 liters) is a simple starting point but isn't personalized. It works reasonably well for smaller, sedentary adults in mild climates, but people who are larger, more active, or in hot weather typically need more."
+    },
+    {
+      "q": "How much extra water do I need when exercising?",
+      "a": "A common rule of thumb is about 12 ml of extra fluid per minute of exercise to replace sweat losses, which is what this calculator adds. The CDC also suggests drinking roughly 1 cup of water every 15-20 minutes during hard work or exercise in the heat."
+    },
+    {
+      "q": "Does coffee or tea count toward my water intake?",
+      "a": "Yes. Despite a mild diuretic effect, caffeinated beverages like coffee and tea still contribute net fluid toward your daily total. You don't need to subtract them or drink extra plain water to compensate."
+    },
+    {
+      "q": "Can you drink too much water?",
+      "a": "Yes — drinking far more than your body needs, especially in a short period, can dilute your blood sodium and cause a dangerous condition called hyponatremia. More water isn't always better; the goal is to match your intake to your actual losses."
+    },
+    {
+      "q": "Do I need more water when pregnant or breastfeeding?",
+      "a": "Generally yes — pregnant and breastfeeding women typically need extra fluid beyond the standard baseline to support increased blood volume and milk production. This calculator doesn't build in a pregnancy adjustment, so add roughly 300-700 ml on top of your result and check with your healthcare provider for a number tailored to you."
+    }
   ]
 }

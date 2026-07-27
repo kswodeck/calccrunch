@@ -557,5 +557,17 @@
       "Check the verdict showing which product is cheaper and by what percentage",
       "Use the price-per-larger-unit row (per lb, per L, or per 10 items) to sanity-check the comparison"
     ]
+  },
+  "water-intake-calculator": {
+    "name": "How to Calculate Your Daily Water Intake",
+    "description": "Estimate how many ounces, cups, or liters of water you should drink each day based on your weight, exercise, and climate.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Select your measurement system (Imperial or Metric)",
+      "Enter your current body weight",
+      "Enter how many minutes you typically exercise per day (enter 0 if you don't exercise)",
+      "Select whether you're in a hot, humid, or high-altitude climate",
+      "Click Calculate to see your recommended daily water intake in ounces, cups, and liters"
+    ]
   }
 }
