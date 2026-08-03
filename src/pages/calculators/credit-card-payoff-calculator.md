@@ -420,7 +420,7 @@ calcType: credit-card-payoff
 
   .payoff-comparison {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 1.5rem;
     margin: 2rem 0;
   }
@@ -516,6 +516,7 @@ calcType: credit-card-payoff
   }
 
   .balance-visualization {
+    max-width: 100%;
     display: flex;
     gap: 0.5rem;
     height: 300px;
@@ -549,6 +550,7 @@ calcType: credit-card-payoff
 
   .chart-main {
     flex: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -563,6 +565,7 @@ calcType: credit-card-payoff
 
   .chart-bars-container {
     flex: 1;
+    min-width: 0;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -571,7 +574,8 @@ calcType: credit-card-payoff
   }
 
   .balance-bar-wrapper {
-    flex: 1;
+    flex: 1 1 0;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -625,6 +629,8 @@ calcType: credit-card-payoff
     font-size: 0.625rem;
     color: var(--color-gray-dark);
     height: 20px;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .chart-x-axis {
@@ -710,7 +716,7 @@ calcType: credit-card-payoff
     }
 
     .payoff-comparison {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .suggestion-options {
@@ -727,7 +733,7 @@ calcType: credit-card-payoff
   /* Result Summary and Stat Cards */
   .result-summary {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: var(--space-lg);
     margin: var(--space-2xl) 0;
   }
@@ -794,7 +800,7 @@ calcType: credit-card-payoff
   
   .insights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: 1rem;
   }
   
@@ -891,7 +897,7 @@ calcType: credit-card-payoff
 
   @media (max-width: 768px) {
     .result-summary {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
       gap: var(--space-md);
     }
     
@@ -900,7 +906,7 @@ calcType: credit-card-payoff
     }
 
     .insights-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .schedule-header {
@@ -938,7 +944,7 @@ calcType: credit-card-payoff
 
   @media (max-width: 480px) {
     .result-summary {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .balance-visualization {

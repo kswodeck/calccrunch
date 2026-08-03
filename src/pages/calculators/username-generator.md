@@ -216,7 +216,7 @@ calcType: username
 
   .usernames-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
     gap: 0.75rem;
     margin-bottom: 2rem;
   }
@@ -370,7 +370,7 @@ calcType: username
 
   @media (max-width: 768px) {
     .usernames-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 </style>

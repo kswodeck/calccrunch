@@ -521,7 +521,7 @@ calcType: sales-commission
   /* Result Styles */
   .commission-summary-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
     gap: 1rem;
     margin-bottom: 2rem;
   }
@@ -847,7 +847,7 @@ calcType: sales-commission
 
   .insights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 1rem;
     margin-top: 1rem;
   }
@@ -914,7 +914,7 @@ calcType: sales-commission
 
   .goal-stats {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
     gap: 1rem;
   }
 
@@ -948,7 +948,7 @@ calcType: sales-commission
     }
 
     .commission-summary-cards {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .summary-card-value {
@@ -967,7 +967,7 @@ calcType: sales-commission
 
   @media (max-width: 480px) {
     .commission-summary-cards {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .earnings-bar-row {

@@ -51,7 +51,7 @@ description: Calculate the mean, median, and mode of any set of numbers. Enter u
 
 <div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>🧮 Quick Formula Reference</h4>
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 0.75rem;">
+  <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0.75rem; margin-top: 0.75rem;">
     <div>
       <strong>Mean</strong><br>
       <code>Sum ÷ Count</code>

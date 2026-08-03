@@ -155,7 +155,7 @@ const faqSchema = {
 
   .example-calculation {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: var(--space-xl);
     margin-bottom: var(--space-2xl);
   }
@@ -329,7 +329,7 @@ const faqSchema = {
 
   @media (max-width: 768px) {
     .example-calculation {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .example-header h1 {

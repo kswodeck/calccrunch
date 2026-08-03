@@ -54,6 +54,8 @@ const {
     background: var(--color-gray-light);
     border-radius: var(--border-radius);
     text-align: center;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .ad-label {
@@ -67,6 +69,9 @@ const {
   }
 
   .adsbygoogle {
+    display: block;
+    width: 100%;
+    max-width: 100%;
     display: block;
     min-height: 250px;
     background: var(--color-white);
@@ -101,5 +106,9 @@ const {
 
   .ad-unit.rectangle .adsbygoogle {
     min-height: 250px;
+  }
+
+  .ad-unit :global(iframe) {
+    max-width: 100%;
   }
 </style>

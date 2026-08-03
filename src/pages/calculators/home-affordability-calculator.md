@@ -501,7 +501,7 @@ calcType: home-affordability
   
   .dti-meters {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 2rem;
     margin-top: 1rem;
   }
@@ -567,7 +567,7 @@ calcType: home-affordability
   
   .details-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 2rem;
   }
   
@@ -597,7 +597,7 @@ calcType: home-affordability
   
   .insights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: 1rem;
     margin-top: 1rem;
   }
@@ -649,7 +649,7 @@ calcType: home-affordability
   
   .action-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: 1rem;
     margin-top: 1rem;
   }
@@ -712,7 +712,7 @@ calcType: home-affordability
   @media (max-width: 768px) {
     .dti-meters,
     .details-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
     
     .income-legend {

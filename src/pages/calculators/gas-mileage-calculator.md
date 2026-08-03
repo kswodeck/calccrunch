@@ -428,7 +428,7 @@ calcType: gas-mileage
 
   .vehicle-entry {
     display: grid;
-    grid-template-columns: 1fr 120px auto;
+    grid-template-columns: minmax(0, 1fr) 120px auto;
     gap: 1rem;
     align-items: end;
     padding: 1rem;
@@ -444,7 +444,7 @@ calcType: gas-mileage
 
   .fuel-log-entry {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr auto;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) auto;
     gap: 1rem;
     align-items: end;
     padding: 1rem;
@@ -489,11 +489,11 @@ calcType: gas-mileage
     }
 
     .vehicle-entry {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .fuel-log-entry {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .form-actions {

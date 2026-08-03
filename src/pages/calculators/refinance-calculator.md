@@ -295,7 +295,7 @@ calcType: refinance
 
   .comparison-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 1.5rem;
     margin: 1.5rem 0;
   }
@@ -346,7 +346,7 @@ calcType: refinance
 
   .savings-highlight {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
     gap: 1rem;
     margin: 1.5rem 0;
     padding: 1.5rem;
@@ -510,11 +510,11 @@ calcType: refinance
 
   @media (max-width: 768px) {
     .comparison-cards {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .savings-highlight {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     }
 
     .comparison-table {

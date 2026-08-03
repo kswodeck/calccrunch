@@ -550,7 +550,7 @@ calcType: rent-vs-buy
   
   .cost-breakdown-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 2rem;
     margin: 2rem 0;
   }
@@ -655,7 +655,7 @@ calcType: rent-vs-buy
     }
     
     .cost-breakdown-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
       gap: 1rem;
     }
     

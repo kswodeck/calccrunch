@@ -553,7 +553,7 @@ calcType: pto
   
   .planned-pto-entry {
     display: grid;
-    grid-template-columns: 1fr 1fr 120px auto;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 120px auto;
     gap: 1rem;
     align-items: end;
     padding: 1rem;
@@ -630,7 +630,7 @@ calcType: pto
     }
     
     .planned-pto-entry {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
     
     .form-actions {

@@ -320,7 +320,7 @@ calcType: loan-amortization
   
   .comparison-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 2rem;
     margin-top: 1rem;
   }
@@ -419,7 +419,7 @@ calcType: loan-amortization
   
   .insights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: 1rem;
     margin-top: 1rem;
   }
@@ -474,7 +474,7 @@ calcType: loan-amortization
   
   @media (max-width: 768px) {
     .comparison-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
     
     .composition-bars {

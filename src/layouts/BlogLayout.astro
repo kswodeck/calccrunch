@@ -462,7 +462,7 @@ const isoDate = post.publishDate;
 
   .related-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
     gap: var(--space-lg);
   }
 
@@ -534,7 +534,14 @@ const isoDate = post.publishDate;
     }
 
     .related-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    /* Tighter cells so most tables fit without sideways scrolling */
+    .article-content :global(th),
+    .article-content :global(td) {
+      padding: var(--space-sm);
+      font-size: var(--text-sm);
     }
   }
 

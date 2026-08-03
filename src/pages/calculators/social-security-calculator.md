@@ -378,7 +378,7 @@ Click **Calculate** to see your optimized Social Security strategy!
   /* Social Security Calculator Specific Styles */
   .ss-benefit-summary {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: 1.5rem;
     margin: 1.5rem 0;
   }
@@ -557,7 +557,7 @@ Click **Calculate** to see your optimized Social Security strategy!
 
   @media (max-width: 768px) {
     .ss-benefit-summary {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .ss-benefit-card .amount {

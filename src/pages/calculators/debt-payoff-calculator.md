@@ -160,7 +160,7 @@ calcType: debt-payoff
 <style>
   .debt-list-header {
     display: grid;
-    grid-template-columns: 2fr 1.5fr 1fr 1.5fr 40px;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1.5fr) 40px;
     gap: 0.5rem;
     padding: 0.5rem 0;
     font-size: 0.8rem;
@@ -174,7 +174,7 @@ calcType: debt-payoff
 
   .debt-row {
     display: grid;
-    grid-template-columns: 2fr 1.5fr 1fr 1.5fr 40px;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1.5fr) 40px;
     gap: 0.5rem;
     align-items: center;
     padding: 0.5rem 0;
@@ -291,7 +291,7 @@ calcType: debt-payoff
   /* Results Styles */
   .comparison-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 1.5rem;
     margin: 1.5rem 0;
   }
@@ -600,7 +600,7 @@ calcType: debt-payoff
     }
 
     .debt-row {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
       gap: 0.5rem;
       padding: 1rem 0;
     }
@@ -616,7 +616,7 @@ calcType: debt-payoff
     }
 
     .comparison-cards {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .timeline-bar-label {

@@ -88,7 +88,7 @@ description: Add, subtract, multiply, and divide fractions instantly. Supports m
 
 <div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>🔢 Common Fraction Equivalents</h4>
-  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.5rem; margin-top: 0.75rem;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(140px, 100%), 1fr)); gap: 0.5rem; margin-top: 0.75rem;">
     <div><strong>1/2</strong> = 0.5 = 50%</div>
     <div><strong>1/3</strong> = 0.333… = 33.3%</div>
     <div><strong>1/4</strong> = 0.25 = 25%</div>
@@ -152,6 +152,8 @@ description: Add, subtract, multiply, and divide fractions instantly. Supports m
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex: 1 1 220px;
+    min-width: 0;
   }
 
   .fraction-bar {
@@ -166,6 +168,11 @@ description: Add, subtract, multiply, and divide fractions instantly. Supports m
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
+  }
+
+  .fraction-divider-inputs .form-group {
+    flex: 1 1 0;
+    min-width: 0;
   }
 
   @media (max-width: 600px) {

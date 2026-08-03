@@ -201,7 +201,7 @@ calcType: gpa
   
   .course-header {
     display: grid;
-    grid-template-columns: 2fr 1fr 1.5fr 0.8fr 50px;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 0.8fr) 50px;
     gap: 1rem;
     padding: 0.75rem;
     background: var(--color-surface-neutral);
@@ -217,7 +217,7 @@ calcType: gpa
   
   .course-row {
     display: grid;
-    grid-template-columns: 2fr 1fr 1.5fr 0.8fr 50px;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 0.8fr) 50px;
     gap: 1rem;
     margin-bottom: 1rem;
     align-items: center;
@@ -285,7 +285,7 @@ calcType: gpa
   @media (max-width: 768px) {
     .course-header,
     .course-row {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
       gap: 0.5rem;
     }
     

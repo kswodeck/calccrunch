@@ -118,12 +118,14 @@ const {
 
   .newsletter-form-group {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--space-sm);
     margin-bottom: var(--space-sm);
   }
 
   .newsletter-input {
-    flex: 1;
+    flex: 1 1 180px;
+    min-width: 0;
     padding: var(--space-md) var(--space-lg);
     border: 2px solid transparent;
     border-radius: var(--border-radius);
@@ -141,7 +143,8 @@ const {
   .newsletter-btn {
     padding: var(--space-md) var(--space-xl);
     white-space: nowrap;
-    flex-shrink: 0;
+    flex: 0 1 auto;           /* was: flex-shrink: 0 */
+    max-width: 100%;          /* added */
     font-weight: 700;
   }
 

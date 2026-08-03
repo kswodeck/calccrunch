@@ -377,7 +377,7 @@ const categories = [...new Set(posts.map((p) => p.category))];
 
   .featured-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     grid-template-rows: auto auto;
     gap: var(--space-lg);
   }
@@ -486,7 +486,7 @@ const categories = [...new Set(posts.map((p) => p.category))];
 
   .posts-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
     gap: var(--space-xl);
   }
 
@@ -606,7 +606,7 @@ const categories = [...new Set(posts.map((p) => p.category))];
     }
 
     .featured-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .featured-card.featured-main {
@@ -614,7 +614,7 @@ const categories = [...new Set(posts.map((p) => p.category))];
     }
 
     .posts-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .hero-stats {

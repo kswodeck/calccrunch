@@ -84,6 +84,58 @@ img {
   height: auto;
 }
 
+/* ============================================
+   OVERFLOW GUARDS
+   Nothing may grow wider than its container.
+   html/body clip overflow-x, so anything that
+   escapes is unreachable, not just scrolled.
+   ============================================ */
+
+/* Replaced/embedded content shrinks with the viewport */
+svg,
+video,
+canvas,
+iframe,
+embed,
+object {
+  max-width: 100%;
+}
+
+/* Long words, URLs and generated strings wrap instead of
+   stretching their container */
+body {
+  overflow-wrap: break-word;
+}
+
+/* Code blocks scroll on their own instead of widening the page */
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+pre code {
+  white-space: pre;
+}
+
+/* Wide tables scroll inside their own container.
+   Markdown tables are wrapped in .table-scroll at build time
+   (see rehypeResponsiveTables in astro.config.mjs). */
+.table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Grid/flex children default to min-width:auto, which lets one wide
+   child (an ad iframe, a table, a long option label) push the whole
+   track past the viewport. These layouts opt out of that. */
+.calculator-layout > *,
+.category-layout > *,
+.hero-content > * {
+  min-width: 0;
+}
+
 /* Container */
 .container {
   max-width: var(--container-width);
@@ -151,15 +203,15 @@ img {
 }
 
 .grid-2 {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
 }
 
 .grid-3 {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
 }
 
 .grid-4 {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
 }
 
 /* Utility Classes */
@@ -240,7 +292,7 @@ img {
   .grid-2,
   .grid-3,
   .grid-4 {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 

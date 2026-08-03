@@ -314,7 +314,35 @@ const howto = howtoSteps[slug];
   </div>
   )}
 </BaseLayout>
+<script>
+  // Calculator results are injected at runtime, so tables in them miss the
+  // build-time .table-scroll wrapper (see rehypeResponsiveTables in
+  // astro.config.mjs). Wrap them here so a wide result table scrolls
+  // instead of stretching the page past the viewport.
+  const wrapTables = (root: ParentNode) => {
+    root.querySelectorAll("table").forEach((table) => {
+      if (table.closest(".table-scroll")) return;
+      const parent = table.parentElement;
+      if (parent) {
+        const overflowX = getComputedStyle(parent).overflowX;
+        if (overflowX === "auto" || overflowX === "scroll") return;
+      }
+      const wrapper = document.createElement("div");
+      wrapper.className = "table-scroll";
+      table.replaceWith(wrapper);
+      wrapper.appendChild(table);
+    });
+  };
 
+  const main = document.querySelector(".calculator-main");
+  if (main) {
+    wrapTables(main);
+    new MutationObserver(() => wrapTables(main)).observe(main, {
+      childList: true,
+      subtree: true,
+    });
+  }
+</script>
 <style>
   .calculator-page {
     padding: var(--space-xl) 0;
@@ -323,9 +351,18 @@ const howto = howtoSteps[slug];
 
   .calculator-layout {
     display: grid;
-    grid-template-columns: 1fr 280px;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    grid-template-columns: minmax(0, 1fr) 280px;
     gap: var(--space-xl);
     align-items: start;
+  }
+
+  /* Without min-width: 0 a single wide child (ad iframe, table, long
+   select option) grows the column past the viewport and clips every
+   sibling with it. */
+  .calculator-main {
+    min-width: 0;
+    max-width: 100%;
   }
 
   /* Calculator Header */
@@ -333,7 +370,7 @@ const howto = howtoSteps[slug];
     margin-bottom: var(--space-3xl);
     padding-bottom: var(--space-xl);
     border-bottom: 2px solid var(--color-gray);
-    max-width: min(99vw, 100%);
+    max-width: 100%;
   }
 
   .calculator-meta {
@@ -410,7 +447,7 @@ const howto = howtoSteps[slug];
     box-shadow: var(--shadow-lg);
     margin-bottom: var(--space-3xl);
     border: 2px solid var(--color-gray);
-    max-width: min(99vw, 100%);
+    max-width: 100%;
   }
 
   /* Tags */
@@ -591,17 +628,12 @@ const howto = howtoSteps[slug];
   /* Responsive */
   @media (max-width: 1024px) {
     .calculator-layout {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .calculator-sidebar {
       display: none;
-    }
-  }
-
-  @media (min-width: 1025px) {
-    .calculator-main {
-      max-width: calc(82vw - 200px);
     }
   }
 

@@ -513,7 +513,7 @@ calcType: babyname
   /* Gender Cards */
   .gender-options {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
   }
   
@@ -804,7 +804,7 @@ calcType: babyname
   /* Name Cards */
   .names-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
     gap: 1rem;
     margin-bottom: 2rem;
   }
@@ -937,7 +937,7 @@ calcType: babyname
   
   .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100px, 100%), 1fr));
     gap: 1rem;
   }
   
@@ -986,7 +986,7 @@ calcType: babyname
   
   .origin-bar-row {
     display: grid;
-    grid-template-columns: 100px 1fr 50px;
+    grid-template-columns: 100px minmax(0, 1fr) 50px;
     align-items: center;
     gap: 0.75rem;
   }
@@ -1196,19 +1196,19 @@ calcType: babyname
   /* Responsive */
   @media (max-width: 768px) {
     .gender-options {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     
     .names-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
     
     .origin-bar-row {
-      grid-template-columns: 80px 1fr 40px;
+      grid-template-columns: 80px minmax(0, 1fr) 40px;
     }
     
     .stats-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     
     .letter-bubble {
@@ -1225,7 +1225,7 @@ calcType: babyname
     }
     
     .gender-options {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     
     .full-name {

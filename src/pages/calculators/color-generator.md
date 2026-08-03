@@ -375,7 +375,7 @@ difficulty: Easy
   /* Mode Selector */
   .mode-selector {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr));
     gap: 1rem;
   }
   
@@ -425,7 +425,7 @@ difficulty: Easy
   /* Harmony Selector */
   .harmony-selector {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(130px, 100%), 1fr));
     gap: 0.75rem;
   }
   
@@ -503,7 +503,7 @@ difficulty: Easy
   /* Preset Selector */
   .preset-selector {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100px, 100%), 1fr));
     gap: 0.75rem;
   }
   
@@ -882,7 +882,7 @@ difficulty: Easy
   /* Color Details Cards */
   .color-details-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 1.5rem;
     margin-bottom: 2rem;
   }
@@ -1048,7 +1048,7 @@ difficulty: Easy
   
   .contrast-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: 1rem;
   }
   
@@ -1160,15 +1160,15 @@ difficulty: Easy
   /* Responsive */
   @media (max-width: 768px) {
     .mode-selector {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     
     .harmony-selector {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     
     .preset-selector {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
     
     .color-palette-display {
@@ -1193,15 +1193,15 @@ difficulty: Easy
   
   @media (max-width: 480px) {
     .mode-selector {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
     
     .harmony-selector {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     }
     
     .preset-selector {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     
     .export-tabs {

@@ -653,7 +653,7 @@ calcType: roi
 
   .roi-type-selector {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr));
     gap: 1rem;
     margin-top: 1rem;
   }
@@ -733,7 +733,7 @@ calcType: roi
 
   .scenario-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
   }
 
@@ -809,7 +809,7 @@ calcType: roi
   /* Result Styles */
   .roi-summary-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr));
     gap: 1rem;
     margin-bottom: 2rem;
   }
@@ -1036,7 +1036,7 @@ calcType: roi
   /* Scenario Analysis Results */
   .scenario-results {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
     margin: 1.5rem 0;
   }
@@ -1090,7 +1090,7 @@ calcType: roi
 
   .insights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 1rem;
     margin-top: 1rem;
   }
@@ -1151,19 +1151,19 @@ calcType: roi
     }
 
     .roi-type-selector {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .scenario-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .scenario-results {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .roi-summary-cards {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .mode-toggle {
@@ -1177,11 +1177,11 @@ calcType: roi
 
   @media (max-width: 480px) {
     .roi-summary-cards {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .roi-type-selector {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
   }
   

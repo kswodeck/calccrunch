@@ -384,7 +384,7 @@ calcType: rng
   /* Options Grid */
   .options-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: 1rem;
   }
   
@@ -734,7 +734,7 @@ calcType: rng
   
   .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(120px, 100%), 1fr));
     gap: 1rem;
   }
   
@@ -963,7 +963,7 @@ calcType: rng
   /* Sum/Product Display */
   .calculations-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
     gap: 1rem;
     margin-top: 1.5rem;
   }
@@ -995,7 +995,7 @@ calcType: rng
   /* Responsive */
   @media (max-width: 768px) {
     .options-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     
     .single-number {
@@ -1012,7 +1012,7 @@ calcType: rng
     }
     
     .stats-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     
     .count-control {
@@ -1036,7 +1036,7 @@ calcType: rng
     }
     
     .options-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
     
     .single-number {

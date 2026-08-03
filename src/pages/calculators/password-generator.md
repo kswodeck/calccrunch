@@ -374,7 +374,7 @@ calcType: password
   /* Character Type Cards */
   .character-options {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr));
     gap: 1rem;
   }
   
@@ -573,7 +573,7 @@ calcType: password
   /* Minimum Requirements */
   .min-requirements {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(120px, 100%), 1fr));
     gap: 1rem;
   }
   
@@ -736,7 +736,7 @@ calcType: password
   /* Stats Grid */
   .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
     gap: 1rem;
   }
   
@@ -783,7 +783,7 @@ calcType: password
   
   .breakdown-item {
     display: grid;
-    grid-template-columns: 100px 1fr 60px;
+    grid-template-columns: 100px minmax(0, 1fr) 60px;
     align-items: center;
     gap: 1rem;
   }
@@ -972,7 +972,7 @@ calcType: password
     }
     
     .character-options {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     
     .password-text {
@@ -980,7 +980,7 @@ calcType: password
     }
     
     .breakdown-item {
-      grid-template-columns: 80px 1fr 50px;
+      grid-template-columns: 80px minmax(0, 1fr) 50px;
     }
     
     .crack-time-value {
@@ -1009,11 +1009,11 @@ calcType: password
     }
     
     .stats-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     
     .breakdown-item {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
       gap: 0.5rem;
     }
     

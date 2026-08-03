@@ -426,7 +426,7 @@ calcType: student-loan
 
   .summary-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
     gap: var(--space-lg);
     margin-bottom: var(--space-2xl);
   }
@@ -617,7 +617,7 @@ calcType: student-loan
 
   .loan-breakdown-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: var(--space-lg);
   }
 
@@ -667,7 +667,7 @@ calcType: student-loan
 
   .insights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: var(--space-md);
   }
 

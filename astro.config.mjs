@@ -19,8 +19,48 @@ const scheduledSlugs = new Set(
     .map(c => `https://calccrunch.com/calculators/${c.slug}/`)
 );
 
+/**
+ * Wraps every markdown table in <div class="table-scroll"> so wide tables
+ * scroll horizontally on small screens instead of stretching their container
+ * past the viewport (html/body clip overflow-x, so the excess is unreachable).
+ */
+function rehypeResponsiveTables() {
+  // Tables authored as raw HTML inside markdown stay as `raw` nodes, so they
+  // are wrapped textually rather than as tree nodes.
+  const wrapRawTables = (html) =>
+    html.replace(
+      /<table[\s\S]*?<\/table>/gi,
+      (table) => `<div class="table-scroll">${table}</div>`,
+    );
+
+  return (tree) => {
+    const walk = (node) => {
+      if (!Array.isArray(node.children)) return;
+      node.children = node.children.map((child) => {
+        walk(child);
+        if (child.type === 'element' && child.tagName === 'table') {
+          return {
+            type: 'element',
+            tagName: 'div',
+            properties: { className: ['table-scroll'] },
+            children: [child],
+          };
+        }
+        if (child.type === 'raw' && /<table[\s>]/i.test(child.value)) {
+          return { ...child, value: wrapRawTables(child.value) };
+        }
+        return child;
+      });
+    };
+    walk(tree);
+  };
+}
+
 export default defineConfig({
   site: 'https://calccrunch.com',
+  markdown: {
+    rehypePlugins: [rehypeResponsiveTables],
+  },
   integrations: [sitemap({
     serialize(item) {
       if (scheduledSlugs.has(item.url)) return undefined;

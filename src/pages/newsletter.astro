@@ -114,7 +114,7 @@ import NewsletterSignup from "../components/NewsletterSignup.astro";
 
   .newsletter-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: var(--space-3xl);
     align-items: start;
   }
@@ -127,7 +127,7 @@ import NewsletterSignup from "../components/NewsletterSignup.astro";
 
   .benefit-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: var(--space-lg);
     margin-bottom: var(--space-2xl);
   }
@@ -196,11 +196,11 @@ import NewsletterSignup from "../components/NewsletterSignup.astro";
 
   @media (max-width: 768px) {
     .newsletter-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .benefit-cards {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .newsletter-hero h1 {

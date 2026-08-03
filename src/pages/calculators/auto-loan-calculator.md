@@ -401,7 +401,7 @@ calcType: auto-loan
   
   .breakdown-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 2rem;
     margin-top: 1rem;
   }
@@ -428,7 +428,7 @@ calcType: auto-loan
   
   .terms-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
     margin-top: 1rem;
   }
@@ -515,7 +515,7 @@ calcType: auto-loan
   
   .guideline-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: 1rem;
     margin-top: 1rem;
   }
@@ -568,11 +568,11 @@ calcType: auto-loan
   @media (max-width: 768px) {
     .breakdown-grid,
     .terms-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
     
     .terms-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     
     .payment-legend {

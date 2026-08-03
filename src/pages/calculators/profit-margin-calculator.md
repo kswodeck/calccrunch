@@ -509,7 +509,7 @@ calcType: profit-margin
   
   .margin-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
     gap: 1rem;
     margin: 2rem 0;
   }
@@ -783,7 +783,7 @@ calcType: profit-margin
   
   .insights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: 1rem;
     margin-top: 1rem;
   }
@@ -910,7 +910,7 @@ calcType: profit-margin
   
   @media (max-width: 768px) {
     .margin-cards {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     
     .margin-card {
@@ -943,7 +943,7 @@ calcType: profit-margin
   
   @media (max-width: 480px) {
     .margin-cards {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
     
     .waterfall-row,

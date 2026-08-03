@@ -226,7 +226,7 @@ calcType: pet-name
   /* Pet Type Grid */
   .pet-type-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 0.75rem;
   }
 
@@ -289,7 +289,7 @@ calcType: pet-name
 
   .names-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
     gap: 1rem;
     margin-bottom: 2rem;
   }
@@ -470,16 +470,16 @@ calcType: pet-name
 
   @media (max-width: 768px) {
     .pet-type-grid {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
     .names-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 
   @media (max-width: 480px) {
     .pet-type-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 </style>

@@ -320,7 +320,7 @@ calcType: wedding-budget
 
   .category-toggles {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
     gap: var(--space-md);
   }
 
@@ -402,7 +402,7 @@ calcType: wedding-budget
 
   .summary-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr));
     gap: var(--space-lg);
     margin-bottom: var(--space-2xl);
   }
@@ -513,7 +513,7 @@ calcType: wedding-budget
   /* Category cards */
   .category-breakdown {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: var(--space-lg);
     margin-bottom: var(--space-2xl);
   }
@@ -587,7 +587,7 @@ calcType: wedding-budget
 
   .priority-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: var(--space-xl);
   }
 
@@ -629,7 +629,7 @@ calcType: wedding-budget
 
   .hidden-costs-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: var(--space-md);
   }
 
@@ -666,7 +666,8 @@ calcType: wedding-budget
 
   .timeline-item {
     display: flex;
-    gap: var(--space-lg);
+    flex-wrap: wrap;
+    gap: var(--space-sm) var(--space-lg);
     padding: var(--space-md) 0;
     border-bottom: 1px solid var(--color-gray);
   }
@@ -676,13 +677,17 @@ calcType: wedding-budget
   }
 
   .timeline-period {
+    flex: 0 0 auto;
     min-width: 140px;
+    max-width: 100%;
     font-weight: 700;
     color: var(--color-primary-blue);
     font-size: var(--text-sm);
   }
 
   .timeline-details {
+    flex: 1 1 180px;
+    min-width: 0;
     font-size: var(--text-sm);
     color: var(--color-gray-dark);
   }
@@ -710,7 +715,7 @@ calcType: wedding-budget
 
   .savings-plan-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
     gap: var(--space-lg);
     text-align: center;
   }
@@ -750,7 +755,7 @@ calcType: wedding-budget
 
   .tips-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: var(--space-md);
   }
 
@@ -776,7 +781,7 @@ calcType: wedding-budget
     }
 
     .category-toggles {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .budget-hero-value {
@@ -788,11 +793,11 @@ calcType: wedding-budget
     }
 
     .priority-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .summary-cards {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 

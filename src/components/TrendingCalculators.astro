@@ -57,7 +57,7 @@ const currentMonth = monthNames[month];
 
   .trending-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: var(--space-lg);
     margin-top: var(--space-xl);
   }
@@ -113,7 +113,7 @@ const currentMonth = monthNames[month];
 
   @media (max-width: 768px) {
     .trending-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 </style>

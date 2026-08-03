@@ -278,7 +278,7 @@ calcType: savings-goal
 
   .savings-summary {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: 1rem;
     margin: 1.5rem 0;
   }
@@ -333,7 +333,7 @@ calcType: savings-goal
 
   .scenario-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: 1rem;
     margin-top: 1rem;
   }
@@ -470,11 +470,11 @@ calcType: savings-goal
 
   @media (max-width: 768px) {
     .savings-summary {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     }
 
     .scenario-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .breakdown-table {

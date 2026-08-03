@@ -182,7 +182,7 @@ const searchQuery = Astro.url.searchParams.get("q") || "";
 
   .search-results-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
     gap: var(--space-xl);
   }
 
@@ -302,7 +302,7 @@ const searchQuery = Astro.url.searchParams.get("q") || "";
     }
 
     .search-results-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 

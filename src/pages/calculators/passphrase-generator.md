@@ -261,7 +261,7 @@ calcType: passphrase
   /* Wordlist Options */
   .wordlist-options {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr));
     gap: 0.75rem;
   }
 
@@ -475,7 +475,7 @@ calcType: passphrase
 
   .strength-stats {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
     gap: 1rem;
   }
 
@@ -518,7 +518,7 @@ calcType: passphrase
 
   .comparison-items {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 1rem;
   }
 
@@ -638,7 +638,7 @@ calcType: passphrase
     }
 
     .wordlist-options {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .passphrase-primary {
@@ -646,7 +646,7 @@ calcType: passphrase
     }
 
     .comparison-items {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .passphrase-list-item {
@@ -660,7 +660,7 @@ calcType: passphrase
     }
 
     .strength-stats {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 
@@ -670,16 +670,16 @@ calcType: passphrase
     }
 
     .wordlist-options {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .separator-options {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .strength-stats {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 </style>

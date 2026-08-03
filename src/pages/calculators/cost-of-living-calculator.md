@@ -438,7 +438,7 @@ calcType: cost-of-living
 
   .tax-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 1.5rem;
   }
 
@@ -479,7 +479,7 @@ calcType: cost-of-living
 
   .power-comparison {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 1.5rem;
   }
 
@@ -541,11 +541,11 @@ calcType: cost-of-living
     }
 
     .tax-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .power-comparison {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .budget-table {

@@ -331,7 +331,7 @@ calcType: recipe-scaler
   
   .ingredient-header {
     display: grid;
-    grid-template-columns: 1fr 1.5fr 2fr 1.5fr 50px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 2fr) minmax(0, 1.5fr) 50px;
     gap: 1rem;
     padding: 0.75rem;
     background: var(--color-surface-neutral);
@@ -347,7 +347,7 @@ calcType: recipe-scaler
   
   .ingredient-row {
     display: grid;
-    grid-template-columns: 1fr 1.5fr 2fr 1.5fr 50px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 2fr) minmax(0, 1.5fr) 50px;
     gap: 1rem;
     margin-bottom: 1rem;
     align-items: center;
@@ -437,7 +437,7 @@ calcType: recipe-scaler
   
   .temp-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: 0.75rem;
   }
   
@@ -479,7 +479,7 @@ calcType: recipe-scaler
   @media (max-width: 768px) {
     .ingredient-header,
     .ingredient-row {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
       gap: 0.5rem;
     }
     

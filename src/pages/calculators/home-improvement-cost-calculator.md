@@ -273,7 +273,7 @@ calcType: home-improvement
 
   .quality-selector {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.75rem;
   }
 
@@ -333,7 +333,7 @@ calcType: home-improvement
 
   @media (max-width: 768px) {
     .quality-selector {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .form-actions {

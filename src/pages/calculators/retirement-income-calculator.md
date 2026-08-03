@@ -374,7 +374,7 @@ calcType: retirement-income
   
   .income-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 2rem;
     margin-top: 1rem;
   }
@@ -447,7 +447,7 @@ calcType: retirement-income
   
   .insights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: 1rem;
     margin-top: 1rem;
   }
@@ -504,7 +504,7 @@ calcType: retirement-income
   
   @media (max-width: 768px) {
     .income-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
     
     .chart-legend {

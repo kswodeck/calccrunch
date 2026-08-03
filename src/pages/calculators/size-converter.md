@@ -356,7 +356,7 @@ calcType: size-converter
   
   .conversions-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100px, 100%), 1fr));
     gap: 0.75rem;
     margin: 1.5rem 0;
   }
@@ -424,7 +424,7 @@ calcType: size-converter
   
   .input-measurements-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr));
     gap: 0.5rem;
   }
   
@@ -517,7 +517,7 @@ calcType: size-converter
   
   .alternatives-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: 0.75rem;
   }
   
@@ -745,7 +745,7 @@ calcType: size-converter
   
   .measurements-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
     gap: 0.5rem;
   }
   
@@ -875,7 +875,7 @@ calcType: size-converter
   
   .sister-sizes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(120px, 100%), 1fr));
     gap: 0.5rem;
   }
   
@@ -937,7 +937,7 @@ calcType: size-converter
   
   .tips-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
     gap: 1rem;
   }
   
@@ -981,7 +981,7 @@ calcType: size-converter
     }
     
     .conversions-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     
     .form-actions {
@@ -995,11 +995,11 @@ calcType: size-converter
   
   @media (max-width: 480px) {
     .conversions-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     
     .input-measurements-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
     
     .size-value,

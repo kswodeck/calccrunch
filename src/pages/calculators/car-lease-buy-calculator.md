@@ -701,7 +701,7 @@ calcType: car-lease-buy
   
   .cost-breakdown-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 2rem;
     margin: 2rem 0;
   }
@@ -844,7 +844,7 @@ calcType: car-lease-buy
   
   .monthly-comparison {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: 1rem;
     margin: 1.5rem 0;
   }
@@ -877,7 +877,7 @@ calcType: car-lease-buy
   
   .insights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 1rem;
     margin: 1.5rem 0;
   }
@@ -1012,7 +1012,7 @@ calcType: car-lease-buy
     }
     
     .cost-breakdown-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
       gap: 1rem;
     }
     
@@ -1025,7 +1025,7 @@ calcType: car-lease-buy
     }
     
     .monthly-comparison {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     }
     
     .chart-bars {

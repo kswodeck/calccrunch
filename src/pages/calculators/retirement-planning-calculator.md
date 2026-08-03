@@ -450,7 +450,7 @@ Click **Calculate** to see your complete retirement journey!
   
   .summary-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 1.5rem;
   }
   
@@ -657,7 +657,7 @@ Click **Calculate** to see your complete retirement journey!
   
   .insights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: 1rem;
     margin-top: 1rem;
   }
@@ -766,11 +766,11 @@ Click **Calculate** to see your complete retirement journey!
   
   @media (max-width: 768px) {
     .summary-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
     
     .insights-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
     
     .growth-segment .segment-label {
@@ -863,7 +863,7 @@ Click **Calculate** to see your complete retirement journey!
 
 .income-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
   gap: 1rem;
   margin-top: 1.5rem;
 }
@@ -898,6 +898,14 @@ Click **Calculate** to see your complete retirement journey!
   gap: 1rem;
   margin-bottom: 1.5rem;
   border-bottom: 2px solid #e5e7eb;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.summary-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .summary-tab {
@@ -906,6 +914,8 @@ Click **Calculate** to see your complete retirement journey!
   border-bottom: 3px solid transparent;
   transition: all 0.3s ease;
   color: var(--color-gray-dark);
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .summary-tab.active {
@@ -919,7 +929,7 @@ Click **Calculate** to see your complete retirement journey!
 
 .summary-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
   gap: 1rem;
 }
 

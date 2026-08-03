@@ -83,7 +83,7 @@ description: A free scoreboard for card and board games. Name your players, add 
 <style>
   /* ---- setup / players / round entry ---- */
   .gsc .form-section { margin-bottom: 1.75rem; }
-  .gsc-settings { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
+  .gsc-settings { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 1rem; }
   .gsc-settings .form-group { margin: 0; }
 
   .gsc-players { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.75rem; }
@@ -103,7 +103,7 @@ description: A free scoreboard for card and board games. Name your players, add 
   .gsc-remove:hover { border-color: var(--color-error); color: var(--color-error); }
   .gsc-add-player { margin-top: 0.25rem; }
 
-  .gsc-round-inputs { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.75rem; margin: 0.75rem 0 1rem; }
+  .gsc-round-inputs { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr)); gap: 0.75rem; margin: 0.75rem 0 1rem; }
   .gsc-round-row { display: flex; flex-direction: column; gap: 0.3rem; min-width: 0; }
   .gsc-round-name { font-weight: 600; color: var(--color-primary-blue); font-size: 0.9rem;
     overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -145,7 +145,7 @@ description: A free scoreboard for card and board games. Name your players, add 
 
   .gsc-board { display: flex; flex-direction: column; gap: 0.5rem; }
   .gsc-row {
-    display: grid; grid-template-columns: 3rem 1fr auto; align-items: center; gap: 0.75rem;
+    display: grid; grid-template-columns: 3rem minmax(0, 1fr) auto; align-items: center; gap: 0.75rem;
     padding: 0.75rem 1rem; background: var(--color-white); border-radius: var(--border-radius);
     border: 2px solid var(--color-gray); transition: all var(--transition-fast);
   }

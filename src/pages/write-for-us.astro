@@ -464,7 +464,7 @@ const guidelines = [
 
   .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: var(--space-xl);
   }
 
@@ -619,7 +619,7 @@ const guidelines = [
 
   .form-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: var(--space-lg);
   }
 
@@ -714,7 +714,7 @@ const guidelines = [
 
   .process-steps {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: var(--space-xl);
     max-width: 900px;
     margin: 0 auto;
@@ -759,11 +759,11 @@ const guidelines = [
     }
 
     .form-row {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .process-steps {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     }
   }
 
@@ -777,7 +777,7 @@ const guidelines = [
     }
 
     .process-steps {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 </style>

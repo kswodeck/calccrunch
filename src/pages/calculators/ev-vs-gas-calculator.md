@@ -693,7 +693,7 @@ calcType: ev-vs-gas
   
   .cost-breakdown-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 2rem;
     margin: 2rem 0;
   }
@@ -862,7 +862,7 @@ calcType: ev-vs-gas
 
   .monthly-comparison {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 1.5rem;
     margin: 2rem 0;
   }
@@ -912,7 +912,7 @@ calcType: ev-vs-gas
 
   .emissions-comparison {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 1.5rem;
     margin-top: 1rem;
   }
@@ -944,16 +944,16 @@ calcType: ev-vs-gas
     }
     
     .cost-breakdown-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
       gap: 1rem;
     }
 
     .monthly-comparison {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .emissions-comparison {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
     
     .form-actions {

@@ -401,7 +401,7 @@ const faqs = [
 
   .contact-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
     gap: var(--space-3xl);
     max-width: 1200px;
     margin: 0 auto;
@@ -623,7 +623,7 @@ const faqs = [
 
   .reasons-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: var(--space-xl);
     margin-top: var(--space-2xl);
   }
@@ -667,7 +667,7 @@ const faqs = [
 
   .faq-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: var(--space-2xl);
     margin-top: var(--space-2xl);
   }
@@ -733,7 +733,7 @@ const faqs = [
   /* Responsive Design */
   @media (max-width: 1024px) {
     .contact-content {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
       gap: var(--space-2xl);
     }
 
@@ -746,7 +746,7 @@ const faqs = [
     }
 
     .faq-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 
@@ -781,7 +781,7 @@ const faqs = [
     }
 
     .reasons-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 

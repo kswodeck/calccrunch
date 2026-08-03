@@ -335,7 +335,7 @@ const keywords = categoryKeywords[category] || "free online calculator";
   /* Layout */
   .category-layout {
     display: grid;
-    grid-template-columns: 1fr 280px;
+    grid-template-columns: minmax(0, 1fr) 280px;
     gap: var(--space-2xl);
     align-items: start;
     margin-bottom: var(--space-3xl);
@@ -344,7 +344,7 @@ const keywords = categoryKeywords[category] || "free online calculator";
   /* Calculators Grid */
   .calculators-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
     gap: var(--space-xl);
     margin: var(--space-3xl) 0;
   }
@@ -467,7 +467,7 @@ const keywords = categoryKeywords[category] || "free online calculator";
   /* Responsive */
   @media (max-width: 1024px) {
     .category-layout {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .category-sidebar {
@@ -475,7 +475,7 @@ const keywords = categoryKeywords[category] || "free online calculator";
     }
 
     .calculators-grid {
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
     }
   }
 
@@ -504,7 +504,7 @@ const keywords = categoryKeywords[category] || "free online calculator";
     }
 
     .calculators-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
       gap: var(--space-lg);
     }
   }

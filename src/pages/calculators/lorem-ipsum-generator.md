@@ -369,7 +369,7 @@ The standard Lorem Ipsum passage has been used since the 1500s when an unknown p
   /* Style Selection Cards */
   .style-options {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: var(--space-md);
   }
   
@@ -514,7 +514,7 @@ The standard Lorem Ipsum passage has been used since the 1500s when an unknown p
   /* Options Grid */
   .options-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
     gap: var(--space-md);
   }
   
@@ -838,7 +838,7 @@ The standard Lorem Ipsum passage has been used since the 1500s when an unknown p
   
   .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(120px, 100%), 1fr));
     gap: var(--space-md);
     margin-bottom: var(--space-xl);
   }
@@ -984,15 +984,15 @@ The standard Lorem Ipsum passage has been used since the 1500s when an unknown p
   /* Responsive */
   @media (max-width: 768px) {
     .style-options {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     
     .options-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
     
     .stats-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     
     .reading-info {
@@ -1011,7 +1011,7 @@ The standard Lorem Ipsum passage has been used since the 1500s when an unknown p
   
   @media (max-width: 480px) {
     .style-options {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
     
     .amount-presets {

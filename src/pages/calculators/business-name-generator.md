@@ -197,7 +197,7 @@ calcType: business-name
 
   .names-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
     gap: 1rem;
     margin-bottom: 2rem;
   }
@@ -372,7 +372,7 @@ calcType: business-name
 
   @media (max-width: 768px) {
     .names-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 </style>

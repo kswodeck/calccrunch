@@ -398,7 +398,7 @@ calcType: budget
 
   .preview-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: var(--space-lg);
     text-align: center;
   }
@@ -548,7 +548,7 @@ calcType: budget
 
   .summary-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
     gap: var(--space-lg);
     margin-bottom: var(--space-2xl);
   }
@@ -722,7 +722,7 @@ calcType: budget
   /* Category Breakdown */
   .category-breakdown {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: var(--space-lg);
   }
 
@@ -789,7 +789,7 @@ calcType: budget
 
   .insights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: var(--space-md);
   }
 
@@ -920,7 +920,7 @@ calcType: budget
 
   .planning-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: var(--space-lg);
   }
 
@@ -972,11 +972,11 @@ calcType: budget
     }
 
     .preview-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .summary-cards {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .rule-segment {

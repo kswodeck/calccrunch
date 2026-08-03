@@ -120,7 +120,7 @@ const affiliates = (
 
   .affiliate-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: var(--space-xl);
     margin-bottom: var(--space-xl);
   }
@@ -232,7 +232,7 @@ const affiliates = (
 
   @media (max-width: 768px) {
     .affiliate-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .affiliate-box {

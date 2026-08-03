@@ -134,7 +134,7 @@ description: Simplify ratios, scale them up or down, solve for a missing value i
 
 <div class="info-box" style="background: var(--color-highlight-green); border-left-color: var(--color-success);">
   <h4>🔢 Common Ratio Simplifications</h4>
-  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.5rem; margin-top: 0.75rem;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(140px, 100%), 1fr)); gap: 0.5rem; margin-top: 0.75rem;">
     <div><strong>2:4</strong> = 1:2</div>
     <div><strong>3:9</strong> = 1:3</div>
     <div><strong>4:6</strong> = 2:3</div>

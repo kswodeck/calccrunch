@@ -435,7 +435,7 @@ const popularQuestions = [
 
   .quick-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: var(--space-xl);
   }
 
@@ -471,7 +471,7 @@ const popularQuestions = [
 
   .content-wrapper {
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 280px minmax(0, 1fr);
     gap: var(--space-3xl);
     max-width: 1200px;
     margin: 0 auto;
@@ -688,7 +688,7 @@ const popularQuestions = [
 
   .resources-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: var(--space-xl);
     margin-top: var(--space-2xl);
   }
@@ -752,7 +752,7 @@ const popularQuestions = [
   /* Responsive Design */
   @media (max-width: 1024px) {
     .content-wrapper {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .category-sidebar {
@@ -779,7 +779,7 @@ const popularQuestions = [
     }
 
     .quick-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
 
     .faq-main {
@@ -791,7 +791,7 @@ const popularQuestions = [
     }
 
     .resources-grid {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     }
   }
 
@@ -823,7 +823,7 @@ const popularQuestions = [
     }
 
     .resources-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 
