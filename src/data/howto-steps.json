@@ -172,8 +172,8 @@
     "description": "Convert celsius to fahrenheit in seconds with our free online converter.",
     "totalTime": "PT10S",
     "steps": [
-      "Enter the value in celsius (°C) you want to convert",
-      "The result in fahrenheit (°F) updates instantly",
+      "Enter the value in celsius (\u00b0C) you want to convert",
+      "The result in fahrenheit (\u00b0F) updates instantly",
       "Use the reference table to look up common temperature conversions"
     ]
   },
@@ -182,8 +182,8 @@
     "description": "Convert fahrenheit to celsius in seconds with our free online converter.",
     "totalTime": "PT10S",
     "steps": [
-      "Enter the value in fahrenheit (°F) you want to convert",
-      "The result in celsius (°C) updates instantly",
+      "Enter the value in fahrenheit (\u00b0F) you want to convert",
+      "The result in celsius (\u00b0C) updates instantly",
       "Use the reference table to look up common temperature conversions"
     ]
   },
@@ -212,7 +212,7 @@
     "description": "Calculate sales tax and the total price, or work backward to find the pre-tax price, with our free calculator.",
     "totalTime": "PT30S",
     "steps": [
-      "Enter the amount — the pre-tax price, or the total if you're removing tax",
+      "Enter the amount \u2014 the pre-tax price, or the total if you're removing tax",
       "Enter the sales tax rate, or pick your state to auto-fill the base rate",
       "Choose 'Add tax' to add tax to a price, or 'Remove tax' to find the pre-tax price",
       "Read the tax amount, total, and pre-tax price in the results"
@@ -490,7 +490,7 @@
     "description": "Add, subtract, multiply, or divide any two fractions or mixed numbers and get a simplified result with step-by-step explanation.",
     "totalTime": "PT1M",
     "steps": [
-      "Select your operation: click Add (+), Subtract (−), Multiply (×), or Divide (÷) at the top.",
+      "Select your operation: click Add (+), Subtract (\u2212), Multiply (\u00d7), or Divide (\u00f7) at the top.",
       "Enter the first fraction: type the numerator and denominator. For a mixed number like 2 3/4, also enter 2 in the Whole Number field.",
       "Enter the second fraction in the same way: whole number (if any), numerator, and denominator.",
       "Click the Calculate button to see the simplified result, its decimal equivalent, and a step-by-step solution.",
@@ -503,7 +503,7 @@
     "totalTime": "PT1M",
     "steps": [
       "Enter your numbers in the input box, separated by commas, spaces, or line breaks",
-      "Decimals and negative numbers are fully supported — enter them exactly as they appear",
+      "Decimals and negative numbers are fully supported \u2014 enter them exactly as they appear",
       "Click \"Calculate Average\" to see the mean, median, mode, range, sum, count, min, and max",
       "Review the results: the mean is the arithmetic average; the median is the middle value when sorted; the mode is the most common value",
       "If you need to share or bookmark the result, the numbers are saved in the URL automatically",
@@ -591,6 +591,18 @@
       "Click Calculate to see the GCF and LCM computed instantly.",
       "Review the prime factorization breakdown shown for each number.",
       "Check the step-by-step work showing how the shared and combined factors produce the GCF and LCM."
+    ]
+  },
+  "aspect-ratio-calculator": {
+    "name": "How to Use the Aspect Ratio Calculator",
+    "description": "Calculate the simplified aspect ratio from any width and height, or find a matching dimension that keeps the same ratio.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Choose a mode: 'Find Ratio' (from pixel dimensions) or 'Find Dimension' (scale to a target size).",
+      "In Find Ratio mode, enter your width and height in pixels or any unit.",
+      "In Find Dimension mode, enter your original width and height, then enter only the target width or target height you want to match.",
+      "Click Calculate to see the simplified ratio (e.g. 16:9), its decimal value, and the closest standard ratio.",
+      "In Find Dimension mode, the calculator also shows the missing dimension that preserves the original proportions."
     ]
   }
 }

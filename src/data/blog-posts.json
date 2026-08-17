@@ -1083,6 +1083,71 @@
         "quarterly estimated taxes",
         "self-employed quarterly taxes"
       ]
+    },
+    {
+      "slug": "aspect-ratio-guide",
+      "title": "How to Calculate Aspect Ratio (16:9, 4:3, and Custom Sizes)",
+      "description": "Learn how to calculate aspect ratio from pixel dimensions using the GCD method, tell 16:9 from 4:3 and 21:9, and resize an image or video without distorting it.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-08-19T09:00:00-07:00",
+      "updatedDate": "2026-08-19T09:00:00-07:00",
+      "category": "Everyday Math",
+      "tags": [
+        "aspect ratio",
+        "16:9",
+        "4:3",
+        "video",
+        "photography",
+        "math"
+      ],
+      "readTime": "6 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "aspect-ratio-calculator",
+        "ratio-calculator",
+        "gcf-lcm-calculator"
+      ],
+      "seoTitle": "How to Calculate Aspect Ratio (16:9, 4:3 & Custom) — 2026 Guide",
+      "seoDescription": "Learn how to calculate aspect ratio from any width and height, the GCD method explained step by step, and how to resize images or video without distortion.",
+      "keywords": [
+        "aspect ratio calculator",
+        "how to calculate aspect ratio",
+        "16:9 aspect ratio",
+        "4:3 aspect ratio",
+        "aspect ratio formula"
+      ]
+    },
+    {
+      "slug": "fsa-hsa-2026-contribution-limits",
+      "title": "2026 FSA and HSA Contribution Limits: What Changed and How to Plan",
+      "description": "The 2026 HSA limit is $4,400 (self-only) / $8,750 (family) and the FSA limit is $3,400. See what changed from 2025, how to plan your paycheck contributions, and key deadlines.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-08-22T09:00:00-07:00",
+      "updatedDate": "2026-08-22T09:00:00-07:00",
+      "category": "Financial Planning",
+      "tags": [
+        "FSA",
+        "HSA",
+        "open enrollment",
+        "benefits",
+        "tax-advantaged savings",
+        "budgeting"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "budget-calculator",
+        "savings-goal-calculator"
+      ],
+      "seoTitle": "2026 FSA & HSA Contribution Limits (What Changed + How to Plan)",
+      "seoDescription": "2026 HSA limits: $4,400 self-only / $8,750 family. 2026 FSA limit: $3,400. See what changed, per-paycheck math, and how to plan contributions before open enrollment.",
+      "keywords": [
+        "2026 FSA contribution limit",
+        "2026 HSA contribution limit",
+        "FSA vs HSA",
+        "HSA limits 2026",
+        "open enrollment 2026"
+      ]
     }
   ]
 }

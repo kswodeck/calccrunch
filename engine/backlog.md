@@ -42,7 +42,7 @@ These are huge-volume, low-difficulty queries. Each is one row + `npm run gen:co
 | ratio-calculator | "ratio calculator" | math-conversions | done |
 | unit-price-calculator | "unit price calculator" / "cost per ounce calculator" | math-conversions | done |
 | gcf-lcm-calculator | "GCF and LCM calculator" | math-conversions | done |
-| aspect-ratio-calculator | "aspect ratio calculator" (16:9, 4:3) | math-conversions | todo |
+| aspect-ratio-calculator | "aspect ratio calculator" (16:9, 4:3) | math-conversions | done — shipped 2026-08-17 run |
 
 ## Tier 4 — Health (bespoke)
 
@@ -122,7 +122,7 @@ rather than waiting.
 | Slug | Target query | Links to | Status |
 |---|---|---|---|
 | gcf-lcm-calculator-guide | "how to find GCF and LCM" / "greatest common factor calculator" | gcf-lcm-calculator, fraction-calculator | done — shipped 2026-08-10 run |
-| aspect-ratio-guide | "aspect ratio calculator 16:9 4:3" / "how to calculate aspect ratio" | aspect-ratio-calculator, ratio-calculator | todo (build aspect-ratio-calculator tool first, Tier 3) |
+| aspect-ratio-guide | "aspect ratio calculator 16:9 4:3" / "how to calculate aspect ratio" | aspect-ratio-calculator, ratio-calculator | done — shipped 2026-08-17 run |
 | student-loan-rate-changes-2026-2027 | "student loan interest rate 2026 2027" | student-loan-calculator, loan-amortization-calculator | done — shipped 2026-08-03 run once 2026-2027 federal rates (6.52%/8.07%/9.07%) were confirmed finalized |
 | running-pace-guide | "running pace calculator" / "how to calculate pace per mile" (carried over — still blocked on pace-calculator tool, Tier 4) | pace-calculator, calories-burned-calculator | done |
 | how-much-water-should-you-drink | "how much water should I drink calculator" / "water intake calculator" (carried over — still blocked on water-intake-calculator tool, Tier 4; EFSA/NAS guideline ranges confirmed current) | water-intake-calculator, calorie-calculator, bmi-calculator | done |
@@ -139,7 +139,7 @@ post covered it) surfaced by back-to-school "days until school starts" countdown
 | days-between-dates-guide | "days between two dates" / "how many days until school starts" (net-new topic, not previously in backlog — filled a genuine content gap) | date-difference-calculator, age-calculator, business-days-calculator | done |
 | pace-calculator | "running pace calculator" (Tier 4 tool, still todo — build next so running-pace-guide can finally ship) | pace-calculator, calories-burned-calculator | done |
 | labor-day-2026-money-deadlines | "Labor Day 2026 sales" / "September financial deadlines" (FAFSA correction Sept 14, Q3 estimated tax Sept 15, 2026 — confirmed real calendar dates at research time) | sales-tax-calculator, budget-calculator | done — Q3 estimated-tax angle shipped 2026-08-10 run as q3-estimated-tax-deadline-2026 (self-employment-tax-calculator, freelance-rate-calculator, budget-calculator); FAFSA-correction/Labor-Day-sales angle still open if worth a separate post |
-| fsa-hsa-2026-contribution-limits | "2026 FSA limit" / "2026 HSA contribution limit" | budget-calculator, savings-goal-calculator | todo — IRS figures now confirmed finalized as of 2026-08-03 research run; ready to write, no longer needs to hold |
+| fsa-hsa-2026-contribution-limits | "2026 FSA limit" / "2026 HSA contribution limit" | budget-calculator, savings-goal-calculator | done — shipped 2026-08-17 run |
 | gcf-lcm-calculator-guide | "how to find GCF and LCM" / "greatest common factor calculator" (carried over — still blocked on gcf-lcm-calculator tool, Tier 3) | gcf-lcm-calculator, fraction-calculator | done — shipped 2026-08-10 run |
 
 ## Blog backlog (new ideas from 2026-08-03 research run)
@@ -153,7 +153,7 @@ calculator or post on the site.
 
 | Slug | Target query | Links to | Status |
 |---|---|---|---|
-| fsa-hsa-2026-contribution-limits | "2026 FSA contribution limit" / "2026 HSA contribution limit" (no longer on hold — figures finalized) | budget-calculator, savings-goal-calculator | todo |
+| fsa-hsa-2026-contribution-limits | "2026 FSA contribution limit" / "2026 HSA contribution limit" (no longer on hold — figures finalized) | budget-calculator, savings-goal-calculator | done — shipped 2026-08-17 run |
 | gpa-calculator | "GPA calculator" / "how to calculate weighted GPA" (net-new — no existing calculator or post covers this) | math-conversions | done |
 | gpa-calculator-guide | "how to calculate GPA" / "weighted vs unweighted GPA" | gpa-calculator, average-calculator | done |
 | labor-day-2026-sales-tax-holidays | "Labor Day 2026 tax free weekend" (Louisiana Second Amendment holiday Sept 4-6; Florida hunting/fishing/camping exemption starts Sept 1) — more specific than the general labor-day-2026-money-deadlines idea above | sales-tax-calculator, discount-calculator | todo |
@@ -172,11 +172,32 @@ tax angle in favor of the FSA/HSA and aspect-ratio topics below.
 
 | Slug | Target query | Links to | Status |
 |---|---|---|---|
-| fsa-hsa-2026-contribution-limits | "2026 FSA contribution limit" / "2026 HSA contribution limit" (carried over — figures finalized via Revenue Procedure 2025-32: FSA $3,400, HSA $4,400 individual/$8,750 family) | budget-calculator, savings-goal-calculator | todo — ready to write, no blockers |
-| aspect-ratio-calculator + aspect-ratio-guide | "aspect ratio calculator 16:9 4:3" / "how to calculate aspect ratio" (Tier 3 tool still todo — build next) | ratio-calculator, gcf-lcm-calculator | todo (build aspect-ratio-calculator tool first) |
+| fsa-hsa-2026-contribution-limits | "2026 FSA contribution limit" / "2026 HSA contribution limit" (carried over — figures finalized via Revenue Procedure 2025-32: FSA $3,400, HSA $4,400 individual/$8,750 family) | budget-calculator, savings-goal-calculator | done — shipped 2026-08-17 run |
+| aspect-ratio-calculator + aspect-ratio-guide | "aspect ratio calculator 16:9 4:3" / "how to calculate aspect ratio" (Tier 3 tool still todo — build next) | ratio-calculator, gcf-lcm-calculator | done — shipped 2026-08-17 run |
 | fall-marathon-training-plan-guide | "marathon training plan" / "when to start training for a fall marathon" — September–November is peak marathon season and most 12-20 week plans should already be starting in August; verified via race-calendar sources this run | pace-calculator, calories-burned-calculator | todo (net-new, no existing post covers training-plan timing specifically) |
 | weighted-gpa-scale-changes-guide | "weighted GPA scale" / "how do AP and honors classes affect GPA" — several districts are rolling out new weighted-GPA policies for 2025-2026, a real back-to-school search driver surfaced this run | gpa-calculator, average-calculator | todo (net-new angle distinct from existing gpa-calculator-guide, which covers the basic formula) |
 | q4-estimated-tax-deadline-guide | "Q4 estimated tax deadline" / "January 15 estimated tax" — natural follow-up to q3-estimated-tax-deadline-2026 shipped this run, for the January 15, 2027 deadline | self-employment-tax-calculator, freelance-rate-calculator | todo (hold until ~4-5 weeks before Jan 15, 2027, per scheduling lead time used this run) |
+
+## Blog backlog (new ideas from 2026-08-17 research run)
+
+why now: shipped aspect-ratio-calculator (Tier 3 tool, carried over across two prior research runs) plus its guide
+this run — confirmed via WebSearch that "aspect ratio calculator 16:9 4:3" remains a stable, undated query with no
+seasonal decay. Also shipped fsa-hsa-2026-contribution-limits once the Dependent Care FSA $7,500 figure (up from
+$5,000, first change in 25 years via the One Big Beautiful Bill Act) was independently cross-confirmed against the
+existing $3,400 Health FSA / $4,400-$8,750 HSA figures from Revenue Procedure 2025-32 — timed ~2-3 weeks ahead of
+typical fall open-enrollment windows so it has time to rank. Labor Day 2026 was confirmed via this run's research
+as September 7, 2026, which pushes the still-open labor-day-2026-sales-tax-holidays idea from the 2026-08-03 run
+into a tighter, better-defined publish window (ship by ~Aug 24-28 to land before the holiday). Also carried forward
+fall-marathon-training-plan-guide and weighted-gpa-scale-changes-guide from the 2026-08-10 run, neither selected
+this run but still valid net-new angles once their linked tools/posts have bandwidth.
+
+| Slug | Target query | Links to | Status |
+|---|---|---|---|
+| labor-day-2026-sales-tax-holidays | "Labor Day 2026 tax free weekend" (Labor Day confirmed Sept 7, 2026 this run — Louisiana Second Amendment holiday Sept 4-6, Florida hunting/fishing/camping exemption starts Sept 1; publish by ~Aug 24-28 to land before the holiday) | sales-tax-calculator, discount-calculator | todo (carried over from 2026-08-03 run, now time-boxed) |
+| fall-marathon-training-plan-guide | "marathon training plan" / "when to start training for a fall marathon" — September-November is peak marathon season; carried over, still net-new, no existing post covers training-plan timing | pace-calculator, calories-burned-calculator | todo (carried over from 2026-08-10 run) |
+| weighted-gpa-scale-changes-guide | "weighted GPA scale" / "how do AP and honors classes affect GPA" — distinct back-to-school angle from the existing gpa-calculator-guide, which only covers the basic formula | gpa-calculator, average-calculator | todo (carried over from 2026-08-10 run) |
+| standard-deviation-guide | "how to calculate standard deviation" / "what is standard deviation" — evergreen math-homework query, carried over across multiple runs with no seasonal urgency | average-calculator, percentage-change-calculator | todo (carried over from 2026-07-06 run) |
+| due-date-calculator-guide | "pregnancy due date" / "how is due date calculated" — still blocked on the due-date-calculator tool (Tier 4, todo above) | pregnancy-calculator, date-difference-calculator | todo (build due-date-calculator tool first) |
 
 ## Retention backlog
 
