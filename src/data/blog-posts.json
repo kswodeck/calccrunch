@@ -1148,6 +1148,69 @@
         "HSA limits 2026",
         "open enrollment 2026"
       ]
+    },
+    {
+      "slug": "standard-deviation-guide",
+      "title": "How to Calculate Standard Deviation (Step-by-Step Guide)",
+      "description": "Learn how to calculate standard deviation step by step, the difference between sample and population formulas, and when to use each — with a worked example.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-08-26T09:00:00-07:00",
+      "updatedDate": "2026-08-26T09:00:00-07:00",
+      "category": "Math & Conversions",
+      "tags": [
+        "standard deviation",
+        "statistics",
+        "variance",
+        "math",
+        "data analysis"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "standard-deviation-calculator",
+        "average-calculator",
+        "percentage-change-calculator"
+      ],
+      "seoTitle": "How to Calculate Standard Deviation — Formula & Example (2026)",
+      "seoDescription": "Learn how to calculate standard deviation step by step. Covers the sample vs. population formulas, a worked example, and Excel/Sheets shortcuts.",
+      "keywords": [
+        "how to calculate standard deviation",
+        "standard deviation formula",
+        "what is standard deviation",
+        "sample vs population standard deviation",
+        "standard deviation calculator"
+      ]
+    },
+    {
+      "slug": "fall-marathon-training-plan-guide",
+      "title": "Fall Marathon Training Plan: When to Start (16-Week Guide)",
+      "description": "Find out exactly when to start training for a fall marathon, how a 16-week plan is structured week by week, and how to adjust if you're starting later than planned.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-08-31T09:00:00-07:00",
+      "updatedDate": "2026-08-31T09:00:00-07:00",
+      "category": "Health & Fitness",
+      "tags": [
+        "marathon training",
+        "running",
+        "fitness",
+        "race prep",
+        "pace"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "pace-calculator",
+        "calories-burned-calculator"
+      ],
+      "seoTitle": "Fall Marathon Training Plan — When to Start (16-Week Guide)",
+      "seoDescription": "When should you start training for a fall marathon? Use our countdown table and week-by-week 16-week training plan structure to find your ideal start date.",
+      "keywords": [
+        "marathon training plan",
+        "when to start marathon training",
+        "16 week marathon training plan",
+        "fall marathon training",
+        "marathon training schedule"
+      ]
     }
   ]
 }
