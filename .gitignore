@@ -2,10 +2,13 @@
 dist/
 # generated types
 .astro/
+# app icons derived from logo-icon.png at build time (scripts/generate-icons.mjs)
+public/images/logos/icon-192.png
+public/images/logos/icon-512.png
+public/images/logos/apple-touch-icon.png
 
 # dependencies
 node_modules/
-package-lock.json
 
 # logs
 npm-debug.log*
@@ -39,8 +42,6 @@ notes.md
 
 .vscode/*
 !.vscode/extensions.json
-.idea/
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
@@ -50,6 +51,5 @@ Thumbs.db
 *.local
 .cache/
 .claude/
-.env
 # Claude GitHub Action execution log (runner artifact, never commit)
 output.txt
