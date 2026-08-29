@@ -26,25 +26,6 @@ const {
   <script is:inline>
     (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
-  <script is:inline>
-    // Ad blocker detection - only run once per page
-    if (!window.adBlockDetectionInitialized) {
-      window.adBlockDetectionInitialized = true;
-      // Check if ads are actually rendered after a delay
-      setTimeout(() => {
-        const adElements = document.querySelectorAll(".adsbygoogle");
-        adElements?.forEach((el) => {
-          // Check if the ad element has been filled (has children or height)
-          if (el.offsetHeight === 0 || el.childElementCount === 0) {
-            if (el.closest(".ad-unit")) {
-              el.closest(".ad-unit").style.display = "none";
-            }
-            // add option to display alternate ads such as amazon affiliate links using custom amazon affiliate component
-          }
-        });
-      }, 500);
-    }
-  </script>
 </div>
 
 <style>
@@ -72,7 +53,6 @@ const {
     display: block;
     width: 100%;
     max-width: 100%;
-    display: block;
     min-height: 250px;
     background: var(--color-white);
     border-radius: var(--border-radius);
