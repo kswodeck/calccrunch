@@ -14,8 +14,15 @@ const breadcrumbItems = [
   { label: post.title, href: null },
 ];
 
+// Drip-scheduled posts have no page until their publishDate, so they must be
+// excluded here the way blog/index.astro and blog/[slug].astro exclude them —
+// otherwise every published post links to a 404 for the queued batch.
+const today = new Date().toISOString().split("T")[0];
+
 const relatedPosts = blogPostsData.posts
   .filter(p => p.slug !== post.slug)
+  .filter(p => p.publishDate?.split("T")[0] <= today)
+  .filter(p => p.status !== "draft")
   .filter(p => p.tags.some(t => post.tags.includes(t)))
   .slice(0, 3);
 
@@ -48,7 +55,7 @@ const isoDate = post.publishDate;
       "url": "https://calccrunch.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://calccrunch.com/images/logos/logo-icon.png"
+        "url": "https://calccrunch.com/images/logos/icon-512.png"
       }
     },
     "datePublished": post.publishDate,
