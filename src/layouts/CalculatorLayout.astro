@@ -11,7 +11,6 @@ import "../styles/calculators.css";
 
 // Import calculators data
 import calculatorsData from "../data/calculators.json";
-import { allCalculators } from "../utils/calculators";
 import calculatorFaqs from "../data/calculator-faqs.json";
 import howtoSteps from "../data/howto-steps.json";
 
@@ -352,7 +351,6 @@ const howto = howtoSteps[slug];
   .calculator-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 280px;
-    grid-template-columns: minmax(0, 1fr) 280px;
     gap: var(--space-xl);
     align-items: start;
   }
@@ -628,7 +626,6 @@ const howto = howtoSteps[slug];
   /* Responsive */
   @media (max-width: 1024px) {
     .calculator-layout {
-      grid-template-columns: minmax(0, 1fr);
       grid-template-columns: minmax(0, 1fr);
     }
 

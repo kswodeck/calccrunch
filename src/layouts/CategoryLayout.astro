@@ -3,6 +3,7 @@ import BaseLayout from "./BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import CalculatorCard from "../components/CalculatorCard.astro";
 import AdUnit from "../components/AdUnit.astro";
+import { allCalculators } from "../utils/calculators";
 
 // Get props
 const {
@@ -65,10 +66,12 @@ const keywords = categoryKeywords[category] || "free online calculator";
   description={`${categoryDescription} Browse ${totalCount} free ${categoryName.toLowerCase()} calculators and tools. Fast, accurate, and easy to use.`}
   keywords={`${keywords}, free calculator, online calculator`}
 >
-  <!-- Structured Data for Category -->
+  <!-- Structured Data for Category. BaseLayout has no named "head" slot, so
+       a slot="head" here silently dropped this schema from every category
+       page; it renders in the default slot instead. -->
   <script
+    is:inline
     type="application/ld+json"
-    slot="head"
     set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "CollectionPage",
@@ -228,8 +231,8 @@ const keywords = categoryKeywords[category] || "free online calculator";
       <div class="container text-center">
         <h2 class="text-white">Need a Different Calculator?</h2>
         <p class="text-white mb-lg">
-          Explore our complete collection of 5+ free calculators across all
-          categories
+          Explore our complete collection of {allCalculators.length}+ free
+          calculators across all categories
         </p>
         <a href="/calculators" class="btn btn-secondary">
           Browse All Calculators

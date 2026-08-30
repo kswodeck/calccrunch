@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import AdUnit from "../components/AdUnit.astro";
+import { hashedAsset } from "../../scripts/asset-hash.mjs";
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
@@ -68,6 +69,7 @@ const faqs = [
   <script
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    defer
   ></script>
 
   <div class="contact-page">
@@ -326,8 +328,9 @@ const faqs = [
 
   </div>
 
-  <!-- Load Contact Form JavaScript -->
-  <script src="/scripts/contact-us.js" is:inline></script>
+  <!-- Load Contact Form JavaScript. Hashed so the immutable cache on
+       /scripts/* can't serve a stale copy after a fix. -->
+  <script src={hashedAsset("/scripts/contact-us.js")} is:inline defer></script>
   <script is:inline>
     document.addEventListener('DOMContentLoaded', function() {
       var subjectField = document.getElementById('subject');

@@ -1,22 +1,68 @@
 // CalcCrunch Search Functionality
-// Integrates with calculators.json and provides real-time search
+// Scores calculators against a query using the build-time index at
+// /search-index.json (see src/pages/search-index.json.ts).
+//
+// The index is fetched lazily — warmed as soon as a search box is focused or
+// hovered, awaited only where results are actually needed — so ordinary page
+// loads ship none of the catalog. Form submit still works without it: the
+// search box is a real GET form pointing at /search.
 
-import calculatorsDataRaw from '../data/calculators.json';
-import categoriesDataRaw from '../data/categories.json';
-import type {
-  Calculator,
-  CalculatorsData,
-  CategoriesData,
-  ScoredCalculator,
-} from '../types/calculator';
+/** One entry of /search-index.json. Short keys keep the payload small. */
+interface IndexEntry {
+  t: string; // title
+  s: string; // slug
+  d: string; // description
+  sd?: string; // shortDescription
+  x?: string; // seoDescription
+  g?: string[]; // tags
+  k?: string[]; // keywords
+  c: string; // category id
+  p: 0 | 1; // popular
+  f: 0 | 1; // featured
+  i?: string; // icon
+}
 
-const today = new Date().toISOString().split('T')[0];
-const calculatorsData: CalculatorsData = {
-  calculators: (calculatorsDataRaw as unknown as CalculatorsData).calculators.filter(
-    c => !c.lastUpdated || c.lastUpdated.split('T')[0] <= today
-  )
-};
-const categoriesData = categoriesDataRaw as unknown as CategoriesData;
+interface SearchIndex {
+  categories: Record<string, string>;
+  calculators: IndexEntry[];
+}
+
+/** An index entry annotated with its relevance score for a query. */
+interface ScoredEntry extends IndexEntry {
+  searchScore: number;
+}
+
+let index: SearchIndex | null = null;
+let indexPromise: Promise<SearchIndex> | null = null;
+
+/**
+ * Fetch the search index once and memoize it. A failed fetch clears the
+ * memo so the next interaction retries rather than failing forever.
+ */
+function loadIndex(): Promise<SearchIndex> {
+  if (index) return Promise.resolve(index);
+  if (!indexPromise) {
+    indexPromise = fetch('/search-index.json')
+      .then(res => {
+        if (!res.ok) throw new Error(`search index: HTTP ${res.status}`);
+        return res.json() as Promise<SearchIndex>;
+      })
+      .then(data => {
+        index = data;
+        return data;
+      })
+      .catch(err => {
+        indexPromise = null;
+        throw err;
+      });
+  }
+  return indexPromise;
+}
+
+/** Warm the index without caring about the outcome. */
+function prefetchIndex(): void {
+  loadIndex().catch(() => {});
+}
 
 /**
  * Initialize search functionality
@@ -25,8 +71,9 @@ export function initSearch(): void {
   // Get search elements
   const searchForms = document.querySelectorAll<HTMLFormElement>('.search-form, .search-form-hero');
   const searchInputs = document.querySelectorAll<HTMLInputElement>('.search-input, .search-input-hero');
+  const onSearchPage = window.location.pathname.includes('/search');
 
-  if (!searchForms.length) return;
+  if (!searchForms.length && !onSearchPage) return;
 
   // Add event listeners to all search forms
   searchForms.forEach(form => {
@@ -38,11 +85,15 @@ export function initSearch(): void {
     input.addEventListener('input', debounce(handleSearchInput, 300));
     input.addEventListener('focus', showSearchSuggestions);
     input.addEventListener('blur', hideSearchSuggestions);
+    // Start the download before the first keystroke so suggestions are ready
+    // by the time the debounce fires.
+    input.addEventListener('pointerenter', prefetchIndex, { once: true });
+    input.addEventListener('focus', prefetchIndex, { once: true });
   });
 
   // Handle search on search results page
-  if (window.location.pathname.includes('/search')) {
-    performPageSearch();
+  if (onSearchPage) {
+    void performPageSearch();
   }
 }
 
@@ -65,6 +116,10 @@ function handleSearchSubmit(e: SubmitEvent): void {
   window.location.href = `/search?q=${encodeURIComponent(query)}`;
 }
 
+// Guards against a slow index fetch rendering suggestions for a query the
+// user has already typed past.
+let suggestionToken = 0;
+
 /**
  * Handle real-time search input (for suggestions)
  */
@@ -77,100 +132,109 @@ function handleSearchInput(e: Event): void {
     return;
   }
 
-  const results = searchCalculators(query, 5); // Get top 5 suggestions
-  displaySearchSuggestions(results, target);
+  const token = ++suggestionToken;
+  loadIndex()
+    .then(() => {
+      if (token !== suggestionToken) return;
+      displaySearchSuggestions(searchCalculators(query, 5), target);
+    })
+    .catch(() => {});
 }
 
 /**
- * Main search function
+ * Main search function. Requires the index to be loaded; returns nothing
+ * until it is.
  */
-function searchCalculators(query: string, limit = 0): ScoredCalculator[] {
-  if (!query) return [];
+function searchCalculators(query: string, limit = 0): ScoredEntry[] {
+  if (!query || !index) return [];
 
   const lowerQuery = query.toLowerCase();
   const words = lowerQuery.split(' ').filter(word => word.length);
 
-  // Search through all calculators (exclude hidden ones)
-  const results = calculatorsData.calculators
-    .filter(calc => !calc.hidden) // Only show non-hidden calculators
-    .map((calc): ScoredCalculator => {
+  const results = index.calculators
+    .map((calc): ScoredEntry => {
       let score = 0;
 
       // Title match (highest weight)
-      if (calc.title?.toLowerCase()?.includes(lowerQuery)) {
+      const title = calc.t?.toLowerCase();
+      if (title?.includes(lowerQuery)) {
         score += 100;
         // Exact match gets bonus
-        if (calc.title?.toLowerCase() === lowerQuery) {
+        if (title === lowerQuery) {
           score += 50;
         }
       }
 
       // Check each word in title
       words.forEach(word => {
-        if (calc.title?.toLowerCase()?.includes(word)) {
+        if (title?.includes(word)) {
           score += 20;
         }
       });
 
       // Description match
-      if (calc.description?.toLowerCase()?.includes(lowerQuery)) {
+      const description = calc.d?.toLowerCase();
+      if (description?.includes(lowerQuery)) {
         score += 30;
       }
 
       words.forEach(word => {
-        if (calc.description?.toLowerCase()?.includes(word)) {
+        if (description?.includes(word)) {
           score += 10;
         }
       });
 
       // SEO Description match
-      if (calc.seoDescription?.toLowerCase()?.includes(lowerQuery)) {
+      const seoDescription = calc.x?.toLowerCase();
+      if (seoDescription?.includes(lowerQuery)) {
         score += 30;
       }
 
       words.forEach(word => {
-        if (calc.seoDescription?.toLowerCase()?.includes(word)) {
+        if (seoDescription?.includes(word)) {
           score += 10;
         }
       });
 
       // Tags match
-      calc.tags?.forEach(tag => {
-        if (tag?.toLowerCase()?.includes(lowerQuery)) {
+      calc.g?.forEach(tag => {
+        const lowerTag = tag?.toLowerCase();
+        if (lowerTag?.includes(lowerQuery)) {
           score += 40;
         }
         words.forEach(word => {
-          if (tag?.toLowerCase()?.includes(word)) {
+          if (lowerTag?.includes(word)) {
             score += 15;
           }
         });
       });
 
       // Keywords match
-      calc.keywords?.forEach(keyword => {
-        if (keyword?.toLowerCase()?.includes(lowerQuery)) {
+      calc.k?.forEach(keyword => {
+        const lowerKeyword = keyword?.toLowerCase();
+        if (lowerKeyword?.includes(lowerQuery)) {
           score += 35;
         }
         words.forEach(word => {
-          if (keyword?.toLowerCase()?.includes(word)) {
+          if (lowerKeyword?.includes(word)) {
             score += 12;
           }
         });
       });
 
       // Category match
-      const categoryName = getCategoryName(calc.category);
+      const categoryName = getCategoryName(calc.c);
       if (categoryName?.toLowerCase()?.includes(lowerQuery)) {
         score += 20;
       }
 
       // Boost popular calculators slightly
-      if (calc.popular) {
+      if (calc.p) {
         score += 3;
       }
 
       // Boost featured calculators slightly
-      if (calc.featured) {
+      if (calc.f) {
         score += 2;
       }
 
@@ -188,7 +252,7 @@ function searchCalculators(query: string, limit = 0): ScoredCalculator[] {
 /**
  * Perform search on the search results page
  */
-function performPageSearch(): void {
+async function performPageSearch(): Promise<void> {
   const urlParams = new URLSearchParams(window.location.search);
   const query = urlParams.get('q') || '';
 
@@ -203,6 +267,17 @@ function performPageSearch(): void {
     return;
   }
 
+  // Reflect the query in the tab/history entry, which the prerendered title
+  // can't do.
+  document.title = `Search Results for "${query}" | CalcCrunch`;
+
+  try {
+    await loadIndex();
+  } catch {
+    displayIndexError(query);
+    return;
+  }
+
   // Perform search
   const results = searchCalculators(query);
 
@@ -214,16 +289,17 @@ function performPageSearch(): void {
 }
 
 const RESULTS_PER_PAGE = 10;
-let allSearchResults: ScoredCalculator[] = [];
+let allSearchResults: ScoredEntry[] = [];
 let visibleResults = RESULTS_PER_PAGE;
 
 /**
  * Display search results on the page
  */
-function displaySearchResults(results: ScoredCalculator[], query: string): void {
+function displaySearchResults(results: ScoredEntry[], query: string): void {
   const resultsContainer = document.getElementById('search-results');
   const resultsCount = document.getElementById('results-count');
   const searchQuery = document.getElementById('search-query');
+  const queryWrapper = document.getElementById('results-query');
 
   if (!resultsContainer) return;
 
@@ -233,6 +309,9 @@ function displaySearchResults(results: ScoredCalculator[], query: string): void 
   // Update query display
   if (searchQuery) {
     searchQuery.textContent = query;
+  }
+  if (queryWrapper) {
+    queryWrapper.hidden = false;
   }
 
   // Clear previous results
@@ -306,12 +385,12 @@ function renderVisibleResults(container?: HTMLElement | null, countEl?: HTMLElem
 /**
  * Group calculators by category
  */
-function groupByCategory(calculators: ScoredCalculator[]): Record<string, ScoredCalculator[]> {
-  return calculators.reduce<Record<string, ScoredCalculator[]>>((acc, calc) => {
-    if (!acc[calc.category]) {
-      acc[calc.category] = [];
+function groupByCategory(calculators: ScoredEntry[]): Record<string, ScoredEntry[]> {
+  return calculators.reduce<Record<string, ScoredEntry[]>>((acc, calc) => {
+    if (!acc[calc.c]) {
+      acc[calc.c] = [];
     }
-    acc[calc.category].push(calc);
+    acc[calc.c].push(calc);
     return acc;
   }, {});
 }
@@ -319,7 +398,7 @@ function groupByCategory(calculators: ScoredCalculator[]): Record<string, Scored
 /**
  * Create category section HTML
  */
-function createCategorySection(categoryName: string, calculators: ScoredCalculator[]): HTMLDivElement {
+function createCategorySection(categoryName: string, calculators: ScoredEntry[]): HTMLDivElement {
   const section = document.createElement('div');
   section.className = 'search-category-section';
 
@@ -344,13 +423,13 @@ function createCategorySection(categoryName: string, calculators: ScoredCalculat
 /**
  * Create calculator card HTML
  */
-function createCalculatorCard(calc: Calculator): HTMLAnchorElement {
+function createCalculatorCard(calc: IndexEntry): HTMLAnchorElement {
   const card = document.createElement('a');
-  card.href = `/calculators/${calc.slug}`;
+  card.href = `/calculators/${calc.s}`;
   card.className = 'calc-card';
 
   // Add popular badge if applicable
-  if (calc.popular) {
+  if (calc.p) {
     const badge = document.createElement('div');
     badge.className = 'calc-card-badge';
     badge.textContent = '🔥 Popular';
@@ -360,7 +439,7 @@ function createCalculatorCard(calc: Calculator): HTMLAnchorElement {
   // Card icon
   const icon = document.createElement('div');
   icon.className = 'calc-card-icon';
-  icon.textContent = calc.icon || '🔢';
+  icon.textContent = calc.i || '🔢';
 
   // Card content container
   const content = document.createElement('div');
@@ -369,17 +448,17 @@ function createCalculatorCard(calc: Calculator): HTMLAnchorElement {
   // Title
   const title = document.createElement('h4');
   title.className = 'calc-card-title';
-  title.textContent = calc.title;
+  title.textContent = calc.t;
 
   // Description
   const description = document.createElement('p');
   description.className = 'calc-card-description';
-  description.textContent = calc.shortDescription || calc.description;
+  description.textContent = calc.sd || calc.d;
 
   // Category tag
   const categoryTag = document.createElement('span');
   categoryTag.className = 'calc-card-category';
-  categoryTag.textContent = getCategoryName(calc.category);
+  categoryTag.textContent = getCategoryName(calc.c);
 
   // Append to content
   content.appendChild(title);
@@ -399,10 +478,13 @@ function createCalculatorCard(calc: Calculator): HTMLAnchorElement {
   return card;
 }
 
+/** The input the visible suggestion dropdown belongs to, for repositioning. */
+let suggestionAnchor: HTMLInputElement | null = null;
+
 /**
  * Display search suggestions dropdown
  */
-function displaySearchSuggestions(results: ScoredCalculator[], inputElement: HTMLInputElement): void {
+function displaySearchSuggestions(results: ScoredEntry[], inputElement: HTMLInputElement): void {
   // Remove any existing suggestions
   hideSearchSuggestions();
 
@@ -414,26 +496,26 @@ function displaySearchSuggestions(results: ScoredCalculator[], inputElement: HTM
 
   results.forEach(calc => {
     const suggestion = document.createElement('a');
-    suggestion.href = `/calculators/${calc.slug}`;
+    suggestion.href = `/calculators/${calc.s}`;
     suggestion.className = 'suggestion-item';
 
     const icon = document.createElement('span');
     icon.className = 'suggestion-icon';
-    icon.textContent = calc.icon || '🔢';
+    icon.textContent = calc.i || '🔢';
 
     const content = document.createElement('div');
     content.className = 'suggestion-content';
 
     const title = document.createElement('div');
     title.className = 'suggestion-title';
-    title.textContent = calc.title + (calc.popular ? " 🔥" : '');
+    title.textContent = calc.t + (calc.p ? " 🔥" : '');
 
     const categoryRow = document.createElement('div');
     categoryRow.className = 'suggestion-category-div';
 
     const category = document.createElement('div');
     category.className = 'suggestion-category';
-    category.textContent = getCategoryName(calc.category);
+    category.textContent = getCategoryName(calc.c);
     categoryRow.appendChild(category);
 
     content.appendChild(title);
@@ -450,14 +532,24 @@ function displaySearchSuggestions(results: ScoredCalculator[], inputElement: HTM
     dropdown.appendChild(suggestion);
   });
 
-  // Position dropdown below input
-  const inputRect = inputElement.getBoundingClientRect();
+  document.body.appendChild(dropdown);
+
+  // The dropdown is positioned against the document, so it has to follow the
+  // input when the page scrolls or reflows instead of being left behind.
+  suggestionAnchor = inputElement;
+  positionSuggestions();
+  window.addEventListener('scroll', positionSuggestions, { passive: true });
+  window.addEventListener('resize', positionSuggestions, { passive: true });
+}
+
+function positionSuggestions(): void {
+  const dropdown = document.getElementById('search-suggestions');
+  if (!dropdown || !suggestionAnchor) return;
+  const inputRect = suggestionAnchor.getBoundingClientRect();
   dropdown.style.position = 'absolute';
   dropdown.style.top = `${inputRect.bottom + window.scrollY}px`;
   dropdown.style.left = `${inputRect.left + window.scrollX}px`;
   dropdown.style.width = `${inputRect.width}px`;
-
-  document.body.appendChild(dropdown);
 }
 
 /**
@@ -466,76 +558,107 @@ function displaySearchSuggestions(results: ScoredCalculator[], inputElement: HTM
 function showSearchSuggestions(e: FocusEvent): void {
   const target = e.target as HTMLInputElement;
   const query = target.value.trim();
-  if (query.length >= 2) {
-    const results = searchCalculators(query, 5);
-    displaySearchSuggestions(results, target);
-  }
+  if (query.length < 2) return;
+
+  const token = ++suggestionToken;
+  loadIndex()
+    .then(() => {
+      if (token !== suggestionToken) return;
+      displaySearchSuggestions(searchCalculators(query, 5), target);
+    })
+    .catch(() => {});
 }
 
 /**
  * Hide search suggestions
  */
 function hideSearchSuggestions(): void {
+  // Invalidate any in-flight suggestion render so a late index fetch can't
+  // re-open the dropdown after it was dismissed.
+  suggestionToken++;
   const existingSuggestions = document.getElementById('search-suggestions');
   if (existingSuggestions) {
     existingSuggestions.remove();
   }
+  suggestionAnchor = null;
+  window.removeEventListener('scroll', positionSuggestions);
+  window.removeEventListener('resize', positionSuggestions);
+}
+
+/** Shared markup for the "nothing to show" states on the search page. */
+function renderSearchPlaceholder(
+  icon: string,
+  heading: string,
+  body: string,
+  tagsHeading: string,
+  tags: string[],
+): void {
+  const resultsContainer = document.getElementById('search-results');
+  if (!resultsContainer) return;
+
+  resultsContainer.innerHTML = `
+    <div class="no-results">
+      <div class="no-results-icon">${icon}</div>
+      <h2>${heading}</h2>
+      <p>${body}</p>
+      <div class="suggestions">
+        <h3>${tagsHeading}</h3>
+        <div class="suggestion-tags">
+          ${tags
+            .map(
+              tag =>
+                `<a href="/search?q=${encodeURIComponent(tag.toLowerCase())}" class="suggestion-tag">${tag}</a>`,
+            )
+            .join('')}
+        </div>
+      </div>
+      <a href="/calculators" class="btn btn-primary">Browse All Calculators</a>
+    </div>
+  `;
 }
 
 /**
  * Display no results message
  */
 function displayNoResults(query: string): void {
-  const resultsContainer = document.getElementById('search-results');
-  if (!resultsContainer) return;
-
-  resultsContainer.innerHTML = `
-    <div class="no-results">
-      <div class="no-results-icon">🔍</div>
-      <h2>No calculators found for "${escapeHtml(query)}"</h2>
-      <p>Try different keywords or browse our categories below:</p>
-      <div class="suggestions">
-        <h3>Popular Searches:</h3>
-        <div class="suggestion-tags">
-          <a href="/search?q=mortgage" class="suggestion-tag">Mortgage</a>
-          <a href="/search?q=bmi" class="suggestion-tag">BMI</a>
-          <a href="/search?q=loan" class="suggestion-tag">Loan</a>
-          <a href="/search?q=calorie" class="suggestion-tag">Calorie</a>
-          <a href="/search?q=interest" class="suggestion-tag">Interest</a>
-          <a href="/search?q=budget" class="suggestion-tag">Budget</a>
-        </div>
-      </div>
-      <a href="/calculators" class="btn btn-primary">Browse All Calculators</a>
-    </div>
-  `;
+  renderSearchPlaceholder(
+    '🔍',
+    `No calculators found for "${escapeHtml(query)}"`,
+    'Try different keywords or browse our categories below:',
+    'Popular Searches:',
+    ['Mortgage', 'BMI', 'Loan', 'Calorie', 'Interest', 'Budget'],
+  );
 }
 
 /**
  * Display no query message
  */
 function displayNoQuery(): void {
-  const resultsContainer = document.getElementById('search-results');
-  if (!resultsContainer) return;
+  const resultsCount = document.getElementById('results-count');
+  if (resultsCount) resultsCount.textContent = '';
+  renderSearchPlaceholder(
+    '🔎',
+    'Start Your Search',
+    'Enter a search term to find the calculator you need.',
+    'Try searching for:',
+    ['Mortgage', 'BMI', 'Loan', 'Retirement', 'Weight', 'Investment'],
+  );
+}
 
-  resultsContainer.innerHTML = `
-    <div class="no-results">
-      <div class="no-results-icon">🔎</div>
-      <h2>Start Your Search</h2>
-      <p>Enter a search term to find the calculator you need.</p>
-      <div class="suggestions">
-        <h3>Try searching for:</h3>
-        <div class="suggestion-tags">
-          <a href="/search?q=mortgage" class="suggestion-tag">Mortgage</a>
-          <a href="/search?q=bmi" class="suggestion-tag">BMI</a>
-          <a href="/search?q=loan" class="suggestion-tag">Loan</a>
-          <a href="/search?q=retirement" class="suggestion-tag">Retirement</a>
-          <a href="/search?q=weight" class="suggestion-tag">Weight</a>
-          <a href="/search?q=investment" class="suggestion-tag">Investment</a>
-        </div>
-      </div>
-      <a href="/calculators" class="btn btn-primary">Browse All Calculators</a>
-    </div>
-  `;
+/**
+ * Shown when the search index can't be fetched (offline, deploy in flight).
+ * Browsing still works, so point at the directory rather than dead-ending.
+ */
+function displayIndexError(query: string): void {
+  const resultsCount = document.getElementById('results-count');
+  if (resultsCount) resultsCount.textContent = '';
+  renderSearchPlaceholder(
+    '⚠️',
+    "Search is unavailable right now",
+    `We couldn't load the calculator list to search for "${escapeHtml(query)}". Check your connection and try again, or browse by category.`,
+    'Browse instead:',
+    ['Mortgage', 'BMI', 'Loan', 'Budget'],
+  );
 }
 
 /**
@@ -567,8 +690,7 @@ function showSearchError(message: string): void {
  * Get category name from category ID
  */
 function getCategoryName(categoryId: string): string {
-  const category = categoriesData.categories.find(cat => cat.id === categoryId);
-  return category ? category.name : categoryId;
+  return index?.categories[categoryId] || categoryId;
 }
 
 /**
@@ -631,4 +753,4 @@ if (document.readyState === 'loading') {
 }
 
 // Export for use in other modules
-export { searchCalculators, getCategoryName };
+export { searchCalculators, getCategoryName, loadIndex };

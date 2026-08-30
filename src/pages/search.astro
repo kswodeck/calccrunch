@@ -1,24 +1,22 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
+import { allCalculators } from "../utils/calculators";
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
   { label: "Search", href: null },
 ];
 
-// Get query from URL (for SSR meta tags)
-const searchQuery = Astro.url.searchParams.get("q") || "";
+// This page is prerendered, so there is no request-time query to read here —
+// the results (and the document title) are filled in by search.ts from the
+// URL in the browser. Meta tags describe the search page itself.
 ---
 
 <BaseLayout
-  title={searchQuery
-    ? `Search Results for "${searchQuery}" | CalcCrunch`
-    : "Search Calculators | CalcCrunch"}
-  description={searchQuery
-    ? `Search results for ${searchQuery} on CalcCrunch. Find free calculators for financial planning, health tracking, and more.`
-    : "Search our complete collection of 5+ free calculators. Find the perfect tool for your needs."}
-  keywords={`calculator search, find calculator, ${searchQuery}`}
+  title="Search Calculators"
+  description={`Search our complete collection of ${allCalculators.length}+ free calculators. Find the perfect tool for your needs.`}
+  keywords="calculator search, find calculator, free online calculators"
 >
   <div class="search-page">
     <div class="container">
@@ -58,16 +56,15 @@ const searchQuery = Astro.url.searchParams.get("q") || "";
         </form>
       </div>
 
-      <!-- Results Info -->
+      <!-- Results Info. The query comes from the URL at runtime: this page is
+           prerendered, so Astro.url has no search params at build time and a
+           `{searchQuery && ...}` guard here would drop the element for every
+           visitor. Render it empty and let search.ts fill it in. -->
       <div class="results-info">
-        <span id="results-count">Searching...</span>
-        {
-          searchQuery && (
-            <span class="results-query">
-              for "<strong id="search-query">{searchQuery}</strong>"
-            </span>
-          )
-        }
+        <span id="results-count">Searching&hellip;</span>
+        <span class="results-query" id="results-query" hidden>
+          for "<strong id="search-query"></strong>"
+        </span>
       </div>
 
       <!-- Search Results Container -->

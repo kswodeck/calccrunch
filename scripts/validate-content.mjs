@@ -100,9 +100,62 @@ if (calcData && categories && faqs && howto && blog) {
     }
   }
 
+  // 8. Published pages must not link to drip-scheduled ones. Pages for
+  //    calculators/posts dated in the future are not generated, so a link to
+  //    one is a live 404. Body markdown is checked alongside the data files.
+  const today = new Date().toISOString().split("T")[0];
+  const isPublished = (date) => !date || date.split("T")[0] <= today;
+
+  const scheduledCalcs = new Set(
+    calcs.filter((c) => !isPublished(c.lastUpdated)).map((c) => c.slug),
+  );
+  const scheduledPosts = new Set(
+    blog.posts.filter((b) => !isPublished(b.publishDate)).map((b) => b.slug),
+  );
+
+  const linkTargets = (body) => [
+    ...[...body.matchAll(/\]\((\/(?:calculators|blog)\/[\w-]+)\/?\)/g)].map((m) => m[1]),
+    ...[...body.matchAll(/href="(\/(?:calculators|blog)\/[\w-]+)\/?"/g)].map((m) => m[1]),
+  ];
+
+  const checkBody = (label, path) => {
+    if (!existsSync(path)) return;
+    for (const href of linkTargets(readFileSync(path, "utf-8"))) {
+      const [, kind, slug] = href.split("/");
+      const scheduled = kind === "blog" ? scheduledPosts : scheduledCalcs;
+      const known = kind === "blog"
+        ? new Set(blog.posts.map((b) => b.slug))
+        : slugSet;
+      if (scheduled.has(slug)) {
+        errors.push(`${label} links to not-yet-published ${kind} "${slug}" (${href} is a 404 until its publish date)`);
+      } else if (!known.has(slug)) {
+        errors.push(`${label} links to unknown ${kind} "${slug}" (${href})`);
+      }
+    }
+  };
+
+  for (const post of blog.posts) {
+    if (!isPublished(post.publishDate)) continue;
+    checkBody(`Blog "${post.slug}"`, p("src", "content", "blog", `${post.slug}.md`));
+  }
+  for (const c of calcs) {
+    if (!isPublished(c.lastUpdated)) continue;
+    checkBody(`Calculator "${c.slug}"`, p("src", "pages", "calculators", `${c.slug}.md`));
+    for (const r of c.relatedCalculators || []) {
+      if (scheduledCalcs.has(r)) {
+        errors.push(`"${c.slug}".relatedCalculators -> "${r}" is not published yet (renders a 404 link)`);
+      }
+    }
+  }
+
   console.log(
     `Validated ${calcs.length} calculators, ${blog.posts.length} blog posts.`,
   );
+  if (scheduledCalcs.size || scheduledPosts.size) {
+    console.log(
+      `  (${scheduledCalcs.size} calculator(s) and ${scheduledPosts.size} post(s) scheduled for a future date)`,
+    );
+  }
 }
 
 const schemaGaps = warnings.filter((w) => w.includes("FAQ schema")).length;

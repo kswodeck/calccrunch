@@ -14,6 +14,9 @@ const {
   canonical,
 } = Astro.props;
 
+const FONT_CSS =
+  "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600&family=Roboto+Mono:wght@400;500&display=swap";
+
 const fullTitle = `${title} | CalcCrunch`;
 const canonicalURL =
   canonical || new URL(Astro.url.pathname, Astro.site).toString();
@@ -25,8 +28,14 @@ const canonicalURL =
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" type="image/png" href="/images/logos/logo-icon.png" />
-    <link rel="apple-touch-icon" href="/images/logos/logo-icon.png" />
+    {/*
+      These used to point at logo-icon.png — a 738x738, 550 KB source image
+      that every page load pulled down just to draw a 16px tab icon. The
+      resized variants below carry the same artwork at ~15 KB and are derived
+      from it at build time by scripts/generate-icons.mjs.
+    */}
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/logos/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/logos/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="alternate" type="application/rss+xml" title="CalcCrunch RSS Feed" href="/rss.xml" />
 
@@ -41,15 +50,25 @@ const canonicalURL =
       })();
     </script>
 
-    <!-- Google Fonts (non-blocking) -->
+    {/*
+      Google Fonts. `media="print"` keeps the request off the critical
+      rendering path; the onload flip applies it as soon as it arrives. Every
+      family has a system fallback in variables.css and the URL carries
+      display=swap, so text paints immediately either way.
+    */}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600&family=Roboto+Mono:wght@400;500&display=swap" />
+    <link
+      rel="stylesheet"
+      href={FONT_CSS}
+      media="print"
+      onload="this.media='all';this.onload=null"
+    />
+    <noscript><link rel="stylesheet" href={FONT_CSS} /></noscript>
 
     <!-- Resource Hints -->
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
 
     <!-- Theme Color -->
     <meta name="theme-color" content="#2C5F8D" />
@@ -123,6 +142,25 @@ const canonicalURL =
 
     <Footer />
     <PushNotification />
+
+    {/*
+      Collapses the placeholder for any ad slot the network never filled
+      (usually an ad blocker), so readers don't see an empty grey box. Lives
+      here rather than in AdUnit.astro because it already sweeps every
+      .adsbygoogle on the page — inlining it per unit shipped up to four
+      identical copies of this script in a single document.
+    */}
+    <script is:inline>
+      setTimeout(function () {
+        document.querySelectorAll(".adsbygoogle").forEach(function (el) {
+          if (el.offsetHeight === 0 || el.childElementCount === 0) {
+            var unit = el.closest(".ad-unit");
+            if (unit) unit.style.display = "none";
+          }
+        });
+      }, 500);
+    </script>
+
     <script>
       import "../scripts/search";
     </script>
@@ -142,17 +180,26 @@ const canonicalURL =
       initThemeToggle();
       document.addEventListener('astro:after-swap', initThemeToggle);
     </script>
+    {/*
+      Netlify Identity is only needed to complete an emailed invite/recovery
+      link, which lands on the site root with the token in the URL fragment.
+      Loading the ~100 KB widget on all 180+ pages to catch that rare case is
+      not worth it, so it is injected on demand. (/admin/ loads the widget
+      itself — see public/admin/index.html.) Kept terse: this inline script
+      ships in every page's HTML.
+    */}
     <script is:inline>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", function(user) {
-          if (!user) {
-            window.netlifyIdentity.on("login", function() {
-              document.location.href = "/admin/";
-            });
-          }
-        });
+      if (/[#&](invite|recovery|confirmation|email_change|access)_token=/.test(location.hash)) {
+        var ni = document.createElement("script");
+        ni.src = "https://identity.netlify.com/v1/netlify-identity-widget.js";
+        ni.async = true;
+        ni.onload = function () {
+          window.netlifyIdentity && netlifyIdentity.on("init", function (user) {
+            if (!user) netlifyIdentity.on("login", function () { location.href = "/admin/"; });
+          });
+        };
+        document.head.appendChild(ni);
       }
     </script>
-    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" is:inline></script>
   </body>
 </html>
