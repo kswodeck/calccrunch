@@ -1046,5 +1046,31 @@
       "q": "What is a 'good' standard deviation?",
       "a": "There's no universal answer — it depends on the units and context of your data. A useful way to judge it is relative to the mean (the coefficient of variation) or by comparing it to similar data sets. For example, a standard deviation of 5 points is small for SAT scores but large for a 10-point quiz."
     }
+  ],
+  "z-score-calculator": [
+    {
+      "q": "What is a z-score in simple terms?",
+      "a": "A z-score (or standard score) tells you how many standard deviations a value is above or below the mean of its data set. A z-score of 0 means the value equals the mean; +1 means it's one standard deviation above the mean; -1 means one standard deviation below."
+    },
+    {
+      "q": "How do you calculate a z-score?",
+      "a": "Subtract the mean from your value, then divide by the standard deviation: z = (x − μ) ÷ σ. For example, if a test score is 85, the mean is 75, and the standard deviation is 10, the z-score is (85 − 75) ÷ 10 = 1.0."
+    },
+    {
+      "q": "How do I convert a z-score to a percentile?",
+      "a": "Look up the z-score on a standard normal distribution table (z-table), or use a calculator that applies the cumulative distribution function (CDF). A z-score of 0 is the 50th percentile, +1.0 is about the 84th percentile, and +1.96 is about the 97.5th percentile."
+    },
+    {
+      "q": "What does a negative z-score mean?",
+      "a": "A negative z-score means the value is below the mean. For example, a z-score of -1.5 means the value is 1.5 standard deviations below the average, which corresponds to roughly the 7th percentile."
+    },
+    {
+      "q": "What is considered a high or unusual z-score?",
+      "a": "In most contexts, a z-score with an absolute value greater than 2 is considered somewhat unusual, and greater than 3 is often treated as a statistical outlier, since over 99.7% of values in a normal distribution fall within 3 standard deviations of the mean."
+    },
+    {
+      "q": "What's the difference between a z-score and standard deviation?",
+      "a": "Standard deviation measures how spread out an entire data set is. A z-score uses that standard deviation to describe where one specific value falls relative to the mean. You need the standard deviation first to calculate any z-score."
+    }
   ]
 }

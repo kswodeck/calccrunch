@@ -1211,6 +1211,68 @@
         "fall marathon training",
         "marathon training schedule"
       ]
+    },
+    {
+      "slug": "z-score-calculator-guide",
+      "title": "How to Calculate a Z-Score (With Examples)",
+      "description": "A z-score tells you how many standard deviations a value is from the mean. Learn the formula, see worked examples, and convert z-scores to percentiles.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-09-02T09:00:00-07:00",
+      "updatedDate": "2026-09-02T09:00:00-07:00",
+      "category": "Math & Conversions",
+      "tags": [
+        "statistics",
+        "math",
+        "z-score",
+        "standard deviation",
+        "percentile"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "z-score-calculator",
+        "standard-deviation-calculator",
+        "average-calculator"
+      ],
+      "seoTitle": "How to Calculate a Z-Score (Formula + Examples) — 2026",
+      "seoDescription": "Learn how to calculate a z-score step by step, what it means, and how to convert it to a percentile — with worked examples and a free z-score calculator.",
+      "keywords": [
+        "how to calculate z score",
+        "z score formula",
+        "z score calculator",
+        "z score to percentile",
+        "standard score"
+      ]
+    },
+    {
+      "slug": "due-date-calculator-guide",
+      "title": "How Is a Due Date Calculated? Pregnancy Due Date Explained",
+      "description": "Your due date is estimated as 280 days from the first day of your last period. Learn how Naegele's rule works, how ultrasounds adjust it, and why only 5% of babies arrive on their exact due date.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-09-05T09:00:00-07:00",
+      "updatedDate": "2026-09-05T09:00:00-07:00",
+      "category": "Health & Fitness",
+      "tags": [
+        "pregnancy",
+        "due date",
+        "health",
+        "family planning"
+      ],
+      "readTime": "8 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "pregnancy-calculator",
+        "date-difference-calculator"
+      ],
+      "seoTitle": "How Is a Due Date Calculated? Pregnancy Due Date Explained",
+      "seoDescription": "Learn exactly how pregnancy due dates are calculated (Naegele's rule), how ultrasound and IVF dating differ, and how accurate due dates really are.",
+      "keywords": [
+        "how is due date calculated",
+        "pregnancy due date",
+        "due date calculator",
+        "naegele's rule",
+        "how accurate is due date"
+      ]
     }
   ]
 }

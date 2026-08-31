@@ -615,5 +615,17 @@
       "Click Calculate to see the standard deviation, variance, mean, and a full breakdown.",
       "Bookmark or share the URL — your numbers and settings are saved automatically."
     ]
+  },
+  "z-score-calculator": {
+    "name": "How to Use the Z-Score Calculator",
+    "description": "Calculate a z-score, percentile, and probability from a value, mean, and standard deviation in seconds.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Enter your value (x) — the raw data point you want to standardize.",
+      "Enter the mean (μ) of the data set or distribution.",
+      "Enter the standard deviation (σ) of the data set or distribution.",
+      "Click Calculate to see the z-score, percentile, and probability breakdown.",
+      "Bookmark or share the URL — your inputs are saved automatically."
+    ]
   }
 }

@@ -102,7 +102,7 @@ Each post links ≥2 calculators via `relatedCalculators`.
 | ratio-calculator-guide | "how to simplify a ratio" / "ratio calculator" | ratio-calculator, fraction-calculator, average-calculator | done |
 | running-pace-guide | "running pace calculator" / "how to calculate pace per mile" | pace-calculator, calories-burned-calculator | done |
 | how-much-water-should-you-drink | "water intake calculator" / "how much water per day" | water-intake-calculator, calorie-calculator, bmi-calculator | done |
-| due-date-calculator-guide | "pregnancy due date" / "how is due date calculated" | pregnancy-calculator, date-difference-calculator | todo — no longer blocked on a new tool (see Tier 4 note above: `pregnancy-calculator` already covers this), open for a future run |
+| due-date-calculator-guide | "pregnancy due date" / "how is due date calculated" | pregnancy-calculator, date-difference-calculator | done — shipped 2026-08-31 run |
 | standard-deviation-guide | "how to calculate standard deviation" / "what is standard deviation" | average-calculator, percentage-change-calculator | done — shipped 2026-08-24 run alongside new standard-deviation-calculator tool |
 
 ## Blog backlog (new ideas from 2026-07-13 research run)
@@ -198,7 +198,7 @@ this run but still valid net-new angles once their linked tools/posts have bandw
 | fall-marathon-training-plan-guide | "marathon training plan" / "when to start training for a fall marathon" — September-November is peak marathon season; carried over, still net-new, no existing post covers training-plan timing | pace-calculator, calories-burned-calculator | done — shipped 2026-08-24 run |
 | weighted-gpa-scale-changes-guide | "weighted GPA scale" / "how do AP and honors classes affect GPA" — distinct back-to-school angle from the existing gpa-calculator-guide, which only covers the basic formula | gpa-calculator, average-calculator | todo — still valid/newsworthy (Pasadena ISD, Plainfield IL, Hillsborough FL, Texas SB1191, Louisiana HB113 scale changes confirmed via 2026-08-24 research) but now blocked on tool accuracy: inspected gpa-calculator this run and found it only computes standard 4.0/4.3 scales (Standard/Plus-Minus/No-Minus dropdown), with no real per-course AP/Honors weighting or custom 5.0/6.0/10-point scale support despite an info-box mentioning weighted GPA. Ship this post only after either (a) adding true weighted-scale support to gpa-calculator, or (b) building a dedicated gpa-scale-converter tool (see new idea below) — do not link this angle to the existing tool as-is to avoid overselling capability. |
 | standard-deviation-guide | "how to calculate standard deviation" / "what is standard deviation" — evergreen math-homework query, carried over across multiple runs with no seasonal urgency | average-calculator, percentage-change-calculator | done — shipped 2026-08-24 run alongside new standard-deviation-calculator tool |
-| due-date-calculator-guide | "pregnancy due date" / "how is due date calculated" — still blocked on the due-date-calculator tool (Tier 4, todo above) | pregnancy-calculator, date-difference-calculator | todo — no longer blocked; pregnancy-calculator (shipped 2026-06-03) already covers due-date computation via Naegele's rule. Open for a future run. |
+| due-date-calculator-guide | "pregnancy due date" / "how is due date calculated" | pregnancy-calculator, date-difference-calculator | done — shipped 2026-08-31 run |
 
 ## Blog backlog (new ideas from 2026-08-24 research run)
 
@@ -224,9 +224,32 @@ that angle (sales-tax-calculator still applies) rather than framed as broad back
 | Slug | Target query | Links to | Status |
 |---|---|---|---|
 | gpa-scale-converter | "GPA scale converter" / "convert 4.0 GPA to 5.0 scale" — net-new tool to properly unblock weighted-gpa-scale-changes-guide (see blocked note above) with an honest, accurate match instead of overselling gpa-calculator | gpa-calculator, average-calculator | todo (build before attempting the weighted-GPA blog angle again) |
-| z-score-calculator | "z score calculator" / "how to calculate z score" — natural stats follow-up to standard-deviation-calculator shipped this run; same math-homework audience, no existing tool covers it | standard-deviation-calculator, average-calculator | todo (net-new, math-conversions) |
+| z-score-calculator | "z score calculator" / "how to calculate z score" — natural stats follow-up to standard-deviation-calculator shipped this run; same math-homework audience, no existing tool covers it | standard-deviation-calculator, average-calculator | done — shipped 2026-08-31 run alongside new z-score-calculator-guide post |
 | ovulation-calculator | "ovulation calculator" / "most fertile days calculator" — health-fitness topic with no existing tool; pairs naturally with pregnancy-calculator, distinct from due-date computation | pregnancy-calculator, date-difference-calculator | todo (net-new, health-fitness) |
-| labor-day-2026-sales-tax-holidays (re-scoped) | "Louisiana Second Amendment holiday 2026" / "Florida hunting fishing camping sales tax exemption" — narrower, more accurate angle confirmed this run (see why-now note above); replace the general back-to-school framing used in earlier runs | sales-tax-calculator, discount-calculator | todo (re-scope before shipping; still time-boxed to publish before the Sept 2026 holidays) |
+| labor-day-2026-sales-tax-holidays (re-scoped) | "Louisiana Second Amendment holiday 2026" / "Florida hunting fishing camping sales tax exemption" — narrower, more accurate angle confirmed this run (see why-now note above); replace the general back-to-school framing used in earlier runs | sales-tax-calculator, discount-calculator | **expired — dropped 2026-08-31 run**. Louisiana Second Amendment holiday runs Sept 4-6, 2026 and the next scheduled build (Wed Sept 2) leaves only ~2 days of runway, not enough time to rank before the event passes. Not worth shipping as a dated post this late; revisit as a pre-scheduled item ~3-4 weeks ahead of the 2027 holiday instead. |
+
+## Blog backlog (new ideas from 2026-08-31 research run)
+
+why now: shipped z-score-calculator (net-new Tier 3 math tool, carried over from the 2026-08-24 run) plus its
+z-score-calculator-guide post this run — confirmed via WebSearch this is a stable, evergreen stats-homework query
+with dozens of established competitor tools, and it completes a natural stats cluster with the existing
+standard-deviation-calculator and average-calculator (now bidirectionally linked). Also shipped
+due-date-calculator-guide, closing out a long-carried-over backlog item — pregnancy-calculator (shipped 2026-06-03)
+already covers Naegele's-rule due-date math, so this was a pure content play with no new tool required; verified
+the calculator's day-count constants (280/266/261/263 days) against the post before publishing to keep the two in
+sync. Dropped the re-scoped labor-day-2026-sales-tax-holidays idea (see expired note in the Tier row above) since
+the Sept 4-6 Louisiana holiday no longer has enough runway before the next scheduled build to be worth shipping as
+a dated post. Also confirmed via WebSearch that DST ends Nov 1, 2026 (the earliest possible date, first Sunday of
+November) and that "confidence interval calculator" has real, multi-competitor search demand as a natural next
+stats-cluster tool.
+
+| Slug | Target query | Links to | Status |
+|---|---|---|---|
+| confidence-interval-calculator | "confidence interval calculator" / "95% confidence interval formula" — natural next stats-cluster tool following z-score-calculator and standard-deviation-calculator shipped this run and last; confirmed real demand via multiple established competitor tools | z-score-calculator, standard-deviation-calculator, average-calculator | todo (net-new, math-conversions) |
+| daylight-saving-time-2026-guide | "when does daylight saving time end 2026" / "clocks fall back 2026" — DST ends Nov 1, 2026 (confirmed via WebSearch, earliest possible date); evergreen annual query, publish ~3-4 weeks ahead (early-to-mid October) to catch searches before the date | date-difference-calculator, time-zone-converter | todo (time-box: publish early-mid October 2026, not before) |
+| gpa-scale-converter | "GPA scale converter" / "convert 4.0 GPA to 5.0 scale" (carried over from 2026-08-24 run — still not built) — needed to honestly unblock weighted-gpa-scale-changes-guide instead of overselling gpa-calculator's standard-scale-only math | gpa-calculator, average-calculator | todo (build before attempting the weighted-GPA blog angle again) |
+| ovulation-calculator | "ovulation calculator" / "most fertile days calculator" (carried over from 2026-08-24 run) — health-fitness topic with no existing tool; pairs naturally with pregnancy-calculator, distinct from due-date computation now covered by this run's guide | pregnancy-calculator, date-difference-calculator | todo (net-new, health-fitness) |
+| percentile-calculator | "percentile calculator" — distinct query from z-score-calculator (some searchers want a raw-data percentile rank rather than a normal-distribution z-score); worth scoping carefully to avoid overlapping the new z-score tool | z-score-calculator, average-calculator | todo (net-new, math-conversions; scope to avoid duplicating z-score-calculator) |
 
 ## Retention backlog
 
