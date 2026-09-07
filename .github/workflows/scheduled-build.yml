@@ -69,8 +69,47 @@ jobs:
             fi
             echo "Attempt $i/25: no new deploy yet (current stamp: ${built_at:-unavailable})."
           done
-          echo "::error::No new deploy appeared within 25 minutes of triggering the Netlify build hook. Check the Netlify dashboard (failed builds, stopped builds, build-minute limits, billing)."
+          echo "::error::No new deploy appeared within 25 minutes of triggering the Netlify build hook."
           exit 1
+
+      - name: Explain why Netlify did not publish
+        # Polling /build-info.json only proves nothing shipped — it can't say
+        # whether Netlify failed the build, never started one, or is blocked at
+        # the account level. That ambiguity cost days of guesswork once already.
+        # With a read-only Netlify PAT this asks Netlify directly and prints the
+        # real state and error. Optional: without the secrets it just says so,
+        # and it never changes the job's pass/fail outcome.
+        if: failure()
+        continue-on-error: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          if [ -z "$NETLIFY_AUTH_TOKEN" ] || [ -z "$NETLIFY_SITE_ID" ]; then
+            echo "No NETLIFY_AUTH_TOKEN / NETLIFY_SITE_ID secret set, so the cause can't be read automatically."
+            echo "Add them (Netlify → User settings → Applications → Personal access tokens, and"
+            echo "Project configuration → General → Site ID) and this step will print the real reason next time."
+            echo "Until then, check https://app.netlify.com for: failed builds, build-minute limits, billing."
+            exit 0
+          fi
+          echo "Last 5 deploys according to Netlify:"
+          curl -fsS --max-time 30 \
+            -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
+            "https://api.netlify.com/api/v1/sites/$NETLIFY_SITE_ID/deploys?per_page=5" \
+          | jq -r '.[] | "  \(.created_at)  state=\(.state)  branch=\(.branch // "-")  \(.error_message // "")"'
+
+          echo
+          echo "Account build status (build minutes / whether builds are blocked):"
+          account=$(curl -fsS --max-time 30 \
+            -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
+            "https://api.netlify.com/api/v1/sites/$NETLIFY_SITE_ID" | jq -r '.account_slug // empty')
+          if [ -n "$account" ]; then
+            curl -fsS --max-time 30 \
+              -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
+              "https://api.netlify.com/api/v1/${account}/builds/status" | jq '.'
+          else
+            echo "  (could not resolve the account slug for this site)"
+          fi
 
   # Separate job so the alert fires even if trigger-netlify-build is cancelled
   # by its own timeout-minutes (step-level `if: failure()` is false for
