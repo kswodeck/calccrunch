@@ -627,5 +627,17 @@
       "Click Calculate to see the z-score, percentile, and probability breakdown.",
       "Bookmark or share the URL — your inputs are saved automatically."
     ]
+  },
+  "confidence-interval-calculator": {
+    "name": "How to Use the Confidence Interval Calculator",
+    "description": "Calculate a confidence interval for a sample mean or proportion, with margin of error and the z or t critical value shown.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Choose whether you're calculating a confidence interval for a sample mean (average) or a sample proportion (percentage).",
+      "For a mean, enter the sample mean, sample standard deviation, and sample size. For a proportion, enter the sample percentage and sample size.",
+      "Pick a confidence level — 90%, 95%, and 99% are the most common.",
+      "Click Calculate to see the confidence interval, margin of error, and the critical value (t or z) used.",
+      "Bookmark or share the URL — your inputs and settings are saved automatically."
+    ]
   }
 }

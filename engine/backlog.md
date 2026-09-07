@@ -245,11 +245,36 @@ stats-cluster tool.
 
 | Slug | Target query | Links to | Status |
 |---|---|---|---|
-| confidence-interval-calculator | "confidence interval calculator" / "95% confidence interval formula" — natural next stats-cluster tool following z-score-calculator and standard-deviation-calculator shipped this run and last; confirmed real demand via multiple established competitor tools | z-score-calculator, standard-deviation-calculator, average-calculator | todo (net-new, math-conversions) |
+| confidence-interval-calculator | "confidence interval calculator" / "95% confidence interval formula" — natural next stats-cluster tool following z-score-calculator and standard-deviation-calculator shipped this run and last; confirmed real demand via multiple established competitor tools | z-score-calculator, standard-deviation-calculator, average-calculator | done — shipped 2026-09-07 run alongside new confidence-interval-calculator-guide post |
 | daylight-saving-time-2026-guide | "when does daylight saving time end 2026" / "clocks fall back 2026" — DST ends Nov 1, 2026 (confirmed via WebSearch, earliest possible date); evergreen annual query, publish ~3-4 weeks ahead (early-to-mid October) to catch searches before the date | date-difference-calculator, time-zone-converter | todo (time-box: publish early-mid October 2026, not before) |
 | gpa-scale-converter | "GPA scale converter" / "convert 4.0 GPA to 5.0 scale" (carried over from 2026-08-24 run — still not built) — needed to honestly unblock weighted-gpa-scale-changes-guide instead of overselling gpa-calculator's standard-scale-only math | gpa-calculator, average-calculator | todo (build before attempting the weighted-GPA blog angle again) |
 | ovulation-calculator | "ovulation calculator" / "most fertile days calculator" (carried over from 2026-08-24 run) — health-fitness topic with no existing tool; pairs naturally with pregnancy-calculator, distinct from due-date computation now covered by this run's guide | pregnancy-calculator, date-difference-calculator | todo (net-new, health-fitness) |
 | percentile-calculator | "percentile calculator" — distinct query from z-score-calculator (some searchers want a raw-data percentile rank rather than a normal-distribution z-score); worth scoping carefully to avoid overlapping the new z-score tool | z-score-calculator, average-calculator | todo (net-new, math-conversions; scope to avoid duplicating z-score-calculator) |
+
+## Blog backlog (new ideas from 2026-09-07 research run)
+
+why now: shipped confidence-interval-calculator (net-new Tier 3 math tool, carried over from the 2026-08-31 run)
+plus its confidence-interval-calculator-guide post this run — confirmed via WebSearch this is a stable, evergreen
+stats query with dozens of established competitor tools (calculator.net, Omni, Pearson), completing a natural
+stats cluster with the existing z-score-calculator and standard-deviation-calculator (now bidirectionally linked,
+along with average-calculator). Also shipped fafsa-2027-28-guide as a net-new, non-backlog topic surfaced this
+run — confirmed via WebSearch that the 2027-28 FAFSA is on track to open October 1, 2026 (restoring the
+traditional launch date after delayed 2024-25/2025-26 rollouts), with a mid-September 2026 waitlist-lift step
+providing a real "why now" window; timed 2.5+ weeks ahead of the October 1 opening so it has time to rank.
+Confirmed DST still ends Nov 1, 2026 (unchanged from prior run, still too early to publish the existing
+daylight-saving-time-2026-guide backlog item — hold for early-mid October per its existing time-box). Also
+confirmed via WebSearch that 2027 ACA Open Enrollment (Nov 1, 2026 – Jan 15, 2027 in most states) and 2027
+employer open-enrollment windows (mostly October) are real but have conflicting end-date reporting across
+sources (Dec 15 vs. Jan 15) and unannounced 2027 FSA limits — not solid enough to ship confidently yet; revisit
+once IRS Revenue Procedure figures for 2027 are finalized (typically released in fall).
+
+| Slug | Target query | Links to | Status |
+|---|---|---|---|
+| daylight-saving-time-2026-guide | "when does daylight saving time end 2026" / "clocks fall back 2026" (carried over, still correctly time-boxed) — DST confirmed ends Nov 1, 2026; do not publish before early-mid October | date-difference-calculator, time-zone-converter | todo (time-box: publish early-mid October 2026, not before) |
+| open-enrollment-2027-fsa-hsa-guide | "2027 FSA contribution limit" / "open enrollment 2027 dates" — net-new angle once 2027 IRS FSA/HSA limits are finalized (expected fall 2026, likely via Revenue Procedure); ACA marketplace Open Enrollment confirmed Nov 1, 2026 start but end-date reporting (Dec 15 vs Jan 15) is inconsistent across sources as of this run — verify directly with healthcare.gov before shipping | budget-calculator, savings-goal-calculator | todo (hold until 2027 FSA/HSA limits are officially confirmed, likely Sept-Oct 2026) |
+| percentile-calculator | "percentile calculator" / "percentile rank formula" (carried over from 2026-08-31 run, still not built) — distinct from z-score-calculator: some searchers want a raw-data percentile rank (B + 0.5E)/N formula rather than a normal-distribution z-score; scope carefully to avoid overlap | z-score-calculator, average-calculator, confidence-interval-calculator | todo (net-new, math-conversions) |
+| gpa-scale-converter | "GPA scale converter" / "convert 4.0 GPA to 5.0 scale" (carried over across multiple runs — still not built) — needed to honestly unblock weighted-gpa-scale-changes-guide instead of overselling gpa-calculator's standard-scale-only math | gpa-calculator, average-calculator | todo (build before attempting the weighted-GPA blog angle again) |
+| ovulation-calculator | "ovulation calculator" / "most fertile days calculator" (carried over across multiple runs) — health-fitness topic with no existing tool; pairs naturally with pregnancy-calculator | pregnancy-calculator, date-difference-calculator | todo (net-new, health-fitness) |
 
 ## Retention backlog
 

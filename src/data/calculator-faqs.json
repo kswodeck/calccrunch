@@ -1072,5 +1072,31 @@
       "q": "What's the difference between a z-score and standard deviation?",
       "a": "Standard deviation measures how spread out an entire data set is. A z-score uses that standard deviation to describe where one specific value falls relative to the mean. You need the standard deviation first to calculate any z-score."
     }
+  ],
+  "confidence-interval-calculator": [
+    {
+      "q": "What does a 95% confidence interval actually mean?",
+      "a": "It means that if you repeated your sampling process many times and built a confidence interval each time, about 95% of those intervals would contain the true population mean or proportion. It does NOT mean there's a 95% chance the true value falls in this one specific interval — that's a common misconception."
+    },
+    {
+      "q": "Should I use a z-score or a t-score for my confidence interval?",
+      "a": "Use the t-distribution when you only know your sample standard deviation (the usual case for a mean) — it's wider to account for the extra uncertainty of estimating from a sample. Use the z-distribution when you know the true population standard deviation, or for proportions, where the standard error formula doesn't depend on an estimated standard deviation the same way."
+    },
+    {
+      "q": "How does confidence level affect the width of the interval?",
+      "a": "Higher confidence levels produce wider intervals. Moving from 95% to 99% confidence increases the critical value (e.g. z goes from 1.960 to 2.576), which widens the margin of error by about 31% for the same data — you trade precision for certainty."
+    },
+    {
+      "q": "How do I make my confidence interval narrower?",
+      "a": "Increase your sample size (the margin of error shrinks with the square root of n), reduce variability in your data collection, or accept a lower confidence level (e.g. 90% instead of 99%). Of these, increasing sample size is usually the most reliable lever."
+    },
+    {
+      "q": "What sample size do I need for a reliable proportion confidence interval?",
+      "a": "As a rule of thumb, both n × p̂ and n × (1 − p̂) should be at least 5 (some sources say 10) for the normal approximation used here to be reliable. For very small samples or proportions near 0% or 100%, the interval can be misleading."
+    },
+    {
+      "q": "What's the difference between confidence interval and margin of error?",
+      "a": "The margin of error is the ± amount added to and subtracted from your sample statistic. The confidence interval is the resulting range itself — sample statistic minus the margin of error to sample statistic plus the margin of error."
+    }
   ]
 }

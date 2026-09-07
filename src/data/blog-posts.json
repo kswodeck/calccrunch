@@ -1273,6 +1273,68 @@
         "naegele's rule",
         "how accurate is due date"
       ]
+    },
+    {
+      "slug": "confidence-interval-calculator-guide",
+      "title": "How to Calculate a Confidence Interval (With Examples)",
+      "description": "Learn how to calculate a confidence interval for a sample mean or proportion, step by step, with worked examples and a free calculator.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-09-09T09:00:00-07:00",
+      "updatedDate": "2026-09-09T09:00:00-07:00",
+      "category": "Math & Conversions",
+      "tags": [
+        "statistics",
+        "confidence interval",
+        "math",
+        "data analysis"
+      ],
+      "readTime": "8 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "confidence-interval-calculator",
+        "z-score-calculator",
+        "standard-deviation-calculator"
+      ],
+      "seoTitle": "How to Calculate a Confidence Interval (95% CI Formula + Examples)",
+      "seoDescription": "Learn the confidence interval formula for a mean and a proportion, with step-by-step worked examples, a comparison table, and a free confidence interval calculator.",
+      "keywords": [
+        "how to calculate a confidence interval",
+        "confidence interval formula",
+        "95% confidence interval",
+        "confidence interval calculator",
+        "margin of error formula"
+      ]
+    },
+    {
+      "slug": "fafsa-2027-28-guide",
+      "title": "When Does FAFSA Open for 2027-28? Dates, Deadlines & How to Prepare",
+      "description": "The 2027-28 FAFSA opens October 1, 2026. Here's what's new, what documents to gather now, and how to estimate your college costs and aid before you file.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-09-14T09:00:00-07:00",
+      "updatedDate": "2026-09-14T09:00:00-07:00",
+      "category": "Financial Planning",
+      "tags": [
+        "FAFSA",
+        "college planning",
+        "financial aid",
+        "student loans"
+      ],
+      "readTime": "8 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "student-loan-calculator",
+        "college-savings-calculator",
+        "budget-calculator"
+      ],
+      "seoTitle": "FAFSA 2027-28 Opens October 1: Dates, Deadlines & Prep Checklist",
+      "seoDescription": "The 2027-28 FAFSA opens October 1, 2026. Get the key dates, what's new this cycle, a document checklist, and calculators to plan your college costs before you file.",
+      "keywords": [
+        "when does fafsa open 2027-28",
+        "fafsa 2027-28 open date",
+        "fafsa deadline",
+        "fafsa checklist",
+        "federal student aid 2027"
+      ]
     }
   ]
 }
