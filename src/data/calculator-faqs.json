@@ -1098,5 +1098,31 @@
       "q": "What's the difference between confidence interval and margin of error?",
       "a": "The margin of error is the ± amount added to and subtracted from your sample statistic. The confidence interval is the resulting range itself — sample statistic minus the margin of error to sample statistic plus the margin of error."
     }
+  ],
+  "percentile-calculator": [
+    {
+      "q": "What does it mean to be in the 90th percentile?",
+      "a": "Being in the 90th percentile means your value is at or above roughly 90% of everyone else in the data set — not that you scored 90% of the total possible points. For example, a 90th-percentile SAT score means you outperformed about 90% of test-takers, regardless of the raw score."
+    },
+    {
+      "q": "How do you calculate a percentile by hand?",
+      "a": "Sort your data from smallest to largest, then use linear interpolation: index = (p ÷ 100) × (N − 1), where N is the number of values and p is the percentile you want. If the index lands between two values, interpolate between them. This is the same method Excel's PERCENTILE.INC and Google Sheets use."
+    },
+    {
+      "q": "What's the difference between a percentile and a percentage?",
+      "a": "A percentage tells you what portion of a total you achieved (e.g. 90% correct on a test). A percentile tells you how you rank compared to a group (e.g. 90th percentile means you scored better than 90% of other test-takers). A high percentage doesn't guarantee a high percentile if the test was easy for everyone."
+    },
+    {
+      "q": "What is the percentile rank formula?",
+      "a": "Percentile rank = (number of values below your score + 0.5 × number of values equal to your score) ÷ total number of values × 100. The 0.5 adjustment for tied values gives a fairer estimate when multiple entries share the same score."
+    },
+    {
+      "q": "Is the 50th percentile the same as the median?",
+      "a": "Yes. The 50th percentile is, by definition, the median of the data set — the value that splits the sorted data exactly in half, with 50% of values falling below it and 50% above."
+    },
+    {
+      "q": "Why do different percentile calculators give slightly different answers?",
+      "a": "There are several accepted percentile methods (e.g. Excel's PERCENTILE.INC vs. PERCENTILE.EXC, or the nearest-rank method), which handle interpolation between data points differently. Results are usually very close but can differ by a small amount — especially with small data sets. This calculator uses the linear interpolation method (PERCENTILE.INC), the most common default."
+    }
   ]
 }

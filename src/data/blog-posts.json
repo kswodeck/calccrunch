@@ -1335,6 +1335,70 @@
         "fafsa checklist",
         "federal student aid 2027"
       ]
+    },
+    {
+      "slug": "percentile-calculator-guide",
+      "title": "How to Calculate a Percentile (With Examples)",
+      "description": "Learn how percentile rank is calculated, how it differs from a percentage or a z-score, and how to find any percentile in a data set by hand — with worked examples.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-09-16T09:00:00-07:00",
+      "updatedDate": "2026-09-16T09:00:00-07:00",
+      "category": "Math & Conversions",
+      "tags": [
+        "percentile",
+        "statistics",
+        "math",
+        "test scores",
+        "data analysis"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "percentile-calculator",
+        "z-score-calculator",
+        "average-calculator"
+      ],
+      "seoTitle": "How to Calculate a Percentile (Formula + Examples) — 2026",
+      "seoDescription": "Learn how to calculate a percentile step by step, the difference between percentile and percentage, and how to find any percentile in a data set. Free percentile calculator included.",
+      "keywords": [
+        "how to calculate percentile",
+        "percentile formula",
+        "percentile rank",
+        "percentile calculator",
+        "percentile vs percentage"
+      ]
+    },
+    {
+      "slug": "2027-hsa-contribution-limits",
+      "title": "2027 HSA Contribution Limits: What's New for Health Savings Accounts",
+      "description": "The IRS has finalized 2027 HSA limits: $4,500 self-only and $9,000 family coverage. See what changed from 2026, the new HDHP deductible and out-of-pocket thresholds, and how to plan your contributions.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-09-19T09:00:00-07:00",
+      "updatedDate": "2026-09-19T09:00:00-07:00",
+      "category": "Financial Planning",
+      "tags": [
+        "HSA",
+        "health savings account",
+        "open enrollment",
+        "benefits",
+        "tax-advantaged savings",
+        "budgeting"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "budget-calculator",
+        "savings-goal-calculator"
+      ],
+      "seoTitle": "2027 HSA Contribution Limits (Official IRS Figures + How to Plan)",
+      "seoDescription": "2027 HSA limits are official: $4,500 self-only / $9,000 family (IRS Rev. Proc. 2026-24). See the new HDHP deductible and out-of-pocket limits, and how to plan contributions.",
+      "keywords": [
+        "2027 HSA contribution limit",
+        "2027 HSA limits",
+        "HSA limits 2027",
+        "2027 HDHP minimum deductible",
+        "health savings account 2027"
+      ]
     }
   ]
 }

@@ -639,5 +639,16 @@
       "Click Calculate to see the confidence interval, margin of error, and the critical value (t or z) used.",
       "Bookmark or share the URL — your inputs and settings are saved automatically."
     ]
+  },
+  "percentile-calculator": {
+    "name": "How to Use the Percentile Calculator",
+    "description": "Find the percentile rank of a value in a data set, or find the value at any percentile — with linear interpolation matching Excel.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Enter your full data set, separated by commas, spaces, or new lines.",
+      "Enter a value to find its percentile rank within that data set, a percentile to find the corresponding value, or both.",
+      "Click Calculate to see your result along with the exact formula used.",
+      "Bookmark or share the URL — your data and inputs are saved automatically."
+    ]
   }
 }

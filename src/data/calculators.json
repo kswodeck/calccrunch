@@ -4740,7 +4740,8 @@
         "gcf-lcm-calculator",
         "standard-deviation-calculator",
         "z-score-calculator",
-        "confidence-interval-calculator"
+        "confidence-interval-calculator",
+        "percentile-calculator"
       ]
     },
     {
@@ -5106,7 +5107,8 @@
         "percentage-change-calculator",
         "grade-calculator",
         "z-score-calculator",
-        "confidence-interval-calculator"
+        "confidence-interval-calculator",
+        "percentile-calculator"
       ]
     },
     {
@@ -5146,7 +5148,8 @@
         "standard-deviation-calculator",
         "average-calculator",
         "percentage-calculator",
-        "confidence-interval-calculator"
+        "confidence-interval-calculator",
+        "percentile-calculator"
       ]
     },
     {
@@ -5185,7 +5188,48 @@
       "relatedCalculators": [
         "z-score-calculator",
         "standard-deviation-calculator",
-        "average-calculator"
+        "average-calculator",
+        "percentile-calculator"
+      ]
+    },
+    {
+      "title": "Percentile Calculator",
+      "slug": "percentile-calculator",
+      "description": "Find the percentile rank of a value in a data set, or find the value at any percentile — using the same linear interpolation method as Excel's PERCENTILE.INC function.",
+      "shortDescription": "Find a percentile rank or the value at any percentile instantly",
+      "category": "math-conversions",
+      "tags": [
+        "percentile",
+        "percentile rank",
+        "statistics",
+        "math",
+        "data analysis"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "📈",
+      "seoTitle": "Percentile Calculator — Percentile Rank & Value Lookup",
+      "seoDescription": "Free percentile calculator. Find the percentile rank of a value in your data set, or find the value at any percentile, using Excel's PERCENTILE.INC method.",
+      "keywords": [
+        "percentile calculator",
+        "percentile rank calculator",
+        "how to calculate percentile",
+        "percentile formula",
+        "find percentile of a number"
+      ],
+      "lastUpdated": "2026-09-14",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "z-score-calculator",
+        "average-calculator",
+        "standard-deviation-calculator",
+        "confidence-interval-calculator"
       ]
     }
   ]
