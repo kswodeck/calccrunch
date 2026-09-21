@@ -439,7 +439,8 @@
       ],
       "relatedCalculators": [
         "college-savings-calculator",
-        "student-loan-calculator"
+        "student-loan-calculator",
+        "gpa-scale-converter"
       ]
     },
     {
@@ -4741,7 +4742,8 @@
         "standard-deviation-calculator",
         "z-score-calculator",
         "confidence-interval-calculator",
-        "percentile-calculator"
+        "percentile-calculator",
+        "gpa-scale-converter"
       ]
     },
     {
@@ -5229,7 +5231,48 @@
         "z-score-calculator",
         "average-calculator",
         "standard-deviation-calculator",
-        "confidence-interval-calculator"
+        "confidence-interval-calculator",
+        "gpa-scale-converter"
+      ]
+    },
+    {
+      "title": "GPA Scale Converter",
+      "slug": "gpa-scale-converter",
+      "description": "Convert your GPA between 4.0, 5.0, and other common grading scales instantly.",
+      "shortDescription": "Convert GPA between 4.0, 5.0, 7.0, 10.0, and percentage scales",
+      "category": "math-conversions",
+      "tags": [
+        "GPA",
+        "GPA converter",
+        "grade scale",
+        "weighted GPA",
+        "education"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🎓",
+      "seoTitle": "GPA Scale Converter — Convert 4.0, 5.0, 7.0, 10.0 & Percentage",
+      "seoDescription": "Free GPA scale converter. Convert your GPA between 4.0, 4.3, 5.0, 6.0, 7.0, 10.0, percentage, or any custom scale using the standard proportional formula.",
+      "keywords": [
+        "gpa scale converter",
+        "gpa converter",
+        "convert gpa to 4.0 scale",
+        "convert gpa to 5.0 scale",
+        "weighted gpa converter",
+        "gpa conversion chart"
+      ],
+      "lastUpdated": "2026-09-21",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "gpa-calculator",
+        "average-calculator",
+        "percentile-calculator"
       ]
     }
   ]

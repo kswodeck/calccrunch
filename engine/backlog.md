@@ -45,6 +45,7 @@ These are huge-volume, low-difficulty queries. Each is one row + `npm run gen:co
 | aspect-ratio-calculator | "aspect ratio calculator" (16:9, 4:3) | math-conversions | done — shipped 2026-08-17 run |
 | standard-deviation-calculator | "standard deviation calculator" / "how to calculate standard deviation" | math-conversions | done — shipped 2026-08-24 run |
 | percentile-calculator | "percentile calculator" / "percentile rank formula" | math-conversions | done — shipped 2026-09-14 run |
+| gpa-scale-converter | "GPA scale converter" / "convert 4.0 GPA to 5.0 scale" | math-conversions | done — shipped 2026-09-21 run |
 
 ## Tier 4 — Health (bespoke)
 
@@ -298,11 +299,35 @@ ovulation-calculator both remain net-new, unblocked, and un-scheduled — good c
 
 | Slug | Target query | Links to | Status |
 |---|---|---|---|
-| gpa-scale-converter | "GPA scale converter" / "convert 4.0 GPA to 5.0 scale" (carried over across four runs — still not built) — needed to honestly unblock weighted-gpa-scale-changes-guide instead of overselling gpa-calculator's standard-scale-only math | gpa-calculator, average-calculator | todo (build next run — no remaining blockers, just needs prioritization) |
-| ovulation-calculator | "ovulation calculator" / "most fertile days calculator" (carried over across four runs) — health-fitness topic with no existing tool; pairs naturally with pregnancy-calculator | pregnancy-calculator, date-difference-calculator | todo (net-new, health-fitness) |
+| gpa-scale-converter | "GPA scale converter" / "convert 4.0 GPA to 5.0 scale" (carried over across four runs — still not built) — needed to honestly unblock weighted-gpa-scale-changes-guide instead of overselling gpa-calculator's standard-scale-only math | gpa-calculator, average-calculator | done — shipped 2026-09-21 run alongside new weighted-gpa-scale-changes-guide post |
+| ovulation-calculator | "ovulation calculator" / "most fertile days calculator" (carried over across four runs) — health-fitness topic with no existing tool; pairs naturally with pregnancy-calculator | pregnancy-calculator, date-difference-calculator | todo (net-new, health-fitness) — its companion guide (ovulation-calculator-guide, calendar-method formula) shipped this run linking to the existing pregnancy-calculator and date-difference-calculator instead of waiting on a new tool; build the dedicated calculator next so the guide can eventually link to a purpose-built tool too |
 | daylight-saving-time-2026-guide | "when does daylight saving time end 2026" / "clocks fall back 2026" (carried over, still correctly time-boxed) — DST confirmed ends Nov 1, 2026; do not publish before early-mid October | date-difference-calculator, time-zone-converter | todo (time-box: publish early-mid October 2026, not before) |
 | open-enrollment-2027-fsa-hsa-guide (FSA-only, re-scoped) | "2027 FSA contribution limit" — HSA half of this idea shipped this run as 2027-hsa-contribution-limits; only the 2027 Health FSA limit remains unannounced, expected via IRS Revenue Procedure in Oct/Nov 2026 (2026's FSA figure was announced Oct 9, 2025 on the same schedule) | budget-calculator, savings-goal-calculator | todo (hold until 2027 FSA limit is officially announced) |
 | q4-estimated-tax-deadline-guide | "Q4 estimated tax deadline" / "January 15 estimated tax" — confirmed the next quarterly deadline after Q3 (Sept 15, 2026) is January 15, 2027 | self-employment-tax-calculator, freelance-rate-calculator | todo (hold until ~4-5 weeks before Jan 15, 2027, i.e. early-mid December 2026) |
+
+## Blog backlog (new ideas from 2026-09-21 research run)
+
+why now: shipped gpa-scale-converter (net-new Tier 3 math/education tool, carried over across five prior research
+runs) plus its weighted-gpa-scale-changes-guide post this run — confirmed via WebSearch real 2026-2027 weighted-GPA
+scale changes at Pasadena ISD (6.0→5.0), Plainfield SD 202 IL (6.1→5.0, reducing the AP/honors bonus from +1.1 to
++1.0), and Hillsborough County FL (new GPA cap after an uncapped 11.99), plus a Texas statewide standardization law
+effective June 2025 — a genuine "why now" a full research run's worth of evidence, not a guess. Also shipped
+ovulation-calculator-guide as a content-first play: confirmed real, evergreen, multi-competitor search demand for
+"ovulation calculator" / "most fertile days," but rather than build the underlying tool this run, wrote the
+calendar-method guide linking to the existing pregnancy-calculator and date-difference-calculator so the topic
+starts ranking now; the dedicated ovulation-calculator tool (carried over across five runs) remains open for a
+future run. Confirmed via WebSearch that 2027 ACA open enrollment is locked at November 1, 2026 – January 15, 2027
+for the federal marketplace (confirmed by CMS in August 2026 after litigation over the end date) — a genuine
+new evergreen-annual angle distinct from the already-open FSA-only backlog row above, since this is about the
+enrollment *window itself* rather than contribution limits. Also re-confirmed DST still ends Nov 1, 2026 (unchanged,
+correctly holding for early-mid October) and Q4 estimated tax deadline is Jan 15, 2027 (correctly holding for
+early-mid December).
+
+| Slug | Target query | Links to | Status |
+|---|---|---|---|
+| aca-open-enrollment-2027-guide | "when does open enrollment start 2027" / "ACA marketplace open enrollment dates" — federal marketplace confirmed Nov 1, 2026 – Jan 15, 2027 via CMS, distinct from the already-open FSA-limit-only backlog row above | budget-calculator, savings-goal-calculator | todo (time-box: publish mid-October 2026, ~2-3 weeks before the Nov 1 window opens) |
+| ovulation-calculator | "ovulation calculator" / "most fertile days calculator" (carried over — now has a live companion guide, still no dedicated tool) | pregnancy-calculator, date-difference-calculator | todo (net-new, health-fitness — build so ovulation-calculator-guide can eventually link to a purpose-built tool) |
+| gpa-scale-converter-guide-followup | Consider a follow-up post once Texas finalizes its statewide standardized GPA/class-rank method (law effective June 2025, implementation ongoing) — worth revisiting once the state publishes the actual method | gpa-scale-converter, gpa-calculator | todo (hold until Texas commissioner publishes the standardized method) |
 
 ## Retention backlog
 

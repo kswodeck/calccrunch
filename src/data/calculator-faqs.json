@@ -1124,5 +1124,31 @@
       "q": "Why do different percentile calculators give slightly different answers?",
       "a": "There are several accepted percentile methods (e.g. Excel's PERCENTILE.INC vs. PERCENTILE.EXC, or the nearest-rank method), which handle interpolation between data points differently. Results are usually very close but can differ by a small amount — especially with small data sets. This calculator uses the linear interpolation method (PERCENTILE.INC), the most common default."
     }
+  ],
+  "gpa-scale-converter": [
+    {
+      "q": "How do you convert a GPA from a 4.0 scale to a 5.0 scale?",
+      "a": "Divide your GPA by your current scale's maximum, then multiply by the target scale's maximum: (GPA ÷ old scale max) × new scale max. For example, a 3.5 GPA on a 4.0 scale converts to (3.5 ÷ 4.0) × 5.0 = 4.375 on a 5.0 scale. This is the standard proportional method used by most conversion tools and college admissions offices."
+    },
+    {
+      "q": "Why do some schools use a 5.0 or 6.0 weighted GPA scale instead of 4.0?",
+      "a": "Weighted scales give extra points for more rigorous courses like Honors, AP, IB, or Dual Credit classes, so a student who earns an A in an AP class might receive a 5.0 instead of a 4.0. This rewards students for taking harder coursework, but it also means weighted GPAs above 4.0 can't be directly compared to unweighted GPAs without converting them first."
+    },
+    {
+      "q": "Is GPA scale conversion exact?",
+      "a": "No — it's a mathematical approximation, not an official recalculation. The proportional formula assumes grades are evenly spaced across both scales, which isn't always true (for example, some weighted scales only add extra points for specific honors/AP courses rather than scaling every grade). Colleges and scholarship committees often have their own conversion policies or recompute your GPA directly from your transcript, so always confirm with the admissions office if the converted number will be used officially."
+    },
+    {
+      "q": "How do I convert a percentage grade to a 4.0 GPA scale?",
+      "a": "Use the same proportional formula, treating the percentage as a score out of 100: (percentage ÷ 100) × 4.0. For example, an 88% converts to (88 ÷ 100) × 4.0 = 3.52. Some schools use non-linear percentage-to-GPA tables instead, so check your institution's official grading policy if precision matters."
+    },
+    {
+      "q": "What GPA scales are most common outside the United States?",
+      "a": "Many countries and universities outside the U.S. use a 7.0, 10.0, or percentage-based scale instead of the 4.0 scale common in American high schools and colleges. New Zealand commonly uses a 9-point GPA scale, while India and several other countries often use a 10.0 scale — always convert carefully when comparing international transcripts."
+    },
+    {
+      "q": "Will a converted GPA look different from my school-reported GPA?",
+      "a": "Yes, it can. A converted GPA is a proportional estimate for comparison purposes only — your school's officially reported GPA (especially a weighted one) is calculated directly from your individual course grades and credit hours, which this converter doesn't have access to. Use the conversion for a quick comparison, but rely on your transcript's official GPA for anything binding."
+    }
   ]
 }

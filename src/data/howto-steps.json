@@ -650,5 +650,16 @@
       "Click Calculate to see your result along with the exact formula used.",
       "Bookmark or share the URL — your data and inputs are saved automatically."
     ]
+  },
+  "gpa-scale-converter": {
+    "name": "How to Use the GPA Scale Converter",
+    "description": "Convert your GPA between 4.0, 5.0, and other common grading scales instantly.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Enter your current GPA in the input field.",
+      "Select the scale your GPA is currently on (or choose Custom to enter any scale maximum).",
+      "Select the scale you want to convert to.",
+      "Click Convert GPA to see your converted score, equivalent percentage, and the exact formula used."
+    ]
   }
 }

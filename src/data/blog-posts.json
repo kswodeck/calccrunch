@@ -1399,6 +1399,69 @@
         "2027 HDHP minimum deductible",
         "health savings account 2027"
       ]
+    },
+    {
+      "slug": "weighted-gpa-scale-changes-guide",
+      "title": "Weighted GPA Scale Changes for 2026-2027: What Students Need to Know",
+      "description": "Several districts are revising weighted GPA scales for 2026-2027. See what changed and how to convert your GPA between old and new scales.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-09-23T09:00:00-07:00",
+      "updatedDate": "2026-09-23T09:00:00-07:00",
+      "category": "Education",
+      "tags": [
+        "GPA",
+        "education",
+        "high school",
+        "college admissions",
+        "weighted GPA"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "gpa-scale-converter",
+        "gpa-calculator",
+        "average-calculator"
+      ],
+      "seoTitle": "Weighted GPA Scale Changes 2026-2027 — What Students Need to Know",
+      "seoDescription": "Pasadena ISD, Plainfield, and Hillsborough are changing weighted GPA scales for 2026-2027. Learn what changed and how to convert your GPA between scales.",
+      "keywords": [
+        "weighted gpa scale changes",
+        "weighted gpa 2026 2027",
+        "gpa scale converter",
+        "how do ap and honors classes affect gpa",
+        "weighted vs unweighted gpa"
+      ]
+    },
+    {
+      "slug": "ovulation-calculator-guide",
+      "title": "How to Calculate Your Fertile Window (Ovulation Calculator Guide)",
+      "description": "Learn the calendar-method formula for estimating your fertile window and ovulation day, plus the physical signs that confirm it.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-09-28T09:00:00-07:00",
+      "updatedDate": "2026-09-28T09:00:00-07:00",
+      "category": "Health & Fitness",
+      "tags": [
+        "ovulation",
+        "fertility",
+        "women's health",
+        "pregnancy",
+        "menstrual cycle"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "pregnancy-calculator",
+        "date-difference-calculator"
+      ],
+      "seoTitle": "Ovulation Calculator Guide — How to Calculate Your Fertile Window",
+      "seoDescription": "Estimate your most fertile days with the calendar method: count back 14 days from your next period. See the formula, a cycle-length table, and confirming signs.",
+      "keywords": [
+        "ovulation calculator",
+        "fertile window calculator",
+        "most fertile days",
+        "how to calculate ovulation",
+        "calendar method ovulation"
+      ]
     }
   ]
 }
