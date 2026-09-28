@@ -294,7 +294,8 @@
         "body-fat-calculator",
         "macro-calculator",
         "water-intake-calculator",
-        "pace-calculator"
+        "pace-calculator",
+        "ovulation-calculator"
       ]
     },
     {
@@ -4402,7 +4403,8 @@
       "affiliateLinks": [],
       "relatedCalculators": [
         "age-calculator",
-        "sleep-calculator"
+        "sleep-calculator",
+        "ovulation-calculator"
       ]
     },
     {
@@ -4650,7 +4652,8 @@
       "relatedCalculators": [
         "age-calculator",
         "business-days-calculator",
-        "hours-calculator"
+        "hours-calculator",
+        "ovulation-calculator"
       ]
     },
     {
@@ -5273,6 +5276,45 @@
         "gpa-calculator",
         "average-calculator",
         "percentile-calculator"
+      ]
+    },
+    {
+      "title": "Ovulation Calculator",
+      "slug": "ovulation-calculator",
+      "description": "Estimate your fertile window and most likely ovulation day using the calendar method, based on your last period and average cycle length.",
+      "shortDescription": "Estimate your fertile window and ovulation day",
+      "category": "health-fitness",
+      "tags": [
+        "ovulation",
+        "fertility",
+        "women's health",
+        "menstrual cycle",
+        "pregnancy planning"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "🥚",
+      "seoTitle": "Ovulation Calculator — Find Your Fertile Window & Ovulation Day",
+      "seoDescription": "Free ovulation calculator. Enter your last period and cycle length to estimate your fertile window, ovulation day, and next 3 predicted periods.",
+      "keywords": [
+        "ovulation calculator",
+        "fertile window calculator",
+        "most fertile days",
+        "ovulation day calculator",
+        "when am I ovulating"
+      ],
+      "lastUpdated": "2026-09-28",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "pregnancy-calculator",
+        "date-difference-calculator",
+        "bmi-calculator"
       ]
     }
   ]

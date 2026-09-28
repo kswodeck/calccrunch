@@ -661,5 +661,17 @@
       "Select the scale you want to convert to.",
       "Click Convert GPA to see your converted score, equivalent percentage, and the exact formula used."
     ]
+  },
+  "ovulation-calculator": {
+    "name": "How to Use the Ovulation Calculator",
+    "description": "Estimate your fertile window and most likely ovulation day using the calendar method, based on your last period and average cycle length.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Enter the first day of your last period",
+      "Enter your average cycle length (default 28 days)",
+      "Optionally adjust your luteal phase length (default 14 days)",
+      "Click Calculate Fertile Window to see your estimated ovulation day and fertile window",
+      "Review the predicted cycles table to plan several months ahead"
+    ]
   }
 }

@@ -300,8 +300,8 @@ ovulation-calculator both remain net-new, unblocked, and un-scheduled — good c
 | Slug | Target query | Links to | Status |
 |---|---|---|---|
 | gpa-scale-converter | "GPA scale converter" / "convert 4.0 GPA to 5.0 scale" (carried over across four runs — still not built) — needed to honestly unblock weighted-gpa-scale-changes-guide instead of overselling gpa-calculator's standard-scale-only math | gpa-calculator, average-calculator | done — shipped 2026-09-21 run alongside new weighted-gpa-scale-changes-guide post |
-| ovulation-calculator | "ovulation calculator" / "most fertile days calculator" (carried over across four runs) — health-fitness topic with no existing tool; pairs naturally with pregnancy-calculator | pregnancy-calculator, date-difference-calculator | todo (net-new, health-fitness) — its companion guide (ovulation-calculator-guide, calendar-method formula) shipped this run linking to the existing pregnancy-calculator and date-difference-calculator instead of waiting on a new tool; build the dedicated calculator next so the guide can eventually link to a purpose-built tool too |
-| daylight-saving-time-2026-guide | "when does daylight saving time end 2026" / "clocks fall back 2026" (carried over, still correctly time-boxed) — DST confirmed ends Nov 1, 2026; do not publish before early-mid October | date-difference-calculator, time-zone-converter | todo (time-box: publish early-mid October 2026, not before) |
+| ovulation-calculator | "ovulation calculator" / "most fertile days calculator" (carried over across four runs) — health-fitness topic with no existing tool; pairs naturally with pregnancy-calculator | pregnancy-calculator, date-difference-calculator | done — shipped 2026-09-28 run (dedicated calendar-method tool built and bidirectionally linked into pregnancy-calculator, date-difference-calculator, bmi-calculator; ovulation-calculator-guide updated to link to it) |
+| daylight-saving-time-2026-guide | "when does daylight saving time end 2026" / "clocks fall back 2026" (carried over, still correctly time-boxed) — DST confirmed ends Nov 1, 2026; do not publish before early-mid October | date-difference-calculator, time-zone-converter | done — shipped 2026-09-28 run (published 2026-10-01) |
 | open-enrollment-2027-fsa-hsa-guide (FSA-only, re-scoped) | "2027 FSA contribution limit" — HSA half of this idea shipped this run as 2027-hsa-contribution-limits; only the 2027 Health FSA limit remains unannounced, expected via IRS Revenue Procedure in Oct/Nov 2026 (2026's FSA figure was announced Oct 9, 2025 on the same schedule) | budget-calculator, savings-goal-calculator | todo (hold until 2027 FSA limit is officially announced) |
 | q4-estimated-tax-deadline-guide | "Q4 estimated tax deadline" / "January 15 estimated tax" — confirmed the next quarterly deadline after Q3 (Sept 15, 2026) is January 15, 2027 | self-employment-tax-calculator, freelance-rate-calculator | todo (hold until ~4-5 weeks before Jan 15, 2027, i.e. early-mid December 2026) |
 
@@ -325,9 +325,43 @@ early-mid December).
 
 | Slug | Target query | Links to | Status |
 |---|---|---|---|
-| aca-open-enrollment-2027-guide | "when does open enrollment start 2027" / "ACA marketplace open enrollment dates" — federal marketplace confirmed Nov 1, 2026 – Jan 15, 2027 via CMS, distinct from the already-open FSA-limit-only backlog row above | budget-calculator, savings-goal-calculator | todo (time-box: publish mid-October 2026, ~2-3 weeks before the Nov 1 window opens) |
-| ovulation-calculator | "ovulation calculator" / "most fertile days calculator" (carried over — now has a live companion guide, still no dedicated tool) | pregnancy-calculator, date-difference-calculator | todo (net-new, health-fitness — build so ovulation-calculator-guide can eventually link to a purpose-built tool) |
+| aca-open-enrollment-2027-guide | "when does open enrollment start 2027" / "ACA marketplace open enrollment dates" — federal marketplace confirmed Nov 1, 2026 – Jan 15, 2027 via CMS, distinct from the already-open FSA-limit-only backlog row above | budget-calculator, savings-goal-calculator | done — shipped 2026-09-28 run (published 2026-10-05) |
+| ovulation-calculator | "ovulation calculator" / "most fertile days calculator" (carried over — now has a live companion guide, still no dedicated tool) | pregnancy-calculator, date-difference-calculator | done — shipped 2026-09-28 run (dedicated calendar-method tool built; see 2026-09-14 row above for link details) |
 | gpa-scale-converter-guide-followup | Consider a follow-up post once Texas finalizes its statewide standardized GPA/class-rank method (law effective June 2025, implementation ongoing) — worth revisiting once the state publishes the actual method | gpa-scale-converter, gpa-calculator | todo (hold until Texas commissioner publishes the standardized method) |
+
+## Blog backlog (new ideas from 2026-09-28 research run)
+
+why now: shipped ovulation-calculator (net-new health-fitness tool, carried over across five prior research runs)
+this run — dedicated calendar-method calculator now live, bidirectionally linked with pregnancy-calculator,
+date-difference-calculator, and bmi-calculator, and the existing ovulation-calculator-guide post updated to link
+to it instead of the workaround calculators it launched with. Also shipped daylight-saving-time-2026-guide
+(publishing 2026-10-01, inside its time-box) — confirmed via WebSearch DST still ends Sunday, Nov 1, 2026 at
+2:00 a.m., independently cross-checked the next spring-forward date (March 14, 2027, second Sunday of March) via
+date math, and confirmed the Sunshine Protection Act passed the House July 14, 2026 but remains pending in the
+Senate as of September 2026 — not enacted, so DST still applies as normal this cycle. Also shipped
+aca-open-enrollment-2027-guide (publishing 2026-10-05, ~2-3 weeks ahead of the Nov 1 window as time-boxed) —
+confirmed via WebSearch the enhanced ACA premium tax credits are not extended for 2027 (revert to original,
+less generous formula unless Congress acts), median insurer rate requests are up double digits for 2027, and
+subsidy repayment rules are stricter (full excess repayment vs. a prior capped amount) — all genuine "why now"
+changes vs. prior years, not repeated boilerplate. Re-confirmed open-enrollment-2027-fsa-hsa-guide (FSA-only) is
+still correctly on hold: the 2027 Health FSA limit remains unannounced as of this run. Re-confirmed
+q4-estimated-tax-deadline-guide is still correctly on hold (Jan 15, 2027 deadline, ~4-5 week lead time rule not
+yet reached). Surfaced one genuinely new idea via WebSearch this run: holiday/gift budgeting is trending into
+season, with real, current figures (~$628 average planned 2026 holiday spend per NRF-style surveys, and a common
+"cap gift spending at 1-1.5% of annual income" rule of thumb) — distinct from the general budget-calculator guide
+content already on-site, time-boxed for a future run in late October/early November once "holiday budget"
+search volume actually ramps up. Confirmed via Grep no existing post covers time-zone-converter as its own
+topic guide, despite the calculator existing — a clean, undersupplied angle for a future run once a concrete
+"why now" hook (e.g. a specific international scheduling pain point) is identified rather than a generic
+evergreen page.
+
+| Slug | Target query | Links to | Status |
+|---|---|---|---|
+| open-enrollment-2027-fsa-hsa-guide (FSA-only, re-scoped) | "2027 FSA contribution limit" — still unannounced; expected via IRS Revenue Procedure in Oct/Nov 2026 (2026's figure was announced Oct 9, 2025 on the same schedule) | budget-calculator, savings-goal-calculator | todo (hold until 2027 FSA limit is officially announced) |
+| q4-estimated-tax-deadline-guide | "Q4 estimated tax deadline" / "January 15 estimated tax" — next quarterly deadline after Q3 (Sept 15, 2026) is January 15, 2027 | self-employment-tax-calculator, freelance-rate-calculator | todo (hold until ~4-5 weeks before Jan 15, 2027, i.e. early-mid December 2026) |
+| gpa-scale-converter-guide-followup | Follow-up post once Texas finalizes its statewide standardized GPA/class-rank method (law effective June 2025, implementation ongoing) | gpa-scale-converter, gpa-calculator | todo (hold until Texas commissioner publishes the standardized method) |
+| holiday-gift-budget-guide | "how much to budget for holiday gifts 2026" / "holiday gift budget calculator" — confirmed ~$628 average planned 2026 holiday spend and a common 1-1.5%-of-income gift-budgeting rule of thumb via WebSearch this run | budget-calculator, savings-goal-calculator | todo (net-new; time-box: publish late October-early November 2026 as holiday-budget search volume ramps up) |
+| time-zone-converter-guide | "time zone converter" companion guide angle (calculator exists, no dedicated guide yet) — needs a concrete "why now" hook (e.g. a specific recurring international-scheduling pain point) before scheduling, not just a generic evergreen page | time-zone-converter, date-difference-calculator | todo (needs a sharper angle before scheduling — hold) |
 
 ## Retention backlog
 

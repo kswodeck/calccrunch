@@ -1150,5 +1150,27 @@
       "q": "Will a converted GPA look different from my school-reported GPA?",
       "a": "Yes, it can. A converted GPA is a proportional estimate for comparison purposes only — your school's officially reported GPA (especially a weighted one) is calculated directly from your individual course grades and credit hours, which this converter doesn't have access to. Use the conversion for a quick comparison, but rely on your transcript's official GPA for anything binding."
     }
+  ],
+  "ovulation-calculator": [
+    {
+      "q": "How accurate is an ovulation calculator?",
+      "a": "An ovulation calculator using the calendar method is a helpful estimate, most reliable if your cycles are fairly regular. It typically gets you within a few days of your actual ovulation day, but stress, illness, travel, and normal cycle variation can shift the real date. For more precision, pair it with an ovulation predictor kit (OPK), basal body temperature tracking, or cervical mucus monitoring."
+    },
+    {
+      "q": "Why is ovulation calculated backward from my next period instead of forward from my last one?",
+      "a": "The luteal phase — the time from ovulation to the start of your next period — is usually a fairly consistent 12-16 days (14 is average). The follicular phase before ovulation varies much more from person to person and cycle to cycle. Counting back from your predicted next period is generally more accurate than assuming ovulation always happens on day 14 of every cycle."
+    },
+    {
+      "q": "How long is the fertile window?",
+      "a": "The fertile window is typically about 6 days: the 5 days leading up to ovulation plus ovulation day itself. This is because sperm can survive in the reproductive tract for up to 5 days, while a released egg is viable for only about 12-24 hours. The 1-2 days right before ovulation and ovulation day itself offer the highest chances of conception."
+    },
+    {
+      "q": "What if my cycle length varies from month to month?",
+      "a": "If your cycles aren't perfectly regular, use your average cycle length over the last 3-6 months for the most useful estimate. You can also run the calculator separately with your shortest and longest recent cycle lengths to see the full range of possible fertile windows, rather than relying on a single prediction."
+    },
+    {
+      "q": "Can I use this calculator to avoid pregnancy?",
+      "a": "No. This calculator is designed for general fertility planning and awareness, not as a method of contraception. Calendar-based predictions can be off by several days, and ovulation timing can shift unexpectedly. If you're trying to avoid pregnancy, talk to a healthcare provider about reliable contraceptive methods."
+    }
   ]
 }

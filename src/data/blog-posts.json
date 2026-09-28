@@ -1450,6 +1450,7 @@
       "readTime": "7 min read",
       "featured": false,
       "relatedCalculators": [
+        "ovulation-calculator",
         "pregnancy-calculator",
         "date-difference-calculator"
       ],
@@ -1461,6 +1462,68 @@
         "most fertile days",
         "how to calculate ovulation",
         "calendar method ovulation"
+      ]
+    },
+    {
+      "slug": "daylight-saving-time-2026-guide",
+      "title": "When Does Daylight Saving Time End in 2026? Clock Change Guide",
+      "description": "Daylight saving time ends Sunday, November 1, 2026 at 2:00 a.m., when clocks fall back one hour. Here's what changes, who's exempt, and how to adjust.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-10-01T09:00:00-07:00",
+      "updatedDate": "2026-10-01T09:00:00-07:00",
+      "category": "Guides",
+      "tags": [
+        "daylight saving time",
+        "time change",
+        "clocks",
+        "time zones",
+        "fall back"
+      ],
+      "readTime": "6 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "date-difference-calculator",
+        "time-zone-converter"
+      ],
+      "seoTitle": "Daylight Saving Time 2026: When Clocks Fall Back (Nov 1)",
+      "seoDescription": "Daylight saving time ends Sunday, November 1, 2026 at 2:00 a.m. local time. See exactly what changes, who's exempt, and how to handle the time change.",
+      "keywords": [
+        "daylight saving time 2026",
+        "when does dst end 2026",
+        "clocks fall back 2026",
+        "daylight saving time end date",
+        "when do clocks change november 2026"
+      ]
+    },
+    {
+      "slug": "aca-open-enrollment-2027-guide",
+      "title": "ACA Open Enrollment 2027: Key Dates and How to Budget for Premiums",
+      "description": "ACA open enrollment for 2027 coverage runs November 1, 2026 through January 15, 2027 on HealthCare.gov. Here are the deadlines and how to budget for premiums.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-10-05T09:00:00-07:00",
+      "updatedDate": "2026-10-05T09:00:00-07:00",
+      "category": "Financial Planning",
+      "tags": [
+        "aca",
+        "open enrollment",
+        "health insurance",
+        "marketplace",
+        "budgeting"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "budget-calculator",
+        "savings-goal-calculator"
+      ],
+      "seoTitle": "ACA Open Enrollment 2027: Dates & How to Budget for Premiums",
+      "seoDescription": "ACA open enrollment for 2027 coverage runs November 1, 2026 - January 15, 2027 on HealthCare.gov (state deadlines vary). See key dates and a premium budgeting plan.",
+      "keywords": [
+        "aca open enrollment 2027",
+        "health insurance marketplace open enrollment 2027",
+        "when is open enrollment 2027",
+        "aca open enrollment dates",
+        "budget for health insurance premiums"
       ]
     }
   ]
