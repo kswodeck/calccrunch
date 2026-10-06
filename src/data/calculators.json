@@ -1045,7 +1045,8 @@
       "relatedCalculators": [
         "net-worth-calculator",
         "savings-goal-calculator",
-        "debt-to-income-calculator"
+        "debt-to-income-calculator",
+        "holiday-gift-budget-calculator"
       ]
     },
     {
@@ -1690,7 +1691,8 @@
       "relatedCalculators": [
         "compound-interest-calculator",
         "budget-calculator",
-        "retirement-income-calculator"
+        "retirement-income-calculator",
+        "holiday-gift-budget-calculator"
       ]
     },
     {
@@ -3483,7 +3485,8 @@
         "tip-calculator",
         "fraction-calculator",
         "percentage-change-calculator",
-        "unit-price-calculator"
+        "unit-price-calculator",
+        "holiday-gift-budget-calculator"
       ]
     },
     {
@@ -5316,6 +5319,41 @@
         "date-difference-calculator",
         "bmi-calculator"
       ]
+    },
+    {
+      "title": "Holiday Gift Budget Calculator",
+      "slug": "holiday-gift-budget-calculator",
+      "description": "Plan your 2026 holiday gift budget: split spending per recipient, add a wrapping/shipping reserve, and see the weekly savings needed to hit your target date.",
+      "shortDescription": "Plan your 2026 holiday gift budget: split spending per recipient, add a wrapping/shipping reserve, and see the weekly savings needed to hit your target date",
+      "category": "financial",
+      "tags": [
+        "holiday budget",
+        "christmas budget",
+        "gift budget",
+        "savings plan",
+        "budgeting"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "2 minutes",
+      "icon": "🎁",
+      "seoTitle": "Holiday Gift Budget Calculator 2026 — Per-Person Planner",
+      "seoDescription": "Free 2026 holiday gift budget calculator. Split your budget per recipient, add a wrapping/shipping reserve, and see the weekly savings needed before your shopping deadline.",
+      "keywords": [
+        "holiday gift budget calculator",
+        "christmas budget calculator",
+        "gift budget calculator",
+        "how much to spend on christmas gifts",
+        "holiday budget planner"
+      ],
+      "lastUpdated": "2026-10-06",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": ["budget-calculator", "savings-goal-calculator", "discount-calculator"]
     }
   ]
 }

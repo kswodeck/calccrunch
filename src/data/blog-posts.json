@@ -1525,6 +1525,57 @@
         "aca open enrollment dates",
         "budget for health insurance premiums"
       ]
+    },
+    {
+      "slug": "time-zone-converter-guide",
+      "title": "How to Convert Time Zones Correctly for International Meetings",
+      "description": "A practical guide to converting time zones without errors: the three mistakes that break recurring meetings, how to handle half-hour offsets, and a step-by-step scheduling workflow.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-10-08T09:00:00-07:00",
+      "updatedDate": "2026-10-08T09:00:00-07:00",
+      "category": "Guides",
+      "tags": ["time zones", "scheduling", "remote work", "productivity"],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "time-zone-converter",
+        "date-difference-calculator"
+      ],
+      "seoTitle": "How to Convert Time Zones Correctly for International Meetings",
+      "seoDescription": "Learn how to convert time zones correctly for international meetings, avoid the 3 mistakes that cause missed calls, and schedule across regions with confidence.",
+      "keywords": [
+        "time zone converter",
+        "how to convert time zones",
+        "international meeting scheduling",
+        "UTC offset",
+        "schedule across time zones"
+      ]
+    },
+    {
+      "slug": "holiday-gift-budget-guide",
+      "title": "How Much Should You Budget for Holiday Gifts in 2026?",
+      "description": "How much to budget for holiday gifts in 2026, how to split it across your list, and a week-by-week savings plan so you're not scrambling in December.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-10-12T09:00:00-07:00",
+      "updatedDate": "2026-10-12T09:00:00-07:00",
+      "category": "Budgeting",
+      "tags": ["holiday budget", "christmas budget", "gift budget", "savings plan"],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "holiday-gift-budget-calculator",
+        "budget-calculator",
+        "savings-goal-calculator"
+      ],
+      "seoTitle": "How Much Should You Budget for Holiday Gifts in 2026?",
+      "seoDescription": "How much should you budget for holiday gifts in 2026? See typical per-person spending, a sample budget by income, and a weekly savings plan before December.",
+      "keywords": [
+        "holiday gift budget",
+        "christmas budget 2026",
+        "how much to spend on christmas gifts",
+        "holiday budget planner",
+        "gift budget calculator"
+      ]
     }
   ]
 }

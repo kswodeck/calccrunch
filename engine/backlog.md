@@ -360,8 +360,34 @@ evergreen page.
 | open-enrollment-2027-fsa-hsa-guide (FSA-only, re-scoped) | "2027 FSA contribution limit" — still unannounced; expected via IRS Revenue Procedure in Oct/Nov 2026 (2026's figure was announced Oct 9, 2025 on the same schedule) | budget-calculator, savings-goal-calculator | todo (hold until 2027 FSA limit is officially announced) |
 | q4-estimated-tax-deadline-guide | "Q4 estimated tax deadline" / "January 15 estimated tax" — next quarterly deadline after Q3 (Sept 15, 2026) is January 15, 2027 | self-employment-tax-calculator, freelance-rate-calculator | todo (hold until ~4-5 weeks before Jan 15, 2027, i.e. early-mid December 2026) |
 | gpa-scale-converter-guide-followup | Follow-up post once Texas finalizes its statewide standardized GPA/class-rank method (law effective June 2025, implementation ongoing) | gpa-scale-converter, gpa-calculator | todo (hold until Texas commissioner publishes the standardized method) |
-| holiday-gift-budget-guide | "how much to budget for holiday gifts 2026" / "holiday gift budget calculator" — confirmed ~$628 average planned 2026 holiday spend and a common 1-1.5%-of-income gift-budgeting rule of thumb via WebSearch this run | budget-calculator, savings-goal-calculator | todo (net-new; time-box: publish late October-early November 2026 as holiday-budget search volume ramps up) |
-| time-zone-converter-guide | "time zone converter" companion guide angle (calculator exists, no dedicated guide yet) — needs a concrete "why now" hook (e.g. a specific recurring international-scheduling pain point) before scheduling, not just a generic evergreen page | time-zone-converter, date-difference-calculator | todo (needs a sharper angle before scheduling — hold) |
+| holiday-gift-budget-guide | "how much to budget for holiday gifts 2026" / "holiday gift budget calculator" — confirmed ~$628 average planned 2026 holiday spend and a common 1-1.5%-of-income gift-budgeting rule of thumb via WebSearch this run | budget-calculator, savings-goal-calculator | done — shipped 2026-10-06 run alongside new holiday-gift-budget-calculator tool (published 2026-10-12) |
+| time-zone-converter-guide | "time zone converter" companion guide angle (calculator exists, no dedicated guide yet) — needs a concrete "why now" hook before scheduling, not just a generic evergreen page | time-zone-converter, date-difference-calculator | done — shipped 2026-10-06 run (published 2026-10-08); re-angled to a practical "how to convert time zones correctly for international meetings" how-to guide (UTC-offset literacy, half-hour-offset zones, date-rollover mistakes, multi-zone meeting workflow) instead of re-explaining the Oct 25/Nov 1 US-EU DST gap, since the already-published daylight-saving-time-2026-guide (2026-10-01) already has a full section covering that exact fact with the same two calculator links — this avoids the topic-level duplicate |
+
+## Blog backlog (new ideas from 2026-10-06 research run)
+
+why now: shipped holiday-gift-budget-calculator (net-new Tier 1/financial tool — split-by-recipient budget planner
+with a wrapping/shipping reserve and weekly-savings-needed output) plus its holiday-gift-budget-guide post this
+run, bidirectionally linked into budget-calculator, savings-goal-calculator, and discount-calculator — confirmed
+via WebSearch real current-season evidence (Amazon Prime Big Deal Days Oct 7-8, 2026; Target Circle Week Oct 11-17,
+2026; shoppers already starting their lists in September) that holiday-budget search intent is ramping now, inside
+the time-box set by the 2026-09-28 run. Also shipped time-zone-converter-guide this run, but discovered during
+drafting that its originally-planned "why US and Europe time differences are off by an hour Oct 25-Nov 1" hook is a
+topic-level duplicate of a full section already live in daylight-saving-time-2026-guide (published 2026-10-01,
+same two calculator links) — re-angled to a distinct practical how-to (UTC offsets, half-hour-offset zones like
+India/Nepal, date-rollover mistakes, multi-zone meeting-planning workflow) rather than swapping topics, since the
+underlying calculator and publish slot were already committed. Confirmed 2027 FSA limit, 2027 401(k) limit, and
+2027 Social Security COLA (announcement due Oct 14, 2026) all remain unannounced as of this run — correctly held.
+Confirmed Thanksgiving 2026 falls Nov 26 (Black Friday Nov 27, Cyber Monday Nov 30) via date math, used only as a
+minor timing reference inside holiday-gift-budget-guide, not as its core hook.
+
+| Slug | Target query | Links to | Status |
+|---|---|---|---|
+| open-enrollment-2027-fsa-hsa-guide (FSA-only, carried over) | "2027 FSA contribution limit" — still unannounced as of this run | budget-calculator, savings-goal-calculator | todo (hold until 2027 FSA limit is officially announced) |
+| q4-estimated-tax-deadline-guide (carried over) | "Q4 estimated tax deadline" / "January 15 estimated tax" | self-employment-tax-calculator, freelance-rate-calculator | todo (hold until ~4-5 weeks before Jan 15, 2027, i.e. early-mid December 2026) |
+| gpa-scale-converter-guide-followup (carried over) | Follow-up post once Texas finalizes its statewide standardized GPA/class-rank method | gpa-scale-converter, gpa-calculator | todo (hold until Texas commissioner publishes the standardized method) |
+| social-security-cola-2027-guide | "Social Security COLA 2027" / "2027 cost of living adjustment" — SSA announcement due ~Oct 14, 2026; too close to this run's publish window to verify and ship confidently, but a clean net-new angle once the figure is official | budget-calculator, salary-to-hourly-calculator | todo (hold until SSA officially announces the 2027 COLA figure, ~Oct 14, 2026) |
+| 401k-2027-contribution-limits | "2027 401k contribution limit" — IRS typically announces the following year's 401(k)/retirement-plan limits in late October/early November; unannounced as of this run | retirement-savings-by-age calculator equivalents / savings-goal-calculator | todo (hold until IRS officially announces 2027 401(k) limits) |
+| black-friday-2026-shopping-strategy-guide | "Black Friday 2026 deals" / "when is Black Friday 2026" — confirmed via date math Black Friday 2026 falls Nov 27, Cyber Monday Nov 30; distinct angle from holiday-gift-budget-guide (strategy/timing of purchases rather than total-budget planning) | discount-calculator, holiday-gift-budget-calculator | todo (net-new; time-box: publish mid-to-late November 2026, close enough to be timely without peaking too early) |
 
 ## Retention backlog
 

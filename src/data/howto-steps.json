@@ -673,5 +673,18 @@
       "Click Calculate Fertile Window to see your estimated ovulation day and fertile window",
       "Review the predicted cycles table to plan several months ahead"
     ]
+  },
+  "holiday-gift-budget-calculator": {
+    "name": "How to Use the Holiday Gift Budget Calculator",
+    "description": "Plan your 2026 holiday gift budget: split spending per recipient, add a wrapping/shipping reserve, and see the weekly savings needed to hit your target date.",
+    "totalTime": "PT2M",
+    "steps": [
+      "Set your shopping deadline — the date you want all gifts bought and wrapped by",
+      "Optionally enter a total gift budget and your annual income to compare against spending guidelines",
+      "Add a row for each person you're buying for and enter a planned dollar amount",
+      "Enter any amount you've already saved toward holiday gifts",
+      "Adjust the wrapping and shipping reserve percentage if needed",
+      "Click Calculate to see your total cost, weekly savings needed, and budget comparison"
+    ]
   }
 }

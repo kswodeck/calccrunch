@@ -1172,5 +1172,31 @@
       "q": "Can I use this calculator to avoid pregnancy?",
       "a": "No. This calculator is designed for general fertility planning and awareness, not as a method of contraception. Calendar-based predictions can be off by several days, and ovulation timing can shift unexpectedly. If you're trying to avoid pregnancy, talk to a healthcare provider about reliable contraceptive methods."
     }
+  ],
+  "holiday-gift-budget-calculator": [
+    {
+      "q": "How much should I budget for holiday gifts in 2026?",
+      "a": "There's no single right number — it depends on your income, household size, and how many people you buy for. A common rule of thumb is to cap total holiday gift spending at roughly 1-2% of your annual income (for example, $600-$1,200 on a $60,000 income). The most reliable approach is to list every recipient with a planned amount, like this calculator does, rather than guessing at one lump total."
+    },
+    {
+      "q": "How do I split a holiday gift budget between people?",
+      "a": "Start with your total budget (or your income-based guideline), then assign each recipient a specific dollar amount based on your relationship — immediate family typically gets more than coworkers or distant relatives. Add up all the per-person amounts and compare the total to your overall budget, adjusting individual amounts up or down until they fit."
+    },
+    {
+      "q": "How much extra should I budget for wrapping paper and shipping?",
+      "a": "A reserve of about 10% of your total gift spending is a reasonable starting point for wrapping paper, cards, ribbon, and shipping costs. If you're mailing gifts long-distance or shipping internationally, consider raising that reserve to 15-20%."
+    },
+    {
+      "q": "When should I start saving for holiday gifts?",
+      "a": "The earlier the better. Starting in October gives you roughly 10-12 weeks before Christmas, which turns even a $500-$800 budget into a manageable $40-$80 per week rather than one large expense in December. This calculator shows your exact weekly savings number based on the deadline you set."
+    },
+    {
+      "q": "What if I've already overspent my holiday gift budget?",
+      "a": "Lower a few of your larger recipient amounts first — gifts for extended family or coworkers are usually the easiest to trim without anyone noticing. You can also raise your wrapping/shipping reserve assumption down slightly if you plan to reuse supplies, or extend your shopping deadline to spread remaining costs over more weeks."
+    },
+    {
+      "q": "Does this calculator account for Black Friday or Cyber Monday discounts?",
+      "a": "No — enter your planned spending per recipient at full price to stay conservative, then treat any sale savings as a bonus. Use a discount calculator separately to work out the exact sale price before you buy if you want to factor in a specific percent-off deal."
+    }
   ]
 }
