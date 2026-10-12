@@ -389,6 +389,39 @@ minor timing reference inside holiday-gift-budget-guide, not as its core hook.
 | 401k-2027-contribution-limits | "2027 401k contribution limit" — IRS typically announces the following year's 401(k)/retirement-plan limits in late October/early November; unannounced as of this run | retirement-savings-by-age calculator equivalents / savings-goal-calculator | todo (hold until IRS officially announces 2027 401(k) limits) |
 | black-friday-2026-shopping-strategy-guide | "Black Friday 2026 deals" / "when is Black Friday 2026" — confirmed via date math Black Friday 2026 falls Nov 27, Cyber Monday Nov 30; distinct angle from holiday-gift-budget-guide (strategy/timing of purchases rather than total-budget planning) | discount-calculator, holiday-gift-budget-calculator | todo (net-new; time-box: publish mid-to-late November 2026, close enough to be timely without peaking too early) |
 
+## Blog backlog (new ideas from 2026-10-12 research run)
+
+why now: shipped rmd-calculator (net-new Tier 2/financial tool — Required Minimum Distribution calculator using
+the IRS Uniform Lifetime Table) plus two posts this run: rmd-calculator-guide and medicare-open-enrollment-2027-guide,
+bidirectionally linked into retirement-income-calculator, social-security-calculator, tax-bracket-calculator, and
+budget-calculator. Confirmed via WebSearch the RMD divisor table (IRS Pub 590-B Table III) has been unchanged since
+2022 and verified the full age-73/75 SECURE 2.0 start-age split, the Roth 401(k)/403(b) RMD exemption effective 2024,
+and the $111,000 2026 QCD limit before writing any calculator logic — sanity-checked the age/divisor function with
+node for several edge cases (age 73, 75, 81, under-start-age, 120+ cap, zero balance) before shipping. Also shipped
+medicare-open-enrollment-2027-guide timed to land exactly as the real AEP window opens (Oct 15, 2026) — confirmed via
+WebSearch this is a distinct topic from the already-published aca-open-enrollment-2027-guide (that post covers the
+ACA marketplace window, not Medicare's Annual Enrollment Period, which has no equivalent post on-site), and confirmed
+two genuine "why now" drivers: the enhanced ACA subsidy expiration and a separate federal subsidy propping up Part D
+drug-plan premiums ending after 2026, both pushing 2027 premiums up. Deliberately declined to cite the 2027 Social
+Security COLA percentage (SSA announcement was due ~Oct 14, 2026, not yet confirmed at research time) or specific
+2027 IRMAA/Part B premium dollar figures (CMS finalizes those in November) to avoid shipping unverified numbers —
+both ideas below remain correctly held. Also surfaced one new idea via WebSearch: "how long to cook a turkey
+calculator" has real, multi-competitor search demand (Thanksgiving 2026 falls Nov 26), but it's tangential to the
+site's financial/health focus and still ~6 weeks out, so it's recorded below for a future run rather than shipped now.
+
+| Slug | Target query | Links to | Status |
+|---|---|---|---|
+| rmd-calculator + rmd-calculator-guide | "RMD calculator" / "required minimum distribution calculator 2026 2027" — net-new, no existing tool or post covered this; IRS Uniform Lifetime Table confirmed unchanged since 2022 | retirement-income-calculator, social-security-calculator, tax-bracket-calculator | done — shipped 2026-10-12 run (guide published 2026-10-19) |
+| medicare-open-enrollment-2027-guide | "Medicare Open Enrollment 2027 dates" / "when is Medicare AEP 2026" — distinct from the already-shipped aca-open-enrollment-2027-guide (ACA marketplace, not Medicare); timed to publish exactly as the real Oct 15, 2026 AEP window opens | social-security-calculator, budget-calculator, rmd-calculator | done — shipped 2026-10-12 run (published 2026-10-15) |
+| social-security-cola-2027-guide (carried over) | "Social Security COLA 2027" / "2027 cost of living adjustment" — SSA announcement due ~Oct 14, 2026; still unconfirmed as of this run | budget-calculator, salary-to-hourly-calculator | todo (hold until SSA officially announces the 2027 COLA figure) |
+| irmaa-2027-medicare-premium-guide | "2027 IRMAA brackets" / "2027 Medicare Part B premium" — net-new angle surfaced this run; CMS has not yet finalized 2027 Part B premiums or IRMAA thresholds (typically announced in November), so no dollar figures can be verified yet | rmd-calculator, social-security-calculator, budget-calculator | todo (hold until CMS officially announces 2027 Part B premium/IRMAA brackets, expected November 2026) |
+| thanksgiving-turkey-cooking-time-calculator | "how long to cook a turkey calculator" / "turkey cooking time per pound" — real, multi-competitor search demand confirmed via WebSearch this run; Thanksgiving 2026 falls Nov 26, so still ~6 weeks out from this run | recipe-scaler-converter (if it exists) or a new food-cooking category tool | todo (net-new, food/cooking category; time-box: publish early-to-mid November 2026) |
+| 401k-2027-contribution-limits (carried over) | "2027 401k contribution limit" — IRS typically announces in late October/early November; unannounced as of this run | savings-goal-calculator, retirement-income-calculator | todo (hold until IRS officially announces 2027 401(k) limits) |
+| open-enrollment-2027-fsa-hsa-guide (FSA-only, carried over) | "2027 FSA contribution limit" — still unannounced as of this run | budget-calculator, savings-goal-calculator | todo (hold until 2027 FSA limit is officially announced) |
+| q4-estimated-tax-deadline-guide (carried over) | "Q4 estimated tax deadline" / "January 15 estimated tax" | self-employment-tax-calculator, freelance-rate-calculator | todo (hold until ~4-5 weeks before Jan 15, 2027, i.e. early-mid December 2026) |
+| black-friday-2026-shopping-strategy-guide (carried over) | "Black Friday 2026 deals" / "when is Black Friday 2026" — confirmed Nov 27, 2026 | discount-calculator, holiday-gift-budget-calculator | todo (net-new; time-box: publish mid-to-late November 2026) |
+| gpa-scale-converter-guide-followup (carried over) | Follow-up post once Texas finalizes its statewide standardized GPA/class-rank method | gpa-scale-converter, gpa-calculator | todo (hold until Texas commissioner publishes the standardized method) |
+
 ## Retention backlog
 
 - [x] Backfill FAQ + HowTo schema for high-traffic calculators missing it (validator lists them).
