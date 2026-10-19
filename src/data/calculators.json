@@ -904,7 +904,8 @@
         "retirement-income-calculator",
         "fire-calculator",
         "paycheck-calculator",
-        "rmd-calculator"
+        "rmd-calculator",
+        "social-security-cola-calculator"
       ]
     },
     {
@@ -1048,7 +1049,8 @@
         "net-worth-calculator",
         "savings-goal-calculator",
         "debt-to-income-calculator",
-        "holiday-gift-budget-calculator"
+        "holiday-gift-budget-calculator",
+        "social-security-cola-calculator"
       ]
     },
     {
@@ -5398,7 +5400,47 @@
       "relatedCalculators": [
         "retirement-income-calculator",
         "social-security-calculator",
-        "tax-bracket-calculator"
+        "tax-bracket-calculator",
+        "social-security-cola-calculator"
+      ]
+    },
+    {
+      "title": "Social Security COLA Calculator",
+      "slug": "social-security-cola-calculator",
+      "description": "Calculate your new Social Security benefit after the 2027 cost-of-living adjustment (COLA). Enter your current monthly check to see your exact raise, new amount, and net increase after any Medicare Part B premium change.",
+      "shortDescription": "See how much your Social Security check will go up after the 2027 COLA",
+      "category": "financial",
+      "tags": [
+        "social security",
+        "cola",
+        "cost of living adjustment",
+        "retirement",
+        "2027"
+      ],
+      "featured": true,
+      "popular": true,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "\ud83d\udcc8",
+      "seoTitle": "2027 Social Security COLA Calculator \u2014 See Your New Benefit Amount",
+      "seoDescription": "Calculate your new 2027 Social Security benefit with the official 3.6% COLA. Enter your current check to see your exact monthly and annual raise.",
+      "keywords": [
+        "social security cola calculator",
+        "2027 cola calculator",
+        "social security raise calculator",
+        "how much will my social security check increase in 2027",
+        "cost of living adjustment calculator"
+      ],
+      "lastUpdated": "2026-10-19",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "social-security-calculator",
+        "budget-calculator",
+        "rmd-calculator"
       ]
     }
   ]

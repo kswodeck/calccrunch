@@ -413,14 +413,46 @@ site's financial/health focus and still ~6 weeks out, so it's recorded below for
 |---|---|---|---|
 | rmd-calculator + rmd-calculator-guide | "RMD calculator" / "required minimum distribution calculator 2026 2027" — net-new, no existing tool or post covered this; IRS Uniform Lifetime Table confirmed unchanged since 2022 | retirement-income-calculator, social-security-calculator, tax-bracket-calculator | done — shipped 2026-10-12 run (guide published 2026-10-19) |
 | medicare-open-enrollment-2027-guide | "Medicare Open Enrollment 2027 dates" / "when is Medicare AEP 2026" — distinct from the already-shipped aca-open-enrollment-2027-guide (ACA marketplace, not Medicare); timed to publish exactly as the real Oct 15, 2026 AEP window opens | social-security-calculator, budget-calculator, rmd-calculator | done — shipped 2026-10-12 run (published 2026-10-15) |
-| social-security-cola-2027-guide (carried over) | "Social Security COLA 2027" / "2027 cost of living adjustment" — SSA announcement due ~Oct 14, 2026; still unconfirmed as of this run | budget-calculator, salary-to-hourly-calculator | todo (hold until SSA officially announces the 2027 COLA figure) |
+| social-security-cola-2027-guide (carried over) | "Social Security COLA 2027" / "2027 cost of living adjustment" — SSA announcement due ~Oct 14, 2026; still unconfirmed as of this run | budget-calculator, salary-to-hourly-calculator | done — shipped 2026-10-19 run (see below) |
 | irmaa-2027-medicare-premium-guide | "2027 IRMAA brackets" / "2027 Medicare Part B premium" — net-new angle surfaced this run; CMS has not yet finalized 2027 Part B premiums or IRMAA thresholds (typically announced in November), so no dollar figures can be verified yet | rmd-calculator, social-security-calculator, budget-calculator | todo (hold until CMS officially announces 2027 Part B premium/IRMAA brackets, expected November 2026) |
 | thanksgiving-turkey-cooking-time-calculator | "how long to cook a turkey calculator" / "turkey cooking time per pound" — real, multi-competitor search demand confirmed via WebSearch this run; Thanksgiving 2026 falls Nov 26, so still ~6 weeks out from this run | recipe-scaler-converter (if it exists) or a new food-cooking category tool | todo (net-new, food/cooking category; time-box: publish early-to-mid November 2026) |
 | 401k-2027-contribution-limits (carried over) | "2027 401k contribution limit" — IRS typically announces in late October/early November; unannounced as of this run | savings-goal-calculator, retirement-income-calculator | todo (hold until IRS officially announces 2027 401(k) limits) |
 | open-enrollment-2027-fsa-hsa-guide (FSA-only, carried over) | "2027 FSA contribution limit" — still unannounced as of this run | budget-calculator, savings-goal-calculator | todo (hold until 2027 FSA limit is officially announced) |
 | q4-estimated-tax-deadline-guide (carried over) | "Q4 estimated tax deadline" / "January 15 estimated tax" | self-employment-tax-calculator, freelance-rate-calculator | todo (hold until ~4-5 weeks before Jan 15, 2027, i.e. early-mid December 2026) |
-| black-friday-2026-shopping-strategy-guide (carried over) | "Black Friday 2026 deals" / "when is Black Friday 2026" — confirmed Nov 27, 2026 | discount-calculator, holiday-gift-budget-calculator | todo (net-new; time-box: publish mid-to-late November 2026) |
+| black-friday-2026-shopping-strategy-guide (carried over) | "Black Friday 2026 deals" / "when is Black Friday 2026" — confirmed Nov 27, 2026 | discount-calculator, holiday-gift-budget-calculator | done — shipped 2026-10-19 run (see below) |
 | gpa-scale-converter-guide-followup (carried over) | Follow-up post once Texas finalizes its statewide standardized GPA/class-rank method | gpa-scale-converter, gpa-calculator | todo (hold until Texas commissioner publishes the standardized method) |
+
+## Blog backlog (new ideas from 2026-10-19 research run)
+
+why now: shipped social-security-cola-calculator (net-new Tier 2/financial tool — enter your current monthly
+benefit, pick the COLA year, and get your exact new amount, with an optional Medicare Part B premium offset field)
+plus social-security-cola-2027-guide and black-friday-2026-shopping-strategy-guide, closing out two items that were
+correctly held in previous runs. Confirmed via WebSearch that the SSA officially announced the 2027 COLA as 3.6% on
+October 14, 2026 (SSA.gov press release + multiple corroborating outlets) — this was the exact trigger the
+2026-10-12 run was waiting on, so it unblocked cleanly. Verified the historical COLA figures used in the calculator's
+lookup table (2024: 3.2%, 2025: 2.5%, 2026: 2.8%, 2027: 3.6%) and sanity-checked the multiplication logic with node
+for zero, negative/custom, and large-balance edge cases before shipping, including a display fix for a double-sign
+bug on negative custom-COLA inputs. Confirmed 401(k)/retirement-plan 2027 limits are still unannounced (IRS
+typically publishes in mid-November, per precedent of Notice 2025-67 landing Nov 13, 2025) — 401k-2027-contribution-
+limits correctly remains on hold. For the second post, confirmed via WebSearch that Black Friday 2026 falls Nov 27
+with retailer-specific early-access dates already public (Walmart Oct 28, Target Nov 3, Best Buy Nov 7, Home Depot
+Nov 10, Costco Nov 12) — shipped now rather than waiting for "mid-to-late November" as a prior run's note suggested,
+since publishing ~5 weeks ahead of Black Friday gives the content more runway to rank before the search-volume peak.
+Checked Halloween spending data (NRF/Deloitte/LendingTree/PwC surveys, all freshly published this month) but did not
+ship a Halloween post or calculator this run — with Halloween only ~12 days out, new content would have no
+realistic runway to rank before the holiday passes; recorded below as a note for next year's early-October run
+instead. Also declined thanksgiving-turkey-cooking-time-calculator again this run (kept the calculator+post slots
+for the two higher-confidence, verified-today financial topics) and irmaa-2027-medicare-premium-guide (Part B/IRMAA
+2027 figures still unconfirmed, per CMS's typical November timing).
+
+| Slug | Target query | Links to | Status |
+|---|---|---|---|
+| social-security-cola-calculator + social-security-cola-2027-guide | "social security cola calculator" / "social security raise calculator 2027" / "how much will my social security check increase in 2027" — net-new; closes out the item held since the 2026-10-06 run pending the official SSA announcement | social-security-calculator, budget-calculator, rmd-calculator | done — shipped 2026-10-19 run |
+| black-friday-2026-shopping-strategy-guide | "Black Friday 2026 deals" / "when is Black Friday 2026" / "Black Friday shopping strategy" — confirmed Nov 27, 2026, with retailer-specific early-access dates verified via WebSearch | discount-calculator, holiday-gift-budget-calculator, budget-calculator | done — shipped 2026-10-19 run |
+| halloween-budget-guide (new, future-dated) | "Halloween spending budget" / "average Halloween spending" — NRF/Deloitte/LendingTree/PwC all publish fresh survey data each September/October; missed this year's window (too close to Oct 31 to rank in time) but a clean recurring-annual topic for early October next year | budget-calculator, savings-goal-calculator, discount-calculator | todo (hold until early October next year — needs ~2-3 weeks of runway before Halloween to rank) |
+| medicare-part-b-premium-2027-calculator | "2027 Medicare Part B premium calculator" / "IRMAA 2027 calculator" — distinct net-new *tool* angle (enter income + filing status, get IRMAA bracket + premium) complementing the already-backlogged irmaa-2027-medicare-premium-guide post | rmd-calculator, social-security-calculator, social-security-cola-calculator | todo (hold until CMS officially announces 2027 Part B premium/IRMAA brackets, expected November 2026) |
+| year-end-tax-loss-harvesting-2026-guide | "tax loss harvesting deadline 2026" / "year end tax loss harvesting" — Dec 31 settlement deadline is a well-established, evergreen annual topic; no capital-gains/investment-loss calculator exists on-site yet | tax-bracket-calculator (today); would benefit from a future capital-gains-calculator | todo (time-box: publish mid-to-late November 2026, ~5-6 weeks before the Dec 31 deadline) |
+| charitable-giving-deduction-calculator | "charitable donation tax deduction calculator" / "year end giving tax deduction" — no charitable-donation calculator exists on-site; pairs naturally with year-end tax planning content (Giving Tuesday is Dec 1, 2026) | tax-bracket-calculator, budget-calculator | todo (net-new Tier 2 calculator; time-box: publish mid-November 2026 ahead of Giving Tuesday/year-end) |
 
 ## Retention backlog
 

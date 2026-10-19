@@ -172,8 +172,8 @@
     "description": "Convert celsius to fahrenheit in seconds with our free online converter.",
     "totalTime": "PT10S",
     "steps": [
-      "Enter the value in celsius (\u00b0C) you want to convert",
-      "The result in fahrenheit (\u00b0F) updates instantly",
+      "Enter the value in celsius (°C) you want to convert",
+      "The result in fahrenheit (°F) updates instantly",
       "Use the reference table to look up common temperature conversions"
     ]
   },
@@ -182,8 +182,8 @@
     "description": "Convert fahrenheit to celsius in seconds with our free online converter.",
     "totalTime": "PT10S",
     "steps": [
-      "Enter the value in fahrenheit (\u00b0F) you want to convert",
-      "The result in celsius (\u00b0C) updates instantly",
+      "Enter the value in fahrenheit (°F) you want to convert",
+      "The result in celsius (°C) updates instantly",
       "Use the reference table to look up common temperature conversions"
     ]
   },
@@ -212,7 +212,7 @@
     "description": "Calculate sales tax and the total price, or work backward to find the pre-tax price, with our free calculator.",
     "totalTime": "PT30S",
     "steps": [
-      "Enter the amount \u2014 the pre-tax price, or the total if you're removing tax",
+      "Enter the amount — the pre-tax price, or the total if you're removing tax",
       "Enter the sales tax rate, or pick your state to auto-fill the base rate",
       "Choose 'Add tax' to add tax to a price, or 'Remove tax' to find the pre-tax price",
       "Read the tax amount, total, and pre-tax price in the results"
@@ -490,7 +490,7 @@
     "description": "Add, subtract, multiply, or divide any two fractions or mixed numbers and get a simplified result with step-by-step explanation.",
     "totalTime": "PT1M",
     "steps": [
-      "Select your operation: click Add (+), Subtract (\u2212), Multiply (\u00d7), or Divide (\u00f7) at the top.",
+      "Select your operation: click Add (+), Subtract (−), Multiply (×), or Divide (÷) at the top.",
       "Enter the first fraction: type the numerator and denominator. For a mixed number like 2 3/4, also enter 2 in the Whole Number field.",
       "Enter the second fraction in the same way: whole number (if any), numerator, and denominator.",
       "Click the Calculate button to see the simplified result, its decimal equivalent, and a step-by-step solution.",
@@ -503,7 +503,7 @@
     "totalTime": "PT1M",
     "steps": [
       "Enter your numbers in the input box, separated by commas, spaces, or line breaks",
-      "Decimals and negative numbers are fully supported \u2014 enter them exactly as they appear",
+      "Decimals and negative numbers are fully supported — enter them exactly as they appear",
       "Click \"Calculate Average\" to see the mean, median, mode, range, sum, count, min, and max",
       "Review the results: the mean is the arithmetic average; the median is the middle value when sorted; the mode is the most common value",
       "If you need to share or bookmark the result, the numbers are saved in the URL automatically",
@@ -613,7 +613,7 @@
       "Enter your numbers separated by commas, spaces, or new lines.",
       "Choose whether your data is a sample (subset of a larger group) or the full population.",
       "Click Calculate to see the standard deviation, variance, mean, and a full breakdown.",
-      "Bookmark or share the URL \u2014 your numbers and settings are saved automatically."
+      "Bookmark or share the URL — your numbers and settings are saved automatically."
     ]
   },
   "z-score-calculator": {
@@ -621,11 +621,11 @@
     "description": "Calculate a z-score, percentile, and probability from a value, mean, and standard deviation in seconds.",
     "totalTime": "PT1M",
     "steps": [
-      "Enter your value (x) \u2014 the raw data point you want to standardize.",
-      "Enter the mean (\u03bc) of the data set or distribution.",
-      "Enter the standard deviation (\u03c3) of the data set or distribution.",
+      "Enter your value (x) — the raw data point you want to standardize.",
+      "Enter the mean (μ) of the data set or distribution.",
+      "Enter the standard deviation (σ) of the data set or distribution.",
       "Click Calculate to see the z-score, percentile, and probability breakdown.",
-      "Bookmark or share the URL \u2014 your inputs are saved automatically."
+      "Bookmark or share the URL — your inputs are saved automatically."
     ]
   },
   "confidence-interval-calculator": {
@@ -635,20 +635,20 @@
     "steps": [
       "Choose whether you're calculating a confidence interval for a sample mean (average) or a sample proportion (percentage).",
       "For a mean, enter the sample mean, sample standard deviation, and sample size. For a proportion, enter the sample percentage and sample size.",
-      "Pick a confidence level \u2014 90%, 95%, and 99% are the most common.",
+      "Pick a confidence level — 90%, 95%, and 99% are the most common.",
       "Click Calculate to see the confidence interval, margin of error, and the critical value (t or z) used.",
-      "Bookmark or share the URL \u2014 your inputs and settings are saved automatically."
+      "Bookmark or share the URL — your inputs and settings are saved automatically."
     ]
   },
   "percentile-calculator": {
     "name": "How to Use the Percentile Calculator",
-    "description": "Find the percentile rank of a value in a data set, or find the value at any percentile \u2014 with linear interpolation matching Excel.",
+    "description": "Find the percentile rank of a value in a data set, or find the value at any percentile — with linear interpolation matching Excel.",
     "totalTime": "PT1M",
     "steps": [
       "Enter your full data set, separated by commas, spaces, or new lines.",
       "Enter a value to find its percentile rank within that data set, a percentile to find the corresponding value, or both.",
       "Click Calculate to see your result along with the exact formula used.",
-      "Bookmark or share the URL \u2014 your data and inputs are saved automatically."
+      "Bookmark or share the URL — your data and inputs are saved automatically."
     ]
   },
   "gpa-scale-converter": {
@@ -679,7 +679,7 @@
     "description": "Plan your 2026 holiday gift budget: split spending per recipient, add a wrapping/shipping reserve, and see the weekly savings needed to hit your target date.",
     "totalTime": "PT2M",
     "steps": [
-      "Set your shopping deadline \u2014 the date you want all gifts bought and wrapped by",
+      "Set your shopping deadline — the date you want all gifts bought and wrapped by",
       "Optionally enter a total gift budget and your annual income to compare against spending guidelines",
       "Add a row for each person you're buying for and enter a planned dollar amount",
       "Enter any amount you've already saved toward holiday gifts",
@@ -692,12 +692,24 @@
     "description": "Find your 2026 or 2027 RMD from a traditional IRA or 401(k) using the IRS Uniform Lifetime Table.",
     "totalTime": "PT1M",
     "steps": [
-      "Enter your birth year \u2014 this determines whether your RMDs start at age 72, 73, or 75",
+      "Enter your birth year — this determines whether your RMDs start at age 72, 73, or 75",
       "Select your account type (Traditional accounts require RMDs; most Roth accounts don't)",
       "Enter your account balance as of December 31 of the prior year",
       "Choose the year you're calculating the RMD for (2026 or 2027)",
       "Check the spousal box if your sole beneficiary is a spouse more than 10 years younger",
       "Click Calculate RMD to see your required withdrawal amount, percentage of balance, and deadline"
+    ]
+  },
+  "social-security-cola-calculator": {
+    "name": "How to Use the Social Security COLA Calculator",
+    "description": "Calculate your new Social Security benefit after the 2027 cost-of-living adjustment (COLA). Enter your current check and see your raise instantly.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Enter your current monthly Social Security benefit from your SSA statement or bank deposit",
+      "Select your benefit type (retirement/SSDI or SSI) to see when your increase actually arrives",
+      "Choose the 2027 COLA (3.6%, selected by default) or pick a different year or custom percentage",
+      "Optionally enter an expected Medicare Part B premium increase to see your net raise",
+      "Click Calculate My New Benefit to see your new monthly amount, dollar increase, and annual total"
     ]
   }
 }
