@@ -711,5 +711,17 @@
       "Optionally enter an expected Medicare Part B premium increase to see your net raise",
       "Click Calculate My New Benefit to see your new monthly amount, dollar increase, and annual total"
     ]
+  },
+  "charitable-giving-deduction-calculator": {
+    "name": "How to Calculate Your Charitable Giving Deduction",
+    "description": "Calculate your 2026 charitable tax deduction under the new OBBBA rules, whether you itemize or take the standard deduction.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Select your filing status (single, head of household, married filing jointly, or married filing separately)",
+      "Choose whether you take the standard deduction or itemize deductions on Schedule A",
+      "Enter your adjusted gross income (AGI) and estimated marginal tax bracket",
+      "Enter your cash donations to public charities for the year, plus any non-cash donations if you itemize",
+      "Click Calculate to see your deductible amount and estimated tax savings"
+    ]
   }
 }

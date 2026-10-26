@@ -1250,5 +1250,31 @@
       "q": "Does the COLA apply to SSI as well as retirement benefits?",
       "a": "Yes. The same percentage COLA applies to SSI, Social Security retirement, survivors, and SSDI benefits. SSI payments just reflect the increase about a month earlier than retirement benefits because of how SSI's payment calendar works."
     }
+  ],
+  "charitable-giving-deduction-calculator": [
+    {
+      "q": "Can I deduct charitable donations if I take the standard deduction?",
+      "a": "Yes, starting with the 2026 tax year. The One Big Beautiful Bill Act (OBBBA) created a new above-the-line deduction for cash gifts to public charities even if you take the standard deduction, up to $1,000 for single/head of household/married filing separately filers or $2,000 for married filing jointly. It's claimed directly on Form 1040 without Schedule A."
+    },
+    {
+      "q": "What is the new 0.5% AGI floor on charitable deductions?",
+      "a": "For itemizers, OBBBA requires you to subtract 0.5% of your adjusted gross income (AGI) from your total charitable contributions before the remainder is deductible on Schedule A, effective for tax years starting in 2026. For example, with $100,000 AGI, the first $500 of giving isn't deductible — only amounts above that count."
+    },
+    {
+      "q": "Does the 0.5% AGI floor apply to the standard-deduction charitable benefit?",
+      "a": "No. The 0.5% floor only applies to itemized charitable deductions claimed on Schedule A. The separate $1,000/$2,000 above-the-line deduction for non-itemizers has no floor — every dollar of cash giving up to the cap is deductible."
+    },
+    {
+      "q": "Are donor-advised fund contributions eligible for either deduction?",
+      "a": "No, for the new non-itemizer above-the-line deduction. Gifts to donor-advised funds (DAFs) and private non-operating foundations don't qualify — only direct cash gifts to public 501(c)(3) charities count. If you itemize, DAF contributions remain deductible under the normal Schedule A rules, just subject to the new 0.5% AGI floor."
+    },
+    {
+      "q": "Can I deduct non-cash donations like clothing or stock if I don't itemize?",
+      "a": "No. The standard-deduction above-the-line charitable benefit is cash-only. Non-cash donations (clothing, household goods, appreciated stock) are only deductible if you itemize on Schedule A, where they're subject to the 0.5% AGI floor and separate AGI percentage ceilings (30% for most appreciated property)."
+    },
+    {
+      "q": "Does unused charitable deduction carry forward to next year?",
+      "a": "It depends which deduction. Itemized charitable deductions that exceed the AGI percentage limits (60% of AGI for cash, 30% for property) carry forward for up to 5 years. The new non-itemizer above-the-line deduction has no carryforward — if your cash giving exceeds the $1,000/$2,000 cap, the excess simply isn't deductible that year or any future year."
+    }
   ]
 }

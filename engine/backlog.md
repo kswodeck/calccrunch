@@ -451,8 +451,34 @@ for the two higher-confidence, verified-today financial topics) and irmaa-2027-m
 | black-friday-2026-shopping-strategy-guide | "Black Friday 2026 deals" / "when is Black Friday 2026" / "Black Friday shopping strategy" — confirmed Nov 27, 2026, with retailer-specific early-access dates verified via WebSearch | discount-calculator, holiday-gift-budget-calculator, budget-calculator | done — shipped 2026-10-19 run |
 | halloween-budget-guide (new, future-dated) | "Halloween spending budget" / "average Halloween spending" — NRF/Deloitte/LendingTree/PwC all publish fresh survey data each September/October; missed this year's window (too close to Oct 31 to rank in time) but a clean recurring-annual topic for early October next year | budget-calculator, savings-goal-calculator, discount-calculator | todo (hold until early October next year — needs ~2-3 weeks of runway before Halloween to rank) |
 | medicare-part-b-premium-2027-calculator | "2027 Medicare Part B premium calculator" / "IRMAA 2027 calculator" — distinct net-new *tool* angle (enter income + filing status, get IRMAA bracket + premium) complementing the already-backlogged irmaa-2027-medicare-premium-guide post | rmd-calculator, social-security-calculator, social-security-cola-calculator | todo (hold until CMS officially announces 2027 Part B premium/IRMAA brackets, expected November 2026) |
-| year-end-tax-loss-harvesting-2026-guide | "tax loss harvesting deadline 2026" / "year end tax loss harvesting" — Dec 31 settlement deadline is a well-established, evergreen annual topic; no capital-gains/investment-loss calculator exists on-site yet | tax-bracket-calculator (today); would benefit from a future capital-gains-calculator | todo (time-box: publish mid-to-late November 2026, ~5-6 weeks before the Dec 31 deadline) |
-| charitable-giving-deduction-calculator | "charitable donation tax deduction calculator" / "year end giving tax deduction" — no charitable-donation calculator exists on-site; pairs naturally with year-end tax planning content (Giving Tuesday is Dec 1, 2026) | tax-bracket-calculator, budget-calculator | todo (net-new Tier 2 calculator; time-box: publish mid-November 2026 ahead of Giving Tuesday/year-end) |
+| year-end-tax-loss-harvesting-2026-guide | "tax loss harvesting deadline 2026" / "year end tax loss harvesting" | tax-bracket-calculator, charitable-giving-deduction-calculator, budget-calculator | done — shipped 2026-10-26 run as year-end-tax-moves-2026-guide (broadened to a 5-move roundup: tax-loss harvesting/wash-sale deep dive, 401(k) deadline, charitable giving, FSA spend-down, withholding check; published 2026-11-02) |
+| charitable-giving-deduction-calculator | "charitable donation tax deduction calculator" / "year end giving tax deduction" (Giving Tuesday confirmed Dec 1, 2026 via date math this run) | tax-bracket-calculator, budget-calculator, rmd-calculator | done — shipped 2026-10-26 run alongside new charitable-giving-deduction-guide post (published 2026-10-28) |
+
+## Blog backlog (new ideas from 2026-10-26 research run)
+
+why now: shipped charitable-giving-deduction-calculator (net-new Tier 2/financial tool — handles both the brand-new
+OBBBA above-the-line non-itemizer deduction and the new 0.5% AGI itemizer floor) plus charitable-giving-deduction-guide
+this run, bidirectionally linked into tax-bracket-calculator, budget-calculator, and rmd-calculator. Confirmed via
+WebSearch that OBBBA's $1,000/$2,000 non-itemizer cash deduction and the 0.5% AGI floor for itemizers are both
+confirmed, permanent, and effective for the 2026 tax year — a genuine net-new topic with no existing calculator or
+post on-site. Also shipped year-end-tax-moves-2026-guide, broadening the long-carried-over year-end-tax-loss-harvesting-2026-guide
+idea into a 5-move roundup (tax-loss harvesting + wash-sale rule, 401(k) deadline, charitable giving, FSA spend-down,
+withholding check) rather than a single-topic post, since it naturally cross-links the new charitable calculator
+without duplicating the deep-dive guide's content (that post owns the charitable-deduction mechanics in depth; this
+one only summarizes it as one of five moves). Confirmed via WebSearch that the 2027 Health FSA limit is now officially
+$3,500 (up from $3,400) — this unblocks the previously-held open-enrollment-2027-fsa-hsa-guide (FSA-only) item below.
+Confirmed 2027 401(k) limits remain unannounced (IRS typically publishes late Oct/early-mid Nov; 2026's Notice 2025-67
+landed Nov 13, 2025) — correctly still on hold. Confirmed Giving Tuesday 2026 falls Dec 1 (day after Cyber Monday
+Nov 30) via date math, used as a minor timing reference in both new posts.
+
+| Slug | Target query | Links to | Status |
+|---|---|---|---|
+| open-enrollment-2027-fsa-hsa-guide (FSA-only, carried over) | "2027 FSA contribution limit" — now officially announced at $3,500 (up from $3,400), confirmed via WebSearch this run | budget-calculator, savings-goal-calculator | todo (no longer blocked — figure is official, ready to ship next run) |
+| 401k-2027-contribution-limits (carried over) | "2027 401k contribution limit" — still unannounced as of this run; IRS typically publishes late Oct/early-mid Nov | savings-goal-calculator, retirement-income-calculator | todo (hold until IRS officially announces 2027 401(k) limits) |
+| q4-estimated-tax-deadline-guide (carried over) | "Q4 estimated tax deadline" / "January 15 estimated tax" | self-employment-tax-calculator, freelance-rate-calculator | todo (hold until ~4-5 weeks before Jan 15, 2027, i.e. early-mid December 2026) |
+| irmaa-2027-medicare-premium-guide (carried over) | "2027 IRMAA brackets" / "2027 Medicare Part B premium" — CMS has not yet finalized 2027 Part B premiums (typically announced November) | rmd-calculator, social-security-calculator, budget-calculator | todo (hold until CMS officially announces, expected November 2026) |
+| medicare-part-b-premium-2027-calculator (carried over) | "2027 Medicare Part B premium calculator" / "IRMAA 2027 calculator" | rmd-calculator, social-security-calculator, social-security-cola-calculator | todo (hold until CMS officially announces 2027 Part B premium/IRMAA brackets) |
+| capital-gains-tax-calculator | "capital gains tax calculator" / "how much tax do I pay on stock gains" — natural next tool following this run's tax-loss harvesting content; no existing calculator covers short-term vs. long-term capital gains tax specifically | tax-bracket-calculator, charitable-giving-deduction-calculator | todo (net-new, financial; would also let a future tax-loss-harvesting-calculator or deeper investment-loss guide model real numbers instead of just explaining the rules) |
 
 ## Retention backlog
 

@@ -1717,6 +1717,70 @@
         "cyber monday 2026",
         "black friday budget"
       ]
+    },
+    {
+      "slug": "charitable-giving-deduction-guide",
+      "title": "How to Claim the New Charitable Tax Deduction in 2026",
+      "description": "Starting in 2026, non-itemizers can deduct up to $1,000 ($2,000 MFJ) in cash giving, while itemizers face a new 0.5% AGI floor. Here's exactly how both rules work.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-10-28T09:00:00-07:00",
+      "updatedDate": "2026-10-28T09:00:00-07:00",
+      "category": "Financial Planning",
+      "tags": [
+        "taxes",
+        "charitable giving",
+        "tax deductions",
+        "OBBBA",
+        "year-end tax planning"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "charitable-giving-deduction-calculator",
+        "tax-bracket-calculator",
+        "budget-calculator"
+      ],
+      "seoTitle": "New Charitable Tax Deduction 2026: Standard Deduction & Itemizer Rules",
+      "seoDescription": "Starting 2026, non-itemizers can deduct up to $1,000 ($2,000 MFJ) in cash gifts under OBBBA, while itemizers face a new 0.5% AGI floor. See how much you can deduct.",
+      "keywords": [
+        "charitable donation tax deduction 2026",
+        "non-itemizer charitable deduction",
+        "0.5% AGI floor charitable contributions",
+        "OBBBA charitable deduction",
+        "how to claim charitable tax deduction"
+      ]
+    },
+    {
+      "slug": "year-end-tax-moves-2026-guide",
+      "title": "5 Year-End Tax Moves to Make Before December 31, 2026",
+      "description": "Five moves to make before December 31, 2026: tax-loss harvesting (and the 30-day wash sale trap), maxing out your 401(k), locking in charitable gifts, spending down your FSA, and checking your bracket.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-11-02T09:00:00-07:00",
+      "updatedDate": "2026-11-02T09:00:00-07:00",
+      "category": "Financial Planning",
+      "tags": [
+        "taxes",
+        "year-end tax planning",
+        "tax-loss harvesting",
+        "401k",
+        "charitable giving"
+      ],
+      "readTime": "8 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "tax-bracket-calculator",
+        "charitable-giving-deduction-calculator",
+        "budget-calculator"
+      ],
+      "seoTitle": "5 Year-End Tax Moves Before December 31, 2026 (Tax-Loss Harvesting + More)",
+      "seoDescription": "Tax-loss harvesting deadlines, the wash sale rule, 401(k) limits, charitable giving changes, and FSA deadlines — 5 moves to make before Dec 31, 2026.",
+      "keywords": [
+        "year end tax moves 2026",
+        "tax loss harvesting deadline 2026",
+        "wash sale rule",
+        "401k contribution deadline 2026",
+        "year end tax planning checklist"
+      ]
     }
   ]
 }
