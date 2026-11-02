@@ -478,7 +478,36 @@ Nov 30) via date math, used as a minor timing reference in both new posts.
 | q4-estimated-tax-deadline-guide (carried over) | "Q4 estimated tax deadline" / "January 15 estimated tax" | self-employment-tax-calculator, freelance-rate-calculator | todo (hold until ~4-5 weeks before Jan 15, 2027, i.e. early-mid December 2026) |
 | irmaa-2027-medicare-premium-guide (carried over) | "2027 IRMAA brackets" / "2027 Medicare Part B premium" — CMS has not yet finalized 2027 Part B premiums (typically announced November) | rmd-calculator, social-security-calculator, budget-calculator | todo (hold until CMS officially announces, expected November 2026) |
 | medicare-part-b-premium-2027-calculator (carried over) | "2027 Medicare Part B premium calculator" / "IRMAA 2027 calculator" | rmd-calculator, social-security-calculator, social-security-cola-calculator | todo (hold until CMS officially announces 2027 Part B premium/IRMAA brackets) |
-| capital-gains-tax-calculator | "capital gains tax calculator" / "how much tax do I pay on stock gains" — natural next tool following this run's tax-loss harvesting content; no existing calculator covers short-term vs. long-term capital gains tax specifically | tax-bracket-calculator, charitable-giving-deduction-calculator | todo (net-new, financial; would also let a future tax-loss-harvesting-calculator or deeper investment-loss guide model real numbers instead of just explaining the rules) |
+| capital-gains-tax-calculator | "capital gains tax calculator" / "how much tax do I pay on stock gains" — natural next tool following this run's tax-loss harvesting content; no existing calculator covers short-term vs. long-term capital gains tax specifically | tax-bracket-calculator, charitable-giving-deduction-calculator | done — shipped 2026-11-02 run alongside capital-gains-tax-guide post (published 2026-11-09) |
+
+## Blog backlog (new ideas from 2026-11-02 research run)
+
+why now: shipped capital-gains-tax-calculator (net-new Tier 2/financial tool — models short-term vs. long-term
+holding-period stacking, the 2026 0%/15%/20% LTCG brackets, and the 3.8% NIIT) plus capital-gains-tax-guide, closing
+out the item carried over since the 2026-10-26 run. Reused the exact 2026 ordinary-bracket/standard-deduction figures
+already live in tax-bracket-calculator.js for cross-site consistency, then independently verified the LTCG thresholds
+($49,450/$545,500 single, $98,900/$613,700 MFJ, $306,850 MFS, $66,200/$579,600 HOH) and NIIT thresholds
+($200k single/HOH, $250k MFJ, $125k MFS, unindexed since 2013) via WebSearch against IRS Revenue Procedure 2025-32
+before writing the calculator logic, and sanity-checked the stacking math with a standalone node script (8 edge
+cases, including the zero-gain NaN% guard) before committing the production JS. Bidirectionally linked into
+tax-bracket-calculator, charitable-giving-deduction-calculator, and rmd-calculator. Also shipped
+holiday-tipping-guide-2026 (published 2026-11-05) as a genuine net-new content-gap fill — confirmed via grep that no
+existing post covers holiday tipping specifically (only holiday-gift-budget-guide exists, which covers gifts, not
+tips); links tip-calculator, holiday-gift-budget-calculator, and budget-calculator. Re-confirmed via fresh WebSearch
+that both the 2027 401(k) contribution limit and the 2027 Medicare Part B premium/IRMAA brackets remain officially
+unannounced as of this run (IRS/CMS typically publish mid-to-late November) — correctly left on hold rather than
+guessing at figures. Declined thanksgiving-turkey-cooking-time-calculator again this run (tangential to the site's
+financial/health focus) and skipped a DST-clocks-back post since Nov 1, 2026 already passed before this run.
+
+| Slug | Target query | Links to | Status |
+|---|---|---|---|
+| 401k-2027-contribution-limits (carried over) | "2027 401k contribution limit" — still unannounced as of this run; IRS typically publishes mid-to-late November (2026's Notice 2025-67 landed Nov 13, 2025) | savings-goal-calculator, retirement-income-calculator | todo (hold until IRS officially announces 2027 401(k) limits) |
+| irmaa-2027-medicare-premium-guide (carried over) | "2027 IRMAA brackets" / "2027 Medicare Part B premium" — CMS has not yet finalized 2027 Part B premiums (typically announced mid-to-late November) | rmd-calculator, social-security-calculator, budget-calculator | todo (hold until CMS officially announces, expected mid-to-late November 2026) |
+| medicare-part-b-premium-2027-calculator (carried over) | "2027 Medicare Part B premium calculator" / "IRMAA 2027 calculator" | rmd-calculator, social-security-calculator, social-security-cola-calculator | todo (hold until CMS officially announces 2027 Part B premium/IRMAA brackets) |
+| open-enrollment-2027-fsa-hsa-guide (FSA-only, carried over) | "2027 FSA contribution limit" — officially announced at $3,500 (up from $3,400); still unshipped, ready to go next run | budget-calculator, savings-goal-calculator | todo (no longer blocked — figure is official, ready to ship next run) |
+| q4-estimated-tax-deadline-guide (carried over) | "Q4 estimated tax deadline" / "January 15 estimated tax" | self-employment-tax-calculator, freelance-rate-calculator | todo (hold until ~4-5 weeks before Jan 15, 2027, i.e. early-mid December 2026) |
+| tax-loss-harvesting-calculator (new) | "tax loss harvesting calculator" — net-new tool angle surfaced while researching this run's capital gains content; would let users model realized losses offsetting realized gains (the $3,000/$1,500 net-loss-against-ordinary-income cap) with real numbers instead of just reading about the rule in year-end-tax-moves-2026-guide or capital-gains-tax-guide | capital-gains-tax-calculator, tax-bracket-calculator, year-end-tax-moves-2026-guide | todo (net-new, financial; pairs naturally with the newly-shipped capital-gains-tax-calculator) |
+| holiday-weight-gain-fitness-guide (new, soft idea) | "average holiday weight gain" / "how to avoid holiday weight gain" — real recurring seasonal search interest in the health-fitness niche, but no single clear calculator pairing emerged this run beyond existing calorie/TDEE tools; needs a tighter scope (e.g. a maintenance-calorie angle) before it's ready to schedule | calorie-calculator or tdee-calculator (whichever exists) | todo (needs scoping — hold until a sharper calculator angle is identified) |
 
 ## Retention backlog
 

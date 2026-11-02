@@ -2363,7 +2363,8 @@
         "budget-calculator",
         "retirement-planning-calculator",
         "rmd-calculator",
-        "charitable-giving-deduction-calculator"
+        "charitable-giving-deduction-calculator",
+        "capital-gains-tax-calculator"
       ]
     },
     {
@@ -5404,7 +5405,8 @@
         "social-security-calculator",
         "tax-bracket-calculator",
         "social-security-cola-calculator",
-        "charitable-giving-deduction-calculator"
+        "charitable-giving-deduction-calculator",
+        "capital-gains-tax-calculator"
       ]
     },
     {
@@ -5483,6 +5485,48 @@
       "relatedCalculators": [
         "tax-bracket-calculator",
         "budget-calculator",
+        "rmd-calculator",
+        "capital-gains-tax-calculator"
+      ]
+    },
+    {
+      "title": "Capital Gains Tax Calculator",
+      "slug": "capital-gains-tax-calculator",
+      "description": "Estimate your 2026 federal capital gains tax on stocks, crypto, or property sales — short-term and long-term rates, plus the 3.8% NIIT.",
+      "shortDescription": "Estimate your 2026 federal capital gains tax on stocks, crypto, or property sales — short-term and long-term rates, plus the 3",
+      "category": "financial",
+      "tags": [
+        "capital gains tax",
+        "short-term vs long-term",
+        "NIIT",
+        "stock sale tax",
+        "crypto tax",
+        "investment tax"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "📈",
+      "seoTitle": "Capital Gains Tax Calculator 2026 - Short & Long-Term Rates",
+      "seoDescription": "Estimate your 2026 federal capital gains tax on stocks, crypto, or property. See short-term vs. long-term rates (0%/15%/20%) plus the 3.8% NIIT, instantly.",
+      "keywords": [
+        "capital gains tax calculator",
+        "long term capital gains tax calculator 2026",
+        "short term capital gains tax",
+        "stock sale tax calculator",
+        "NIIT calculator",
+        "how much tax do I pay on stock gains"
+      ],
+      "lastUpdated": "2026-11-02",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "tax-bracket-calculator",
+        "charitable-giving-deduction-calculator",
         "rmd-calculator"
       ]
     }

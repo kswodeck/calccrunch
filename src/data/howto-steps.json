@@ -723,5 +723,17 @@
       "Enter your cash donations to public charities for the year, plus any non-cash donations if you itemize",
       "Click Calculate to see your deductible amount and estimated tax savings"
     ]
+  },
+  "capital-gains-tax-calculator": {
+    "name": "How to Calculate Your Capital Gains Tax",
+    "description": "Estimate your 2026 federal capital gains tax on stocks, crypto, or property sales.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Select your filing status (single, head of household, married filing jointly, or married filing separately)",
+      "Enter your other taxable income for the year — everything except this capital gain",
+      "Enter the capital gain amount (sale price minus cost basis)",
+      "Choose your holding period: short-term (1 year or less) or long-term (more than 1 year)",
+      "Click Calculate to see your estimated federal tax, after-tax proceeds, and whether the 3.8% NIIT applies"
+    ]
   }
 }

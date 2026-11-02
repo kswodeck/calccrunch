@@ -1276,5 +1276,31 @@
       "q": "Does unused charitable deduction carry forward to next year?",
       "a": "It depends which deduction. Itemized charitable deductions that exceed the AGI percentage limits (60% of AGI for cash, 30% for property) carry forward for up to 5 years. The new non-itemizer above-the-line deduction has no carryforward — if your cash giving exceeds the $1,000/$2,000 cap, the excess simply isn't deductible that year or any future year."
     }
+  ],
+  "capital-gains-tax-calculator": [
+    {
+      "q": "How much tax do I pay on capital gains in 2026?",
+      "a": "It depends on how long you held the asset. Long-term gains (held more than one year) are taxed at 0%, 15%, or 20% based on your total taxable income. Short-term gains (held one year or less) are taxed as ordinary income at your regular marginal rate, up to 37%. High earners may also owe an extra 3.8% Net Investment Income Tax (NIIT)."
+    },
+    {
+      "q": "What is the difference between short-term and long-term capital gains tax?",
+      "a": "Short-term capital gains come from assets held one year or less and are taxed as ordinary income at your regular tax bracket (10%-37%). Long-term capital gains come from assets held more than one year and get preferential 0%, 15%, or 20% federal rates, which are almost always lower than ordinary income tax rates."
+    },
+    {
+      "q": "What are the 2026 long-term capital gains tax brackets?",
+      "a": "For 2026, the 0% rate applies to taxable income up to 9,450 (single), 8,900 (married filing jointly), 6,200 (head of household), or 9,450 (married filing separately). The 15% rate applies above those amounts up to 45,500 (single), 13,700 (MFJ), 79,600 (HOH), or 06,850 (MFS). The 20% rate applies above those upper thresholds. Source: IRS Revenue Procedure 2025-32."
+    },
+    {
+      "q": "What is the Net Investment Income Tax (NIIT) and when does it apply?",
+      "a": "The NIIT is an additional 3.8% federal tax on investment income — including capital gains — that applies once your modified adjusted gross income (MAGI) exceeds 00,000 (single or head of household), 50,000 (married filing jointly), or 25,000 (married filing separately). These thresholds are not indexed for inflation and have stayed the same since 2013."
+    },
+    {
+      "q": "Do I pay capital gains tax on my home sale?",
+      "a": "Often not. Most homeowners can exclude up to 50,000 of gain (00,000 for married couples filing jointly) on the sale of a primary residence they owned and lived in for at least 2 of the last 5 years. Only gain above that exclusion is taxable. This calculator does not apply the home sale exclusion automatically — subtract it from your gain before entering it."
+    },
+    {
+      "q": "Does selling stock at a loss offset capital gains tax?",
+      "a": "Yes. Capital losses can offset capital gains dollar-for-dollar, and up to ,000 of net losses beyond that can offset ordinary income each year (,500 if married filing separately), with any excess carried forward to future years. This calculator assumes a net gain and does not model loss offsetting — net your gains and losses together first."
+    }
   ]
 }
