@@ -1845,6 +1845,70 @@
         "capital gains tax brackets 2026",
         "NIIT capital gains"
       ]
+    },
+    {
+      "slug": "tax-loss-harvesting-guide",
+      "title": "Tax-Loss Harvesting: How to Turn 2026 Investment Losses Into Tax Savings",
+      "description": "Learn how tax-loss harvesting works, the December 31 deadline, the wash-sale rule, and how to estimate your actual tax savings before you sell.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-11-12T09:00:00-07:00",
+      "updatedDate": "2026-11-12T09:00:00-07:00",
+      "category": "Investing",
+      "tags": [
+        "tax loss harvesting",
+        "wash sale rule",
+        "capital gains",
+        "year end tax planning",
+        "investing"
+      ],
+      "readTime": "8 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "tax-loss-harvesting-calculator",
+        "capital-gains-tax-calculator",
+        "tax-bracket-calculator"
+      ],
+      "seoTitle": "Tax-Loss Harvesting 2026: Deadline, Wash-Sale Rule & Savings Guide",
+      "seoDescription": "How tax-loss harvesting works before the Dec. 31 deadline — offset gains, deduct up to $3,000 against income, avoid the wash-sale rule, and estimate your savings.",
+      "keywords": [
+        "tax loss harvesting",
+        "tax loss harvesting deadline 2026",
+        "wash sale rule",
+        "how does tax loss harvesting work",
+        "capital loss carryforward"
+      ]
+    },
+    {
+      "slug": "2027-fsa-contribution-limit-guide",
+      "title": "2027 FSA Contribution Limit: What's New and How to Plan Your Election",
+      "description": "The IRS confirmed the 2027 Health FSA limit at $3,500, up from $3,400. Here's what changed, what it means for your paycheck, and how to plan your election.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-11-16T09:00:00-07:00",
+      "updatedDate": "2026-11-16T09:00:00-07:00",
+      "category": "Financial Planning",
+      "tags": [
+        "FSA",
+        "2027 contribution limits",
+        "open enrollment",
+        "flexible spending account",
+        "employee benefits"
+      ],
+      "readTime": "7 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "budget-calculator",
+        "savings-goal-calculator",
+        "tax-bracket-calculator"
+      ],
+      "seoTitle": "2027 FSA Contribution Limit: $3,500 (Official) - What to Know",
+      "seoDescription": "The IRS officially set the 2027 Health FSA limit at $3,500 (Rev. Proc. 2026-35). See the new carryover limit, Dependent Care FSA rules, and how to set your election.",
+      "keywords": [
+        "2027 fsa contribution limit",
+        "health fsa limit 2027",
+        "fsa carryover limit 2027",
+        "dependent care fsa 2027",
+        "open enrollment fsa election"
+      ]
     }
   ]
 }

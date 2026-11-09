@@ -2364,7 +2364,8 @@
         "retirement-planning-calculator",
         "rmd-calculator",
         "charitable-giving-deduction-calculator",
-        "capital-gains-tax-calculator"
+        "capital-gains-tax-calculator",
+        "tax-loss-harvesting-calculator"
       ]
     },
     {
@@ -5486,7 +5487,8 @@
         "tax-bracket-calculator",
         "budget-calculator",
         "rmd-calculator",
-        "capital-gains-tax-calculator"
+        "capital-gains-tax-calculator",
+        "tax-loss-harvesting-calculator"
       ]
     },
     {
@@ -5527,7 +5529,47 @@
       "relatedCalculators": [
         "tax-bracket-calculator",
         "charitable-giving-deduction-calculator",
-        "rmd-calculator"
+        "rmd-calculator",
+        "tax-loss-harvesting-calculator"
+      ]
+    },
+    {
+      "title": "Tax-Loss Harvesting Calculator",
+      "slug": "tax-loss-harvesting-calculator",
+      "description": "Estimate how much a tax-loss harvest could save you in 2026 — offset capital gains, deduct up to $3,000 against ordinary income, and see your carryforward.",
+      "shortDescription": "Estimate how much a tax-loss harvest could save you in 2026 — offset capital gains, deduct up to $3,000 against ordinary income, and see your carryforward",
+      "category": "financial",
+      "tags": [
+        "tax loss harvesting",
+        "wash sale rule",
+        "capital losses",
+        "investment tax",
+        "year end tax planning"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "📉",
+      "seoTitle": "Tax-Loss Harvesting Calculator 2026 - Estimate Your Savings",
+      "seoDescription": "Estimate how much a tax-loss harvest could save you in 2026 — offset capital gains, deduct up to $3,000 against ordinary income, and see your carryforward.",
+      "keywords": [
+        "tax loss harvesting calculator",
+        "tax loss harvesting deadline 2026",
+        "wash sale rule calculator",
+        "capital loss carryforward calculator",
+        "how much can tax loss harvesting save"
+      ],
+      "lastUpdated": "2026-11-09",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "capital-gains-tax-calculator",
+        "tax-bracket-calculator",
+        "charitable-giving-deduction-calculator"
       ]
     }
   ]

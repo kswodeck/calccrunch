@@ -506,8 +506,40 @@ financial/health focus) and skipped a DST-clocks-back post since Nov 1, 2026 alr
 | medicare-part-b-premium-2027-calculator (carried over) | "2027 Medicare Part B premium calculator" / "IRMAA 2027 calculator" | rmd-calculator, social-security-calculator, social-security-cola-calculator | todo (hold until CMS officially announces 2027 Part B premium/IRMAA brackets) |
 | open-enrollment-2027-fsa-hsa-guide (FSA-only, carried over) | "2027 FSA contribution limit" — officially announced at $3,500 (up from $3,400); still unshipped, ready to go next run | budget-calculator, savings-goal-calculator | todo (no longer blocked — figure is official, ready to ship next run) |
 | q4-estimated-tax-deadline-guide (carried over) | "Q4 estimated tax deadline" / "January 15 estimated tax" | self-employment-tax-calculator, freelance-rate-calculator | todo (hold until ~4-5 weeks before Jan 15, 2027, i.e. early-mid December 2026) |
-| tax-loss-harvesting-calculator (new) | "tax loss harvesting calculator" — net-new tool angle surfaced while researching this run's capital gains content; would let users model realized losses offsetting realized gains (the $3,000/$1,500 net-loss-against-ordinary-income cap) with real numbers instead of just reading about the rule in year-end-tax-moves-2026-guide or capital-gains-tax-guide | capital-gains-tax-calculator, tax-bracket-calculator, year-end-tax-moves-2026-guide | todo (net-new, financial; pairs naturally with the newly-shipped capital-gains-tax-calculator) |
+| tax-loss-harvesting-calculator (new) | "tax loss harvesting calculator" — net-new tool angle surfaced while researching this run's capital gains content; would let users model realized losses offsetting realized gains (the $3,000/$1,500 net-loss-against-ordinary-income cap) with real numbers instead of just reading about the rule in year-end-tax-moves-2026-guide or capital-gains-tax-guide | capital-gains-tax-calculator, tax-bracket-calculator, year-end-tax-moves-2026-guide | done — shipped 2026-11-09 run alongside new tax-loss-harvesting-guide post (published 2026-11-12) |
 | holiday-weight-gain-fitness-guide (new, soft idea) | "average holiday weight gain" / "how to avoid holiday weight gain" — real recurring seasonal search interest in the health-fitness niche, but no single clear calculator pairing emerged this run beyond existing calorie/TDEE tools; needs a tighter scope (e.g. a maintenance-calorie angle) before it's ready to schedule | calorie-calculator or tdee-calculator (whichever exists) | todo (needs scoping — hold until a sharper calculator angle is identified) |
+
+## Blog backlog (new ideas from 2026-11-09 research run)
+
+why now: shipped tax-loss-harvesting-calculator (net-new Tier 2/financial tool — models the IRS loss-netting waterfall:
+short-term gains → long-term gains → up to $3,000/$1,500-MFS ordinary income → indefinite carryforward) plus
+tax-loss-harvesting-guide, closing out the item surfaced during the 2026-11-02 run. Reused the exact 2026
+ORDINARY_BRACKETS/LTCG_BRACKETS/NIIT_THRESHOLDS already live in capital-gains-tax-calculator.js for cross-site
+consistency, then sanity-checked the full offset waterfall with a standalone node script (7 edge cases, including
+an MFS $1,500-cap case and a loss-exceeds-income floor-at-zero case) before committing the production JS — caught
+and fixed an operator-precedence bug in the result-rendering code during review. Bidirectionally linked into
+tax-bracket-calculator, charitable-giving-deduction-calculator, and capital-gains-tax-calculator. Also shipped
+open-enrollment-2027-fsa-hsa-guide (FSA-only) as 2027-fsa-contribution-limit-guide (published 2026-11-16), closing
+out an item that had been correctly held across six prior runs — confirmed via WebSearch the 2027 Health FSA limit
+is officially $3,500 (up from $3,400) and carryover is $700 (up from $680) per IRS Revenue Procedure 2026-35,
+announced Nov 5, 2026; Dependent Care FSA stays at $5,000 (statutory, not indexed). Re-confirmed via fresh WebSearch
+that both the 2027 401(k) contribution limit (projected ~$25,500 but still unannounced) and the 2027 Medicare Part B
+premium/IRMAA brackets (projected ~$209.50 but still unannounced, CMS typically publishes mid-November) remain
+officially unconfirmed as of this run — correctly left on hold rather than shipping projected figures. Checked two
+soft seasonal ideas via WebSearch but did not ship either: average holiday weight gain (~0.8-2 lbs per NIH/Mayo-style
+studies, far lower than the popular "5-10 lbs" myth) is real data but still lacks a tight calculator pairing (see
+existing holiday-weight-gain-fitness-guide row above, left open); New Year's resolution/TDEE content is real
+recurring search demand but is a January story, too early to schedule with useful runway from a Nov 9 run.
+
+| Slug | Target query | Links to | Status |
+|---|---|---|---|
+| 401k-2027-contribution-limits (carried over) | "2027 401k contribution limit" — still unannounced as of this run; IRS typically publishes mid-to-late November (2026's Notice 2025-67 landed Nov 13, 2025) | savings-goal-calculator, retirement-income-calculator | todo (hold until IRS officially announces 2027 401(k) limits) |
+| irmaa-2027-medicare-premium-guide (carried over) | "2027 IRMAA brackets" / "2027 Medicare Part B premium" — CMS has not yet finalized 2027 Part B premiums (typically announced mid-to-late November); projected ~$209.50/mo but unconfirmed | rmd-calculator, social-security-calculator, budget-calculator | todo (hold until CMS officially announces, expected mid-to-late November 2026) |
+| medicare-part-b-premium-2027-calculator (carried over) | "2027 Medicare Part B premium calculator" / "IRMAA 2027 calculator" | rmd-calculator, social-security-calculator, social-security-cola-calculator | todo (hold until CMS officially announces 2027 Part B premium/IRMAA brackets) |
+| q4-estimated-tax-deadline-guide (carried over) | "Q4 estimated tax deadline" / "January 15 estimated tax" | self-employment-tax-calculator, freelance-rate-calculator | todo (hold until ~4-5 weeks before Jan 15, 2027, i.e. early-mid December 2026) |
+| gpa-scale-converter-guide-followup (carried over) | Follow-up post once Texas finalizes its statewide standardized GPA/class-rank method | gpa-scale-converter, gpa-calculator | todo (hold until Texas commissioner publishes the standardized method) |
+| holiday-weight-gain-fitness-guide (carried over, re-checked) | "average holiday weight gain" / "how to avoid holiday weight gain" — confirmed via WebSearch this run the real average is ~0.8-2 lbs (not the popular "5-10 lbs" myth), which could itself be the hook, but still needs a sharper calculator pairing than generic calorie/TDEE tools before scheduling | calorie-calculator or tdee-calculator (whichever exists) | todo (needs scoping — hold until a sharper calculator angle is identified) |
+| new-year-resolution-tdee-guide (new, soft idea) | "TDEE calculator" / "calorie calculator for weight loss goals" — real, recurring January search spike (New Year's resolutions), confirmed evergreen via WebSearch, but a Nov 9 run has no useful runway to land a January-intent post; revisit in a mid-to-late December run instead | calorie-calculator, bmi-calculator | todo (time-box: do not publish before ~late December 2026, so it's live but not stale by January) |
 
 ## Retention backlog
 

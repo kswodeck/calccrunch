@@ -1302,5 +1302,31 @@
       "q": "Does selling stock at a loss offset capital gains tax?",
       "a": "Yes. Capital losses can offset capital gains dollar-for-dollar, and up to ,000 of net losses beyond that can offset ordinary income each year (,500 if married filing separately), with any excess carried forward to future years. This calculator assumes a net gain and does not model loss offsetting — net your gains and losses together first."
     }
+  ],
+  "tax-loss-harvesting-calculator": [
+    {
+      "q": "What is tax-loss harvesting?",
+      "a": "Tax-loss harvesting is selling an investment that's worth less than you paid for it on purpose, before December 31, so the loss can offset capital gains elsewhere in your portfolio (or up to $3,000 of ordinary income) and lower your tax bill. It's a timing strategy, not a way to avoid tax permanently — any loss beyond what you use this year carries forward to future years."
+    },
+    {
+      "q": "How much can tax-loss harvesting save on taxes?",
+      "a": "Your savings depend on your tax bracket and what the loss offsets. A loss that offsets short-term gains or ordinary income saves you your marginal ordinary rate (10%-37%) on that amount; a loss that offsets long-term gains saves you the long-term rate (0%, 15%, or 20%) that would have applied instead. Beyond gains, you can deduct up to $3,000 per year ($1,500 if married filing separately) against ordinary income."
+    },
+    {
+      "q": "What is the wash-sale rule?",
+      "a": "The wash-sale rule (IRC Section 1091) disallows your loss if you buy a \"substantially identical\" security within 30 days before or after the sale — a 61-day window total. If triggered, the loss isn't deductible this year; it's added to the cost basis of the replacement shares instead. The rule applies across all your accounts, including IRAs."
+    },
+    {
+      "q": "What is the deadline for tax-loss harvesting?",
+      "a": "The trade date must fall on or before December 31 to count for that tax year — the settlement date doesn't matter. A sale executed on December 31 still counts even if it settles in early January of the following year."
+    },
+    {
+      "q": "Can I carry forward capital losses to next year?",
+      "a": "Yes. After a loss offsets all your capital gains and up to $3,000 ($1,500 MFS) of ordinary income, any amount left over carries forward indefinitely — you can use it against gains or another $3,000 of ordinary income in any future year until it's fully used."
+    },
+    {
+      "q": "Does the wash-sale rule apply to cryptocurrency?",
+      "a": "Under current law, no — the wash-sale rule covers stocks and securities, and cryptocurrency held directly is treated as property, not a security. That means you can sell crypto at a loss and immediately repurchase it without triggering a wash sale, though this could change if Congress extends the rule to digital assets."
+    }
   ]
 }

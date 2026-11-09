@@ -735,5 +735,17 @@
       "Choose your holding period: short-term (1 year or less) or long-term (more than 1 year)",
       "Click Calculate to see your estimated federal tax, after-tax proceeds, and whether the 3.8% NIIT applies"
     ]
+  },
+  "tax-loss-harvesting-calculator": {
+    "name": "How to Use the Tax-Loss Harvesting Calculator",
+    "description": "Estimate how much a tax-loss harvest could save you in 2026 — offset capital gains, deduct up to $3,000 against ordinary income, and see your carryforward.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Select your filing status and enter your other taxable income for the year (everything except capital gains/losses)",
+      "Enter any short-term and long-term capital gains you've already realized this year — leave at 0 if none",
+      "Enter the loss you're considering harvesting (your unrealized loss on a position you'd sell before Dec. 31)",
+      "Click Calculate to see how the loss is applied — to gains first, then up to $3,000 of ordinary income, with any remainder carried forward",
+      "Check your estimated total tax savings and carryforward amount"
+    ]
   }
 }
