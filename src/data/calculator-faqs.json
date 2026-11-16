@@ -1328,5 +1328,31 @@
       "q": "Does the wash-sale rule apply to cryptocurrency?",
       "a": "Under current law, no — the wash-sale rule covers stocks and securities, and cryptocurrency held directly is treated as property, not a security. That means you can sell crypto at a loss and immediately repurchase it without triggering a wash sale, though this could change if Congress extends the rule to digital assets."
     }
+  ],
+  "body-roundness-index-calculator": [
+    {
+      "q": "What is a good BRI score?",
+      "a": "Large US cohort research (JAMA Network Open, 2024) found the lowest all-cause mortality risk in the 4.45–5.46 range, with risk rising at both extremes — about 25% higher for BRI below 3.4 and 49% higher for BRI of 6.9 or above. These are population-study reference points, not fixed clinical cutoffs, so use them as context rather than a diagnosis."
+    },
+    {
+      "q": "How do I measure my waist for the BRI calculator?",
+      "a": "Wrap a tape measure around your bare waist at the level of your belly button (navel), standing relaxed with the tape snug but not compressing the skin. Measure at the end of a normal exhale, not while flexing or holding your breath in."
+    },
+    {
+      "q": "Is BRI better than BMI?",
+      "a": "BRI and BMI measure different things. BMI only uses height and weight, so it can't distinguish muscle from fat or tell you where fat is stored. BRI adds waist circumference, which several studies link more closely to abdominal (visceral) fat and cardiometabolic risk. Neither replaces the other — most experts suggest using both together, along with waist circumference alone."
+    },
+    {
+      "q": "Does BRI work the same for men and women?",
+      "a": "Yes — unlike waist-to-hip ratio, which has different healthy ranges by sex, the BRI formula itself (based on height and waist circumference only) is applied the same way regardless of sex. Some research does note it may be less reliable for athletes or very muscular individuals, similar to BMI's limitations."
+    },
+    {
+      "q": "What's the BRI formula?",
+      "a": "BRI = 364.2 − 365.5 × √(1 − (waist ÷ (π × height))²), using waist circumference and height in the same units. The formula models your body as a vertical ellipse — a higher waist-to-height ratio produces a higher BRI, indicating a 'rounder' body shape."
+    },
+    {
+      "q": "Can BRI be negative or very low?",
+      "a": "Yes — a very small waist relative to height can produce a BRI near zero or even slightly negative in the formula, though this is rare in practice. Scores in the general population typically range from about 1 to 15, with lower scores reflecting a leaner, more cylindrical shape."
+    }
   ]
 }

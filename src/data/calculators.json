@@ -96,7 +96,8 @@
         "macro-calculator",
         "body-fat-calculator",
         "sleep-calculator",
-        "water-intake-calculator"
+        "water-intake-calculator",
+        "body-roundness-index-calculator"
       ]
     },
     {
@@ -296,7 +297,8 @@
         "macro-calculator",
         "water-intake-calculator",
         "pace-calculator",
-        "ovulation-calculator"
+        "ovulation-calculator",
+        "body-roundness-index-calculator"
       ]
     },
     {
@@ -743,7 +745,8 @@
       "relatedCalculators": [
         "bmi-calculator",
         "calorie-calculator",
-        "macro-calculator"
+        "macro-calculator",
+        "body-roundness-index-calculator"
       ]
     },
     {
@@ -5570,6 +5573,45 @@
         "capital-gains-tax-calculator",
         "tax-bracket-calculator",
         "charitable-giving-deduction-calculator"
+      ]
+    },
+    {
+      "title": "Body Roundness Index (BRI) Calculator",
+      "slug": "body-roundness-index-calculator",
+      "description": "Calculate your Body Roundness Index (BRI) from height and waist circumference — a research-backed, waist-based alternative to BMI for estimating body shape and health risk.",
+      "shortDescription": "Calculate your BRI from height and waist circumference",
+      "category": "health-fitness",
+      "tags": [
+        "BRI",
+        "body roundness index",
+        "waist circumference",
+        "health",
+        "body shape"
+      ],
+      "featured": false,
+      "popular": false,
+      "difficulty": "Easy",
+      "estimatedTime": "1 minute",
+      "icon": "📐",
+      "seoTitle": "BRI Calculator — Body Roundness Index (Free & Instant)",
+      "seoDescription": "Calculate your Body Roundness Index (BRI) from height and waist circumference — a research-backed, waist-based alternative to BMI for estimating body shape and health risk.",
+      "keywords": [
+        "body roundness index calculator",
+        "BRI calculator",
+        "BRI vs BMI",
+        "waist to height ratio calculator",
+        "how to calculate BRI"
+      ],
+      "lastUpdated": "2026-11-16",
+      "uses": 0,
+      "rating": 0,
+      "affiliateHeadlines": [],
+      "affiliateDescriptions": [],
+      "affiliateLinks": [],
+      "relatedCalculators": [
+        "bmi-calculator",
+        "body-fat-calculator",
+        "calorie-calculator"
       ]
     }
   ]

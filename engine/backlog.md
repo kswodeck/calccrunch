@@ -533,13 +533,45 @@ recurring search demand but is a January story, too early to schedule with usefu
 
 | Slug | Target query | Links to | Status |
 |---|---|---|---|
-| 401k-2027-contribution-limits (carried over) | "2027 401k contribution limit" — still unannounced as of this run; IRS typically publishes mid-to-late November (2026's Notice 2025-67 landed Nov 13, 2025) | savings-goal-calculator, retirement-income-calculator | todo (hold until IRS officially announces 2027 401(k) limits) |
+| 401k-2027-contribution-limits (carried over) | "2027 401k contribution limit" — still unannounced as of this run; IRS typically publishes mid-to-late November (2026's Notice 2025-67 landed Nov 13, 2025) | savings-goal-calculator, retirement-income-calculator | done (shipped 2026-11-18 — see 2026-11-16 run below) |
 | irmaa-2027-medicare-premium-guide (carried over) | "2027 IRMAA brackets" / "2027 Medicare Part B premium" — CMS has not yet finalized 2027 Part B premiums (typically announced mid-to-late November); projected ~$209.50/mo but unconfirmed | rmd-calculator, social-security-calculator, budget-calculator | todo (hold until CMS officially announces, expected mid-to-late November 2026) |
 | medicare-part-b-premium-2027-calculator (carried over) | "2027 Medicare Part B premium calculator" / "IRMAA 2027 calculator" | rmd-calculator, social-security-calculator, social-security-cola-calculator | todo (hold until CMS officially announces 2027 Part B premium/IRMAA brackets) |
 | q4-estimated-tax-deadline-guide (carried over) | "Q4 estimated tax deadline" / "January 15 estimated tax" | self-employment-tax-calculator, freelance-rate-calculator | todo (hold until ~4-5 weeks before Jan 15, 2027, i.e. early-mid December 2026) |
 | gpa-scale-converter-guide-followup (carried over) | Follow-up post once Texas finalizes its statewide standardized GPA/class-rank method | gpa-scale-converter, gpa-calculator | todo (hold until Texas commissioner publishes the standardized method) |
 | holiday-weight-gain-fitness-guide (carried over, re-checked) | "average holiday weight gain" / "how to avoid holiday weight gain" — confirmed via WebSearch this run the real average is ~0.8-2 lbs (not the popular "5-10 lbs" myth), which could itself be the hook, but still needs a sharper calculator pairing than generic calorie/TDEE tools before scheduling | calorie-calculator or tdee-calculator (whichever exists) | todo (needs scoping — hold until a sharper calculator angle is identified) |
 | new-year-resolution-tdee-guide (new, soft idea) | "TDEE calculator" / "calorie calculator for weight loss goals" — real, recurring January search spike (New Year's resolutions), confirmed evergreen via WebSearch, but a Nov 9 run has no useful runway to land a January-intent post; revisit in a mid-to-late December run instead | calorie-calculator, bmi-calculator | todo (time-box: do not publish before ~late December 2026, so it's live but not stale by January) |
+
+## Blog backlog (new ideas from 2026-11-16 research run)
+
+why now: shipped body-roundness-index-calculator (net-new Tier 4/health tool — BRI formula
+`364.2 − 365.5 × √(1 − (waist/(π×height))²)`, developed by Diana Thomas 2013, estimates body shape/central-fat
+distribution from height + waist circumference as a complement to BMI) with FAQ/HowTo schema grounded in the 2024
+JAMA Network Open cohort study (Zhao et al., DOI 10.1001/jamanetworkopen.2024.15051) quintile cutoffs (Q1 <3.41,
+reference band ~4.45–<5.46, Q5 ≥6.91, up to 49% higher relative mortality risk) — confirmed via WebSearch no
+existing calculator covers waist-based body shape (only body-fat-calculator exists, which is a different Navy-method
+metric). Bidirectionally linked into bmi-calculator, body-fat-calculator, and calorie-calculator. Paired with
+bri-vs-bmi-guide (published 2026-11-21) comparing the two metrics head-to-head. Also shipped
+401k-2027-contribution-limits (published 2026-11-18), closing out an item correctly held across eight prior runs —
+confirmed via WebSearch the IRS officially announced 2027 limits in Notice 2026-66 / IR-2026-136 on Nov 12, 2026:
+$25,500 base deferral (up $1,000), $8,500 standard catch-up (50+), $11,750 "super" catch-up (ages 60-63 per
+SECURE 2.0), IRA limit frozen at $7,500, SIMPLE plan limit $17,500. Re-confirmed via fresh WebSearch that the 2027
+Medicare Part B premium/IRMAA brackets remain officially unconfirmed as of this run (CMS has not yet published) —
+correctly left on hold. Checked Black Friday/Cyber Monday 2026 deals and holiday tipping trends via WebSearch but
+skipped both — already covered by existing site content per prior backlog notes. Checked Thanksgiving 2026
+per-person cost/inflation angle but skipped — too close to publish date to land with useful runway and relies on
+inflation stats that would need careful sourcing to avoid fabrication. Surfaced two softer evergreen ideas (days-until
+countdown and everyday unit-conversion search demand) during time/date and math-niche research; logged below for
+future scoping rather than shipped this run since neither yet has a sharp net-new calculator angle distinct from
+existing tools.
+
+| Slug | Target query | Links to | Status |
+|---|---|---|---|
+| irmaa-2027-medicare-premium-guide (carried over) | "2027 IRMAA brackets" / "2027 Medicare Part B premium" — still unconfirmed as of this run; CMS typically publishes mid-to-late November | rmd-calculator, social-security-calculator, budget-calculator | todo (hold until CMS officially announces) |
+| medicare-part-b-premium-2027-calculator (carried over) | "2027 Medicare Part B premium calculator" / "IRMAA 2027 calculator" | rmd-calculator, social-security-calculator, social-security-cola-calculator | todo (hold until CMS officially announces 2027 Part B premium/IRMAA brackets) |
+| q4-estimated-tax-deadline-guide (carried over) | "Q4 estimated tax deadline" / "January 15 estimated tax" | self-employment-tax-calculator, freelance-rate-calculator | todo (hold until early-mid December 2026 for useful runway) |
+| days-until-countdown-trends (new, soft idea) | "days until [holiday/event] calculator" — recurring December search spike for days-until-Christmas/New Year style queries; needs scoping against existing countdown/date-difference calculators before committing to a net-new angle | date-difference-calculator or days-until-calculator (whichever exists) | todo (needs scoping — check for existing countdown tool overlap first) |
+| unit-conversion-everyday-guide (new, soft idea) | "how many cups in a quart" / "how many ounces in a pound" style long-tail conversion queries — large aggregate volume but highly fragmented across many micro-queries; best suited to a programmatic Tier-1 conversions.json expansion rather than a single blog post | conversions.json entries (bespoke calculator pairing TBD) | todo (needs scoping — evaluate against existing conversions.json coverage) |
+| new-year-resolution-tdee-guide (carried over) | "TDEE calculator" / "calorie calculator for weight loss goals" — real recurring January search spike; still too early to land with useful runway from a mid-November run | calorie-calculator, bmi-calculator | todo (time-box: do not publish before ~late December 2026) |
 
 ## Retention backlog
 

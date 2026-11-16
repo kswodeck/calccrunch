@@ -1909,6 +1909,63 @@
         "dependent care fsa 2027",
         "open enrollment fsa election"
       ]
+    },
+    {
+      "slug": "401k-2027-contribution-limits",
+      "title": "2027 401(k) Contribution Limits: What Changed and How to Plan",
+      "description": "The IRS set the 2027 401(k) contribution limit at $25,500, with catch-up contributions rising to $8,500 (or $11,750 for ages 60-63). Here is exactly what changed and how to adjust your deferrals.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-11-18T09:00:00-07:00",
+      "updatedDate": "2026-11-18T09:00:00-07:00",
+      "category": "Financial Planning",
+      "tags": [
+        "401k",
+        "retirement",
+        "contribution limits",
+        "IRS",
+        "2027",
+        "catch-up contributions"
+      ],
+      "readTime": "6 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "savings-goal-calculator",
+        "retirement-income-calculator"
+      ],
+      "seoTitle": "2027 401(k) Contribution Limits: What Changed and How to Plan",
+      "seoDescription": "2027 401(k) limit is $25,500, up $1,000. Catch-up rises to $8,500 ($11,750 for ages 60-63). See the full IRS Notice 2026-66 breakdown and how to plan.",
+      "keywords": [
+        "401k 2027 contribution limits"
+      ]
+    },
+    {
+      "slug": "bri-vs-bmi-guide",
+      "title": "BRI vs. BMI: Which Body Measurement Should You Trust?",
+      "description": "BRI uses waist circumference to estimate body shape and health risk, while BMI only uses height and weight. Here is how the two compare and when to use each.",
+      "author": "CalcCrunch Team",
+      "publishDate": "2026-11-21T09:00:00-07:00",
+      "updatedDate": "2026-11-21T09:00:00-07:00",
+      "category": "Health & Fitness",
+      "tags": [
+        "BRI",
+        "BMI",
+        "body roundness index",
+        "health",
+        "body composition",
+        "waist circumference"
+      ],
+      "readTime": "6 min read",
+      "featured": false,
+      "relatedCalculators": [
+        "body-roundness-index-calculator",
+        "bmi-calculator",
+        "body-fat-calculator"
+      ],
+      "seoTitle": "BRI vs. BMI: Which Body Measurement Should You Trust?",
+      "seoDescription": "BRI vs BMI explained: what each measures, how the formulas differ, and what 2024 cohort research found about body roundness and health risk.",
+      "keywords": [
+        "bri vs bmi guide"
+      ]
     }
   ]
 }

@@ -747,5 +747,17 @@
       "Click Calculate to see how the loss is applied — to gains first, then up to $3,000 of ordinary income, with any remainder carried forward",
       "Check your estimated total tax savings and carryforward amount"
     ]
+  },
+  "body-roundness-index-calculator": {
+    "name": "How to Use the Body Roundness Index (BRI) Calculator",
+    "description": "Calculate your Body Roundness Index (BRI) from height and waist circumference — a research-backed, waist-based alternative to BMI for estimating body shape and health risk.",
+    "totalTime": "PT1M",
+    "steps": [
+      "Select Imperial or Metric units",
+      "Enter your height",
+      "Measure your waist at the navel, standing relaxed, and enter the value",
+      "Click Calculate to see your BRI score, category, and waist-to-height ratio",
+      "Bookmark or share the result URL — your inputs are saved automatically"
+    ]
   }
 }
